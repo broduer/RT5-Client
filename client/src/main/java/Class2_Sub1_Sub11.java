@@ -172,7 +172,7 @@ public final class Class2_Sub1_Sub11 extends Class2_Sub1 {
 					}
 				}
 			} else {
-				Static735.method7697(local18, 0, Static608.anInt9315, 0);
+				Static734.method7697(local18, 0, Static608.anInt9315, 0);
 			}
 		}
 		return local18;

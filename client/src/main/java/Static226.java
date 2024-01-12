@@ -27,7 +27,7 @@ public final class Static226 {
 		} else if (arg4 == 5) {
 			return Static256.method3637(arg2, arg5, arg3, arg0);
 		} else if (arg4 == 3) {
-			return Static734.method7625(arg5, arg2, arg3, arg0);
+			return Static733.method7625(arg5, arg2, arg3, arg0);
 		} else {
 			throw new IllegalArgumentException("UM");
 		}

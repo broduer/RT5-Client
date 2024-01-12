@@ -29,7 +29,7 @@ public final class Class133 implements Interface13 {
 	@Override
 	public void method7755() {
 		@Pc(24) Class383 local24 = Static238.method3468(this.aClass125_1.anInt2867, this.aClass332_36);
-		this.aClass14_4 = Static163.aClass19_17.method8017(local24, Static736.method9394(this.aClass332_37, this.aClass125_1.anInt2867), true);
+		this.aClass14_4 = Static163.aClass19_17.method8017(local24, Static735.method9394(this.aClass332_37, this.aClass125_1.anInt2867), true);
 	}
 
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(ZI)V")

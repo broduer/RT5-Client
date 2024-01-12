@@ -90,7 +90,7 @@ public final class Class2_Sub1_Sub28 extends Class2_Sub1 {
 						break;
 					}
 				}
-				Static735.method7697(local11, 0, Static608.anInt9315, local153);
+				Static734.method7697(local11, 0, Static608.anInt9315, local153);
 			} else {
 				for (@Pc(31) int local31 = 0; local31 < Static608.anInt9315; local31++) {
 					local35 = 0;

@@ -59,7 +59,7 @@ public class Class2_Sub1_Sub8 extends Class2_Sub1 {
 		if (this.anIntArray641 != null) {
 			return true;
 		} else if (this.anInt8255 >= 0) {
-			@Pc(37) Class409 local37 = Static426.anInt944 >= 0 ? Static736.method9389(Static582.aClass332_108, Static426.anInt944, this.anInt8255) : Static736.method9386(Static582.aClass332_108, this.anInt8255);
+			@Pc(37) Class409 local37 = Static426.anInt944 >= 0 ? Static735.method9389(Static582.aClass332_108, Static426.anInt944, this.anInt8255) : Static735.method9386(Static582.aClass332_108, this.anInt8255);
 			local37.method9396();
 			this.anIntArray641 = local37.method9390();
 			this.anInt8254 = local37.anInt10879;

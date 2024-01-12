@@ -42,7 +42,7 @@ public final class Static485 {
 			return null;
 		} else {
 			@Pc(12) float[] local12 = new float[arg2];
-			Static735.method7696(arg1, 0, local12, 0, arg2);
+			Static734.method7696(arg1, 0, local12, 0, arg2);
 			return local12;
 		}
 	}

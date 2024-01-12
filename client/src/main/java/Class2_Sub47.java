@@ -101,7 +101,7 @@ public final class Class2_Sub47 extends Class2 {
 		if (this.aClass34Array1 == null) {
 			this.aClass34Array1 = new Class34[arg0];
 		} else {
-			Static735.method7698(this.aClass34Array1, 0, this.aClass34Array1 = new Class34[arg0], 0, this.anInt8309);
+			Static734.method7698(this.aClass34Array1, 0, this.aClass34Array1 = new Class34[arg0], 0, this.anInt8309);
 		}
 	}
 
@@ -111,7 +111,7 @@ public final class Class2_Sub47 extends Class2 {
 		if (this.anInt8309 == 0) {
 			this.aClass34Array1 = null;
 		} else {
-			Static735.method7698(this.aClass34Array1, arg0 + 1, this.aClass34Array1, arg0, this.anInt8309 - arg0);
+			Static734.method7698(this.aClass34Array1, arg0 + 1, this.aClass34Array1, arg0, this.anInt8309 - arg0);
 		}
 		this.anIntArray644 = null;
 	}

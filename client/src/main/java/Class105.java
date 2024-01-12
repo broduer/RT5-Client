@@ -190,7 +190,7 @@ public final class Class105 {
 			return local28;
 		}
 		this.aClass248_2.aClass332_83.method7588(this.anInt2627);
-		@Pc(49) Class409 local49 = Static736.method9389(this.aClass248_2.aClass332_83, this.anInt2627, 0);
+		@Pc(49) Class409 local49 = Static735.method9389(this.aClass248_2.aClass332_83, this.anInt2627, 0);
 		if (local49 != null) {
 			local28 = arg0.method7955(local49, true);
 			this.aClass248_2.aClass82_135.method2150(local28, (long) (this.anInt2627 | 0x20000 | arg0.anInt8986 << 29));
@@ -225,7 +225,7 @@ public final class Class105 {
 		if (local38 != null) {
 			return local38;
 		} else if (this.aClass248_2.aClass332_83.method7588(local22)) {
-			@Pc(60) Class409 local60 = Static736.method9389(this.aClass248_2.aClass332_83, local22, 0);
+			@Pc(60) Class409 local60 = Static735.method9389(this.aClass248_2.aClass332_83, local22, 0);
 			if (local60 != null) {
 				local38 = arg1.method7955(local60, true);
 				this.aClass248_2.aClass82_135.method2150(local38, (long) local29);

@@ -76,7 +76,7 @@ public final class Class2_Sub1_Sub38 extends Class2_Sub1 {
 					local11[local52] = local37[Static576.anInt8604 - local52];
 				}
 			} else {
-				Static735.method7702(local37, 0, local11, 0, Static608.anInt9315);
+				Static734.method7702(local37, 0, local11, 0, Static608.anInt9315);
 			}
 		}
 		return local11;

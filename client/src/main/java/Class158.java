@@ -488,7 +488,7 @@ public final class Class158 {
 		if (local60 != null) {
 			return local60;
 		}
-		@Pc(71) Class409 local71 = Static736.method9389(Static262.aClass332_56, this.anInt3821, 0);
+		@Pc(71) Class409 local71 = Static735.method9389(Static262.aClass332_56, this.anInt3821, 0);
 		if (local71 == null) {
 			Static544.aBoolean625 = true;
 			return null;
@@ -862,7 +862,7 @@ public final class Class158 {
 				return local21;
 			}
 		}
-		@Pc(53) Class409 local53 = Static736.method9389(Static262.aClass332_56, this.anInt3821, 0);
+		@Pc(53) Class409 local53 = Static735.method9389(Static262.aClass332_56, this.anInt3821, 0);
 		if (local53 == null) {
 			return null;
 		}

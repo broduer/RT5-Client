@@ -18,7 +18,7 @@ public final class Static570 {
 		for (@Pc(14) int local14 = 0; local14 < Static552.anIntArray753.length; local14++) {
 			@Pc(19) int local19 = Static552.anIntArray753[local14];
 			@Pc(24) Class383 local24 = Static238.method3468(local19, Static237.aClass332_87);
-			@Pc(32) Class14 local32 = arg0.method8017(local24, Static736.method9394(Static555.aClass332_106, local19), true);
+			@Pc(32) Class14 local32 = arg0.method8017(local24, Static735.method9394(Static555.aClass332_106, local19), true);
 			Static378.aClass70Array1[local14] = new Class70(local32, local24);
 		}
 	}

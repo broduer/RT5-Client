@@ -80,7 +80,7 @@ public abstract class Class90 implements Interface13 {
 	@Override
 	public void method7755() {
 		@Pc(21) Class383 local21 = Static238.method3468(this.aClass138_5.anInt4428, this.aClass332_110);
-		this.aClass14_10 = Static163.aClass19_17.method8017(local21, Static736.method9394(this.aClass332_109, this.aClass138_5.anInt4428), true);
+		this.aClass14_10 = Static163.aClass19_17.method8017(local21, Static735.method9394(this.aClass332_109, this.aClass138_5.anInt4428), true);
 	}
 
 	@OriginalMember(owner = "client!ea", name = "b", descriptor = "(I)Z")

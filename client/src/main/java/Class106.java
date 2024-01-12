@@ -1,5 +1,6 @@
 import jaclib.memory.Buffer;
 import jaclib.memory.Source;
+import jagdx.Class190;
 import jagdx.IDirect3DVertexBuffer;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -39,7 +40,7 @@ public final class Class106 implements Interface16 {
 	@OriginalMember(owner = "client!ela", name = "a", descriptor = "(I)Z")
 	@Override
 	public boolean method3154() {
-		if (this.aBoolean220 && Static731.method4161((byte) 96, this.anIDirect3DVertexBuffer1.Unlock())) {
+		if (this.aBoolean220 && Class190.method4161(this.anIDirect3DVertexBuffer1.Unlock())) {
 			this.aBoolean220 = false;
 			return true;
 		} else {
@@ -83,7 +84,7 @@ public final class Class106 implements Interface16 {
 			return null;
 		}
 		@Pc(12) boolean local12 = this.aBoolean219 & true;
-		if (!this.aBoolean220 && Static731.method4161((byte) 108, this.anIDirect3DVertexBuffer1.Lock(0, this.anInt2629, local12 ? 8192 : 0, this.aClass19_Sub1_Sub1_4.aGeometryBuffer1))) {
+		if (!this.aBoolean220 && Class190.method4161(this.anIDirect3DVertexBuffer1.Lock(0, this.anInt2629, local12 ? 8192 : 0, this.aClass19_Sub1_Sub1_4.aGeometryBuffer1))) {
 			this.aBoolean220 = true;
 			return this.aClass19_Sub1_Sub1_4.aGeometryBuffer1;
 		} else {

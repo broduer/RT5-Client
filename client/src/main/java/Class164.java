@@ -106,30 +106,30 @@ public final class Class164 {
 			if (this.aLongArray8 == null) {
 				this.aLongArray8 = new long[arg0];
 			} else {
-				Static735.method7700(this.aLongArray8, 0, this.aLongArray8 = new long[arg0], 0, this.anInt3950);
+				Static734.method7700(this.aLongArray8, 0, this.aLongArray8 = new long[arg0], 0, this.anInt3950);
 			}
 		}
 		if (this.aBoolean306) {
 			if (this.aStringArray18 == null) {
 				this.aStringArray18 = new String[arg0];
 			} else {
-				Static735.method7698(this.aStringArray18, 0, this.aStringArray18 = new String[arg0], 0, this.anInt3950);
+				Static734.method7698(this.aStringArray18, 0, this.aStringArray18 = new String[arg0], 0, this.anInt3950);
 			}
 		}
 		if (this.aByteArray40 == null) {
 			this.aByteArray40 = new byte[arg0];
 		} else {
-			Static735.method7701(this.aByteArray40, 0, this.aByteArray40 = new byte[arg0], 0, this.anInt3950);
+			Static734.method7701(this.aByteArray40, 0, this.aByteArray40 = new byte[arg0], 0, this.anInt3950);
 		}
 		if (this.anIntArray309 == null) {
 			this.anIntArray309 = new int[arg0];
 		} else {
-			Static735.method7702(this.anIntArray309, 0, this.anIntArray309 = new int[arg0], 0, this.anInt3950);
+			Static734.method7702(this.anIntArray309, 0, this.anIntArray309 = new int[arg0], 0, this.anInt3950);
 		}
 		if (this.anIntArray308 == null) {
 			this.anIntArray308 = new int[arg0];
 		} else {
-			Static735.method7702(this.anIntArray308, 0, this.anIntArray308 = new int[arg0], 0, this.anInt3950);
+			Static734.method7702(this.anIntArray308, 0, this.anIntArray308 = new int[arg0], 0, this.anInt3950);
 		}
 	}
 
@@ -270,14 +270,14 @@ public final class Class164 {
 			this.anInt3967 = -1;
 			return;
 		}
-		Static735.method7701(this.aByteArray40, arg0 + 1, this.aByteArray40, arg0, this.anInt3950 - arg0);
-		Static735.method7702(this.anIntArray309, arg0 + 1, this.anIntArray309, arg0, this.anInt3950 - arg0);
-		Static735.method7702(this.anIntArray308, arg0 + 1, this.anIntArray308, arg0, this.anInt3950 - arg0);
+		Static734.method7701(this.aByteArray40, arg0 + 1, this.aByteArray40, arg0, this.anInt3950 - arg0);
+		Static734.method7702(this.anIntArray309, arg0 + 1, this.anIntArray309, arg0, this.anInt3950 - arg0);
+		Static734.method7702(this.anIntArray308, arg0 + 1, this.anIntArray308, arg0, this.anInt3950 - arg0);
 		if (this.aLongArray8 != null) {
-			Static735.method7700(this.aLongArray8, arg0 + 1, this.aLongArray8, arg0, this.anInt3950 - arg0);
+			Static734.method7700(this.aLongArray8, arg0 + 1, this.aLongArray8, arg0, this.anInt3950 - arg0);
 		}
 		if (this.aStringArray18 != null) {
-			Static735.method7698(this.aStringArray18, arg0 + 1, this.aStringArray18, arg0, this.anInt3950 - arg0);
+			Static734.method7698(this.aStringArray18, arg0 + 1, this.aStringArray18, arg0, this.anInt3950 - arg0);
 		}
 		if (this.anInt3967 == arg0 || this.anInt3958 == arg0) {
 			this.method3482();
@@ -378,10 +378,10 @@ public final class Class164 {
 			return;
 		}
 		if (this.aLongArray7 != null) {
-			Static735.method7700(this.aLongArray7, arg0 + 1, this.aLongArray7, arg0, this.anInt3952 - arg0);
+			Static734.method7700(this.aLongArray7, arg0 + 1, this.aLongArray7, arg0, this.anInt3952 - arg0);
 		}
 		if (this.aStringArray19 != null) {
-			Static735.method7698(this.aStringArray19, arg0 + 1, this.aStringArray19, arg0, this.anInt3952 - arg0);
+			Static734.method7698(this.aStringArray19, arg0 + 1, this.aStringArray19, arg0, this.anInt3952 - arg0);
 		}
 	}
 
@@ -391,7 +391,7 @@ public final class Class164 {
 			if (this.aLongArray7 == null) {
 				this.aLongArray7 = new long[arg0];
 			} else {
-				Static735.method7700(this.aLongArray7, 0, this.aLongArray7 = new long[arg0], 0, this.anInt3952);
+				Static734.method7700(this.aLongArray7, 0, this.aLongArray7 = new long[arg0], 0, this.anInt3952);
 			}
 		}
 		if (!this.aBoolean306) {
@@ -400,7 +400,7 @@ public final class Class164 {
 		if (this.aStringArray19 == null) {
 			this.aStringArray19 = new String[arg0];
 		} else {
-			Static735.method7698(this.aStringArray19, 0, this.aStringArray19 = new String[arg0], 0, this.anInt3952);
+			Static734.method7698(this.aStringArray19, 0, this.aStringArray19 = new String[arg0], 0, this.anInt3952);
 		}
 	}
 

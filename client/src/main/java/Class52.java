@@ -37,11 +37,11 @@ public final class Class52 {
 		this.anIntArray100[1] = arg0.anInt10147;
 		if (arg0.aShortArray137 != null) {
 			this.aShortArray11 = new short[arg0.aShortArray137.length];
-			Static735.method7699(arg0.aShortArray137, 0, this.aShortArray11, 0, this.aShortArray11.length);
+			Static734.method7699(arg0.aShortArray137, 0, this.aShortArray11, 0, this.aShortArray11.length);
 		}
 		if (arg0.aShortArray138 != null) {
 			this.aShortArray10 = new short[arg0.aShortArray138.length];
-			Static735.method7699(arg0.aShortArray138, 0, this.aShortArray10, 0, this.aShortArray10.length);
+			Static734.method7699(arg0.aShortArray138, 0, this.aShortArray10, 0, this.aShortArray10.length);
 		}
 	}
 }

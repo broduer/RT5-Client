@@ -1,29 +1,25 @@
+import java.awt.Canvas;
+import java.lang.reflect.Method;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static733 {
 
-	@OriginalMember(owner = "client!qs", name = "b", descriptor = "(II)I")
-	public static int method7174(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(7) int local7 = (arg0 & 0xFF0000) * arg1 >> 23;
-		if (local7 < 2) {
-			local7 = 2;
-		} else if (local7 > 253) {
-			local7 = 253;
+	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lclient!sb;IILclient!d;Ljava/awt/Canvas;)Lclient!ha;")
+	public static Class19 method7625(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Interface4 arg2, @OriginalArg(4) Canvas arg3) {
+		try {
+			if (!Static651.method8523()) {
+				throw new RuntimeException("");
+			} else if (Static14.method179("jagdx")) {
+				@Pc(26) Class local26 = Class.forName("kea");
+				@Pc(68) Method local68 = local26.getDeclaredMethod("createToolkit", Class.forName("java.awt.Canvas"), Class.forName("Interface4"), Class.forName("sb"), Class.forName("java.lang.Integer"));
+				return (Class19) local68.invoke((Object) null, arg3, arg2, arg0, Integer.valueOf(arg1));
+			} else {
+				throw new RuntimeException("");
+			}
+		} catch (@Pc(98) Throwable local98) {
+			throw new RuntimeException("");
 		}
-		@Pc(26) int local26 = (arg0 & 0xFF00) * arg1 >> 15;
-		if (local26 < 2) {
-			local26 = 2;
-		} else if (local26 > 253) {
-			local26 = 253;
-		}
-		@Pc(45) int local45 = (arg0 & 0xFF) * arg1 >> 7;
-		if (local45 < 2) {
-			local45 = 2;
-		} else if (local45 > 253) {
-			local45 = 253;
-		}
-		return local7 << 16 | local26 << 8 | local45;
 	}
 }

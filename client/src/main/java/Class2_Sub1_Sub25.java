@@ -19,7 +19,7 @@ public final class Class2_Sub1_Sub25 extends Class2_Sub1 {
 			Static537.anIntArray633 = null;
 		}
 		if (super.aClass180_41.aBoolean338) {
-			Static735.method7697(local9, 0, Static608.anInt9315, Static273.anIntArray341[arg1]);
+			Static734.method7697(local9, 0, Static608.anInt9315, Static273.anIntArray341[arg1]);
 		}
 		return local9;
 	}

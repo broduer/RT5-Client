@@ -46,7 +46,7 @@ public final class Static687 {
 			@Pc(67) Class75 local67 = Static285.aClass75Array1[local61];
 			if (local67.aByte43 == arg2 && arg0 == local67.aShort26 && arg3 == local67.aShort23 || local67.aShort24 == arg0 && arg3 == local67.aShort23) {
 				if (local61 != Static150.anInt2643) {
-					Static735.method7698(Static285.aClass75Array1, local61 + 1, Static285.aClass75Array1, local61, Static285.aClass75Array1.length - local61 - 1);
+					Static734.method7698(Static285.aClass75Array1, local61 + 1, Static285.aClass75Array1, local61, Static285.aClass75Array1.length - local61 - 1);
 				}
 				Static150.anInt2643--;
 				return;

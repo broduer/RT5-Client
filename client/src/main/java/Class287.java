@@ -105,19 +105,19 @@ public final class Class287 {
 		@Pc(7) Class332 local7 = this.aClass222_1.aClass332_76;
 		@Pc(34) Class409 local34;
 		if (this.anInt7204 >= 0 && this.aClass222_1.aClass82_121.method2156((long) this.anInt7204) == null && local7.method7588(this.anInt7204)) {
-			local34 = Static736.method9386(local7, this.anInt7204);
+			local34 = Static735.method9386(local7, this.anInt7204);
 			this.aClass222_1.aClass82_121.method2150(arg0.method7955(local34, true), (long) this.anInt7204);
 		}
 		if (this.anInt7202 >= 0 && this.aClass222_1.aClass82_121.method2156((long) this.anInt7202) == null && local7.method7588(this.anInt7202)) {
-			local34 = Static736.method9386(local7, this.anInt7202);
+			local34 = Static735.method9386(local7, this.anInt7202);
 			this.aClass222_1.aClass82_121.method2150(arg0.method7955(local34, true), (long) this.anInt7202);
 		}
 		if (this.anInt7201 >= 0 && this.aClass222_1.aClass82_121.method2156((long) this.anInt7201) == null && local7.method7588(this.anInt7201)) {
-			local34 = Static736.method9386(local7, this.anInt7201);
+			local34 = Static735.method9386(local7, this.anInt7201);
 			this.aClass222_1.aClass82_121.method2150(arg0.method7955(local34, true), (long) this.anInt7201);
 		}
 		if (this.anInt7208 >= 0 && this.aClass222_1.aClass82_121.method2156((long) this.anInt7208) == null && local7.method7588(this.anInt7208)) {
-			local34 = Static736.method9386(local7, this.anInt7208);
+			local34 = Static735.method9386(local7, this.anInt7208);
 			this.aClass222_1.aClass82_121.method2150(arg0.method7955(local34, true), (long) this.anInt7208);
 		}
 	}

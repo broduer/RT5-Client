@@ -30,7 +30,7 @@ public final class Static502 {
 			}
 			return local54;
 		}
-		@Pc(84) Class409[] local84 = Static736.method9394(Static555.aClass332_106, arg3);
+		@Pc(84) Class409[] local84 = Static735.method9394(Static555.aClass332_106, arg3);
 		if (local84 == null) {
 			return null;
 		}

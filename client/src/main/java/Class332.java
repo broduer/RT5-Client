@@ -280,7 +280,7 @@ public final class Class332 {
 								local566 = local38[local370];
 							}
 							if (local566 == arg1) {
-								Static735.method7701(local164, local363, local539, local474, local368);
+								Static734.method7701(local164, local363, local539, local474, local368);
 								local474 += local368;
 							}
 							local363 += local368;
@@ -313,7 +313,7 @@ public final class Class332 {
 						local368 = 0;
 						for (local370 = 0; local370 < local32; local370++) {
 							local368 += local292.method7356();
-							Static735.method7701(local164, local363, local336[local370], local298[local370], local368);
+							Static734.method7701(local164, local363, local336[local370], local298[local370], local368);
 							local298[local370] += local368;
 							local363 += local368;
 						}

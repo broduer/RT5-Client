@@ -29,7 +29,7 @@ public final class Static134 {
 			return null;
 		} else {
 			@Pc(12) byte[] local12 = new byte[arg0.length];
-			Static735.method7701(arg0, 0, local12, 0, arg0.length);
+			Static734.method7701(arg0, 0, local12, 0, arg0.length);
 			return local12;
 		}
 	}

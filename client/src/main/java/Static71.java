@@ -596,21 +596,21 @@ public final class Static71 {
 		@Pc(5) boolean local5 = true;
 		if (Static414.aClass409_2 == null) {
 			if (Static721.aClass332_128.method7588(Static456.anInt6950)) {
-				Static414.aClass409_2 = Static736.method9386(Static721.aClass332_128, Static456.anInt6950);
+				Static414.aClass409_2 = Static735.method9386(Static721.aClass332_128, Static456.anInt6950);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static535.aClass409_3 == null) {
 			if (Static721.aClass332_128.method7588(Static362.anInt5848)) {
-				Static535.aClass409_3 = Static736.method9386(Static721.aClass332_128, Static362.anInt5848);
+				Static535.aClass409_3 = Static735.method9386(Static721.aClass332_128, Static362.anInt5848);
 			} else {
 				local5 = false;
 			}
 		}
 		if (Static74.aClass409_1 == null) {
 			if (Static721.aClass332_128.method7588(Static11.anInt136)) {
-				Static74.aClass409_1 = Static736.method9386(Static721.aClass332_128, Static11.anInt136);
+				Static74.aClass409_1 = Static735.method9386(Static721.aClass332_128, Static11.anInt136);
 			} else {
 				local5 = false;
 			}
@@ -624,7 +624,7 @@ public final class Static71 {
 		}
 		if (Static627.aClass409Array1 == null) {
 			if (Static721.aClass332_128.method7588(Static723.anInt10958)) {
-				Static627.aClass409Array1 = Static736.method9394(Static721.aClass332_128, Static723.anInt10958);
+				Static627.aClass409Array1 = Static735.method9394(Static721.aClass332_128, Static723.anInt10958);
 			} else {
 				local5 = false;
 			}

@@ -79,7 +79,7 @@ public final class Static369 {
 			@Pc(85) Canvas local85 = new Canvas();
 			local85.setSize(36, 32);
 			Static158.aClass19_5 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, 0, local85, 0);
-			Static629.aClass14_11 = Static158.aClass19_5.method8017(Static74.method1535(Static662.anInt9871, Static697.aClass332_123), Static736.method9382(Static721.aClass332_128, Static662.anInt9871), true);
+			Static629.aClass14_11 = Static158.aClass19_5.method8017(Static74.method1535(Static662.anInt9871, Static697.aClass332_123), Static735.method9382(Static721.aClass332_128, Static662.anInt9871), true);
 		}
 		for (local31 = (Class2_Sub36) Static133.aClass341_13.method7706(65280); local31 != null; local31 = (Class2_Sub36) Static133.aClass341_13.method7713()) {
 			Static419.aClass112_1.method2478(local31.anInt5913, Static158.aClass19_5, arg0, local31.aBoolean451 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass203_1 : null, false, local31.anInt5911, local31.anInt5908, false, local31.anInt5910, Static629.aClass14_11, local31.anInt5915);

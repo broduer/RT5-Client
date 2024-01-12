@@ -40,8 +40,8 @@ public final class Static87 {
 	public static void method1693(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		if (Static459.aClass23_31 == null || Static1.aClass23_42 == null) {
 			if (Static721.aClass332_128.method7588(Static63.anInt1481) && Static721.aClass332_128.method7588(Static282.anInt4430)) {
-				Static459.aClass23_31 = arg3.method7955(Static736.method9389(Static721.aClass332_128, Static63.anInt1481, 0), true);
-				@Pc(49) Class409 local49 = Static736.method9389(Static721.aClass332_128, Static282.anInt4430, 0);
+				Static459.aClass23_31 = arg3.method7955(Static735.method9389(Static721.aClass332_128, Static63.anInt1481, 0), true);
+				@Pc(49) Class409 local49 = Static735.method9389(Static721.aClass332_128, Static282.anInt4430, 0);
 				Static1.aClass23_42 = arg3.method7955(local49, true);
 				local49.method9395();
 				Static608.aClass23_41 = arg3.method7955(local49, true);

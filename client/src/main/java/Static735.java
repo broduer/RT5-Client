@@ -4,296 +4,121 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static735 {
 
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([III)V")
-	public static void method7695(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) int local5 = arg2 - 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-			arg0[arg1++] = 0;
-		}
-		local5 += 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = 0;
-		}
+	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;II)[Lclient!wp;")
+	public static Class409[] method9382(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+		@Pc(5) byte[] local5 = arg0.method7602(0, arg1);
+		return local5 == null ? null : method9383(local5);
 	}
 
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([FI[FII)V")
-	public static void method7696(@OriginalArg(0) float[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(15) int local15;
-		if (arg0 == arg2) {
-			if (arg1 == arg3) {
-				return;
+	@OriginalMember(owner = "client!wp", name = "a", descriptor = "([B)[Lclient!wp;")
+	private static Class409[] method9383(@OriginalArg(0) byte[] arg0) {
+		@Pc(4) Class2_Sub21 local4 = new Class2_Sub21(arg0);
+		local4.anInt8412 = arg0.length - 2;
+		@Pc(14) int local14 = local4.method7389();
+		@Pc(17) Class409[] local17 = new Class409[local14];
+		for (@Pc(19) int local19 = 0; local19 < local14; local19++) {
+			local17[local19] = new Class409();
+		}
+		local4.anInt8412 = arg0.length - local14 * 8 - 7;
+		@Pc(44) int local44 = local4.method7389();
+		@Pc(48) int local48 = local4.method7389();
+		@Pc(56) int local56 = (local4.method7403() & 0xFF) + 1;
+		for (@Pc(58) int local58 = 0; local58 < local14; local58++) {
+			local17[local58].anInt10881 = local4.method7389();
+		}
+		for (@Pc(72) int local72 = 0; local72 < local14; local72++) {
+			local17[local72].anInt10877 = local4.method7389();
+		}
+		for (@Pc(86) int local86 = 0; local86 < local14; local86++) {
+			local17[local86].anInt10876 = local4.method7389();
+		}
+		for (@Pc(100) int local100 = 0; local100 < local14; local100++) {
+			local17[local100].anInt10879 = local4.method7389();
+		}
+		for (@Pc(114) int local114 = 0; local114 < local14; local114++) {
+			@Pc(119) Class409 local119 = local17[local114];
+			local119.anInt10880 = local44 - local119.anInt10876 - local119.anInt10881;
+			local119.anInt10878 = local48 - local119.anInt10879 - local119.anInt10877;
+		}
+		local4.anInt8412 = arg0.length - local14 * 8 - (local56 - 1) * 3 - 7;
+		@Pc(160) int[] local160 = new int[local56];
+		for (@Pc(162) int local162 = 1; local162 < local56; local162++) {
+			local160[local162] = local4.method7390();
+			if (local160[local162] == 0) {
+				local160[local162] = 1;
 			}
-			if (arg3 > arg1 && arg3 < arg1 + arg4) {
-				local15 = arg4 - 1;
-				@Pc(19) int local19 = arg1 + local15;
-				@Pc(23) int local23 = arg3 + local15;
-				local15 = local19 - local15;
-				local15 += 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
+		}
+		for (@Pc(183) int local183 = 0; local183 < local14; local183++) {
+			local17[local183].anIntArray882 = local160;
+		}
+		local4.anInt8412 = 0;
+		for (@Pc(198) int local198 = 0; local198 < local14; local198++) {
+			@Pc(203) Class409 local203 = local17[local198];
+			@Pc(209) int local209 = local203.anInt10876 * local203.anInt10879;
+			local203.aByteArray114 = new byte[local209];
+			@Pc(217) int local217 = local4.method7403();
+			@Pc(245) int local245;
+			if ((local217 & 0x2) == 0) {
+				@Pc(227) int local227;
+				if ((local217 & 0x1) == 0) {
+					for (local227 = 0; local227 < local209; local227++) {
+						local203.aByteArray114[local227] = local4.method7384();
+					}
+				} else {
+					for (local227 = 0; local227 < local203.anInt10876; local227++) {
+						for (local245 = 0; local245 < local203.anInt10879; local245++) {
+							local203.aByteArray114[local227 + local245 * local203.anInt10876] = local4.method7384();
+						}
+					}
 				}
-				local15 -= 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
+			} else {
+				@Pc(271) boolean local271 = false;
+				local203.aByteArray115 = new byte[local209];
+				@Pc(295) int local295;
+				if ((local217 & 0x1) == 0) {
+					for (local245 = 0; local245 < local209; local245++) {
+						local203.aByteArray114[local245] = local4.method7384();
+					}
+					for (local295 = 0; local295 < local209; local295++) {
+						@Pc(305) byte local305 = local203.aByteArray115[local295] = local4.method7384();
+						local271 |= local305 != -1;
+					}
+				} else {
+					for (local245 = 0; local245 < local203.anInt10876; local245++) {
+						for (local295 = 0; local295 < local203.anInt10879; local295++) {
+							local203.aByteArray114[local245 + local295 * local203.anInt10876] = local4.method7384();
+						}
+					}
+					for (local295 = 0; local295 < local203.anInt10876; local295++) {
+						for (@Pc(352) int local352 = 0; local352 < local203.anInt10879; local352++) {
+							@Pc(367) byte local367 = local203.aByteArray115[local295 + local352 * local203.anInt10876] = local4.method7384();
+							local271 |= local367 != -1;
+						}
+					}
 				}
-				return;
+				if (!local271) {
+					local203.aByteArray115 = null;
+				}
 			}
 		}
-		local15 = arg4 + arg1;
-		@Pc(115) int local115 = local15 - 7;
-		while (arg1 < local115) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local15 = local115 + 7;
-		while (arg1 < local15) {
-			arg2[arg3++] = arg0[arg1++];
-		}
+		return local17;
 	}
 
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([IIII)V")
-	public static void method7697(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		@Pc(5) int local5 = arg1 + arg2 - 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-			arg0[arg1++] = arg3;
-		}
-		local5 += 7;
-		while (arg1 < local5) {
-			arg0[arg1++] = arg3;
-		}
+	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;I)Lclient!wp;")
+	public static Class409 method9386(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+		@Pc(4) byte[] local4 = arg0.method7596(arg1);
+		return local4 == null ? null : method9383(local4)[0];
 	}
 
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([Ljava/lang/Object;I[Ljava/lang/Object;II)V")
-	public static void method7698(@OriginalArg(0) Object[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Object[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(15) int local15;
-		if (arg0 == arg2) {
-			if (arg1 == arg3) {
-				return;
-			}
-			if (arg3 > arg1 && arg3 < arg1 + arg4) {
-				local15 = arg4 - 1;
-				@Pc(19) int local19 = arg1 + local15;
-				@Pc(23) int local23 = arg3 + local15;
-				local15 = local19 - local15;
-				local15 += 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-				}
-				local15 -= 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-				}
-				return;
-			}
-		}
-		local15 = arg4 + arg1;
-		@Pc(115) int local115 = local15 - 7;
-		while (arg1 < local115) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local15 = local115 + 7;
-		while (arg1 < local15) {
-			arg2[arg3++] = arg0[arg1++];
-		}
+	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;II)Lclient!wp;")
+	public static Class409 method9389(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(5) byte[] local5 = arg0.method7602(arg2, arg1);
+		return local5 == null ? null : method9383(local5)[0];
 	}
 
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([SI[SII)V")
-	public static void method7699(@OriginalArg(0) short[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) short[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		if (arg0 == arg2) {
-			return;
-		}
-		@Pc(114) int local114 = arg4;
-		@Pc(115) int local115 = local114 - 7;
-		while (arg1 < local115) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local114 = local115 + 7;
-		while (arg1 < local114) {
-			arg2[arg3++] = arg0[arg1++];
-		}
-	}
-
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([JI[JII)V")
-	public static void method7700(@OriginalArg(0) long[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) long[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(15) int local15;
-		if (arg0 == arg2) {
-			if (arg1 == arg3) {
-				return;
-			}
-			if (arg3 > arg1 && arg3 < arg1 + arg4) {
-				local15 = arg4 - 1;
-				@Pc(19) int local19 = arg1 + local15;
-				@Pc(23) int local23 = arg3 + local15;
-				local15 = local19 - local15;
-				local15 += 3;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-				}
-				local15 -= 3;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-				}
-				return;
-			}
-		}
-		local15 = arg4 + arg1;
-		@Pc(83) int local83 = local15 - 3;
-		while (arg1 < local83) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local15 = local83 + 3;
-		while (arg1 < local15) {
-			arg2[arg3++] = arg0[arg1++];
-		}
-	}
-
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([BI[BII)V")
-	public static void method7701(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(15) int local15;
-		if (arg0 == arg2) {
-			if (arg1 == arg3) {
-				return;
-			}
-			if (arg3 > arg1 && arg3 < arg1 + arg4) {
-				local15 = arg4 - 1;
-				@Pc(19) int local19 = arg1 + local15;
-				@Pc(23) int local23 = arg3 + local15;
-				local15 = local19 - local15;
-				local15 += 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-				}
-				local15 -= 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-				}
-				return;
-			}
-		}
-		local15 = arg4 + arg1;
-		@Pc(115) int local115 = local15 - 7;
-		while (arg1 < local115) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local15 = local115 + 7;
-		while (arg1 < local15) {
-			arg2[arg3++] = arg0[arg1++];
-		}
-	}
-
-	@OriginalMember(owner = "client!si", name = "a", descriptor = "([II[III)V")
-	public static void method7702(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
-		@Pc(15) int local15;
-		if (arg0 == arg2) {
-			if (arg1 == arg3) {
-				return;
-			}
-			if (arg3 > arg1 && arg3 < arg1 + arg4) {
-				local15 = arg4 - 1;
-				@Pc(19) int local19 = arg1 + local15;
-				@Pc(23) int local23 = arg3 + local15;
-				local15 = local19 - local15;
-				local15 += 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-					arg2[local23--] = arg0[local19--];
-				}
-				local15 -= 7;
-				while (local19 >= local15) {
-					arg2[local23--] = arg0[local19--];
-				}
-				return;
-			}
-		}
-		local15 = arg4 + arg1;
-		@Pc(115) int local115 = local15 - 7;
-		while (arg1 < local115) {
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-			arg2[arg3++] = arg0[arg1++];
-		}
-		local15 = local115 + 7;
-		while (arg1 < local15) {
-			arg2[arg3++] = arg0[arg1++];
-		}
+	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;I)[Lclient!wp;")
+	public static Class409[] method9394(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+		@Pc(4) byte[] local4 = arg0.method7596(arg1);
+		return local4 == null ? null : method9383(local4);
 	}
 }

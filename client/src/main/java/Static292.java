@@ -16,12 +16,12 @@ public final class Static292 {
 	@OriginalMember(owner = "client!jea", name = "a", descriptor = "(ILclient!ha;IIIBI)V")
 	public static void method4611(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(6) int arg4) {
 		if ((Static26.aClass23_5 == null || Static63.aClass23_8 == null || Static261.aClass23_18 == null) && Static721.aClass332_128.method7588(Static337.anInt5581) && Static721.aClass332_128.method7588(Static176.anInt7555) && Static721.aClass332_128.method7588(Static282.anInt4432)) {
-			@Pc(46) Class409 local46 = Static736.method9389(Static721.aClass332_128, Static176.anInt7555, 0);
+			@Pc(46) Class409 local46 = Static735.method9389(Static721.aClass332_128, Static176.anInt7555, 0);
 			Static63.aClass23_8 = arg1.method7955(local46, true);
 			local46.method9395();
 			Static542.aClass23_33 = arg1.method7955(local46, true);
-			Static26.aClass23_5 = arg1.method7955(Static736.method9389(Static721.aClass332_128, Static337.anInt5581, 0), true);
-			@Pc(71) Class409 local71 = Static736.method9389(Static721.aClass332_128, Static282.anInt4432, 0);
+			Static26.aClass23_5 = arg1.method7955(Static735.method9389(Static721.aClass332_128, Static337.anInt5581, 0), true);
+			@Pc(71) Class409 local71 = Static735.method9389(Static721.aClass332_128, Static282.anInt4432, 0);
 			Static261.aClass23_18 = arg1.method7955(local71, true);
 			local71.method9395();
 			Static561.aClass23_34 = arg1.method7955(local71, true);

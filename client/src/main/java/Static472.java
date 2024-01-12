@@ -135,7 +135,7 @@ public final class Static472 {
 				local71 = Static453.aClass158ArrayArray2[local119];
 				@Pc(132) int local132 = local71.length;
 				local123 = Static148.aClass158ArrayArray1[local119] = new Class158[local132];
-				Static735.method7698(local71, 0, local123, 0, local71.length);
+				Static734.method7698(local71, 0, local123, 0, local71.length);
 			}
 			@Pc(148) int local148;
 			for (local148 = 0; local148 < local123.length && local123[local148] != arg0; local148++) {
@@ -143,7 +143,7 @@ public final class Static472 {
 			if (local148 >= local123.length) {
 				return;
 			}
-			Static735.method7698(local123, local148 + 1, local123, local148, local123.length - local148 - 1);
+			Static734.method7698(local123, local148 + 1, local123, local148, local123.length - local148 - 1);
 			local123[local123.length - 1] = arg0;
 			return;
 		}
@@ -154,8 +154,8 @@ public final class Static472 {
 		if (local12.aClass158Array1 == local12.aClass158Array2) {
 			local12.aClass158Array1 = new Class158[local12.aClass158Array2.length];
 			local12.aClass158Array1[local12.aClass158Array1.length - 1] = arg0;
-			Static735.method7698(local12.aClass158Array2, 0, local12.aClass158Array1, 0, arg0.anInt3751);
-			Static735.method7698(local12.aClass158Array2, arg0.anInt3751 + 1, local12.aClass158Array1, arg0.anInt3751, local12.aClass158Array2.length - arg0.anInt3751 - 1);
+			Static734.method7698(local12.aClass158Array2, 0, local12.aClass158Array1, 0, arg0.anInt3751);
+			Static734.method7698(local12.aClass158Array2, arg0.anInt3751 + 1, local12.aClass158Array1, arg0.anInt3751, local12.aClass158Array2.length - arg0.anInt3751 - 1);
 			return;
 		}
 		@Pc(68) int local68 = 0;
@@ -166,7 +166,7 @@ public final class Static472 {
 		if (local68 >= local71.length) {
 			return;
 		}
-		Static735.method7698(local71, local68 + 1, local71, local68, local71.length - local68 - 1);
+		Static734.method7698(local71, local68 + 1, local71, local68, local71.length - local68 - 1);
 		local71[local12.aClass158Array1.length - 1] = arg0;
 		return;
 	}
@@ -3161,7 +3161,7 @@ public final class Static472 {
 				local69 = Static453.aClass158ArrayArray2[local106];
 				@Pc(119) int local119 = local69.length;
 				local110 = Static148.aClass158ArrayArray1[local106] = new Class158[local119];
-				Static735.method7698(local69, 0, local110, 0, local69.length);
+				Static734.method7698(local69, 0, local110, 0, local69.length);
 			}
 			@Pc(135) int local135;
 			for (local135 = 0; local135 < local110.length && local110[local135] != arg0; local135++) {
@@ -3169,7 +3169,7 @@ public final class Static472 {
 			if (local135 >= local110.length) {
 				return;
 			}
-			Static735.method7698(local110, 0, local110, 1, local135);
+			Static734.method7698(local110, 0, local110, 1, local135);
 			local110[0] = arg0;
 			return;
 		}
@@ -3180,8 +3180,8 @@ public final class Static472 {
 		if (local12.aClass158Array1 == local12.aClass158Array2) {
 			local12.aClass158Array1 = new Class158[local12.aClass158Array2.length];
 			local12.aClass158Array1[0] = arg0;
-			Static735.method7698(local12.aClass158Array2, 0, local12.aClass158Array1, 1, arg0.anInt3751);
-			Static735.method7698(local12.aClass158Array2, arg0.anInt3751 + 1, local12.aClass158Array1, arg0.anInt3751 + 1, local12.aClass158Array2.length - arg0.anInt3751 - 1);
+			Static734.method7698(local12.aClass158Array2, 0, local12.aClass158Array1, 1, arg0.anInt3751);
+			Static734.method7698(local12.aClass158Array2, arg0.anInt3751 + 1, local12.aClass158Array1, arg0.anInt3751 + 1, local12.aClass158Array2.length - arg0.anInt3751 - 1);
 			return;
 		}
 		@Pc(66) int local66 = 0;
@@ -3192,7 +3192,7 @@ public final class Static472 {
 		if (local66 >= local69.length) {
 			return;
 		}
-		Static735.method7698(local69, 0, local69, 1, local66);
+		Static734.method7698(local69, 0, local69, 1, local66);
 		local69[0] = arg0;
 		return;
 	}
@@ -5466,7 +5466,7 @@ public final class Static472 {
 					if (arg0 == 6305) {
 						local192 = anIntArray578[--anInt7163];
 						@Pc(7512) int[] local7512 = Static212.method3135(local192);
-						Static735.method7702(local7512, 0, anIntArray578, anInt7163, 3);
+						Static734.method7702(local7512, 0, anIntArray578, anInt7163, 3);
 						anInt7163 += 3;
 						return;
 					}

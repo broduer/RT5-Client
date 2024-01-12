@@ -64,7 +64,7 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		super.aClass19_Sub1_Sub2_12.method8095(this);
 		OpenGL.glGetTexImagei(super.anInt9874, 0, 32993, 5121, local12, 0);
 		for (@Pc(32) int local32 = 0; local32 < arg2; local32++) {
-			Static735.method7702(local12, (arg2 - local32 - 1) * this.anInt6914, arg0, arg1 * local32, arg1);
+			Static734.method7702(local12, (arg2 - local32 - 1) * this.anInt6914, arg0, arg1 * local32, arg1);
 		}
 	}
 

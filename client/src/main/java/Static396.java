@@ -7,7 +7,7 @@ public final class Static396 {
 	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IB[B)[B")
 	public static byte[] method5557(@OriginalArg(0) int arg0, @OriginalArg(2) byte[] arg1) {
 		@Pc(14) byte[] local14 = new byte[arg0];
-		Static735.method7701(arg1, 0, local14, 0, arg0);
+		Static734.method7701(arg1, 0, local14, 0, arg0);
 		return local14;
 	}
 

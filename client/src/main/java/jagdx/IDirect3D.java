@@ -41,7 +41,7 @@ public final class IDirect3D extends IUnknown {
 	public D3DADAPTER_IDENTIFIER b(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(3) D3DADAPTER_IDENTIFIER local3 = new D3DADAPTER_IDENTIFIER();
 		@Pc(9) int local9 = this._GetAdapterIdentifier(arg0, arg1, local3);
-		if (Static731.method4162(local9, true)) {
+		if (Class190.method4162(local9)) {
 			throw new RuntimeException_Sub2(String.valueOf(local9));
 		}
 		return local3;

@@ -146,11 +146,11 @@ public final class Class192 implements Runnable {
 				throw new IOException(this.anIOException1.toString());
 			}
 			if (this.anInt4681 >= this.anInt4680 + arg0) {
-				Static735.method7701(this.aByteArray47, this.anInt4680, arg2, arg1, arg0);
+				Static734.method7701(this.aByteArray47, this.anInt4680, arg2, arg1, arg0);
 			} else {
 				@Pc(117) int local117 = this.anInt4681 - this.anInt4680;
-				Static735.method7701(this.aByteArray47, this.anInt4680, arg2, arg1, local117);
-				Static735.method7701(this.aByteArray47, 0, arg2, local117 + arg1, arg0 + -local117);
+				Static734.method7701(this.aByteArray47, this.anInt4680, arg2, arg1, local117);
+				Static734.method7701(this.aByteArray47, 0, arg2, local117 + arg1, arg0 + -local117);
 			}
 			this.anInt4680 = (arg0 + this.anInt4680) % this.anInt4681;
 			this.notifyAll();

@@ -98,7 +98,7 @@ public final class Static397 {
 		}
 		@Pc(27) Class23 local27 = (Class23) Static541.aClass82_174.method2156((long) local7);
 		if (local27 == null) {
-			@Pc(34) Class409[] local34 = Static736.method9382(Static721.aClass332_128, local7);
+			@Pc(34) Class409[] local34 = Static735.method9382(Static721.aClass332_128, local7);
 			if (local34 == null) {
 				return;
 			}

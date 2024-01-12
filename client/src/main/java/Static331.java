@@ -38,7 +38,7 @@ public final class Static331 {
 		anInt5459 = arg0.length;
 		Static186.aClass23Array5 = new Class23[anInt5459 + 10];
 		Static460.anIntArray554 = new int[anInt5459 + 10];
-		Static735.method7698(arg0, 0, Static186.aClass23Array5, 0, anInt5459);
+		Static734.method7698(arg0, 0, Static186.aClass23Array5, 0, anInt5459);
 		for (@Pc(32) int local32 = 0; local32 < anInt5459; local32++) {
 			Static460.anIntArray554[local32] = Static186.aClass23Array5[local32].method8199();
 		}

@@ -114,7 +114,7 @@ public final class Static608 {
 					if (local267 != -1) {
 						local306 = (Class23[]) Static230.aClass82_81.method2156((long) local267);
 						if (local306 == null) {
-							local313 = Static736.method9382(Static721.aClass332_128, local267);
+							local313 = Static735.method9382(Static721.aClass332_128, local267);
 							if (local313 != null) {
 								local306 = new Class23[local313.length];
 								for (local321 = 0; local321 < local313.length; local321++) {
@@ -163,7 +163,7 @@ public final class Static608 {
 						if (local504 != -1) {
 							local306 = (Class23[]) Static669.aClass82_215.method2156((long) local504);
 							if (local306 == null) {
-								local313 = Static736.method9382(Static721.aClass332_128, local504);
+								local313 = Static735.method9382(Static721.aClass332_128, local504);
 								if (local313 != null) {
 									local306 = new Class23[local313.length];
 									for (local321 = 0; local321 < local313.length; local321++) {

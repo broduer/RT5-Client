@@ -84,7 +84,7 @@ public final class Static587 {
 				}
 			}
 			Static679.aClass275Array1 = new Class275[local26];
-			Static735.method7698(local24, 0, Static679.aClass275Array1, 0, local26);
+			Static734.method7698(local24, 0, Static679.aClass275Array1, 0, local26);
 			@Pc(175) int[] local175 = new int[Static679.aClass275Array1.length];
 			for (local112 = 0; local112 < Static679.aClass275Array1.length; local112++) {
 				local117 = Static679.aClass275Array1[local112];

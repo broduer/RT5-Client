@@ -24,7 +24,7 @@ public final class Class39_Sub17 extends Class39 {
 		this.anInt7645 = arg0.method7389();
 		this.anIntArray611 = new int[4];
 		this.anInt7647 = arg0.method7353();
-		Static735.method7697(this.anIntArray611, 0, this.anIntArray611.length, this.anInt7647);
+		Static734.method7697(this.anIntArray611, 0, this.anIntArray611.length, this.anInt7647);
 		this.anInt7648 = arg0.method7356();
 	}
 

@@ -628,17 +628,17 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(34) int local34;
 		if (local6 < 0) {
 			local34 = local24.length + local6;
-			Static735.method7702(local24, -local6, local24, 0, local34);
+			Static734.method7702(local24, -local6, local24, 0, local34);
 		} else if (local6 > 0) {
 			local34 = local24.length - local6;
-			Static735.method7702(local24, 0, local24, local6, local34);
+			Static734.method7702(local24, 0, local24, local6, local34);
 		}
 		if (local13 < 0) {
 			local34 = local27.length + local13;
-			Static735.method7696(local27, -local13, local27, 0, local34);
+			Static734.method7696(local27, -local13, local27, 0, local34);
 		} else if (local13 > 0) {
 			local34 = local27.length - local13;
-			Static735.method7696(local27, 0, local27, local13, local34);
+			Static734.method7696(local27, 0, local27, local13, local34);
 		}
 	}
 

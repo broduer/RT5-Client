@@ -19,7 +19,7 @@ public final class Static72 {
 			if (local19.anInt5724 != -1) {
 				@Pc(34) Class23 local34 = (Class23) Static452.aClass82_149.method2156((long) local19.anInt5724);
 				if (local34 == null) {
-					@Pc(42) Class409 local42 = Static736.method9389(Static721.aClass332_128, local19.anInt5724, 0);
+					@Pc(42) Class409 local42 = Static735.method9389(Static721.aClass332_128, local19.anInt5724, 0);
 					if (local42 != null) {
 						local34 = Static163.aClass19_17.method7955(local42, true);
 						Static452.aClass82_149.method2150(local34, (long) local19.anInt5724);

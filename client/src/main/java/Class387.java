@@ -124,10 +124,10 @@ public final class Class387 implements Runnable {
 			}
 			if (arg1 + this.anInt10311 > this.anInt10315) {
 				@Pc(101) int local101 = this.anInt10315 - this.anInt10311;
-				Static735.method7701(arg0, 0, this.aByteArray108, this.anInt10311, local101);
-				Static735.method7701(arg0, local101, this.aByteArray108, 0, arg1 - local101);
+				Static734.method7701(arg0, 0, this.aByteArray108, this.anInt10311, local101);
+				Static734.method7701(arg0, local101, this.aByteArray108, 0, arg1 - local101);
 			} else {
-				Static735.method7701(arg0, 0, this.aByteArray108, this.anInt10311, arg1);
+				Static734.method7701(arg0, 0, this.aByteArray108, this.anInt10311, arg1);
 			}
 			this.anInt10311 = (arg1 + this.anInt10311) % this.anInt10315;
 			this.notifyAll();

@@ -15,7 +15,7 @@ public final class Static595 {
 			if (arg0 != null) {
 				Static163.aClass19_17.GA(0);
 				@Pc(36) Class383 local36 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-				@Pc(45) Class14 local45 = Static163.aClass19_17.method8017(local36, Static736.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+				@Pc(45) Class14 local45 = Static163.aClass19_17.method8017(local36, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
 				Static288.method4189();
 				Static694.method9035(Static163.aClass19_17, arg0, true, local36, local45);
 			}
@@ -26,7 +26,7 @@ public final class Static595 {
 				local57 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, 0, Static434.aCanvas7, 0);
 				local57.GA(0);
 				@Pc(76) Class383 local76 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-				local85 = local57.method8017(local76, Static736.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+				local85 = local57.method8017(local76, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
 				Static288.method4189();
 				Static694.method9035(local57, arg0, true, local76, local85);
 			}
@@ -38,7 +38,7 @@ public final class Static595 {
 					if (arg0 != null) {
 						local57.GA(0);
 						@Pc(118) Class383 local118 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-						@Pc(127) Class14 local127 = local57.method8017(local118, Static736.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+						@Pc(127) Class14 local127 = local57.method8017(local118, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
 						Static288.method4189();
 						Static694.method9035(local57, arg0, true, local118, local127);
 					}

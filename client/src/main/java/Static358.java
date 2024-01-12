@@ -17,7 +17,7 @@ public final class Static358 {
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(BI[S)[S")
 	public static short[] method9180(@OriginalArg(1) int arg0, @OriginalArg(2) short[] arg1) {
 		@Pc(14) short[] local14 = new short[arg0];
-		Static735.method7699(arg1, 0, local14, 0, arg0);
+		Static734.method7699(arg1, 0, local14, 0, arg0);
 		return local14;
 	}
 

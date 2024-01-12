@@ -119,7 +119,7 @@ public final class Class406 {
 		while (this.anInt10836 < 32) {
 			this.aByteArray112[this.anInt10836++] = 0;
 		}
-		Static735.method7701(this.aByteArray113, 0, this.aByteArray112, 32, 32);
+		Static734.method7701(this.aByteArray113, 0, this.aByteArray112, 32, 32);
 		this.method9352();
 		@Pc(105) int local105 = 0;
 		@Pc(107) int local107 = 0;

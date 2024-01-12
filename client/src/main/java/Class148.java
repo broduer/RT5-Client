@@ -243,7 +243,7 @@ public final class Class148 {
 					this.aByteArray35 = null;
 				} else {
 					this.aByteArray35 = new byte[local49.length];
-					Static735.method7701(local49, 0, this.aByteArray35, 0, local49.length);
+					Static734.method7701(local49, 0, this.aByteArray35, 0, local49.length);
 				}
 			}
 		} catch (@Pc(73) Exception local73) {

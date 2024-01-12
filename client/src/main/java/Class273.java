@@ -62,7 +62,7 @@ public final class Class273 {
 			@Pc(118) boolean local118 = Static650.method8516() != 0;
 			@Pc(127) int local127;
 			if (local27 == 1) {
-				local127 = Static732.method6116(this.anInt6823, this.anInt6824);
+				local127 = Static731.method6116(this.anInt6823, this.anInt6824);
 			} else {
 				local127 = this.anInt6823 * this.anInt6824;
 			}

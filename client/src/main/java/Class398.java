@@ -47,7 +47,7 @@ public final class Class398 {
 	@OriginalMember(owner = "client!wca", name = "a", descriptor = "(I)[Ljava/lang/String;")
 	public String[] method9158() {
 		@Pc(16) String[] local16 = new String[this.anInt10572 + 1];
-		Static735.method7698(this.aStringArray48, 0, local16, 0, this.anInt10572 + 1);
+		Static734.method7698(this.aStringArray48, 0, local16, 0, this.anInt10572 + 1);
 		return local16;
 	}
 
@@ -69,7 +69,7 @@ public final class Class398 {
 	@OriginalMember(owner = "client!wca", name = "a", descriptor = "(IB)V")
 	private void method9163(@OriginalArg(0) int arg0) {
 		@Pc(9) String[] local9 = new String[this.method9161(arg0)];
-		Static735.method7698(this.aStringArray48, 0, local9, 0, this.aStringArray48.length);
+		Static734.method7698(this.aStringArray48, 0, local9, 0, this.aStringArray48.length);
 		this.aStringArray48 = local9;
 	}
 

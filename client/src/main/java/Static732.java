@@ -4,11 +4,26 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static732 {
 
-	@OriginalMember(owner = "client!oca", name = "a", descriptor = "(II)I")
-	public static int method6116(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(10) int local10;
-		for (local10 = (int) Math.pow((double) arg0, 1.0D / (double) arg1) + 1; Static39.method1020(arg1, local10) > arg0; local10--) {
+	@OriginalMember(owner = "client!qs", name = "b", descriptor = "(II)I")
+	public static int method7174(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+		@Pc(7) int local7 = (arg0 & 0xFF0000) * arg1 >> 23;
+		if (local7 < 2) {
+			local7 = 2;
+		} else if (local7 > 253) {
+			local7 = 253;
 		}
-		return local10;
+		@Pc(26) int local26 = (arg0 & 0xFF00) * arg1 >> 15;
+		if (local26 < 2) {
+			local26 = 2;
+		} else if (local26 > 253) {
+			local26 = 253;
+		}
+		@Pc(45) int local45 = (arg0 & 0xFF) * arg1 >> 7;
+		if (local45 < 2) {
+			local45 = 2;
+		} else if (local45 > 253) {
+			local45 = 253;
+		}
+		return local7 << 16 | local26 << 8 | local45;
 	}
 }

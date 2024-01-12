@@ -19,7 +19,7 @@ public final class Static585 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(IIZ[B)[B")
 	public static byte[] method7681(@OriginalArg(0) int arg0, @OriginalArg(3) byte[] arg1) {
 		@Pc(6) byte[] local6 = new byte[32768];
-		Static735.method7701(arg1, arg0, local6, 0, 32768);
+		Static734.method7701(arg1, arg0, local6, 0, 32768);
 		return local6;
 	}
 

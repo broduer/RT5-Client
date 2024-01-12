@@ -29,7 +29,7 @@ public final class Static652 {
 		@Pc(16) Class23 local16 = (Class23) Static594.aClass82_193.method2156((long) arg0);
 		if (local16 == null) {
 			if (Static297.aBoolean368) {
-				local16 = Static163.aClass19_17.method7955(Static736.method9386(arg1, arg0), true);
+				local16 = Static163.aClass19_17.method7955(Static735.method9386(arg1, arg0), true);
 			} else {
 				local16 = Static168.method2634(arg1.method7596(arg0));
 			}

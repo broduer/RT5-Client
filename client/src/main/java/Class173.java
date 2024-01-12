@@ -25,7 +25,7 @@ public final class Class173 {
 		if (local31 != null) {
 			return local31;
 		} else if (this.aClass365_2.aClass332_116.method7588(this.anInt4178)) {
-			@Pc(55) Class409 local55 = Static736.method9389(this.aClass365_2.aClass332_116, this.anInt4178, 0);
+			@Pc(55) Class409 local55 = Static735.method9389(this.aClass365_2.aClass332_116, this.anInt4178, 0);
 			if (local55 != null) {
 				local55.anInt10878 = local55.anInt10881 = local55.anInt10880 = local55.anInt10877 = 0;
 				if (arg2) {

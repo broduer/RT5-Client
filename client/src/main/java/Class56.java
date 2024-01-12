@@ -228,7 +228,7 @@ public class Class56 {
 		if (Static316.aBoolean645) {
 			local1 = 512;
 		}
-		Static735.method7695(arg0, 0, local1);
+		Static734.method7695(arg0, 0, local1);
 		this.anInt4110 -= 256;
 		if (this.aClass2_Sub6_6 != null && this.anInt4110 <= 0) {
 			this.anInt4110 += Static686.anInt8968 >> 4;

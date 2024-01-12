@@ -40,7 +40,7 @@ public final class Class2_Sub1_Sub17 extends Class2_Sub1 {
 		}
 		@Pc(16) int[] local16 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
-			Static735.method7697(local16, 0, Static608.anInt9315, this.anInt5985);
+			Static734.method7697(local16, 0, Static608.anInt9315, this.anInt5985);
 		}
 		return local16;
 	}

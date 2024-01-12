@@ -154,7 +154,7 @@ public final class Class409 {
 			if (local1 == -1) {
 				local1 = this.anIntArray882.length;
 				@Pc(38) int[] local38 = new int[this.anIntArray882.length + 1];
-				Static735.method7702(this.anIntArray882, 0, local38, 0, this.anIntArray882.length);
+				Static734.method7702(this.anIntArray882, 0, local38, 0, this.anIntArray882.length);
 				this.anIntArray882 = local38;
 				local38[local1] = arg0;
 			}
@@ -253,7 +253,7 @@ public final class Class409 {
 			if (local1 == -1) {
 				local1 = this.anIntArray882.length;
 				@Pc(38) int[] local38 = new int[this.anIntArray882.length + 1];
-				Static735.method7702(this.anIntArray882, 0, local38, 0, this.anIntArray882.length);
+				Static734.method7702(this.anIntArray882, 0, local38, 0, this.anIntArray882.length);
 				this.anIntArray882 = local38;
 				local38[local1] = arg0;
 			}
