@@ -20,9 +20,6 @@ public final class Static541 {
 				return local7;
 			}
 		}
-		if (false) {
-			method7206();
-		}
 		return -1;
 	}
 }

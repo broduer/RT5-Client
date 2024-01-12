@@ -10,12 +10,8 @@ public final class GranulePos extends SimplePeer {
 	@OriginalMember(owner = "client!jagtheora/theora/GranulePos", name = "position", descriptor = "J")
 	private long position;
 
-	static {
-		init();
-	}
-
 	@OriginalMember(owner = "client!jagtheora/theora/GranulePos", name = "init", descriptor = "()V")
-	private static native void init();
+	private native void init();
 
 	@OriginalMember(owner = "client!jagtheora/theora/GranulePos", name = "clear", descriptor = "()V")
 	protected native void clear();

@@ -1,6 +1,7 @@
 package jagdx;
 
 import jaclib.memory.Buffer;
+import jaclib.peer.Class189;
 import jaclib.peer.Peer_Sub1;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -8,6 +9,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!jagdx/PixelBuffer")
 public final class PixelBuffer extends Peer_Sub1 implements Buffer {
+
+	public PixelBuffer(Class189 arg0) {
+		super(arg0);
+		this.init();
+	}
 
 	@OriginalMember(owner = "client!jagdx/PixelBuffer", name = "b", descriptor = "([IIII)V")
 	public void b(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {

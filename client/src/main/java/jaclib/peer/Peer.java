@@ -14,12 +14,8 @@ public abstract class Peer {
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "reference", descriptor = "Lclient!jaclib/peer/PeerReference;")
 	protected PeerReference reference;
 
-	static {
-		init(a == null ? (a = a("jaclib.peer.PeerReference")) : a);
-	}
-
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "init", descriptor = "(Ljava/lang/Class;)V")
-	private static native void init(@OriginalArg(0) Class arg0);
+	private native void init(@OriginalArg(0) Class arg0);
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "<init>", descriptor = "()V")
 	protected Peer() {

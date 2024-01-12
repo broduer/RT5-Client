@@ -14,6 +14,11 @@ public final class IDirect3D extends IUnknown {
 	@OriginalMember(owner = "client!jagdx/IDirect3D", name = "b", descriptor = "Lclient!jaclib/peer/ti;")
 	private Class189 b;
 
+	public IDirect3D(Class189 arg0) {
+		super(arg0);
+		this.b = arg0;
+	}
+
 	@OriginalMember(owner = "client!jagdx/IDirect3D", name = "_Direct3DCreate", descriptor = "(ILclient!jagdx/IDirect3D;)I")
 	private static native int _Direct3DCreate(@OriginalArg(0) int arg0, @OriginalArg(1) IDirect3D arg1);
 

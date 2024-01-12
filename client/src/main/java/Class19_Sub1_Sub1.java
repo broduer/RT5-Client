@@ -25,6 +25,10 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!kea")
 public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 
+	public Class19_Sub1_Sub1(Canvas arg0, Object arg1, Interface4 arg2, Class332 arg3, int arg4, int arg5) {
+		super(arg0, arg1, arg2, arg3, arg4, arg5);
+	}
+
 	@OriginalMember(owner = "client!kea", name = "Og", descriptor = "Lclient!jagdx/IDirect3DVertexShader;")
 	private IDirect3DVertexShader anIDirect3DVertexShader1;
 

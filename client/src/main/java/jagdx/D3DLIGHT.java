@@ -1,5 +1,6 @@
 package jagdx;
 
+import jaclib.peer.Class189;
 import jaclib.peer.Peer_Sub1;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -7,6 +8,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!jagdx/D3DLIGHT")
 public final class D3DLIGHT extends Peer_Sub1 {
+
+	public D3DLIGHT(Class189 arg0) {
+		super(arg0);
+		this.Init();
+	}
 
 	@OriginalMember(owner = "client!jagdx/D3DLIGHT", name = "SetSpotParams", descriptor = "(FFF)V")
 	private native void SetSpotParams(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2);

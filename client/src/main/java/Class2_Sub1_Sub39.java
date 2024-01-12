@@ -30,9 +30,6 @@ public final class Class2_Sub1_Sub39 extends Class2_Sub1 {
 		} else if (arg2 == 2) {
 			this.anInt10922 = arg1.method7389();
 		}
-		if (arg0) {
-			Static721.method9431(-119);
-		}
 	}
 
 	@OriginalMember(owner = "client!ws", name = "a", descriptor = "(II)[I")
@@ -75,9 +72,6 @@ public final class Class2_Sub1_Sub39 extends Class2_Sub1 {
 				}
 				local11[local17] = 4096;
 			}
-		}
-		if (arg0 <= 107) {
-			Static721.method9431(-36);
 		}
 		return local11;
 	}

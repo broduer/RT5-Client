@@ -16,6 +16,11 @@ public final class IDirect3DDevice extends IUnknown {
 	@OriginalMember(owner = "client!jagdx/IDirect3DDevice", name = "b", descriptor = "Lclient!jaclib/peer/ti;")
 	private Class189 b;
 
+	public IDirect3DDevice(Class189 arg0) {
+		super(arg0);
+		this.b = arg0;
+	}
+
 	@OriginalMember(owner = "client!jagdx/IDirect3DDevice", name = "SetLight", descriptor = "(ILclient!jagdx/D3DLIGHT;)I")
 	public native int SetLight(@OriginalArg(0) int arg0, @OriginalArg(1) D3DLIGHT arg1);
 
@@ -165,7 +170,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DEventQuery b() {
 		@Pc(5) IDirect3DEventQuery local5 = new IDirect3DEventQuery(this.b);
 		if (Class190.method4161(this._CreateEventQuery(local5))) {
-			return local5.a((byte) -127) ? local5 : null;
+			return null; // todo: local5.a((byte) -127) ? local5 : null;
 		} else {
 			return null;
 		}

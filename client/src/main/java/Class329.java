@@ -36,7 +36,7 @@ public final class Class329 {
 
 	static {
 		for (@Pc(24) int local24 = 0; local24 < 256; local24++) {
-			@Pc(31) int local31 = z[0].indexOf(local24);
+			@Pc(31) int local31 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".indexOf(local24);
 			if (local31 == -1) {
 				local31 = 74;
 			}

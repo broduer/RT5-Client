@@ -24,9 +24,6 @@ public final class Static470 {
 
 	@OriginalMember(owner = "client!or", name = "a", descriptor = "(Lclient!hda;III)V")
 	public static void method6390(@OriginalArg(0) Class158 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
-		if (arg3 != -8525) {
-			method6392(22);
-		}
 		if (arg0.aByte64 == 0) {
 			arg0.anInt3794 = arg0.anInt3819;
 		} else if (arg0.aByte64 == 1) {

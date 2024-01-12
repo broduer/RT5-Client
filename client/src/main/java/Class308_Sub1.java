@@ -790,12 +790,22 @@ public final class Class308_Sub1 extends Class308 {
 			local5 = (Interface25) Static114.method2134(arg2, arg0, arg1);
 		}
 		if (arg3 == 2) {
-			local5 = (Interface25) Static578.method7630(arg2, arg0, arg1, Static603.aClass22 == null ? (Static603.aClass22 = a("uv")) : Static603.aClass22);
+			local5 = (Interface25) Static578.method7630(arg2, arg0, arg1, Static603.aClass22 == null ? (Static603.aClass22 = getClass("Interface25")) : Static603.aClass22);
 		}
 		if (arg3 == 3) {
 			local5 = (Interface25) Static687.method8966(arg2, arg0, arg1);
 		}
 		return local5;
+	}
+
+	static Class getClass(String name) {
+		Class instance;
+		try {
+			instance = Class.forName(name);
+		} catch (ClassNotFoundException ex) {
+			throw (NoClassDefFoundError) new NoClassDefFoundError().initCause(ex);
+		}
+		return instance;
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(I[Lclient!eq;ILclient!ha;BII[BIII)V")
@@ -941,7 +951,7 @@ public final class Class308_Sub1 extends Class308 {
 		} else if (arg0 == 1) {
 			Static173.method2692(arg3, arg4, arg1);
 		} else if (arg0 == 2) {
-			Static10.method130(arg3, arg4, arg1, Static603.aClass22 == null ? (Static603.aClass22 = a("uv")) : Static603.aClass22);
+			Static10.method130(arg3, arg4, arg1, Static603.aClass22 == null ? (Static603.aClass22 = getClass("Interface25")) : Static603.aClass22);
 			if (local22.anInt1247 != 0 && super.anInt8930 > local22.anInt1275 + arg4 && super.anInt8928 > local22.anInt1275 + arg1 && arg4 + local22.anInt1234 < super.anInt8930 && local22.anInt1234 + arg1 < super.anInt8928) {
 				arg2.method2468(local22.aBoolean99, !local22.aBoolean97, arg4, local22.anInt1275, local22.anInt1234, local30, arg1);
 			}
