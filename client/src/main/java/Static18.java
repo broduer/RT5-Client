@@ -1,0 +1,22 @@
+import org.openrs2.deob.annotation.OriginalMember;
+
+public final class Static18 {
+
+	@OriginalMember(owner = "client!aka", name = "f", descriptor = "F")
+	public static float aFloat2;
+
+	@OriginalMember(owner = "client!aka", name = "m", descriptor = "Lclient!av;")
+	public static final Class28 aClass28_2 = new Class28(64);
+
+	@OriginalMember(owner = "client!aka", name = "l", descriptor = "I")
+	public static int anInt251 = 0;
+
+	@OriginalMember(owner = "client!aka", name = "o", descriptor = "Z")
+	public static boolean aBoolean20 = true;
+
+	@OriginalMember(owner = "client!aka", name = "g", descriptor = "Lclient!lga;")
+	public static final Class227 aClass227_7 = new Class227(48, 5);
+
+	@OriginalMember(owner = "client!aka", name = "j", descriptor = "Lclient!pc;")
+	public static final Class289 aClass289_2 = new Class289(14, 5);
+}
