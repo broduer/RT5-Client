@@ -16,13 +16,13 @@ public final class Class27_Sub2 extends Class27 {
 	private long aLong83;
 
 	@OriginalMember(owner = "client!di", name = "g", descriptor = "[J")
-	private long[] aLongArray2;
+	private long[] aLongArray2 = new long[10];
 
 	@OriginalMember(owner = "client!di", name = "j", descriptor = "I")
 	private int anInt2220;
 
 	@OriginalMember(owner = "client!di", name = "h", descriptor = "I")
-	private int anInt2219;
+	private int anInt2219 = 1;
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "(BJ)I")
 	@Override

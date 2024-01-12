@@ -8,11 +8,6 @@ public final class Class2_Sub30_Sub3 extends Class2_Sub30 {
 	@OriginalMember(owner = "client!qca", name = "t", descriptor = "I")
 	private int anInt7702 = -1;
 
-	static {
-		Static514.anInt7703 = -1;
-		Static514.aClass215_2 = Static514.aClass215_3 = new Class215(false);
-	}
-
 	@OriginalMember(owner = "client!qca", name = "a", descriptor = "(Lclient!ge;I)V")
 	@Override
 	public void method7654(@OriginalArg(0) Class2_Sub21 arg0) {
