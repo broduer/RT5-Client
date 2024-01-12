@@ -26,6 +26,8 @@ public final class Static342 {
 			Static284.anInt4597 = arg0;
 		} else if (Static299.anInt4841 == 2) {
 			Static169.anInt2864 = arg0;
+			Static344.aClass231_1.anInt5876 = 15;
+			Static344.aClass231_1.anInt5873 = 50015;
 		}
 	}
 
