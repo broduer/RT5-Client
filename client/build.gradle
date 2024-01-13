@@ -16,6 +16,14 @@ application {
     mainClass = "RS2Loader"
 }
 
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'RS2Loader'
+        )
+    }
+}
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
     // options.compilerArgs << '-Xlint:unchecked' << '-Xlint:deprecation'
