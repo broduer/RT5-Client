@@ -1673,7 +1673,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.aBoolean602 = this.anOpenGL1.a("GL_EXT_framebuffer_blit");
 		this.aBoolean618 = this.anOpenGL1.a("GL_EXT_framebuffer_multisample");
 		this.aBoolean614 = this.aBoolean618 & this.aBoolean602;
-		this.aBoolean604 = Static414.aString70.startsWith("mac");
+		this.aBoolean604 = Class256.aString70.startsWith("mac");
 		OpenGL.glGetFloatv(2834, Static476.aFloatArray47, 0);
 		this.aFloat136 = Static476.aFloatArray47[0];
 		this.aFloat135 = Static476.aFloatArray47[1];

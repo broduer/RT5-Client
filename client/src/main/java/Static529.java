@@ -25,20 +25,20 @@ public final class Static529 {
 		Static442.aClass332_90 = arg0;
 		Static185.aString34 = "";
 		Static93.aClass392_1 = arg1;
-		if (Static414.aString70.startsWith("win")) {
+		if (Class256.aString70.startsWith("win")) {
 			Static185.aString34 = Static185.aString34 + "windows/";
-		} else if (Static414.aString70.startsWith("linux")) {
+		} else if (Class256.aString70.startsWith("linux")) {
 			Static185.aString34 = Static185.aString34 + "linux/";
-		} else if (Static414.aString70.startsWith("mac")) {
+		} else if (Class256.aString70.startsWith("mac")) {
 			Static185.aString34 = Static185.aString34 + "macos/";
 		}
 		if (Static93.aClass392_1.aBoolean780) {
 			Static185.aString34 = Static185.aString34 + "msjava/";
-		} else if (Static414.aString69.startsWith("amd64") || Static414.aString69.startsWith("x86_64")) {
+		} else if (Class256.aString69.startsWith("amd64") || Class256.aString69.startsWith("x86_64")) {
 			Static185.aString34 = Static185.aString34 + "x86_64/";
-		} else if (Static414.aString69.startsWith("i386") || Static414.aString69.startsWith("i486") || Static414.aString69.startsWith("i586") || Static414.aString69.startsWith("x86")) {
+		} else if (Class256.aString69.startsWith("i386") || Class256.aString69.startsWith("i486") || Class256.aString69.startsWith("i586") || Class256.aString69.startsWith("x86")) {
 			Static185.aString34 = Static185.aString34 + "x86/";
-		} else if (Static414.aString69.startsWith("ppc")) {
+		} else if (Class256.aString69.startsWith("ppc")) {
 			Static185.aString34 = Static185.aString34 + "ppc/";
 		} else {
 			Static185.aString34 = Static185.aString34 + "universal/";

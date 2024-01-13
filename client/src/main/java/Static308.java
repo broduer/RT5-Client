@@ -22,11 +22,11 @@ public final class Static308 {
 
 	@OriginalMember(owner = "client!jp", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")
 	public static String method4491(@OriginalArg(1) String arg0) {
-		if (Static414.aString70.startsWith("win")) {
+		if (Class256.aString70.startsWith("win")) {
 			return arg0 + ".dll";
-		} else if (Static414.aString70.startsWith("linux")) {
+		} else if (Class256.aString70.startsWith("linux")) {
 			return "lib" + arg0 + ".so";
-		} else if (Static414.aString70.startsWith("mac")) {
+		} else if (Class256.aString70.startsWith("mac")) {
 			return "lib" + arg0 + ".dylib";
 		} else {
 			return null;
