@@ -24,7 +24,7 @@ public final class Static342 {
 	public static void method4471(@OriginalArg(0) int arg0) {
 		if (true) {
 			// 2011scape compatibility
-			Static169.anInt2864 = arg0;
+			Static284.anInt4597 = arg0;
 			Static344.aClass231_1.anInt5876 = 15;
 			Static344.aClass231_1.anInt5873 = 50015;
 		} else {
