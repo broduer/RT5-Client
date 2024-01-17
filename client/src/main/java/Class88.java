@@ -117,6 +117,10 @@ public final class Class88 {
 	@OriginalMember(owner = "client!dv", name = "h", descriptor = "I")
 	public int anInt2388 = 12;
 
+	@OriginalMember(owner = "client!dv", name = "<init>", descriptor = "()V")
+	private Class88() {
+	}
+
 	@OriginalMember(owner = "client!dv", name = "<init>", descriptor = "([B)V")
 	public Class88(@OriginalArg(0) byte[] arg0) {
 		if (arg0[arg0.length - 1] == -1 && arg0[arg0.length - 2] == -1) {

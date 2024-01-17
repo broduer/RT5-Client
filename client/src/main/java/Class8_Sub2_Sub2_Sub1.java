@@ -279,4 +279,14 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 			return local26 == null ? null : local26.aClass114_7;
 		}
 	}
+
+	@OriginalMember(owner = "client!cu", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 == -21) {
+			return this.aClass114_1 == null ? 0 : this.aClass114_1.ma();
+		} else {
+			return -86;
+		}
+	}
 }

@@ -12,7 +12,7 @@ public final class Static709 {
 	public static int anInt10695;
 
 	@OriginalMember(owner = "client!wh", name = "F", descriptor = "I")
-	private static int anInt10697 = 1;
+	public static int anInt10697 = 1;
 
 	@OriginalMember(owner = "client!wh", name = "a", descriptor = "(IZIILclient!qha;)Lclient!gb;")
 	public static Class93_Sub2_Sub1 method9258(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class19_Sub3 arg3) {

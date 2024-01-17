@@ -34,13 +34,19 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 	private Component aComponent1;
 
 	@OriginalMember(owner = "client!ht", name = "n", descriptor = "Lclient!sia;")
-	private Class341 aClass341_20;
+	private Class341 aClass341_20 = new Class341();
 
 	@OriginalMember(owner = "client!ht", name = "q", descriptor = "Lclient!sia;")
-	private Class341 aClass341_21;
+	private Class341 aClass341_21 = new Class341();
 
 	@OriginalMember(owner = "client!ht", name = "o", descriptor = "Z")
-	private boolean aBoolean321;
+	private final boolean aBoolean321;
+
+	@OriginalMember(owner = "client!ht", name = "<init>", descriptor = "(Ljava/awt/Component;Z)V")
+	private Class120_Sub1(@OriginalArg(0) Component arg0, @OriginalArg(1) boolean arg1) {
+		this.method3629(-30273, arg0);
+		this.aBoolean321 = arg1;
+	}
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(Z)I")
 	@Override
@@ -94,6 +100,18 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 	@Override
 	public Class2_Sub9 method8858() {
 		return (Class2_Sub9) this.aClass341_20.method7712();
+	}
+
+	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(ILjava/awt/Component;)V")
+	private void method3629(@OriginalArg(0) int arg0, @OriginalArg(1) Component arg1) {
+		if (arg0 != -30273) {
+			return;
+		}
+		this.method3631();
+		this.aComponent1 = arg1;
+		this.aComponent1.addMouseListener(this);
+		this.aComponent1.addMouseMotionListener(this);
+		this.aComponent1.addMouseWheelListener(this);
 	}
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(Ljava/awt/event/MouseEvent;B)I")

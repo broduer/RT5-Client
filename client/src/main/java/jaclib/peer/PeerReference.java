@@ -24,6 +24,12 @@ public abstract class PeerReference extends WeakReference {
 		arg1.method4157(this);
 	}
 
+	@OriginalMember(owner = "client!jaclib/peer/PeerReference", name = "setPeer", descriptor = "(J)V")
+	private void setPeer(@OriginalArg(0) long arg0) {
+		this.b(0);
+		this.peer = arg0;
+	}
+
 	@OriginalMember(owner = "client!jaclib/peer/PeerReference", name = "a", descriptor = "(I)Z")
 	public final boolean a(@OriginalArg(0) int arg0) {
 		return this.peer != 0L;

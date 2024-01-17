@@ -10,7 +10,11 @@ public final class Class301 {
 	private Class2_Sub2 aClass2_Sub2_48;
 
 	@OriginalMember(owner = "client!ps", name = "e", descriptor = "Lclient!jga;")
-	private final Class194 aClass194_14;
+	private Class194 aClass194_14;
+
+	@OriginalMember(owner = "client!ps", name = "<init>", descriptor = "()V")
+	private Class301() {
+	}
 
 	@OriginalMember(owner = "client!ps", name = "<init>", descriptor = "(Lclient!jga;)V")
 	public Class301(@OriginalArg(0) Class194 arg0) {

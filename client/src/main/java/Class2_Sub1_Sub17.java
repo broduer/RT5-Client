@@ -15,7 +15,7 @@ public final class Class2_Sub1_Sub17 extends Class2_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!lu", name = "<init>", descriptor = "(I)V")
-	private Class2_Sub1_Sub17(@OriginalArg(0) int arg0) {
+	public Class2_Sub1_Sub17(@OriginalArg(0) int arg0) {
 		super(0, true);
 		this.anInt5985 = 4096;
 		this.anInt5985 = arg0;

@@ -14,6 +14,8 @@ public final class Static616 {
 		Static470.anInt7134 = -1;
 		Static524.aClass153_3 = Static405.aClass153_2;
 		Static299.anInt4841 = 2;
+		// Static524.aClass153_3 = Static405.aClass153_1;
+		// Static299.anInt4841 = 1;
 		Static238.method3471(false, arg1, false, arg0);
 	}
 

@@ -16,6 +16,11 @@ public final class Class351 {
 	@OriginalMember(owner = "client!tda", name = "c", descriptor = "Lclient!jagdx/IDirect3DSurface;")
 	private IDirect3DSurface anIDirect3DSurface2;
 
+	@OriginalMember(owner = "client!tda", name = "<init>", descriptor = "(Lclient!jagdx/IDirect3DSwapChain;Lclient!jagdx/IDirect3DSurface;)V")
+	public Class351(@OriginalArg(0) IDirect3DSwapChain arg0, @OriginalArg(1) IDirect3DSurface arg1) {
+		this.method8187(arg1, arg0);
+	}
+
 	@OriginalMember(owner = "client!tda", name = "b", descriptor = "(I)V")
 	public void method8185() {
 		if (this.anIDirect3DSurface2 != null) {

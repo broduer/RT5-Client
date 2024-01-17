@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class355 {
 
 	@OriginalMember(owner = "client!th", name = "a", descriptor = "Z")
-	public final boolean aBoolean717;
+	public boolean aBoolean717;
 
 	@OriginalMember(owner = "client!th", name = "t", descriptor = "I")
 	public int anInt9395;
@@ -16,19 +16,19 @@ public final class Class355 {
 	private int anInt9396;
 
 	@OriginalMember(owner = "client!th", name = "h", descriptor = "I")
-	private final int anInt9397;
+	private int anInt9397;
 
 	@OriginalMember(owner = "client!th", name = "r", descriptor = "Lclient!lca;")
 	public Class2_Sub7 aClass2_Sub7_3;
 
 	@OriginalMember(owner = "client!th", name = "v", descriptor = "Z")
-	public final boolean aBoolean718;
+	public boolean aBoolean718;
 
 	@OriginalMember(owner = "client!th", name = "k", descriptor = "I")
 	private int anInt9403;
 
 	@OriginalMember(owner = "client!th", name = "u", descriptor = "[S")
-	public final short[] aShortArray132;
+	public short[] aShortArray132;
 
 	@OriginalMember(owner = "client!th", name = "i", descriptor = "I")
 	private int anInt9404;
@@ -37,7 +37,15 @@ public final class Class355 {
 	private int anInt9405;
 
 	@OriginalMember(owner = "client!th", name = "g", descriptor = "I")
-	public final int anInt9406;
+	public int anInt9406;
+
+	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "()V")
+	private Class355() {
+		if (Static695.anIntArray868 == null) {
+			Static344.method5050();
+		}
+		this.method8254();
+	}
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!ha;Lclient!ge;I)V")
 	public Class355(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {

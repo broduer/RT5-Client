@@ -177,6 +177,15 @@ public final class Class8_Sub2_Sub1_Sub4 extends Class8_Sub2_Sub1 implements Int
 		this.aClass339_3.method7676(arg0);
 	}
 
+	@OriginalMember(owner = "client!oe", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 != -21) {
+			this.aBoolean517 = true;
+		}
+		return this.aClass339_3.method7680(true);
+	}
+
 	@OriginalMember(owner = "client!oe", name = "b", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method6868(@OriginalArg(0) Class19 arg0) {

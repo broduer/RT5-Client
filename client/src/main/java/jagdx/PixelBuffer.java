@@ -10,7 +10,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!jagdx/PixelBuffer")
 public final class PixelBuffer extends Peer_Sub1 implements Buffer {
 
-	public PixelBuffer(Class189 arg0) {
+	@OriginalMember(owner = "client!jagdx/PixelBuffer", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
+	public PixelBuffer(@OriginalArg(0) Class189 arg0) {
 		super(arg0);
 		this.init();
 	}

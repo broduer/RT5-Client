@@ -25,7 +25,11 @@ public final class Class56_Sub1 extends Class56 {
 	private AudioFormat anAudioFormat1;
 
 	@OriginalMember(owner = "client!cb", name = "I", descriptor = "Z")
-	private boolean aBoolean134;
+	private boolean aBoolean134 = false;
+
+	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "()V")
+	private Class56_Sub1() {
+	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "()V")
 	@Override

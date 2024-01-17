@@ -16,7 +16,7 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 	private byte aByte78;
 
 	@OriginalMember(owner = "client!im", name = "jb", descriptor = "B")
-	private final byte aByte77;
+	private byte aByte77;
 
 	@OriginalMember(owner = "client!im", name = "K", descriptor = "Z")
 	private final boolean aBoolean350;
@@ -227,5 +227,14 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 			this.aClass114_3.method7480(local12, local41.aClass8_Sub6Array1[0], 0);
 		}
 		return local41;
+	}
+
+	@OriginalMember(owner = "client!im", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 != -21) {
+			this.aByte77 = 110;
+		}
+		return this.aClass114_3 == null ? 0 : this.aClass114_3.ma();
 	}
 }

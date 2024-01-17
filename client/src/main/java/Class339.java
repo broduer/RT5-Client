@@ -106,6 +106,14 @@ public final class Class339 {
 		this.method7683(1, arg0, false);
 	}
 
+	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Z)I")
+	public int method7680(@OriginalArg(0) boolean arg0) {
+		if (!arg0) {
+			this.method7685((Class19) null, false, false, false, 98);
+		}
+		return this.anInt8676;
+	}
+
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(I)Z")
 	public boolean method7682(@OriginalArg(0) int arg0) {
 		if (arg0 != 10) {

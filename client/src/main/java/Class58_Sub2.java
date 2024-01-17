@@ -23,7 +23,11 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class58_Sub2 extends Class58 {
 
 	@OriginalMember(owner = "client!ob", name = "h", descriptor = "Ljava/net/ProxySelector;")
-	private ProxySelector aProxySelector1;
+	private final ProxySelector aProxySelector1 = ProxySelector.getDefault();
+
+	@OriginalMember(owner = "client!ob", name = "<init>", descriptor = "()V")
+	private Class58_Sub2() {
+	}
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(BLjava/net/Proxy;)Ljava/net/Socket;")
 	private Socket method6107(@OriginalArg(1) Proxy arg0) throws IOException {

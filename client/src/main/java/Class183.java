@@ -27,31 +27,41 @@ public final class Class183 implements Interface7 {
 	private int[] anIntArray354;
 
 	@OriginalMember(owner = "client!ir", name = "i", descriptor = "[Lcom/ms/directX/DSBufferDesc;")
-	private DSBufferDesc[] aDSBufferDescArray1;
+	private final DSBufferDesc[] aDSBufferDescArray1 = new DSBufferDesc[2];
 
 	@OriginalMember(owner = "client!ir", name = "j", descriptor = "[Z")
-	private boolean[] aBooleanArray12;
+	private final boolean[] aBooleanArray12 = new boolean[2];
 
 	@OriginalMember(owner = "client!ir", name = "l", descriptor = "[Lcom/ms/directX/DSCursors;")
-	private DSCursors[] aDSCursorsArray1;
+	private final DSCursors[] aDSCursorsArray1 = new DSCursors[2];
 
 	@OriginalMember(owner = "client!ir", name = "d", descriptor = "[I")
-	private int[] anIntArray353;
+	private final int[] anIntArray353 = new int[2];
 
 	@OriginalMember(owner = "client!ir", name = "b", descriptor = "[Lcom/ms/directX/DirectSoundBuffer;")
-	private DirectSoundBuffer[] aDirectSoundBufferArray1;
+	private final DirectSoundBuffer[] aDirectSoundBufferArray1 = new DirectSoundBuffer[2];
 
 	@OriginalMember(owner = "client!ir", name = "g", descriptor = "[I")
-	private int[] anIntArray355;
+	private final int[] anIntArray355 = new int[2];
 
 	@OriginalMember(owner = "client!ir", name = "c", descriptor = "[[B")
-	private byte[][] aByteArrayArray15;
+	private final byte[][] aByteArrayArray15 = new byte[2][];
 
 	@OriginalMember(owner = "client!ir", name = "f", descriptor = "Lcom/ms/directX/DirectSound;")
-	private DirectSound aDirectSound1;
+	private final DirectSound aDirectSound1 = new DirectSound();
 
 	@OriginalMember(owner = "client!ir", name = "a", descriptor = "Lcom/ms/directX/WaveFormatEx;")
-	private WaveFormatEx aWaveFormatEx1;
+	private final WaveFormatEx aWaveFormatEx1 = new WaveFormatEx();
+
+	@OriginalMember(owner = "client!ir", name = "<init>", descriptor = "()V")
+	private Class183() throws Exception {
+		for (@Pc(41) int local41 = 0; local41 < 2; local41++) {
+			this.aDSBufferDescArray1[local41] = new DSBufferDesc();
+		}
+		for (@Pc(57) int local57 = 0; local57 < 2; local57++) {
+			this.aDSCursorsArray1[local57] = new DSCursors();
+		}
+	}
 
 	@OriginalMember(owner = "client!ir", name = "a", descriptor = "(I[I)V")
 	@Override

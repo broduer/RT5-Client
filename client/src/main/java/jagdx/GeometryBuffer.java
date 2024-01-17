@@ -10,7 +10,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!jagdx/GeometryBuffer")
 public final class GeometryBuffer extends Peer_Sub1 implements Buffer {
 
-	public GeometryBuffer(Class189 arg0) {
+	@OriginalMember(owner = "client!jagdx/GeometryBuffer", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
+	public GeometryBuffer(@OriginalArg(0) Class189 arg0) {
 		super(arg0);
 		this.init();
 	}

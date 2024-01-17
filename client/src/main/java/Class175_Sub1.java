@@ -10,6 +10,10 @@ public final class Class175_Sub1 extends Class175 {
 	@OriginalMember(owner = "client!id", name = "g", descriptor = "Ljava/nio/ByteBuffer;")
 	private ByteBuffer aByteBuffer1;
 
+	@OriginalMember(owner = "client!id", name = "<init>", descriptor = "()V")
+	private Class175_Sub1() {
+	}
+
 	@OriginalMember(owner = "client!id", name = "a", descriptor = "([BI)V")
 	@Override
 	public void method3849(@OriginalArg(0) byte[] arg0) {

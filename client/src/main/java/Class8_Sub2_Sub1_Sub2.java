@@ -398,6 +398,12 @@ public abstract class Class8_Sub2_Sub1_Sub2 extends Class8_Sub2_Sub1 {
 		return local55 == null || local55.aClass8_Sub2_Sub2_1 == null ? local31 : local31 + local55.aClass8_Sub2_Sub2_1.aShort46;
 	}
 
+	@OriginalMember(owner = "client!cg", name = "c", descriptor = "(B)I")
+	@Override
+	public final int method9299(@OriginalArg(0) byte arg0) {
+		return arg0 == -21 ? this.anInt10756 : 44;
+	}
+
 	@OriginalMember(owner = "client!cg", name = "k", descriptor = "(I)I")
 	@Override
 	public final int method9293(@OriginalArg(0) int arg0) {

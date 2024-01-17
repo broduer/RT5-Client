@@ -67,6 +67,12 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 		return this.aBoolean673;
 	}
 
+	@OriginalMember(owner = "client!sv", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		return arg0 == -21 ? this.anInt8903 : -65;
+	}
+
 	@OriginalMember(owner = "client!sv", name = "d", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {

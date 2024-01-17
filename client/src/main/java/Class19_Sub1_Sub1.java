@@ -14,6 +14,7 @@ import jagdx.IDirect3DPixelShader;
 import jagdx.IDirect3DSurface;
 import jagdx.IDirect3DVertexShader;
 import jagdx.PixelBuffer;
+import jagdx.RuntimeException_Sub2;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -25,84 +26,184 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!kea")
 public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 
-	public Class19_Sub1_Sub1(Canvas arg0, Object arg1, Interface4 arg2, Class332 arg3, int arg4, int arg5) {
-		super(arg0, arg1, arg2, arg3, arg4, arg5);
-	}
-
 	@OriginalMember(owner = "client!kea", name = "Og", descriptor = "Lclient!jagdx/IDirect3DVertexShader;")
 	private IDirect3DVertexShader anIDirect3DVertexShader1;
 
 	@OriginalMember(owner = "client!kea", name = "Ag", descriptor = "Z")
-	private boolean aBoolean411;
+	private boolean aBoolean411 = false;
 
 	@OriginalMember(owner = "client!kea", name = "Hg", descriptor = "I")
-	private int anInt5389;
+	private int anInt5389 = 0;
 
 	@OriginalMember(owner = "client!kea", name = "zg", descriptor = "Lclient!jagdx/D3DCAPS;")
-	public D3DCAPS aD3DCAPS1;
+	public final D3DCAPS aD3DCAPS1;
 
 	@OriginalMember(owner = "client!kea", name = "Yg", descriptor = "I")
-	private int anInt5387;
+	private final int anInt5387;
 
 	@OriginalMember(owner = "client!kea", name = "xg", descriptor = "Lclient!jagdx/IDirect3D;")
-	private IDirect3D anIDirect3D1;
+	private final IDirect3D anIDirect3D1;
 
 	@OriginalMember(owner = "client!kea", name = "Ig", descriptor = "Lclient!jagdx/D3DPRESENT_PARAMETERS;")
-	private D3DPRESENT_PARAMETERS aD3DPRESENT_PARAMETERS1;
+	private final D3DPRESENT_PARAMETERS aD3DPRESENT_PARAMETERS1;
 
 	@OriginalMember(owner = "client!kea", name = "Pg", descriptor = "Lclient!tda;")
 	private Class351 aClass351_1;
 
 	@OriginalMember(owner = "client!kea", name = "Fg", descriptor = "Lclient!jaclib/peer/ti;")
-	public Class189 aClass189_1;
+	public final Class189 aClass189_1;
 
 	@OriginalMember(owner = "client!kea", name = "Sg", descriptor = "Lclient!jagdx/IDirect3DDevice;")
-	public IDirect3DDevice anIDirect3DDevice1;
+	public final IDirect3DDevice anIDirect3DDevice1;
 
 	@OriginalMember(owner = "client!kea", name = "Ug", descriptor = "I")
-	private int anInt5388;
+	private final int anInt5388;
 
 	@OriginalMember(owner = "client!kea", name = "Mg", descriptor = "Lclient!jagdx/D3DLIGHT;")
-	private D3DLIGHT aD3DLIGHT1;
+	private final D3DLIGHT aD3DLIGHT1;
 
 	@OriginalMember(owner = "client!kea", name = "Wg", descriptor = "Lclient!jagdx/D3DLIGHT;")
-	private D3DLIGHT aD3DLIGHT3;
+	private final D3DLIGHT aD3DLIGHT3;
 
 	@OriginalMember(owner = "client!kea", name = "Vg", descriptor = "Lclient!jagdx/D3DLIGHT;")
-	private D3DLIGHT aD3DLIGHT2;
+	private final D3DLIGHT aD3DLIGHT2;
 
 	@OriginalMember(owner = "client!kea", name = "Kg", descriptor = "Lclient!jagdx/PixelBuffer;")
-	public PixelBuffer aPixelBuffer1;
+	public final PixelBuffer aPixelBuffer1;
 
 	@OriginalMember(owner = "client!kea", name = "Qg", descriptor = "Lclient!jagdx/GeometryBuffer;")
-	public GeometryBuffer aGeometryBuffer1;
+	public final GeometryBuffer aGeometryBuffer1;
 
 	@OriginalMember(owner = "client!kea", name = "Ng", descriptor = "Z")
-	public boolean aBoolean412;
+	public final boolean aBoolean412;
 
 	@OriginalMember(owner = "client!kea", name = "Jg", descriptor = "Z")
-	public boolean aBoolean414;
+	public final boolean aBoolean414;
 
 	@OriginalMember(owner = "client!kea", name = "Lg", descriptor = "Z")
-	public boolean aBoolean413;
+	public final boolean aBoolean413;
 
 	@OriginalMember(owner = "client!kea", name = "Tg", descriptor = "[I")
-	private int[] anIntArray391;
+	private final int[] anIntArray391;
 
 	@OriginalMember(owner = "client!kea", name = "Eg", descriptor = "[Z")
-	private boolean[] aBooleanArray13;
+	private final boolean[] aBooleanArray13;
 
 	@OriginalMember(owner = "client!kea", name = "Gg", descriptor = "[Z")
-	private boolean[] aBooleanArray15;
+	private final boolean[] aBooleanArray15;
 
 	@OriginalMember(owner = "client!kea", name = "Cg", descriptor = "[Z")
-	private boolean[] aBooleanArray14;
+	private final boolean[] aBooleanArray14;
 
 	@OriginalMember(owner = "client!kea", name = "Bg", descriptor = "[Lclient!nga;")
-	private Class261[] aClass261Array1;
+	private final Class261[] aClass261Array1;
 
 	@OriginalMember(owner = "client!kea", name = "Xg", descriptor = "[Z")
-	private boolean[] aBooleanArray16;
+	private final boolean[] aBooleanArray16;
+
+	@OriginalMember(owner = "client!kea", name = "createToolkit", descriptor = "(Ljava/awt/Canvas;Lclient!d;Lclient!sb;Ljava/lang/Integer;)Lclient!ha;")
+	private static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Integer arg3) {
+		@Pc(1) Class19_Sub1_Sub1 local1 = null;
+		try {
+			@Pc(3) byte local3 = 0;
+			@Pc(5) byte local5 = 1;
+			@Pc(9) Class189 local9 = new Class189();
+			@Pc(13) IDirect3D local13 = IDirect3D.a(-2147483616, local9);
+			@Pc(18) D3DCAPS local18 = local13.a(local3, local5);
+			if ((local18.RasterCaps & 0x1000000) == 0) {
+				throw new RuntimeException("");
+			} else if (local18.MaxSimultaneousTextures < 2) {
+				throw new RuntimeException("");
+			} else if ((local18.TextureOpCaps & 0x2) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.TextureOpCaps & 0x8) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.TextureOpCaps & 0x40) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.TextureOpCaps & 0x200) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.TextureOpCaps & 0x2000000) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.DestBlendCaps & 0x10 & local18.SrcBlendCaps) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.SrcBlendCaps & local18.DestBlendCaps & 0x20) == 0) {
+				throw new RuntimeException("");
+			} else if ((local18.DestBlendCaps & 0x2 & local18.SrcBlendCaps) == 0) {
+				throw new RuntimeException("");
+			} else if (local18.MaxActiveLights > 0 && local18.MaxActiveLights < 2) {
+				throw new RuntimeException("");
+			} else if (local18.MaxStreams < 5) {
+				throw new RuntimeException("");
+			} else {
+				@Pc(186) D3DPRESENT_PARAMETERS local186 = new D3DPRESENT_PARAMETERS(arg0);
+				if (!Static325.method4866(local186, local3, local13, local5, arg3)) {
+					throw new RuntimeException("");
+				}
+				local186.EnableAutoDepthStencil = true;
+				local186.Windowed = true;
+				local186.PresentationInterval = Integer.MIN_VALUE;
+				@Pc(213) int local213 = 2;
+				if ((local18.DevCaps & 0x100000) != 0) {
+					local213 |= 0x10;
+				}
+				@Pc(237) IDirect3DDevice local237;
+				try {
+					local237 = local13.a(local3, local5, arg0, local213 | 0x40, local186);
+				} catch (@Pc(239) RuntimeException_Sub2 local239) {
+					local237 = local13.a(local3, local5, arg0, local213 | 0x20, local186);
+				}
+				@Pc(258) Class351 local258 = new Class351(local237.b(0), local237.c());
+				local1 = new Class19_Sub1_Sub1(local3, local5, arg0, local9, local13, local237, local258, local186, local18, arg1, arg2, arg3);
+				local1.method8141();
+				return local1;
+			}
+		} catch (@Pc(281) RuntimeException local281) {
+			if (local1 != null) {
+				local1.method7994();
+			}
+			throw local281;
+		}
+	}
+
+	@OriginalMember(owner = "client!kea", name = "<init>", descriptor = "(IILjava/awt/Canvas;Lclient!jaclib/peer/ti;Lclient!jagdx/IDirect3D;Lclient!jagdx/IDirect3DDevice;Lclient!tda;Lclient!jagdx/D3DPRESENT_PARAMETERS;Lclient!jagdx/D3DCAPS;Lclient!d;Lclient!sb;I)V")
+	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) Class189 arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class351 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Class332 arg10, @OriginalArg(11) int arg11) {
+		super(arg2, arg6, arg9, arg10, arg11, 0);
+		try {
+			this.aD3DCAPS1 = arg8;
+			this.anInt5387 = arg1;
+			this.anIDirect3D1 = arg4;
+			this.aD3DPRESENT_PARAMETERS1 = arg7;
+			this.aClass351_1 = arg6;
+			this.aClass189_1 = arg3;
+			this.anIDirect3DDevice1 = arg5;
+			this.anInt5388 = arg0;
+			this.aD3DLIGHT1 = new D3DLIGHT(this.aClass189_1);
+			this.aD3DLIGHT3 = new D3DLIGHT(this.aClass189_1);
+			this.aD3DLIGHT2 = new D3DLIGHT(this.aClass189_1);
+			this.aPixelBuffer1 = new PixelBuffer(this.aClass189_1);
+			this.aGeometryBuffer1 = new GeometryBuffer(this.aClass189_1);
+			new GeometryBuffer(this.aClass189_1);
+			this.anInt9210 = this.aD3DCAPS1.MaxSimultaneousTextures;
+			this.aBoolean412 = (this.aD3DCAPS1.TextureCaps & 0x10000) != 0;
+			this.aBoolean414 = (this.aD3DCAPS1.TextureCaps & 0x4000) != 0;
+			this.anInt9208 = this.aD3DCAPS1.MaxActiveLights > 0 ? this.aD3DCAPS1.MaxActiveLights : 8;
+			this.aBoolean686 = (this.aD3DCAPS1.TextureCaps & 0x800) != 0;
+			this.aBoolean697 = (this.aD3DCAPS1.TextureCaps & 0x2000) != 0;
+			this.aBoolean413 = (this.aD3DCAPS1.TextureCaps & 0x2) == 0;
+			this.aBoolean693 = this.anInt9184 > 0 || this.anIDirect3D1.CheckDeviceMultiSampleType(this.anInt5388, this.anInt5387, this.aD3DPRESENT_PARAMETERS1.BackBufferFormat, true, 2) == 0;
+			this.anIntArray391 = new int[this.anInt9210];
+			this.aBooleanArray13 = new boolean[this.anInt9210];
+			this.aBooleanArray15 = new boolean[this.anInt9210];
+			this.aBooleanArray14 = new boolean[this.anInt9210];
+			this.aClass261Array1 = new Class261[this.anInt9210];
+			this.aBooleanArray16 = new boolean[this.anInt9210];
+			this.anIDirect3DDevice1.BeginScene();
+		} catch (@Pc(228) Throwable local228) {
+			local228.printStackTrace();
+			this.method7947();
+			throw new RuntimeException("");
+		}
+	}
 
 	@OriginalMember(owner = "client!kea", name = "a", descriptor = "(Lclient!eba;Lclient!wda;III)Lclient!og;")
 	@Override

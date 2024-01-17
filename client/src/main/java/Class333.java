@@ -7,13 +7,17 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class333 {
 
 	@OriginalMember(owner = "client!sba", name = "i", descriptor = "Lclient!av;")
-	private final Class28 aClass28_41;
+	private Class28 aClass28_41;
 
 	@OriginalMember(owner = "client!sba", name = "j", descriptor = "Lclient!ie;")
 	private Class2 aClass2_266;
 
 	@OriginalMember(owner = "client!sba", name = "k", descriptor = "I")
 	private int anInt8603 = 0;
+
+	@OriginalMember(owner = "client!sba", name = "<init>", descriptor = "()V")
+	private Class333() {
+	}
 
 	@OriginalMember(owner = "client!sba", name = "<init>", descriptor = "(Lclient!av;)V")
 	public Class333(@OriginalArg(0) Class28 arg0) {

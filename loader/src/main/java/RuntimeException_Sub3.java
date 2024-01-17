@@ -18,7 +18,7 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 	public static int anInt10973;
 
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "Ljava/lang/Throwable;")
-	private Throwable aThrowable2;
+	private final Throwable aThrowable2;
 
 	@OriginalMember(owner = "loader!f", name = "b", descriptor = "Ljava/lang/String;")
 	private String aString132;
@@ -80,6 +80,18 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 		System.out.println("Error: " + method9476(arg0, "%0a", "\n"));
 	}
 
+	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lloader!f;")
+	private static RuntimeException_Sub3 method9479(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		@Pc(8) RuntimeException_Sub3 local8;
+		if (arg0 instanceof RuntimeException_Sub3) {
+			local8 = (RuntimeException_Sub3) arg0;
+			local8.aString132 = local8.aString132 + ' ' + arg1;
+		} else {
+			local8 = new RuntimeException_Sub3(arg0, arg1);
+		}
+		return local8;
+	}
+
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/String;Ljava/applet/Applet;Ljava/lang/Throwable;I)V")
 	public static void method9480(@OriginalArg(0) String arg0, @OriginalArg(1) Applet arg1, @OriginalArg(2) Throwable arg2) {
 		try {
@@ -104,5 +116,11 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 			local94.close();
 		} catch (@Pc(101) Exception local101) {
 		}
+	}
+
+	@OriginalMember(owner = "loader!f", name = "<init>", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)V")
+	private RuntimeException_Sub3(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		this.aThrowable2 = arg0;
+		this.aString132 = arg1;
 	}
 }

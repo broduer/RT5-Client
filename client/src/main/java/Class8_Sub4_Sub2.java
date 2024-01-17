@@ -26,7 +26,7 @@ public class Class8_Sub4_Sub2 extends Class8_Sub4 {
 	public int anInt7563;
 
 	@OriginalMember(owner = "client!up", name = "s", descriptor = "B")
-	protected byte aByte122 = 5;
+	public byte aByte122 = 5;
 
 	@OriginalMember(owner = "client!up", name = "<init>", descriptor = "()V")
 	protected Class8_Sub4_Sub2() {

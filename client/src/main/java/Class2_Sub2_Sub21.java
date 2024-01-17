@@ -24,6 +24,19 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 	@OriginalMember(owner = "client!vm", name = "F", descriptor = "[Lclient!pf;")
 	private final Class2_Sub1[] aClass2_Sub1Array39;
 
+	@OriginalMember(owner = "client!vm", name = "<init>", descriptor = "()V")
+	private Class2_Sub2_Sub21() {
+		this.anIntArray824 = new int[0];
+		this.anIntArray823 = new int[0];
+		this.aClass2_Sub1_2 = new Class2_Sub1_Sub17(0);
+		this.aClass2_Sub1_2.anInt10909 = 1;
+		this.aClass2_Sub1_3 = new Class2_Sub1_Sub17();
+		this.aClass2_Sub1_3.anInt10909 = 1;
+		this.aClass2_Sub1_1 = new Class2_Sub1_Sub17();
+		this.aClass2_Sub1_1.anInt10909 = 1;
+		this.aClass2_Sub1Array39 = new Class2_Sub1[] { this.aClass2_Sub1_3, this.aClass2_Sub1_1, this.aClass2_Sub1_2 };
+	}
+
 	@OriginalMember(owner = "client!vm", name = "<init>", descriptor = "(Lclient!ge;)V")
 	public Class2_Sub2_Sub21(@OriginalArg(0) Class2_Sub21 arg0) {
 		@Pc(7) int local7 = arg0.method7403();

@@ -134,6 +134,15 @@ public final class Class8_Sub2_Sub3_Sub1 extends Class8_Sub2_Sub3 implements Int
 		}
 	}
 
+	@OriginalMember(owner = "client!db", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 != -21) {
+			this.method9299((byte) -62);
+		}
+		return this.aClass339_1.method7680(true);
+	}
+
 	@OriginalMember(owner = "client!db", name = "d", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {

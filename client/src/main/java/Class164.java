@@ -83,6 +83,10 @@ public final class Class164 {
 		this.method3494(arg0);
 	}
 
+	@OriginalMember(owner = "client!hi", name = "<init>", descriptor = "()V")
+	private Class164() {
+	}
+
 	@OriginalMember(owner = "client!hi", name = "b", descriptor = "(IIIII)I")
 	public int method3475(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(15) int local15 = (0x1 << arg3) - 1;

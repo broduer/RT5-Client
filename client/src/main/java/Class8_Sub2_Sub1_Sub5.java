@@ -119,6 +119,15 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 		return this.anInt7434;
 	}
 
+	@OriginalMember(owner = "client!pja", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 != -21) {
+			this.finalize();
+		}
+		return this.anInt7414;
+	}
+
 	@OriginalMember(owner = "client!pja", name = "a", descriptor = "(II)V")
 	public void method6605() {
 		if (this.aClass152_8 != null && !this.aClass152_8.method9109()) {

@@ -27,7 +27,7 @@ public final class Static445 {
 	public static final float[] aFloatArray45 = aFloatArray46;
 
 	@OriginalMember(owner = "client!oa", name = "v", descriptor = "[B")
-	private static final byte[] aByteArray81 = new byte[8191];
+	public static final byte[] aByteArray81 = new byte[8191];
 
 	@OriginalMember(owner = "client!oa", name = "C", descriptor = "[S")
 	public static final short[] aShortArray103 = new short[8191];

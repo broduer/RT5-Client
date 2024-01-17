@@ -9,7 +9,11 @@ public final class Class2_Sub46 extends Class2 {
 	public int anInt8264;
 
 	@OriginalMember(owner = "client!rd", name = "o", descriptor = "Ljava/lang/String;")
-	public final String aString100;
+	public String aString100;
+
+	@OriginalMember(owner = "client!rd", name = "<init>", descriptor = "()V")
+	private Class2_Sub46() {
+	}
 
 	@OriginalMember(owner = "client!rd", name = "<init>", descriptor = "(Ljava/lang/String;I)V")
 	public Class2_Sub46(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {

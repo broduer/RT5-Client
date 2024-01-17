@@ -307,6 +307,19 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "KA", descriptor = "(IIII)V")
 	public native void KA(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
+	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(S)Z")
+	private boolean method6093(@OriginalArg(0) short arg0) {
+		synchronized (this) {
+			@Pc(9) Class118 local9 = super.anInterface4_10.method6824(arg0);
+			if (local9 == null) {
+				return false;
+			} else {
+				this.AA(arg0, local9.aShort37, local9.anInt2805, local9.aByte56, local9.aByte55, local9.anInt2800, local9.aBoolean233, local9.aByte58, local9.aByte57, local9.aByte54, local9.aByte52, local9.aBoolean240, local9.aBoolean234, local9.aBoolean239, local9.aBoolean236, local9.aBoolean235, local9.aByte53, local9.aBoolean237, local9.aBoolean238, local9.anInt2799);
+				return true;
+			}
+		}
+	}
+
 	@OriginalMember(owner = "client!oa", name = "F", descriptor = "(II)V")
 	public native void F(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
@@ -566,6 +579,28 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "wa", descriptor = "(IIIIII)V")
 	private native void wa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
+	@OriginalMember(owner = "client!oa", name = "WA", descriptor = "(S)Z")
+	private boolean method6095(@OriginalArg(0) short arg0) {
+		@Pc(2) Interface4 local2 = super.anInterface4_10;
+		synchronized (super.anInterface4_10) {
+			if (!super.anInterface4_10.method6821(arg0)) {
+				return false;
+			}
+			@Pc(22) Class118 local22 = super.anInterface4_10.method6824(arg0);
+			if (local22 == null) {
+				return false;
+			}
+			@Pc(44) int[] local44;
+			if (local22.anInt2805 == 2) {
+				local44 = super.anInterface4_10.method6822(0.7F, arg0, 128, 128);
+			} else {
+				local44 = super.anInterface4_10.method6825(128, true, 128, arg0, 0.7F);
+			}
+			this.CA(arg0, local44, local22.aShort37, local22.anInt2805, local22.aByte56, local22.aByte55, local22.anInt2800, local22.aBoolean233, local22.aByte58, local22.aByte57, local22.aByte54, local22.aByte52, local22.aBoolean240, local22.aBoolean234, local22.aBoolean239, local22.aBoolean236, local22.aBoolean235, local22.aByte53, local22.aBoolean237, local22.aBoolean238, local22.anInt2799);
+			return true;
+		}
+	}
+
 	@OriginalMember(owner = "client!oa", name = "CA", descriptor = "(S[ISIBBIZBBBBZZZZZBZZI)V")
 	private native void CA(@OriginalArg(0) short arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) short arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) byte arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) byte arg8, @OriginalArg(9) byte arg9, @OriginalArg(10) byte arg10, @OriginalArg(11) byte arg11, @OriginalArg(12) boolean arg12, @OriginalArg(13) boolean arg13, @OriginalArg(14) boolean arg14, @OriginalArg(15) boolean arg15, @OriginalArg(16) boolean arg16, @OriginalArg(17) byte arg17, @OriginalArg(18) boolean arg18, @OriginalArg(19) boolean arg19, @OriginalArg(20) int arg20);
 
@@ -635,6 +670,11 @@ public final class oa extends Class19 implements Interface5 {
 	@Override
 	public Class73 method8024() {
 		return this.aClass73_9;
+	}
+
+	@OriginalMember(owner = "client!oa", name = "OA", descriptor = "()Ljava/lang/Object;")
+	private Object method6096() {
+		return new ba(this);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "U", descriptor = "(IIIII)V")

@@ -30,6 +30,10 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 	@OriginalMember(owner = "client!on", name = "s", descriptor = "Ljava/awt/Canvas;")
 	private Canvas aCanvas8;
 
+	@OriginalMember(owner = "client!on", name = "<init>", descriptor = "()V")
+	private Class2_Sub10_Sub2() {
+	}
+
 	@OriginalMember(owner = "client!on", name = "a", descriptor = "(IIIZLjava/awt/Graphics;III)V")
 	@Override
 	public void method6341(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Graphics arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6) {

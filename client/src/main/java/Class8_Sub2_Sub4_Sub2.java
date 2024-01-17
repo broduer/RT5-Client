@@ -25,6 +25,12 @@ public final class Class8_Sub2_Sub4_Sub2 extends Class8_Sub2_Sub4 implements Int
 		this.aBoolean587 = arg1.anInt1276 != 0 && !arg7;
 	}
 
+	@OriginalMember(owner = "client!qg", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		return arg0 == -21 ? this.aClass339_4.method7680(true) : -55;
+	}
+
 	@OriginalMember(owner = "client!qg", name = "b", descriptor = "(I)I")
 	@Override
 	public int method6865() {

@@ -265,6 +265,12 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 		return false;
 	}
 
+	@OriginalMember(owner = "client!b", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		return arg0 == -21 ? this.anInt694 : 39;
+	}
+
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(BLclient!ha;Lclient!tt;Lclient!ka;)V")
 	private void method817(@OriginalArg(1) Class19 arg0, @OriginalArg(2) Class73 arg1, @OriginalArg(3) Class114 arg2) {
 		arg2.method7483(arg1);

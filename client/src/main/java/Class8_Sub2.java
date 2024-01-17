@@ -106,4 +106,7 @@ public abstract class Class8_Sub2 extends Class8 {
 
 	@OriginalMember(owner = "client!eo", name = "i", descriptor = "(I)Z")
 	public abstract boolean method9297(@OriginalArg(0) int arg0);
+
+	@OriginalMember(owner = "client!eo", name = "c", descriptor = "(B)I")
+	public abstract int method9299(@OriginalArg(0) byte arg0);
 }

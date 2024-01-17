@@ -29,6 +29,10 @@ public final class Class89 {
 		this.anInt2391 = arg0.method7389();
 	}
 
+	@OriginalMember(owner = "client!dw", name = "<init>", descriptor = "()V")
+	private Class89() {
+	}
+
 	@OriginalMember(owner = "client!dw", name = "b", descriptor = "()[B")
 	private byte[] method2246() {
 		@Pc(1) int local1 = 0;

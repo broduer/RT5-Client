@@ -39,4 +39,8 @@ public final class jagmisc {
 		}
 		return local6;
 	}
+
+	@OriginalMember(owner = "client!jagex3/jagmisc/jagmisc", name = "<init>", descriptor = "()V")
+	private jagmisc() {
+	}
 }

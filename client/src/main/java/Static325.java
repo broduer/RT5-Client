@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static325 {
 
 	@OriginalMember(owner = "client!kea", name = "Dg", descriptor = "[I")
-	private static final int[] anIntArray392 = new int[] { 77, 80 };
+	public static final int[] anIntArray392 = new int[] { 77, 80 };
 
 	@OriginalMember(owner = "client!kea", name = "Rg", descriptor = "[F")
 	public static final float[] aFloatArray37 = new float[16];

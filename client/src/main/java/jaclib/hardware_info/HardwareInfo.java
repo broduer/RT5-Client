@@ -17,4 +17,8 @@ public final class HardwareInfo {
 
 	@OriginalMember(owner = "client!jaclib/hardware_info/HardwareInfo", name = "getCPUInfo", descriptor = "()[I")
 	public static native int[] getCPUInfo();
+
+	@OriginalMember(owner = "client!jaclib/hardware_info/HardwareInfo", name = "<init>", descriptor = "()V")
+	private HardwareInfo() {
+	}
 }

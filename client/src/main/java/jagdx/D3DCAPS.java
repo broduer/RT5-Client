@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class D3DCAPS {
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "TextureOpCaps", descriptor = "I")
-	private int TextureOpCaps;
+	public int TextureOpCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "Caps2", descriptor = "I")
 	private int Caps2;
@@ -46,10 +46,10 @@ public final class D3DCAPS {
 	private int MaxVertexBlendMatrices;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "RasterCaps", descriptor = "I")
-	private int RasterCaps;
+	public int RasterCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxActiveLights", descriptor = "I")
-	private int MaxActiveLights;
+	public int MaxActiveLights;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxVertexShaderConst", descriptor = "I")
 	private int MaxVertexShaderConst;
@@ -58,7 +58,7 @@ public final class D3DCAPS {
 	private int MaxVertexBlendMatrixIndex;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "DestBlendCaps", descriptor = "I")
-	private int DestBlendCaps;
+	public int DestBlendCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "DeviceType", descriptor = "I")
 	private int DeviceType;
@@ -79,7 +79,7 @@ public final class D3DCAPS {
 	private int VolumeTextureFilterCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "DevCaps", descriptor = "I")
-	private int DevCaps;
+	public int DevCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxTextureHeight", descriptor = "I")
 	private int MaxTextureHeight;
@@ -94,7 +94,7 @@ public final class D3DCAPS {
 	private int PrimitiveMiscCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "SrcBlendCaps", descriptor = "I")
-	private int SrcBlendCaps;
+	public int SrcBlendCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "CubeTextureFilterCaps", descriptor = "I")
 	private int CubeTextureFilterCaps;
@@ -115,13 +115,13 @@ public final class D3DCAPS {
 	private float GuardBandTop;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxSimultaneousTextures", descriptor = "I")
-	private int MaxSimultaneousTextures;
+	public int MaxSimultaneousTextures;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxAnisotropy", descriptor = "I")
 	private int MaxAnisotropy;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "MaxStreams", descriptor = "I")
-	private int MaxStreams;
+	public int MaxStreams;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "CursorCaps", descriptor = "I")
 	private int CursorCaps;
@@ -130,7 +130,7 @@ public final class D3DCAPS {
 	private float MaxPointSize;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "TextureCaps", descriptor = "I")
-	private int TextureCaps;
+	public int TextureCaps;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "AlphaCmpCaps", descriptor = "I")
 	private int AlphaCmpCaps;
@@ -202,8 +202,8 @@ public final class D3DCAPS {
 	private int MaxVertexShader30InstructionSlots;
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "VS20Caps", descriptor = "Lclient!jagdx/D3DVSHADERCAPS2_0;")
-	private D3DVSHADERCAPS2_0 VS20Caps;
+	private final D3DVSHADERCAPS2_0 VS20Caps = new D3DVSHADERCAPS2_0();
 
 	@OriginalMember(owner = "client!jagdx/D3DCAPS", name = "PS20Caps", descriptor = "Lclient!jagdx/D3DPSHADERCAPS2_0;")
-	private D3DPSHADERCAPS2_0 PS20Caps;
+	private final D3DPSHADERCAPS2_0 PS20Caps = new D3DPSHADERCAPS2_0();
 }

@@ -47,6 +47,11 @@ public final class Class390 {
 		}
 	}
 
+	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "()V")
+	private Class390() {
+		this.anIntArray821 = new int[0];
+	}
+
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(ILclient!ge;)V")
 	private void method8936(@OriginalArg(1) Class2_Sub21 arg0) {
 		while (true) {

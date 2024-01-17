@@ -210,6 +210,16 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 		}
 	}
 
+	@OriginalMember(owner = "client!jda", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 == -21) {
+			return this.aClass114_4 == null ? 0 : this.aClass114_4.ma();
+		} else {
+			return -59;
+		}
+	}
+
 	@OriginalMember(owner = "client!jda", name = "d", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {

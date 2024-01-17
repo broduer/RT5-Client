@@ -206,6 +206,16 @@ public final class Class8_Sub2_Sub3_Sub2 extends Class8_Sub2_Sub3 implements Int
 		}
 	}
 
+	@OriginalMember(owner = "client!jn", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 == -21) {
+			return this.aClass114_5 == null ? 0 : this.aClass114_5.ma();
+		} else {
+			return 49;
+		}
+	}
+
 	@OriginalMember(owner = "client!jn", name = "a", descriptor = "(Lclient!ha;ZIZ)Lclient!od;")
 	private Class274 method4482(@OriginalArg(0) Class19 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2) {
 		@Pc(11) Class54 local11 = Static354.aClass142_4.method3063(this.aShort60 & 0xFFFF, 56);

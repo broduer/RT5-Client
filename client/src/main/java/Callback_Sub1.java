@@ -26,6 +26,31 @@ public final class Callback_Sub1 extends Callback {
 	@OriginalMember(owner = "client!ow", name = "c", descriptor = "Z")
 	private volatile boolean aBoolean540 = true;
 
+	@OriginalMember(owner = "client!ow", name = "callback", descriptor = "(IIII)I")
+	private synchronized int callback(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+		@Pc(7) int local7;
+		if (this.anInt7176 != arg0) {
+			local7 = User32.GetWindowLong(arg0, -4);
+			return User32.CallWindowProc(local7, arg0, arg1, arg2, arg3);
+		}
+		if (arg1 == 32) {
+			local7 = arg3 & 0xFFFF;
+			if (local7 == 1) {
+				User32.SetCursor(this.aBoolean540 ? this.anInt7177 : 0);
+				return 0;
+			}
+		}
+		if (arg1 == 101024) {
+			User32.SetCursor(this.aBoolean540 ? this.anInt7177 : 0);
+			return 0;
+		}
+		if (arg1 == 1) {
+			this.anInt7176 = 0;
+			this.aBoolean540 = true;
+		}
+		return User32.CallWindowProc(this.anInt7175, arg0, arg1, arg2, arg3);
+	}
+
 	@OriginalMember(owner = "client!ow", name = "a", descriptor = "(III)V")
 	public void method6438(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		User32.SetCursorPos(arg0, arg1);

@@ -53,4 +53,16 @@ public final class Class15 implements IEnumModesCallback {
 		Static17.anInt240 = 0;
 		return local20;
 	}
+
+	@OriginalMember(owner = "client!ak", name = "callbackEnumModes", descriptor = "(Lcom/ms/directX/DDSurfaceDesc;Lcom/ms/com/IUnknown;)V")
+	private void callbackEnumModes(@OriginalArg(0) DDSurfaceDesc arg0, @OriginalArg(1) IUnknown arg1) {
+		if (Static17.anIntArray28 == null) {
+			Static17.anInt240 += 4;
+		} else {
+			Static17.anIntArray28[Static17.anInt240++] = arg0.width;
+			Static17.anIntArray28[Static17.anInt240++] = arg0.height;
+			Static17.anIntArray28[Static17.anInt240++] = arg0.rgbBitCount;
+			Static17.anIntArray28[Static17.anInt240++] = arg0.refreshRate;
+		}
+	}
 }

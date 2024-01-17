@@ -7,22 +7,28 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class27_Sub2 extends Class27 {
 
 	@OriginalMember(owner = "client!di", name = "i", descriptor = "J")
-	private long aLong81;
+	private long aLong81 = 0L;
 
 	@OriginalMember(owner = "client!di", name = "k", descriptor = "J")
-	private long aLong82;
+	private long aLong82 = 0L;
 
 	@OriginalMember(owner = "client!di", name = "l", descriptor = "J")
-	private long aLong83;
+	private long aLong83 = 0L;
 
 	@OriginalMember(owner = "client!di", name = "g", descriptor = "[J")
-	private long[] aLongArray2 = new long[10];
+	private final long[] aLongArray2 = new long[10];
 
 	@OriginalMember(owner = "client!di", name = "j", descriptor = "I")
-	private int anInt2220;
+	private int anInt2220 = 0;
 
 	@OriginalMember(owner = "client!di", name = "h", descriptor = "I")
 	private int anInt2219 = 1;
+
+	@OriginalMember(owner = "client!di", name = "<init>", descriptor = "()V")
+	private Class27_Sub2() {
+		this.aLong82 = System.nanoTime();
+		this.aLong81 = System.nanoTime();
+	}
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "(BJ)I")
 	@Override

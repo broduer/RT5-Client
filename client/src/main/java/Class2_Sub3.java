@@ -8,6 +8,10 @@ public abstract class Class2_Sub3 extends Class2 {
 	@OriginalMember(owner = "client!ada", name = "k", descriptor = "I")
 	public int anInt101;
 
+	@OriginalMember(owner = "client!ada", name = "<init>", descriptor = "()V")
+	private Class2_Sub3() {
+	}
+
 	@OriginalMember(owner = "client!ada", name = "a", descriptor = "()V")
 	public abstract void method113();
 

@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class150 {
 
 	@OriginalMember(owner = "client!gp", name = "e", descriptor = "[I")
-	public final int[] anIntArray286;
+	public int[] anIntArray286;
 
 	@OriginalMember(owner = "client!gp", name = "g", descriptor = "[S")
-	public final short[] aShortArray53;
+	public short[] aShortArray53;
 
 	@OriginalMember(owner = "client!gp", name = "d", descriptor = "[S")
-	public final short[] aShortArray54;
+	public short[] aShortArray54;
 
 	@OriginalMember(owner = "client!gp", name = "f", descriptor = "J")
-	public final long aLong119;
+	public long aLong119;
 
 	@OriginalMember(owner = "client!gp", name = "<init>", descriptor = "(J[I[S[S)V")
 	public Class150(@OriginalArg(0) long arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) short[] arg2, @OriginalArg(3) short[] arg3) {
@@ -23,5 +23,9 @@ public final class Class150 {
 		this.aShortArray53 = arg2;
 		this.aShortArray54 = arg3;
 		this.aLong119 = arg0;
+	}
+
+	@OriginalMember(owner = "client!gp", name = "<init>", descriptor = "()V")
+	private Class150() {
 	}
 }

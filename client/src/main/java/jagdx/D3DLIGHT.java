@@ -9,7 +9,8 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!jagdx/D3DLIGHT")
 public final class D3DLIGHT extends Peer_Sub1 {
 
-	public D3DLIGHT(Class189 arg0) {
+	@OriginalMember(owner = "client!jagdx/D3DLIGHT", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
+	public D3DLIGHT(@OriginalArg(0) Class189 arg0) {
 		super(arg0);
 		this.Init();
 	}

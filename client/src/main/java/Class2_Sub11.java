@@ -7,31 +7,42 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class2_Sub11 extends Class2 {
 
 	@OriginalMember(owner = "client!cea", name = "x", descriptor = "[S")
-	public final short[] aShortArray16 = new short[128];
+	public short[] aShortArray16;
 
 	@OriginalMember(owner = "client!cea", name = "o", descriptor = "[Lclient!oaa;")
-	public final Class271[] aClass271Array1 = new Class271[128];
+	public Class271[] aClass271Array1;
 
 	@OriginalMember(owner = "client!cea", name = "B", descriptor = "[B")
-	public final byte[] aByteArray18 = new byte[128];
+	public byte[] aByteArray18;
 
 	@OriginalMember(owner = "client!cea", name = "t", descriptor = "[Lclient!sq;")
-	public final Class2_Sub49_Sub1[] aClass2_Sub49_Sub1Array1 = new Class2_Sub49_Sub1[128];
+	public Class2_Sub49_Sub1[] aClass2_Sub49_Sub1Array1;
 
 	@OriginalMember(owner = "client!cea", name = "n", descriptor = "I")
-	public final int anInt1586;
+	public int anInt1586;
 
 	@OriginalMember(owner = "client!cea", name = "z", descriptor = "[B")
-	public final byte[] aByteArray19 = new byte[128];
+	public byte[] aByteArray19;
 
 	@OriginalMember(owner = "client!cea", name = "q", descriptor = "[I")
-	private int[] anIntArray149 = new int[128];
+	private int[] anIntArray149;
 
 	@OriginalMember(owner = "client!cea", name = "y", descriptor = "[B")
-	public final byte[] aByteArray20 = new byte[128];
+	public byte[] aByteArray20;
+
+	@OriginalMember(owner = "client!cea", name = "<init>", descriptor = "()V")
+	private Class2_Sub11() {
+	}
 
 	@OriginalMember(owner = "client!cea", name = "<init>", descriptor = "([B)V")
 	public Class2_Sub11(@OriginalArg(0) byte[] arg0) {
+		this.aClass271Array1 = new Class271[128];
+		this.aClass2_Sub49_Sub1Array1 = new Class2_Sub49_Sub1[128];
+		this.anIntArray149 = new int[128];
+		this.aByteArray20 = new byte[128];
+		this.aByteArray19 = new byte[128];
+		this.aShortArray16 = new short[128];
+		this.aByteArray18 = new byte[128];
 		@Pc(34) Class2_Sub21 local34 = new Class2_Sub21(arg0);
 		@Pc(36) int local36;
 		for (local36 = 0; local34.aByteArray93[local36 + local34.anInt8412] != 0; local36++) {

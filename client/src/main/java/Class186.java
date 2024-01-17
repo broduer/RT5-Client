@@ -13,10 +13,10 @@ public final class Class186 {
 	private int anInt4599;
 
 	@OriginalMember(owner = "client!iv", name = "c", descriptor = "[I")
-	private final int[] anIntArray356 = new int[256];
+	private int[] anIntArray356;
 
 	@OriginalMember(owner = "client!iv", name = "j", descriptor = "[I")
-	private final int[] anIntArray357 = new int[256];
+	private int[] anIntArray357;
 
 	@OriginalMember(owner = "client!iv", name = "h", descriptor = "I")
 	private int anInt4602;
@@ -24,8 +24,14 @@ public final class Class186 {
 	@OriginalMember(owner = "client!iv", name = "f", descriptor = "I")
 	private int anInt4605;
 
+	@OriginalMember(owner = "client!iv", name = "<init>", descriptor = "()V")
+	private Class186() {
+	}
+
 	@OriginalMember(owner = "client!iv", name = "<init>", descriptor = "([I)V")
 	public Class186(@OriginalArg(0) int[] arg0) {
+		this.anIntArray356 = new int[256];
+		this.anIntArray357 = new int[256];
 		for (@Pc(13) int local13 = 0; local13 < arg0.length; local13++) {
 			this.anIntArray356[local13] = arg0[local13];
 		}

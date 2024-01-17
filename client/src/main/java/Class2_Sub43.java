@@ -14,13 +14,13 @@ public final class Class2_Sub43 extends Class2 {
 	private String aString92;
 
 	@OriginalMember(owner = "client!pw", name = "y", descriptor = "I")
-	private final int anInt7622;
+	private int anInt7622;
 
 	@OriginalMember(owner = "client!pw", name = "N", descriptor = "I")
-	public final int anInt7626;
+	public int anInt7626;
 
 	@OriginalMember(owner = "client!pw", name = "J", descriptor = "Z")
-	private final boolean aBoolean580;
+	private boolean aBoolean580;
 
 	@OriginalMember(owner = "client!pw", name = "D", descriptor = "Ljava/lang/String;")
 	private String aString93;
@@ -32,10 +32,10 @@ public final class Class2_Sub43 extends Class2 {
 	private int anInt7628;
 
 	@OriginalMember(owner = "client!pw", name = "w", descriptor = "I")
-	public final int anInt7630;
+	public int anInt7630;
 
 	@OriginalMember(owner = "client!pw", name = "F", descriptor = "I")
-	private final int anInt7632;
+	private int anInt7632;
 
 	@OriginalMember(owner = "client!pw", name = "u", descriptor = "Ljava/lang/String;")
 	private String aString94;
@@ -44,7 +44,7 @@ public final class Class2_Sub43 extends Class2 {
 	public int anInt7633;
 
 	@OriginalMember(owner = "client!pw", name = "r", descriptor = "I")
-	private final int anInt7634;
+	private int anInt7634;
 
 	@OriginalMember(owner = "client!pw", name = "O", descriptor = "Ljava/lang/String;")
 	private String aString95;
@@ -53,10 +53,10 @@ public final class Class2_Sub43 extends Class2 {
 	private int anInt7635;
 
 	@OriginalMember(owner = "client!pw", name = "x", descriptor = "Z")
-	private final boolean aBoolean581;
+	private boolean aBoolean581;
 
 	@OriginalMember(owner = "client!pw", name = "o", descriptor = "I")
-	private final int anInt7636;
+	private int anInt7636;
 
 	@OriginalMember(owner = "client!pw", name = "n", descriptor = "I")
 	private int anInt7637;
@@ -68,7 +68,11 @@ public final class Class2_Sub43 extends Class2 {
 	private int anInt7639;
 
 	@OriginalMember(owner = "client!pw", name = "H", descriptor = "I")
-	private final int anInt7640;
+	private int anInt7640;
+
+	@OriginalMember(owner = "client!pw", name = "<init>", descriptor = "()V")
+	private Class2_Sub43() {
+	}
 
 	@OriginalMember(owner = "client!pw", name = "<init>", descriptor = "(ZLclient!vq;)V")
 	public Class2_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class392 arg1) {

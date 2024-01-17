@@ -17,7 +17,7 @@ public final class Class189 {
 	private PeerReference c;
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "b", descriptor = "Ljava/lang/ref/ReferenceQueue;")
-	public ReferenceQueue b;
+	public final ReferenceQueue b = new ReferenceQueue();
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "a", descriptor = "(I)V")
 	private void method4156() {

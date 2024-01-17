@@ -188,6 +188,15 @@ public final class Class8_Sub2_Sub2_Sub2 extends Class8_Sub2_Sub2 implements Int
 		return this.aClass339_2.anInt8687;
 	}
 
+	@OriginalMember(owner = "client!hp", name = "c", descriptor = "(B)I")
+	@Override
+	public int method9299(@OriginalArg(0) byte arg0) {
+		if (arg0 != -21) {
+			this.aBoolean317 = true;
+		}
+		return this.aClass339_2.method7680(true);
+	}
+
 	@OriginalMember(owner = "client!hp", name = "h", descriptor = "(I)Z")
 	@Override
 	public boolean method9289(@OriginalArg(0) int arg0) {
