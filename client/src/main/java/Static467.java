@@ -15,7 +15,7 @@ public final class Static467 {
 
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(ILjava/lang/String;)Z")
 	public static boolean method6357(@OriginalArg(1) String arg0) {
-		return Static702.method9174(arg0);
+		return Static702.method9174(arg0, 10);
 	}
 
 	@OriginalMember(owner = "client!oo", name = "a", descriptor = "(III)Lclient!pba;")

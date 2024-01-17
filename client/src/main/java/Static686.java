@@ -32,9 +32,6 @@ public final class Static686 {
 		}
 		Static171.anInt2889 = Static333.anInt5474;
 		Static449.method6121(-1, -1, null);
-		if (105 <= 103) {
-			return;
-		}
 		if (Static377.anInt5950 != -1) {
 			Static122.anInt2348 = 0;
 			Static261.method3833();

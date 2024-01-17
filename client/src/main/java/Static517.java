@@ -26,12 +26,12 @@ public final class Static517 {
 	}
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(ZIII)V")
-	public static void method6829(@OriginalArg(0) boolean arg0) {
-		if (22050 > 48000) {
+	public static void method6829(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
+		if (arg1 > 48000) {
 			throw new IllegalArgumentException();
 		}
-		Static156.anInt2688 = 2;
-		Static686.anInt8968 = 22050;
+		Static156.anInt2688 = arg2;
+		Static686.anInt8968 = arg1;
 		Static316.aBoolean645 = arg0;
 	}
 

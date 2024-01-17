@@ -47,9 +47,9 @@ public final class Static702 {
 	}
 
 	@OriginalMember(owner = "client!wda", name = "a", descriptor = "(ZILjava/lang/String;I)Z")
-	public static boolean method9174(@OriginalArg(2) String arg0) {
-		if (10 > 36) {
-			throw new IllegalArgumentException("Invalid radix:" + 10);
+	public static boolean method9174(@OriginalArg(2) String arg0, @OriginalArg(3) int arg1) {
+		if (arg1 < 2 || arg1 > 36) {
+			throw new IllegalArgumentException("Invalid radix:" + arg1);
 		}
 		@Pc(27) boolean local27 = false;
 		@Pc(29) boolean local29 = false;
@@ -76,14 +76,14 @@ public final class Static702 {
 			} else {
 				return false;
 			}
-			if (local73 >= 10) {
+			if (local73 >= arg1) {
 				return false;
 			}
 			if (local27) {
 				local73 = -local73;
 			}
-			@Pc(124) int local124 = local73 + local31 * 10;
-			if (local31 != local124 / 10) {
+			@Pc(124) int local124 = local73 + local31 * arg1;
+			if (local31 != local124 / arg1) {
 				return false;
 			}
 			local31 = local124;

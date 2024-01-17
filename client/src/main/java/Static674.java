@@ -22,7 +22,7 @@ public final class Static674 {
 
 	@OriginalMember(owner = "client!vfa", name = "b", descriptor = "(B)V")
 	public static void method8813() {
-		Static517.method6829(Static400.aClass2_Sub34_28.aClass57_Sub17_1.method5674() == 1);
+		Static517.method6829(Static400.aClass2_Sub34_28.aClass57_Sub17_1.method5674() == 1, 22050, 2);
 		Static719.aClass56_5 = Static638.method8401(Static446.aClass392_6, 0, 22050, Static434.aCanvas7);
 		Static697.method9127(Static48.method1100(null));
 		Static559.aClass56_3 = Static638.method8401(Static446.aClass392_6, 1, 2048, Static434.aCanvas7);
