@@ -529,7 +529,7 @@ public final class Class54 {
 														} else {
 															local885 = new Class2_Sub38(arg0.method7356());
 														}
-														this.aClass28_10.method735((long) local67, local885);
+														this.aClass28_10.method735(local67, local885);
 													}
 													return;
 												}
@@ -608,7 +608,7 @@ public final class Class54 {
 		if (this.aClass28_10 == null) {
 			return arg0;
 		} else {
-			@Pc(25) Class2_Sub24 local25 = (Class2_Sub24) this.aClass28_10.method738((long) arg1);
+			@Pc(25) Class2_Sub24 local25 = (Class2_Sub24) this.aClass28_10.method738(arg1);
 			return local25 == null ? arg0 : local25.aString46;
 		}
 	}
@@ -758,8 +758,8 @@ public final class Class54 {
 		if (Static449.method6124(arg6)) {
 			arg6 = 4;
 		}
-		@Pc(21) long local21 = (long) (arg0 + (this.anInt1261 << 10) + (arg6 << 3));
-		local21 |= (long) (arg7.anInt8986 << 29);
+		@Pc(21) long local21 = arg0 + (this.anInt1261 << 10) + (arg6 << 3);
+		local21 |= arg7.anInt8986 << 29;
 		if (arg8 != null) {
 			local21 |= arg8.aLong119 << 32;
 		}
@@ -791,7 +791,7 @@ public final class Class54 {
 			local120 = local106.aClass114_7;
 			local122 = local106.aClass2_Sub2_Sub9_5;
 			if (arg4 && local122 == null) {
-				local122 = local106.aClass2_Sub2_Sub9_5 = local120.ba((Class2_Sub2_Sub9) null);
+				local122 = local106.aClass2_Sub2_Sub9_5 = local120.ba(null);
 			}
 		} else {
 			if (local120 != null) {
@@ -809,7 +809,7 @@ public final class Class54 {
 				local120.a(2048);
 			}
 			if (arg4) {
-				local122 = local120.ba((Class2_Sub2_Sub9) null);
+				local122 = local120.ba(null);
 			}
 			local120.s(local40);
 			local106 = new Class274();
@@ -844,9 +844,9 @@ public final class Class54 {
 		if (Static449.method6124(arg2)) {
 			arg2 = 4;
 		}
-		@Pc(22) long local22 = (long) ((this.anInt1261 << 10) + ((arg2 << 3) + arg0));
+		@Pc(22) long local22 = (this.anInt1261 << 10) + ((arg2 << 3) + arg0);
 		@Pc(24) int local24 = arg9;
-		local22 |= (long) (arg6.anInt8986 << 29);
+		local22 |= arg6.anInt8986 << 29;
 		if (arg8 != null) {
 			local22 |= arg8.aLong119 << 32;
 		}
@@ -969,7 +969,7 @@ public final class Class54 {
 		@Pc(182) int local182 = local179.length;
 		@Pc(193) int local193;
 		if (local182 > 0) {
-			@Pc(191) long local191 = (long) arg0.anInt8986;
+			@Pc(191) long local191 = arg0.anInt8986;
 			for (local193 = 0; local193 < local182; local193++) {
 				local191 = local191 * 67783L + (long) local179[local193];
 			}
@@ -1102,7 +1102,7 @@ public final class Class54 {
 		if (this.aClass28_10 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_10.method738((long) arg1);
+			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_10.method738(arg1);
 			return local17 == null ? arg0 : local17.anInt6399;
 		}
 	}

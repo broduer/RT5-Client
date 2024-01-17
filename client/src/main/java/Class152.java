@@ -218,9 +218,9 @@ public class Class152 {
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(IIZLclient!ka;)V")
 	public final void method9117(@OriginalArg(0) int arg0, @OriginalArg(3) Class114 arg1) {
 		if (this.method9118()) {
-			arg1.method7503(this.anInt10506, this.aClass259_8.aClass2_Sub2_Sub18_1, this.aClass259_8.aClass2_Sub2_Sub18_2, this.aClass259_8.anInt6468, (int[]) null, this.aClass69_4.anIntArray157[this.anInt10517], this.aClass69_4.aBoolean140, this.aClass259_8.anInt6470, arg0);
+			arg1.method7503(this.anInt10506, this.aClass259_8.aClass2_Sub2_Sub18_1, this.aClass259_8.aClass2_Sub2_Sub18_2, this.aClass259_8.anInt6468, null, this.aClass69_4.anIntArray157[this.anInt10517], this.aClass69_4.aBoolean140, this.aClass259_8.anInt6470, arg0);
 			if (this.aBoolean791 && this.aClass69_4.anIntArray158 != null && this.aClass259_7.aBoolean481) {
-				arg1.method7503(this.anInt10506, this.aClass259_7.aClass2_Sub2_Sub18_1, this.aClass259_7.aClass2_Sub2_Sub18_2, this.aClass259_7.anInt6468, (int[]) null, this.aClass69_4.anIntArray157[this.anInt10517], this.aClass69_4.aBoolean140, this.aClass259_7.anInt6470, arg0);
+				arg1.method7503(this.anInt10506, this.aClass259_7.aClass2_Sub2_Sub18_1, this.aClass259_7.aClass2_Sub2_Sub18_2, this.aClass259_7.anInt6468, null, this.aClass69_4.anIntArray157[this.anInt10517], this.aClass69_4.aBoolean140, this.aClass259_7.anInt6470, arg0);
 			}
 		}
 	}

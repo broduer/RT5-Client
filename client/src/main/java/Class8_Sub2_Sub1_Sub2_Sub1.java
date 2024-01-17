@@ -125,17 +125,17 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(BIIILclient!ka;Lclient!tt;Lclient!ha;I)V")
 	private void method1414(@OriginalArg(0) byte arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class114 arg4, @OriginalArg(5) Class73 arg5, @OriginalArg(6) Class19 arg6, @OriginalArg(7) int arg7) {
 		if (arg0 != -74) {
-			this.method9296((Class19) null, 41);
+			this.method9296(null, 41);
 		}
 		@Pc(20) int local20 = arg7 * arg7 + arg1 * arg1;
 		if (local20 < 262144 || local20 > arg2) {
 			return;
 		}
-		@Pc(53) int local53 = (int) (Math.atan2((double) arg1, (double) arg7) * 2607.5945876176133D - (double) super.aClass126_7.method2673(16383)) & 0x3FFF;
+		@Pc(53) int local53 = (int) (Math.atan2(arg1, arg7) * 2607.5945876176133D - (double) super.aClass126_7.method2673(16383)) & 0x3FFF;
 		@Pc(65) Class114 local65 = Static691.method9011(super.anInt10775, super.anInt10770, arg3, super.anInt10744, local53, arg6);
 		if (local65 != null) {
 			arg6.C(false);
-			local65.method7480(arg5, (Class8_Sub6) null, 0);
+			local65.method7480(arg5, null, 0);
 			arg6.C(true);
 		}
 	}
@@ -176,7 +176,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 	@Override
 	public boolean method9297(@OriginalArg(0) int arg0) {
 		if (arg0 != 0) {
-			this.method1414((byte) 124, 20, -110, 30, (Class114) null, (Class73) null, (Class19) null, 15);
+			this.method1414((byte) 124, 20, -110, 30, null, null, null, 15);
 		}
 		return false;
 	}
@@ -213,11 +213,11 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 		if (local12 < 262144 || local12 > arg1) {
 			return;
 		}
-		@Pc(53) int local53 = (int) (Math.atan2((double) arg4, (double) arg7) * 2607.5945876176133D - (double) super.aClass126_7.method2673(16383)) & 0x3FFF;
+		@Pc(53) int local53 = (int) (Math.atan2(arg4, arg7) * 2607.5945876176133D - (double) super.aClass126_7.method2673(16383)) & 0x3FFF;
 		@Pc(65) Class114 local65 = Static691.method9011(super.anInt10775, super.anInt10770, arg3, super.anInt10744, local53, arg2);
 		if (local65 != null) {
 			arg2.C(false);
-			local65.method7491(arg5, (Class8_Sub6) null, arg6, 0);
+			local65.method7491(arg5, null, arg6, 0);
 			arg2.C(true);
 		}
 	}
@@ -330,7 +330,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 				if (local275 != null && local275.anInt6391 != -1) {
 					@Pc(310) int local310;
 					if (local275.anInt6383 == 1) {
-						@Pc(298) Class2_Sub45 local298 = (Class2_Sub45) Static18.aClass28_2.method738((long) local275.anInt6386);
+						@Pc(298) Class2_Sub45 local298 = (Class2_Sub45) Static18.aClass28_2.method738(local275.anInt6386);
 						if (local298 != null) {
 							@Pc(303) Class8_Sub2_Sub1_Sub2_Sub2 local303 = local298.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 							local310 = local303.anInt10718 - Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10718;

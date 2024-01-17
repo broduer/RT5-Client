@@ -33,7 +33,7 @@ public final class Static444 {
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BI)Lclient!vaa;")
 	public static Class381 method6001(@OriginalArg(1) int arg0) {
-		@Pc(10) Class381 local10 = (Class381) Static289.aClass82_100.method2156((long) arg0);
+		@Pc(10) Class381 local10 = (Class381) Static289.aClass82_100.method2156(arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -43,7 +43,7 @@ public final class Static444 {
 			local10.method8663(new Class2_Sub21(local21));
 		}
 		local10.method8661();
-		Static289.aClass82_100.method2150(local10, (long) arg0);
+		Static289.aClass82_100.method2150(local10, arg0);
 		return local10;
 	}
 }

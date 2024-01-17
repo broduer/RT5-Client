@@ -58,7 +58,7 @@ public final class Class8_Sub2_Sub3_Sub1 extends Class8_Sub2_Sub3 implements Int
 	@Override
 	public void method9287(@OriginalArg(0) int arg0) {
 		if (arg0 != 27811) {
-			this.method9286(-29, 50, false, (Class19) null);
+			this.method9286(-29, 50, false, null);
 		}
 		throw new IllegalStateException();
 	}

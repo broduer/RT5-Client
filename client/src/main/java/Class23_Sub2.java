@@ -223,7 +223,7 @@ public final class Class23_Sub2 extends Class23 {
 		OpenGL.glEnd();
 		this.aClass19_Sub3_28.method7028(5890, 768, 0);
 		this.aClass19_Sub3_28.method6998(0);
-		this.aClass19_Sub3_28.method7008((Class93) null);
+		this.aClass19_Sub3_28.method7008(null);
 		this.aClass19_Sub3_28.method7021(0);
 	}
 
@@ -268,7 +268,7 @@ public final class Class23_Sub2 extends Class23 {
 		OpenGL.glEnd();
 		this.aClass19_Sub3_28.method7028(5890, 768, 0);
 		this.aClass19_Sub3_28.method6998(0);
-		this.aClass19_Sub3_28.method7008((Class93) null);
+		this.aClass19_Sub3_28.method7008(null);
 		this.aClass19_Sub3_28.method7021(0);
 	}
 
@@ -390,7 +390,7 @@ public final class Class23_Sub2 extends Class23 {
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(I)V")
 	private void method5429() {
 		this.aClass19_Sub3_28.method7021(1);
-		this.aClass19_Sub3_28.method7008((Class93) null);
+		this.aClass19_Sub3_28.method7008(null);
 		this.aClass19_Sub3_28.method7038(8448, 8448);
 		this.aClass19_Sub3_28.method7028(34168, 768, 1);
 		this.aClass19_Sub3_28.method7036(0, 5890);

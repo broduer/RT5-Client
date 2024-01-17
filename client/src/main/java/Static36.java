@@ -31,10 +31,7 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!bda", name = "c", descriptor = "(I)I")
-	public static int method978(@OriginalArg(0) int arg0) {
-		if (arg0 != 3) {
-			method977(127, (byte) 11);
-		}
+	public static int method978() {
 		if (Static316.aFrame8 == null) {
 			return Static152.aBoolean812 ? 2 : 1;
 		} else {

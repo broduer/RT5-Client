@@ -80,7 +80,7 @@ public final class Static523 {
 			if (!Static228.aClass264_1.method5807()) {
 				return 0;
 			}
-			Static595.method7814((String) null, true, 0);
+			Static595.method7814(null, true, 0);
 			Static297.aBoolean368 = !Static589.method7728();
 			Static177.aClass332_35 = Static109.method2069(false, Static297.aBoolean368 ? 34 : 32, 1);
 			Static516.aClass332_97 = Static109.method2069(false, 33, 1);

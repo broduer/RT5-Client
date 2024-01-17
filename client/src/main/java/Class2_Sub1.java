@@ -28,11 +28,8 @@ public abstract class Class2_Sub1 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(II)[I")
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 >= 107) {
-			throw new IllegalStateException("This operation does not have a monochrome output");
-		}
-		return null;
+	public int[] method9418(@OriginalArg(1) int arg1) {
+		throw new IllegalStateException("This operation does not have a monochrome output");
 	}
 
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "(B)I")
@@ -43,7 +40,7 @@ public abstract class Class2_Sub1 extends Class2 {
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "(III)[[I")
 	protected final int[][] method9420(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass2_Sub1Array42[arg0].aBoolean825) {
-			@Pc(36) int[] local36 = this.aClass2_Sub1Array42[arg0].method9418(111, arg1);
+			@Pc(36) int[] local36 = this.aClass2_Sub1Array42[arg0].method9418(arg1);
 			return new int[][] { local36, local36, local36 };
 		} else {
 			return this.aClass2_Sub1Array42[arg0].method9421(arg1);
@@ -56,10 +53,7 @@ public abstract class Class2_Sub1 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(ZLclient!ge;I)V")
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			Static485.method9427(true, (float[]) null, 33);
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(IIZ)V")
@@ -78,15 +72,12 @@ public abstract class Class2_Sub1 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "c", descriptor = "(I)V")
-	public void method9428(@OriginalArg(0) int arg0) {
-		if (arg0 != 7) {
-			Static485.anIntArray886 = null;
-		}
+	public void method9428() {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(III)[I")
 	protected final int[] method9429(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		return this.aClass2_Sub1Array42[arg1].aBoolean825 ? this.aClass2_Sub1Array42[arg1].method9418(120, arg0) : this.aClass2_Sub1Array42[arg1].method9421(arg0)[0];
+		return this.aClass2_Sub1Array42[arg1].aBoolean825 ? this.aClass2_Sub1Array42[arg1].method9418(arg0) : this.aClass2_Sub1Array42[arg1].method9421(arg0)[0];
 	}
 
 	@OriginalMember(owner = "client!pf", name = "b", descriptor = "(I)V")

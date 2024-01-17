@@ -129,7 +129,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "(I)Lclient!ip;")
 	public static Class2_Sub2_Sub13 method5066(@OriginalArg(0) int arg0) {
-		return (Class2_Sub2_Sub13) aClass28_27.method738((long) arg0);
+		return (Class2_Sub2_Sub13) aClass28_27.method738(arg0);
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;)V")
@@ -385,7 +385,7 @@ public final class Static30 {
 		if (local28 != null) {
 			for (@Pc(32) int local32 = 0; local32 < local28.length; local32++) {
 				@Pc(41) Class2_Sub2_Sub13 local41 = Static517.method6827(aClass332_74, local23, local28[local32]);
-				aClass28_27.method735((long) local41.anInt4577, local41);
+				aClass28_27.method735(local41.anInt4577, local41);
 			}
 		}
 		Static198.method2954(false, true);
@@ -452,9 +452,9 @@ public final class Static30 {
 								}
 								arg0.aa(local28, local70, local44, local84, local175, 0);
 							} else if (local179 <= 0) {
-								method5068(arg0, local28, local70, local44, local84, local175, local177, aByteArray59[local173], (short[]) null, (byte[]) null, true);
+								method5068(arg0, local28, local70, local44, local84, local175, local177, aByteArray59[local173], null, null, true);
 							} else if (local179 == 65535) {
-								@Pc(282) Class2_Sub23 local282 = (Class2_Sub23) aClass28_28.method738((long) (local50 << 16 | local93));
+								@Pc(282) Class2_Sub23 local282 = (Class2_Sub23) aClass28_28.method738(local50 << 16 | local93);
 								if (local282 != null) {
 									method5068(arg0, local28, local70, local44, local84, local175, local177, aByteArray59[local173], local282.aShortArray59, local282.aByteArray38, true);
 								}
@@ -501,9 +501,9 @@ public final class Static30 {
 							if (local173 >= 0 && local173 < anInt5664) {
 								local175 = aShortArray78[local57 + local173 * anInt5670] & 0xFFFF;
 								if (local175 <= 0) {
-									method5070(arg0, local40, local80, local50, local93, (short[]) null, (byte[]) null);
+									method5070(arg0, local40, local80, local50, local93, null, null);
 								} else if (local175 == 65535) {
-									@Pc(459) Class2_Sub23 local459 = (Class2_Sub23) aClass28_28.method738((long) (local57 << 16 | local173));
+									@Pc(459) Class2_Sub23 local459 = (Class2_Sub23) aClass28_28.method738(local57 << 16 | local173);
 									if (local459 != null) {
 										method5070(arg0, local40, local80, local50, local93, local459.aShortArray59, local459.aByteArray38);
 									}
@@ -721,7 +721,7 @@ public final class Static30 {
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(I)V")
 	public static void method5079(@OriginalArg(0) int arg0) {
-		aClass2_Sub2_Sub13_3 = (Class2_Sub2_Sub13) aClass28_27.method738((long) arg0);
+		aClass2_Sub2_Sub13_3 = (Class2_Sub2_Sub13) aClass28_27.method738(arg0);
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;Lclient!fu;IIII)V")
@@ -788,7 +788,7 @@ public final class Static30 {
 						local215[local220] = (short) arg1.method7389();
 						local218[local220] = arg1.method7384();
 					}
-					aClass28_28.method735((long) (arg4 << 16 | arg5), new Class2_Sub23(local215, local218));
+					aClass28_28.method735(arg4 << 16 | arg5, new Class2_Sub23(local215, local218));
 				}
 			} else {
 				local215 = null;
@@ -821,7 +821,7 @@ public final class Static30 {
 				if (local15 != 0) {
 					@Pc(35) int local35;
 					if (local15 == 65535) {
-						@Pc(31) Class2_Sub23 local31 = (Class2_Sub23) aClass28_28.method738((long) (local1 << 16 | local4));
+						@Pc(31) Class2_Sub23 local31 = (Class2_Sub23) aClass28_28.method738(local1 << 16 | local4);
 						if (local31 != null) {
 							for (local35 = 0; local35 < local31.aShortArray59.length; local35++) {
 								@Pc(46) Class54 local46 = aClass142_3.method3063(local31.aShortArray59[local35] & 0xFFFF, 115);

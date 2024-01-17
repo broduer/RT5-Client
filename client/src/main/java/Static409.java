@@ -213,7 +213,7 @@ public final class Static409 {
 	public static void method5664(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
 		Static498.method6653();
 		Static297.aLong153 = 0L;
-		@Pc(10) int local10 = Static36.method978(3);
+		@Pc(10) int local10 = Static36.method978();
 		if (arg0 == 3 || local10 == 3) {
 			arg2 = true;
 		}

@@ -169,7 +169,7 @@ public final class Class366 implements Runnable {
 					}
 					this.aBoolean732 = false;
 					if (Static163.aClass19_17 != null && !(this.anInterface22_1 instanceof Class376) && this.aClass140_23.method2952() < Static198.aClass140_19.method2952()) {
-						Static712.method9336((byte) 11);
+						Static712.method9336();
 					}
 				} catch (@Pc(292) Exception local292) {
 					continue;
@@ -178,7 +178,7 @@ public final class Class366 implements Runnable {
 			@Pc(304) long local304 = Static588.method7722();
 			@Pc(312) int local312 = (int) (local8 + 20L - local304);
 			if (local312 > 0) {
-				Static638.method8402((long) local312);
+				Static638.method8402(local312);
 			}
 		}
 	}

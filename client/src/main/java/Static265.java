@@ -23,7 +23,7 @@ public final class Static265 {
 		local10.anInt8829 = 8;
 		local10.anInt8834 = 8;
 		local10.anInt8827 = 4;
-		local10.method9428(7);
+		local10.method9428();
 		Static132.method2313(1, 2048);
 		local10.method7816(0, local6);
 		return local6;

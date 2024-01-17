@@ -19,10 +19,7 @@ public final class Class2_Sub1_Sub19 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			return;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt6334 = arg1.method7389();
 		} else if (arg2 == 1) {
@@ -48,7 +45,7 @@ public final class Class2_Sub1_Sub19 extends Class2_Sub1 {
 				@Pc(96) int local96 = local68 >> 12;
 				@Pc(102) int local102 = local92 * local92 >> 12;
 				@Pc(108) int local108 = local96 * local96 >> 12;
-				@Pc(122) int local122 = (int) (Math.sqrt((double) ((float) (local108 + local102 + 4096) / 4096.0F)) * 4096.0D);
+				@Pc(122) int local122 = (int) (Math.sqrt((float) (local108 + local102 + 4096) / 4096.0F) * 4096.0D);
 				@Pc(128) int local128;
 				@Pc(126) int local126;
 				@Pc(130) int local130;

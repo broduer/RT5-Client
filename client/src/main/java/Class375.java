@@ -91,7 +91,7 @@ public final class Class375 {
 				}
 			}
 			this.anInterface1_5 = this.aClass19_Sub3_36.method7017(false, local103.anInt8412, local103.aByteArray93);
-			this.aClass134_Sub2_2 = new Class134_Sub2(this.aClass19_Sub3_36, 5123, (byte[]) null, 1);
+			this.aClass134_Sub2_2 = new Class134_Sub2(this.aClass19_Sub3_36, 5123, null, 1);
 		}
 	}
 

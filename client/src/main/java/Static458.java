@@ -25,10 +25,10 @@ public final class Static458 {
 							((Interface25) local29.aClass8_Sub2_Sub2_1).method6863();
 						}
 						if (local29.aClass8_Sub2_Sub4_1 instanceof Interface25) {
-							((Interface25) local29.aClass8_Sub2_Sub4_1).method6863();
+							local29.aClass8_Sub2_Sub4_1.method6863();
 						}
 						if (local29.aClass8_Sub2_Sub4_2 instanceof Interface25) {
-							((Interface25) local29.aClass8_Sub2_Sub4_2).method6863();
+							local29.aClass8_Sub2_Sub4_2.method6863();
 						}
 						if (local29.aClass8_Sub2_Sub3_2 instanceof Interface25) {
 							((Interface25) local29.aClass8_Sub2_Sub3_2).method6863();

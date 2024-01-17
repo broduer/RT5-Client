@@ -100,7 +100,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 			@Pc(80) int[] local80;
 			@Pc(76) int[] local76;
 			if (this.aClass2_Sub1_3.aBoolean825) {
-				@Pc(74) int[] local74 = this.aClass2_Sub1_3.method9418(117, local58);
+				@Pc(74) int[] local74 = this.aClass2_Sub1_3.method9418(local58);
 				local76 = local74;
 				local78 = local74;
 				local80 = local74;
@@ -112,7 +112,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 			}
 			@Pc(110) int[] local110;
 			if (this.aClass2_Sub1_1.aBoolean825) {
-				local110 = this.aClass2_Sub1_1.method9418(114, local58);
+				local110 = this.aClass2_Sub1_1.method9418(local58);
 			} else {
 				local110 = this.aClass2_Sub1_1.method9421(local58)[0];
 			}
@@ -121,7 +121,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 			}
 			@Pc(136) int[] local136;
 			if (this.aClass2_Sub1_2.aBoolean825) {
-				local136 = this.aClass2_Sub1_2.method9418(115, local58);
+				local136 = this.aClass2_Sub1_2.method9418(local58);
 			} else {
 				local136 = this.aClass2_Sub1_2.method9421(local58)[0];
 			}
@@ -164,9 +164,6 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 				}
 			}
 		}
-		if (4 != 4) {
-			return true;
-		}
 		for (local12 = 0; local12 < this.anIntArray823.length; local12++) {
 			if (!arg1.method6821(this.anIntArray823[local12])) {
 				return false;
@@ -192,7 +189,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 			@Pc(81) int[] local81;
 			@Pc(93) int[] local93;
 			if (this.aClass2_Sub1_3.aBoolean825) {
-				local93 = this.aClass2_Sub1_3.method9418(117, local57);
+				local93 = this.aClass2_Sub1_3.method9418(local57);
 				local81 = local93;
 				local85 = local93;
 				local77 = local93;
@@ -203,7 +200,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 				local85 = local73[1];
 			}
 			if (this.aClass2_Sub1_1.aBoolean825) {
-				local93 = this.aClass2_Sub1_1.method9418(111, local57);
+				local93 = this.aClass2_Sub1_1.method9418(local57);
 			} else {
 				local93 = this.aClass2_Sub1_1.method9421(local57)[0];
 			}
@@ -287,7 +284,7 @@ public final class Class2_Sub2_Sub21 extends Class2_Sub2 {
 			@Pc(81) int[] local81;
 			@Pc(83) int[] local83;
 			if (this.aClass2_Sub1_3.aBoolean825) {
-				@Pc(79) int[] local79 = this.aClass2_Sub1_3.method9418(127, local65);
+				@Pc(79) int[] local79 = this.aClass2_Sub1_3.method9418(local65);
 				local81 = local79;
 				local83 = local79;
 				local85 = local79;

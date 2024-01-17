@@ -527,7 +527,7 @@ public final class Class158 {
 			this.aClass8_Sub5_4 = Static257.method3654(arg3, false);
 		}
 		if (this.aClass8_Sub5_4 != null) {
-			this.aClass8_Sub5_4.method3643(arg0, (long) arg3, local9, local22);
+			this.aClass8_Sub5_4.method3643(arg0, arg3, local9, local22);
 		}
 	}
 
@@ -535,12 +535,12 @@ public final class Class158 {
 	public void method3385(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass28_17 == null) {
 			this.aClass28_17 = new Class28(16);
-			this.aClass28_17.method735((long) arg0, new Class2_Sub38(arg1));
+			this.aClass28_17.method735(arg0, new Class2_Sub38(arg1));
 			return;
 		}
-		@Pc(34) Class2_Sub38 local34 = (Class2_Sub38) this.aClass28_17.method738((long) arg0);
+		@Pc(34) Class2_Sub38 local34 = (Class2_Sub38) this.aClass28_17.method738(arg0);
 		if (local34 == null) {
-			this.aClass28_17.method735((long) arg0, new Class2_Sub38(arg1));
+			this.aClass28_17.method735(arg0, new Class2_Sub38(arg1));
 		} else {
 			local34.anInt6399 = arg1;
 		}
@@ -583,7 +583,7 @@ public final class Class158 {
 		if (this.aClass28_17 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_17.method738((long) arg1);
+			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_17.method738(arg1);
 			return local17 == null ? arg0 : local17.aString46;
 		}
 	}
@@ -796,13 +796,13 @@ public final class Class158 {
 			for (@Pc(924) int local924 = 0; local924 < local767; local924++) {
 				local929 = arg0.method7390();
 				local933 = arg0.method7356();
-				this.aClass28_17.method735((long) local929, new Class2_Sub38(local933));
+				this.aClass28_17.method735(local929, new Class2_Sub38(local933));
 			}
 			local929 = arg0.method7403();
 			for (local933 = 0; local933 < local929; local933++) {
 				@Pc(958) int local958 = arg0.method7390();
 				@Pc(962) String local962 = arg0.method7350();
-				this.aClass28_17.method735((long) local958, new Class2_Sub24(local962));
+				this.aClass28_17.method735(local958, new Class2_Sub24(local962));
 			}
 		}
 		this.anObjectArray13 = this.method3386(arg0);
@@ -902,12 +902,12 @@ public final class Class158 {
 	public void method3396(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		if (this.aClass28_17 == null) {
 			this.aClass28_17 = new Class28(16);
-			this.aClass28_17.method735((long) arg1, new Class2_Sub24(arg0));
+			this.aClass28_17.method735(arg1, new Class2_Sub24(arg0));
 			return;
 		}
-		@Pc(32) Class2_Sub24 local32 = (Class2_Sub24) this.aClass28_17.method738((long) arg1);
+		@Pc(32) Class2_Sub24 local32 = (Class2_Sub24) this.aClass28_17.method738(arg1);
 		if (local32 == null) {
-			this.aClass28_17.method735((long) arg1, new Class2_Sub24(arg0));
+			this.aClass28_17.method735(arg1, new Class2_Sub24(arg0));
 		} else {
 			local32.aString46 = arg0;
 		}
@@ -1081,7 +1081,7 @@ public final class Class158 {
 					return local498;
 				}
 			} else if (this.anInt3834 == 6) {
-				local438 = arg7.method7099(this.anInt3842).method6000(arg6, arg0, arg2, arg1, 0, (int[]) null, arg10, (Class152) null, 2048, (Class152[]) null);
+				local438 = arg7.method7099(this.anInt3842).method6000(arg6, arg0, arg2, arg1, 0, null, arg10, null, 2048, null);
 				if (local438 == null) {
 					Static544.aBoolean625 = true;
 					return null;
@@ -1110,7 +1110,7 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(II)V")
 	public void method3402(@OriginalArg(0) int arg0) {
 		if (this.aClass28_17 != null) {
-			@Pc(14) Class2 local14 = this.aClass28_17.method738((long) arg0);
+			@Pc(14) Class2 local14 = this.aClass28_17.method738(arg0);
 			if (local14 != null) {
 				local14.method9464();
 			}
@@ -1129,7 +1129,7 @@ public final class Class158 {
 		if (this.aClass28_17 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_17.method738((long) arg1);
+			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_17.method738(arg1);
 			return local17 == null ? arg0 : local17.anInt6399;
 		}
 	}

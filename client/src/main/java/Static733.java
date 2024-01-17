@@ -14,7 +14,7 @@ public final class Static733 {
 			} else if (Static14.method179("jagdx")) {
 				@Pc(26) Class local26 = Class.forName("Class19_Sub1_Sub1");
 				@Pc(68) Method local68 = local26.getDeclaredMethod("createToolkit", Class.forName("java.awt.Canvas"), Class.forName("Interface4"), Class.forName("Class332"), Class.forName("java.lang.Integer"));
-				return (Class19) local68.invoke((Object) null, arg3, arg2, arg0, Integer.valueOf(arg1));
+				return (Class19) local68.invoke(null, arg3, arg2, arg0, Integer.valueOf(arg1));
 			} else {
 				throw new RuntimeException("");
 			}

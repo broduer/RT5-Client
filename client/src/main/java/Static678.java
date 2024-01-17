@@ -20,7 +20,7 @@ public final class Static678 {
 			}
 		}
 		if (arg0 != -1) {
-			method8908(-83, (Class2_Sub21) null);
+			method8908(-83, null);
 		}
 	}
 }

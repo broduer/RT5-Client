@@ -198,7 +198,7 @@ public final class Static55 {
 			local750 = Static591.aClass347_107;
 		}
 		if (local750 != null) {
-			@Pc(806) Class2_Sub45 local806 = (Class2_Sub45) Static18.aClass28_2.method738((long) local26);
+			@Pc(806) Class2_Sub45 local806 = (Class2_Sub45) Static18.aClass28_2.method738(local26);
 			if (local806 != null) {
 				Static676.anInt10234 = arg2;
 				@Pc(813) Class8_Sub2_Sub1_Sub2_Sub2 local813 = local806.aClass8_Sub2_Sub1_Sub2_Sub2_2;
@@ -274,7 +274,7 @@ public final class Static55 {
 			Static414.method5704(local19, local16);
 		}
 		if (local22 == 23) {
-			@Pc(1200) Class2_Sub45 local1200 = (Class2_Sub45) Static18.aClass28_2.method738((long) local26);
+			@Pc(1200) Class2_Sub45 local1200 = (Class2_Sub45) Static18.aClass28_2.method738(local26);
 			if (local1200 != null) {
 				@Pc(1205) Class8_Sub2_Sub1_Sub2_Sub2 local1205 = local1200.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				Static481.anInt7236 = 0;

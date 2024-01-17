@@ -48,7 +48,7 @@ public final class Class66 {
 		} catch (@Pc(33) Throwable local33) {
 		}
 		if (arg1 != 1503493474) {
-			this.aDisplayMode1 = (DisplayMode) null;
+			this.aDisplayMode1 = null;
 		}
 		try {
 			this.aGraphicsDevice1.setFullScreenWindow(arg0);
@@ -114,6 +114,6 @@ public final class Class66 {
 			}
 			this.aDisplayMode1 = null;
 		}
-		this.method1562((Frame) null, 1503493474);
+		this.method1562(null, 1503493474);
 	}
 }

@@ -220,7 +220,7 @@ public final class Class148 {
 			this.aClass114_2.method7505((byte) arg1, this.aByteArray35);
 			this.anInt3513 = arg1;
 		}
-		this.aClass114_2.method7480(local36, (Class8_Sub6) null, 0);
+		this.aClass114_2.method7480(local36, null, 0);
 		arg4.method8007(local7);
 	}
 

@@ -16,21 +16,15 @@ public final class Class2_Sub1_Sub29 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt9598 = arg1.method7389();
-		}
-		if (arg0) {
-			this.method9423(false, (Class2_Sub21) null, 11);
 		}
 	}
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 <= 107) {
-			Static639.method8425((Class299_Sub1) null, 60, -47, true, -23, (Class299_Sub1) null, true);
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(25) int[] local25 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(33) int local33 = Static273.anIntArray341[arg1];

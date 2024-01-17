@@ -15,7 +15,7 @@ public final class Static651 {
 
 	@OriginalMember(owner = "client!uja", name = "a", descriptor = "(BILclient!ha;)Lclient!st;")
 	public static Class23 method8519(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1) {
-		@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static106.aClass28_11.method738((long) arg0);
+		@Pc(18) Class2_Sub5 local18 = (Class2_Sub5) Static106.aClass28_11.method738(arg0);
 		if (local18 != null) {
 			@Pc(25) Class2_Sub28_Sub3 local25 = local18.aClass224_Sub1_1.method9194();
 			local18.aBoolean18 = true;
@@ -193,7 +193,7 @@ public final class Static651 {
 		if (Static156.aBoolean223 && !arg0) {
 			@Pc(113) Class298 local113 = Static610.anInt9355 == -1 ? null : Static386.aClass49_2.method1161(Static610.anInt9355);
 			if ((Static717.anInt10851 & 0x2) != 0 && (local113 == null || local21.method6002(Static610.anInt9355, local113.anInt7532) != local113.anInt7532)) {
-				Static416.method5714(false, -1, (long) arg1.anInt10768, 0, 0, Static153.aString27, 23, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffff00>" + local24, (long) arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, Static153.aString27, 23, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffff00>" + local24, arg1.anInt10768, false);
 			}
 		}
 		if (arg0) {
@@ -234,7 +234,7 @@ public final class Static651 {
 				if (local21.anInt6757 == local189) {
 					local228 = local21.anInt6773;
 				}
-				Static416.method5714(false, -1, (long) arg1.anInt10768, 0, 0, local176[local189], local226, true, local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local228, "<col=ffff00>" + local24, (long) arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local189], local226, true, local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local228, "<col=ffff00>" + local24, arg1.anInt10768, false);
 			}
 		}
 		if (local21.aByte107 != 1) {
@@ -275,7 +275,7 @@ public final class Static651 {
 				if (local21.anInt6757 == local341) {
 					local387 = local21.anInt6773;
 				}
-				Static416.method5714(false, -1, (long) arg1.anInt10768, 0, 0, local176[local341], local385, true, local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local387, "<col=ffff00>" + local24, (long) arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local341], local385, true, local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local387, "<col=ffff00>" + local24, arg1.anInt10768, false);
 			}
 		}
 		return;

@@ -19,6 +19,6 @@ public final class Class2_Sub2_Sub8 extends Class2_Sub2 {
 
 	@OriginalMember(owner = "client!dk", name = "a", descriptor = "(Z)J")
 	public long method2133() {
-		return (long) (this.aShortArrayArray3.length << 0 | this.aShortArrayArray3[0].length);
+		return this.aShortArrayArray3.length << 0 | this.aShortArrayArray3[0].length;
 	}
 }

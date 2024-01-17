@@ -64,7 +64,7 @@ public final class Class101_Sub5 extends Class101 {
 	public void method9434() {
 		this.aClass36_5.method1005('\u0001');
 		super.aClass19_Sub3_42.method7021(1);
-		super.aClass19_Sub3_42.method7008((Class93) null);
+		super.aClass19_Sub3_42.method7008(null);
 		super.aClass19_Sub3_42.method7021(0);
 	}
 

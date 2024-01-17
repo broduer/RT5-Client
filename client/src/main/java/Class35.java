@@ -133,7 +133,7 @@ public abstract class Class35 {
 	private void method5814() {
 		this.aShortArray97 = new short[this.anInt6525];
 		for (@Pc(18) int local18 = 0; local18 < this.anInt6525; local18++) {
-			this.aShortArray97[local18] = (short) (int) Math.pow(2.0D, (double) local18);
+			this.aShortArray97[local18] = (short) (int) Math.pow(2.0D, local18);
 		}
 	}
 
@@ -145,13 +145,13 @@ public abstract class Class35 {
 
 	@OriginalMember(owner = "client!lea", name = "b", descriptor = "(B)V")
 	private void method5817() {
-		@Pc(10) Random local10 = new Random((long) this.anInt6530);
+		@Pc(10) Random local10 = new Random(this.anInt6530);
 		for (@Pc(12) int local12 = 0; local12 < 255; local12++) {
 			this.aShortArray98[local12] = (short) local12;
 		}
 		for (@Pc(25) int local25 = 0; local25 < 255; local25++) {
 			@Pc(37) int local37 = 255 - local25;
-			@Pc(42) int local42 = Static623.method8333(-5208, local37, local10);
+			@Pc(42) int local42 = Static623.method8333(local37, local10);
 			@Pc(47) short local47 = this.aShortArray98[local42];
 			this.aShortArray98[local42] = this.aShortArray98[local37];
 			this.aShortArray98[local37] = this.aShortArray98[local37 + 256] = local47;

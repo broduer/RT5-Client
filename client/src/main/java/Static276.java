@@ -150,7 +150,7 @@ public final class Static276 {
 			}
 			return;
 		}
-		Static240.method3496((Throwable) null, "RC: " + local149 + "," + local153 + " " + local157 + "," + local161 + " " + Static691.anInt10395 + "," + Static116.anInt2279);
+		Static240.method3496(null, "RC: " + local149 + "," + local153 + " " + local157 + "," + local161 + " " + Static691.anInt10395 + "," + Static116.anInt2279);
 		return;
 	}
 }

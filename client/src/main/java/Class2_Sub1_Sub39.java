@@ -22,7 +22,7 @@ public final class Class2_Sub1_Sub39 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ws", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt10924 = arg1.method7403();
 		} else if (arg2 == 1) {
@@ -34,7 +34,7 @@ public final class Class2_Sub1_Sub39 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ws", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			for (@Pc(17) int local17 = 0; local17 < Static608.anInt9315; local17++) {

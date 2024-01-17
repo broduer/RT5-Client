@@ -52,7 +52,7 @@ public abstract class Class8_Sub2_Sub4 extends Class8_Sub2 implements Interface2
 	@Override
 	public final boolean method9297(@OriginalArg(0) int arg0) {
 		if (arg0 != 0) {
-			Static622.method6861((String) null, 109, (Class19_Sub3) null, (byte) 91);
+			Static622.method6861(null, 109, null, (byte) 91);
 		}
 		return false;
 	}

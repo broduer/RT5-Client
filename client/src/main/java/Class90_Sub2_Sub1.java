@@ -15,7 +15,7 @@ public final class Class90_Sub2_Sub1 extends Class90_Sub2 {
 	static {
 		for (@Pc(58) int local58 = 0; local58 < 256; local58++) {
 			@Pc(67) char local67 = "ᠣ웨螸ŏ㚦틵祯酒悼鮎ꌌ笵ᷠퟂ\u2e4b﹗ᕷ㟥\u9ff0䫚壉⤊놠殅뵝ჴ쬾է\ue427䆋Ᵹ闘ﯮ籦\udd17䞞쨭뼇굚茳挂ꩱ젙䧙\uf2e3守騦㊰\ue90f햀뻍㑈ｺ遟\u2068\u1aae둔錢擱猒䀈쏬\udba1贽需켫皂혛떯橐䗳ワ㽕ꋪ斺⿀\ude1c\ufd4d鉵ڊ닦ฟ拔ꢖ暈╙葲㥌幸㢌톥\ue261댡鰞䏇ﰄ写洍\ufadf縤㮫츑轎럫㲁铷뤓ⳓ\ue76e쐃噄義⪻셓\udc0b鵬ㅴ\uf646겉ᓡᘺ椉炶탭챂颤⡜\uf886".charAt(local58 / 2);
-			@Pc(84) long local84 = (long) ((local58 & 0x1) == 0 ? local67 >>> 8 : local67 & 0xFF);
+			@Pc(84) long local84 = (local58 & 0x1) == 0 ? local67 >>> 8 : local67 & 0xFF;
 			@Pc(88) long local88 = local84 << 1;
 			if (local88 >= 256L) {
 				local88 ^= 0x11DL;

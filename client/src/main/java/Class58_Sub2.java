@@ -45,7 +45,7 @@ public final class Class58_Sub2 extends Class58 {
 				@Pc(39) Class local39 = Class.forName("sun.net.www.protocol.http.AuthenticationInfo");
 				@Pc(65) Method local65 = local39.getDeclaredMethod("getProxyAuth", Static447.aClass17 == null ? (Static447.aClass17 = Class.forName("java.lang.String")) : Static447.aClass17, Integer.TYPE);
 				local65.setAccessible(true);
-				@Pc(87) Object local87 = local65.invoke((Object) null, local28.getHostName(), Integer.valueOf(local28.getPort()));
+				@Pc(87) Object local87 = local65.invoke(null, local28.getHostName(), Integer.valueOf(local28.getPort()));
 				if (local87 != null) {
 					@Pc(98) Method local98 = local39.getDeclaredMethod("supportsPreemptiveAuthorization");
 					local98.setAccessible(true);

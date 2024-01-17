@@ -114,7 +114,7 @@ public abstract class Class72 implements Interface21 {
 			this.method8552();
 			if (this.anInt9747 > 0) {
 				OpenGL.glBindBufferARB(this.anInt9749, this.anInt9747);
-				OpenGL.glBufferDataARBub(this.anInt9749, arg0, (byte[]) null, 0, this.aBoolean752 ? 35040 : 35044);
+				OpenGL.glBufferDataARBub(this.anInt9749, arg0, null, 0, this.aBoolean752 ? 35040 : 35044);
 				this.aClass19_Sub1_Sub2_11.anInt9167 += arg0 - this.anInt9759;
 			} else {
 				this.aNativeHeapBuffer7 = this.aClass19_Sub1_Sub2_11.method8113(false, arg0);
@@ -133,7 +133,7 @@ public abstract class Class72 implements Interface21 {
 				return this.aNativeHeapBuffer7;
 			}
 			OpenGL.glBindBufferARB(this.anInt9749, this.anInt9747);
-			OpenGL.glBufferDataARBub(this.anInt9749, this.anInt9759, (byte[]) null, 0, this.aBoolean752 ? 35040 : 35044);
+			OpenGL.glBufferDataARBub(this.anInt9749, this.anInt9759, null, 0, this.aBoolean752 ? 35040 : 35044);
 			if (this.aClass19_Sub1_Sub2_11.aNativeHeapBuffer6.b >= this.anInt9752) {
 				this.anInt9758 = 1;
 				return this.aClass19_Sub1_Sub2_11.aNativeHeapBuffer6;

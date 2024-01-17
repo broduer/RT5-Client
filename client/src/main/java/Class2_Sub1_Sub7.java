@@ -44,11 +44,8 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
-		if (arg0 <= 107) {
-			Static102.method2027(true, -62, 43, true);
-		}
 		if (!super.aClass180_41.aBoolean338) {
 			return local11;
 		}
@@ -73,11 +70,11 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 		@Pc(101) int local101 = Static608.anInt9315 / local56 + 1;
 		@Pc(105) int[][] local105 = new int[local101][3];
 		@Pc(109) int[][] local109 = new int[local101][3];
-		@Pc(116) Random local116 = new Random((long) this.anInt2133);
+		@Pc(116) Random local116 = new Random(this.anInt2133);
 		while (true) {
 			while (true) {
-				@Pc(126) int local126 = local56 + Static623.method8333(-5208, local63 - local56, local116);
-				@Pc(136) int local136 = local70 + Static623.method8333(-5208, local77 - local70, local116);
+				@Pc(126) int local126 = local56 + Static623.method8333(local63 - local56, local116);
+				@Pc(136) int local136 = local70 + Static623.method8333(local77 - local70, local116);
 				@Pc(141) int local141 = local39 + local126;
 				if (local141 > Static608.anInt9315) {
 					local126 = Static608.anInt9315 - local39;
@@ -132,7 +129,7 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 											local311 = Math.max(local234, local300);
 											local315 = Static608.anInt9315;
 										}
-										this.method2023(local31, local157 - local289, local116, local289, local37 + local311, -local311 + local315, (byte) -58);
+										this.method2023(local31, local157 - local289, local116, local289, local37 + local311, -local311 + local315);
 									}
 								}
 							}
@@ -154,7 +151,7 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 				}
 				@Pc(406) int[] local406;
 				if (local141 == Static608.anInt9315) {
-					this.method2023(local31, local136, local116, local157, local35 + local39, local126, (byte) -58);
+					this.method2023(local31, local136, local116, local157, local35 + local39, local126);
 					if (local43) {
 						return local11;
 					}
@@ -169,7 +166,7 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 					local105 = local422;
 					local49 = 0;
 					local37 = local35;
-					local35 = Static623.method8333(-5208, Static608.anInt9315, local116);
+					local35 = Static623.method8333(Static608.anInt9315, local116);
 					local33 = local35 - local37;
 					local39 = 0;
 					local167 = local33;
@@ -196,7 +193,7 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 					local406[2] = local136 + local157;
 					local406[1] = local141;
 					local406[0] = local39;
-					this.method2023(local31, local136, local116, local157, local39 + local35, local126, (byte) -58);
+					this.method2023(local31, local136, local116, local157, local39 + local35, local126);
 					local39 = local141;
 				}
 			}
@@ -205,22 +202,16 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!dd", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
-		if (arg0 != 7) {
-			this.method2023((int[][]) null, 27, (Random) null, 76, -2, -58, (byte) 89);
-		}
+	public void method9428() {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "([[IILjava/util/Random;IIIB)V")
-	private void method2023(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Random arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) byte arg6) {
-		@Pc(22) int local22 = this.anInt2142 <= 0 ? 4096 : 4096 - Static623.method8333(arg6 - 5150, this.anInt2142, arg2);
+	private void method2023(@OriginalArg(0) int[][] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Random arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+		@Pc(22) int local22 = this.anInt2142 <= 0 ? 4096 : 4096 - Static623.method8333(this.anInt2142, arg2);
 		@Pc(30) int local30 = this.anInt2128 * this.anInt2134 >> 12;
-		@Pc(49) int local49 = this.anInt2134 - (local30 <= 0 ? 0 : Static623.method8333(arg6 ^ 0x146E, local30, arg2));
+		@Pc(49) int local49 = this.anInt2134 - (local30 <= 0 ? 0 : Static623.method8333(local30, arg2));
 		if (Static608.anInt9315 <= arg4) {
 			arg4 -= Static608.anInt9315;
-		}
-		if (arg6 != -58) {
-			return;
 		}
 		@Pc(82) int local82;
 		@Pc(84) int local84;
@@ -311,10 +302,7 @@ public final class Class2_Sub1_Sub7 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			this.method9418(39, 29);
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt2133 = arg1.method7403();
 		} else if (arg2 == 1) {

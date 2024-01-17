@@ -129,7 +129,7 @@ public final class Class218 {
 		arg0.method8007(arg0.method7960());
 		@Pc(209) Class73 local209 = arg0.method7960();
 		local209.method7132(0, 0, arg0.i() - local147.HA());
-		local147.method7491(local209, (Class8_Sub6) null, 1024, 1);
+		local147.method7491(local209, null, 1024, 1);
 		@Pc(231) int local231 = this.anInt5658 * 13 / 16;
 		@Pc(238) int local238 = (this.anInt5658 - local231) / 2;
 		Static345.aClass23_23.method8212(local238, local238, local231, local231, 0, this.anInt5654 | 0xFF000000, 1);
@@ -199,7 +199,7 @@ public final class Class218 {
 		arg0.method8007(arg0.method7960());
 		@Pc(238) Class73 local238 = arg0.method7992();
 		local238.method7132(0, 0, arg0.i() - local190.HA());
-		local190.method7491(local238, (Class8_Sub6) null, arg0.i(), 1);
+		local190.method7491(local238, null, arg0.i(), 1);
 		this.aClass23_24 = arg0.method7971(0, 0, this.anInt5658, this.anInt5658, true);
 		this.aClass23_24.method8203();
 		arg0.DA(local219[0], local219[1], local219[2], local219[3]);
@@ -245,7 +245,7 @@ public final class Class218 {
 			local7 = this.anInt5655 - arg0;
 			local12 = this.anInt5646 - arg1;
 			local17 = this.anInt5650 - arg2;
-			this.anInt5651 = (int) Math.sqrt((double) (local7 * local7 + local12 * local12 + local17 * local17));
+			this.anInt5651 = (int) Math.sqrt(local7 * local7 + local12 * local12 + local17 * local17);
 			if (this.anInt5651 == 0) {
 				this.anInt5651 = 1;
 			}
@@ -253,7 +253,7 @@ public final class Class218 {
 			local12 = (local12 << 8) / this.anInt5651;
 			local17 = (local17 << 8) / this.anInt5651;
 		}
-		@Pc(90) int local90 = (int) (Math.sqrt((double) (local7 * local7 + local12 * local12 + local17 * local17)) * 256.0D);
+		@Pc(90) int local90 = (int) (Math.sqrt(local7 * local7 + local12 * local12 + local17 * local17) * 256.0D);
 		if (local90 > 128) {
 			local7 = (local7 << 16) / local90;
 			local12 = (local12 << 16) / local90;
@@ -276,8 +276,8 @@ public final class Class218 {
 		if (local143 != this.anInt5658) {
 			this.anInt5658 = local143;
 		}
-		this.anInt5659 = (int) (Math.asin((double) ((float) local12 / 256.0F)) * 2607.5945876176133D) & 0x3FFF;
-		this.anInt5648 = (int) (Math.atan2((double) local7, (double) -local17) * 2607.5945876176133D) & 0x3FFF;
+		this.anInt5659 = (int) (Math.asin((float) local12 / 256.0F) * 2607.5945876176133D) & 0x3FFF;
+		this.anInt5648 = (int) (Math.atan2(local7, -local17) * 2607.5945876176133D) & 0x3FFF;
 		this.aClass23_24 = null;
 		return true;
 	}

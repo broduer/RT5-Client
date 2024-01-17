@@ -25,13 +25,11 @@ public final class Class304 {
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!ru;B)V")
 	public void method6812(@OriginalArg(0) Class8_Sub9 arg0) {
-		@Pc(2) Class130 local2 = this.aClass130_10;
 		synchronized (this.aClass130_10) {
 			this.aClass130_10.method2787(arg0);
 			this.anInt7724++;
 		}
 		if (this.aClass46_1 != null) {
-			@Pc(31) Class46 local31 = this.aClass46_1;
 			synchronized (this.aClass46_1) {
 				this.aClass46_1.notify();
 			}
@@ -40,7 +38,6 @@ public final class Class304 {
 
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Z)Lclient!ep;")
 	public Class8 method6814() {
-		@Pc(14) Class130 local14 = this.aClass130_10;
 		synchronized (this.aClass130_10) {
 			@Pc(21) Class8 local21 = this.aClass130_10.method2790();
 			local21.method9281();
@@ -52,13 +49,11 @@ public final class Class304 {
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!eo;B)V")
 	public void method6816(@OriginalArg(0) Class8_Sub2 arg0) {
 		arg0.aBoolean813 = true;
-		@Pc(18) Class130 local18 = this.aClass130_10;
 		synchronized (this.aClass130_10) {
 			this.aClass130_10.method2787(arg0);
 			this.anInt7724++;
 		}
 		if (this.aClass46_1 != null) {
-			@Pc(43) Class46 local43 = this.aClass46_1;
 			synchronized (this.aClass46_1) {
 				this.aClass46_1.notify();
 			}
@@ -78,13 +73,11 @@ public final class Class304 {
 	@OriginalMember(owner = "client!qe", name = "a", descriptor = "(Lclient!eo;I)V")
 	public void method6819(@OriginalArg(0) Class8_Sub2 arg0) {
 		arg0.aBoolean813 = false;
-		@Pc(9) Class130 local9 = this.aClass130_10;
 		synchronized (this.aClass130_10) {
 			this.aClass130_10.method2787(arg0);
 			this.anInt7724++;
 		}
 		if (this.aClass46_1 != null) {
-			@Pc(39) Class46 local39 = this.aClass46_1;
 			synchronized (this.aClass46_1) {
 				this.aClass46_1.notify();
 			}

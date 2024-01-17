@@ -1,6 +1,6 @@
 import java.awt.Container;
 import java.awt.Insets;
-import org.openrs2.deob.annotation.OriginalArg;
+
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -20,8 +20,7 @@ public final class Static712 {
 	}
 
 	@OriginalMember(owner = "client!wj", name = "k", descriptor = "(B)V")
-	public static void method9336(@OriginalArg(0) byte arg0) {
-		@Pc(7) client local7 = Static295.aClient1;
+	public static void method9336() {
 		synchronized (Static295.aClient1) {
 			if (Static316.aFrame8 != null) {
 				return;
@@ -42,7 +41,7 @@ public final class Static712 {
 				Static54.anInt1088 -= local44.top + local44.bottom;
 				Static52.anInt1063 -= local44.right + local44.left;
 			}
-			if (Static36.method978(arg0 - 8) == 1) {
+			if (Static36.method978() == 1) {
 				Static241.anInt3973 = 0;
 				Static380.anInt5999 = Static479.anInt7222;
 				Static134.anInt10357 = (Static52.anInt1063 - Static302.anInt4867) / 2;
@@ -76,9 +75,6 @@ public final class Static712 {
 				Static640.method8442(true);
 			}
 			Static288.method4189();
-		}
-		if (arg0 != 11) {
-			aClass73_11 = null;
 		}
 	}
 }

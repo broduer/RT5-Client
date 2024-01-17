@@ -20,11 +20,8 @@ public final class Class2_Sub1_Sub34 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vf", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
-		if (arg0 <= 107) {
-			Static673.method8794((Class392) null, false);
-		}
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(28) int local28 = Static273.anIntArray341[arg1];
 			for (@Pc(30) int local30 = 0; local30 < Static608.anInt9315; local30++) {

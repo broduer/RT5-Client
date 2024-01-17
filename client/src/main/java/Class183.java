@@ -119,7 +119,7 @@ public final class Class183 implements Interface7 {
 		this.anInt4585 = arg1 ? 2 : 1;
 		this.anInt4584 = arg1 ? 4 : 2;
 		this.anIntArray354 = new int[this.anInt4585 * 256];
-		this.aDirectSound1.initialize((_Guid) null);
+		this.aDirectSound1.initialize(null);
 		this.aDirectSound1.setCooperativeLevel(arg2, 2);
 		for (@Pc(60) int local60 = 0; local60 < 2; local60++) {
 			this.aDSBufferDescArray1[local60].flags = 16384;

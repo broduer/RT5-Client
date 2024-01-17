@@ -53,7 +53,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 			this.aClass8_Sub5_5 = Static257.method3654(Static333.anInt5474, true);
 		}
 		if (this.aClass8_Sub5_5 != null) {
-			this.aClass8_Sub5_5.method3643(arg2, (long) Static333.anInt5474, local9, local19);
+			this.aClass8_Sub5_5.method3643(arg2, Static333.anInt5474, local9, local19);
 			this.aClass8_Sub5_5.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}
@@ -63,7 +63,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 		@Pc(8) Class229 local8 = Static23.aClass128_1.method2694(arg0);
 		@Pc(22) Class178 local22 = Static706.aClass178Array3[super.aByte144];
 		@Pc(36) Class178 local36 = super.aByte143 < 3 ? Static706.aClass178Array3[super.aByte143 + 1] : null;
-		return this.aClass152_8 == null || this.aClass152_8.method9109() ? local8.method5256((byte) 2, true, super.anInt10722, (Class152) null, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1) : local8.method5256((byte) 2, true, super.anInt10722, this.aClass152_8, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1);
+		return this.aClass152_8 == null || this.aClass152_8.method9109() ? local8.method5256((byte) 2, true, super.anInt10722, null, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1) : local8.method5256((byte) 2, true, super.anInt10722, this.aClass152_8, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1);
 	}
 
 	@OriginalMember(owner = "client!pja", name = "finalize", descriptor = "()V")
@@ -78,7 +78,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != -5) {
-			this.method9296((Class19) null, 72);
+			this.method9296(null, 72);
 		}
 		@Pc(20) Class114 local20 = this.method6601(this.anInt7423, arg0, 0);
 		if (local20 != null) {
@@ -161,7 +161,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 	@Override
 	public Class207 method9285(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 >= -93) {
-			this.method9286(-78, 64, true, (Class19) null);
+			this.method9286(-78, 64, true, null);
 		}
 		return null;
 	}
@@ -170,7 +170,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 	@Override
 	public void method9292(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6) {
 		if (arg4 < 101) {
-			this.method9283((Class19) null);
+			this.method9283(null);
 		}
 		throw new IllegalStateException();
 	}

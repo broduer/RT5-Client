@@ -16,7 +16,7 @@ public final class Static490 {
 		local11.anInt8829 = 4;
 		local11.anInt8834 = 4;
 		local11.anInt8827 = 3;
-		local11.method9428(7);
+		local11.method9428();
 		Static132.method2313(256, 64);
 		for (@Pc(48) int local48 = 0; local48 < 256; local48++) {
 			local11.method7816(local48, local7[local48]);

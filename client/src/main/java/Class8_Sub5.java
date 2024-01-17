@@ -111,7 +111,7 @@ public final class Class8_Sub5 extends Class8 {
 				@Pc(96) Class2_Sub2_Sub5 local96 = null;
 				if (arg0[local21].method5597().anInt7003 == 1 && Static654.anInt9766 < 32) {
 					local96 = new Class2_Sub2_Sub5(arg0[local21], this);
-					Static519.aClass144_1.method3094(local96, (long) arg0[local21].anInt6268);
+					Static519.aClass144_1.method3094(local96, arg0[local21].anInt6268);
 					Static654.anInt9766++;
 				}
 				if (local96 == null) {
@@ -242,8 +242,8 @@ public final class Class8_Sub5 extends Class8 {
 	@OriginalMember(owner = "client!hv", name = "a", descriptor = "(IZ)V")
 	public void method3657(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
 		Static342.aClass130_7.method2787(this);
-		this.aLong133 = (long) arg0;
-		this.aLong132 = (long) arg0;
+		this.aLong133 = arg0;
+		this.aLong132 = arg0;
 		this.aBoolean326 = true;
 		this.aBoolean325 = arg1;
 	}

@@ -90,13 +90,13 @@ public final class Static515 {
 
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(ZIII)V")
 	public static void method6809(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (Static106.aClass28_11.method738((long) arg1) != null) {
+		if (Static106.aClass28_11.method738(arg1) != null) {
 			return;
 		}
 		if (Static234.aBoolean303) {
 			@Pc(34) Class2_Sub5 local34 = new Class2_Sub5(arg1, new Class224_Sub1(4096, Static709.aClass332_127, arg1), arg2, arg0);
 			local34.aClass224_Sub1_1.method9190(Static384.aStringArray31[Static51.anInt1056]);
-			Static106.aClass28_11.method735((long) arg1, local34);
+			Static106.aClass28_11.method735(arg1, local34);
 		} else {
 			Static635.method8387(arg1, arg0);
 		}

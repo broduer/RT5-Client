@@ -33,7 +33,7 @@ public final class Class93_Sub1 extends Class93 {
 		this.anInt2465 = arg2;
 		super.aClass19_Sub3_43.method7008(this);
 		for (@Pc(28) int local28 = 0; local28 < 6; local28++) {
-			OpenGL.glTexImage2Dub(local28 + 34069, 0, super.anInt10940, arg2, arg2, 0, Static391.method5512(super.anInt10940), 5121, (byte[]) null, 0);
+			OpenGL.glTexImage2Dub(local28 + 34069, 0, super.anInt10940, arg2, arg2, 0, Static391.method5512(super.anInt10940), 5121, null, 0);
 		}
 		this.method9445(true);
 	}

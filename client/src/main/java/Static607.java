@@ -29,7 +29,7 @@ public final class Static607 {
 		}
 		@Pc(40) Class406 local40 = new Class406();
 		local40.method9349();
-		local40.method9350((long) (arg1 * 8), local10);
+		local40.method9350(arg1 * 8, local10);
 		@Pc(60) byte[] local60 = new byte[64];
 		local40.method9351(local60);
 		return local60;

@@ -1922,7 +1922,7 @@ public final class Class114_Sub3 extends Class114 {
 				local105 >>= 0x1;
 				local113 >>= 0x1;
 			}
-			@Pc(169) int local169 = (int) Math.sqrt((double) (local105 * local105 + local113 * local113 + local121 * local121));
+			@Pc(169) int local169 = (int) Math.sqrt(local105 * local105 + local113 * local113 + local121 * local121);
 			if (local169 <= 0) {
 				local169 = 1;
 			}
@@ -3705,8 +3705,8 @@ public final class Class114_Sub3 extends Class114 {
 		this.aShort113 = (short) local18;
 		this.aShort112 = (short) local14;
 		this.aShort111 = (short) local20;
-		this.aShort118 = (short) (int) (Math.sqrt((double) local6) + 0.99D);
-		this.aShort114 = (short) (int) (Math.sqrt((double) local8) + 0.99D);
+		this.aShort118 = (short) (int) (Math.sqrt(local6) + 0.99D);
+		this.aShort114 = (short) (int) (Math.sqrt(local8) + 0.99D);
 		this.aBoolean653 = true;
 	}
 
@@ -4387,10 +4387,10 @@ public final class Class114_Sub3 extends Class114 {
 		if (arg0 != 4 && (local38 < 0 || local43 + arg2.anInt8912 >> arg2.anInt8919 >= arg2.anInt8918 || local48 < 0 || local53 + arg2.anInt8912 >> arg2.anInt8919 >= arg2.anInt8916)) {
 			return;
 		}
-		@Pc(94) int[][] local94 = ((Class178_Sub3) arg2).anIntArrayArray226;
+		@Pc(94) int[][] local94 = arg2.anIntArrayArray226;
 		@Pc(96) int[][] local96 = null;
 		if (arg3 != null) {
-			local96 = ((Class178_Sub3) arg3).anIntArrayArray226;
+			local96 = arg3.anIntArrayArray226;
 		}
 		if (arg0 == 4 || arg0 == 5) {
 			if (arg3 == null) {

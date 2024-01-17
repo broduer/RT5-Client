@@ -34,7 +34,7 @@ public final class Class128 {
 		@Pc(14) Class82 local14 = this.aClass82_61;
 		@Pc(24) Class229 local24;
 		synchronized (this.aClass82_61) {
-			local24 = (Class229) this.aClass82_61.method2156((long) arg0);
+			local24 = (Class229) this.aClass82_61.method2156(arg0);
 		}
 		if (local24 != null) {
 			return local24;
@@ -52,7 +52,7 @@ public final class Class128 {
 		}
 		@Pc(81) Class82 local81 = this.aClass82_61;
 		synchronized (this.aClass82_61) {
-			this.aClass82_61.method2150(local24, (long) arg0);
+			this.aClass82_61.method2150(local24, arg0);
 			return local24;
 		}
 	}
@@ -68,11 +68,9 @@ public final class Class128 {
 
 	@OriginalMember(owner = "client!fh", name = "a", descriptor = "(Z)V")
 	public void method2697() {
-		@Pc(6) Class82 local6 = this.aClass82_61;
 		synchronized (this.aClass82_61) {
 			this.aClass82_61.method2151();
 		}
-		local6 = this.aClass82_62;
 		synchronized (this.aClass82_62) {
 			this.aClass82_62.method2151();
 		}

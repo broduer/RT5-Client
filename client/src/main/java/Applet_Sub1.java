@@ -133,7 +133,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				Static638.method8402(10L);
 			}
 		} catch (@Pc(103) Exception local103) {
-			Static240.method3496(local103, (String) null);
+			Static240.method3496(local103, null);
 		}
 	}
 
@@ -244,7 +244,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 				}
 			}
 		} catch (@Pc(92) Throwable local92) {
-			Static240.method3496(local92, (String) null);
+			Static240.method3496(local92, null);
 			this.method1638("crash");
 		}
 	}
@@ -380,7 +380,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 		} else {
 			local30 = Static166.anApplet1;
 		}
-		local30.setLayout((LayoutManager) null);
+		local30.setLayout(null);
 		Static434.aCanvas7 = new Canvas_Sub1(this);
 		local30.add(Static434.aCanvas7);
 		Static434.aCanvas7.setSize(Static680.anInt10317, Static380.anInt5999);

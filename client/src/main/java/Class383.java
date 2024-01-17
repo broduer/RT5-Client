@@ -323,7 +323,7 @@ public final class Class383 {
 		if (arg2 >= this.method8749(arg1, arg0)) {
 			return arg0;
 		}
-		@Pc(27) int local27 = arg2 - this.method8749((Class23[]) null, "...");
+		@Pc(27) int local27 = arg2 - this.method8749(null, "...");
 		@Pc(29) int local29 = -1;
 		@Pc(31) int local31 = -1;
 		@Pc(33) int local33 = 0;
@@ -392,7 +392,7 @@ public final class Class383 {
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(BLjava/lang/String;)I")
 	public int method8751(@OriginalArg(1) String arg0) {
-		return this.method8749((Class23[]) null, arg0);
+		return this.method8749(null, arg0);
 	}
 
 	@OriginalMember(owner = "client!ve", name = "a", descriptor = "(IILjava/lang/String;[Lclient!st;B)I")

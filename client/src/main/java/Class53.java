@@ -62,7 +62,7 @@ public final class Class53 {
 			if (this.aClass28_9 == null) {
 				this.method1236();
 			}
-			return (Class2_Sub40) this.aClass28_9.method738((long) arg0);
+			return (Class2_Sub40) this.aClass28_9.method738(arg0);
 		}
 	}
 
@@ -142,7 +142,7 @@ public final class Class53 {
 		if (this.anObject3 == null) {
 			return this.anInt1146;
 		} else if (this.anObject3 instanceof Class28) {
-			@Pc(30) Class2_Sub38 local30 = (Class2_Sub38) ((Class28) this.anObject3).method738((long) arg0);
+			@Pc(30) Class2_Sub38 local30 = (Class2_Sub38) ((Class28) this.anObject3).method738(arg0);
 			return local30 == null ? this.anInt1146 : local30.anInt6399;
 		} else {
 			@Pc(43) Integer[] local43 = (Integer[]) this.anObject3;
@@ -165,7 +165,7 @@ public final class Class53 {
 		if (this.anObject3 == null) {
 			return this.aString5;
 		} else if (this.anObject3 instanceof Class28) {
-			@Pc(31) Class2_Sub24 local31 = (Class2_Sub24) ((Class28) this.anObject3).method738((long) arg0);
+			@Pc(31) Class2_Sub24 local31 = (Class2_Sub24) ((Class28) this.anObject3).method738(arg0);
 			return local31 == null ? this.aString5 : local31.aString46;
 		} else {
 			@Pc(44) String[] local44 = (String[]) this.anObject3;
@@ -186,7 +186,7 @@ public final class Class53 {
 			if (this.aClass28_9 == null) {
 				this.method1236();
 			}
-			return this.aClass28_9.method738((long) arg0) != null;
+			return this.aClass28_9.method738(arg0) != null;
 		}
 	}
 
@@ -213,7 +213,7 @@ public final class Class53 {
 					} else {
 						local79 = new Class2_Sub38(arg1.method7356());
 					}
-					local62.method735((long) local69, local79);
+					local62.method735(local69, local79);
 				}
 				this.anObject3 = local62;
 			} else {
@@ -251,19 +251,19 @@ public final class Class53 {
 			@Pc(31) Class28 local31 = new Class28(local16.method742());
 			@Pc(45) Class2_Sub38 local45;
 			for (@Pc(36) Class2_Sub38 local36 = (Class2_Sub38) local16.method736(); local36 != null; local36 = (Class2_Sub38) local16.method740()) {
-				local45 = (Class2_Sub38) local31.method738((long) local36.anInt6399);
+				local45 = (Class2_Sub38) local31.method738(local36.anInt6399);
 				if (local45 == null) {
 					local45 = new Class2_Sub38(0);
-					local31.method735((long) local36.anInt6399, local45);
+					local31.method735(local36.anInt6399, local45);
 				}
 				local45.anInt6399++;
 			}
 			for (local45 = (Class2_Sub38) local16.method736(); local45 != null; local45 = (Class2_Sub38) local16.method740()) {
-				@Pc(87) Class2_Sub40 local87 = (Class2_Sub40) this.aClass28_9.method738((long) local45.anInt6399);
-				local101 = ((Class2_Sub38) local31.method738((long) local45.anInt6399)).anInt6399--;
+				@Pc(87) Class2_Sub40 local87 = (Class2_Sub40) this.aClass28_9.method738(local45.anInt6399);
+				local101 = ((Class2_Sub38) local31.method738(local45.anInt6399)).anInt6399--;
 				if (local87 == null) {
 					local87 = new Class2_Sub40(local101);
-					this.aClass28_9.method735((long) local45.anInt6399, local87);
+					this.aClass28_9.method735(local45.anInt6399, local87);
 				}
 				local87.anIntArray531[local87.anIntArray531.length - local101] = (int) local45.aLong328;
 			}
@@ -277,10 +277,10 @@ public final class Class53 {
 		for (@Pc(158) int local158 = 0; local158 < local140.length; local158++) {
 			if (local140[local158] != null) {
 				local168 = local140[local158];
-				@Pc(175) Class2_Sub38 local175 = (Class2_Sub38) local156.method738((long) local168);
+				@Pc(175) Class2_Sub38 local175 = (Class2_Sub38) local156.method738(local168);
 				if (local175 == null) {
 					local175 = new Class2_Sub38(0);
-					local156.method735((long) local168, local175);
+					local156.method735(local168, local175);
 				}
 				local175.anInt6399++;
 			}
@@ -288,11 +288,11 @@ public final class Class53 {
 		for (local168 = 0; local168 < local140.length; local168++) {
 			if (local140[local168] != null) {
 				local101 = local140[local168];
-				@Pc(223) Class2_Sub40 local223 = (Class2_Sub40) this.aClass28_9.method738((long) local101);
-				@Pc(236) int local236 = ((Class2_Sub38) local156.method738((long) local101)).anInt6399--;
+				@Pc(223) Class2_Sub40 local223 = (Class2_Sub40) this.aClass28_9.method738(local101);
+				@Pc(236) int local236 = ((Class2_Sub38) local156.method738(local101)).anInt6399--;
 				if (local223 == null) {
 					local223 = new Class2_Sub40(local236);
-					this.aClass28_9.method735((long) local101, local223);
+					this.aClass28_9.method735(local101, local223);
 				}
 				local223.anIntArray531[local223.anIntArray531.length - local236] = local168;
 			}

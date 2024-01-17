@@ -27,7 +27,7 @@ public final class Static402 {
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(II)Lclient!uja;")
 	public static Class378 method5589(@OriginalArg(1) int arg0) {
-		@Pc(10) Class378 local10 = (Class378) Static153.aClass82_56.method2156((long) arg0);
+		@Pc(10) Class378 local10 = (Class378) Static153.aClass82_56.method2156(arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -36,7 +36,7 @@ public final class Static402 {
 		if (local21 != null) {
 			local10.method8518(arg0, new Class2_Sub21(local21));
 		}
-		Static153.aClass82_56.method2150(local10, (long) arg0);
+		Static153.aClass82_56.method2150(local10, arg0);
 		return local10;
 	}
 

@@ -93,7 +93,7 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(IDI)Lclient!dk;")
 	public Class2_Sub2_Sub8 method9149(@OriginalArg(0) int arg0, @OriginalArg(1) double arg1) {
-		@Pc(11) long local11 = (long) (arg0 | this.anInt10549 << 0);
+		@Pc(11) long local11 = arg0 | this.anInt10549 << 0;
 		@Pc(17) Class2_Sub2_Sub8 local17 = (Class2_Sub2_Sub8) Static341.aClass363_1.method8349(local11);
 		if (local17 == null) {
 			local17 = new Class2_Sub2_Sub8(new short[this.anInt10549][arg0], arg1);

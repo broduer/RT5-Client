@@ -12,7 +12,7 @@ public final class Static96 {
 
 	@OriginalMember(owner = "client!da", name = "b", descriptor = "(II)V")
 	public static void method8826(@OriginalArg(1) int arg0) {
-		@Pc(18) Class2_Sub2_Sub2 local18 = Static440.method5970(4, (long) arg0);
+		@Pc(18) Class2_Sub2_Sub2 local18 = Static440.method5970(4, arg0);
 		local18.method205();
 	}
 

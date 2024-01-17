@@ -50,7 +50,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 implements ImageProduc
 	public synchronized void addConsumer(@OriginalArg(0) ImageConsumer arg0) {
 		this.anImageConsumer1 = arg0;
 		arg0.setDimensions(super.anInt7074, super.anInt7071);
-		arg0.setProperties((Hashtable) null);
+		arg0.setProperties(null);
 		arg0.setColorModel(this.aColorModel1);
 		arg0.setHints(14);
 	}

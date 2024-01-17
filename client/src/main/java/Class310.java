@@ -127,7 +127,7 @@ public final class Class310 {
 		@Pc(14) Class82 local14 = this.aClass82_169;
 		@Pc(24) Class270 local24;
 		synchronized (this.aClass82_169) {
-			local24 = (Class270) this.aClass82_169.method2156((long) arg0);
+			local24 = (Class270) this.aClass82_169.method2156(arg0);
 		}
 		if (local24 != null) {
 			return local24;
@@ -140,14 +140,14 @@ public final class Class310 {
 		local24 = new Class270();
 		local24.aClass310_1 = this;
 		local24.anInt6764 = arg0;
-		local24.aStringArray34 = (String[]) this.aStringArray39.clone();
+		local24.aStringArray34 = this.aStringArray39.clone();
 		if (local51 != null) {
 			local24.method5993(new Class2_Sub21(local51));
 		}
 		local24.method5990();
 		@Pc(90) Class82 local90 = this.aClass82_169;
 		synchronized (this.aClass82_169) {
-			this.aClass82_169.method2150(local24, (long) arg0);
+			this.aClass82_169.method2150(local24, arg0);
 			return local24;
 		}
 	}

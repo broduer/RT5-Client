@@ -24,9 +24,9 @@ public abstract class Class14 {
 		if (arg3 == null) {
 			return 0;
 		}
-		arg5.setSeed((long) arg1);
+		arg5.setSeed(arg1);
 		@Pc(22) int local22 = (arg5.nextInt() & 0x1F) + 192;
-		this.method8832(local22 << 24 | 0xFFFFFF, (local22 | 0x0) << 24);
+		this.method8832(local22 << 24 | 0xFFFFFF, local22 << 24);
 		@Pc(42) int local42 = arg3.length();
 		@Pc(45) int[] local45 = new int[local42];
 		@Pc(57) int local57 = 0;
@@ -36,7 +36,7 @@ public abstract class Class14 {
 				local57++;
 			}
 		}
-		this.method8827(local45, arg3, arg2, arg0, arg6, (int[]) null, arg4);
+		this.method8827(local45, arg3, arg2, arg0, arg6, null, arg4);
 		return local57;
 	}
 
@@ -58,7 +58,7 @@ public abstract class Class14 {
 		for (@Pc(46) int local46 = 0; local46 < local41; local46++) {
 			local44[local46] = (int) (Math.sin((double) arg2 + (double) local46 / 1.5D) * local32);
 		}
-		this.method8827((int[]) null, arg5, arg3, (Class23[]) null, arg1 - this.aClass383_12.method8751(arg5) / 2, local44, (int[]) null);
+		this.method8827(null, arg5, arg3, null, arg1 - this.aClass383_12.method8751(arg5) / 2, local44, null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "([ILjava/lang/String;I[Lclient!st;I[IZ[I)V")
@@ -296,7 +296,7 @@ public abstract class Class14 {
 	public final void method8834(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(5) int arg3, @OriginalArg(6) Class23[] arg4, @OriginalArg(7) int[] arg5) {
 		if (arg2 != null) {
 			this.method8832(arg0, 0);
-			this.method8831(arg4, 0, 0, arg2, arg3, (Class1) null, arg1, arg5);
+			this.method8831(arg4, 0, 0, arg2, arg3, null, arg1, arg5);
 		}
 	}
 
@@ -304,7 +304,7 @@ public abstract class Class14 {
 	public final void method8835(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (arg2 != null) {
 			this.method8832(arg4, arg0);
-			this.method8831((Class23[]) null, 0, 0, arg2, arg1 - this.aClass383_12.method8751(arg2) / 2, (Class1) null, arg3, (int[]) null);
+			this.method8831(null, 0, 0, arg2, arg1 - this.aClass383_12.method8751(arg2) / 2, null, arg3, null);
 		}
 	}
 
@@ -312,7 +312,7 @@ public abstract class Class14 {
 	public final void method8836(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		if (arg2 != null) {
 			this.method8832(arg4, arg3);
-			this.method8831((Class23[]) null, 0, 0, arg2, arg0, (Class1) null, arg1, (int[]) null);
+			this.method8831(null, 0, 0, arg2, arg0, null, arg1, null);
 		}
 	}
 
@@ -432,7 +432,7 @@ public abstract class Class14 {
 			local20[local30] = (int) (Math.sin((double) local30 / 5.0D + (double) arg0 / 5.0D) * 5.0D);
 			local23[local30] = (int) (Math.sin((double) local30 / 3.0D + (double) arg0 / 5.0D) * 5.0D);
 		}
-		this.method8827(local20, arg1, arg4, (Class23[]) null, arg2 - this.aClass383_12.method8751(arg1) / 2, local23, (int[]) null);
+		this.method8827(local20, arg1, arg4, null, arg2 - this.aClass383_12.method8751(arg1) / 2, local23, null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(IIILjava/lang/String;III)V")
@@ -446,14 +446,14 @@ public abstract class Class14 {
 		for (@Pc(27) int local27 = 0; local27 < local17; local27++) {
 			local25[local27] = (int) (Math.sin((double) local27 / 2.0D + (double) arg1 / 5.0D) * 5.0D);
 		}
-		this.method8827((int[]) null, arg2, arg4, (Class23[]) null, arg3 - this.aClass383_12.method8751(arg2) / 2, local25, (int[]) null);
+		this.method8827(null, arg2, arg4, null, arg3 - this.aClass383_12.method8751(arg2) / 2, local25, null);
 	}
 
 	@OriginalMember(owner = "client!da", name = "a", descriptor = "(BILjava/lang/String;III)V")
 	public final void method8841(@OriginalArg(1) int arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (arg1 != null) {
 			this.method8832(arg2, arg3);
-			this.method8831((Class23[]) null, 0, 0, arg1, arg0 - this.aClass383_12.method8751(arg1), (Class1) null, arg4, (int[]) null);
+			this.method8831(null, 0, 0, arg1, arg0 - this.aClass383_12.method8751(arg1), null, arg4, null);
 		}
 	}
 
@@ -462,7 +462,7 @@ public abstract class Class14 {
 		if (arg7 == null) {
 			return 0;
 		}
-		arg6.setSeed((long) arg11);
+		arg6.setSeed(arg11);
 		@Pc(21) int local21 = (arg6.nextInt() & 0x1F) + 192;
 		this.method8832(local21 << 24 | arg4 & 0xFFFFFF, local21 << 24 | arg9 & 0xFFFFFF);
 		@Pc(41) int local41 = arg7.length();
@@ -489,7 +489,7 @@ public abstract class Class14 {
 			local119 = local46 + this.aClass383_12.method8751(arg7);
 			local74 = arg8 + arg2 - local119;
 		}
-		this.method8827(local44, arg7, local80, arg10, local74, (int[]) null, arg3);
+		this.method8827(local44, arg7, local80, arg10, local74, null, arg3);
 		if (arg0 != null) {
 			if (local119 == -1) {
 				local119 = local46 + this.aClass383_12.method8751(arg7);

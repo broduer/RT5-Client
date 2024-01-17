@@ -36,7 +36,7 @@ public final class Static115 {
 			}
 		}
 		if (arg0 == -1 && Static470.anInt7133 != -1) {
-			Static446.aClass392_6.method9002(-1, (int[]) null, Static434.aCanvas7, new Point(), -1);
+			Static446.aClass392_6.method9002(-1, null, Static434.aCanvas7, new Point(), -1);
 			Static470.anInt7133 = -1;
 		}
 	}

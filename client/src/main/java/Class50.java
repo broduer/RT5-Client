@@ -30,7 +30,7 @@ public final class Class50 {
 		@Pc(6) Class82 local6 = this.aClass82_22;
 		@Pc(16) Class69 local16;
 		synchronized (this.aClass82_22) {
-			local16 = (Class69) this.aClass82_22.method2156((long) arg0);
+			local16 = (Class69) this.aClass82_22.method2156(arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -48,7 +48,7 @@ public final class Class50 {
 		local16.method1584();
 		@Pc(73) Class82 local73 = this.aClass82_22;
 		synchronized (this.aClass82_22) {
-			this.aClass82_22.method2150(local16, (long) arg0);
+			this.aClass82_22.method2150(local16, arg0);
 			return local16;
 		}
 	}
@@ -93,10 +93,10 @@ public final class Class50 {
 	public Class2_Sub2_Sub18 method1166(@OriginalArg(0) int arg0) {
 		@Pc(12) Class82 local12 = this.aClass82_23;
 		synchronized (this.aClass82_23) {
-			@Pc(22) Class2_Sub2_Sub18 local22 = (Class2_Sub2_Sub18) this.aClass82_23.method2156((long) arg0);
+			@Pc(22) Class2_Sub2_Sub18 local22 = (Class2_Sub2_Sub18) this.aClass82_23.method2156(arg0);
 			if (local22 == null) {
 				local22 = new Class2_Sub2_Sub18(arg0);
-				this.aClass82_23.method2150(local22, (long) arg0);
+				this.aClass82_23.method2150(local22, arg0);
 			}
 			return local22.method7572() ? local22 : null;
 		}

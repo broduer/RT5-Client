@@ -25,10 +25,7 @@ public final class Class2_Sub1_Sub32 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vda", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			this.method9423(false, (Class2_Sub21) null, 34);
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt10042 = arg1.method7389();
 		} else if (arg2 == 1) {
@@ -40,7 +37,7 @@ public final class Class2_Sub1_Sub32 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vda", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(22) int local22 = Static675.anInt10185 * this.anInt10042 >> 12;
@@ -74,22 +71,19 @@ public final class Class2_Sub1_Sub32 extends Class2_Sub1 {
 				local11[local50] = local178 + local169 + local160;
 			}
 		}
-		if (arg0 < 107) {
-			this.method8741((byte) 87);
-		}
 		return local11;
 	}
 
 	@OriginalMember(owner = "client!vda", name = "c", descriptor = "(B)V")
-	private void method8741(@OriginalArg(0) byte arg0) {
-		@Pc(11) double local11 = Math.cos((double) ((float) this.anInt10044 / 4096.0F));
-		this.anIntArray789[0] = (int) (local11 * Math.sin((double) ((float) this.anInt10043 / 4096.0F)) * 4096.0D);
-		this.anIntArray789[1] = (int) (local11 * 4096.0D * Math.cos((double) ((float) this.anInt10043 / 4096.0F)));
-		this.anIntArray789[2] = (int) (Math.sin((double) ((float) this.anInt10044 / 4096.0F)) * 4096.0D);
+	private void method8741() {
+		@Pc(11) double local11 = Math.cos((float) this.anInt10044 / 4096.0F);
+		this.anIntArray789[0] = (int) (local11 * Math.sin((float) this.anInt10043 / 4096.0F) * 4096.0D);
+		this.anIntArray789[1] = (int) (local11 * 4096.0D * Math.cos((float) this.anInt10043 / 4096.0F));
+		this.anIntArray789[2] = (int) (Math.sin((float) this.anInt10044 / 4096.0F) * 4096.0D);
 		@Pc(76) int local76 = this.anIntArray789[0] * this.anIntArray789[0] >> 12;
 		@Pc(88) int local88 = this.anIntArray789[1] * this.anIntArray789[1] >> 12;
 		@Pc(100) int local100 = this.anIntArray789[2] * this.anIntArray789[2] >> 12;
-		@Pc(113) int local113 = (int) (Math.sqrt((double) (local76 + local88 + local100 >> 12)) * 4096.0D);
+		@Pc(113) int local113 = (int) (Math.sqrt(local76 + local88 + local100 >> 12) * 4096.0D);
 		if (local113 != 0) {
 			this.anIntArray789[0] = (this.anIntArray789[0] << 12) / local113;
 			this.anIntArray789[1] = (this.anIntArray789[1] << 12) / local113;
@@ -99,10 +93,7 @@ public final class Class2_Sub1_Sub32 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vda", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
-		if (arg0 != 7) {
-			this.anInt10044 = 8;
-		}
-		this.method8741((byte) -119);
+	public void method9428() {
+		this.method8741();
 	}
 }

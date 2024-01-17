@@ -120,18 +120,18 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 	public void method813(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(9) double local9;
 		if (!this.aBoolean59) {
-			local9 = (double) (arg3 - super.anInt10718);
-			@Pc(16) double local16 = (double) (arg2 - super.anInt10722);
+			local9 = arg3 - super.anInt10718;
+			@Pc(16) double local16 = arg2 - super.anInt10722;
 			@Pc(25) double local25 = Math.sqrt(local16 * local16 + local9 * local9);
 			this.aDouble4 = (double) this.anInt711 * local16 / local25 + (double) super.anInt10722;
 			this.aDouble8 = (double) super.anInt10718 + local9 * (double) this.anInt711 / local25;
 			if (this.aBoolean57) {
-				this.aDouble5 = (double) (Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt724);
+				this.aDouble5 = Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt724;
 			} else {
-				this.aDouble5 = (double) super.anInt10719;
+				this.aDouble5 = super.anInt10719;
 			}
 		}
-		local9 = (double) (this.anInt699 + 1 - arg1);
+		local9 = this.anInt699 + 1 - arg1;
 		this.aDouble2 = ((double) arg2 - this.aDouble4) / local9;
 		this.aDouble7 = ((double) arg3 - this.aDouble8) / local9;
 		this.aDouble6 = Math.sqrt(this.aDouble7 * this.aDouble7 + this.aDouble2 * this.aDouble2);
@@ -216,7 +216,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 				}
 			} else {
 				local35 = this.anInt708 - 1;
-				@Pc(58) Class2_Sub45 local58 = (Class2_Sub45) Static18.aClass28_2.method738((long) local35);
+				@Pc(58) Class2_Sub45 local58 = (Class2_Sub45) Static18.aClass28_2.method738(local35);
 				if (local58 != null) {
 					local21 = local58.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				}
@@ -280,7 +280,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 			this.aClass8_Sub5_1 = Static257.method3654(Static333.anInt5474, true);
 		}
 		if (this.aClass8_Sub5_1 != null) {
-			this.aClass8_Sub5_1.method3643(arg0, (long) Static333.anInt5474, local9, local12);
+			this.aClass8_Sub5_1.method3643(arg0, Static333.anInt5474, local9, local12);
 			this.aClass8_Sub5_1.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}
@@ -365,7 +365,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 		this.aBoolean59 = true;
 		this.aDouble4 += (double) arg0 * this.aDouble2;
 		if (this.aBoolean57) {
-			this.aDouble5 = (double) (Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt724);
+			this.aDouble5 = Static102.method2025(super.aByte144, -29754, (int) this.aDouble4, (int) this.aDouble8) - this.anInt724;
 		} else if (this.anInt707 == -1) {
 			this.aDouble5 += this.aDouble1 * (double) arg0;
 		} else {

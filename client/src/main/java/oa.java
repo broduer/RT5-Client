@@ -159,9 +159,9 @@ public final class oa extends Class19 implements Interface5 {
 	public void method8026(@OriginalArg(0) Canvas arg0) {
 		if (arg0 == null) {
 			this.aP1 = null;
-			this.t((p) null);
+			this.t(null);
 		} else {
-			@Pc(10) p local10 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+			@Pc(10) p local10 = (p) this.aClass28_33.method738(arg0.hashCode());
 			this.aP1 = local10;
 			this.t(local10);
 		}
@@ -173,7 +173,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7942(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aClass28_33.method738(arg0.hashCode());
 		local8.method6446(arg0, arg1, arg2);
 		if (arg0 != null && arg0 == this.aP1.aCanvas9) {
 			this.method8026(arg0);
@@ -211,11 +211,11 @@ public final class oa extends Class19 implements Interface5 {
 			if (local9) {
 				throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
 			}
-			return new h(this, this.aYa2, arg0, arg1, (Class23[]) null);
+			return new h(this, this.aYa2, arg0, arg1, null);
 		} else if (local9) {
 			throw new IllegalArgumentException("Cannot specify alpha with non-mono font unless someone writes it");
 		} else {
-			return new n(this, this.aYa2, arg0, arg1, (Class23[]) null);
+			return new n(this, this.aYa2, arg0, arg1, null);
 		}
 	}
 
@@ -327,9 +327,9 @@ public final class oa extends Class19 implements Interface5 {
 	@Override
 	public void method7979(@OriginalArg(0) Canvas arg0) {
 		if (this.aP1.aCanvas9 == arg0) {
-			this.method8026((Canvas) null);
+			this.method8026(null);
 		}
-		@Pc(18) p local18 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(18) p local18 = (p) this.aClass28_33.method738(arg0.hashCode());
 		if (local18 != null) {
 			local18.method9464();
 			local18.method6449();
@@ -474,7 +474,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8029(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738((long) arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aClass28_33.method738(arg0.hashCode());
 		if (local8 == null) {
 			try {
 				@Pc(15) Class local15 = Class.forName("java.awt.Canvas");
@@ -483,7 +483,7 @@ public final class oa extends Class19 implements Interface5 {
 			} catch (@Pc(39) Exception local39) {
 			}
 			local8 = new p(this, arg0, arg1, arg2);
-			this.aClass28_33.method735((long) arg0.hashCode(), local8);
+			this.aClass28_33.method735(arg0.hashCode(), local8);
 		} else if (local8.anInt7182 != arg1 || local8.anInt7183 != arg2) {
 			local8.method6446(arg0, arg1, arg2);
 		}

@@ -30,7 +30,7 @@ public final class Static682 {
 
 	@OriginalMember(owner = "client!vka", name = "b", descriptor = "(II)V")
 	public static void method8933(@OriginalArg(1) int arg0) {
-		@Pc(17) Class2_Sub2_Sub2 local17 = Static440.method5970(20, (long) arg0);
+		@Pc(17) Class2_Sub2_Sub2 local17 = Static440.method5970(20, arg0);
 		local17.method205();
 	}
 
@@ -59,9 +59,9 @@ public final class Static682 {
 			local18 = Static211.anInt5594 - 1;
 		}
 		for (@Pc(94) int local94 = local22; local94 <= local26; local94++) {
-			@Pc(105) int local105 = Static719.method9125(local94 + Static482.anInt7286, 16939, Static617.anInt9460) * Static211.anInt5594;
+			@Pc(105) int local105 = Static719.method9125(local94 + Static482.anInt7286, Static617.anInt9460) * Static211.anInt5594;
 			for (@Pc(107) int local107 = local14; local107 <= local18; local107++) {
-				@Pc(117) int local117 = Static719.method9125(Static632.anInt9529 + local107, 16939, Static211.anInt5594) + local105;
+				@Pc(117) int local117 = Static719.method9125(Static632.anInt9529 + local107, Static211.anInt5594) + local105;
 				Static173.anIntArray252[local117] = Static420.anInt6456;
 			}
 		}

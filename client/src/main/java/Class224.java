@@ -85,7 +85,7 @@ public abstract class Class224 {
 			}
 			local25 = this.anOggPage2.getSerialNumber();
 			if (!this.anOggPage2.isBOS()) {
-				@Pc(81) Class2_Sub28 local81 = (Class2_Sub28) this.aClass28_45.method738((long) local25);
+				@Pc(81) Class2_Sub28 local81 = (Class2_Sub28) this.aClass28_45.method738(local25);
 				if (!local81.anOggStreamState5.pageIn(this.anOggPage2)) {
 					throw new IllegalStateException();
 				}
@@ -115,7 +115,7 @@ public abstract class Class224 {
 						local188 = new Class2_Sub28_Sub2(local99);
 					}
 				}
-				this.aClass28_45.method735((long) local25, local188);
+				this.aClass28_45.method735(local25, local188);
 				return local188;
 			} else {
 				throw new IllegalStateException();
@@ -154,7 +154,7 @@ public abstract class Class224 {
 	@OriginalMember(owner = "client!lf", name = "d", descriptor = "(I)Z")
 	private boolean method9183() {
 		if (this.aClass2_Sub28_Sub1_2 == null) {
-			@Pc(42) double local42 = (double) this.aClass2_Sub28_Sub3_2.method5495();
+			@Pc(42) double local42 = this.aClass2_Sub28_Sub3_2.method5495();
 			return local42 == 0.0D || (double) Static588.method7722() >= 1000.0D / local42 + (double) this.aClass2_Sub28_Sub3_2.method5503();
 		} else {
 			return !this.aClass2_Sub28_Sub3_2.method5505() || this.method9192() > this.aClass2_Sub28_Sub3_2.method5504();
@@ -183,7 +183,7 @@ public abstract class Class224 {
 		while (!this.aBoolean801) {
 			@Pc(26) Class2_Sub28 local26;
 			if (this.aBoolean802) {
-				local26 = (Class2_Sub28) this.aClass28_45.method738((long) this.anOggPage2.getSerialNumber());
+				local26 = (Class2_Sub28) this.aClass28_45.method738(this.anOggPage2.getSerialNumber());
 			} else {
 				local26 = this.method9179();
 				if (local26 == null) {

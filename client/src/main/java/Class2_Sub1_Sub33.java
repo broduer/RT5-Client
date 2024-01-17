@@ -12,10 +12,7 @@ public final class Class2_Sub1_Sub33 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vea", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 <= 107) {
-			this.method9418(49, -21);
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		return Static54.anIntArray92;
 	}
 }

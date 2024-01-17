@@ -60,12 +60,12 @@ public final class Static437 {
 					@Pc(177) int local177;
 					if (local130 == 0) {
 						local149 = (Field) local10.aClass272Array1[local105].anObject13;
-						local177 = local149.getInt((Object) null);
+						local177 = local149.getInt(null);
 						arg0.method7396(0);
 						arg0.method7349(local177);
 					} else if (local130 == 1) {
 						local149 = (Field) local10.aClass272Array1[local105].anObject13;
-						local149.setInt((Object) null, local10.anIntArray827[local105]);
+						local149.setInt(null, local10.anIntArray827[local105]);
 						arg0.method7396(0);
 					} else if (local130 == 2) {
 						local149 = (Field) local10.aClass272Array1[local105].anObject13;
@@ -82,7 +82,7 @@ public final class Static437 {
 							@Pc(268) ObjectInputStream local268 = new ObjectInputStream(new ByteArrayInputStream(local250[local256]));
 							local254[local256] = local268.readObject();
 						}
-						@Pc(283) Object local283 = local225.invoke((Object) null, local254);
+						@Pc(283) Object local283 = local225.invoke(null, local254);
 						if (local283 == null) {
 							arg0.method7396(0);
 						} else if (local283 instanceof Number) {

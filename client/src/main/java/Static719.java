@@ -165,10 +165,7 @@ public final class Static719 {
 	}
 
 	@OriginalMember(owner = "client!wq", name = "b", descriptor = "(III)I")
-	public static int method9125(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		if (arg1 != 16939) {
-			aClass56_5 = null;
-		}
+	public static int method9125(@OriginalArg(0) int arg0, @OriginalArg(2) int arg2) {
 		@Pc(18) int local18 = arg2 - 1 & arg0 >> 31;
 		return local18 + (arg0 + (arg0 >>> 31)) % arg2;
 	}

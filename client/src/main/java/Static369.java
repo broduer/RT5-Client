@@ -41,12 +41,12 @@ public final class Static369 {
 					@Pc(121) int local121 = local104 + (Static89.anIntArray169[local13] >> 8) * 64 - Static691.anInt10395;
 					@Pc(135) int local135 = (Static89.anIntArray169[local13] & 0xFF) * 64 + local108 - Static116.anInt2279;
 					@Pc(142) Class270 local142 = Static690.aClass310_2.method7099(local66.method7389());
-					@Pc(149) Class2_Sub45 local149 = (Class2_Sub45) Static18.aClass28_2.method738((long) local88);
+					@Pc(149) Class2_Sub45 local149 = (Class2_Sub45) Static18.aClass28_2.method738(local88);
 					if (local149 == null && (local142.aByte103 & 0x1) > 0 && local98 == Static164.anInt2817 && local121 >= 0 && local142.anInt6733 + local121 < Static720.anInt10888 && local135 >= 0 && local135 + local142.anInt6733 < Static501.anInt7591) {
 						@Pc(197) Class8_Sub2_Sub1_Sub2_Sub2 local197 = new Class8_Sub2_Sub1_Sub2_Sub2();
 						local197.anInt10768 = local88;
 						@Pc(205) Class2_Sub45 local205 = new Class2_Sub45(local197);
-						Static18.aClass28_2.method735((long) local88, local205);
+						Static18.aClass28_2.method735(local88, local205);
 						Static592.aClass2_Sub45Array1[Static416.anInt6398++] = local205;
 						Static103.anIntArray187[Static390.anInt6146++] = local88;
 						local197.anInt10780 = Static333.anInt5474;

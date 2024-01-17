@@ -82,7 +82,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 			this.aClass2_Sub2_Sub9_3 = null;
 		}
 		if (local16 != null) {
-			Static292.method4625(local16, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static292.method4625(local16, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 		if (arg1 > -42) {
 			this.aClass114_4 = null;
@@ -206,7 +206,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 			this.aClass2_Sub2_Sub9_3 = null;
 		}
 		if (local21 != null) {
-			Static630.method8364(local21, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static630.method8364(local21, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 	}
 
@@ -269,7 +269,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 			}
 		}
 		if (arg4 <= 101) {
-			this.method9285((Class19) null, -1);
+			this.method9285(null, -1);
 		}
 	}
 
@@ -289,7 +289,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 				local33 = Static706.aClass178Array3[super.aByte143 + 1];
 			}
 		}
-		return local11.method1309(this.aByte84 == 11 ? this.aByte83 + 4 : this.aByte83, super.anInt10722, super.anInt10718, local27, arg1, super.anInt10719, this.aByte84 == 11 ? 10 : this.aByte84, arg0, (Class150) null, arg2, local33);
+		return local11.method1309(this.aByte84 == 11 ? this.aByte83 + 4 : this.aByte83, super.anInt10722, super.anInt10718, local27, arg1, super.anInt10719, this.aByte84 == 11 ? 10 : this.aByte84, arg0, null, arg2, local33);
 	}
 
 	@OriginalMember(owner = "client!jda", name = "c", descriptor = "(I)I")

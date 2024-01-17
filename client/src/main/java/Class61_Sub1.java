@@ -36,7 +36,7 @@ public final class Class61_Sub1 extends Class61 implements Interface2 {
 			@Pc(71) int local71 = local66 * this.anInt1592;
 			@Pc(74) int local74 = local40.getSlicePitch();
 			if (local71 == local74) {
-				local40.a((byte[]) arg5, 0, 0, this.anInt1592 * local66 * this.anInt1593);
+				local40.a(arg5, 0, 0, this.anInt1592 * local66 * this.anInt1593);
 			} else {
 				@Pc(80) int local80 = local40.getRowPitch();
 				@Pc(89) int local89;

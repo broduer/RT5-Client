@@ -102,7 +102,7 @@ public final class Class101_Sub6 extends Class101 {
 			this.aBoolean485 = false;
 		}
 		super.aClass19_Sub3_42.method7021(1);
-		super.aClass19_Sub3_42.method7008((Class93) null);
+		super.aClass19_Sub3_42.method7008(null);
 		super.aClass19_Sub3_42.method7038(8448, 8448);
 		super.aClass19_Sub3_42.method7028(5890, 768, 0);
 		super.aClass19_Sub3_42.method7028(34166, 770, 2);

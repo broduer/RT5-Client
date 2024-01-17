@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.Socket;
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Vector;
 import org.openrs2.deob.annotation.OriginalArg;
@@ -77,7 +78,7 @@ public final class client extends Applet_Sub1 {
 			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.aClass379_4.aString114);
 			Static353.aFrame10.setLocation(40, 40);
 		} catch (@Pc(265) Exception local265) {
-			Static240.method3496(local265, (String) null);
+			Static240.method3496(local265, null);
 		}
 	}
 
@@ -89,7 +90,7 @@ public final class client extends Applet_Sub1 {
 				@Pc(25) Class local25 = Static166.anApplet1.getClass();
 				@Pc(31) Field local31 = local25.getDeclaredField("canvas");
 				Static434.aCanvas7 = (Canvas) local31.get(Static166.anApplet1);
-				local31.set(Static166.anApplet1, (Object) null);
+				local31.set(Static166.anApplet1, null);
 				if (Static434.aCanvas7 != null) {
 					return;
 				}
@@ -243,8 +244,8 @@ public final class client extends Applet_Sub1 {
 			}
 		}
 		Static35.anInt803++;
-		Static449.method6121(-1, -1, (Class158) null);
-		Static65.method1473(-1, -1, (Class158) null);
+		Static449.method6121(-1, -1, null);
+		Static65.method1473(-1, -1, null);
 		Static443.method5988();
 		Static642.anInt9625++;
 		for (local46 = 0; local46 < Static416.anInt6398; local46++) {
@@ -422,7 +423,7 @@ public final class client extends Applet_Sub1 {
 		}
 		if (Static475.method6452(Static283.anInt4588)) {
 			if (Static297.aLong153 != 0L && Static588.method7722() > Static297.aLong153) {
-				Static409.method5664(Static36.method978(3), Static560.anInt8453, false, Static433.anInt6278);
+				Static409.method5664(Static36.method978(), Static560.anInt8453, false, Static433.anInt6278);
 			} else if (!Static163.aClass19_17.method8008() && Static723.aBoolean828) {
 				Static574.method7579();
 			}
@@ -447,7 +448,7 @@ public final class client extends Applet_Sub1 {
 			}
 			if (Static52.anInt1063 != local110 || local114 != Static54.anInt1088 || Static284.aBoolean355) {
 				if (Static163.aClass19_17 == null || Static163.aClass19_17.method7990()) {
-					Static712.method9336((byte) 11);
+					Static712.method9336();
 				} else {
 					Static52.anInt1063 = local110;
 					Static54.anInt1088 = local114;
@@ -467,7 +468,7 @@ public final class client extends Applet_Sub1 {
 		if (local209) {
 			Static288.method4189();
 		}
-		if (Static163.aClass19_17 != null && Static163.aClass19_17.method8008() || Static36.method978(3) != 1) {
+		if (Static163.aClass19_17 != null && Static163.aClass19_17.method8008() || Static36.method978() != 1) {
 			Static469.method6369();
 		}
 		if (Static181.method2778(Static283.anInt4588)) {
@@ -514,7 +515,7 @@ public final class client extends Applet_Sub1 {
 		if (Static607.method8170()) {
 			Static546.method7258(Static163.aClass19_17);
 		}
-		if (Static446.aClass392_6.aBoolean780 && Static475.method6452(Static283.anInt4588) && Static18.anInt251 == 0 && Static36.method978(3) == 1 && !local209) {
+		if (Static446.aClass392_6.aBoolean780 && Static475.method6452(Static283.anInt4588) && Static18.anInt251 == 0 && Static36.method978() == 1 && !local209) {
 			local110 = 0;
 			for (local114 = 0; local114 < Static122.anInt2348; local114++) {
 				if (Static469.aBooleanArray23[local114]) {
@@ -600,8 +601,8 @@ public final class client extends Applet_Sub1 {
 		Static333.anInt5474++;
 		if (Static333.anInt5474 % 1000 == 1) {
 			@Pc(27) GregorianCalendar local27 = new GregorianCalendar();
-			Static178.anInt2956 = local27.get(11) * 600 + local27.get(12) * 10 + local27.get(13) / 6;
-			Static493.aRandom1.setSeed((long) Static178.anInt2956);
+			Static178.anInt2956 = local27.get(Calendar.HOUR_OF_DAY) * 600 + local27.get(Calendar.MINUTE) * 10 + local27.get(Calendar.SECOND) / 6;
+			Static493.aRandom1.setSeed(Static178.anInt2956);
 		}
 		Static405.aClass153_2.method3271();
 		Static405.aClass153_1.method3271();
@@ -704,7 +705,7 @@ public final class client extends Applet_Sub1 {
 		@Pc(18) Frame local18 = new Frame("Jagex");
 		local18.pack();
 		local18.dispose();
-		Static712.method9336((byte) 11);
+		Static712.method9336();
 		Static66.aClass174_1 = new Class174(Static446.aClass392_6);
 		Static500.aClass297_3 = new Class297();
 		Static545.method7248(new int[] { 20, 260 }, new int[] { 1000, 100 });
@@ -774,7 +775,7 @@ public final class client extends Applet_Sub1 {
 			if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != null) {
 				local5 = local5 + "2)" + Static394.anInt6196 + "," + (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] + Static691.anInt10395) + "," + (Static116.anInt2279 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + "|";
 			}
-			local5 = local5 + "3)" + Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() + "|4)" + Static400.aClass2_Sub34_28.aClass57_Sub13_2.method4380() + "|5)" + Static36.method978(3) + "|6)" + Static680.anInt10317 + "," + Static380.anInt5999 + "|";
+			local5 = local5 + "3)" + Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() + "|4)" + Static400.aClass2_Sub34_28.aClass57_Sub13_2.method4380() + "|5)" + Static36.method978() + "|6)" + Static680.anInt10317 + "," + Static380.anInt5999 + "|";
 			local5 = local5 + "7)" + Static400.aClass2_Sub34_28.aClass57_Sub24_1.method7089() + "|";
 			local5 = local5 + "8)" + Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4371() + "|";
 			local5 = local5 + "9)" + Static400.aClass2_Sub34_28.aClass57_Sub26_1.method7470() + "|";

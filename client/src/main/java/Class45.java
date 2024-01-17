@@ -33,7 +33,7 @@ public final class Class45 {
 		@Pc(6) Class82 local6 = this.aClass82_17;
 		@Pc(16) Class220 local16;
 		synchronized (this.aClass82_17) {
-			local16 = (Class220) this.aClass82_17.method2156((long) arg0);
+			local16 = (Class220) this.aClass82_17.method2156(arg0);
 		}
 		if (local16 != null) {
 			return local16;
@@ -50,7 +50,7 @@ public final class Class45 {
 		local16.method5130();
 		@Pc(66) Class82 local66 = this.aClass82_17;
 		synchronized (this.aClass82_17) {
-			this.aClass82_17.method2150(local16, (long) arg0);
+			this.aClass82_17.method2150(local16, arg0);
 			return local16;
 		}
 	}

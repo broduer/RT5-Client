@@ -84,7 +84,7 @@ public final class Class229 {
 		@Pc(65) Class82 local65 = this.aClass128_2.aClass82_62;
 		@Pc(85) Class114 local85;
 		synchronized (this.aClass128_2.aClass82_62) {
-			local85 = (Class114) this.aClass128_2.aClass82_62.method2156((long) (this.anInt5853 |= arg9.anInt8986 << 29));
+			local85 = (Class114) this.aClass128_2.aClass82_62.method2156(this.anInt5853 |= arg9.anInt8986 << 29);
 		}
 		if (local85 == null || arg9.method7967(local85.ua(), local15) != 0) {
 			if (local85 != null) {
@@ -119,7 +119,7 @@ public final class Class229 {
 			local85.s(local15);
 			@Pc(232) Class82 local232 = this.aClass128_2.aClass82_62;
 			synchronized (this.aClass128_2.aClass82_62) {
-				this.aClass128_2.aClass82_62.method2150(local85, (long) (this.anInt5853 |= arg9.anInt8986 << 29));
+				this.aClass128_2.aClass82_62.method2150(local85, this.anInt5853 |= arg9.anInt8986 << 29);
 			}
 		}
 		@Pc(263) Class114 local263 = local85.method7502(arg0, local15, true);
@@ -208,6 +208,6 @@ public final class Class229 {
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(Lclient!gu;BIBLclient!ha;)Lclient!ka;")
 	public Class114 method5259(@OriginalArg(0) Class152 arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Class19 arg3) {
-		return this.method5256(arg1, false, 0, arg0, (Class178) null, 0, (Class178) null, arg2, 0, arg3);
+		return this.method5256(arg1, false, 0, arg0, null, 0, null, arg2, 0, arg3);
 	}
 }

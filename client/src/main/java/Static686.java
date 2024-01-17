@@ -19,7 +19,7 @@ public final class Static686 {
 				Static349.method5128(arg0);
 			}
 		}
-		Static147.method2421((long) Static333.anInt5474, Static163.aClass19_17);
+		Static147.method2421(Static333.anInt5474, Static163.aClass19_17);
 		if (Static377.anInt5950 != -1) {
 			Static26.method716(Static377.anInt5950);
 		}
@@ -31,7 +31,7 @@ public final class Static686 {
 			Static364.aBooleanArray18[local54] = false;
 		}
 		Static171.anInt2889 = Static333.anInt5474;
-		Static449.method6121(-1, -1, (Class158) null);
+		Static449.method6121(-1, -1, null);
 		if (105 <= 103) {
 			return;
 		}

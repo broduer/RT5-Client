@@ -41,7 +41,7 @@ public final class Class406 {
 		this.anInt10841 = this.anInt10836 = 0;
 		this.aByteArray112[0] = 0;
 		if (60 < 29) {
-			Static715.method9354((String) null, 79, (String) null, -124, false);
+			Static715.method9354(null, 79, null, -124, false);
 		}
 		for (@Pc(48) int local48 = 0; local48 < 8; local48++) {
 			this.aLongArray22[local48] = 0L;
@@ -93,7 +93,7 @@ public final class Class406 {
 		}
 		this.anInt10841 += 8 - local29;
 		this.anInt10836++;
-		arg0 -= (long) (8 - local29);
+		arg0 -= 8 - local29;
 		if (this.anInt10841 == 512) {
 			this.method9352();
 			this.anInt10841 = this.anInt10836 = 0;
@@ -143,7 +143,7 @@ public final class Class406 {
 		@Pc(7) int local7 = 0;
 		@Pc(9) int local9 = 0;
 		while (local7 < 8) {
-			this.aLongArray25[local7] = Static315.method4583(Static570.method7555(255L, (long) this.aByteArray112[local9 + 7]), Static315.method4583(Static570.method7555(0xFFL << 8, (long) this.aByteArray112[local9 + 6] << 8), Static315.method4583(Static315.method4583(Static315.method4583(Static315.method4583(Static570.method7555(0xFFL << 40, (long) this.aByteArray112[local9 + 2] << 40), Static315.method4583(Static570.method7555(255L, (long) this.aByteArray112[local9 + 1]) << 48, (long) this.aByteArray112[local9] << 56)), Static570.method7555(0xFFL << 32, (long) this.aByteArray112[local9 + 3] << 32)), Static570.method7555(255L, (long) this.aByteArray112[local9 + 4]) << 24), Static570.method7555((long) this.aByteArray112[local9 + 5], 255L) << 16)));
+			this.aLongArray25[local7] = Static315.method4583(Static570.method7555(255L, this.aByteArray112[local9 + 7]), Static315.method4583(Static570.method7555(0xFFL << 8, (long) this.aByteArray112[local9 + 6] << 8), Static315.method4583(Static315.method4583(Static315.method4583(Static315.method4583(Static570.method7555(0xFFL << 40, (long) this.aByteArray112[local9 + 2] << 40), Static315.method4583(Static570.method7555(255L, this.aByteArray112[local9 + 1]) << 48, (long) this.aByteArray112[local9] << 56)), Static570.method7555(0xFFL << 32, (long) this.aByteArray112[local9 + 3] << 32)), Static570.method7555(255L, this.aByteArray112[local9 + 4]) << 24), Static570.method7555(this.aByteArray112[local9 + 5], 255L) << 16)));
 			local9 += 8;
 			local7++;
 		}

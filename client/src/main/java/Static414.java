@@ -41,10 +41,10 @@ public final class Static414 {
 				local177 = arg1.method1424(false) + " (" + Static32.aClass32_29.method877(Static51.anInt1056) + arg1.anInt1443 + ")";
 			}
 			if (Static156.aBoolean223 && !arg0 && (Static717.anInt10851 & 0x8) != 0) {
-				Static416.method5714(false, -1, (long) arg1.anInt10768, 0, 0, Static153.aString27, 44, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffffff>" + local177, (long) arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, Static153.aString27, 44, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffffff>" + local177, arg1.anInt10768, false);
 			}
 			if (arg0) {
-				Static416.method5714(true, 0, 0L, 0, 0, "<col=cccccc>" + local177, -1, false, -1, "", (long) arg1.anInt10768, false);
+				Static416.method5714(true, 0, 0L, 0, 0, "<col=cccccc>" + local177, -1, false, -1, "", arg1.anInt10768, false);
 			} else {
 				for (@Pc(318) int local318 = 7; local318 >= 0; local318--) {
 					if (Static297.aStringArray24[local318] != null) {
@@ -67,7 +67,7 @@ public final class Static414 {
 						}
 						@Pc(403) short local403 = (short) (local325 + Static187.aShortArray52[local318]);
 						@Pc(416) int local416 = Static147.anIntArray227[local318] == -1 ? Static39.anInt954 : Static147.anIntArray227[local318];
-						Static416.method5714(false, -1, (long) arg1.anInt10768, 0, 0, Static297.aStringArray24[local318], local403, true, local416, "<col=ffffff>" + local177, (long) arg1.anInt10768, false);
+						Static416.method5714(false, -1, arg1.anInt10768, 0, 0, Static297.aStringArray24[local318], local403, true, local416, "<col=ffffff>" + local177, arg1.anInt10768, false);
 					}
 				}
 			}
@@ -80,7 +80,7 @@ public final class Static414 {
 				}
 			}
 		} else if (Static156.aBoolean223 && (Static717.anInt10851 & 0x10) != 0) {
-			Static416.method5714(false, -1, 0L, 0, 0, Static153.aString27, 4, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffffff>" + Static32.aClass32_37.method877(Static51.anInt1056), (long) arg1.anInt10768, false);
+			Static416.method5714(false, -1, 0L, 0, 0, Static153.aString27, 4, true, Static369.anInt4275, Static128.aString108 + " -> <col=ffffff>" + Static32.aClass32_37.method877(Static51.anInt1056), arg1.anInt10768, false);
 		}
 	}
 

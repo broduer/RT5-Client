@@ -28,7 +28,7 @@ public final class Class123 {
 	private Class2_Sub49_Sub1 method2612(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int[] arg2) {
 		@Pc(15) int local15 = arg0 ^ (arg1 >>> 12 | (arg1 & 0x10000FFF) << 4);
 		@Pc(27) int local27 = local15 | arg1 << 16;
-		@Pc(30) long local30 = (long) local27;
+		@Pc(30) long local30 = local27;
 		@Pc(37) Class2_Sub49_Sub1 local37 = (Class2_Sub49_Sub1) this.aClass28_16.method738(local30);
 		if (local37 != null) {
 			return local37;

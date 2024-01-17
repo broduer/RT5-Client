@@ -168,7 +168,7 @@ public final class Class105 {
 		if (this.aClass28_14 == null) {
 			return arg1;
 		} else {
-			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_14.method738((long) arg0);
+			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_14.method738(arg0);
 			return local17 == null ? arg1 : local17.aString46;
 		}
 	}
@@ -178,14 +178,14 @@ public final class Class105 {
 		if (this.aClass28_14 == null) {
 			return arg0;
 		} else {
-			@Pc(27) Class2_Sub38 local27 = (Class2_Sub38) this.aClass28_14.method738((long) arg1);
+			@Pc(27) Class2_Sub38 local27 = (Class2_Sub38) this.aClass28_14.method738(arg1);
 			return local27 == null ? arg0 : local27.anInt6399;
 		}
 	}
 
 	@OriginalMember(owner = "client!el", name = "a", descriptor = "(ILclient!ha;)Lclient!st;")
 	public Class23 method2428(@OriginalArg(1) Class19 arg0) {
-		@Pc(28) Class23 local28 = (Class23) this.aClass248_2.aClass82_135.method2156((long) (this.anInt2627 | 0x20000 | arg0.anInt8986 << 29));
+		@Pc(28) Class23 local28 = (Class23) this.aClass248_2.aClass82_135.method2156(this.anInt2627 | 0x20000 | arg0.anInt8986 << 29);
 		if (local28 != null) {
 			return local28;
 		}
@@ -193,7 +193,7 @@ public final class Class105 {
 		@Pc(49) Class409 local49 = Static735.method9389(this.aClass248_2.aClass332_83, this.anInt2627, 0);
 		if (local49 != null) {
 			local28 = arg0.method7955(local49, true);
-			this.aClass248_2.aClass82_135.method2150(local28, (long) (this.anInt2627 | 0x20000 | arg0.anInt8986 << 29));
+			this.aClass248_2.aClass82_135.method2150(local28, this.anInt2627 | 0x20000 | arg0.anInt8986 << 29);
 		}
 		return local28;
 	}
@@ -221,14 +221,14 @@ public final class Class105 {
 	public Class23 method2431(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(22) int local22 = arg0 ? this.anInt2600 : this.anInt2605;
 		@Pc(29) int local29 = arg1.anInt8986 << 29 | local22;
-		@Pc(38) Class23 local38 = (Class23) this.aClass248_2.aClass82_135.method2156((long) local29);
+		@Pc(38) Class23 local38 = (Class23) this.aClass248_2.aClass82_135.method2156(local29);
 		if (local38 != null) {
 			return local38;
 		} else if (this.aClass248_2.aClass332_83.method7588(local22)) {
 			@Pc(60) Class409 local60 = Static735.method9389(this.aClass248_2.aClass332_83, local22, 0);
 			if (local60 != null) {
 				local38 = arg1.method7955(local60, true);
-				this.aClass248_2.aClass82_135.method2150(local38, (long) local29);
+				this.aClass248_2.aClass82_135.method2150(local38, local29);
 			}
 			return local38;
 		} else {
@@ -333,7 +333,7 @@ public final class Class105 {
 							} else {
 								local323 = new Class2_Sub38(arg0.method7356());
 							}
-							this.aClass28_14.method735((long) local314, local323);
+							this.aClass28_14.method735(local314, local323);
 						}
 						return;
 					}

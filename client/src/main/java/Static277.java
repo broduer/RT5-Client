@@ -19,7 +19,7 @@ public final class Static277 {
 		@Pc(5) long local5 = 4194304L;
 		@Pc(18) long local18 = Long.MIN_VALUE;
 		@Pc(25) Class54 local25 = Static354.aClass142_4.method3063(arg0.method6866(-32136), 44);
-		@Pc(46) long local46 = (long) (arg2 | arg1 << 7 | arg0.method6865() << 14 | arg0.method6862(23796) << 20 | 0x40000000);
+		@Pc(46) long local46 = arg2 | arg1 << 7 | arg0.method6865() << 14 | arg0.method6862(23796) << 20 | 0x40000000;
 		if (local25.anInt1276 == 0) {
 			local46 |= local18;
 		}

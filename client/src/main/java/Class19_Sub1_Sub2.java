@@ -322,7 +322,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "b", descriptor = "(IIZ)V")
 	public synchronized void method8167(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(20) Class2_Sub38 local20 = new Class2_Sub38(arg0);
-		local20.aLong328 = (long) arg1;
+		local20.aLong328 = arg1;
 		this.aClass341_62.method7718(local20);
 	}
 
@@ -381,7 +381,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		this.method8079(false);
 		this.method8130(false);
 		this.method8090(false);
-		this.method8095((Interface17) null);
+		this.method8095(null);
 		this.method8115(false, -2, false);
 		this.method8061(1);
 		this.method8060(0);
@@ -535,7 +535,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "k", descriptor = "(II)V")
 	public synchronized void method8169(@OriginalArg(0) int arg0) {
 		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = (long) arg0;
+		local7.aLong328 = arg0;
 		this.aClass341_65.method7718(local7);
 	}
 
@@ -667,7 +667,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(BII)V")
 	public synchronized void method8171(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) Class2_Sub38 local13 = new Class2_Sub38(arg1);
-		local13.aLong328 = (long) arg0;
+		local13.aLong328 = arg0;
 		this.aClass341_61.method7718(local13);
 	}
 

@@ -13,12 +13,9 @@ public final class Class2_Sub1_Sub31 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vba", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			super.aBoolean825 = arg1.method7403() == 1;
-		}
-		if (arg0) {
-			Static666.aClass332_118 = null;
 		}
 	}
 
@@ -26,7 +23,7 @@ public final class Class2_Sub1_Sub31 extends Class2_Sub1 {
 	private void method8698(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(9) int local9 = Static54.anIntArray92[arg0];
 		@Pc(13) int local13 = Static273.anIntArray341[arg1];
-		@Pc(24) float local24 = (float) Math.atan2((double) (local9 - 2048), (double) (local13 - 2048));
+		@Pc(24) float local24 = (float) Math.atan2(local9 - 2048, local13 - 2048);
 		if ((double) local24 >= -3.141592653589793D && (double) local24 <= -2.356194490192345D) {
 			Static187.anInt3102 = arg1;
 			Static37.anInt920 = arg0;
@@ -77,10 +74,7 @@ public final class Class2_Sub1_Sub31 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vba", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 <= 107) {
-			Static666.method8700(90);
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(18) int[] local18 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			for (@Pc(24) int local24 = 0; local24 < Static608.anInt9315; local24++) {

@@ -78,7 +78,7 @@ public final class Class83 {
 			throw new EOFException();
 		} else {
 			this.aRandomAccessFile1.write(arg0, arg1, arg2);
-			this.aLong88 += (long) arg2;
+			this.aLong88 += arg2;
 		}
 	}
 
@@ -86,7 +86,7 @@ public final class Class83 {
 	public int method2163(@OriginalArg(1) int arg0, @OriginalArg(2) byte[] arg1, @OriginalArg(3) int arg2) throws IOException {
 		@Pc(19) int local19 = this.aRandomAccessFile1.read(arg1, arg2, arg0);
 		if (local19 > 0) {
-			this.aLong88 += (long) local19;
+			this.aLong88 += local19;
 		}
 		return local19;
 	}

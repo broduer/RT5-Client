@@ -105,7 +105,7 @@ public final class Static231 {
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(IIIII)V")
 	public static void method3378(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(8, (long) arg2);
+		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(8, arg2);
 		local9.method202();
 		local9.anInt195 = arg3;
 		local9.anInt192 = arg1;
@@ -314,7 +314,7 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("wm1")) {
 					Static409.method5664(1, -1, false, -1);
-					if (Static36.method978(3) != 1) {
+					if (Static36.method978() != 1) {
 						Static79.method1579("wm1 failed");
 						return;
 					}
@@ -323,7 +323,7 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("wm2")) {
 					Static409.method5664(2, -1, false, -1);
-					if (Static36.method978(3) != 2) {
+					if (Static36.method978() != 2) {
 						Static79.method1579("wm2 failed");
 						return;
 					}
@@ -332,7 +332,7 @@ public final class Static231 {
 				}
 				if (arg2.equalsIgnoreCase("wm3")) {
 					Static409.method5664(3, 1024, false, 768);
-					if (Static36.method978(3) != 3) {
+					if (Static36.method978() != 3) {
 						Static79.method1579("wm3 failed");
 						return;
 					}

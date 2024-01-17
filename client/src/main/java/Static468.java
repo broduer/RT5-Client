@@ -17,7 +17,7 @@ public final class Static468 {
 		if (Static334.aClass293ArrayArrayArray1 == null || arg2 < 0 || arg1 < 0 || arg2 >= Static720.anInt10888 || Static501.anInt7591 <= arg1 || Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5967() == 0 && arg0 != Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144) {
 			return;
 		}
-		@Pc(67) long local67 = (long) (local12 << 14 | arg0 << 28 | local8);
+		@Pc(67) long local67 = local12 << 14 | arg0 << 28 | local8;
 		@Pc(73) Class2_Sub17 local73 = (Class2_Sub17) Static497.aClass28_35.method738(local67);
 		if (local73 == null) {
 			Static638.method8405(arg0, arg2, arg1);

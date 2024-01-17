@@ -36,7 +36,6 @@ public final class Class9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(I[BIZ)Z")
 	public boolean method125(@OriginalArg(0) int arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) int arg2) {
-		@Pc(6) Class245 local6 = this.aClass245_2;
 		synchronized (this.aClass245_2) {
 			if (arg0 < 0 || arg0 > this.anInt114) {
 				throw new IllegalArgumentException();
@@ -51,13 +50,12 @@ public final class Class9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "(II)[B")
 	public byte[] method126(@OriginalArg(0) int arg0) {
-		@Pc(6) Class245 local6 = this.aClass245_2;
 		synchronized (this.aClass245_2) {
 			try {
 				if (this.aClass245_3.method5571() < (long) (arg0 * 6 + 6)) {
 					return null;
 				}
-				this.aClass245_3.method5575((long) (arg0 * 6));
+				this.aClass245_3.method5575(arg0 * 6);
 				this.aClass245_3.method5566(6, Static294.aByteArray49, 0);
 				@Pc(67) int local67 = ((Static294.aByteArray49[1] & 0xFF) << 8) + ((Static294.aByteArray49[0] & 0xFF) << 16) + (Static294.aByteArray49[2] & 0xFF);
 				@Pc(89) int local89 = (Static294.aByteArray49[5] & 0xFF) + ((Static294.aByteArray49[4] & 0xFF) << 8) + ((Static294.aByteArray49[3] & 0xFF) << 16);
@@ -71,7 +69,7 @@ public final class Class9 {
 						if (local89 == 0) {
 							return null;
 						}
-						this.aClass245_2.method5575((long) (local89 * 520));
+						this.aClass245_2.method5575(local89 * 520);
 						@Pc(161) int local161 = local67 - local131;
 						if (local161 > 512) {
 							local161 = 512;
@@ -106,7 +104,6 @@ public final class Class9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "([BIIIZ)Z")
 	private boolean method128(@OriginalArg(0) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) boolean arg3) {
-		@Pc(8) Class245 local8 = this.aClass245_2;
 		synchronized (this.aClass245_2) {
 			try {
 				@Pc(84) int local84;
@@ -114,7 +111,7 @@ public final class Class9 {
 					if (this.aClass245_3.method5571() < (long) (arg1 * 6 + 6)) {
 						return false;
 					}
-					this.aClass245_3.method5575((long) (arg1 * 6));
+					this.aClass245_3.method5575(arg1 * 6);
 					this.aClass245_3.method5566(6, Static294.aByteArray49, 0);
 					local84 = (Static294.aByteArray49[5] & 0xFF) + (((Static294.aByteArray49[3] & 0xFF) << 16) + ((Static294.aByteArray49[4] & 0xFF) << 8));
 					if (local84 <= 0 || this.aClass245_2.method5571() / 520L < (long) local84) {
@@ -132,7 +129,7 @@ public final class Class9 {
 				Static294.aByteArray49[1] = (byte) (arg2 >> 8);
 				Static294.aByteArray49[5] = (byte) local84;
 				Static294.aByteArray49[4] = (byte) (local84 >> 8);
-				this.aClass245_3.method5575((long) (arg1 * 6));
+				this.aClass245_3.method5575(arg1 * 6);
 				this.aClass245_3.method5568(0, 6, Static294.aByteArray49);
 				@Pc(173) int local173 = 0;
 				@Pc(175) int local175 = 0;
@@ -142,7 +139,7 @@ public final class Class9 {
 							@Pc(181) int local181 = 0;
 							@Pc(217) int local217;
 							if (arg3) {
-								this.aClass245_2.method5575((long) (local84 * 520));
+								this.aClass245_2.method5575(local84 * 520);
 								try {
 									this.aClass245_2.method5566(8, Static294.aByteArray49, 0);
 								} catch (@Pc(201) EOFException local201) {
@@ -180,7 +177,7 @@ public final class Class9 {
 							Static294.aByteArray49[5] = (byte) (local181 >> 8);
 							Static294.aByteArray49[6] = (byte) local181;
 							Static294.aByteArray49[7] = (byte) this.anInt118;
-							this.aClass245_2.method5575((long) (local84 * 520));
+							this.aClass245_2.method5575(local84 * 520);
 							this.aClass245_2.method5568(0, 8, Static294.aByteArray49);
 							local217 = arg2 - local173;
 							if (local217 > 512) {

@@ -34,7 +34,7 @@ public final class Static527 {
 							local20.method813(Static102.method2025(local20.aByte144, -29754, local61.anInt10722, local61.anInt10718) - local20.anInt712, Static333.anInt5474, local61.anInt10722, local61.anInt10718);
 						}
 					} else {
-						@Pc(130) Class2_Sub45 local130 = (Class2_Sub45) Static18.aClass28_2.method738((long) (local20.anInt714 - 1));
+						@Pc(130) Class2_Sub45 local130 = (Class2_Sub45) Static18.aClass28_2.method738(local20.anInt714 - 1);
 						if (local130 != null) {
 							@Pc(135) Class8_Sub2_Sub1_Sub2_Sub2 local135 = local130.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 							if (local135.anInt10718 >= 0 && local135.anInt10718 < Static720.anInt10888 * 512 && local135.anInt10722 >= 0 && local135.anInt10722 < Static501.anInt7591 * 512) {

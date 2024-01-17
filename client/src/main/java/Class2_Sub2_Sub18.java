@@ -28,7 +28,6 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 		@Pc(36) int[] local36;
 		@Pc(43) int local43;
 		if (this.aByteArrayArray32 == null) {
-			@Pc(14) Class332 local14 = Static509.aClass332_96;
 			synchronized (Static509.aClass332_96) {
 				if (!Static509.aClass332_96.method7614(this.anInt8559)) {
 					return false;
@@ -46,7 +45,6 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 			@Pc(82) Class2_Sub21 local82 = new Class2_Sub21(local77);
 			local82.anInt8412 = 1;
 			local43 = local82.method7389();
-			@Pc(91) Class332 local91 = Static269.aClass332_58;
 			synchronized (Static269.aClass332_58) {
 				local69 &= Static269.aClass332_58.method7588(local43);
 			}
@@ -55,7 +53,6 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 			return false;
 		}
 		@Pc(123) Class341 local123 = new Class341();
-		@Pc(125) Class332 local125 = Static509.aClass332_96;
 		synchronized (Static509.aClass332_96) {
 			@Pc(133) int local133 = Static509.aClass332_96.method7615(this.anInt8559);
 			this.aClass255Array1 = new Class255[local133];
@@ -74,7 +71,6 @@ public final class Class2_Sub2_Sub18 extends Class2_Sub2 {
 				}
 			}
 			if (local181 == null) {
-				@Pc(209) Class332 local209 = Static269.aClass332_58;
 				synchronized (Static269.aClass332_58) {
 					local181 = new Class2_Sub44(local179, Static269.aClass332_58.method7596(local179));
 				}

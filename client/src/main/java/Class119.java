@@ -30,10 +30,10 @@ public final class Class119 implements Runnable {
 					}
 				}
 				Static638.method8402(10L);
-				Static61.method1312(this.aClass392_2, (Object) null);
+				Static61.method1312(this.aClass392_2, null);
 			}
 		} catch (@Pc(49) Exception local49) {
-			Static240.method3496(local49, (String) null);
+			Static240.method3496(local49, null);
 		} finally {
 			@Pc(59) Object local59 = null;
 			this.aBoolean242 = false;

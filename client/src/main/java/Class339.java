@@ -109,7 +109,7 @@ public final class Class339 {
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Z)I")
 	public int method7680(@OriginalArg(0) boolean arg0) {
 		if (!arg0) {
-			this.method7685((Class19) null, false, false, false, 98);
+			this.method7685(null, false, false, false, 98);
 		}
 		return this.anInt8676;
 	}
@@ -254,7 +254,7 @@ public final class Class339 {
 				if (arg3) {
 					this.aClass2_Sub2_Sub9_6 = local389.aClass2_Sub2_Sub9_5;
 					this.aBooleanArray27 = null;
-					Static630.method8364(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10718, this.aClass8_Sub2_21.anInt10722, (boolean[]) null);
+					Static630.method8364(this.aClass2_Sub2_Sub9_6, this.aByte133, this.aClass8_Sub2_21.anInt10718, this.aClass8_Sub2_21.anInt10722, null);
 					this.aBoolean663 = true;
 				}
 				this.anInt8684 = local171.fa();
@@ -319,9 +319,9 @@ public final class Class339 {
 		}
 		arg1.method7483(arg8);
 		if (arg2) {
-			this.aClass8_Sub5_7.method3643(arg4, (long) Static333.anInt5474, local11, local14);
+			this.aClass8_Sub5_7.method3643(arg4, Static333.anInt5474, local11, local14);
 		} else {
-			this.aClass8_Sub5_7.method3649((long) Static333.anInt5474);
+			this.aClass8_Sub5_7.method3649(Static333.anInt5474);
 		}
 		this.aClass8_Sub5_7.method3658(this.aByte132, arg6, arg5, arg7, arg0);
 	}

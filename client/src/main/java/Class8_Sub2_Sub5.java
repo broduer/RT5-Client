@@ -58,7 +58,7 @@ public abstract class Class8_Sub2_Sub5 extends Class8_Sub2 {
 	@Override
 	public final boolean method9297(@OriginalArg(0) int arg0) {
 		if (arg0 != 0) {
-			this.method9291((byte) -87, (Class19) null);
+			this.method9291((byte) -87, null);
 		}
 		return false;
 	}

@@ -53,9 +53,6 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(IZLclient!ha;IBILclient!eo;)V")
 	@Override
 	public void method9292(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6) {
-		if (arg4 <= 101) {
-			Static712.method9336((byte) 99);
-		}
 		throw new IllegalStateException();
 	}
 
@@ -412,7 +409,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 			super.aClass114Array3[local53] = null;
 		}
 		if (arg1 != -5) {
-			this.method9285((Class19) null, -21);
+			this.method9285(null, -21);
 		}
 	}
 

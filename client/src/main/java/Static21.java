@@ -18,7 +18,7 @@ public final class Static21 {
 		Static52.anInt1070 = 9;
 		Static340.anInt5606 = 0x1 << Static52.anInt1070;
 		Static247.anInt4004 = Static340.anInt5606 >> 1;
-		Math.sqrt((double) (Static247.anInt4004 * Static247.anInt4004 + Static247.anInt4004 * Static247.anInt4004));
+		Math.sqrt(Static247.anInt4004 * Static247.anInt4004 + Static247.anInt4004 * Static247.anInt4004);
 		Static299.anInt4840 = 4;
 		Static619.anInt1573 = arg2;
 		Static662.anInt9869 = arg3;

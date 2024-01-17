@@ -121,7 +121,7 @@ public final class Class178_Sub2 extends Class178 {
 			for (@Pc(121) int local121 = 1; local121 < super.anInt8918; local121++) {
 				@Pc(140) int local140 = arg6[local121 + 1][local115] - arg6[local121 - 1][local115];
 				@Pc(157) int local157 = arg6[local121][local115 + 1] - arg6[local121][local115 - 1];
-				@Pc(176) float local176 = (float) (1.0D / Math.sqrt((double) (local157 * local157 + arg7 * 4 * arg7 + local140 * local140)));
+				@Pc(176) float local176 = (float) (1.0D / Math.sqrt(local157 * local157 + arg7 * 4 * arg7 + local140 * local140));
 				this.aFloatArrayArray14[local121][local115] = (float) local140 * local176;
 				this.aFloatArrayArray15[local121][local115] = (float) (-arg7 * 2) * local176;
 				this.aFloatArrayArray16[local121][local115] = local176 * (float) local157;
@@ -187,7 +187,7 @@ public final class Class178_Sub2 extends Class178 {
 		this.aClass19_Sub3_33.method6979(false);
 		this.aClass19_Sub3_33.method7024(0);
 		this.aClass19_Sub3_33.method7053(-2);
-		this.aClass19_Sub3_33.method7008((Class93) null);
+		this.aClass19_Sub3_33.method7008(null);
 		Static699.aFloatArray82[5] = (float) 1024 / ((float) super.anInt8912 * 128.0F * (float) this.aClass19_Sub3_33.anInt7979);
 		Static699.aFloatArray82[0] = (float) 1024 / ((float) this.aClass19_Sub3_33.anInt7892 * 128.0F * (float) super.anInt8912);
 		Static699.aFloatArray82[2] = 0.0F;
@@ -792,7 +792,7 @@ public final class Class178_Sub2 extends Class178 {
 			}
 			this.aClass19_Sub3_33.method7028(5890, 768, 0);
 			this.aClass19_Sub3_33.method7036(0, 5890);
-			this.aClass19_Sub3_33.method7008((Class93) null);
+			this.aClass19_Sub3_33.method7008(null);
 			this.aClass19_Sub3_33.L(local138, local252, this.aClass19_Sub3_33.anInt8032);
 		}
 		if (this.aClass170_1 == null) {
@@ -800,7 +800,7 @@ public final class Class178_Sub2 extends Class178 {
 		}
 		OpenGL.glPushMatrix();
 		OpenGL.glTranslatef(0.0F, -1.0F, 0.0F);
-		this.aClass19_Sub3_33.method7046((Class94) null, (Class94) null, this.aClass94_11, this.aClass94_14);
+		this.aClass19_Sub3_33.method7046(null, null, this.aClass94_11, this.aClass94_14);
 		this.aClass170_1.method3542(arg2, arg0, arg5, arg1, arg4);
 		OpenGL.glPopMatrix();
 	}

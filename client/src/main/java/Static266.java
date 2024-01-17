@@ -96,7 +96,7 @@ public final class Static266 {
 		Static421.aByteArrayArray19 = new byte[local22][];
 		local22 = 0;
 		for (@Pc(312) Class2_Sub35 local312 = (Class2_Sub35) Static391.aClass341_34.method7706(65280); local312 != null; local312 = (Class2_Sub35) Static391.aClass341_34.method7713()) {
-			local93 = local312.anInt5711 >>> -2127211805;
+			local93 = local312.anInt5711 >>> 0x813552e3;
 			local98 = local312.anInt5712 >>> 3;
 			local101 = local312.anInt5706 + local93;
 			if ((local101 & 0x7) == 0) {

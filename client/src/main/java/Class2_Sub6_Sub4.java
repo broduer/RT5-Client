@@ -35,7 +35,7 @@ public final class Class2_Sub6_Sub4 extends Class2_Sub6 {
 					}
 					this.method8537(local15, local15.anInt2193);
 					local27 -= local15.anInt2193;
-				} while (!this.aClass2_Sub6_Sub1_4.method945(local15, (int[]) null, 0, local27));
+				} while (!this.aClass2_Sub6_Sub1_4.method945(local15, null, 0, local27));
 			}
 		}
 	}

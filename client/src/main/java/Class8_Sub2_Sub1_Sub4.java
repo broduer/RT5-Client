@@ -172,7 +172,7 @@ public final class Class8_Sub2_Sub1_Sub4 extends Class8_Sub2_Sub1 implements Int
 	@Override
 	public void method6864(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 >= -42) {
-			this.method9292(72, true, (Class19) null, -2, (byte) 37, -105, (Class8_Sub2) null);
+			this.method9292(72, true, null, -2, (byte) 37, -105, null);
 		}
 		this.aClass339_3.method7676(arg0);
 	}

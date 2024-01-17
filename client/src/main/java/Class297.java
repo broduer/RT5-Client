@@ -168,7 +168,7 @@ public final class Class297 {
 							@Pc(338) int local338 = this.aClass2_Sub21_14.method7356();
 							@Pc(342) int local342 = local333 & 0x7F;
 							@Pc(354) boolean local354 = (local333 & 0x80) != 0;
-							@Pc(361) long local361 = (long) (local328 + (local260 << 16));
+							@Pc(361) long local361 = local328 + (local260 << 16);
 							@Pc(371) Class2_Sub2_Sub17_Sub1 local371;
 							if (local354) {
 								for (local371 = (Class2_Sub2_Sub17_Sub1) this.aClass194_13.method4359(); local371 != null && local371.aLong325 != local361; local371 = (Class2_Sub2_Sub17_Sub1) this.aClass194_13.method4357()) {
@@ -349,7 +349,7 @@ public final class Class297 {
 
 	@OriginalMember(owner = "client!pla", name = "a", descriptor = "(IIBZB)Lclient!rja;")
 	public Class2_Sub2_Sub17_Sub1 method6640(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) byte arg3) {
-		@Pc(19) long local19 = (long) ((arg0 << 16) + arg1);
+		@Pc(19) long local19 = (arg0 << 16) + arg1;
 		@Pc(23) Class2_Sub2_Sub17_Sub1 local23 = new Class2_Sub2_Sub17_Sub1();
 		local23.aBoolean778 = arg2;
 		local23.aByte129 = arg3;

@@ -162,7 +162,7 @@ public final class Class220 {
 						} else {
 							local237 = new Class2_Sub38(arg1.method7356());
 						}
-						this.aClass28_30.method735((long) local228, local237);
+						this.aClass28_30.method735(local228, local237);
 					}
 				}
 			}

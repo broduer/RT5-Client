@@ -56,7 +56,7 @@ public final class Static556 {
 			} else if (local55.anInt7338 != -1) {
 				local65 = Static419.aClass112_1.method2486(local55.anInt7338).anIntArray800;
 			} else if (Static598.method7832(local55.anInt7335)) {
-				@Pc(93) Class2_Sub45 local93 = (Class2_Sub45) Static18.aClass28_2.method738((long) (int) local55.aLong233);
+				@Pc(93) Class2_Sub45 local93 = (Class2_Sub45) Static18.aClass28_2.method738((int) local55.aLong233);
 				if (local93 != null) {
 					@Pc(98) Class8_Sub2_Sub1_Sub2_Sub2 local98 = local93.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 					@Pc(101) Class270 local101 = local98.aClass270_1;
@@ -103,7 +103,7 @@ public final class Static556 {
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "(IBZ)Lclient!gfa;")
 	public static Class2_Sub22 method7310(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(19) long local19 = (long) (arg0 | (arg1 ? Integer.MIN_VALUE : 0));
+		@Pc(19) long local19 = arg0 | (arg1 ? Integer.MIN_VALUE : 0);
 		return (Class2_Sub22) Static286.aClass28_23.method738(local19);
 	}
 }

@@ -32,11 +32,11 @@ public final class Class240 {
 			return;
 		}
 		if (this.aComponent2 != null) {
-			this.aComponent2.setCursor((Cursor) null);
+			this.aComponent2.setCursor(null);
 			this.aComponent2 = null;
 		}
 		if (arg0 != null) {
-			arg0.setCursor(arg0.getToolkit().createCustomCursor(new BufferedImage(1, 1, 2), new Point(0, 0), (String) null));
+			arg0.setCursor(arg0.getToolkit().createCustomCursor(new BufferedImage(1, 1, 2), new Point(0, 0), null));
 			this.aComponent2 = arg0;
 		}
 	}
@@ -49,11 +49,11 @@ public final class Class240 {
 	@OriginalMember(owner = "client!me", name = "setcustomcursor", descriptor = "(Ljava/awt/Component;[IIILjava/awt/Point;)V")
 	private void setcustomcursor(@OriginalArg(0) Component arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Point arg4) {
 		if (arg1 == null) {
-			arg0.setCursor((Cursor) null);
+			arg0.setCursor(null);
 		} else {
 			@Pc(8) BufferedImage local8 = new BufferedImage(arg2, arg3, 2);
 			local8.setRGB(0, 0, arg2, arg3, arg1, 0, arg2);
-			arg0.setCursor(arg0.getToolkit().createCustomCursor(local8, arg4, (String) null));
+			arg0.setCursor(arg0.getToolkit().createCustomCursor(local8, arg4, null));
 		}
 	}
 }

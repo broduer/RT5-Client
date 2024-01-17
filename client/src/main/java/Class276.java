@@ -157,9 +157,6 @@ public final class Class276 {
 			}
 			local33 += local23 - 128;
 		}
-		if (108 != 108) {
-			this.aClass295_2 = null;
-		}
 		if (this.anInterface18_4 != null && local19 == this.anInt6948) {
 			this.aBoolean520 = false;
 			return;

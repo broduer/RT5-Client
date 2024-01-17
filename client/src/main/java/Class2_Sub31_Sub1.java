@@ -235,7 +235,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 	public void method4614(@OriginalArg(1) int arg0) {
 		OpenGL.glUseProgramObjectARB(0L);
 		super.aClass19_Sub3_22.method7021(1);
-		super.aClass19_Sub3_22.method7008((Class93) null);
+		super.aClass19_Sub3_22.method7008(null);
 		super.aClass19_Sub3_22.method7021(0);
 	}
 

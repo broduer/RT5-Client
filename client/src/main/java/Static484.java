@@ -155,7 +155,7 @@ public final class Static484 {
 								local730 = (Interface25) Static302.method4421(local216, local211, local214);
 							}
 							if (local730 == null) {
-								local730 = (Interface25) Static114.method2134(local216, local211, local214);
+								local730 = Static114.method2134(local216, local211, local214);
 							}
 							if (local730 != null) {
 								@Pc(776) Class54 local776 = Static354.aClass142_4.method3063(local730.method6866(-32136), 100);

@@ -62,19 +62,15 @@ public final class Class142 {
 
 	@OriginalMember(owner = "client!gea", name = "a", descriptor = "(I)V")
 	public void method3058() {
-		@Pc(2) Class82 local2 = this.aClass82_73;
 		synchronized (this.aClass82_73) {
 			this.aClass82_73.method2151();
 		}
-		local2 = this.aClass82_74;
 		synchronized (this.aClass82_74) {
 			this.aClass82_74.method2151();
 		}
-		local2 = this.aClass82_75;
 		synchronized (this.aClass82_75) {
 			this.aClass82_75.method2151();
 		}
-		local2 = this.aClass82_76;
 		synchronized (this.aClass82_76) {
 			this.aClass82_76.method2151();
 		}
@@ -90,19 +86,15 @@ public final class Class142 {
 
 	@OriginalMember(owner = "client!gea", name = "b", descriptor = "(I)V")
 	public void method3060() {
-		@Pc(14) Class82 local14 = this.aClass82_73;
 		synchronized (this.aClass82_73) {
 			this.aClass82_73.method2157();
 		}
-		local14 = this.aClass82_74;
 		synchronized (this.aClass82_74) {
 			this.aClass82_74.method2157();
 		}
-		local14 = this.aClass82_75;
 		synchronized (this.aClass82_75) {
 			this.aClass82_75.method2157();
 		}
-		local14 = this.aClass82_76;
 		synchronized (this.aClass82_76) {
 			this.aClass82_76.method2157();
 		}
@@ -126,15 +118,13 @@ public final class Class142 {
 		if (arg1 <= 29) {
 			return null;
 		}
-		@Pc(12) Class82 local12 = this.aClass82_73;
 		@Pc(22) Class54 local22;
 		synchronized (this.aClass82_73) {
-			local22 = (Class54) this.aClass82_73.method2156((long) arg0);
+			local22 = (Class54) this.aClass82_73.method2156(arg0);
 		}
 		if (local22 != null) {
 			return local22;
 		}
-		@Pc(36) Class332 local36 = this.aClass332_43;
 		@Pc(49) byte[] local49;
 		synchronized (this.aClass332_43) {
 			local49 = this.aClass332_43.method7602(Static570.method7558(arg0), Static705.method9204(arg0));
@@ -142,7 +132,7 @@ public final class Class142 {
 		local22 = new Class54();
 		local22.anInt1261 = arg0;
 		local22.aClass142_2 = this;
-		local22.aStringArray6 = (String[]) this.aStringArray15.clone();
+		local22.aStringArray6 = this.aStringArray15.clone();
 		if (local49 != null) {
 			local22.method1305(new Class2_Sub21(local49));
 		}
@@ -155,28 +145,23 @@ public final class Class142 {
 			local22.aStringArray6 = null;
 			local22.anIntArray112 = null;
 		}
-		@Pc(115) Class82 local115 = this.aClass82_73;
 		synchronized (this.aClass82_73) {
-			this.aClass82_73.method2150(local22, (long) arg0);
+			this.aClass82_73.method2150(local22, arg0);
 			return local22;
 		}
 	}
 
 	@OriginalMember(owner = "client!gea", name = "c", descriptor = "(II)V")
 	public void method3064() {
-		@Pc(11) Class82 local11 = this.aClass82_73;
 		synchronized (this.aClass82_73) {
 			this.aClass82_73.method2147(5);
 		}
-		local11 = this.aClass82_74;
 		synchronized (this.aClass82_74) {
 			this.aClass82_74.method2147(5);
 		}
-		local11 = this.aClass82_75;
 		synchronized (this.aClass82_75) {
 			this.aClass82_75.method2147(5);
 		}
-		local11 = this.aClass82_76;
 		synchronized (this.aClass82_76) {
 			this.aClass82_76.method2147(5);
 		}

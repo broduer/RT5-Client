@@ -78,12 +78,12 @@ public final class Static684 {
 						if (local191) {
 							Static103.anIntArray187[Static390.anInt6146++] = local146.anInt10768;
 						} else {
-							local146.method9335((Class270) null);
+							local146.method9335(null);
 							local120 = true;
 							local141.method9464();
 						}
 					} else {
-						local146.method9335((Class270) null);
+						local146.method9335(null);
 						local120 = true;
 						local141.method9464();
 					}

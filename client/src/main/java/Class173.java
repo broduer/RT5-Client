@@ -20,7 +20,7 @@ public final class Class173 {
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(ILclient!ha;ZI)Lclient!st;")
 	public Class23 method3689(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) boolean arg2) {
-		@Pc(23) long local23 = (long) (arg1.anInt8986 << 19 | (arg2 ? 262144 : 0) | arg0 << 16 | this.anInt4178);
+		@Pc(23) long local23 = arg1.anInt8986 << 19 | (arg2 ? 262144 : 0) | arg0 << 16 | this.anInt4178;
 		@Pc(31) Class23 local31 = (Class23) this.aClass365_2.aClass82_202.method2156(local23);
 		if (local31 != null) {
 			return local31;

@@ -29,7 +29,7 @@ public final class Class2_Sub2_Sub1 extends Class2_Sub2 {
 			} else {
 				local45 = new Class2_Sub38(arg1.method7356());
 			}
-			this.aClass28_1.method735((long) local36, local45);
+			this.aClass28_1.method735(local36, local45);
 		}
 	}
 
@@ -38,7 +38,7 @@ public final class Class2_Sub2_Sub1 extends Class2_Sub2 {
 		if (this.aClass28_1 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_1.method738((long) arg1);
+			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_1.method738(arg1);
 			return local17 == null ? arg0 : local17.anInt6399;
 		}
 	}
@@ -59,7 +59,7 @@ public final class Class2_Sub2_Sub1 extends Class2_Sub2 {
 		if (this.aClass28_1 == null) {
 			return arg1;
 		} else {
-			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_1.method738((long) arg0);
+			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_1.method738(arg0);
 			return local23 == null ? arg1 : local23.aString46;
 		}
 	}

@@ -26,9 +26,6 @@ public final class Static707 {
 				local10[local24++] = -1;
 			}
 		}
-		if (17787 != 17787) {
-			anInt10669 = 5;
-		}
 		return new Class1_Sub3(arg1, arg4, arg3, local10);
 	}
 }

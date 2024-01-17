@@ -292,7 +292,7 @@ public final class Class308_Sub1 extends Class308 {
 		@Pc(187) int local187 = (local68 << 8) + (arg3 << 9);
 		@Pc(204) boolean local204 = Static404.aBoolean465 && !super.aBoolean674 && local40.aBoolean102;
 		if (local40.method1303()) {
-			Static89.method1714(arg8, (Class8_Sub2_Sub1_Sub2_Sub1) null, arg5, arg3, (Class8_Sub2_Sub1_Sub2_Sub2) null, local40, arg6);
+			Static89.method1714(arg8, null, arg5, arg3, null, local40, arg6);
 		}
 		@Pc(248) boolean local248 = arg9 == -1 && !local40.method1300() && local40.anIntArray113 == null && !local40.aBoolean93 && !local40.aBoolean91;
 		if (Static614.aBoolean719 && (Static540.method6547(arg0) && local40.anInt1228 != 1 || !(!Static389.method5481(arg0) || local40.anInt1228 != 0))) {
@@ -366,7 +366,7 @@ public final class Class308_Sub1 extends Class308 {
 					} else {
 						local774 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, arg0, arg6, arg9);
 					}
-					Static584.method7672(arg8, arg5, arg3, local774, (Class8_Sub2_Sub3) null);
+					Static584.method7672(arg8, arg5, arg3, local774, null);
 					if (arg6 == 0) {
 						if (Static404.aBoolean465 && local40.aBoolean98) {
 							local143.ka(arg5, arg3, 50);
@@ -419,7 +419,7 @@ public final class Class308_Sub1 extends Class308 {
 						} else {
 							local1079 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, arg0, arg6, arg9);
 						}
-						Static584.method7672(arg8, arg5, arg3, local1079, (Class8_Sub2_Sub3) null);
+						Static584.method7672(arg8, arg5, arg3, local1079, null);
 						if (local40.aBoolean98 && Static404.aBoolean465) {
 							if (arg6 == 0) {
 								local143.ka(arg5, arg3 + 1, 50);
@@ -483,7 +483,7 @@ public final class Class308_Sub1 extends Class308 {
 						} else {
 							local1079 = new Class8_Sub2_Sub3_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, arg0, arg6, arg9);
 						}
-						Static584.method7672(arg8, arg5, arg3, local1079, (Class8_Sub2_Sub3) null);
+						Static584.method7672(arg8, arg5, arg3, local1079, null);
 						if (local40.aBoolean98 && Static404.aBoolean465) {
 							if (arg6 == 0) {
 								local143.ka(arg5, arg3 + 1, 50);
@@ -536,7 +536,7 @@ public final class Class308_Sub1 extends Class308 {
 							} else {
 								local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, 0, 0, arg0, arg6, arg9);
 							}
-							Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+							Static177.method2718(arg8, arg5, arg3, local1813, null);
 						} else {
 							@Pc(1844) int local1844;
 							@Pc(1850) Interface25 local1850;
@@ -556,7 +556,7 @@ public final class Class308_Sub1 extends Class308 {
 								} else {
 									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, null);
 							} else if (arg0 == 6) {
 								local1844 = 33;
 								local1850 = (Interface25) Static302.method4421(arg8, arg5, arg3);
@@ -572,7 +572,7 @@ public final class Class308_Sub1 extends Class308 {
 								} else {
 									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, Static407.anIntArray489[arg6] * local1844, Static636.anIntArray742[arg6] * local1844, arg0, arg6 + 4, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, null);
 							} else if (arg0 == 7) {
 								local1844 = arg6 + 2 & 0x3;
 								if (local248) {
@@ -584,7 +584,7 @@ public final class Class308_Sub1 extends Class308 {
 								} else {
 									local1813 = new Class8_Sub2_Sub4_Sub2(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, 0, 0, arg0, local1844 + 4, arg9);
 								}
-								Static177.method2718(arg8, arg5, arg3, local1813, (Class8_Sub2_Sub4) null);
+								Static177.method2718(arg8, arg5, arg3, local1813, null);
 							} else if (arg0 == 8) {
 								local492 = arg6 + 2 & 0x3;
 								local495 = 33;
@@ -787,7 +787,7 @@ public final class Class308_Sub1 extends Class308 {
 			local5 = (Interface25) Static302.method4421(arg2, arg0, arg1);
 		}
 		if (arg3 == 1) {
-			local5 = (Interface25) Static114.method2134(arg2, arg0, arg1);
+			local5 = Static114.method2134(arg2, arg0, arg1);
 		}
 		if (arg3 == 2) {
 			local5 = (Interface25) Static578.method7630(arg2, arg0, arg1, Static603.aClass22 == null ? (Static603.aClass22 = getClass("Interface25")) : Static603.aClass22);

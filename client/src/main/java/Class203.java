@@ -105,7 +105,7 @@ public final class Class203 {
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!es;Lclient!gu;IZLclient!qp;Lclient!bp;I[ILclient!vl;Lclient!kr;Lclient!ha;Lclient!ql;[Lclient!gu;ILclient!gu;Lclient!uk;)Lclient!ka;")
 	public Class114 method4553(@OriginalArg(0) Class112 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(4) Class312 arg2, @OriginalArg(5) Class50 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) Class390 arg6, @OriginalArg(9) Class217 arg7, @OriginalArg(10) Class19 arg8, @OriginalArg(11) Class310 arg9, @OriginalArg(12) Class152[] arg10, @OriginalArg(13) int arg11, @OriginalArg(14) Class152 arg12, @OriginalArg(15) Interface23 arg13) {
 		if (this.anInt5029 != -1) {
-			return arg9.method7099(this.anInt5029).method6000(arg13, arg8, arg2, arg1, arg11, arg5, (Class388) null, arg12, arg4, arg10);
+			return arg9.method7099(this.anInt5029).method6000(arg13, arg8, arg2, arg1, arg11, arg5, null, arg12, arg4, arg10);
 		}
 		@Pc(28) int local28 = arg4;
 		@Pc(31) long local31 = this.aLong160;
@@ -150,7 +150,7 @@ public final class Class203 {
 						for (local116 = 0; local116 < arg6.anIntArray820.length; local116++) {
 							local34[arg6.anIntArray820[local116]] = 0;
 						}
-						local31 ^= (long) local34[arg6.anInt10328];
+						local31 ^= local34[arg6.anInt10328];
 					}
 				}
 			}
@@ -462,7 +462,7 @@ public final class Class203 {
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!kr;BLclient!bp;Lclient!uk;Lclient!gu;Lclient!es;Lclient!ql;Lclient!ha;I)Lclient!ka;")
 	public Class114 method4559(@OriginalArg(0) Class217 arg0, @OriginalArg(2) Class50 arg1, @OriginalArg(3) Interface23 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) Class112 arg4, @OriginalArg(6) Class310 arg5, @OriginalArg(7) Class19 arg6) {
 		if (this.anInt5029 != -1) {
-			return arg5.method7099(this.anInt5029).method5999(arg3, (Class388) null, arg6, arg2);
+			return arg5.method7099(this.anInt5029).method5999(arg3, null, arg6, arg2);
 		}
 		@Pc(35) int local35 = arg3 == null ? 2048 : arg3.method9108() | 0x800;
 		@Pc(37) Class82 local37 = Static54.aClass82_25;

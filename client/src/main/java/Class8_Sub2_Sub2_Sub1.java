@@ -100,7 +100,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public void method9292(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6) {
 		if (arg4 <= 101) {
-			this.method1831(-126, -84, (Class19) null, false);
+			this.method1831(-126, -84, null, false);
 		}
 		if (!(arg6 instanceof Class8_Sub2_Sub2_Sub1)) {
 			return;
@@ -140,7 +140,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 			this.aClass2_Sub2_Sub9_1 = null;
 		}
 		if (local33 != null) {
-			Static630.method8364(local33, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static630.method8364(local33, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 	}
 
@@ -163,7 +163,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 				local35 = Static706.aClass178Array3[super.aByte143 + 1];
 			}
 		}
-		return local13.method1309(this.aByte38, super.anInt10722, super.anInt10718, local29, arg3, super.anInt10719, 22, arg2, (Class150) null, arg0, local35);
+		return local13.method1309(this.aByte38, super.anInt10722, super.anInt10718, local29, arg3, super.anInt10719, 22, arg2, null, arg0, local35);
 	}
 
 	@OriginalMember(owner = "client!cu", name = "h", descriptor = "(I)Z")
@@ -200,7 +200,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public int method6862(@OriginalArg(0) int arg0) {
 		if (arg0 != 23796) {
-			this.method9292(90, false, (Class19) null, -97, (byte) -34, 87, (Class8_Sub2) null);
+			this.method9292(90, false, null, -97, (byte) -34, 87, null);
 		}
 		return this.aByte38;
 	}
@@ -220,7 +220,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 			this.aClass2_Sub2_Sub9_1 = null;
 		}
 		if (local25 != null) {
-			Static292.method4625(local25, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static292.method4625(local25, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 	}
 

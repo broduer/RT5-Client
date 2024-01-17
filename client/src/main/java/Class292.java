@@ -20,7 +20,7 @@ public final class Class292 implements Interface13 {
 
 	@OriginalMember(owner = "client!pga", name = "a", descriptor = "(BLclient!da;Ljava/lang/String;III)I")
 	private int method6527(@OriginalArg(1) Class14 arg0, @OriginalArg(2) String arg1, @OriginalArg(3) int arg2, @OriginalArg(5) int arg3) {
-		return arg0.method8833(0, (int[]) null, this.aClass237_1.anInt5991, arg1, (Class1) null, (Class23[]) null, arg3 + 5, this.aClass237_1.anInt5995, 0, 0, arg2 + 5, 0, 0, this.aClass237_1.anInt5996 - 10, this.aClass237_1.anInt5990 + -10);
+		return arg0.method8833(0, null, this.aClass237_1.anInt5991, arg1, null, null, arg3 + 5, this.aClass237_1.anInt5995, 0, 0, arg2 + 5, 0, 0, this.aClass237_1.anInt5996 - 10, this.aClass237_1.anInt5990 + -10);
 	}
 
 	@OriginalMember(owner = "client!pga", name = "a", descriptor = "(ZI)V")

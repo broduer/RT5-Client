@@ -85,7 +85,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 	@Override
 	public Class207 method9285(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 > -93) {
-			this.method9285((Class19) null, 61);
+			this.method9285(null, 61);
 		}
 		return null;
 	}
@@ -100,26 +100,26 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 	@Override
 	public boolean method9286(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class19 arg3) {
 		if (arg2) {
-			this.method9285((Class19) null, 104);
+			this.method9285(null, 104);
 		}
 		@Pc(16) Class73 local16 = arg3.method7992();
 		local16.method7132(super.anInt10718, super.anInt10719 - 10, super.anInt10722);
 		@Pc(32) Class384 local32 = Static419.aClass112_1.method2486(this.anInt8891);
-		@Pc(42) Class114 local42 = local32.method8812((Class152) null, 131072, (Class203) null, this.anInt8897, arg3);
+		@Pc(42) Class114 local42 = local32.method8812(null, 131072, null, this.anInt8897, arg3);
 		if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local32.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local32.anInt10166))) {
 			return true;
 		}
 		@Pc(82) Class384 local82;
 		if (this.anInt8902 != -1) {
 			local82 = Static419.aClass112_1.method2486(this.anInt8902);
-			local42 = local82.method8812((Class152) null, 131072, (Class203) null, this.anInt8898, arg3);
+			local42 = local82.method8812(null, 131072, null, this.anInt8898, arg3);
 			if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local82.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local82.anInt10166))) {
 				return true;
 			}
 		}
 		if (this.anInt8900 != -1) {
 			local82 = Static419.aClass112_1.method2486(this.anInt8900);
-			local42 = local82.method8812((Class152) null, 131072, (Class203) null, this.anInt8896, arg3);
+			local42 = local82.method8812(null, 131072, null, this.anInt8896, arg3);
 			if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local82.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local82.anInt10166))) {
 				return true;
 			}
@@ -172,13 +172,13 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 			@Pc(235) int local235 = local161 < local203 ? local161 : local203;
 			@Pc(243) int local243 = local139 >= local182 ? local182 : local139;
 			if (local115 != 0) {
-				@Pc(259) int local259 = (int) (Math.atan2((double) (local215 - local223), (double) local115) * 2607.5945876176133D) & 0x3FFF;
+				@Pc(259) int local259 = (int) (Math.atan2(local215 - local223, local115) * 2607.5945876176133D) & 0x3FFF;
 				if (local259 != 0) {
 					local94.method7137(local259);
 				}
 			}
 			if (local115 != 0) {
-				@Pc(285) int local285 = (int) (Math.atan2((double) (local243 - local235), (double) local115) * 2607.5945876176133D) & 0x3FFF;
+				@Pc(285) int local285 = (int) (Math.atan2(local243 - local235, local115) * 2607.5945876176133D) & 0x3FFF;
 				if (local285 != 0) {
 					local94.method7146(-local285);
 				}
@@ -198,7 +198,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 		this.aBoolean673 = false;
 		@Pc(369) Class114 local369;
 		if (this.anInt8900 != -1) {
-			local369 = Static419.aClass112_1.method2486(this.anInt8900).method8812((Class152) null, 2048, (Class203) null, this.anInt8896, arg0);
+			local369 = Static419.aClass112_1.method2486(this.anInt8900).method8812(null, 2048, null, this.anInt8896, arg0);
 			if (local369 != null) {
 				if (Static504.aBoolean579) {
 					local369.method7491(local94, local345.aClass8_Sub6Array1[2], Static582.anInt8651, 0);
@@ -210,7 +210,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 			}
 		}
 		if (this.anInt8902 != -1) {
-			local369 = Static419.aClass112_1.method2486(this.anInt8902).method8812((Class152) null, 2048, (Class203) null, this.anInt8898, arg0);
+			local369 = Static419.aClass112_1.method2486(this.anInt8902).method8812(null, 2048, null, this.anInt8898, arg0);
 			if (local369 != null) {
 				if (Static504.aBoolean579) {
 					local369.method7491(local94, local345.aClass8_Sub6Array1[1], Static582.anInt8651, 0);
@@ -223,7 +223,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 				}
 			}
 		}
-		local369 = Static419.aClass112_1.method2486(this.anInt8891).method8812((Class152) null, 2048, (Class203) null, this.anInt8897, arg0);
+		local369 = Static419.aClass112_1.method2486(this.anInt8891).method8812(null, 2048, null, this.anInt8897, arg0);
 		if (local369 != null) {
 			if (Static504.aBoolean579) {
 				local369.method7491(local94, local345.aClass8_Sub6Array1[0], Static582.anInt8651, 0);

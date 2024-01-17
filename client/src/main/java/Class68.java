@@ -40,9 +40,6 @@ public final class Class68 {
 			local44.method7654(arg0);
 			this.aClass341_10.method7718(local44);
 		}
-		if (17 != 17) {
-			Static80.anIntArray153 = null;
-		}
 	}
 
 	@OriginalMember(owner = "client!ck", name = "a", descriptor = "(Lclient!rfa;Z)V")

@@ -19,7 +19,7 @@ public final class Class39_Sub19 extends Class39 {
 		if (arg1) {
 			this.aLong257 = (long) local6 | 0x100000000L;
 		} else {
-			this.aLong257 = (long) local6;
+			this.aLong257 = local6;
 		}
 		this.anInt8319 = arg0.method7356();
 	}

@@ -18,14 +18,14 @@ public final class Static2 {
 
 	@OriginalMember(owner = "client!aaa", name = "d", descriptor = "(III)V")
 	public static void method62(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(6, (long) arg1);
+		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(6, arg1);
 		local9.method202();
 		local9.anInt197 = arg0;
 	}
 
 	@OriginalMember(owner = "client!aaa", name = "a", descriptor = "(IBIILclient!cv;)V")
 	public static void method63(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class2_Sub15 arg3) {
-		@Pc(16) long local16 = (long) (arg1 << 14 | arg0 << 28 | arg2);
+		@Pc(16) long local16 = arg1 << 14 | arg0 << 28 | arg2;
 		@Pc(22) Class2_Sub17 local22 = (Class2_Sub17) Static497.aClass28_35.method738(local16);
 		if (local22 == null) {
 			local22 = new Class2_Sub17();

@@ -9,7 +9,7 @@ public final class Static66 {
 
 	@OriginalMember(owner = "client!cc", name = "b", descriptor = "(II)Lclient!ok;")
 	public static Class280 method1487(@OriginalArg(1) int arg0) {
-		@Pc(10) Class280 local10 = (Class280) Static713.aClass82_231.method2156((long) arg0);
+		@Pc(10) Class280 local10 = (Class280) Static713.aClass82_231.method2156(arg0);
 		if (local10 != null) {
 			return local10;
 		}
@@ -20,11 +20,11 @@ public final class Static66 {
 			local10.method6281(new Class2_Sub21(local21));
 		}
 		local10.method6280();
-		if (local10.anInt7003 == 2 && Static503.aClass28_38.method738((long) arg0) == null) {
-			Static503.aClass28_38.method735((long) arg0, new Class2_Sub38(Static370.anInt5901));
+		if (local10.anInt7003 == 2 && Static503.aClass28_38.method738(arg0) == null) {
+			Static503.aClass28_38.method735(arg0, new Class2_Sub38(Static370.anInt5901));
 			Static367.aClass280Array1[Static370.anInt5901++] = local10;
 		}
-		Static713.aClass82_231.method2150(local10, (long) arg0);
+		Static713.aClass82_231.method2150(local10, arg0);
 		return local10;
 	}
 

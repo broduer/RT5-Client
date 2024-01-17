@@ -22,22 +22,22 @@ public final class Static694 {
 
 	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(IZ)[B")
 	public static byte[] method9034(@OriginalArg(0) int arg0) {
-		@Pc(17) Class2_Sub2_Sub7 local17 = (Class2_Sub2_Sub7) Static541.aClass363_4.method8349((long) arg0);
+		@Pc(17) Class2_Sub2_Sub7 local17 = (Class2_Sub2_Sub7) Static541.aClass363_4.method8349(arg0);
 		if (local17 == null) {
 			@Pc(22) byte[] local22 = new byte[512];
-			@Pc(28) Random local28 = new Random((long) arg0);
+			@Pc(28) Random local28 = new Random(arg0);
 			for (@Pc(30) int local30 = 0; local30 < 255; local30++) {
 				local22[local30] = (byte) local30;
 			}
 			for (@Pc(42) int local42 = 0; local42 < 255; local42++) {
 				@Pc(48) int local48 = 255 - local42;
-				@Pc(53) int local53 = Static623.method8333(-5208, local48, local28);
+				@Pc(53) int local53 = Static623.method8333(local48, local28);
 				@Pc(57) byte local57 = local22[local53];
 				local22[local53] = local22[local48];
 				local22[local48] = local22[511 - local42] = local57;
 			}
 			local17 = new Class2_Sub2_Sub7(local22);
-			Static541.aClass363_4.method8348(local17, (long) arg0);
+			Static541.aClass363_4.method8348(local17, arg0);
 		}
 		return local17.aByteArray21;
 	}
@@ -53,8 +53,8 @@ public final class Static694 {
 		if (Static483.aBoolean546 && local15) {
 			@Pc(27) Class383 local27 = Static16.aClass383_1;
 			@Pc(33) Class14 local33 = arg0.method8017(local27, Static627.aClass409Array1, true);
-			local40 = local27.method8748((Class23[]) null, arg1, 250);
-			local49 = local27.method8752(250, local27.anInt10054, arg1, (Class23[]) null);
+			local40 = local27.method8748(null, arg1, 250);
+			local49 = local27.method8752(250, local27.anInt10054, arg1, null);
 			@Pc(52) int local52 = Static535.aClass409_3.anInt10876;
 			@Pc(56) int local56 = local52 + 4;
 			local40 += local56 * 2;
@@ -88,14 +88,14 @@ public final class Static694 {
 			Static535.aClass409_3.method9393();
 			arg0.method7955(Static535.aClass409_3, true).method8205(local92 + Static414.aClass409_2.anInt10876, local49 + (local101 - local52), local40 - Static414.aClass409_2.anInt10876 * 2, local52);
 			Static535.aClass409_3.method9393();
-			local33.method8833(0, (int[]) null, Static675.anInt10182 | 0xFF000000, arg1, (Class1) null, (Class23[]) null, local56 + local101, -1, 0, 1, local92 + local56, 1, 0, local40 - local56 * 2, -(local56 * 2) + local49);
+			local33.method8833(0, null, Static675.anInt10182 | 0xFF000000, arg1, null, null, local56 + local101, -1, 0, 1, local92 + local56, 1, 0, local40 - local56 * 2, -(local56 * 2) + local49);
 			Static585.method7677(local40, local92, local49, local101);
 		} else {
-			local40 = arg3.method8748((Class23[]) null, arg1, 250);
-			local49 = arg3.method8746(arg1, (Class23[]) null, 250) * 13;
+			local40 = arg3.method8748(null, arg1, 250);
+			local49 = arg3.method8746(arg1, null, 250) * 13;
 			arg0.aa(6, 6, local40 + 4 + 4, local49 + 4 + 4, -16777216, 0);
 			arg0.method7983(6, 6, local40 + 8, 4 + 4 + local49, -1, 0);
-			arg4.method8833(0, (int[]) null, -1, arg1, (Class1) null, (Class23[]) null, 10, -1, 0, 1, 10, 1, 0, local40, local49);
+			arg4.method8833(0, null, -1, arg1, null, null, 10, -1, 0, 1, 10, 1, 0, local40, local49);
 			Static585.method7677(local40 + 8, 6, local49 + 4 + 4, 6);
 		}
 		if (!arg2) {
@@ -123,9 +123,9 @@ public final class Static694 {
 	@OriginalMember(owner = "client!vv", name = "e", descriptor = "(I)V")
 	public static void method9038() {
 		for (@Pc(10) int local10 = 0; local10 < Static617.anInt9460; local10++) {
-			@Pc(23) int local23 = Static719.method9125(Static482.anInt7286 + local10, 16939, Static617.anInt9460) * Static211.anInt5594;
+			@Pc(23) int local23 = Static719.method9125(Static482.anInt7286 + local10, Static617.anInt9460) * Static211.anInt5594;
 			for (@Pc(25) int local25 = 0; local25 < Static211.anInt5594; local25++) {
-				@Pc(36) int local36 = Static719.method9125(Static632.anInt9529 + local25, 16939, Static211.anInt5594) + local23;
+				@Pc(36) int local36 = Static719.method9125(Static632.anInt9529 + local25, Static211.anInt5594) + local23;
 				if (Static173.anIntArray252[local36] == Static420.anInt6456) {
 					Static651.anInterface9Array1[local36].method9047(0, 0, Static437.anInt6648, Static714.anInt10831, Static437.anInt6648 * local25, Static714.anInt10831 * local10);
 				}

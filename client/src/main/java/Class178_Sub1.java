@@ -130,7 +130,7 @@ public final class Class178_Sub1 extends Class178 {
 				if (local127 > 0 && local121 > 0 && local127 < super.anInt8918 && local121 < super.anInt8916) {
 					@Pc(202) int local202 = arg6[local127 + 1][local121] - arg6[local127 - 1][local121];
 					@Pc(218) int local218 = arg6[local127][local121 + 1] - arg6[local127][local121 - 1];
-					@Pc(237) float local237 = (float) (1.0D / Math.sqrt((double) (local218 * local218 + local202 * local202 + arg7 * 4 * arg7)));
+					@Pc(237) float local237 = (float) (1.0D / Math.sqrt(local218 * local218 + local202 * local202 + arg7 * 4 * arg7));
 					this.aFloatArrayArray3[local127][local121] = local237 * (float) local202;
 					this.aFloatArrayArray4[local127][local121] = local237 * (float) (-arg7 * 2);
 					this.aFloatArrayArray5[local127][local121] = local237 * (float) local218;
@@ -288,7 +288,7 @@ public final class Class178_Sub1 extends Class178 {
 			}
 			this.aClass19_Sub1_9.method8087(0, Static189.aClass168_2);
 			this.aClass19_Sub1_9.method8149(Static189.aClass168_2, 0);
-			this.aClass19_Sub1_9.method8095((Interface17) null);
+			this.aClass19_Sub1_9.method8095(null);
 			this.aClass19_Sub1_9.L(local268, local272, this.aClass19_Sub1_9.anInt9211);
 		}
 		if (this.aClass295_1 == null) {
@@ -752,7 +752,7 @@ public final class Class178_Sub1 extends Class178 {
 		this.aClass19_Sub1_9.method8090(false);
 		this.aClass19_Sub1_9.method8060(0);
 		this.aClass19_Sub1_9.method8115(false, -2, false);
-		this.aClass19_Sub1_9.method8095((Interface17) null);
+		this.aClass19_Sub1_9.method8095(null);
 		@Pc(306) Class73_Sub1 local306 = this.aClass19_Sub1_9.method8047();
 		@Pc(311) float[] local311 = this.aClass19_Sub1_9.method8140();
 		local311[13] = 1.0F - ((float) 0 + (float) (arg3 * 1024) / 128.0F) / (float) this.aClass19_Sub1_9.anInt9038;
@@ -874,9 +874,6 @@ public final class Class178_Sub1 extends Class178 {
 			Static595.anIntArray702[local40] = local19[local40] >> this.aClass19_Sub1_9.anInt9199;
 		}
 		@Pc(70) int local70 = 0;
-		if (6778 != 6778) {
-			this.aFloat76 = -0.91155654F;
-		}
 		while (local22 > local70) {
 			@Pc(86) int local86 = Static292.anIntArray387[local70];
 			@Pc(91) int local91 = Static595.anIntArray702[local70++];

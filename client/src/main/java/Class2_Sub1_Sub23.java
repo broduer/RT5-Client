@@ -38,21 +38,18 @@ public final class Class2_Sub1_Sub23 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!or", name = "c", descriptor = "(B)V")
 	private void method6389() {
-		@Pc(12) Random local12 = new Random((long) this.anInt7127);
+		@Pc(12) Random local12 = new Random(this.anInt7127);
 		this.aShortArray104 = new short[512];
 		if (this.anInt7120 > 0) {
 			for (@Pc(31) int local31 = 0; local31 < 512; local31++) {
-				this.aShortArray104[local31] = (short) Static623.method8333(-5208, this.anInt7120, local12);
+				this.aShortArray104[local31] = (short) Static623.method8333(this.anInt7120, local12);
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!or", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			return;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt7126 = this.anInt7131 = arg1.method7403();
 		} else if (arg2 == 1) {
@@ -72,21 +69,15 @@ public final class Class2_Sub1_Sub23 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!or", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
+	public void method9428() {
 		this.aByteArray84 = Static694.method9034(this.anInt7127);
-		if (arg0 != 7) {
-			this.anInt7131 = 6;
-		}
 		this.method6389();
 	}
 
 	@OriginalMember(owner = "client!or", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
-		if (arg0 <= 107) {
-			Static470.method6390((Class158) null, -42, 121, -79);
-		}
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(34) int local34 = Static273.anIntArray341[arg1] * this.anInt7131 + 2048;
 			@Pc(38) int local38 = local34 >> 12;
@@ -117,18 +108,18 @@ public final class Class2_Sub1_Sub23 extends Class2_Sub1 {
 							local160 = local160 >= 0 ? local160 : -local160;
 							local206 = local148 <= local160 ? local160 : local148;
 						} else if (local163 == 4) {
-							local148 = (int) (Math.sqrt((double) ((float) (local148 < 0 ? -local148 : local148) / 4096.0F)) * 4096.0D);
-							local160 = (int) (Math.sqrt((double) ((float) (local160 < 0 ? -local160 : local160) / 4096.0F)) * 4096.0D);
+							local148 = (int) (Math.sqrt((float) (local148 < 0 ? -local148 : local148) / 4096.0F) * 4096.0D);
+							local160 = (int) (Math.sqrt((float) (local160 < 0 ? -local160 : local160) / 4096.0F) * 4096.0D);
 							local206 = local160 + local148;
 							local206 = local206 * local206 >> 12;
 						} else if (local163 == 5) {
 							local160 *= local160;
 							local148 *= local148;
-							local206 = (int) (Math.sqrt(Math.sqrt((double) ((float) (local160 + local148) / 1.6777216E7F))) * 4096.0D);
+							local206 = (int) (Math.sqrt(Math.sqrt((float) (local160 + local148) / 1.6777216E7F)) * 4096.0D);
 						} else if (local163 == 2) {
 							local206 = (local148 >= 0 ? local148 : -local148) + (local160 < 0 ? -local160 : local160);
 						} else {
-							local206 = (int) (Math.sqrt((double) ((float) (local160 * local160 + local148 * local148) / 1.6777216E7F)) * 4096.0D);
+							local206 = (int) (Math.sqrt((float) (local160 * local160 + local148 * local148) / 1.6777216E7F) * 4096.0D);
 						}
 						if (local206 < Static143.anInt4067) {
 							Static162.anInt2807 = Static109.anInt2187;

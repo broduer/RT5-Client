@@ -2,6 +2,8 @@ import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
+import java.util.Calendar;
+
 public final class Static212 {
 
 	@OriginalMember(owner = "client!gka", name = "m", descriptor = "I")
@@ -26,9 +28,9 @@ public final class Static212 {
 	public static int[] method3135(@OriginalArg(0) int arg0) {
 		@Pc(6) int[] local6 = new int[3];
 		Static551.method7283(Static38.method1003(arg0));
-		local6[0] = Static260.aCalendar2.get(5);
-		local6[1] = Static260.aCalendar2.get(2);
-		local6[2] = Static260.aCalendar2.get(1);
+		local6[0] = Static260.aCalendar2.get(Calendar.DATE);
+		local6[1] = Static260.aCalendar2.get(Calendar.MONTH);
+		local6[2] = Static260.aCalendar2.get(Calendar.YEAR);
 		return local6;
 	}
 

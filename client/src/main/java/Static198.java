@@ -106,7 +106,7 @@ public final class Static198 {
 				}
 			}
 		} else if (arg6 == 1) {
-			local52 = (Interface25) Static114.method2134(arg0, arg4, arg1);
+			local52 = Static114.method2134(arg0, arg4, arg1);
 			if (local52 != null) {
 				if (local52 instanceof Class8_Sub2_Sub4_Sub2) {
 					((Class8_Sub2_Sub4_Sub2) local52).aClass339_4.method7679(arg3);

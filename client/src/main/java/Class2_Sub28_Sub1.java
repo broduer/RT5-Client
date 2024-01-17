@@ -87,7 +87,7 @@ public final class Class2_Sub28_Sub1 extends Class2_Sub28 {
 		@Pc(35) float[][] local35 = this.aDSPState1.pcmOut(this.aVorbisInfo1.channels);
 		this.aDouble14 = this.aDSPState1.granuleTime();
 		if (this.aDouble14 == -1.0D) {
-			this.aDouble14 = (double) ((float) this.anInt4409 / (float) this.aVorbisInfo1.rate);
+			this.aDouble14 = (float) this.anInt4409 / (float) this.aVorbisInfo1.rate;
 		}
 		this.aDSPState1.read(local35[0].length);
 		this.anInt4409 += local35[0].length;

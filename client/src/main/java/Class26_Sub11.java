@@ -121,7 +121,7 @@ public final class Class26_Sub11 extends Class26 {
 	@Override
 	public void method8293() {
 		super.aClass19_Sub1_21.method8145(1);
-		super.aClass19_Sub1_21.method8095((Interface17) null);
+		super.aClass19_Sub1_21.method8095(null);
 		super.aClass19_Sub1_21.method8101(Static209.aClass121_4, Static209.aClass121_4);
 		super.aClass19_Sub1_21.method8087(0, Static189.aClass168_2);
 		super.aClass19_Sub1_21.method8087(2, Static454.aClass168_5);

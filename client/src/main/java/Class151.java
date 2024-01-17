@@ -29,7 +29,7 @@ public final class Class151 {
 
 	@OriginalMember(owner = "client!gt", name = "a", descriptor = "(BI)Lclient!bq;")
 	public Class2_Sub2_Sub3 method3234(@OriginalArg(1) int arg0) {
-		@Pc(11) Class2_Sub2_Sub3 local11 = (Class2_Sub2_Sub3) this.aClass82_79.method2156((long) arg0);
+		@Pc(11) Class2_Sub2_Sub3 local11 = (Class2_Sub2_Sub3) this.aClass82_79.method2156(arg0);
 		if (local11 != null) {
 			return local11;
 		}
@@ -46,7 +46,7 @@ public final class Class151 {
 		if (arg0 >= 32768) {
 			local11.method1186();
 		}
-		this.aClass82_79.method2150(local11, (long) arg0);
+		this.aClass82_79.method2150(local11, arg0);
 		return local11;
 	}
 }

@@ -23,10 +23,7 @@ public final class Class2_Sub1_Sub17 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!lu", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			Static379.method5362(false);
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt5985 = (arg1.method7403() << 12) / 255;
 		}
@@ -34,10 +31,7 @@ public final class Class2_Sub1_Sub17 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!lu", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 < 107) {
-			Static379.anInt5988 = -76;
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(16) int[] local16 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			Static734.method7697(local16, 0, Static608.anInt9315, this.anInt5985);

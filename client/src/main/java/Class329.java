@@ -49,14 +49,14 @@ public final class Class329 {
 		this.aBoolean654 = false;
 		this.aClass23Array13 = new Class23[256];
 		this.anIntArray678 = new int[256];
-		@Pc(32) Font local32 = new Font("Helvetica", 1, arg1);
+		@Pc(32) Font local32 = new Font("Helvetica", Font.BOLD, arg1);
 		@Pc(36) FontMetrics local36 = arg3.getFontMetrics(local32);
 		for (@Pc(38) int local38 = 0; local38 < Static568.anInt8521; local38++) {
 			this.method7548(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local38), local38, false);
 		}
 		if (this.aBoolean654) {
 			this.aBoolean654 = false;
-			local32 = new Font("Helvetica", 0, arg1);
+			local32 = new Font("Helvetica", Font.PLAIN, arg1);
 			local36 = arg3.getFontMetrics(local32);
 			for (@Pc(78) int local78 = 0; local78 < Static568.anInt8521; local78++) {
 				this.method7548(arg0, local32, local36, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:'@#~,<.>/?\\| ÄËÏÖÜäëïöüÿßÁÀÉÈÍÌÓÒÚÙáàéèíìóòúùÂÊÎÔÛâêîôûÆæãÃõÕçÇ".charAt(local78), local78, false);

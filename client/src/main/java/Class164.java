@@ -174,7 +174,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(16) Class2 local16 = this.aClass28_19.method738((long) arg0);
+			@Pc(16) Class2 local16 = this.aClass28_19.method738(arg0);
 			return local16 != null && local16 instanceof Class2_Sub48 ? Long.valueOf(((Class2_Sub48) local16).aLong264) : null;
 		}
 	}
@@ -202,7 +202,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(32) Class2 local32 = this.aClass28_19.method738((long) arg1);
+			@Pc(32) Class2 local32 = this.aClass28_19.method738(arg1);
 			if (local32 != null) {
 				if (local32 instanceof Class2_Sub24) {
 					@Pc(42) Class2_Sub24 local42 = (Class2_Sub24) local32;
@@ -215,7 +215,7 @@ public final class Class164 {
 				local32.method9464();
 			}
 		}
-		this.aClass28_19.method735((long) arg1, new Class2_Sub24(arg0));
+		this.aClass28_19.method735(arg1, new Class2_Sub24(arg0));
 		return true;
 	}
 
@@ -252,7 +252,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(24) Class2 local24 = this.aClass28_19.method738((long) arg0);
+			@Pc(24) Class2 local24 = this.aClass28_19.method738(arg0);
 			return local24 != null && local24 instanceof Class2_Sub24 ? ((Class2_Sub24) local24).aString46 : null;
 		}
 	}
@@ -331,7 +331,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(29) Class2 local29 = this.aClass28_19.method738((long) arg0);
+			@Pc(29) Class2 local29 = this.aClass28_19.method738(arg0);
 			if (local29 != null) {
 				if (local29 instanceof Class2_Sub48) {
 					@Pc(39) Class2_Sub48 local39 = (Class2_Sub48) local29;
@@ -344,7 +344,7 @@ public final class Class164 {
 				local29.method9464();
 			}
 		}
-		this.aClass28_19.method735((long) arg0, new Class2_Sub48(arg1));
+		this.aClass28_19.method735(arg0, new Class2_Sub48(arg1));
 		return true;
 	}
 
@@ -368,7 +368,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(24) Class2 local24 = this.aClass28_19.method738((long) arg0);
+			@Pc(24) Class2 local24 = this.aClass28_19.method738(arg0);
 			return local24 != null && local24 instanceof Class2_Sub38 ? Integer.valueOf(((Class2_Sub38) local24).anInt6399) : null;
 		}
 	}
@@ -418,7 +418,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(63) Class2 local63 = this.aClass28_19.method738((long) arg3);
+			@Pc(63) Class2 local63 = this.aClass28_19.method738(arg3);
 			if (local63 != null) {
 				if (local63 instanceof Class2_Sub38) {
 					@Pc(73) Class2_Sub38 local73 = (Class2_Sub38) local63;
@@ -432,7 +432,7 @@ public final class Class164 {
 				local63.method9464();
 			}
 		}
-		this.aClass28_19.method735((long) arg3, new Class2_Sub38(local43));
+		this.aClass28_19.method735(arg3, new Class2_Sub38(local43));
 		return true;
 	}
 
@@ -539,13 +539,13 @@ public final class Class164 {
 			@Pc(501) int local501 = local493 >>> 30;
 			if (local501 == 0) {
 				@Pc(510) int local510 = arg0.method7356();
-				this.aClass28_19.method735((long) local497, new Class2_Sub38(local510));
+				this.aClass28_19.method735(local497, new Class2_Sub38(local510));
 			} else if (local501 == 1) {
 				@Pc(533) long local533 = arg0.method7405();
-				this.aClass28_19.method735((long) local497, new Class2_Sub48(local533));
+				this.aClass28_19.method735(local497, new Class2_Sub48(local533));
 			} else if (local501 == 2) {
 				@Pc(556) String local556 = arg0.method7365();
-				this.aClass28_19.method735((long) local497, new Class2_Sub24(local556));
+				this.aClass28_19.method735(local497, new Class2_Sub24(local556));
 			}
 		}
 		return;
@@ -556,7 +556,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		}
-		@Pc(16) Class2 local16 = this.aClass28_19.method738((long) arg0);
+		@Pc(16) Class2 local16 = this.aClass28_19.method738(arg0);
 		if (local16 != null && local16 instanceof Class2_Sub38) {
 			@Pc(50) int local50 = arg1 == 31 ? -1 : (0x1 << arg1 + 1) - 1;
 			return Integer.valueOf((((Class2_Sub38) local16).anInt6399 & local50) >>> arg2);
@@ -576,7 +576,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(35) Class2 local35 = this.aClass28_19.method738((long) arg1);
+			@Pc(35) Class2 local35 = this.aClass28_19.method738(arg1);
 			if (local35 != null) {
 				if (local35 instanceof Class2_Sub38) {
 					@Pc(45) Class2_Sub38 local45 = (Class2_Sub38) local35;
@@ -589,7 +589,7 @@ public final class Class164 {
 				local35.method9464();
 			}
 		}
-		this.aClass28_19.method735((long) arg1, new Class2_Sub38(arg0));
+		this.aClass28_19.method735(arg1, new Class2_Sub38(arg0));
 		return true;
 	}
 }

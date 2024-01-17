@@ -153,7 +153,7 @@ public final class Class8_Sub2_Sub4_Sub2 extends Class8_Sub2_Sub4 implements Int
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != -5) {
-			this.method6869((Class150) null);
+			this.method6869(null);
 		}
 		@Pc(21) Class114 local21 = this.aClass339_4.method7685(arg0, false, true, true, 262144);
 		if (local21 == null) {

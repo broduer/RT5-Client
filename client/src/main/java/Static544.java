@@ -11,7 +11,7 @@ public final class Static544 {
 		if (arg0.aBoolean309) {
 			if (arg0.anInt4013 < 0 || Static235.method3424(arg0.anInt4013, arg0.anInt4020)) {
 				if (arg1) {
-					Static706.method9227(arg0.anInt4022, (Class150) null, arg0.anInt4017, arg0.anInt4021, arg0.anInt4027);
+					Static706.method9227(arg0.anInt4022, null, arg0.anInt4017, arg0.anInt4021, arg0.anInt4027);
 				} else {
 					Static235.method3421(arg0.anInt4017, arg0.anInt4020, arg0.anInt4026, arg0.anInt4027, -1, arg0.anInt4022, arg0.anInt4021, arg0.anInt4013);
 				}

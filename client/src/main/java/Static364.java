@@ -233,7 +233,7 @@ public final class Static364 {
 						local618.method7398(Static449.aString75);
 					}
 					local618.method7396(Static470.anInt7134);
-					local618.method7396(Static36.method978(3));
+					local618.method7396(Static36.method978());
 					local618.method7380(Static680.anInt10317);
 					local618.method7380(Static380.anInt5999);
 					local618.method7396(Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380());

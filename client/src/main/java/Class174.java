@@ -114,7 +114,7 @@ public final class Class174 implements Runnable {
 					local18.aByteArray109 = local18.aClass9_4.method126((int) local18.aLong325);
 				}
 			} catch (@Pc(83) Exception local83) {
-				Static240.method3496(local83, (String) null);
+				Static240.method3496(local83, null);
 			}
 			local18.aBoolean779 = false;
 		}
@@ -123,7 +123,7 @@ public final class Class174 implements Runnable {
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(B[BILclient!af;)Lclient!vp;")
 	public Class2_Sub2_Sub17_Sub2 method3829(@OriginalArg(1) byte[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class9 arg2) {
 		@Pc(7) Class2_Sub2_Sub17_Sub2 local7 = new Class2_Sub2_Sub17_Sub2();
-		local7.aLong325 = (long) arg1;
+		local7.aLong325 = arg1;
 		local7.anInt10380 = 2;
 		local7.aByteArray109 = arg0;
 		local7.aClass9_4 = arg2;
@@ -138,7 +138,7 @@ public final class Class174 implements Runnable {
 		local7.aClass9_4 = arg0;
 		local7.aBoolean778 = false;
 		local7.anInt10380 = 3;
-		local7.aLong325 = (long) arg1;
+		local7.aLong325 = arg1;
 		this.method3827(local7);
 		return local7;
 	}

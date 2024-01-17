@@ -64,7 +64,7 @@ public final class Class245 {
 			}
 			if (this.aLong200 != -1L && this.aLong195 >= this.aLong200 && (long) arg0 + this.aLong195 <= (long) this.anInt6228 + this.aLong200) {
 				Static734.method7701(this.aByteArray67, (int) (this.aLong195 - this.aLong200), arg1, 0, arg0);
-				this.aLong195 += (long) arg0;
+				this.aLong195 += arg0;
 				return;
 			}
 			@Pc(92) long local92 = this.aLong195;
@@ -76,7 +76,7 @@ public final class Class245 {
 					local132 = arg0;
 				}
 				Static734.method7701(this.aByteArray66, (int) (this.aLong195 - this.aLong199), arg1, 0, local132);
-				this.aLong195 += (long) local132;
+				this.aLong195 += local132;
 				arg2 = local132;
 				arg0 -= local132;
 			}
@@ -88,10 +88,10 @@ public final class Class245 {
 					if (local132 == -1) {
 						break;
 					}
-					this.aLong195 += (long) local132;
+					this.aLong195 += local132;
 					arg0 -= local132;
 					arg2 += local132;
-					this.aLong197 += (long) local132;
+					this.aLong197 += local132;
 				}
 			} else if (arg0 > 0) {
 				this.method5570();
@@ -101,7 +101,7 @@ public final class Class245 {
 				}
 				Static734.method7701(this.aByteArray66, 0, arg1, arg2, local132);
 				arg2 += local132;
-				this.aLong195 += (long) local132;
+				this.aLong195 += local132;
 				arg0 -= local132;
 			}
 			if (this.aLong200 != -1L) {
@@ -160,7 +160,7 @@ public final class Class245 {
 				Static734.method7701(arg2, arg0, this.aByteArray67, (int) (this.aLong195 - this.aLong200), local95);
 				arg0 += local95;
 				arg1 -= local95;
-				this.aLong195 += (long) local95;
+				this.aLong195 += local95;
 				this.anInt6228 = this.aByteArray67.length;
 				this.method5574();
 			}
@@ -170,7 +170,7 @@ public final class Class245 {
 					this.aLong197 = this.aLong195;
 				}
 				this.aClass83_1.method2162(arg2, arg0, arg1);
-				this.aLong197 += (long) arg1;
+				this.aLong197 += arg1;
 				if (this.aLong197 > this.aLong196) {
 					this.aLong196 = this.aLong197;
 				}
@@ -190,13 +190,13 @@ public final class Class245 {
 					@Pc(324) int local324 = (int) (local239 - local188);
 					Static734.method7701(arg2, (int) (local188 + (long) arg0 - this.aLong195), this.aByteArray66, (int) (local188 - this.aLong199), local324);
 				}
-				this.aLong195 += (long) arg1;
+				this.aLong195 += arg1;
 			} else if (arg1 > 0) {
 				if (this.aLong200 == -1L) {
 					this.aLong200 = this.aLong195;
 				}
 				Static734.method7701(arg2, arg0, this.aByteArray67, (int) (this.aLong195 - this.aLong200), arg1);
-				this.aLong195 += (long) arg1;
+				this.aLong195 += arg1;
 				if ((long) this.anInt6228 < this.aLong195 - this.aLong200) {
 					this.anInt6228 = (int) (this.aLong195 - this.aLong200);
 				}
@@ -225,7 +225,7 @@ public final class Class245 {
 				break;
 			}
 			this.anInt6232 += local61;
-			this.aLong197 += (long) local61;
+			this.aLong197 += local61;
 		}
 	}
 
@@ -255,7 +255,7 @@ public final class Class245 {
 			this.aLong197 = this.aLong200;
 		}
 		this.aClass83_1.method2162(this.aByteArray67, 0, this.anInt6228);
-		this.aLong197 += (long) this.anInt6228;
+		this.aLong197 += this.anInt6228;
 		if (this.aLong197 > this.aLong196) {
 			this.aLong196 = this.aLong197;
 		}

@@ -13,10 +13,7 @@ public final class Class2_Sub1_Sub21 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ol", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 < 107) {
-			return null;
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(17) int[] local17 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(27) int[][] local27 = this.method9420(0, arg1);

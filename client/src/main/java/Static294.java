@@ -201,9 +201,9 @@ public final class Static294 {
 		@Pc(32) int local32 = arg0.method7403();
 		for (@Pc(34) int local34 = 0; local34 < local32; local34++) {
 			@Pc(40) int local40 = arg0.method7403();
-			local17.method9423(false, arg0, local40);
+			local17.method9423(arg0, local40);
 		}
-		local17.method9428(7);
+		local17.method9428();
 		return local17;
 	}
 }

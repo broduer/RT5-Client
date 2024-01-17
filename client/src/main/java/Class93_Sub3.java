@@ -28,7 +28,7 @@ public final class Class93_Sub3 extends Class93 {
 		this.anInt10431 = arg4;
 		this.anInt10438 = arg2;
 		super.aClass19_Sub3_43.method7008(this);
-		OpenGL.glTexImage3Dub(super.anInt10941, 0, super.anInt10940, this.anInt10438, this.anInt10429, this.anInt10431, 0, Static391.method5512(super.anInt10940), 5121, (byte[]) null, 0);
+		OpenGL.glTexImage3Dub(super.anInt10941, 0, super.anInt10940, this.anInt10438, this.anInt10429, this.anInt10431, 0, Static391.method5512(super.anInt10940), 5121, null, 0);
 		this.method9445(true);
 	}
 

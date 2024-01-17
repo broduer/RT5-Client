@@ -1,3 +1,4 @@
+import java.util.Calendar;
 import java.util.Date;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -14,13 +15,13 @@ public final class Static163 {
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(JI)Ljava/lang/String;")
 	public static String method8853(@OriginalArg(0) long arg0) {
 		Static459.aCalendar3.setTime(new Date(arg0));
-		@Pc(19) int local19 = Static459.aCalendar3.get(7);
-		@Pc(23) int local23 = Static459.aCalendar3.get(5);
-		@Pc(27) int local27 = Static459.aCalendar3.get(2);
-		@Pc(31) int local31 = Static459.aCalendar3.get(1);
-		@Pc(35) int local35 = Static459.aCalendar3.get(11);
-		@Pc(39) int local39 = Static459.aCalendar3.get(12);
-		@Pc(43) int local43 = Static459.aCalendar3.get(13);
+		@Pc(19) int local19 = Static459.aCalendar3.get(Calendar.DAY_OF_WEEK);
+		@Pc(23) int local23 = Static459.aCalendar3.get(Calendar.DATE);
+		@Pc(27) int local27 = Static459.aCalendar3.get(Calendar.MONTH);
+		@Pc(31) int local31 = Static459.aCalendar3.get(Calendar.YEAR);
+		@Pc(35) int local35 = Static459.aCalendar3.get(Calendar.HOUR_OF_DAY);
+		@Pc(39) int local39 = Static459.aCalendar3.get(Calendar.MINUTE);
+		@Pc(43) int local43 = Static459.aCalendar3.get(Calendar.SECOND);
 		return Static146.aStringArray8[local19 - 1] + ", " + local23 / 10 + local23 % 10 + "-" + Static361.aStringArray29[local27] + "-" + local31 + " " + local35 / 10 + local35 % 10 + ":" + local39 / 10 + local39 % 10 + ":" + local43 / 10 + local43 % 10 + " GMT";
 	}
 
@@ -37,7 +38,7 @@ public final class Static163 {
 		@Pc(7) Class2_Sub4 local7 = new Class2_Sub4();
 		local7.anInt147 = arg1;
 		local7.anInt146 = arg0;
-		Static548.aClass28_40.method735((long) arg2, local7);
+		Static548.aClass28_40.method735(arg2, local7);
 		Static122.method2208(arg1);
 		@Pc(26) Class158 local26 = Static145.method2412(arg2);
 		if (local26 != null) {

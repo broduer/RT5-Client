@@ -91,7 +91,7 @@ public final class Class2_Sub33 extends Class2 {
 					if (local148 > 0 && this.aClass178_Sub2_2.anInt8918 - 1 > local148) {
 						local178 = arg1.method7876(local121, local148 + 1) - arg1.method7876(local121, local148 - 1);
 						local195 = arg1.method7876(local121 + 1, local148) - arg1.method7876(local121 - 1, local148);
-						@Pc(211) float local211 = (float) (1.0D / Math.sqrt((double) (local178 * local178 + local195 * local195 + 65536)));
+						@Pc(211) float local211 = (float) (1.0D / Math.sqrt(local178 * local178 + local195 * local195 + 65536));
 						this.aFloatArrayArray11[local141][local113] = (float) local178 * local211;
 						this.aFloatArrayArray9[local141][local113] = local211 * -256.0F;
 						this.aFloatArrayArray10[local141][local113] = local211 * (float) local195;
@@ -271,7 +271,7 @@ public final class Class2_Sub33 extends Class2 {
 		local275 = (float) (this.aClass2_Sub7_2.method8433() - local15);
 		local283 = (float) (this.aClass2_Sub7_2.method8432() - local30);
 		local290 = (float) (this.aClass2_Sub7_2.method8436() - local23);
-		local297 = (float) Math.sqrt((double) (local290 * local290 + local275 * local275 + local283 * local283));
+		local297 = (float) Math.sqrt(local290 * local290 + local275 * local275 + local283 * local283);
 		local304 = 1.0F / local297;
 		local283 *= local304;
 		local290 *= local304;
@@ -329,7 +329,7 @@ public final class Class2_Sub33 extends Class2 {
 				@Pc(81) int local81 = local66 - arg3;
 				if (local77 > -arg2 && arg2 > local77 && -arg2 < local81 && local81 < arg2 && arg1[local77 + arg2][local81 + arg2]) {
 					this.aClass19_Sub3_23.method6992((int) (this.aClass2_Sub7_2.method8435() * 255.0F) << 24);
-					this.aClass19_Sub3_23.method7046(this.aClass94_5, (Class94) null, this.aClass94_4, (Class94) null);
+					this.aClass19_Sub3_23.method7046(this.aClass94_5, null, this.aClass94_4, null);
 					this.aClass19_Sub3_23.method7041(0, this.anInterface1_2, this.anInt5466);
 					return;
 				}

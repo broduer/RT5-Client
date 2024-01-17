@@ -28,7 +28,7 @@ public final class Class40 {
 	private int[] anIntArray73;
 
 	@OriginalMember(owner = "client!bha", name = "h", descriptor = "Lclient!ge;")
-	private final Class2_Sub21 aClass2_Sub21_3 = new Class2_Sub21((byte[]) null);
+	private final Class2_Sub21 aClass2_Sub21_3 = new Class2_Sub21(null);
 
 	@OriginalMember(owner = "client!bha", name = "<init>", descriptor = "()V")
 	public Class40() {

@@ -121,9 +121,9 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 		if (local35.anInt9955 != -1 && this.aShort93 - this.aShort96 <= local35.anInt9936) {
 			super.anInt7558 += local35.anInt9937 * arg1;
 		}
-		@Pc(296) double local296 = (double) this.aShort92;
-		@Pc(300) double local300 = (double) this.aShort95;
-		@Pc(304) double local304 = (double) this.aShort94;
+		@Pc(296) double local296 = this.aShort92;
+		@Pc(300) double local300 = this.aShort95;
+		@Pc(304) double local304 = this.aShort94;
 		@Pc(306) boolean local306 = false;
 		@Pc(317) int local317;
 		@Pc(324) int local324;
@@ -134,15 +134,15 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 			local317 = local17 - this.aClass8_Sub8_1.aClass177_1.anInt4283;
 			local324 = local22 - this.aClass8_Sub8_1.aClass177_1.anInt4290;
 			local331 = local27 - this.aClass8_Sub8_1.aClass177_1.anInt4285;
-			local348 = (int) Math.sqrt((double) (local317 * local317 + local324 * local324 + local331 * local331)) >> 2;
-			local356 = (long) (local35.anInt9942 * local348 * arg1);
+			local348 = (int) Math.sqrt(local317 * local317 + local324 * local324 + local331 * local331) >> 2;
+			local356 = local35.anInt9942 * local348 * arg1;
 			this.anInt7565 = (int) ((long) this.anInt7565 - ((long) this.anInt7565 * local356 >> 18));
 		} else if (local35.anInt9923 == 2) {
 			local317 = local17 - this.aClass8_Sub8_1.aClass177_1.anInt4283;
 			local324 = local22 - this.aClass8_Sub8_1.aClass177_1.anInt4290;
 			local331 = local27 - this.aClass8_Sub8_1.aClass177_1.anInt4285;
 			local348 = local317 * local317 + local324 * local324 + local331 * local331;
-			local356 = (long) (local35.anInt9942 * local348 * arg1);
+			local356 = local35.anInt9942 * local348 * arg1;
 			this.anInt7565 = (int) ((long) this.anInt7565 - ((long) this.anInt7565 * local356 >> 28));
 		}
 		if (local35.anIntArray775 != null) {
@@ -159,9 +159,9 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 						}
 					}
 					if (local453) {
-						@Pc(480) double local480 = (double) (local17 - local444.anInt1835);
-						@Pc(486) double local486 = (double) (local22 - local444.anInt1832);
-						@Pc(492) double local492 = (double) (local27 - local444.anInt1829);
+						@Pc(480) double local480 = local17 - local444.anInt1835;
+						@Pc(486) double local486 = local22 - local444.anInt1832;
+						@Pc(492) double local492 = local27 - local444.anInt1829;
 						@Pc(504) double local504 = local480 * local480 + local486 * local486 + local492 * local492;
 						if (!(local504 > (double) local447.aLong221)) {
 							@Pc(513) double local513 = Math.sqrt(local504);
@@ -208,12 +208,12 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 		}
 		if (local35.anIntArray776 != null) {
 			for (local317 = 0; local317 < local35.anIntArray776.length; local317++) {
-				@Pc(776) Class2_Sub2_Sub5 local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3095((long) local35.anIntArray776[local317]);
+				@Pc(776) Class2_Sub2_Sub5 local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3095(local35.anIntArray776[local317]);
 				while (local776 != null) {
 					@Pc(780) Class280 local780 = local776.aClass280_1;
-					@Pc(786) double local786 = (double) (local17 - local776.anInt1835);
-					@Pc(792) double local792 = (double) (local22 - local776.anInt1832);
-					@Pc(798) double local798 = (double) (local27 - local776.anInt1829);
+					@Pc(786) double local786 = local17 - local776.anInt1835;
+					@Pc(792) double local792 = local22 - local776.anInt1832;
+					@Pc(798) double local798 = local27 - local776.anInt1829;
 					@Pc(810) double local810 = local786 * local786 + local792 * local792 + local798 * local798;
 					if (local810 > (double) local780.aLong221) {
 						local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3096();
@@ -267,15 +267,15 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 				local35.anIntArray774 = new int[local35.anIntArray777.length];
 				for (local317 = 0; local317 < local35.anIntArray777.length; local317++) {
 					Static66.method1487(local35.anIntArray777[local317]);
-					local35.anIntArray774[local317] = ((Class2_Sub38) Static503.aClass28_38.method738((long) local35.anIntArray777[local317])).anInt6399;
+					local35.anIntArray774[local317] = ((Class2_Sub38) Static503.aClass28_38.method738(local35.anIntArray777[local317])).anInt6399;
 				}
 			}
 			for (local317 = 0; local317 < local35.anIntArray774.length; local317++) {
 				@Pc(1137) Class280 local1137 = Static367.aClass280Array1[local35.anIntArray774[local317]];
 				if (local1137.anInt6999 == 0) {
-					local296 += (double) (local1137.anInt7000 * arg1);
-					local300 += (double) (local1137.anInt7008 * arg1);
-					local304 += (double) (local1137.anInt6996 * arg1);
+					local296 += local1137.anInt7000 * arg1;
+					local300 += local1137.anInt7008 * arg1;
+					local304 += local1137.anInt6996 * arg1;
 					local306 = true;
 				} else {
 					super.anInt7560 += local1137.anInt7000 * arg1;

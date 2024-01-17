@@ -441,7 +441,7 @@ public final class Class332 {
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(ZII)[B")
 	public byte[] method7602(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		return this.method7590((int[]) null, arg0, arg1);
+		return this.method7590(null, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!sb", name = "d", descriptor = "(BI)Z")

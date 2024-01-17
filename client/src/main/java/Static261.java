@@ -9,7 +9,7 @@ public final class Static261 {
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(I)V")
 	public static void method3833() {
 		Static438.aClass158Array3 = null;
-		if (Static137.aBoolean210 && Static36.method978(3) != 1) {
+		if (Static137.aBoolean210 && Static36.method978() != 1) {
 			Static294.method4346(0, Static283.anInt4588 == 3 || Static283.anInt4588 == 7, Static593.method7786(), Static58.method1260(), 0);
 		}
 		@Pc(46) int local46 = 0;

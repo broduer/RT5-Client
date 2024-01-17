@@ -349,10 +349,10 @@ public final class Class2_Sub8 extends Class2 {
 						local103 = local65 >> 16 & 0x7F;
 						if (local103 > 0) {
 							@Pc(182) int local182 = local16[local91];
-							@Pc(190) Class2_Sub55 local190 = (Class2_Sub55) this.aClass28_8.method738((long) local182);
+							@Pc(190) Class2_Sub55 local190 = (Class2_Sub55) this.aClass28_8.method738(local182);
 							if (local190 == null) {
 								local190 = new Class2_Sub55(new byte[128]);
-								this.aClass28_8.method735((long) local182, local190);
+								this.aClass28_8.method735(local182, local190);
 							}
 							local190.aByteArray105[local97] = 1;
 						}

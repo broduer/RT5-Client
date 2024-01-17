@@ -18,11 +18,11 @@ public final class Static306 {
 			local12 *= 37L;
 			@Pc(26) char local26 = arg0.charAt(local17);
 			if (local26 >= 'A' && local26 <= 'Z') {
-				local12 += (long) (local26 + 1 - 65);
+				local12 += local26 + 1 - 65;
 			} else if (local26 >= 'a' && local26 <= 'z') {
-				local12 += (long) (local26 + 1 - 97);
+				local12 += local26 + 1 - 97;
 			} else if (local26 >= '0' && local26 <= '9') {
-				local12 += (long) (local26 + 27 - 48);
+				local12 += local26 + 27 - 48;
 			}
 			if (local12 >= 177917621779460413L) {
 				break;

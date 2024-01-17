@@ -783,7 +783,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "(III)V")
 	public synchronized void method6978(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg0);
-		local8.aLong328 = (long) arg1;
+		local8.aLong328 = arg1;
 		this.aClass341_48.method7718(local8);
 	}
 
@@ -874,7 +874,7 @@ public final class Class19_Sub3 extends Class19 {
 		if (local16 == 0.0F && local23 == 0.0F) {
 			local16 = 1.0F;
 		} else {
-			@Pc(46) float local46 = (float) (1.0D / Math.sqrt((double) (local23 * local23 + local16 * local16)));
+			@Pc(46) float local46 = (float) (1.0D / Math.sqrt(local23 * local23 + local16 * local16));
 			local16 *= local46;
 			local23 *= local46;
 		}
@@ -913,7 +913,7 @@ public final class Class19_Sub3 extends Class19 {
 		OpenGL.glMatrixMode(5889);
 		OpenGL.glLoadIdentity();
 		if (local54 != local27 && local68 != local39) {
-			OpenGL.glOrtho((double) local27, (double) local54, (double) -local68, (double) -local39, (double) this.anInt8033, (double) this.anInt8041);
+			OpenGL.glOrtho(local27, local54, -local68, -local39, this.anInt8033, this.anInt8041);
 		}
 		OpenGL.glMatrixMode(5888);
 	}
@@ -1158,7 +1158,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.method7015(false);
 		this.method7013(false);
 		this.method6979(false);
-		this.method7008((Class93) null);
+		this.method7008(null);
 		this.method7053(-2);
 		this.method6998(1);
 		this.method7024(0);
@@ -1207,9 +1207,6 @@ public final class Class19_Sub3 extends Class19 {
 		while (this.anInt8040 > local7) {
 			OpenGL.glDisable(local7 + 16386);
 			local7++;
-		}
-		if (85 == 85) {
-			this.anInt8040 = this.anInt8054;
 		}
 	}
 
@@ -1270,7 +1267,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IBI)V")
 	public synchronized void method6990(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(18) Class2_Sub38 local18 = new Class2_Sub38(arg1);
-		local18.aLong328 = (long) arg0;
+		local18.aLong328 = arg0;
 		this.aClass341_51.method7718(local18);
 	}
 
@@ -1291,7 +1288,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.method7053(-2);
 		for (@Pc(12) int local12 = this.anInt8026 - 1; local12 >= 0; local12--) {
 			this.method7021(local12);
-			this.method7008((Class93) null);
+			this.method7008(null);
 			OpenGL.glTexEnvi(8960, 8704, 34160);
 		}
 		this.method7038(8448, 8448);
@@ -1736,7 +1733,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(46) float local46 = local9.aFloat68 / (float) local9.anInt3266;
 		@Pc(53) float local53 = (float) -arg0 + (float) arg2;
 		@Pc(59) float local59 = (float) arg3 - (float) arg1;
-		@Pc(72) float local72 = (float) (1.0D / Math.sqrt((double) (local59 * local59 + local53 * local53)));
+		@Pc(72) float local72 = (float) (1.0D / Math.sqrt(local59 * local59 + local53 * local53));
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		@Pc(91) float local91 = local53 * local72;
 		@Pc(95) float local95 = local59 * local72;
@@ -1894,7 +1891,7 @@ public final class Class19_Sub3 extends Class19 {
 		OpenGL.glMatrixMode(5889);
 		OpenGL.glLoadIdentity();
 		if (this.anInt7892 > 0 && this.anInt7979 > 0) {
-			OpenGL.glOrtho(0.0D, (double) this.anInt7892, (double) this.anInt7979, 0.0D, -1.0D, 1.0D);
+			OpenGL.glOrtho(0.0D, this.anInt7892, this.anInt7979, 0.0D, -1.0D, 1.0D);
 		}
 		OpenGL.glMatrixMode(5888);
 		OpenGL.glLoadIdentity();
@@ -2002,7 +1999,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(BI)V")
 	public synchronized void method7014(@OriginalArg(1) int arg0) {
 		@Pc(12) Class2 local12 = new Class2();
-		local12.aLong328 = (long) arg0;
+		local12.aLong328 = arg0;
 		this.aClass341_52.method7718(local12);
 	}
 
@@ -2026,7 +2023,7 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IZII[B)Lclient!ar;")
 	public Interface1 method7017(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(4) byte[] arg2) {
-		return (Interface1) (this.aBoolean600 && (!arg0 || this.aBoolean617) ? new Class132_Sub1(this, 5123, arg2, arg1, arg0) : new Class134_Sub2(this, 5123, arg2, arg1));
+		return this.aBoolean600 && (!arg0 || this.aBoolean617) ? new Class132_Sub1(this, 5123, arg2, arg1, arg0) : new Class134_Sub2(this, 5123, arg2, arg1);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "e", descriptor = "(B)V")
@@ -2186,7 +2183,7 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IILclient!jaclib/memory/Buffer;ZI)Lclient!jc;")
 	public Interface12 method7023(@OriginalArg(1) int arg0, @OriginalArg(2) Buffer arg1, @OriginalArg(4) int arg2) {
-		return (Interface12) (this.aBoolean600 && (this.aBoolean617 || true) ? new Class132_Sub2(this, arg0, arg1, arg2, false) : new Class134_Sub1(this, arg0, arg1));
+		return this.aBoolean600 && (this.aBoolean617 || true) ? new Class132_Sub2(this, arg0, arg1, arg2, false) : new Class134_Sub1(this, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "ZA", descriptor = "(IFFFFF)V")
@@ -2214,7 +2211,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.aFloatArray51[0] = -arg3;
 		this.aFloatArray51[2] = -arg5;
 		this.aFloatArray51[1] = -arg4;
-		@Pc(155) float local155 = (float) (1.0D / Math.sqrt((double) (arg3 * arg3 + arg4 * arg4 + arg5 * arg5)));
+		@Pc(155) float local155 = (float) (1.0D / Math.sqrt(arg3 * arg3 + arg4 * arg4 + arg5 * arg5));
 		this.aFloatArray52[0] = arg3 * local155;
 		this.aFloatArray52[1] = local155 * arg4;
 		this.aFloatArray52[2] = arg5 * local155;
@@ -2411,7 +2408,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.method7024(1);
 		@Pc(37) float local37 = (float) -arg0 + (float) arg2;
 		@Pc(44) float local44 = (float) -arg1 + (float) arg3;
-		@Pc(57) float local57 = (float) (1.0D / Math.sqrt((double) (local37 * local37 + local44 * local44)));
+		@Pc(57) float local57 = (float) (1.0D / Math.sqrt(local37 * local37 + local44 * local44));
 		@Pc(63) int local63 = arg7 % (arg5 + arg6);
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		@Pc(82) float local82 = local37 * local57;
@@ -2577,7 +2574,7 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(ZI[BII)Lclient!jc;")
 	public Interface12 method7031(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1, @OriginalArg(2) byte[] arg2, @OriginalArg(3) int arg3) {
-		return (Interface12) (this.aBoolean600 && (!arg0 || this.aBoolean617) ? new Class132_Sub2(this, arg3, arg2, arg1, arg0) : new Class134_Sub1(this, arg3, arg2, arg1));
+		return this.aBoolean600 && (!arg0 || this.aBoolean617) ? new Class132_Sub2(this, arg3, arg2, arg1, arg0) : new Class134_Sub1(this, arg3, arg2, arg1);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "([Ljava/awt/Rectangle;III)V")
@@ -2714,7 +2711,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.method7015(false);
 		this.method7013(false);
 		this.method6979(false);
-		this.method7008((Class93) null);
+		this.method7008(null);
 		this.method7053(-2);
 		this.method6998(1);
 		this.anInt8020 = 1;
@@ -2780,7 +2777,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(III)V")
 	public synchronized void method7037(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg1);
-		local8.aLong328 = (long) arg0;
+		local8.aLong328 = arg0;
 		this.aClass341_49.method7718(local8);
 	}
 
@@ -2831,7 +2828,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(62) float local62 = local25.aFloat68 / (float) local25.anInt3266;
 		@Pc(69) float local69 = (float) -arg0 + (float) arg2;
 		@Pc(76) float local76 = (float) -arg1 + (float) arg3;
-		@Pc(89) float local89 = (float) (1.0D / Math.sqrt((double) (local69 * local69 + local76 * local76)));
+		@Pc(89) float local89 = (float) (1.0D / Math.sqrt(local69 * local69 + local76 * local76));
 		@Pc(95) int local95 = arg10 % (arg8 + arg9);
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		@Pc(114) float local114 = local69 * local89;

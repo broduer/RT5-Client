@@ -42,7 +42,7 @@ public final class Static305 {
 		try {
 			@Pc(6) Graphics local6 = Static434.aCanvas7.getGraphics();
 			if (Static589.aFont1 == null) {
-				Static589.aFont1 = new Font("Helvetica", 1, 13);
+				Static589.aFont1 = new Font("Helvetica", Font.BOLD, 13);
 			}
 			if (arg3 == null) {
 				arg3 = new Color(140, 17, 17);
@@ -78,7 +78,7 @@ public final class Static305 {
 					local58.setColor(arg2);
 					local58.drawString(Static484.aString85, Static680.anInt10317 / 2 - Static484.aString85.length() * 6 / 2, Static380.anInt5999 / 2 + -26);
 				}
-				local6.drawImage(Static103.anImage1, 0, 0, (ImageObserver) null);
+				local6.drawImage(Static103.anImage1, 0, 0, null);
 			} catch (@Pc(205) Exception local205) {
 				local6.setColor(Color.black);
 				local6.fillRect(0, 0, Static680.anInt10317, Static380.anInt5999);

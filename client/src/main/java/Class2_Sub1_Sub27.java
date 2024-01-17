@@ -142,11 +142,8 @@ public final class Class2_Sub1_Sub27 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(9) int[] local9 = super.aClass180_41.method3935(arg1);
-		if (arg0 <= 107) {
-			this.aShortArray127 = null;
-		}
 		if (super.aClass180_41.aBoolean338) {
 			this.method7816(arg1, local9);
 		}
@@ -155,13 +152,10 @@ public final class Class2_Sub1_Sub27 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!so", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
+	public void method9428() {
 		this.aByteArray97 = Static694.method9034(this.anInt8833);
-		this.method7820(arg0 - 8);
+		this.method7820();
 		@Pc(19) int local19 = this.anInt8827 - 1;
-		if (arg0 != 7) {
-			return;
-		}
 		while (local19 >= 1) {
 			@Pc(29) short local29 = this.aShortArray128[local19];
 			if (local29 > 8) {
@@ -177,10 +171,7 @@ public final class Class2_Sub1_Sub27 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			this.method9418(17, -97);
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.aBoolean668 = arg1.method7403() == 1;
 		} else if (arg2 == 1) {
@@ -254,19 +245,19 @@ public final class Class2_Sub1_Sub27 extends Class2_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!so", name = "g", descriptor = "(I)V")
-	private void method7820(@OriginalArg(0) int arg0) {
+	private void method7820() {
 		@Pc(17) int local17;
-		if (arg0 > ~this.anInt8823) {
+		if (this.anInt8823 > 0) {
 			this.aShortArray127 = new short[this.anInt8827];
 			this.aShortArray128 = new short[this.anInt8827];
 			for (local17 = 0; local17 < this.anInt8827; local17++) {
-				this.aShortArray128[local17] = (short) (int) (Math.pow((double) ((float) this.anInt8823 / 4096.0F), (double) local17) * 4096.0D);
-				this.aShortArray127[local17] = (short) (int) Math.pow(2.0D, (double) local17);
+				this.aShortArray128[local17] = (short) (int) (Math.pow((float) this.anInt8823 / 4096.0F, local17) * 4096.0D);
+				this.aShortArray127[local17] = (short) (int) Math.pow(2.0D, local17);
 			}
 		} else if (this.aShortArray128 != null && this.anInt8827 == this.aShortArray128.length) {
 			this.aShortArray127 = new short[this.anInt8827];
 			for (local17 = 0; local17 < this.anInt8827; local17++) {
-				this.aShortArray127[local17] = (short) (int) Math.pow(2.0D, (double) local17);
+				this.aShortArray127[local17] = (short) (int) Math.pow(2.0D, local17);
 			}
 		}
 	}

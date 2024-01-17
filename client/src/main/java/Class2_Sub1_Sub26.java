@@ -35,12 +35,9 @@ public final class Class2_Sub1_Sub26 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ska", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.method7749(arg1.method7390());
-		}
-		if (arg0) {
-			Static590.anIntArray695 = null;
 		}
 	}
 

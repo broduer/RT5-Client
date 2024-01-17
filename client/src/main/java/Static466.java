@@ -238,9 +238,9 @@ public final class Static466 {
 					Static632.anInt9529 += local254;
 					Static482.anInt7286 += local256;
 					for (@Pc(855) int local855 = 0; local855 < Static617.anInt9460; local855++) {
-						@Pc(868) int local868 = Static719.method9125(Static482.anInt7286 + local855, 16939, Static617.anInt9460) * Static211.anInt5594;
+						@Pc(868) int local868 = Static719.method9125(Static482.anInt7286 + local855, Static617.anInt9460) * Static211.anInt5594;
 						for (local465 = 0; local465 < Static211.anInt5594; local465++) {
-							@Pc(881) int local881 = Static719.method9125(local465 + Static632.anInt9529, 16939, Static211.anInt5594) + local868;
+							@Pc(881) int local881 = Static719.method9125(local465 + Static632.anInt9529, Static211.anInt5594) + local868;
 							@Pc(936) boolean local936 = local855 >= local319 && local855 < local319 + local321 || local325 <= local855 && local855 < local329 + local325 && local465 >= local323 && local465 < local327 + local323;
 							Static651.anInterface9Array1[local881].method9046(local465 * Static437.anInt6648, Static714.anInt10831 * local855, Static437.anInt6648, Static714.anInt10831, local936);
 						}

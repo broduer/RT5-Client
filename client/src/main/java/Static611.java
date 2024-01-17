@@ -12,7 +12,7 @@ public final class Static611 {
 
 	@OriginalMember(owner = "client!tfa", name = "a", descriptor = "(II)V")
 	public static void method8234(@OriginalArg(1) int arg0) {
-		@Pc(23) Class2_Sub2_Sub2 local23 = Static440.method5970(3, (long) arg0);
+		@Pc(23) Class2_Sub2_Sub2 local23 = Static440.method5970(3, arg0);
 		local23.method205();
 	}
 

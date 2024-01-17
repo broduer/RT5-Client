@@ -47,7 +47,6 @@ public final class Static658 {
 		if (local64.aBoolean548) {
 			local64.aClass8_Sub2_18 = arg0;
 			if (Static661.aBoolean457) {
-				@Pc(127) Class215 local127 = Static514.aClass215_2;
 				synchronized (Static514.aClass215_2) {
 					Static514.aClass215_2.method5015(local64);
 					return;

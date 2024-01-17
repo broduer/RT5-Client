@@ -69,10 +69,7 @@ public final class Class2_Sub1_Sub3 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!be", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			Static37.anInt922 = -61;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt923 = arg1.method7389();
 		} else if (arg2 == 1) {

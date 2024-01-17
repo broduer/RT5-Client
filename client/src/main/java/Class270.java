@@ -475,7 +475,7 @@ public final class Class270 {
 					} else {
 						local774 = new Class2_Sub38(arg1.method7356());
 					}
-					this.aClass28_32.method735((long) local765, local774);
+					this.aClass28_32.method735(local765, local774);
 				}
 			}
 		}
@@ -486,7 +486,7 @@ public final class Class270 {
 		if (this.aClass28_32 == null) {
 			return arg0;
 		} else {
-			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_32.method738((long) arg1);
+			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_32.method738(arg1);
 			return local23 == null ? arg0 : local23.aString46;
 		}
 	}
@@ -503,7 +503,7 @@ public final class Class270 {
 			if (arg0 != null) {
 				local54 = arg0.method9108() | 0x800;
 			}
-			@Pc(71) long local71 = (long) (arg2.anInt8986 << 16 | this.anInt6764);
+			@Pc(71) long local71 = arg2.anInt8986 << 16 | this.anInt6764;
 			if (arg1 != null) {
 				local71 |= arg1.aLong312 << 24;
 			}
@@ -636,7 +636,7 @@ public final class Class270 {
 			local32 |= arg7.method9108();
 			local52 = true;
 		}
-		@Pc(116) long local116 = (long) (this.anInt6764 | arg1.anInt8986 << 16);
+		@Pc(116) long local116 = this.anInt6764 | arg1.anInt8986 << 16;
 		if (arg6 != null) {
 			local116 |= arg6.aLong312 << 24;
 		}
@@ -833,7 +833,7 @@ public final class Class270 {
 		if (this.aClass28_32 == null) {
 			return arg1;
 		} else {
-			@Pc(25) Class2_Sub38 local25 = (Class2_Sub38) this.aClass28_32.method738((long) arg0);
+			@Pc(25) Class2_Sub38 local25 = (Class2_Sub38) this.aClass28_32.method738(arg0);
 			return local25 == null ? arg1 : local25.anInt6399;
 		}
 	}

@@ -47,7 +47,7 @@ public final class Static346 {
 		@Pc(33) int local33;
 		for (@Pc(25) int local25 = 0; local25 < Static78.anInt1629; local25++) {
 			local33 = Static118.anIntArray197[local25];
-			@Pc(40) Class2_Sub45 local40 = (Class2_Sub45) Static18.aClass28_2.method738((long) local33);
+			@Pc(40) Class2_Sub45 local40 = (Class2_Sub45) Static18.aClass28_2.method738(local33);
 			@Pc(43) Class8_Sub2_Sub1_Sub2_Sub2 local43 = local40.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local43.anInt10780 != Static572.anInt8920) {
 				if (Static400.aBoolean623 && Static321.method4629(local33)) {
@@ -56,7 +56,7 @@ public final class Static346 {
 				if (local43.aClass270_1.method5991()) {
 					Static58.method1259(local43);
 				}
-				local43.method9335((Class270) null);
+				local43.method9335(null);
 				local40.method9464();
 				local23 = true;
 			}
@@ -69,7 +69,7 @@ public final class Static346 {
 			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8412 + " psize:" + Static405.aClass153_2.anInt3658);
 		}
 		for (local33 = 0; local33 < Static390.anInt6146; local33++) {
-			if (Static18.aClass28_2.method738((long) Static103.anIntArray187[local33]) == null) {
+			if (Static18.aClass28_2.method738(Static103.anIntArray187[local33]) == null) {
 				throw new RuntimeException("gnp2 pos:" + local33 + " size:" + Static390.anInt6146);
 			}
 		}

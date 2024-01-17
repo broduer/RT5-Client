@@ -502,7 +502,7 @@ public final class Static709 {
 		Static343.aBoolean428 = false;
 		Static702.aBoolean798 = false;
 		Static327.aClass158_7 = null;
-		Static65.method1473(-1, -1, (Class158) null);
+		Static65.method1473(-1, -1, null);
 		if (!Static156.aBoolean223) {
 			Static442.anInt6719 = -1;
 		}
@@ -561,9 +561,6 @@ public final class Static709 {
 													}
 													local2281.method9281();
 												}
-											}
-											if (14590 != 14590) {
-												anInt10695 = -107;
 											}
 											Static392.anInt6163++;
 											if (Static392.anInt6163 > 500) {

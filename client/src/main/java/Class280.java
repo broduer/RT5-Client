@@ -75,9 +75,9 @@ public final class Class280 {
 	@OriginalMember(owner = "client!ok", name = "b", descriptor = "(B)V")
 	public void method6280() {
 		this.anInt6997 = Class363.anIntArray740[this.anInt7009 << 3];
-		@Pc(15) long local15 = (long) this.anInt7000;
-		@Pc(19) long local19 = (long) this.anInt7008;
-		@Pc(23) long local23 = (long) this.anInt6996;
+		@Pc(15) long local15 = this.anInt7000;
+		@Pc(19) long local19 = this.anInt7008;
+		@Pc(23) long local23 = this.anInt6996;
 		this.anInt7007 = (int) Math.sqrt((double) (local15 * local15 + local19 * local19 + local23 * local23));
 		if (this.anInt6994 == 0) {
 			this.anInt6994 = 1;
@@ -85,10 +85,10 @@ public final class Class280 {
 		if (this.anInt7006 == 0) {
 			this.aLong221 = 2147483647L;
 		} else if (this.anInt7006 == 1) {
-			this.aLong221 = (long) (this.anInt7007 * 8 / this.anInt6994);
+			this.aLong221 = this.anInt7007 * 8 / this.anInt6994;
 			this.aLong221 *= this.aLong221;
 		} else if (this.anInt7006 == 2) {
-			this.aLong221 = (long) (this.anInt7007 * 8 / this.anInt6994);
+			this.aLong221 = this.anInt7007 * 8 / this.anInt6994;
 		}
 		if (this.aBoolean530) {
 			this.anInt7007 *= -1;

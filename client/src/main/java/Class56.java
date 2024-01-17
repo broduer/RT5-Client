@@ -156,7 +156,7 @@ public class Class56 {
 			}
 			while (local11 > this.aLong128 + 5000L) {
 				this.method3584();
-				this.aLong128 += (long) (256000 / Static686.anInt8968);
+				this.aLong128 += 256000 / Static686.anInt8968;
 				local11 = Static588.method7722();
 			}
 		} catch (@Pc(54) Exception local54) {

@@ -258,7 +258,7 @@ public final class i extends Class114 implements Interface5 {
 	@Override
 	public void method7491(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		if (arg1 == null) {
-			this.anOa2.method6094().method9(this, arg0, (int[]) null, arg2, arg3);
+			this.anOa2.method6094().method9(this, arg0, null, arg2, arg3);
 			return;
 		}
 		Static445.anIntArray542[5] = 0;
@@ -332,7 +332,7 @@ public final class i extends Class114 implements Interface5 {
 	@Override
 	public void method7480(@OriginalArg(0) Class73 arg0, @OriginalArg(1) Class8_Sub6 arg1, @OriginalArg(2) int arg2) {
 		if (arg1 == null) {
-			this.anOa2.method6094().method8(this, arg0, (int[]) null, arg2);
+			this.anOa2.method6094().method8(this, arg0, null, arg2);
 			return;
 		}
 		Static445.anIntArray542[5] = 0;

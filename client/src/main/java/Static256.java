@@ -250,11 +250,11 @@ public final class Static256 {
 		}
 		@Pc(107) int local107 = local78 * arg10 + arg8 * local74 >> 14;
 		@Pc(118) int local118 = arg8 * local78 - arg10 * local74 >> 14;
-		@Pc(125) int local125 = arg2.method8748((Class23[]) null, arg1, 100);
+		@Pc(125) int local125 = arg2.method8748(null, arg1, 100);
 		@Pc(131) int local131 = local107 - local125 / 2;
-		@Pc(139) int local139 = arg2.method8752(100, 0, arg1, (Class23[]) null);
+		@Pc(139) int local139 = arg2.method8752(100, 0, arg1, null);
 		if (local131 >= -arg6.anInt3813 && arg6.anInt3813 >= local131 && local118 >= -arg6.anInt3756 && arg6.anInt3756 >= local118) {
-			arg0.method8833(arg9, (int[]) null, arg4, arg1, arg7, (Class23[]) null, arg6.anInt3756 / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.anInt3813 / 2 + local131 + arg3, 0, 0, local125, 50);
+			arg0.method8833(arg9, null, arg4, arg1, arg7, null, arg6.anInt3756 / 2 + arg9 - local118 - arg5 - local139, 0, arg3, 1, arg6.anInt3813 / 2 + local131 + arg3, 0, 0, local125, 50);
 		}
 	}
 }

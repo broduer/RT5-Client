@@ -14,7 +14,7 @@ public abstract class Class2_Sub2_Sub14 extends Class2_Sub2 {
 
 	static {
 		for (@Pc(49) int local49 = 0; local49 < 256; local49++) {
-			@Pc(53) long local53 = (long) local49;
+			@Pc(53) long local53 = local49;
 			for (@Pc(55) int local55 = 0; local55 < 8; local55++) {
 				if ((local53 & 0x1L) == 1L) {
 					local53 = local53 >>> 1 ^ 0xC96C5795D7870F42L;

@@ -126,7 +126,7 @@ public final class Class392 implements Runnable {
 		}
 		Static649.method8499(Static689.anInt10385, Static689.aString122);
 		if (this.aBoolean782) {
-			this.aClass83_4 = new Class83(Static649.method8498((String) null, Static689.anInt10385, "random.dat"), "rw", 25L);
+			this.aClass83_4 = new Class83(Static649.method8498(null, Static689.anInt10385, "random.dat"), "rw", 25L);
 			this.aClass83_2 = new Class83(Static649.method8497("main_file_cache.dat2"), "rw", 314572800L);
 			this.aClass83_3 = new Class83(Static649.method8497("main_file_cache.idx255"), "rw", 1048576L);
 			this.aClass83Array1 = new Class83[arg2];
@@ -183,7 +183,7 @@ public final class Class392 implements Runnable {
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IIIII)Lclient!oba;")
 	public Class272 method8984(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
-		return this.method9000(arg0 << 16, 6, (Object) null, (arg2 << 16) + arg1);
+		return this.method9000(arg0 << 16, 6, null, (arg2 << 16) + arg1);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;I)Lclient!oba;")
@@ -203,12 +203,12 @@ public final class Class392 implements Runnable {
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BI)Lclient!oba;")
 	public Class272 method8989(@OriginalArg(1) int arg0) {
-		return this.method9000(0, 3, (Object) null, arg0);
+		return this.method9000(0, 3, null, arg0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(B)Lclient!oba;")
 	public Class272 method8991() {
-		return this.method9000(0, 5, (Object) null, 0);
+		return this.method9000(0, 5, null, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(I)V")
@@ -396,11 +396,11 @@ public final class Class392 implements Runnable {
 						local15.anObject13 = ((Class) local102[0]).getDeclaredField((String) local102[1]);
 					} else if (local42 == 18) {
 						@Pc(136) Clipboard local136 = Toolkit.getDefaultToolkit().getSystemClipboard();
-						local15.anObject13 = local136.getContents((Object) null);
+						local15.anObject13 = local136.getContents(null);
 					} else if (local42 == 19) {
 						@Pc(149) Transferable local149 = (Transferable) local15.anObject12;
 						@Pc(152) Clipboard local152 = Toolkit.getDefaultToolkit().getSystemClipboard();
-						local152.setContents(local149, (ClipboardOwner) null);
+						local152.setContents(local149, null);
 					} else if (this.aBoolean782) {
 						@Pc(220) String local220;
 						if (local42 == 3) {
@@ -455,7 +455,7 @@ public final class Class392 implements Runnable {
 								}
 							} else if (!this.aBoolean780 && local42 == 17) {
 								local102 = (Object[]) local15.anObject12;
-								Class.forName("Class240").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, (Component) local102[0], (int[]) local102[1], Integer.valueOf(local15.anInt6809), new Integer(local15.anInt6808), (Point) local102[2]);
+								Class.forName("Class240").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, local102[0], local102[1], Integer.valueOf(local15.anInt6809), new Integer(local15.anInt6808), local102[2]);
 							} else if (local42 == 16) {
 								try {
 									if (!Static689.aString119.startsWith("win")) {

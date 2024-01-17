@@ -73,7 +73,7 @@ public final class Static351 {
 		if (arg1.aString25 != null) {
 			local209 = Static390.method5500(arg1.anInt2624);
 			if (local209 != null) {
-				local211 = Static154.aClass383_6.method8747(Static37.aStringArray5, (int[]) null, (Class23[]) null, arg1.aString25);
+				local211 = Static154.aClass383_6.method8747(Static37.aStringArray5, null, null, arg1.aString25);
 				local215 = arg2.anInt3131 - arg1.anInt2626 * (Static30.anInt5666 - Static30.anInt5673) / (Static30.anInt5665 - Static30.anInt5674);
 				local213 = arg1.anInt2609 * (Static30.anInt5671 - Static30.anInt5669) / (Static30.anInt5667 - Static30.anInt5672) + arg2.anInt3139;
 				if (local102 == null) {

@@ -30,7 +30,7 @@ public final class Static538 {
 		@Pc(15) Class2_Sub21_Sub2 local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		for (@Pc(17) int local17 = 0; local17 < Static86.anInt1806; local17++) {
 			@Pc(23) int local23 = Static458.anIntArray553[local17];
-			@Pc(31) Class8_Sub2_Sub1_Sub2_Sub2 local31 = ((Class2_Sub45) Static18.aClass28_2.method738((long) local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(31) Class8_Sub2_Sub1_Sub2_Sub2 local31 = ((Class2_Sub45) Static18.aClass28_2.method738(local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			@Pc(35) int local35 = local15.method7403();
 			if ((local35 & 0x80) != 0) {
 				local35 += local15.method7403() << 8;
@@ -129,7 +129,7 @@ public final class Static538 {
 				local31.method9317(local31.aClass270_1.anInt6733);
 				local31.anInt10786 = local31.aClass270_1.anInt6768 << 3;
 				if (local31.aClass270_1.method5991()) {
-					Static89.method1714(local31.aByte144, (Class8_Sub2_Sub1_Sub2_Sub1) null, local31.anIntArray879[0], local31.anIntArray878[0], local31, (Class54) null, 0);
+					Static89.method1714(local31.aByte144, null, local31.anIntArray879[0], local31.anIntArray878[0], local31, null, 0);
 				}
 			}
 			if ((local35 & 0x2) != 0) {

@@ -102,7 +102,7 @@ public final class Class281 {
 			@Pc(77) int[] local77 = new int[this.anIntArrayArray171[arg0].length];
 			Static734.method7702(this.anIntArrayArray171[arg0], 0, local77, 0, local77.length);
 			for (@Pc(99) int local99 = local66; local99 < local77.length; local99++) {
-				@Pc(112) int local112 = local66 + Static623.method8333(-5208, local77.length - local66, local70);
+				@Pc(112) int local112 = local66 + Static623.method8333(local77.length - local66, local70);
 				@Pc(116) int local116 = local77[local99];
 				local77[local99] = local77[local112];
 				local77[local112] = local116;

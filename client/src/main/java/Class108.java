@@ -36,7 +36,6 @@ public final class Class108 {
 			this.anInt2634 = arg1.method7403();
 		} else if (arg0 == 5) {
 			this.anInt2630 = arg1.method7389();
-			return;
 		}
 	}
 

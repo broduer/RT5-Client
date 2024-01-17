@@ -114,7 +114,7 @@ public final class Class47_Sub1 extends Class47 {
 			}
 		}
 		@Pc(50) Class2 local50 = new Class2();
-		local50.aLong328 = (long) arg0;
+		local50.aLong328 = arg0;
 		this.aClass341_41.method7718(local50);
 	}
 
@@ -166,7 +166,7 @@ public final class Class47_Sub1 extends Class47 {
 						}
 						if (this.aByteArray88[this.anInt7497] == 0) {
 							local147 = new Class2();
-							local147.aLong328 = (long) this.anInt7497;
+							local147.aLong328 = this.anInt7497;
 							local33 = false;
 							this.aClass341_42.method7718(local147);
 						}
@@ -203,7 +203,7 @@ public final class Class47_Sub1 extends Class47 {
 						}
 						if (this.aByteArray88[this.anInt7497] != 1) {
 							local147 = new Class2();
-							local147.aLong328 = (long) this.anInt7497;
+							local147.aLong328 = this.anInt7497;
 							this.aClass341_42.method7718(local147);
 							local33 = false;
 						}
@@ -256,7 +256,7 @@ public final class Class47_Sub1 extends Class47 {
 
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(III)Lclient!tw;")
 	private Class2_Sub2_Sub17 method6658(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738((long) arg0);
+		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738(arg0);
 		if (local19 != null && arg1 == 0 && !local19.aBoolean778 && local19.aBoolean779) {
 			local19.method9464();
 			local19 = null;
@@ -290,7 +290,7 @@ public final class Class47_Sub1 extends Class47 {
 			} else {
 				throw new RuntimeException();
 			}
-			this.aClass28_36.method735((long) arg0, local19);
+			this.aClass28_36.method735(arg0, local19);
 		}
 		if (local19.aBoolean779) {
 			return null;
@@ -336,7 +336,7 @@ public final class Class47_Sub1 extends Class47 {
 				local19.method9464();
 				if (local19.aBoolean778 && !this.aClass297_2.method6637()) {
 					local383 = this.aClass297_2.method6640(this.anInt7487, arg0, true, (byte) 2);
-					this.aClass28_36.method735((long) arg0, local383);
+					this.aClass28_36.method735(arg0, local383);
 				}
 				return null;
 			}
@@ -390,7 +390,7 @@ public final class Class47_Sub1 extends Class47 {
 			local19.method9464();
 			if (local19.aBoolean778 && !this.aClass297_2.method6637()) {
 				local383 = this.aClass297_2.method6640(this.anInt7487, arg0, true, (byte) 2);
-				this.aClass28_36.method735((long) arg0, local383);
+				this.aClass28_36.method735(arg0, local383);
 			}
 			return null;
 		}
@@ -399,7 +399,7 @@ public final class Class47_Sub1 extends Class47 {
 	@OriginalMember(owner = "client!pm", name = "a", descriptor = "(BI)I")
 	@Override
 	public int method6644(@OriginalArg(1) int arg0) {
-		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738((long) arg0);
+		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738(arg0);
 		return local19 == null ? 0 : local19.method8979();
 	}
 
@@ -425,7 +425,7 @@ public final class Class47_Sub1 extends Class47 {
 			}
 		}
 		if (false) {
-			Static498.method6657((Class8_Sub2[]) null, -92, -16);
+			Static498.method6657(null, -92, -16);
 		}
 	}
 

@@ -295,7 +295,7 @@ public final class Class384 {
 		if (this.aClass28_44 == null) {
 			return arg1;
 		} else {
-			@Pc(19) Class2_Sub38 local19 = (Class2_Sub38) this.aClass28_44.method738((long) arg0);
+			@Pc(19) Class2_Sub38 local19 = (Class2_Sub38) this.aClass28_44.method738(arg0);
 			return local19 == null ? arg1 : local19.anInt6399;
 		}
 	}
@@ -486,7 +486,7 @@ public final class Class384 {
 					} else {
 						local567 = new Class2_Sub38(arg0.method7356());
 					}
-					this.aClass28_44.method735((long) local558, local567);
+					this.aClass28_44.method735(local558, local567);
 				}
 			}
 		}
@@ -580,7 +580,7 @@ public final class Class384 {
 		arg6.ya();
 		arg6.la();
 		arg6.aa(0, 0, 36, 32, 0, 0);
-		local244.method7480(local414, (Class8_Sub6) null, 1);
+		local244.method7480(local414, null, 1);
 		arg6.f(local480, local483);
 		@Pc(515) int[] local515 = arg6.na(0, 0, 36, 32);
 		if (arg8 >= 1) {
@@ -701,7 +701,7 @@ public final class Class384 {
 		if (this.aClass28_44 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_44.method738((long) arg1);
+			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_44.method738(arg1);
 			return local17 == null ? arg0 : local17.aString46;
 		}
 	}
@@ -850,7 +850,7 @@ public final class Class384 {
 		@Pc(87) Class82 local87 = this.aClass112_2.aClass82_58;
 		@Pc(104) Class114 local104;
 		synchronized (this.aClass112_2.aClass82_58) {
-			local104 = (Class114) this.aClass112_2.aClass82_58.method2156((long) (this.anInt10162 | arg4.anInt8986 << 29));
+			local104 = (Class114) this.aClass112_2.aClass82_58.method2156(this.anInt10162 | arg4.anInt8986 << 29);
 		}
 		if (local104 == null || arg4.method7967(local104.ua(), local17) != 0) {
 			if (local104 != null) {
@@ -910,7 +910,7 @@ public final class Class384 {
 			local104.s(local17);
 			@Pc(426) Class82 local426 = this.aClass112_2.aClass82_58;
 			synchronized (this.aClass112_2.aClass82_58) {
-				this.aClass112_2.aClass82_58.method2150(local104, (long) (this.anInt10162 | arg4.anInt8986 << 29));
+				this.aClass112_2.aClass82_58.method2150(local104, this.anInt10162 | arg4.anInt8986 << 29);
 			}
 		}
 		if (arg0 != null) {

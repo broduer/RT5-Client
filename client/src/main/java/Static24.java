@@ -15,7 +15,7 @@ public final class Static24 {
 
 	@OriginalMember(owner = "client!aq", name = "a", descriptor = "(I)V")
 	public static void method680() {
-		Static147.method2421((long) Static333.anInt5474, Static163.aClass19_17);
+		Static147.method2421(Static333.anInt5474, Static163.aClass19_17);
 		if (Static377.anInt5950 != -1) {
 			Static26.method716(Static377.anInt5950);
 		}

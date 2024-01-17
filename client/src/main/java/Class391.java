@@ -30,13 +30,13 @@ public final class Class391 {
 
 	@OriginalMember(owner = "client!vla", name = "a", descriptor = "(B)Lclient!wp;")
 	public synchronized Class409 method8941() {
-		@Pc(13) Class409 local13 = (Class409) this.aClass269_2.aClass82_143.method2156((long) this.anInt10333);
+		@Pc(13) Class409 local13 = (Class409) this.aClass269_2.aClass82_143.method2156(this.anInt10333);
 		if (local13 != null) {
 			return local13;
 		}
 		local13 = Static735.method9389(this.aClass269_2.aClass332_88, this.anInt10333, 0);
 		if (local13 != null) {
-			this.aClass269_2.aClass82_143.method2150(local13, (long) this.anInt10333);
+			this.aClass269_2.aClass82_143.method2150(local13, this.anInt10333);
 		}
 		return local13;
 	}

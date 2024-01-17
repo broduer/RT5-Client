@@ -89,7 +89,7 @@ public final class Class2_Sub2_Sub12 extends Class2_Sub2 {
 			}
 			@Pc(22) int local22 = this.method3898(local15).anInt4590;
 			if (local22 > 0) {
-				arg0.method7376(local22, (long) arg1[local15]);
+				arg0.method7376(local22, arg1[local15]);
 			}
 		}
 	}

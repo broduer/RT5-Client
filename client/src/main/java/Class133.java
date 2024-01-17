@@ -37,7 +37,7 @@ public final class Class133 implements Interface13 {
 	public void method7756() {
 		@Pc(27) int local27 = this.aClass125_1.aClass405_2.method9339(Static302.anInt4867, this.aClass125_1.anInt2874) + this.aClass125_1.anInt2877;
 		@Pc(41) int local41 = this.aClass125_1.aClass103_3.method2416(Static479.anInt7222, this.aClass125_1.anInt2868) + this.aClass125_1.anInt2878;
-		this.aClass14_4.method8833(0, (int[]) null, this.aClass125_1.anInt2876, this.aClass125_1.aString30, (Class1) null, (Class23[]) null, local41, this.aClass125_1.anInt2871, 0, this.aClass125_1.anInt2869, local27, this.aClass125_1.anInt2879, this.aClass125_1.anInt2875, this.aClass125_1.anInt2874, this.aClass125_1.anInt2868);
+		this.aClass14_4.method8833(0, null, this.aClass125_1.anInt2876, this.aClass125_1.aString30, null, null, local41, this.aClass125_1.anInt2871, 0, this.aClass125_1.anInt2869, local27, this.aClass125_1.anInt2879, this.aClass125_1.anInt2875, this.aClass125_1.anInt2874, this.aClass125_1.anInt2868);
 	}
 
 	@OriginalMember(owner = "client!fo", name = "b", descriptor = "(I)Z")

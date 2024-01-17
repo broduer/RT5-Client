@@ -22,10 +22,7 @@ public final class Class2_Sub1_Sub4 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		if (arg0 <= 107) {
-			this.anInt1173 = -17;
-		}
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(19) int[] local19 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(27) int local27 = Static273.anIntArray341[arg1];
@@ -38,7 +35,7 @@ public final class Class2_Sub1_Sub4 extends Class2_Sub1 {
 					local58 = this.anInt1173 * (local41 - local27);
 				} else {
 					@Pc(70) int local70 = local47 * local47 + local33 * local33 >> 12;
-					local58 = (int) (Math.sqrt((double) ((float) local70 / 4096.0F)) * 4096.0D);
+					local58 = (int) (Math.sqrt((float) local70 / 4096.0F) * 4096.0D);
 					local58 = (int) ((double) (local58 * this.anInt1173) * 3.141592653589793D);
 				}
 				local58 -= local58 & 0xFFFFF000;
@@ -59,19 +56,13 @@ public final class Class2_Sub1_Sub4 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!bu", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
+	public void method9428() {
 		Static481.method6482();
-		if (arg0 != 7) {
-			Static58.anInt1181 = -19;
-		}
 	}
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			return;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt1178 = arg1.method7403();
 		} else if (arg2 == 1) {

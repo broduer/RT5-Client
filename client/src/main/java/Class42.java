@@ -309,7 +309,7 @@ public final class Class42 {
 		}
 		if (this.aClass2_Sub21_Sub1_1.anInt8412 != 0) {
 			this.anInterface12_1.method5009(this.aClass2_Sub21_Sub1_1.aByteArray93, this.aClass2_Sub21_Sub1_1.anInt8412, 24);
-			arg0.method7046(this.aClass94_2, (Class94) null, this.aClass94_1, this.aClass94_3);
+			arg0.method7046(this.aClass94_2, null, this.aClass94_1, this.aClass94_3);
 			arg0.method7005(this.aClass2_Sub21_Sub1_1.anInt8412 / 24);
 		}
 	}
@@ -436,7 +436,7 @@ public final class Class42 {
 
 	@OriginalMember(owner = "client!bj", name = "b", descriptor = "(ILclient!qha;)V")
 	public void method1081(@OriginalArg(1) Class19_Sub3 arg0) {
-		this.anInterface12_1 = arg0.method7031(true, 196584, (byte[]) null, 24);
+		this.anInterface12_1 = arg0.method7031(true, 196584, null, 24);
 		this.aClass94_3 = new Class94(this.anInterface12_1, 5126, 2, 0);
 		this.aClass94_1 = new Class94(this.anInterface12_1, 5126, 3, 8);
 		this.aClass94_2 = new Class94(this.anInterface12_1, 5121, 4, 20);

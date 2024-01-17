@@ -66,7 +66,7 @@ public final class Class51_Sub4 extends Class51 implements Interface18 {
 		this.anInt9895 = arg4;
 		this.anInt9891 = arg3;
 		super.aClass19_Sub1_Sub2_12.method8095(this);
-		OpenGL.glTexImage2Dub(super.anInt9874, 0, this.method8638(), arg3, arg4, 0, Static468.method7651(super.aClass92_14), Static248.method3526(super.aClass399_11), (byte[]) null, 0);
+		OpenGL.glTexImage2Dub(super.anInt9874, 0, this.method8638(), arg3, arg4, 0, Static468.method7651(super.aClass92_14), Static248.method3526(super.aClass399_11), null, 0);
 	}
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(FB)F")

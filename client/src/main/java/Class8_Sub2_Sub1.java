@@ -139,7 +139,7 @@ public abstract class Class8_Sub2_Sub1 extends Class8_Sub2 {
 	@Override
 	public final boolean method9291(@OriginalArg(0) byte arg0, @OriginalArg(1) Class19 arg1) {
 		if (arg0 != 59) {
-			this.method9291((byte) -4, (Class19) null);
+			this.method9291((byte) -4, null);
 		}
 		return Static15.method188(this.aShort132, this.aShort134, this.method9285(arg1, -115), this.aShort133, this.aShort131, super.aByte143);
 	}

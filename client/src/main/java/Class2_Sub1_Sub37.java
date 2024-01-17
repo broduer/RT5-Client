@@ -38,18 +38,15 @@ public final class Class2_Sub1_Sub37 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!wfa", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
+	public void method9428() {
 		if (this.anIntArrayArray259 == null) {
 			this.anIntArrayArray259 = new int[][] { new int[2], { 4096, 4096 } };
-		}
-		if (arg0 != 7) {
-			return;
 		}
 		if (this.anIntArrayArray259.length < 2) {
 			throw new RuntimeException("Curve operation requires at least two markers");
 		}
 		if (this.anInt10666 == 2) {
-			this.method9225(arg0 ^ 0xFFFFFFF9);
+			this.method9225(7 ^ 0xFFFFFFF9);
 		}
 		Static481.method6482();
 		this.method9229();
@@ -57,7 +54,7 @@ public final class Class2_Sub1_Sub37 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(21) int[] local21 = this.method9429(arg1, 0);
@@ -72,18 +69,12 @@ public final class Class2_Sub1_Sub37 extends Class2_Sub1 {
 				local11[local23] = this.aShortArray147[local31];
 			}
 		}
-		if (arg0 <= 107) {
-			Static706.anInt10661 = 6;
-		}
 		return local11;
 	}
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			Static706.aClass178Array3 = null;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 != 0) {
 			return;
 		}

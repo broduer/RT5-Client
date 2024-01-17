@@ -137,7 +137,7 @@ public final class Class8_Sub8 extends Class8 {
 				this.anInt8300 = local235 * local226 - local252 * local210;
 				while (true) {
 					if (this.anInt8298 <= 32767 && this.anInt8300 <= 32767 && this.anInt8301 <= 32767 && this.anInt8298 >= -32767 && this.anInt8300 >= -32767 && this.anInt8301 >= -32767) {
-						local362 = (int) Math.sqrt((double) (this.anInt8298 * this.anInt8298 + this.anInt8300 * this.anInt8300 + this.anInt8301 * this.anInt8301));
+						local362 = (int) Math.sqrt(this.anInt8298 * this.anInt8298 + this.anInt8300 * this.anInt8300 + this.anInt8301 * this.anInt8301);
 						if (local362 <= 0) {
 							local362 = 1;
 						}
@@ -145,8 +145,8 @@ public final class Class8_Sub8 extends Class8 {
 						this.anInt8298 = this.anInt8298 * 32767 / local362;
 						this.anInt8301 = this.anInt8301 * 32767 / local362;
 						if (this.aClass381_1.aShort125 > 0 || this.aClass381_1.aShort126 > 0) {
-							local414 = (int) (Math.atan2((double) this.anInt8301, (double) this.anInt8298) * 2607.5945876176133D);
-							local435 = (int) (Math.atan2((double) this.anInt8300, Math.sqrt((double) (this.anInt8298 * this.anInt8298 + this.anInt8301 * this.anInt8301))) * 2607.5945876176133D);
+							local414 = (int) (Math.atan2(this.anInt8301, this.anInt8298) * 2607.5945876176133D);
+							local435 = (int) (Math.atan2(this.anInt8300, Math.sqrt(this.anInt8298 * this.anInt8298 + this.anInt8301 * this.anInt8301)) * 2607.5945876176133D);
 							this.anInt8296 = this.aClass381_1.aShort125 - this.aClass381_1.aShort124;
 							this.anInt8295 = this.aClass381_1.aShort124 + local414 - (this.anInt8296 >> 1);
 							this.anInt8297 = this.aClass381_1.aShort126 - this.aClass381_1.aShort127;

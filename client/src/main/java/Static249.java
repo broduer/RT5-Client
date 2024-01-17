@@ -42,7 +42,7 @@ public final class Static249 {
 		} else if (arg0.anInt7338 != -1) {
 			local17 = Static419.aClass112_1.method2486(arg0.anInt7338).anIntArray800;
 		} else if (Static598.method7832(arg0.anInt7335)) {
-			@Pc(51) Class2_Sub45 local51 = (Class2_Sub45) Static18.aClass28_2.method738((long) (int) arg0.aLong233);
+			@Pc(51) Class2_Sub45 local51 = (Class2_Sub45) Static18.aClass28_2.method738((int) arg0.aLong233);
 			if (local51 != null) {
 				@Pc(56) Class8_Sub2_Sub1_Sub2_Sub2 local56 = local51.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(59) Class270 local59 = local56.aClass270_1;

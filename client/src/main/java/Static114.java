@@ -33,7 +33,7 @@ public final class Static114 {
 		}
 		@Pc(112) int local112 = local81 * arg0 + local77 * arg6 >> 14;
 		@Pc(123) int local123 = local81 * arg6 - arg0 * local77 >> 14;
-		@Pc(129) double local129 = Math.atan2((double) local112, (double) local123);
+		@Pc(129) double local129 = Math.atan2(local112, local123);
 		@Pc(136) int local136 = (int) ((double) local37 * Math.sin(local129));
 		@Pc(143) int local143 = (int) ((double) local37 * Math.cos(local129));
 		Static558.aClass23Array7[arg4].method8193((float) local136 + (float) arg7.anInt3813 / 2.0F + (float) arg1, (float) -local143 + (float) arg7.anInt3756 / 2.0F + (float) arg5, 4096, (int) (-local129 / 6.283185307179586D * 65535.0D));

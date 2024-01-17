@@ -87,7 +87,7 @@ public final class Class2_Sub1_Sub12 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!jk", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(11) int[] local11 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(23) int local23 = this.anInt4871 + this.anInt4871 + 1;
@@ -120,18 +120,12 @@ public final class Class2_Sub1_Sub12 extends Class2_Sub1 {
 				local11[local146] = local150 * local27 >> 16;
 			}
 		}
-		if (arg0 < 107) {
-			this.method9418(-16, 56);
-		}
 		return local11;
 	}
 
 	@OriginalMember(owner = "client!jk", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			return;
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			this.anInt4866 = arg1.method7403();
 		} else if (arg2 == 1) {

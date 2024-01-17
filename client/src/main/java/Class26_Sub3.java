@@ -98,9 +98,9 @@ public final class Class26_Sub3 extends Class26 {
 			return;
 		}
 		super.aClass19_Sub1_21.method8145(1);
-		super.aClass19_Sub1_21.method8095((Interface17) null);
+		super.aClass19_Sub1_21.method8095(null);
 		super.aClass19_Sub1_21.method8145(0);
-		super.aClass19_Sub1_21.method8095((Interface17) null);
+		super.aClass19_Sub1_21.method8095(null);
 		OpenGL.glUseProgramObjectARB(0L);
 		this.aBoolean244 = false;
 	}

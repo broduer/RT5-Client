@@ -129,7 +129,7 @@ public final class Class23_Sub3 extends Class23 {
 		this.aClass19_Sub1_12.method8038();
 		this.aClass19_Sub1_12.method8087(0, Static189.aClass168_2);
 		this.aClass19_Sub1_12.method8101(Static209.aClass121_4, Static209.aClass121_4);
-		this.aClass19_Sub1_12.method8095((Interface17) null);
+		this.aClass19_Sub1_12.method8095(null);
 		this.aClass19_Sub1_12.method8145(0);
 		this.aClass19_Sub1_12.method8038();
 	}
@@ -383,7 +383,7 @@ public final class Class23_Sub3 extends Class23 {
 		@Pc(13) Class73_Sub1 local13 = this.aClass19_Sub1_12.method8089();
 		@Pc(16) Class1_Sub2 local16 = (Class1_Sub2) arg6;
 		@Pc(19) Interface18 local19 = local16.anInterface18_2;
-		this.anInterface18_3.method9048(this.aBoolean494 || this.aBoolean495 || (0x1 & 0x1) == 0 ? Static363.aClass261_14 : Static60.aClass261_3);
+		this.anInterface18_3.method9048(this.aBoolean494 || this.aBoolean495 ? Static363.aClass261_14 : Static60.aClass261_3);
 		this.aClass19_Sub1_12.method8106();
 		this.aClass19_Sub1_12.method8095(this.anInterface18_3);
 		this.aClass19_Sub1_12.method8060(1);
@@ -413,7 +413,7 @@ public final class Class23_Sub3 extends Class23 {
 		this.aClass19_Sub1_12.method8038();
 		this.aClass19_Sub1_12.method8087(0, Static189.aClass168_2);
 		this.aClass19_Sub1_12.method8101(Static209.aClass121_4, Static209.aClass121_4);
-		this.aClass19_Sub1_12.method8095((Interface17) null);
+		this.aClass19_Sub1_12.method8095(null);
 		this.aClass19_Sub1_12.method8145(0);
 		this.aClass19_Sub1_12.method8038();
 	}
@@ -423,7 +423,7 @@ public final class Class23_Sub3 extends Class23 {
 	protected void method8207(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3, @OriginalArg(4) float arg4, @OriginalArg(5) float arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7) {
 		@Pc(8) Class73_Sub1 local8 = this.aClass19_Sub1_12.method8047();
 		@Pc(13) Class73_Sub1 local13 = this.aClass19_Sub1_12.method8089();
-		this.anInterface18_3.method9048(this.aBoolean494 || this.aBoolean495 || (0x1 & 0x1) == 0 ? Static363.aClass261_14 : Static60.aClass261_3);
+		this.anInterface18_3.method9048(this.aBoolean494 || this.aBoolean495 ? Static363.aClass261_14 : Static60.aClass261_3);
 		this.aClass19_Sub1_12.method8106();
 		this.aClass19_Sub1_12.method8095(this.anInterface18_3);
 		this.aClass19_Sub1_12.method8060(1);

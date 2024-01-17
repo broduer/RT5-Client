@@ -198,7 +198,7 @@ public final class Class14_Sub2 extends Class14 {
 		OpenGL.glDisable(3169);
 		this.aClass19_Sub3_16.method7028(5890, 768, 0);
 		this.aClass19_Sub3_16.method7038(8448, 8448);
-		this.aClass19_Sub3_16.method7008((Class93) null);
+		this.aClass19_Sub3_16.method7008(null);
 		this.aClass19_Sub3_16.method7021(0);
 		if (this.aBoolean275 || arg4) {
 			this.aClass19_Sub3_16.method7028(5890, 768, 0);

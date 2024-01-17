@@ -175,7 +175,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 				this.aLong29 += (long) local55 * (long) local14;
 				this.aClass2_Sub6_Sub4_1.method9138(arg0, arg1, local55);
 				arg1 += local55;
-				this.method932((byte) -89);
+				this.method932();
 				arg2 -= local55;
 			} while (this.aClass40_1.method1055());
 		}
@@ -204,9 +204,6 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 			this.aClass40_1.method1063(local26);
 			this.aClass40_1.method1069(local26);
 			this.aClass40_1.method1058(local26);
-		}
-		if (18429 != 18429) {
-			this.method917(68, 61);
 		}
 		this.anInt844 = this.aClass40_1.method1062();
 		this.anInt845 = this.aClass40_1.anIntArray70[this.anInt844];
@@ -581,13 +578,13 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "c", descriptor = "(B)V")
-	private void method932(@OriginalArg(0) byte arg0) {
+	private void method932() {
 		@Pc(8) int local8 = this.anInt844;
 		@Pc(11) int local11 = this.anInt845;
 		@Pc(14) long local14 = this.aLong28;
 		if (this.aClass2_Sub8_1 != null && this.anInt846 == local11) {
 			this.method913(this.aBoolean65, this.aBoolean66, this.aClass2_Sub8_1);
-			this.method932((byte) -98);
+			this.method932();
 			return;
 		}
 		while (this.anInt845 == local11) {
@@ -600,7 +597,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 					if (this.aClass40_1.method1068()) {
 						if (this.aClass2_Sub8_1 != null) {
 							this.method934(this.aClass2_Sub8_1, this.aBoolean65);
-							this.method932((byte) -119);
+							this.method932();
 							return;
 						}
 						if (!this.aBoolean65 || local11 == 0) {
@@ -621,9 +618,6 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 			local8 = this.aClass40_1.method1062();
 			local11 = this.aClass40_1.anIntArray70[local8];
 			local14 = this.aClass40_1.method1056(local11);
-		}
-		if (arg0 >= -19) {
-			this.anInt845 = -58;
 		}
 		this.anInt844 = local8;
 		this.aLong28 = local14;
@@ -664,7 +658,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 				}
 			}
 		}
-		@Pc(117) Class2_Sub11 local117 = (Class2_Sub11) this.aClass28_7.method738((long) this.anIntArray54[arg0]);
+		@Pc(117) Class2_Sub11 local117 = (Class2_Sub11) this.aClass28_7.method738(this.anIntArray54[arg0]);
 		if (local117 == null) {
 			return;
 		}
@@ -790,14 +784,14 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 		@Pc(29) int[] local29 = new int[] { 22050 };
 		for (@Pc(35) Class2_Sub55 local35 = (Class2_Sub55) arg2.aClass28_8.method736(); local35 != null; local35 = (Class2_Sub55) arg2.aClass28_8.method740()) {
 			@Pc(40) int local40 = (int) local35.aLong328;
-			@Pc(48) Class2_Sub11 local48 = (Class2_Sub11) this.aClass28_7.method738((long) local40);
+			@Pc(48) Class2_Sub11 local48 = (Class2_Sub11) this.aClass28_7.method738(local40);
 			if (local48 == null) {
 				local48 = Static680.method8924(arg1, local40);
 				if (local48 == null) {
 					local15 = false;
 					continue;
 				}
-				this.aClass28_7.method735((long) local40, local48);
+				this.aClass28_7.method735(local40, local48);
 			}
 			if (!local48.method1526(arg0, local29, local35.aByteArray105)) {
 				local15 = false;
@@ -824,7 +818,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 				this.aLong29 += (long) local58 * (long) local18;
 				this.aClass2_Sub6_Sub4_1.method9137(local58);
 				arg0 -= local58;
-				this.method932((byte) -117);
+				this.method932();
 			} while (this.aClass40_1.method1055());
 		}
 		this.aClass2_Sub6_Sub4_1.method9137(arg0);

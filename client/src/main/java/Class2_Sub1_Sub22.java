@@ -16,18 +16,12 @@ public final class Class2_Sub1_Sub22 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ola", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
-		if (arg0) {
-			this.method9423(true, (Class2_Sub21) null, 2);
-		}
-		if (arg2 == 0) {
-			this.anInt7055 = arg1.method7389();
-		}
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 	}
 
 	@OriginalMember(owner = "client!ola", name = "a", descriptor = "(II)[I")
 	@Override
-	public int[] method9418(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public int[] method9418(@OriginalArg(1) int arg1) {
 		@Pc(18) int[] local18 = super.aClass180_41.method3935(arg1);
 		if (super.aClass180_41.aBoolean338) {
 			@Pc(32) int[] local32 = this.method9429(Static489.anInt7364 & arg1 - 1, 0);
@@ -40,7 +34,7 @@ public final class Class2_Sub1_Sub22 extends Class2_Sub1 {
 				@Pc(91) int local91 = local63 >> 12;
 				@Pc(97) int local97 = local87 * local87 >> 12;
 				@Pc(103) int local103 = local91 * local91 >> 12;
-				@Pc(118) int local118 = (int) (Math.sqrt((double) ((float) (local97 + local103 + 4096) / 4096.0F)) * 4096.0D);
+				@Pc(118) int local118 = (int) (Math.sqrt((float) (local97 + local103 + 4096) / 4096.0F) * 4096.0D);
 				@Pc(130) int local130 = local118 == 0 ? 0 : 16777216 / local118;
 				local18[local50] = 4096 - local130;
 			}

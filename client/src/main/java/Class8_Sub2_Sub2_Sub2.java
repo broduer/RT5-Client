@@ -51,7 +51,7 @@ public final class Class8_Sub2_Sub2_Sub2 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != -5) {
-			this.method3581((Class150) null);
+			this.method3581(null);
 		}
 		@Pc(21) Class114 local21 = this.aClass339_2.method7685(arg0, true, true, true, 262144);
 		if (local21 == null) {
@@ -121,7 +121,7 @@ public final class Class8_Sub2_Sub2_Sub2 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public int method9293(@OriginalArg(0) int arg0) {
 		if (arg0 != 2) {
-			this.method6864((Class19) null, 33);
+			this.method6864(null, 33);
 		}
 		return this.aClass339_2.method7678();
 	}

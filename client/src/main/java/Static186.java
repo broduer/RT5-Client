@@ -18,7 +18,7 @@ public final class Static186 {
 	@OriginalMember(owner = "client!fo", name = "a", descriptor = "(IIIBIIZ)V")
 	public static void method2818(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) boolean arg5) {
 		if ((arg5 ? Static400.aClass2_Sub34_28.aClass57_Sub25_3.method7215() : Static400.aClass2_Sub34_28.aClass57_Sub25_4.method7215()) != 0 && arg1 != 0 && Static33.anInt782 < 50 && arg0 != -1) {
-			Static409.aClass104Array1[Static33.anInt782++] = new Class104((byte) (arg5 ? 3 : 2), arg0, arg1, arg3, arg4, 0, arg2, (Class8_Sub2) null);
+			Static409.aClass104Array1[Static33.anInt782++] = new Class104((byte) (arg5 ? 3 : 2), arg0, arg1, arg3, arg4, 0, arg2, null);
 		}
 	}
 

@@ -97,7 +97,7 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 	@Override
 	public boolean method9286(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class19 arg3) {
 		if (arg2) {
-			this.method6864((Class19) null, 39);
+			this.method6864(null, 39);
 		}
 		@Pc(18) Class114 local18 = this.method4041(131072, arg3);
 		if (local18 == null) {
@@ -133,7 +133,7 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 			this.aClass2_Sub2_Sub9_2 = null;
 		}
 		if (local37 != null) {
-			Static630.method8364(local37, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static630.method8364(local37, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 	}
 
@@ -167,7 +167,7 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 			this.aClass2_Sub2_Sub9_2 = null;
 		}
 		if (arg1 < -42 && local28 != null) {
-			Static292.method4625(local28, super.aByte143, super.anInt10718, super.anInt10722, (boolean[]) null);
+			Static292.method4625(local28, super.aByte143, super.anInt10718, super.anInt10722, null);
 		}
 	}
 
@@ -203,7 +203,7 @@ public final class Class8_Sub2_Sub4_Sub1 extends Class8_Sub2_Sub4 implements Int
 				local24 = null;
 			}
 		}
-		return local17.method1309(this.aByte78, super.anInt10722, super.anInt10718, local29, arg2, super.anInt10719, this.aByte77, arg0, (Class150) null, arg1, local24);
+		return local17.method1309(this.aByte78, super.anInt10722, super.anInt10718, local29, arg2, super.anInt10719, this.aByte77, arg0, null, arg1, local24);
 	}
 
 	@OriginalMember(owner = "client!im", name = "b", descriptor = "(I)I")

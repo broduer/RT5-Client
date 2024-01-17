@@ -33,7 +33,7 @@ public final class Static232 {
 		} else if (arg6.anInt7338 != -1) {
 			local49 = Static419.aClass112_1.method2486(arg6.anInt7338).anIntArray800;
 		} else if (Static598.method7832(arg6.anInt7335)) {
-			@Pc(110) Class2_Sub45 local110 = (Class2_Sub45) Static18.aClass28_2.method738((long) (int) arg6.aLong233);
+			@Pc(110) Class2_Sub45 local110 = (Class2_Sub45) Static18.aClass28_2.method738((int) arg6.aLong233);
 			if (local110 != null) {
 				@Pc(115) Class8_Sub2_Sub1_Sub2_Sub2 local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(118) Class270 local118 = local115.aClass270_1;

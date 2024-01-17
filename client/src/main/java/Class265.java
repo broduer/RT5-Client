@@ -127,7 +127,7 @@ public final class Class265 implements Runnable {
 				break;
 			}
 		} catch (@Pc(122) Exception local122) {
-			Static240.method3496(local122, (String) null);
+			Static240.method3496(local122, null);
 		}
 	}
 

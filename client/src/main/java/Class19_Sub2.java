@@ -415,7 +415,7 @@ public final class Class19_Sub2 extends Class19 {
 			}
 			return;
 		}
-		@Pc(10) Class2_Sub10 local10 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(10) Class2_Sub10 local10 = (Class2_Sub10) this.aClass28_20.method738(arg0.hashCode());
 		if (local10 == null) {
 			return;
 		}
@@ -598,7 +598,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4227 != local2) {
-			@Pc(34) Class23 local34 = (Class23) this.aClass82_88.method2156((long) local2);
+			@Pc(34) Class23 local34 = (Class23) this.aClass82_88.method2156(local2);
 			if (local34 == null) {
 				@Pc(40) int[] local40 = this.method3788(local2);
 				if (local40 == null) {
@@ -606,7 +606,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(54) int local54 = this.method3798(local2) ? 64 : this.anInt4210;
 				local34 = this.method7953(local54, local54, local54, local40);
-				this.aClass82_88.method2150(local34, (long) local2);
+				this.aClass82_88.method2150(local34, local2);
 			}
 			this.anInt4227 = local2;
 			this.aClass23_17 = local34;
@@ -906,13 +906,13 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7942(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738(arg0.hashCode());
 		if (local8 == null) {
 			return;
 		}
 		local8.method9464();
 		local8 = Static538.method7199(arg2, arg0, arg1);
-		this.aClass28_20.method735((long) arg0.hashCode(), local8);
+		this.aClass28_20.method735(arg0.hashCode(), local8);
 		if (this.aCanvas3 != arg0 || this.aClass87_1 != null) {
 			return;
 		}
@@ -1154,7 +1154,7 @@ public final class Class19_Sub2 extends Class19 {
 	public void ZA(@OriginalArg(0) int arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3, @OriginalArg(4) float arg4, @OriginalArg(5) float arg5) {
 		this.anInt4202 = (int) (arg1 * 65535.0F);
 		this.anInt4198 = (int) (arg2 * 65535.0F);
-		@Pc(26) float local26 = (float) Math.sqrt((double) (arg3 * arg3 + arg4 * arg4 + arg5 * arg5));
+		@Pc(26) float local26 = (float) Math.sqrt(arg3 * arg3 + arg4 * arg4 + arg5 * arg5);
 		this.anInt4200 = (int) (arg3 * 65535.0F / local26);
 		this.anInt4216 = (int) (arg4 * 65535.0F / local26);
 		this.anInt4209 = (int) (arg5 * 65535.0F / local26);
@@ -1269,7 +1269,7 @@ public final class Class19_Sub2 extends Class19 {
 			@Pc(178) int local178;
 			@Pc(182) int local182;
 			if (arg2 + arg3 < 0) {
-				local178 = (int) (Math.sqrt((double) (arg2 * arg2 + arg3 * arg3)) * 256.0D);
+				local178 = (int) (Math.sqrt(arg2 * arg2 + arg3 * arg3) * 256.0D);
 				local182 = local178 % local31;
 				local35 = local31 + local149 - arg7 - local182;
 				arg7 = local35 % local31;
@@ -1296,7 +1296,7 @@ public final class Class19_Sub2 extends Class19 {
 				local178 = (int) Math.floor((double) local229 / (double) arg2 + 0.5D);
 				local243 = arg2 + arg0;
 				local182 = arg4 >>> 24;
-				local260 = (int) Math.sqrt((double) ((local178 >> 8) * (local178 >> 8) + 65536));
+				local260 = (int) Math.sqrt((local178 >> 8) * (local178 >> 8) + 65536);
 				if (local182 == 255 && true) {
 					while (arg0 <= local243) {
 						local278 = arg1 >> 16;
@@ -1332,7 +1332,7 @@ public final class Class19_Sub2 extends Class19 {
 				local178 = (int) Math.floor((double) local243 / (double) arg3 + 0.5D);
 				local229 = arg3 + arg1;
 				local182 = arg4 >>> 24;
-				local260 = (int) Math.sqrt((double) ((local178 >> 8) * (local178 >> 8) + 65536));
+				local260 = (int) Math.sqrt((local178 >> 8) * (local178 >> 8) + 65536);
 				if (local182 == 255 && true) {
 					while (arg1 <= local229) {
 						local278 = arg0 >> 16;
@@ -1805,7 +1805,7 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "c", descriptor = "(I)V")
 	@Override
 	public void method8023(@OriginalArg(0) int arg0) {
-		this.aClass401Array1[arg0].method9203((Runnable) null);
+		this.aClass401Array1[arg0].method9203(null);
 	}
 
 	@OriginalMember(owner = "client!iaa", name = "j", descriptor = "(I)V")
@@ -1901,7 +1901,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4227 != arg6) {
-			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156((long) arg6);
+			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156(arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -1909,7 +1909,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.anInt4210;
 				local33 = this.method7953(local53, local53, local53, local39);
-				this.aClass82_88.method2150(local33, (long) arg6);
+				this.aClass82_88.method2150(local33, arg6);
 			}
 			this.anInt4227 = arg6;
 			this.aClass23_17 = local33;
@@ -2199,7 +2199,7 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(2) Class82 local2 = this.aClass82_89;
 		@Pc(12) Class2_Sub29 local12;
 		synchronized (this.aClass82_89) {
-			local12 = (Class2_Sub29) this.aClass82_89.method2156((long) arg0);
+			local12 = (Class2_Sub29) this.aClass82_89.method2156(arg0);
 			if (local12 == null) {
 				if (!super.anInterface4_10.method6821(arg0)) {
 					return null;
@@ -2207,7 +2207,7 @@ public final class Class19_Sub2 extends Class19 {
 				@Pc(34) Class118 local34 = super.anInterface4_10.method6824(arg0);
 				@Pc(48) int local48 = local34.aBoolean233 || this.aBoolean332 ? 64 : this.anInt4210;
 				local12 = new Class2_Sub29(arg0, local48, super.anInterface4_10.method6825(local48, true, local48, arg0, 0.7F), local34.anInt2805 != 1);
-				this.aClass82_89.method2150(local12, (long) arg0);
+				this.aClass82_89.method2150(local12, arg0);
 			}
 		}
 		local12.aBoolean341 = true;
@@ -2505,7 +2505,7 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(79) int local79;
 		@Pc(83) int local83;
 		if (arg2 + arg3 < 0) {
-			local79 = (int) (Math.sqrt((double) (arg2 * arg2 + arg3 * arg3)) * 256.0D);
+			local79 = (int) (Math.sqrt(arg2 * arg2 + arg3 * arg3) * 256.0D);
 			local83 = local79 % local50;
 			local38 = local50 + local42 - arg10 - local83;
 			arg10 = local38 % local50;
@@ -2531,7 +2531,7 @@ public final class Class19_Sub2 extends Class19 {
 			arg0 += 32768;
 			local144 = arg2 << 16;
 			local79 = (int) Math.floor((double) local144 / (double) arg3 + 0.5D);
-			local83 = (int) Math.sqrt((double) ((local79 >> 8) * (local79 >> 8) + 65536));
+			local83 = (int) Math.sqrt((local79 >> 8) * (local79 >> 8) + 65536);
 			local130 = arg3 + arg1;
 			local161 = arg4 >>> 24;
 			if (local161 == 255 && true) {
@@ -2572,7 +2572,7 @@ public final class Class19_Sub2 extends Class19 {
 		local79 = (int) Math.floor((double) local130 / (double) arg2 + 0.5D);
 		local144 = arg2 + arg0;
 		local83 = arg4 >>> 24;
-		local161 = (int) Math.sqrt((double) ((local79 >> 8) * (local79 >> 8) + 65536));
+		local161 = (int) Math.sqrt((local79 >> 8) * (local79 >> 8) + 65536);
 		if (local83 == 255 && true) {
 			while (arg0 <= local144) {
 				local179 = arg1 >> 16;
@@ -2729,7 +2729,7 @@ public final class Class19_Sub2 extends Class19 {
 			return;
 		}
 		if (this.anInt4227 != arg6) {
-			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156((long) arg6);
+			@Pc(33) Class23 local33 = (Class23) this.aClass82_88.method2156(arg6);
 			if (local33 == null) {
 				@Pc(39) int[] local39 = this.method3788(arg6);
 				if (local39 == null) {
@@ -2737,7 +2737,7 @@ public final class Class19_Sub2 extends Class19 {
 				}
 				@Pc(53) int local53 = this.method3798(arg6) ? 64 : this.anInt4210;
 				local33 = this.method7953(local53, local53, local53, local39);
-				this.aClass82_88.method2150(local33, (long) arg6);
+				this.aClass82_88.method2150(local33, arg6);
 			}
 			this.anInt4227 = arg6;
 			this.aClass23_17 = local33;
@@ -2791,10 +2791,10 @@ public final class Class19_Sub2 extends Class19 {
 	@OriginalMember(owner = "client!iaa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8029(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(8) Class2_Sub10 local8 = (Class2_Sub10) this.aClass28_20.method738(arg0.hashCode());
 		if (local8 == null) {
 			local8 = Static538.method7199(arg2, arg0, arg1);
-			this.aClass28_20.method735((long) arg0.hashCode(), local8);
+			this.aClass28_20.method735(arg0.hashCode(), local8);
 		} else if (local8.anInt7074 != arg1 || local8.anInt7071 != arg2) {
 			this.method7942(arg0, arg1, arg2);
 		}
@@ -2854,9 +2854,9 @@ public final class Class19_Sub2 extends Class19 {
 	@Override
 	public void method7979(@OriginalArg(0) Canvas arg0) {
 		if (this.aCanvas3 == arg0) {
-			this.method8026((Canvas) null);
+			this.method8026(null);
 		}
-		@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) this.aClass28_20.method738((long) arg0.hashCode());
+		@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) this.aClass28_20.method738(arg0.hashCode());
 		if (local17 != null) {
 			local17.method9464();
 		}

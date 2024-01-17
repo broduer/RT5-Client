@@ -23,7 +23,7 @@ public final class Class26_Sub2 extends Class26 {
 	public void method8297(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		super.aClass19_Sub1_21.method8145(1);
 		if ((arg0 & 0x80) != 0) {
-			super.aClass19_Sub1_21.method8095((Interface17) null);
+			super.aClass19_Sub1_21.method8095(null);
 		} else if ((arg1 & 0x1) == 1) {
 			if (this.aClass7_3.aBoolean7) {
 				this.aFloat33 = (float) (super.aClass19_Sub1_21.anInt9190 % 4000) / 4000.0F;
@@ -68,7 +68,7 @@ public final class Class26_Sub2 extends Class26 {
 		super.aClass19_Sub1_21.method8087(0, Static189.aClass168_2);
 		super.aClass19_Sub1_21.method8149(Static189.aClass168_2, 0);
 		super.aClass19_Sub1_21.method8062(1);
-		super.aClass19_Sub1_21.method8095((Interface17) null);
+		super.aClass19_Sub1_21.method8095(null);
 		super.aClass19_Sub1_21.method8145(0);
 		super.aClass19_Sub1_21.method8149(Static189.aClass168_2, 0);
 	}

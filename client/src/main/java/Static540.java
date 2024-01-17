@@ -37,7 +37,7 @@ public final class Static540 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IBI)V")
 	public static void method6544(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5970(1, (long) arg1);
+		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5970(1, arg1);
 		local16.method202();
 		local16.anInt197 = arg0;
 	}

@@ -297,19 +297,16 @@ public final class Class2_Sub1_Sub14 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!kg", name = "c", descriptor = "(I)V")
 	@Override
-	public void method9428(@OriginalArg(0) int arg0) {
+	public void method9428() {
 		if (this.anIntArrayArray125 == null) {
 			this.method4900(1);
 		}
 		this.method4903();
-		if (arg0 != 7) {
-			Static327.aClass158_7 = null;
-		}
 	}
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
 			@Pc(14) int local14 = arg1.method7403();
 			if (local14 == 0) {
@@ -323,9 +320,6 @@ public final class Class2_Sub1_Sub14 extends Class2_Sub1 {
 			} else {
 				this.method4900(local14);
 			}
-		}
-		if (arg0) {
-			this.anIntArrayArray125 = null;
 		}
 	}
 }

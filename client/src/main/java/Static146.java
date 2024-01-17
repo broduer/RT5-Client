@@ -44,7 +44,7 @@ public final class Static146 {
 
 	@OriginalMember(owner = "client!ek", name = "a", descriptor = "(II)Ljava/lang/String;")
 	public static String method2414(@OriginalArg(1) int arg0) {
-		@Pc(16) Class2_Sub5 local16 = (Class2_Sub5) Static106.aClass28_11.method738((long) arg0);
+		@Pc(16) Class2_Sub5 local16 = (Class2_Sub5) Static106.aClass28_11.method738(arg0);
 		if (local16 != null) {
 			@Pc(23) Class2_Sub28_Sub4 local23 = local16.aClass224_Sub1_1.method9185();
 			if (local23 != null) {

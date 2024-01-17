@@ -34,8 +34,8 @@ public final class Static408 {
 			return false;
 		} else if (!arg0.method2425(Static30.anInterface23_3)) {
 			return false;
-		} else if (Static268.aClass28_22.method738((long) arg0.anInt2599) == null) {
-			return Static232.aClass28_18.method738((long) arg0.anInt2606) == null;
+		} else if (Static268.aClass28_22.method738(arg0.anInt2599) == null) {
+			return Static232.aClass28_18.method738(arg0.anInt2606) == null;
 		} else {
 			return false;
 		}
