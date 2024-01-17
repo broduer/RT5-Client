@@ -38,7 +38,7 @@ public final class IDirect3DDevice extends IUnknown {
 		}
 		@Pc(10) IDirect3DPixelShader local10 = new IDirect3DPixelShader(this.b);
 		@Pc(15) int local15 = this._CreatePixelShader(arg0, local10);
-		if (lh.a(local15, 0)) {
+		if (lh.a(local15, true)) {
 			throw new sja(String.valueOf(local15));
 		}
 		return local10;
@@ -61,7 +61,7 @@ public final class IDirect3DDevice extends IUnknown {
 			arg4.a(-117);
 		}
 		@Pc(22) int local22 = this._CreateVertexBuffer(arg0, arg1, arg2, arg3, arg4);
-		if (lh.a(local22, 0)) {
+		if (lh.a(local22, true)) {
 			throw new sja(String.valueOf(local22));
 		}
 		arg4.b = arg0;
@@ -80,7 +80,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DSurface c() {
 		@Pc(5) IDirect3DSurface local5 = new IDirect3DSurface(this.b);
 		@Pc(9) int local9 = this._GetDepthStencilSurface(local5);
-		if (lh.a(local9, 0)) {
+		if (lh.a(local9, true)) {
 			throw new sja(String.valueOf(local9));
 		}
 		return local5;
@@ -93,7 +93,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DTexture a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		@Pc(5) IDirect3DTexture local5 = new IDirect3DTexture(this.b);
 		@Pc(15) int local15 = this._CreateTexture(arg0, arg1, arg2, arg3, arg4, arg5, local5);
-		if (lh.a(local15, 0)) {
+		if (lh.a(local15, true)) {
 			throw new sja(String.valueOf(local15));
 		}
 		return local5;
@@ -112,7 +112,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DCubeTexture a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(5) IDirect3DCubeTexture local5 = new IDirect3DCubeTexture(this.b);
 		@Pc(14) int local14 = this._CreateCubeTexture(arg0, arg1, arg2, arg3, arg4, local5);
-		if (lh.a(local14, 0)) {
+		if (lh.a(local14, true)) {
 			throw new sja(String.valueOf(local14));
 		}
 		return local5;
@@ -134,7 +134,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DVolumeTexture a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(5) IDirect3DVolumeTexture local5 = new IDirect3DVolumeTexture(this.b);
 		@Pc(16) int local16 = this._CreateVolumeTexture(arg0, arg1, arg2, arg3, arg4, arg5, arg6, local5);
-		if (lh.a(local16, 0)) {
+		if (lh.a(local16, true)) {
 			throw new sja(String.valueOf(local16));
 		}
 		return local5;
@@ -170,8 +170,12 @@ public final class IDirect3DDevice extends IUnknown {
 	@OriginalMember(owner = "client!jagdx/IDirect3DDevice", name = "b", descriptor = "()Lclient!jagdx/IDirect3DEventQuery;")
 	public IDirect3DEventQuery b() {
 		@Pc(5) IDirect3DEventQuery local5 = new IDirect3DEventQuery(this.b);
-		if (lh.a(this._CreateEventQuery(local5))) {
-			return local5; // local5.a((byte) -127) ? local5 : null;
+		if (lh.a((byte) 86, this._CreateEventQuery(local5))) {
+			if (!local5.a((byte) -127)) {
+				return null;
+			}
+
+			return local5;
 		} else {
 			return null;
 		}
@@ -199,7 +203,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DSurface c(@OriginalArg(0) int arg0) {
 		@Pc(5) IDirect3DSurface local5 = new IDirect3DSurface(this.b);
 		@Pc(10) int local10 = this._GetRenderTarget(arg0, local5);
-		if (lh.a(local10, 0)) {
+		if (lh.a(local10, true)) {
 			throw new sja(String.valueOf(local10));
 		}
 		return local5;
@@ -212,7 +216,7 @@ public final class IDirect3DDevice extends IUnknown {
 		}
 		@Pc(11) IDirect3DVertexShader local11 = new IDirect3DVertexShader(this.b);
 		@Pc(16) int local16 = this._CreateVertexShader(arg0, local11);
-		if (lh.a(local16, 0)) {
+		if (lh.a(local16, true)) {
 			throw new sja(String.valueOf(local16));
 		}
 		return local11;
@@ -229,7 +233,7 @@ public final class IDirect3DDevice extends IUnknown {
 			arg1.a(-109);
 		}
 		@Pc(19) int local19 = this._CreateVertexDeclaration(arg0, arg1);
-		if (lh.a(local19, 0)) {
+		if (lh.a(local19, true)) {
 			throw new sja(String.valueOf(local19));
 		}
 		return arg1;
@@ -242,7 +246,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DSwapChain b(@OriginalArg(0) int arg0) {
 		@Pc(5) IDirect3DSwapChain local5 = new IDirect3DSwapChain(this.b);
 		@Pc(10) int local10 = this._GetSwapChain(arg0, local5);
-		if (lh.a(local10, 0)) {
+		if (lh.a(local10, true)) {
 			throw new sja(String.valueOf(local10));
 		}
 		return local5;
@@ -262,7 +266,7 @@ public final class IDirect3DDevice extends IUnknown {
 			arg4.a(47);
 		}
 		@Pc(22) int local22 = this._CreateIndexBuffer(arg0, arg1, arg2, arg3, arg4);
-		if (lh.a(local22, 0)) {
+		if (lh.a(local22, true)) {
 			throw new sja(String.valueOf(local22));
 		}
 		return arg4;
@@ -315,7 +319,7 @@ public final class IDirect3DDevice extends IUnknown {
 	public IDirect3DSurface a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 		@Pc(5) IDirect3DSurface local5 = new IDirect3DSurface(this.b);
 		@Pc(15) int local15 = this._CreateRenderTarget(arg0, arg1, arg2, arg3, arg4, arg5, local5);
-		if (lh.a(local15, 0)) {
+		if (lh.a(local15, true)) {
 			throw new sja(String.valueOf(local15));
 		}
 		return local5;

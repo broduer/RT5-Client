@@ -19,4 +19,8 @@ public class IUnknown extends Peer {
 	public final long a(@OriginalArg(0) int arg0) {
 		return super.a();
 	}
+
+	public boolean a(byte arg0) {
+		return super.a(arg0);
+	}
 }

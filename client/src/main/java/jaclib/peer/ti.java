@@ -20,19 +20,19 @@ public final class ti {
 	public final ReferenceQueue b = new ReferenceQueue();
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "a", descriptor = "(I)V")
-	private void method4156() {
+	private void a(int dummy) {
 		while (true) {
 			@Pc(3) Reference local3 = this.b.poll();
 			if (local3 == null) {
 				return;
 			}
 			@Pc(9) PeerReference local9 = (PeerReference) local3;
-			this.method4158(local9);
+			this.a(local9, dummy ^ 13789);
 		}
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "a", descriptor = "(Lclient!jaclib/peer/PeerReference;B)V")
-	public void method4157(@OriginalArg(0) PeerReference arg0) {
+	public void a(@OriginalArg(0) PeerReference arg0, byte dummy) {
 		arg0.b = this.a;
 		arg0.a = null;
 		if (this.c == null) {
@@ -44,7 +44,7 @@ public final class ti {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "a", descriptor = "(Lclient!jaclib/peer/PeerReference;I)V")
-	private void method4158(@OriginalArg(0) PeerReference arg0) {
+	private void a(@OriginalArg(0) PeerReference arg0, int dummy) {
 		arg0.b(0);
 		if (this.c == arg0) {
 			this.c = arg0.a;
@@ -61,16 +61,16 @@ public final class ti {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "b", descriptor = "(I)V")
-	public void method4159() {
-		this.method4156();
+	public void b(int dummy) {
+		this.a(26588);
 		while (this.a != null) {
-			this.method4158(this.a);
+			this.a(this.a, 20993);
 		}
-		this.method4156();
+		this.a(26588);
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "c", descriptor = "(I)V")
-	public void method4160() {
-		this.method4156();
+	public void c(int dummy) {
+		this.a(26588);
 	}
 }

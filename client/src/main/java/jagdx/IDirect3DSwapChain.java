@@ -29,7 +29,7 @@ public final class IDirect3DSwapChain extends IUnknown {
 	public IDirect3DSurface a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(5) IDirect3DSurface local5 = new IDirect3DSurface(this.b);
 		@Pc(11) int local11 = this._GetBackBuffer(arg0, arg1, local5);
-		if (lh.a(local11, 0)) {
+		if (lh.a(local11, true)) {
 			throw new sja(String.valueOf(local11));
 		}
 		return local5;

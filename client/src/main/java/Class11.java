@@ -44,7 +44,7 @@ public final class Class11 implements Interface20 {
 			return null;
 		}
 		@Pc(21) boolean local21 = this.aBoolean11 & true;
-		if (!this.aBoolean12 && lh.a(this.anIDirect3DIndexBuffer1.Lock(0, this.anInt135, local21 ? 8192 : 0, this.aClass19_Sub1_Sub1_1.aGeometryBuffer1))) {
+		if (!this.aBoolean12 && lh.a((byte) 86, this.anIDirect3DIndexBuffer1.Lock(0, this.anInt135, local21 ? 8192 : 0, this.aClass19_Sub1_Sub1_1.aGeometryBuffer1))) {
 			this.aBoolean12 = true;
 			return this.aClass19_Sub1_Sub1_1.aGeometryBuffer1;
 		} else {
@@ -89,7 +89,7 @@ public final class Class11 implements Interface20 {
 	@OriginalMember(owner = "client!ag", name = "b", descriptor = "(I)Z")
 	@Override
 	public boolean method8553() {
-		if (this.aBoolean12 && lh.a(this.anIDirect3DIndexBuffer1.Unlock())) {
+		if (this.aBoolean12 && lh.a((byte) 86, this.anIDirect3DIndexBuffer1.Unlock())) {
 			this.aBoolean12 = false;
 			return true;
 		} else {

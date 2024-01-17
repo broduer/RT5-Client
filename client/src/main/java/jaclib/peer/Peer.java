@@ -15,9 +15,9 @@ public abstract class Peer {
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "reference", descriptor = "Lclient!jaclib/peer/PeerReference;")
 	protected PeerReference reference;
 
-	// static {
-	// 	init(a == null ? (a = getClass("jaclib.peer.PeerReference")) : a);
-	// }
+	 static {
+	 	init(a == null ? (a = getClass("jaclib.peer.PeerReference")) : a);
+	 }
 
 	static Class getClass(String name) {
 		Class instance;
@@ -30,7 +30,7 @@ public abstract class Peer {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "init", descriptor = "(Ljava/lang/Class;)V")
-	public native void init(@OriginalArg(0) Class arg0);
+	public static native void init(@OriginalArg(0) Class arg0);
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "<init>", descriptor = "()V")
 	protected Peer() {
@@ -42,7 +42,7 @@ public abstract class Peer {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "a", descriptor = "(B)Z")
-	protected final boolean a(@OriginalArg(0) byte arg0) {
+	protected boolean a(@OriginalArg(0) byte arg0) {
 		return this.reference.a(0);
 	}
 }

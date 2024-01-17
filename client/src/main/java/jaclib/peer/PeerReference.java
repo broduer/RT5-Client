@@ -21,7 +21,7 @@ public abstract class PeerReference extends WeakReference {
 	@OriginalMember(owner = "client!jaclib/peer/PeerReference", name = "<init>", descriptor = "(Lclient!jaclib/peer/Peer;Lclient!jaclib/peer/ti;)V")
 	protected PeerReference(@OriginalArg(0) Peer arg0, @OriginalArg(1) ti arg1) {
 		super(arg0, arg1.b);
-		arg1.method4157(this);
+		arg1.a(this, (byte) 0);
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/PeerReference", name = "setPeer", descriptor = "(J)V")

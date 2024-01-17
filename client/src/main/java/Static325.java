@@ -41,7 +41,7 @@ public final class Static325 {
 		@Pc(10) int local10 = 0;
 		try {
 			@Pc(14) D3DDISPLAYMODE local14 = new D3DDISPLAYMODE();
-			if (lh.a(arg2.a(arg1, local14), 0)) {
+			if (lh.a(arg2.a(arg1, local14), true)) {
 				return false;
 			}
 			label82: while (arg4 >= 0) {

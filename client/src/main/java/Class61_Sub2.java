@@ -28,7 +28,7 @@ public final class Class61_Sub2 extends Class61 implements Interface8 {
 		@Pc(52) PixelBuffer local52 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		for (@Pc(54) int local54 = 0; local54 < 6; local54++) {
 			@Pc(73) int local73 = this.anIDirect3DCubeTexture1.LockRect(local54, 0, 0, 0, this.anInt5392, this.anInt5392, 0, local52);
-			if (lh.a(local73)) {
+			if (lh.a((byte) 86, local73)) {
 				@Pc(82) int local82 = local52.getRowPitch();
 				if (local82 == this.anInt5392 * 4) {
 					local52.b(arg3[local54], 0, 0, this.anInt5392 * this.anInt5392);
