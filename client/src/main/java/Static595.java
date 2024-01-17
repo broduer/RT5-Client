@@ -10,7 +10,6 @@ public final class Static595 {
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(ILjava/lang/String;ZI)V")
 	public static void method7814(@OriginalArg(1) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
 		Static164.method2606();
-		System.out.println("toolkit=" + arg2);
 		if (arg2 == 0) {
 			Static163.aClass19_17 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, 0, Static434.aCanvas7, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380() * 2);
 			if (arg0 != null) {
