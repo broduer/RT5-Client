@@ -23,7 +23,7 @@ public final class OpenGL {
 	private Thread b;
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glPixelZoom", descriptor = "(FF)V")
-	private static native void glPixelZoom(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1);
+	public static native void glPixelZoom(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glUniform1iARB", descriptor = "(II)V")
 	public static native void glUniform1iARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
@@ -35,7 +35,7 @@ public final class OpenGL {
 	public static native void glBufferDataARBa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glMultiTexCoord2i", descriptor = "(III)V")
-	private static native void glMultiTexCoord2i(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public static native void glMultiTexCoord2i(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexCoord3f", descriptor = "(FFF)V")
 	public static native void glTexCoord3f(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2);
@@ -50,7 +50,7 @@ public final class OpenGL {
 	public static native void glNormal3f(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glGetTexImageub", descriptor = "(IIII[BI)V")
-	private static native void glGetTexImageub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(5) int arg5);
+	public static native void glGetTexImageub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glCreateProgramObjectARB", descriptor = "()J")
 	public static native long glCreateProgramObjectARB();
@@ -65,7 +65,7 @@ public final class OpenGL {
 	public static native void glProgramStringARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glGetProgramivARB", descriptor = "(II[II)V")
-	private static native void glGetProgramivARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3);
+	public static native void glGetProgramivARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glGenFramebuffersEXT", descriptor = "(I[II)V")
 	public static native void glGenFramebuffersEXT(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2);
@@ -110,7 +110,7 @@ public final class OpenGL {
 	public static native void glDetachObjectARB(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glColor4f", descriptor = "(FFFF)V")
-	private static native void glColor4f(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3);
+	public static native void glColor4f(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexImage3Dub", descriptor = "(IIIIIIIII[BI)V")
 	public static native void glTexImage3Dub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) int arg10);
@@ -131,7 +131,7 @@ public final class OpenGL {
 	public static native void glColorMask(@OriginalArg(0) boolean arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glDrawPixelsub", descriptor = "(IIII[BI)V")
-	private static native void glDrawPixelsub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(5) int arg5);
+	public static native void glDrawPixelsub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte[] arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexImage2Di", descriptor = "(IIIIIIII[II)V")
 	public static native void glTexImage2Di(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int[] arg8, @OriginalArg(9) int arg9);
@@ -143,7 +143,7 @@ public final class OpenGL {
 	public static native int glGenLists(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexParameterf", descriptor = "(IIF)V")
-	private static native void glTexParameterf(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float arg2);
+	public static native void glTexParameterf(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glNewList", descriptor = "(II)V")
 	public static native void glNewList(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
@@ -173,7 +173,7 @@ public final class OpenGL {
 	public static native void glGetTexImagei(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glUniformMatrix4fvARB", descriptor = "(IIZ[FI)V")
-	private static native void glUniformMatrix4fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
+	public static native void glUniformMatrix4fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glDepthFunc", descriptor = "(I)V")
 	public static native void glDepthFunc(@OriginalArg(0) int arg0);
@@ -188,7 +188,7 @@ public final class OpenGL {
 	public static native void glFlush();
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexCoord2i", descriptor = "(II)V")
-	private static native void glTexCoord2i(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
+	public static native void glTexCoord2i(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glProgramLocalParameter4fARB", descriptor = "(IIFFFF)V")
 	public static native void glProgramLocalParameter4fARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float arg2, @OriginalArg(3) float arg3, @OriginalArg(4) float arg4, @OriginalArg(5) float arg5);
@@ -200,7 +200,7 @@ public final class OpenGL {
 	public static native void glBlitFramebufferEXT(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glDrawPixelsi", descriptor = "(IIII[II)V")
-	private static native void glDrawPixelsi(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int arg5);
+	public static native void glDrawPixelsi(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glTexImage1Dub", descriptor = "(IIIIIII[BI)V")
 	public static native void glTexImage1Dub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) byte[] arg7, @OriginalArg(8) int arg8);
@@ -212,7 +212,7 @@ public final class OpenGL {
 	public static native void glMultMatrixf(@OriginalArg(0) float[] arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glGetError", descriptor = "()I")
-	private static native int glGetError();
+	public static native int glGetError();
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glFramebufferTexture3DEXT", descriptor = "(IIIIII)V")
 	public static native void glFramebufferTexture3DEXT(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
@@ -266,7 +266,7 @@ public final class OpenGL {
 	public static native void glBindBufferARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glMaterialfv", descriptor = "(II[FI)V")
-	private static native void glMaterialfv(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float[] arg2, @OriginalArg(3) int arg3);
+	public static native void glMaterialfv(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) float[] arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glLoadIdentity", descriptor = "()V")
 	public static native void glLoadIdentity();
@@ -314,7 +314,7 @@ public final class OpenGL {
 	public static native void glCallList(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glUniformMatrix3fvARB", descriptor = "(IIZ[FI)V")
-	private static native void glUniformMatrix3fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
+	public static native void glUniformMatrix3fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glBindProgramARB", descriptor = "(II)V")
 	public static native void glBindProgramARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
@@ -359,7 +359,7 @@ public final class OpenGL {
 	public static native void glScissor(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glColor3ub", descriptor = "(BBB)V")
-	private static native void glColor3ub(@OriginalArg(0) byte arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) byte arg2);
+	public static native void glColor3ub(@OriginalArg(0) byte arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) byte arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glClear", descriptor = "(I)V")
 	public static native void glClear(@OriginalArg(0) int arg0);
@@ -392,7 +392,7 @@ public final class OpenGL {
 	public static native void glTexGeni(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glDrawBuffersARB", descriptor = "(I[II)V")
-	private static native void glDrawBuffersARB(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2);
+	public static native void glDrawBuffersARB(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glLineWidth", descriptor = "(F)V")
 	public static native void glLineWidth(@OriginalArg(0) float arg0);
@@ -437,7 +437,7 @@ public final class OpenGL {
 	public static native void glCopyTexSubImage3D(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glFrustum", descriptor = "(DDDDDD)V")
-	private static native void glFrustum(@OriginalArg(0) double arg0, @OriginalArg(1) double arg1, @OriginalArg(2) double arg2, @OriginalArg(3) double arg3, @OriginalArg(4) double arg4, @OriginalArg(5) double arg5);
+	public static native void glFrustum(@OriginalArg(0) double arg0, @OriginalArg(1) double arg1, @OriginalArg(2) double arg2, @OriginalArg(3) double arg3, @OriginalArg(4) double arg4, @OriginalArg(5) double arg5);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glUniform2fARB", descriptor = "(IFF)V")
 	public static native void glUniform2fARB(@OriginalArg(0) int arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2);
@@ -446,7 +446,7 @@ public final class OpenGL {
 	public static native void glDeleteFramebuffersEXT(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glUniformMatrix2fvARB", descriptor = "(IIZ[FI)V")
-	private static native void glUniformMatrix2fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
+	public static native void glUniformMatrix2fvARB(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) float[] arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glCopyTexSubImage2D", descriptor = "(IIIIIIII)V")
 	public static native void glCopyTexSubImage2D(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7);
@@ -470,7 +470,7 @@ public final class OpenGL {
 	public static native void glPopMatrix();
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glStencilFunc", descriptor = "(III)V")
-	private static native void glStencilFunc(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public static native void glStencilFunc(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glBegin", descriptor = "(I)V")
 	public static native void glBegin(@OriginalArg(0) int arg0);
@@ -482,7 +482,7 @@ public final class OpenGL {
 	public static native void glReadBuffer(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glReadPixelsub", descriptor = "(IIIIII[BI)V")
-	private static native void glReadPixelsub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) byte[] arg6, @OriginalArg(7) int arg7);
+	public static native void glReadPixelsub(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) byte[] arg6, @OriginalArg(7) int arg7);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glDeleteRenderbuffersEXT", descriptor = "(I[II)V")
 	public static native void glDeleteRenderbuffersEXT(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int arg2);
@@ -509,7 +509,7 @@ public final class OpenGL {
 	public static native void glVertex2f(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glStencilOp", descriptor = "(III)V")
-	private static native void glStencilOp(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public static native void glStencilOp(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "glBufferSubDataARBa", descriptor = "(IIIJ)V")
 	public static native void glBufferSubDataARBa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) long arg3);
@@ -555,7 +555,7 @@ public final class OpenGL {
 	}
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "setPbuffer", descriptor = "(J)V")
-	private native void setPbuffer(@OriginalArg(0) long arg0);
+	public native void setPbuffer(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "swapBuffers", descriptor = "()V")
 	public native void swapBuffers();
@@ -567,7 +567,7 @@ public final class OpenGL {
 	public native long prepareSurface(@OriginalArg(0) Canvas arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "createPbuffer", descriptor = "(II)J")
-	private native long createPbuffer(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
+	public native long createPbuffer(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "setSurface", descriptor = "(J)Z")
 	public native boolean setSurface(@OriginalArg(0) long arg0);
@@ -599,13 +599,13 @@ public final class OpenGL {
 	}
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "releasePbuffer", descriptor = "(J)V")
-	private native void releasePbuffer(@OriginalArg(0) long arg0);
+	public native void releasePbuffer(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "detachPeer", descriptor = "()V")
-	private native void detachPeer();
+	public native void detachPeer();
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "attachPeer", descriptor = "()Z")
-	private native boolean attachPeer();
+	public native boolean attachPeer();
 
 	@OriginalMember(owner = "client!jaggl/OpenGL", name = "setSwapInterval", descriptor = "(I)V")
 	public native void setSwapInterval(@OriginalArg(0) int arg0);

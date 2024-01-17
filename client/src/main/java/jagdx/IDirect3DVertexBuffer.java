@@ -1,7 +1,7 @@
 package jagdx;
 
 import jaclib.memory.Source;
-import jaclib.peer.Class189;
+import jaclib.peer.ti;
 import jaclib.peer.IUnknown;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -14,23 +14,23 @@ public final class IDirect3DVertexBuffer extends IUnknown {
 	public int b;
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DVertexBuffer", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
-	public IDirect3DVertexBuffer(@OriginalArg(0) Class189 arg0) {
+	public IDirect3DVertexBuffer(@OriginalArg(0) ti arg0) {
 		super(arg0);
 	}
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DVertexBuffer", name = "a", descriptor = "(Lclient!jaclib/memory/Source;IIII)Z")
 	public boolean a(@OriginalArg(0) Source arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		if (arg0 == null || arg1 < 0 || arg3 > arg1 + arg0.getSize()) {
-			throw new RuntimeException_Sub2("");
+			throw new sja("");
 		} else if (this.b + arg2 < arg3) {
-			throw new RuntimeException_Sub2("");
+			throw new sja("");
 		} else {
 			return this._Update((long) arg1 + arg0.getAddress(), arg2, arg3, arg4);
 		}
 	}
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DVertexBuffer", name = "_Update", descriptor = "(JIII)Z")
-	private native boolean _Update(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public native boolean _Update(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DVertexBuffer", name = "a", descriptor = "()J")
 	@Override

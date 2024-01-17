@@ -1,4 +1,4 @@
-import jagdx.Class190;
+import jagdx.lh;
 import jagdx.IDirect3DBaseTexture;
 import jagdx.IDirect3DVolumeTexture;
 import jagdx.PixelBuffer;
@@ -31,7 +31,7 @@ public final class Class61_Sub1 extends Class61 implements Interface2 {
 		this.anIDirect3DVolumeTexture1 = this.aClass19_Sub1_Sub1_9.anIDirect3DDevice1.a(arg2, arg3, arg4, 1, 0, Static325.method4875(this.aClass399_12, arg1), 1);
 		@Pc(40) PixelBuffer local40 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(53) int local53 = this.anIDirect3DVolumeTexture1.LockBox(0, 0, 0, 0, arg2, arg3, arg4, 0, local40);
-		if (Class190.method4161(local53)) {
+		if (lh.a(local53)) {
 			@Pc(66) int local66 = this.anInt1594 * this.aClass92_17.anInt2425;
 			@Pc(71) int local71 = local66 * this.anInt1592;
 			@Pc(74) int local74 = local40.getSlicePitch();

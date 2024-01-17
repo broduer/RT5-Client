@@ -12,7 +12,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class unpack_Sub1 extends unpack {
 
 	@OriginalMember(owner = "loader!b", name = "a", descriptor = "([BZ)[B")
-	private static byte[] method9475(@OriginalArg(0) byte[] arg0) throws IOException {
+	public static byte[] method9475(@OriginalArg(0) byte[] arg0) throws IOException {
 		@Pc(5) byte[] local5 = new byte[arg0.length + 2];
 		local5[0] = 31;
 		local5[1] = -117;

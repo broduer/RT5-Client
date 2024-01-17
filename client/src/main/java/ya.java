@@ -25,7 +25,7 @@ public final class ya extends Class2_Sub13 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ya", name = "aa", descriptor = "(Lclient!oa;I)V")
-	private native void aa(@OriginalArg(0) oa arg0, @OriginalArg(1) int arg1);
+	public native void aa(@OriginalArg(0) oa arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ya", name = "r", descriptor = "()V")
 	public native void r();

@@ -22,13 +22,17 @@ public final class Static342 {
 
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "(IZ)V")
 	public static void method4471(@OriginalArg(0) int arg0) {
-		if (Static299.anInt4841 == 1) {
-			Static284.anInt4597 = arg0;
-		} else if (Static299.anInt4841 == 2) {
-			Static169.anInt2864 = arg0;
+		if (true) {
 			// 2011scape compatibility
+			Static169.anInt2864 = arg0;
 			Static344.aClass231_1.anInt5876 = 15;
 			Static344.aClass231_1.anInt5873 = 50015;
+		} else {
+			if (Static299.anInt4841 == 1) {
+				Static284.anInt4597 = arg0;
+			} else if (Static299.anInt4841 == 2) {
+				Static169.anInt2864 = arg0;
+			}
 		}
 	}
 

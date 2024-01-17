@@ -33,13 +33,13 @@ public final class DecoderContext extends SimplePeer {
 	public native int setPostProcessingLevel(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jagtheora/theora/DecoderContext", name = "setGranulePosition", descriptor = "(J)I")
-	private native int setGranulePosition(@OriginalArg(0) long arg0);
+	public native int setGranulePosition(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!jagtheora/theora/DecoderContext", name = "decodeFrame", descriptor = "(Lclient!jagtheora/theora/Frame;)I")
 	public native int decodeFrame(@OriginalArg(0) Frame arg0);
 
 	@OriginalMember(owner = "client!jagtheora/theora/DecoderContext", name = "init", descriptor = "(Lclient!jagtheora/theora/TheoraInfo;Lclient!jagtheora/theora/SetupInfo;)V")
-	private native void init(@OriginalArg(0) TheoraInfo arg0, @OriginalArg(1) SetupInfo arg1);
+	public native void init(@OriginalArg(0) TheoraInfo arg0, @OriginalArg(1) SetupInfo arg1);
 
 	@OriginalMember(owner = "client!jagtheora/theora/DecoderContext", name = "clear", descriptor = "()V")
 	protected native void clear();

@@ -15,7 +15,7 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "XA", descriptor = "(JIII[I)V")
-	private native void XA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
+	public native void XA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(III)V")
 	@Override
@@ -30,13 +30,13 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "l", descriptor = "(JJ)V")
-	private native void l(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1);
+	public native void l(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1);
 
 	@OriginalMember(owner = "client!ja", name = "m", descriptor = "(JI)V")
-	private native void m(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void m(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "VA", descriptor = "(JI)V")
-	private native void VA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void VA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(III[I)V")
 	@Override
@@ -45,7 +45,7 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(JIII)V")
-	private native void a(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public native void a(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!ja", name = "e", descriptor = "(I)V")
 	@Override
@@ -66,10 +66,10 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "J", descriptor = "(JI)V")
-	private native void J(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void J(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "P", descriptor = "(JIIIIII)V")
-	private native void P(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6);
+	public native void P(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6);
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(I)V")
 	@Override
@@ -78,13 +78,13 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "la", descriptor = "()V")
-	private native void la();
+	public native void la();
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "(JIII[I)V")
-	private native void b(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
+	public native void b(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
 
 	@OriginalMember(owner = "client!ja", name = "AA", descriptor = "(JZ)V")
-	private native void AA(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
+	public native void AA(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!ja", name = "c", descriptor = "(III[I)V")
 	@Override
@@ -137,7 +137,7 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "FA", descriptor = "(JIII)V")
-	private native void FA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public native void FA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!ja", name = "b", descriptor = "()Lclient!tt;")
 	@Override
@@ -148,7 +148,7 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "za", descriptor = "(JI)V")
-	private native void za(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void za(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "g", descriptor = "(I)V")
 	@Override
@@ -157,7 +157,7 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "w", descriptor = "(J[I)V")
-	private native void w(@OriginalArg(0) long arg0, @OriginalArg(1) int[] arg1);
+	public native void w(@OriginalArg(0) long arg0, @OriginalArg(1) int[] arg1);
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "([I)V")
 	@Override
@@ -166,14 +166,14 @@ public final class ja extends Class73 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!ja", name = "va", descriptor = "(JIII[I)V")
-	private native void va(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
+	public native void va(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[] arg4);
 
 	@OriginalMember(owner = "client!ja", name = "NA", descriptor = "(JI)V")
-	private native void NA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void NA(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "t", descriptor = "(JI)V")
-	private native void t(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
+	public native void t(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ja", name = "u", descriptor = "(J)V")
-	private native void u(@OriginalArg(0) long arg0);
+	public native void u(@OriginalArg(0) long arg0);
 }

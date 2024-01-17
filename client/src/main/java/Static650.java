@@ -101,7 +101,7 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "b", descriptor = "([B)V")
-	private static void method8511(@OriginalArg(0) byte[] arg0) {
+	public static void method8511(@OriginalArg(0) byte[] arg0) {
 		method8515(arg0);
 		anInt9707 = 0x1 << method8507(4);
 		anInt9709 = 0x1 << method8507(4);
@@ -188,7 +188,7 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;)Z")
-	private static boolean method8512(@OriginalArg(0) Class332 arg0) {
+	public static boolean method8512(@OriginalArg(0) Class332 arg0) {
 		if (!aBoolean747) {
 			@Pc(7) byte[] local7 = arg0.method7602(0, 0);
 			if (local7 == null) {

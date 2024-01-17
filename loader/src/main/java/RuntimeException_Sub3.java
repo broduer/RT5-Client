@@ -24,7 +24,7 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 	private String aString132;
 
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;B)Ljava/lang/String;")
-	private static String method9476(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String arg2) {
+	public static String method9476(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) String arg2) {
 		for (@Pc(12) int local12 = arg0.indexOf(arg1); local12 != -1; local12 = arg0.indexOf(arg1, local12 + arg2.length())) {
 			arg0 = arg0.substring(0, local12) + arg2 + arg0.substring(local12 + arg1.length());
 		}
@@ -32,7 +32,7 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 	}
 
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/Throwable;B)Ljava/lang/String;")
-	private static String method9477(@OriginalArg(0) Throwable arg0) throws IOException {
+	public static String method9477(@OriginalArg(0) Throwable arg0) throws IOException {
 		@Pc(17) String local17;
 		if (arg0 instanceof RuntimeException_Sub3) {
 			@Pc(7) RuntimeException_Sub3 local7 = (RuntimeException_Sub3) arg0;
@@ -76,12 +76,12 @@ public final class RuntimeException_Sub3 extends RuntimeException {
 	}
 
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/String;Z)V")
-	private static void method9478(@OriginalArg(0) String arg0) {
+	public static void method9478(@OriginalArg(0) String arg0) {
 		System.out.println("Error: " + method9476(arg0, "%0a", "\n"));
 	}
 
 	@OriginalMember(owner = "loader!f", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lloader!f;")
-	private static RuntimeException_Sub3 method9479(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+	public static RuntimeException_Sub3 method9479(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
 		@Pc(8) RuntimeException_Sub3 local8;
 		if (arg0 instanceof RuntimeException_Sub3) {
 			local8 = (RuntimeException_Sub3) arg0;

@@ -23,7 +23,7 @@ public final class OggSyncState extends SimplePeer {
 	protected native void init();
 
 	@OriginalMember(owner = "client!jagtheora/ogg/OggSyncState", name = "pageSeek", descriptor = "(Lclient!jagtheora/ogg/OggPage;)J")
-	private native long pageSeek(@OriginalArg(0) OggPage arg0);
+	public native long pageSeek(@OriginalArg(0) OggPage arg0);
 
 	@OriginalMember(owner = "client!jagtheora/ogg/OggSyncState", name = "pageOut", descriptor = "(Lclient!jagtheora/ogg/OggPage;)I")
 	public native int pageOut(@OriginalArg(0) OggPage arg0);
@@ -32,5 +32,5 @@ public final class OggSyncState extends SimplePeer {
 	public native boolean write(@OriginalArg(0) byte[] arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jagtheora/ogg/OggSyncState", name = "reset", descriptor = "()Z")
-	private native boolean reset();
+	public native boolean reset();
 }

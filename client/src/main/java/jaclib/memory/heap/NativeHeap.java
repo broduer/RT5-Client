@@ -24,7 +24,7 @@ public final class NativeHeap {
 	}
 
 	@OriginalMember(owner = "client!jaclib/memory/heap/NativeHeap", name = "allocateHeap", descriptor = "(I)V")
-	private native void allocateHeap(@OriginalArg(0) int arg0);
+	public native void allocateHeap(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jaclib/memory/heap/NativeHeap", name = "finalize", descriptor = "()V")
 	@Override
@@ -40,7 +40,7 @@ public final class NativeHeap {
 	private synchronized native int allocateBuffer(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!jaclib/memory/heap/NativeHeap", name = "deallocateHeap", descriptor = "()V")
-	private native void deallocateHeap();
+	public native void deallocateHeap();
 
 	@OriginalMember(owner = "client!jaclib/memory/heap/NativeHeap", name = "a", descriptor = "(IZ)Lclient!jaclib/memory/heap/NativeHeapBuffer;")
 	public NativeHeapBuffer a(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {

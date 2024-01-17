@@ -57,7 +57,7 @@ public final class TheoraInfo extends SimplePeer {
 	}
 
 	@OriginalMember(owner = "client!jagtheora/theora/TheoraInfo", name = "initFields", descriptor = "()V")
-	private static native void initFields();
+	public static native void initFields();
 
 	@OriginalMember(owner = "client!jagtheora/theora/TheoraInfo", name = "<init>", descriptor = "()V")
 	public TheoraInfo() {

@@ -29,12 +29,12 @@ public final class Static141 {
 	private static int anInt2550;
 
 	@OriginalMember(owner = "client!eh", name = "b", descriptor = "()V")
-	private static void method2369() {
+	public static void method2369() {
 		anInt2546 = 0;
 	}
 
 	@OriginalMember(owner = "client!eh", name = "b", descriptor = "(I)Z")
-	private static boolean method2370(@OriginalArg(0) int arg0) {
+	public static boolean method2370(@OriginalArg(0) int arg0) {
 		@Pc(1) int local1 = anInt2545;
 		@Pc(3) int local3 = anInt2544;
 		@Pc(5) int local5 = anInt2550;
@@ -95,7 +95,7 @@ public final class Static141 {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "b", descriptor = "(II)V")
-	private static void method2372(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public static void method2372(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (arg1 <= arg0 + 4) {
 			return;
 		}
@@ -127,7 +127,7 @@ public final class Static141 {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "([III)V")
-	private static void method2374(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
+	public static void method2374(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1) {
 		@Pc(5) int local5 = anInt2546 + (arg1 << 1);
 		@Pc(18) int local18;
 		if (anIntArray223 == null || anIntArray223.length < local5) {
@@ -158,7 +158,7 @@ public final class Static141 {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "(II)V")
-	private static void method2375(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public static void method2375(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		while (true) {
 			if (arg1 >= arg0 + 8) {
 				@Pc(2) boolean local2 = true;
@@ -187,7 +187,7 @@ public final class Static141 {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "(Lclient!ha;[IIII[I[I)V")
-	private static void method2376(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int[] arg5) {
+	public static void method2376(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4, @OriginalArg(6) int[] arg5) {
 		@Pc(2) int[] local2 = new int[4];
 		arg0.K(local2);
 		if (arg4 != null && local2[3] - local2[1] != arg4.length) {
@@ -228,7 +228,7 @@ public final class Static141 {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "(I)V")
-	private static void method2378(@OriginalArg(0) int arg0) {
+	public static void method2378(@OriginalArg(0) int arg0) {
 		if (anInt2546 < 0) {
 			anInt2544 = 0;
 			anInt2545 = 0;

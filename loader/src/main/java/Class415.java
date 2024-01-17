@@ -47,7 +47,7 @@ public final class Class415 {
 	}
 
 	@OriginalMember(owner = "loader!uia", name = "a", descriptor = "(BLjava/lang/String;ILjava/lang/String;)Ljava/io/File;")
-	private static File method9497(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2) {
+	public static File method9497(@OriginalArg(1) String arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2) {
 		if (!aBoolean836) {
 			throw new RuntimeException("");
 		}

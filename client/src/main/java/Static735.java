@@ -11,7 +11,7 @@ public final class Static735 {
 	}
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "([B)[Lclient!wp;")
-	private static Class409[] method9383(@OriginalArg(0) byte[] arg0) {
+	public static Class409[] method9383(@OriginalArg(0) byte[] arg0) {
 		@Pc(4) Class2_Sub21 local4 = new Class2_Sub21(arg0);
 		local4.anInt8412 = arg0.length - 2;
 		@Pc(14) int local14 = local4.method7389();

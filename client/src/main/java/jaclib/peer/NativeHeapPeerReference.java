@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class NativeHeapPeerReference extends PeerReference {
 
 	@OriginalMember(owner = "client!jaclib/peer/NativeHeapPeerReference", name = "<init>", descriptor = "(Lclient!jaclib/peer/os;Lclient!jaclib/peer/ti;)V")
-	public NativeHeapPeerReference(@OriginalArg(0) Peer_Sub1 arg0, @OriginalArg(1) Class189 arg1) {
+	public NativeHeapPeerReference(@OriginalArg(0) os arg0, @OriginalArg(1) ti arg1) {
 		super(arg0, arg1);
 	}
 

@@ -1,4 +1,4 @@
-import jagdx.Class190;
+import jagdx.lh;
 import jagdx.D3DDISPLAYMODE;
 import jagdx.D3DPRESENT_PARAMETERS;
 import jagdx.IDirect3D;
@@ -41,7 +41,7 @@ public final class Static325 {
 		@Pc(10) int local10 = 0;
 		try {
 			@Pc(14) D3DDISPLAYMODE local14 = new D3DDISPLAYMODE();
-			if (Class190.method4162(arg2.a(arg1, local14))) {
+			if (lh.a(arg2.a(arg1, local14), 0)) {
 				return false;
 			}
 			label82: while (arg4 >= 0) {

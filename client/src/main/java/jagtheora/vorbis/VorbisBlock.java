@@ -21,7 +21,7 @@ public final class VorbisBlock extends SimplePeer {
 	public native int synthesis(@OriginalArg(0) OggPacket arg0);
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/VorbisBlock", name = "init", descriptor = "(Lclient!jagtheora/vorbis/DSPState;)V")
-	private native void init(@OriginalArg(0) DSPState arg0);
+	public native void init(@OriginalArg(0) DSPState arg0);
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/VorbisBlock", name = "clear", descriptor = "()V")
 	protected native void clear();

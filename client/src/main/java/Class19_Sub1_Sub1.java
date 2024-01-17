@@ -1,5 +1,5 @@
-import jaclib.peer.Class189;
-import jagdx.Class190;
+import jaclib.peer.ti;
+import jagdx.lh;
 import jagdx.D3DADAPTER_IDENTIFIER;
 import jagdx.D3DCAPS;
 import jagdx.D3DDISPLAYMODE;
@@ -14,7 +14,7 @@ import jagdx.IDirect3DPixelShader;
 import jagdx.IDirect3DSurface;
 import jagdx.IDirect3DVertexShader;
 import jagdx.PixelBuffer;
-import jagdx.RuntimeException_Sub2;
+import jagdx.sja;
 import java.awt.Canvas;
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -51,7 +51,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	private Class351 aClass351_1;
 
 	@OriginalMember(owner = "client!kea", name = "Fg", descriptor = "Lclient!jaclib/peer/ti;")
-	public final Class189 aClass189_1;
+	public final ti aClass189_1;
 
 	@OriginalMember(owner = "client!kea", name = "Sg", descriptor = "Lclient!jagdx/IDirect3DDevice;")
 	public final IDirect3DDevice anIDirect3DDevice1;
@@ -102,12 +102,12 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	private final boolean[] aBooleanArray16;
 
 	@OriginalMember(owner = "client!kea", name = "createToolkit", descriptor = "(Ljava/awt/Canvas;Lclient!d;Lclient!sb;Ljava/lang/Integer;)Lclient!ha;")
-	private static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Integer arg3) {
+	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Integer arg3) {
 		@Pc(1) Class19_Sub1_Sub1 local1 = null;
 		try {
 			@Pc(3) byte local3 = 0;
 			@Pc(5) byte local5 = 1;
-			@Pc(9) Class189 local9 = new Class189();
+			@Pc(9) ti local9 = new ti();
 			@Pc(13) IDirect3D local13 = IDirect3D.a(-2147483616, local9);
 			@Pc(18) D3DCAPS local18 = local13.a(local3, local5);
 			if ((local18.RasterCaps & 0x1000000) == 0) {
@@ -149,7 +149,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 				@Pc(237) IDirect3DDevice local237;
 				try {
 					local237 = local13.a(local3, local5, arg0, local213 | 0x40, local186);
-				} catch (@Pc(239) RuntimeException_Sub2 local239) {
+				} catch (@Pc(239) sja local239) {
 					local237 = local13.a(local3, local5, arg0, local213 | 0x20, local186);
 				}
 				@Pc(258) Class351 local258 = new Class351(local237.b(0), local237.c());
@@ -166,7 +166,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!kea", name = "<init>", descriptor = "(IILjava/awt/Canvas;Lclient!jaclib/peer/ti;Lclient!jagdx/IDirect3D;Lclient!jagdx/IDirect3DDevice;Lclient!tda;Lclient!jagdx/D3DPRESENT_PARAMETERS;Lclient!jagdx/D3DCAPS;Lclient!d;Lclient!sb;I)V")
-	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) Class189 arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class351 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Class332 arg10, @OriginalArg(11) int arg11) {
+	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) ti arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class351 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Class332 arg10, @OriginalArg(11) int arg11) {
 		super(arg2, arg6, arg9, arg10, arg11, 0);
 		try {
 			this.aD3DCAPS1 = arg8;
@@ -282,7 +282,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	@Override
 	public boolean method8160(@OriginalArg(0) Class399 arg0, @OriginalArg(1) Class92 arg1) {
 		@Pc(3) D3DDISPLAYMODE local3 = new D3DDISPLAYMODE();
-		return Class190.method4161(this.anIDirect3D1.a(this.anInt5388, local3)) && Class190.method4161(this.anIDirect3D1.CheckDeviceFormat(this.anInt5388, this.anInt5387, local3.Format, 0, 4, Static325.method4875(arg0, arg1)));
+		return lh.a(this.anIDirect3D1.a(this.anInt5388, local3)) && lh.a(this.anIDirect3D1.CheckDeviceFormat(this.anInt5388, this.anInt5387, local3.Format, 0, 4, Static325.method4875(arg0, arg1)));
 	}
 
 	@OriginalMember(owner = "client!kea", name = "a", descriptor = "(Lclient!gaa;)V")
@@ -299,7 +299,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	@Override
 	public boolean method8078(@OriginalArg(0) Class92 arg0, @OriginalArg(1) Class399 arg1) {
 		@Pc(8) D3DDISPLAYMODE local8 = new D3DDISPLAYMODE();
-		return Class190.method4161(this.anIDirect3D1.a(this.anInt5388, local8)) && Class190.method4161(this.anIDirect3D1.CheckDeviceFormat(this.anInt5388, this.anInt5387, local8.Format, 0, 3, Static325.method4875(arg1, arg0)));
+		return lh.a(this.anIDirect3D1.a(this.anInt5388, local8)) && lh.a(this.anIDirect3D1.CheckDeviceFormat(this.anInt5388, this.anInt5387, local8.Format, 0, 3, Static325.method4875(arg1, arg0)));
 	}
 
 	@OriginalMember(owner = "client!kea", name = "c", descriptor = "()Lclient!dp;")
@@ -333,7 +333,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	@Override
 	public void method7957() {
 		@Pc(3) IDirect3DEventQuery local3 = this.anIDirect3DDevice1.b();
-		if (Class190.method4161(local3.Issue())) {
+		if (lh.a(local3.Issue())) {
 			while (true) {
 				@Pc(11) int local11 = local3.IsSignaled();
 				if (local11 != 1) {
@@ -393,7 +393,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 			this.aD3DPRESENT_PARAMETERS1.BackBufferHeight = 0;
 			if (Static325.method4866(this.aD3DPRESENT_PARAMETERS1, this.anInt5388, this.anIDirect3D1, this.anInt5387, this.anInt9184)) {
 				@Pc(59) int local59 = this.anIDirect3DDevice1.Reset(this.aD3DPRESENT_PARAMETERS1);
-				if (Class190.method4161(local59)) {
+				if (lh.a(local59)) {
 					local26.method8187(this.anIDirect3DDevice1.c(), this.anIDirect3DDevice1.b(0));
 					this.method8108();
 					this.method8109();
@@ -475,7 +475,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 		@Pc(1) int[] local1 = null;
 		@Pc(6) IDirect3DSurface local6 = this.anIDirect3DDevice1.c(0);
 		@Pc(16) IDirect3DSurface local16 = this.anIDirect3DDevice1.a(arg2, arg3, 21, 0, 0, true);
-		if (Class190.method4161(this.anIDirect3DDevice1.StretchRect(local6, arg0, arg1, arg2, arg3, local16, 0, 0, arg2, arg3, 0)) && Class190.method4161(local16.LockRect(0, 0, arg2, arg3, 16, this.aPixelBuffer1))) {
+		if (lh.a(this.anIDirect3DDevice1.StretchRect(local6, arg0, arg1, arg2, arg3, local16, 0, 0, arg2, arg3, 0)) && lh.a(local16.LockRect(0, 0, arg2, arg3, 16, this.aPixelBuffer1))) {
 			local1 = new int[arg2 * arg3];
 			@Pc(56) int local56 = this.aPixelBuffer1.getRowPitch();
 			if (local56 == arg2 * 4) {
@@ -679,7 +679,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 		this.anIDirect3DDevice1.EndScene();
 		if (this.aClass351_1.method8188()) {
 			this.anInt5389 = 0;
-			if (Class190.method4162(this.aClass351_1.method8186())) {
+			if (lh.a(this.aClass351_1.method8186(), 0)) {
 				this.method4868();
 			}
 		} else if (++this.anInt5389 <= 50) {

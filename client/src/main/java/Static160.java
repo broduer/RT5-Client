@@ -29,7 +29,7 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "e", descriptor = "(Lclient!ni;)V")
-	private static void method2577(@OriginalArg(0) Class263 arg0) {
+	public static void method2577(@OriginalArg(0) Class263 arg0) {
 		arg0.anInt6501 = 1;
 		if (Static104.anIntArray189 == null) {
 			Static104.anIntArray189 = new int[arg0.anInt6501 * 100000];
@@ -314,7 +314,7 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "([I[I[I[BIII)V")
-	private static void method2578(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) byte[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
+	public static void method2578(@OriginalArg(0) int[] arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) byte[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6) {
 		@Pc(1) int local1 = 0;
 		@Pc(3) int local3;
 		for (local3 = arg4; local3 <= arg5; local3++) {
@@ -349,7 +349,7 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "b", descriptor = "(Lclient!ni;)V")
-	private static void method2579(@OriginalArg(0) Class263 arg0) {
+	public static void method2579(@OriginalArg(0) Class263 arg0) {
 		@Pc(2) byte local2 = arg0.aByte102;
 		@Pc(5) int local5 = arg0.anInt6489;
 		@Pc(8) int local8 = arg0.anInt6497;
@@ -459,7 +459,7 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(ILclient!ni;)I")
-	private static int method2581(@OriginalArg(0) int arg0, @OriginalArg(1) Class263 arg1) {
+	public static int method2581(@OriginalArg(0) int arg0, @OriginalArg(1) Class263 arg1) {
 		while (arg1.anInt6502 < arg0) {
 			arg1.anInt6488 = arg1.anInt6488 << 8 | arg1.aByteArray72[arg1.anInt6490] & 0xFF;
 			arg1.anInt6502 += 8;
@@ -472,7 +472,7 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "d", descriptor = "(Lclient!ni;)V")
-	private static void method2582(@OriginalArg(0) Class263 arg0) {
+	public static void method2582(@OriginalArg(0) Class263 arg0) {
 		arg0.anInt6495 = 0;
 		for (@Pc(4) int local4 = 0; local4 < 256; local4++) {
 			if (arg0.aBooleanArray19[local4]) {
@@ -483,12 +483,12 @@ public final class Static160 {
 	}
 
 	@OriginalMember(owner = "client!f", name = "c", descriptor = "(Lclient!ni;)B")
-	private static byte method2583(@OriginalArg(0) Class263 arg0) {
+	public static byte method2583(@OriginalArg(0) Class263 arg0) {
 		return (byte) method2581(1, arg0);
 	}
 
 	@OriginalMember(owner = "client!f", name = "a", descriptor = "(Lclient!ni;)B")
-	private static byte method2584(@OriginalArg(0) Class263 arg0) {
+	public static byte method2584(@OriginalArg(0) Class263 arg0) {
 		return (byte) method2581(8, arg0);
 	}
 }

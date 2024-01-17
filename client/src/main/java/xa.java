@@ -22,10 +22,10 @@ public final class xa implements Interface26, Interface5 {
 	}
 
 	@OriginalMember(owner = "client!xa", name = "r", descriptor = "(II)V")
-	private native void r(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
+	public native void r(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!xa", name = "va", descriptor = "(JZ)V")
-	private native void va(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
+	public native void va(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!xa", name = "w", descriptor = "(Z)V")
 	@Override

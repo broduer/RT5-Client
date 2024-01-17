@@ -37,13 +37,13 @@ public final class h extends Class14 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!h", name = "JA", descriptor = "(Lclient!oa;Lclient!ya;[[B[I[I[I[I)V")
-	private native void JA(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) byte[][] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int[] arg6);
+	public native void JA(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) byte[][] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) int[] arg5, @OriginalArg(6) int[] arg6);
 
 	@OriginalMember(owner = "client!h", name = "fa", descriptor = "(CIIIZ)V")
 	protected native void fa(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4);
 
 	@OriginalMember(owner = "client!h", name = "NA", descriptor = "(CIIIZLclient!aa;II)V")
-	private native void NA(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class1 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7);
+	public native void NA(@OriginalArg(0) char arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) boolean arg4, @OriginalArg(5) Class1 arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7);
 
 	@OriginalMember(owner = "client!h", name = "finalize", descriptor = "()V")
 	@Override

@@ -1,6 +1,6 @@
 package jagdx;
 
-import jaclib.peer.Class189;
+import jaclib.peer.ti;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -9,7 +9,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class IDirect3DTexture extends IDirect3DBaseTexture {
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DTexture", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
-	public IDirect3DTexture(@OriginalArg(0) Class189 arg0) {
+	public IDirect3DTexture(@OriginalArg(0) ti arg0) {
 		super(arg0);
 	}
 

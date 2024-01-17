@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jaclib/peer/ti")
-public final class Class189 {
+public final class ti {
 
 	@OriginalMember(owner = "client!jaclib/peer/ti", name = "a", descriptor = "Lclient!jaclib/peer/PeerReference;")
 	private PeerReference a;

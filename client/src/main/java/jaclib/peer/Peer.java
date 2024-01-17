@@ -30,7 +30,7 @@ public abstract class Peer {
 	}
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "init", descriptor = "(Ljava/lang/Class;)V")
-	private native void init(@OriginalArg(0) Class arg0);
+	public native void init(@OriginalArg(0) Class arg0);
 
 	@OriginalMember(owner = "client!jaclib/peer/Peer", name = "<init>", descriptor = "()V")
 	protected Peer() {

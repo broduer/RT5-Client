@@ -1,6 +1,6 @@
 package jagdx;
 
-import jaclib.peer.Class189;
+import jaclib.peer.ti;
 import jaclib.peer.IUnknown;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class IDirect3DEventQuery extends IUnknown {
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DEventQuery", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
-	public IDirect3DEventQuery(@OriginalArg(0) Class189 arg0) {
+	public IDirect3DEventQuery(@OriginalArg(0) ti arg0) {
 		super(arg0);
 	}
 

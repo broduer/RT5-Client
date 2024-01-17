@@ -142,7 +142,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;IIIIIII[S[BZ)V")
-	private static void method5068(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
+	public static void method5068(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) short[] arg8, @OriginalArg(9) byte[] arg9, @OriginalArg(10) boolean arg10) {
 		@Pc(20) int local20;
 		@Pc(32) int local32;
 		if (arg10 || arg5 != 0 || arg6 > 0) {
@@ -248,7 +248,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;IIII[S[B)V")
-	private static void method5070(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
+	public static void method5070(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6) {
 		if (arg5 == null) {
 			return;
 		}
@@ -285,7 +285,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "([B[B[SII)V")
-	private static void method5071(@OriginalArg(0) byte[] arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) short[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
+	public static void method5071(@OriginalArg(0) byte[] arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) short[] arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {
 		@Pc(2) int[] local2 = new int[anInt5664];
 		@Pc(5) int[] local5 = new int[anInt5664];
 		@Pc(8) int[] local8 = new int[anInt5664];
@@ -392,7 +392,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;IIII)V")
-	private static void method5073(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static void method5073(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(3) int local3 = anInt5667 - anInt5672;
 		@Pc(7) int local7 = anInt5665 - anInt5674;
 		if (anInt5667 < anInt5670) {
@@ -587,7 +587,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!d;III)I")
-	private static int method5075(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static int method5075(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(4) Class320 local4 = aClass96_2.method2352(arg1);
 		if (local4 == null) {
 			return 0;
@@ -725,13 +725,13 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;Lclient!fu;IIII)V")
-	private static void method5080(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void method5080(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		arg1.anInt3139 = anInt5669 + (arg2 * (arg1.anInt3138 - anInt5672) >> 16);
 		arg1.anInt3131 = anInt5666 - (arg3 * (arg1.anInt3133 - anInt5674) >> 16);
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "(Lclient!ha;Lclient!ge;IIII[I[I)V")
-	private static void method5081(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
+	public static void method5081(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6, @OriginalArg(7) int[] arg7) {
 		@Pc(3) int local3 = arg1.method7403();
 		if ((local3 & 0x1) == 0) {
 			@Pc(15) boolean local15 = (local3 & 0x2) == 0;
@@ -811,7 +811,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "a", descriptor = "()V")
-	private static void method5082() {
+	public static void method5082() {
 		@Pc(4) int local4;
 		@Pc(15) int local15;
 		@Pc(49) int local49;
@@ -1018,7 +1018,7 @@ public final class Static30 {
 	}
 
 	@OriginalMember(owner = "client!baa", name = "b", descriptor = "(Lclient!ha;IIII)Lclient!sia;")
-	private static Class341 method5089(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Class341 method5089(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		for (@Pc(4) Class2_Sub20 local4 = (Class2_Sub20) aClass341_31.method7706(65280); local4 != null; local4 = (Class2_Sub20) aClass341_31.method7713()) {
 			method5080(arg0, local4, arg1, arg2);
 		}

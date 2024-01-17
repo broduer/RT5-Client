@@ -1,6 +1,6 @@
 package jagdx;
 
-import jaclib.peer.Class189;
+import jaclib.peer.ti;
 import jaclib.peer.IUnknown;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class IDirect3DIndexBuffer extends IUnknown {
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DIndexBuffer", name = "<init>", descriptor = "(Lclient!jaclib/peer/ti;)V")
-	public IDirect3DIndexBuffer(@OriginalArg(0) Class189 arg0) {
+	public IDirect3DIndexBuffer(@OriginalArg(0) ti arg0) {
 		super(arg0);
 	}
 
@@ -21,7 +21,7 @@ public final class IDirect3DIndexBuffer extends IUnknown {
 	}
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DIndexBuffer", name = "_Update", descriptor = "(JII)Z")
-	private native boolean _Update(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public native boolean _Update(@OriginalArg(0) long arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!jagdx/IDirect3DIndexBuffer", name = "Lock", descriptor = "(IIILclient!jagdx/GeometryBuffer;)I")
 	public native int Lock(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) GeometryBuffer arg3);

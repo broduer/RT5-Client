@@ -76,7 +76,7 @@ public final class Static472 {
 	public static String aString76 = null;
 
 	@OriginalMember(owner = "client!ou", name = "b", descriptor = "(I)I")
-	private static int method6418(@OriginalArg(0) int arg0) {
+	public static int method6418(@OriginalArg(0) int arg0) {
 		@Pc(4) Class343 local4 = Static648.aClass17_1.method263(arg0);
 		if (local4 == null) {
 			throw new RuntimeException("sr-c113");
@@ -86,7 +86,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(I)I")
-	private static int method6419(@OriginalArg(0) int arg0) {
+	public static int method6419(@OriginalArg(0) int arg0) {
 		@Pc(4) Class343 local4 = Static648.aClass17_1.method263(arg0);
 		if (local4 == null) {
 			throw new RuntimeException("sr-c112");
@@ -100,7 +100,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "c", descriptor = "(I)J")
-	private static long method6420(@OriginalArg(0) int arg0) {
+	public static long method6420(@OriginalArg(0) int arg0) {
 		@Pc(9) Long local9 = aClass164_7.method3478(Static392.aClass379_4.anInt9746 << 16 | arg0);
 		return local9 == null ? -1L : local9;
 	}
@@ -123,7 +123,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "b", descriptor = "(Lclient!hda;)V")
-	private static void method6422(@OriginalArg(0) Class158 arg0) {
+	public static void method6422(@OriginalArg(0) Class158 arg0) {
 		if (arg0 == null) {
 			return;
 		}
@@ -172,7 +172,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(IZ)V")
-	private static void method6423(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
+	public static void method6423(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(220) Class158 local220;
 		@Pc(27) int local27;
 		@Pc(21) int local21;
@@ -3149,7 +3149,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!hda;)V")
-	private static void method6424(@OriginalArg(0) Class158 arg0) {
+	public static void method6424(@OriginalArg(0) Class158 arg0) {
 		if (arg0 == null) {
 			return;
 		}
@@ -3202,7 +3202,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!fj;I)V")
-	private static void method6426(@OriginalArg(0) Class2_Sub2_Sub10 arg0, @OriginalArg(1) int arg1) {
+	public static void method6426(@OriginalArg(0) Class2_Sub2_Sub10 arg0, @OriginalArg(1) int arg1) {
 		anInt7163 = 0;
 		anInt7160 = 0;
 		@Pc(5) int local5 = -1;
@@ -3531,7 +3531,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "c", descriptor = "(IZ)V")
-	private static void method6428(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
+	public static void method6428(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1) {
 		@Pc(109) int local109;
 		@Pc(375) int local375;
 		@Pc(95) String local95;
@@ -6147,7 +6147,7 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Lclient!pd;I)V")
-	private static void method6429(@OriginalArg(0) Class2_Sub42 arg0, @OriginalArg(1) int arg1) {
+	public static void method6429(@OriginalArg(0) Class2_Sub42 arg0, @OriginalArg(1) int arg1) {
 		@Pc(2) Object[] local2 = arg0.anObjectArray36;
 		@Pc(8) int local8 = (Integer) local2[0];
 		@Pc(12) Class2_Sub2_Sub10 local12 = Static488.method6532(local8);
@@ -6207,18 +6207,18 @@ public final class Static472 {
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(C)I")
-	private static int method6430(@OriginalArg(0) char arg0) {
+	public static int method6430(@OriginalArg(0) char arg0) {
 		return Static604.method7912(arg0) ? 1 : 0;
 	}
 
 	@OriginalMember(owner = "client!ou", name = "e", descriptor = "(I)Ljava/lang/String;")
-	private static String method6432(@OriginalArg(0) int arg0) {
+	public static String method6432(@OriginalArg(0) int arg0) {
 		@Pc(9) String local9 = aClass164_7.method3484(Static392.aClass379_4.anInt9746 << 16 | arg0);
 		return local9 == null ? "" : local9;
 	}
 
 	@OriginalMember(owner = "client!ou", name = "a", descriptor = "(Ljava/lang/String;I)V")
-	private static void method6433(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
+	public static void method6433(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		if (Static608.anInt9316 == 0 && (Static389.aBoolean459 && !Static34.aBoolean62 || Static617.aBoolean725)) {
 			return;
 		}

@@ -24,7 +24,7 @@ public final class Stream {
 	private final byte[] c;
 
 	@OriginalMember(owner = "client!jaclib/memory/Stream", name = "getLSB", descriptor = "(I)B")
-	private static native byte getLSB(@OriginalArg(0) int arg0);
+	public static native byte getLSB(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jaclib/memory/Stream", name = "floatToRawIntBits", descriptor = "(F)I")
 	public static native int floatToRawIntBits(@OriginalArg(0) float arg0);

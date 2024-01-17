@@ -25,7 +25,7 @@ public final class NativeInterface {
 	public native void copyLighting(@OriginalArg(0) short[] arg0, @OriginalArg(1) byte[] arg1, @OriginalArg(2) short[] arg2, @OriginalArg(3) short[] arg3, @OriginalArg(4) short[] arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) byte[] arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) short[] arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) long arg13);
 
 	@OriginalMember(owner = "client!jagex3/graphics2/hw/NativeInterface", name = "init", descriptor = "(II)V")
-	private native void init(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
+	public native void init(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!jagex3/graphics2/hw/NativeInterface", name = "initTextureMetrics", descriptor = "(IBB)V")
 	public native void initTextureMetrics(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) byte arg2);

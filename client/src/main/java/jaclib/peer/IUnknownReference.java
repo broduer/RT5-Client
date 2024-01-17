@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class IUnknownReference extends PeerReference {
 
 	@OriginalMember(owner = "client!jaclib/peer/IUnknownReference", name = "<init>", descriptor = "(Lclient!jaclib/peer/IUnknown;Lclient!jaclib/peer/ti;)V")
-	public IUnknownReference(@OriginalArg(0) IUnknown arg0, @OriginalArg(1) Class189 arg1) {
+	public IUnknownReference(@OriginalArg(0) IUnknown arg0, @OriginalArg(1) ti arg1) {
 		super(arg0, arg1);
 	}
 

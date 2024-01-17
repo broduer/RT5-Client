@@ -18,7 +18,8 @@ public final class Static733 {
 			} else {
 				throw new RuntimeException("");
 			}
-		} catch (@Pc(98) Throwable local98) {
+		} catch (@Pc(98) Throwable ex) {
+			ex.printStackTrace();
 			throw new RuntimeException("");
 		}
 	}

@@ -1,4 +1,4 @@
-import jagdx.Class190;
+import jagdx.lh;
 import jagdx.IDirect3DBaseTexture;
 import jagdx.IDirect3DTexture;
 import jagdx.PixelBuffer;
@@ -42,7 +42,7 @@ public final class Class61_Sub3 extends Class61 implements Interface18 {
 		}
 		@Pc(72) PixelBuffer local72 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(83) int local83 = this.anIDirect3DTexture1.LockRect(0, 0, 0, arg1, arg2, 0, local72);
-		if (Class190.method4161(local83)) {
+		if (lh.a(local83)) {
 			if (arg6 == 0) {
 				arg6 = arg1;
 			}
@@ -88,7 +88,7 @@ public final class Class61_Sub3 extends Class61 implements Interface18 {
 		}
 		@Pc(80) PixelBuffer local80 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(91) int local91 = this.anIDirect3DTexture1.LockRect(0, 0, 0, arg2, arg3, 0, local80);
-		if (Class190.method4161(local91)) {
+		if (lh.a(local91)) {
 			@Pc(108) int local108 = arg2 * this.aClass92_17.anInt2425;
 			@Pc(114) int local114 = arg2 * this.aClass92_17.anInt2425;
 			@Pc(117) int local117 = local80.getRowPitch();
@@ -130,7 +130,7 @@ public final class Class61_Sub3 extends Class61 implements Interface18 {
 		}
 		@Pc(19) PixelBuffer local19 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(30) int local30 = this.anIDirect3DTexture1.LockRect(0, 0, 0, arg4, arg1, 0, local19);
-		if (!Class190.method4161(local30)) {
+		if (!lh.a(local30)) {
 			return;
 		}
 		@Pc(40) int local40 = arg0 * this.aClass92_17.anInt2425;
@@ -172,7 +172,7 @@ public final class Class61_Sub3 extends Class61 implements Interface18 {
 		}
 		@Pc(28) PixelBuffer local28 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(39) int local39 = this.anIDirect3DTexture1.LockRect(0, 0, 0, arg1, arg2, 16, local28);
-		if (!Class190.method4161(local39)) {
+		if (!lh.a(local39)) {
 			return;
 		}
 		@Pc(48) int local48 = local28.getRowPitch();
@@ -200,7 +200,7 @@ public final class Class61_Sub3 extends Class61 implements Interface18 {
 		}
 		@Pc(18) PixelBuffer local18 = this.aClass19_Sub1_Sub1_9.aPixelBuffer1;
 		@Pc(29) int local29 = this.anIDirect3DTexture1.LockRect(0, arg1, arg2, arg4, arg3, 0, local18);
-		if (!Class190.method4161(local29)) {
+		if (!lh.a(local29)) {
 			return;
 		}
 		@Pc(48) int local48 = local18.getRowPitch();

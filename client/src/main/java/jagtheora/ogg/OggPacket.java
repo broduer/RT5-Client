@@ -11,7 +11,7 @@ public final class OggPacket extends SimplePeer {
 	public native boolean isTheora();
 
 	@OriginalMember(owner = "client!jagtheora/ogg/OggPacket", name = "isHeader", descriptor = "()I")
-	private native int isHeader();
+	public native int isHeader();
 
 	@OriginalMember(owner = "client!jagtheora/ogg/OggPacket", name = "clear", descriptor = "()V")
 	protected native void clear();

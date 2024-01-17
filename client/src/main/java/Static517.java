@@ -208,7 +208,7 @@ public final class Static517 {
 	}
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!eo;)V")
-	private static void method6831(@OriginalArg(0) Class8_Sub2 arg0) {
+	public static void method6831(@OriginalArg(0) Class8_Sub2 arg0) {
 		Static665.aClass19_15.H(arg0.anInt10718, arg0.anInt10719 + (arg0.method9293(2) >> 1), arg0.anInt10722, Static486.anIntArray591);
 		arg0.anInt10720 = Static486.anIntArray591[0];
 		arg0.anInt10726 = Static486.anIntArray591[1];

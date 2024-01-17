@@ -83,7 +83,7 @@ public final class Static93 {
 			local31 = (File) Static154.aHashtable3.get(arg1);
 		}
 		if (local31 != null) {
-			try {
+			/*try {
 				local31 = new File(local31.getCanonicalPath());
 				@Pc(51) Class local51 = Class.forName("java.lang.Runtime");
 				@Pc(56) Class local56 = Class.forName("java.lang.reflect.AccessibleObject");
@@ -94,12 +94,12 @@ public final class Static93 {
 				local68.invoke(local90, Boolean.FALSE);
 				Static137.aHashtable2.put(arg1, arg0);
 				return true;
-			} catch (@Pc(133) NoSuchMethodException local133) {
+			} catch (@Pc(133) NoSuchMethodException local133) {*/
 				System.load(local31.getPath());
 				Static137.aHashtable2.put(arg1, aClass6 == null ? (aClass6 = getClass("Class334")) : aClass6);
 				return true;
-			} catch (@Pc(154) Throwable local154) {
-			}
+			/*} catch (@Pc(154) Throwable local154) {
+			}*/
 		}
 		return false;
 	}

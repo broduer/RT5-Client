@@ -20,7 +20,7 @@ public final class VorbisInfo extends SimplePeer {
 	}
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/VorbisInfo", name = "initFields", descriptor = "()V")
-	private static native void initFields();
+	public static native void initFields();
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/VorbisInfo", name = "<init>", descriptor = "()V")
 	public VorbisInfo() {

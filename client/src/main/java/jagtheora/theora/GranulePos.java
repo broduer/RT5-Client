@@ -15,7 +15,7 @@ public final class GranulePos extends SimplePeer {
 	}
 
 	@OriginalMember(owner = "client!jagtheora/theora/GranulePos", name = "init", descriptor = "()V")
-	private static native void init();
+	public static native void init();
 
 	@OriginalMember(owner = "client!jagtheora/theora/GranulePos", name = "clear", descriptor = "()V")
 	protected native void clear();

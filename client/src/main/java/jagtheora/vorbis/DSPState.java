@@ -20,7 +20,7 @@ public final class DSPState extends SimplePeer {
 	public native float[][] pcmOut(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/DSPState", name = "init", descriptor = "(Lclient!jagtheora/vorbis/VorbisInfo;)V")
-	private native void init(@OriginalArg(0) VorbisInfo arg0);
+	public native void init(@OriginalArg(0) VorbisInfo arg0);
 
 	@OriginalMember(owner = "client!jagtheora/vorbis/DSPState", name = "granuleTime", descriptor = "()D")
 	public native double granuleTime();

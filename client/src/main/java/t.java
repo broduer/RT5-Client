@@ -67,7 +67,7 @@ public final class t extends Class178 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!t", name = "q", descriptor = "([F)V")
-	private native void q(@OriginalArg(0) float[] arg0);
+	public native void q(@OriginalArg(0) float[] arg0);
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(II)V")
 	@Override
@@ -199,7 +199,7 @@ public final class t extends Class178 implements Interface5 {
 	public native void ka(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!t", name = "V", descriptor = "(IIIIII[I)V")
-	private native void V(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6);
+	public native void V(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int[] arg6);
 
 	@OriginalMember(owner = "client!t", name = "w", descriptor = "(Z)V")
 	public native void w(@OriginalArg(0) boolean arg0);
@@ -214,5 +214,5 @@ public final class t extends Class178 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!t", name = "ga", descriptor = "(Lclient!oa;Lclient!ya;II[[I[[IIII)V")
-	private native void ga(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[][] arg4, @OriginalArg(5) int[][] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
+	public native void ga(@OriginalArg(0) oa arg0, @OriginalArg(1) ya arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int[][] arg4, @OriginalArg(5) int[][] arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
 }

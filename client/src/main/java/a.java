@@ -32,13 +32,13 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "na", descriptor = "(JLclient!ha;IIIIIII)V")
-	private native void na(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
+	public native void na(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
 
 	@OriginalMember(owner = "client!a", name = "O", descriptor = "(JLclient!ha;[I[I[I[SI)V")
-	private native void O(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) int arg6);
+	public native void O(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int[] arg4, @OriginalArg(5) short[] arg5, @OriginalArg(6) int arg6);
 
 	@OriginalMember(owner = "client!a", name = "Z", descriptor = "(JJIII)V")
-	private native void Z(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
+	public native void Z(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!a", name = "b", descriptor = "()V")
 	public void method1() {
@@ -47,7 +47,7 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "f", descriptor = "(JJJ[III)V")
-	private native void f(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
+	public native void f(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!a", name = "w", descriptor = "(Z)V")
 	@Override
@@ -61,10 +61,10 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "r", descriptor = "(JJJIIIZ)V")
-	private native void r(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6);
+	public native void r(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6);
 
 	@OriginalMember(owner = "client!a", name = "ta", descriptor = "(JJIIIIIII[[Z)V")
-	private native void ta(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean[][] arg9);
+	public native void ta(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) boolean[][] arg9);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!i;BIZ)Lclient!ka;")
 	public Class114 method3(@OriginalArg(0) i arg0, @OriginalArg(1) byte arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
@@ -95,7 +95,7 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "H", descriptor = "(JJII)V")
-	private native void H(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public native void H(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!a", name = "finalize", descriptor = "()V")
 	@Override
@@ -106,7 +106,7 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "UA", descriptor = "(JJJ[II)V")
-	private native void UA(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4);
+	public native void UA(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) long arg2, @OriginalArg(3) int[] arg3, @OriginalArg(4) int arg4);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!s;III)V")
 	public void method6(@OriginalArg(0) Class178 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
@@ -134,10 +134,10 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "n", descriptor = "(JJIIJZI)Z")
-	private native boolean n(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) long arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6);
+	public native boolean n(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) long arg4, @OriginalArg(5) boolean arg5, @OriginalArg(6) int arg6);
 
 	@OriginalMember(owner = "client!a", name = "E", descriptor = "(JZ)V")
-	private native void E(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
+	public native void E(@OriginalArg(0) long arg0, @OriginalArg(1) boolean arg1);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!ka;IILclient!tt;Z)Z")
 	public boolean method11(@OriginalArg(0) Class114 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class73 arg3, @OriginalArg(4) boolean arg4) {
@@ -150,10 +150,10 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "e", descriptor = "(JJ[IJ)V")
-	private native void e(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) long arg3);
+	public native void e(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int[] arg2, @OriginalArg(3) long arg3);
 
 	@OriginalMember(owner = "client!a", name = "HA", descriptor = "(JLclient!ha;II)V")
-	private native void HA(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
+	public native void HA(@OriginalArg(0) long arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3);
 
 	@OriginalMember(owner = "client!a", name = "a", descriptor = "(Lclient!s;IIIIIII[[Z)V")
 	public void method13(@OriginalArg(0) Class178 arg0, @OriginalArg(4) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3, @OriginalArg(7) int arg4, @OriginalArg(8) boolean[][] arg5) {
@@ -161,13 +161,13 @@ public final class a implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!a", name = "R", descriptor = "(JJIIJZ)Z")
-	private native boolean R(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) long arg4, @OriginalArg(5) boolean arg5);
+	public native boolean R(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) long arg4, @OriginalArg(5) boolean arg5);
 
 	@OriginalMember(owner = "client!a", name = "W", descriptor = "(J)V")
-	private native void W(@OriginalArg(0) long arg0);
+	public native void W(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!a", name = "M", descriptor = "(J)V")
-	private native void M(@OriginalArg(0) long arg0);
+	public native void M(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!a", name = "c", descriptor = "()V")
 	public void method14() {

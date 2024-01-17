@@ -75,7 +75,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "d", descriptor = "(I)V")
-	private native void d(@OriginalArg(0) int arg0);
+	public native void d(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!oa", name = "Y", descriptor = "()[I")
 	public native int[] Y();
@@ -130,7 +130,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "MA", descriptor = "(Lclient!d;II)V")
-	private native void MA(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public native void MA(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!lk;Z)V")
 	private void method6092(@OriginalArg(0) Class232 arg0) {
@@ -187,7 +187,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "FA", descriptor = "()V")
-	private native void FA();
+	public native void FA();
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(IIIIIIIII)V")
 	@Override
@@ -377,7 +377,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "AA", descriptor = "(SSIBBIZBBBBZZZZZBZZI)V")
-	private native void AA(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1, @OriginalArg(2) int arg2, @OriginalArg(3) byte arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) byte arg7, @OriginalArg(8) byte arg8, @OriginalArg(9) byte arg9, @OriginalArg(10) byte arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) boolean arg12, @OriginalArg(13) boolean arg13, @OriginalArg(14) boolean arg14, @OriginalArg(15) boolean arg15, @OriginalArg(16) byte arg16, @OriginalArg(17) boolean arg17, @OriginalArg(18) boolean arg18, @OriginalArg(19) int arg19);
+	public native void AA(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1, @OriginalArg(2) int arg2, @OriginalArg(3) byte arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6, @OriginalArg(7) byte arg7, @OriginalArg(8) byte arg8, @OriginalArg(9) byte arg9, @OriginalArg(10) byte arg10, @OriginalArg(11) boolean arg11, @OriginalArg(12) boolean arg12, @OriginalArg(13) boolean arg13, @OriginalArg(14) boolean arg14, @OriginalArg(15) boolean arg15, @OriginalArg(16) byte arg16, @OriginalArg(17) boolean arg17, @OriginalArg(18) boolean arg18, @OriginalArg(19) int arg19);
 
 	@OriginalMember(owner = "client!oa", name = "k", descriptor = "(I)V")
 	@Override
@@ -532,7 +532,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "n", descriptor = "(JJ)V")
-	private native void n(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1);
+	public native void n(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1);
 
 	@OriginalMember(owner = "client!oa", name = "h", descriptor = "()V")
 	@Override
@@ -552,7 +552,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "ma", descriptor = "(J)V")
-	private native void ma(@OriginalArg(0) long arg0);
+	public native void ma(@OriginalArg(0) long arg0);
 
 	@OriginalMember(owner = "client!oa", name = "ya", descriptor = "()V")
 	public native void ya();
@@ -577,7 +577,7 @@ public final class oa extends Class19 implements Interface5 {
 	public native void L(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!oa", name = "wa", descriptor = "(IIIIII)V")
-	private native void wa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
+	public native void wa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
 
 	@OriginalMember(owner = "client!oa", name = "WA", descriptor = "(S)Z")
 	private boolean method6095(@OriginalArg(0) short arg0) {
@@ -602,7 +602,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "CA", descriptor = "(S[ISIBBIZBBBBZZZZZBZZI)V")
-	private native void CA(@OriginalArg(0) short arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) short arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) byte arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) byte arg8, @OriginalArg(9) byte arg9, @OriginalArg(10) byte arg10, @OriginalArg(11) byte arg11, @OriginalArg(12) boolean arg12, @OriginalArg(13) boolean arg13, @OriginalArg(14) boolean arg14, @OriginalArg(15) boolean arg15, @OriginalArg(16) boolean arg16, @OriginalArg(17) byte arg17, @OriginalArg(18) boolean arg18, @OriginalArg(19) boolean arg19, @OriginalArg(20) int arg20);
+	public native void CA(@OriginalArg(0) short arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) short arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) byte arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) byte arg8, @OriginalArg(9) byte arg9, @OriginalArg(10) byte arg10, @OriginalArg(11) byte arg11, @OriginalArg(12) boolean arg12, @OriginalArg(13) boolean arg13, @OriginalArg(14) boolean arg14, @OriginalArg(15) boolean arg15, @OriginalArg(16) boolean arg16, @OriginalArg(17) byte arg17, @OriginalArg(18) boolean arg18, @OriginalArg(19) boolean arg19, @OriginalArg(20) int arg20);
 
 	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(IIIIII)Lclient!pu;")
 	@Override
@@ -641,7 +641,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "t", descriptor = "(Lclient!p;)V")
-	private native void t(@OriginalArg(0) p arg0);
+	public native void t(@OriginalArg(0) p arg0);
 
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(II)I")
 	@Override
@@ -751,7 +751,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "N", descriptor = "(I[I[F)V")
-	private native void N(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) float[] arg2);
+	public native void N(@OriginalArg(0) int arg0, @OriginalArg(1) int[] arg1, @OriginalArg(2) float[] arg2);
 
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "()Z")
 	@Override
@@ -760,7 +760,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "Z", descriptor = "(IIIIIILclient!aa;II)V")
-	private native void Z(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class1 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
+	public native void Z(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class1 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8);
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(FFF)V")
 	@Override
@@ -808,7 +808,7 @@ public final class oa extends Class19 implements Interface5 {
 	public native void la();
 
 	@OriginalMember(owner = "client!oa", name = "va", descriptor = "(Lclient!za;)V")
-	private native void va(@OriginalArg(0) Class2_Sub13 arg0);
+	public native void va(@OriginalArg(0) Class2_Sub13 arg0);
 
 	@OriginalMember(owner = "client!oa", name = "C", descriptor = "(Z)V")
 	public native void C(@OriginalArg(0) boolean arg0);
