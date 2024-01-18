@@ -19,7 +19,7 @@ public final class Static143 {
 	@OriginalMember(owner = "client!eia", name = "f", descriptor = "(B)V")
 	public static void method3571() {
 		@Pc(20) Class2_Sub19 local20 = Static293.method4342(Static442.aClass347_83, Static405.aClass153_2.aClass186_1);
-		local20.aClass2_Sub21_Sub2_1.method7349(Static334.anInt5475);
+		local20.aClass2_Sub21_Sub2_1.p4(Static334.anInt5475);
 		Static405.aClass153_2.method3275(local20);
 	}
 

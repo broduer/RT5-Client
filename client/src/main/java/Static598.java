@@ -28,7 +28,7 @@ public final class Static598 {
 			@Pc(18) Class8_Sub2_Sub1_Sub5 local18 = local13.aClass8_Sub2_Sub1_Sub5_1;
 			local18.method6605();
 			if (local18.method6610()) {
-				local13.method9464();
+				local13.unlink();
 				local18.method6607();
 			} else if (Static334.aClass293ArrayArrayArray1 != null && local18.method6602()) {
 				Static102.method2026(local18, true);

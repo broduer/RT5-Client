@@ -87,7 +87,7 @@ public final class Static81 {
 	public static Class2_Sub2_Sub2 method1587() {
 		@Pc(17) Class2_Sub2_Sub2 local17 = (Class2_Sub2_Sub2) Static138.aClass194_6.method4359();
 		if (local17 != null) {
-			local17.method9464();
+			local17.unlink();
 			local17.method9267();
 			return local17;
 		}
@@ -99,7 +99,7 @@ public final class Static81 {
 			if (local17.method201() > Static588.currentTimeMillis()) {
 				return null;
 			}
-			local17.method9464();
+			local17.unlink();
 			local17.method9267();
 		} while ((local17.aLong325 & Long.MIN_VALUE) == 0L);
 		return local17;
@@ -113,29 +113,29 @@ public final class Static81 {
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
 		@Pc(8) Class2_Sub19 local8 = Static273.method3962();
-		local8.aClass2_Sub21_Sub2_1.method7396(Static572.aClass167_58.anInt3984);
-		local8.aClass2_Sub21_Sub2_1.method7380(0);
-		@Pc(25) int local25 = local8.aClass2_Sub21_Sub2_1.anInt8412;
-		local8.aClass2_Sub21_Sub2_1.method7380(667);
+		local8.aClass2_Sub21_Sub2_1.p1(LoginProt.OPCODE_22.opcode);
+		local8.aClass2_Sub21_Sub2_1.p2(0);
+		@Pc(25) int local25 = local8.aClass2_Sub21_Sub2_1.pos;
+		local8.aClass2_Sub21_Sub2_1.p2(667);
 		@Pc(38) int[] local38 = Static664.method8659(local8);
-		@Pc(42) int local42 = local8.aClass2_Sub21_Sub2_1.anInt8412;
-		local8.aClass2_Sub21_Sub2_1.method7398(arg0);
-		local8.aClass2_Sub21_Sub2_1.method7380(Static323.affid);
-		local8.aClass2_Sub21_Sub2_1.method7398(arg2);
-		local8.aClass2_Sub21_Sub2_1.method7370(Static416.userFlow);
-		local8.aClass2_Sub21_Sub2_1.method7396(client.lang);
-		local8.aClass2_Sub21_Sub2_1.method7396(Static392.game.id);
+		@Pc(42) int local42 = local8.aClass2_Sub21_Sub2_1.pos;
+		local8.aClass2_Sub21_Sub2_1.pjstr(arg0);
+		local8.aClass2_Sub21_Sub2_1.p2(Static323.affid);
+		local8.aClass2_Sub21_Sub2_1.pjstr(arg2);
+		local8.aClass2_Sub21_Sub2_1.p8(Static416.userFlow);
+		local8.aClass2_Sub21_Sub2_1.p1(client.lang);
+		local8.aClass2_Sub21_Sub2_1.p1(Static392.game.id);
 		Static176.method6697(local8.aClass2_Sub21_Sub2_1);
 		@Pc(81) String local81 = Static389.additionalInfo;
-		local8.aClass2_Sub21_Sub2_1.method7396(local81 == null ? 0 : 1);
+		local8.aClass2_Sub21_Sub2_1.p1(local81 == null ? 0 : 1);
 		if (local81 != null) {
-			local8.aClass2_Sub21_Sub2_1.method7398(local81);
+			local8.aClass2_Sub21_Sub2_1.pjstr(local81);
 		}
-		local8.aClass2_Sub21_Sub2_1.method7396(arg1);
-		local8.aClass2_Sub21_Sub2_1.method7396(arg3 ? 1 : 0);
-		local8.aClass2_Sub21_Sub2_1.anInt8412 += 7;
-		local8.aClass2_Sub21_Sub2_1.method7373(local38, local42, local8.aClass2_Sub21_Sub2_1.anInt8412);
-		local8.aClass2_Sub21_Sub2_1.method7364(local8.aClass2_Sub21_Sub2_1.anInt8412 - local25);
+		local8.aClass2_Sub21_Sub2_1.p1(arg1);
+		local8.aClass2_Sub21_Sub2_1.p1(arg3 ? 1 : 0);
+		local8.aClass2_Sub21_Sub2_1.pos += 7;
+		local8.aClass2_Sub21_Sub2_1.method7373(local38, local42, local8.aClass2_Sub21_Sub2_1.pos);
+		local8.aClass2_Sub21_Sub2_1.psize2(local8.aClass2_Sub21_Sub2_1.pos - local25);
 		Static405.aClass153_1.method3275(local8);
 		Static720.anInt10894 = 0;
 		Static580.anInt8645 = -3;

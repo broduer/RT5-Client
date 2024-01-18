@@ -76,48 +76,48 @@ public final class Class260 {
 	}
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(Lclient!ge;)V")
-	public void method5782(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method5782(@OriginalArg(0) Packet arg0) {
 		this.aClass213_5 = new Class213();
 		this.aClass213_5.method4959(arg0);
 		this.aClass213_7 = new Class213();
 		this.aClass213_7.method4959(arg0);
-		@Pc(21) int local21 = arg0.method7403();
+		@Pc(21) int local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8412--;
+			arg0.pos--;
 			this.aClass213_6 = new Class213();
 			this.aClass213_6.method4959(arg0);
 			this.aClass213_1 = new Class213();
 			this.aClass213_1.method4959(arg0);
 		}
-		local21 = arg0.method7403();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8412--;
+			arg0.pos--;
 			this.aClass213_9 = new Class213();
 			this.aClass213_9.method4959(arg0);
 			this.aClass213_2 = new Class213();
 			this.aClass213_2.method4959(arg0);
 		}
-		local21 = arg0.method7403();
+		local21 = arg0.g1();
 		if (local21 != 0) {
-			arg0.anInt8412--;
+			arg0.pos--;
 			this.aClass213_3 = new Class213();
 			this.aClass213_3.method4959(arg0);
 			this.aClass213_4 = new Class213();
 			this.aClass213_4.method4959(arg0);
 		}
 		for (@Pc(109) int local109 = 0; local109 < 10; local109++) {
-			@Pc(114) int local114 = arg0.method7397();
+			@Pc(114) int local114 = arg0.gsmarts();
 			if (local114 == 0) {
 				break;
 			}
 			this.anIntArray502[local109] = local114;
 			this.anIntArray510[local109] = arg0.method7367();
-			this.anIntArray504[local109] = arg0.method7397();
+			this.anIntArray504[local109] = arg0.gsmarts();
 		}
-		this.anInt6476 = arg0.method7397();
-		this.anInt6477 = arg0.method7397();
-		this.anInt6474 = arg0.method7389();
-		this.anInt6475 = arg0.method7389();
+		this.anInt6476 = arg0.gsmarts();
+		this.anInt6477 = arg0.gsmarts();
+		this.anInt6474 = arg0.g2();
+		this.anInt6475 = arg0.g2();
 		this.aClass230_1 = new Class230();
 		this.aClass213_8 = new Class213();
 		this.aClass230_1.method5264(arg0, this.aClass213_8);

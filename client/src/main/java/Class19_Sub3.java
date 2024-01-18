@@ -783,7 +783,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "(III)V")
 	public synchronized void method6978(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg0);
-		local8.aLong328 = arg1;
+		local8.key = arg1;
 		this.aClass341_48.method7718(local8);
 	}
 
@@ -1117,7 +1117,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "u", descriptor = "()V")
 	@Override
 	protected void method7994() {
-		for (@Pc(8) Class2 local8 = this.aClass341_46.method7706(65280); local8 != null; local8 = this.aClass341_46.method7713()) {
+		for (@Pc(8) Node local8 = this.aClass341_46.method7706(65280); local8 != null; local8 = this.aClass341_46.method7713()) {
 			((Class2_Sub13_Sub1) local8).method1609();
 		}
 		if (this.aClass278_1 != null) {
@@ -1267,7 +1267,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IBI)V")
 	public synchronized void method6990(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(18) Class2_Sub38 local18 = new Class2_Sub38(arg1);
-		local18.aLong328 = arg0;
+		local18.key = arg0;
 		this.aClass341_51.method7718(local18);
 	}
 
@@ -1456,7 +1456,7 @@ public final class Class19_Sub3 extends Class19 {
 			local16.method4344(0.0F);
 			local16.method4344(0.0F);
 		}
-		this.anInterface12_7 = this.method7031(false, local16.anInt8412, local16.aByteArray93, 20);
+		this.anInterface12_7 = this.method7031(false, local16.pos, local16.data, 20);
 		this.aClass94_15 = new Class94(this.anInterface12_7, 5126, 3, 0);
 		this.aClass94_16 = new Class94(this.anInterface12_7, 5126, 2, 12);
 		this.aClass42_1.method1081(this);
@@ -1998,8 +1998,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(BI)V")
 	public synchronized void method7014(@OriginalArg(1) int arg0) {
-		@Pc(12) Class2 local12 = new Class2();
-		local12.aLong328 = arg0;
+		@Pc(12) Node local12 = new Node();
+		local12.key = arg0;
 		this.aClass341_52.method7718(local12);
 	}
 
@@ -2628,7 +2628,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(19) Class2_Sub38 local19;
 		while (!this.aClass341_48.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_48.method7712();
-			Static154.anIntArray236[local11++] = (int) local19.aLong328;
+			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8016 -= local19.anInt6399;
 			if (local11 == 1000) {
 				OpenGL.glDeleteBuffersARB(local11, Static154.anIntArray236, 0);
@@ -2641,7 +2641,7 @@ public final class Class19_Sub3 extends Class19 {
 		}
 		while (!this.aClass341_49.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_49.method7712();
-			Static154.anIntArray236[local11++] = (int) local19.aLong328;
+			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8017 -= local19.anInt6399;
 			if (local11 == 1000) {
 				OpenGL.glDeleteTextures(local11, Static154.anIntArray236, 0);
@@ -2666,7 +2666,7 @@ public final class Class19_Sub3 extends Class19 {
 		}
 		while (!this.aClass341_51.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_51.method7712();
-			Static154.anIntArray236[local11++] = (int) local19.aLong328;
+			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8018 -= local19.anInt6399;
 			if (local11 == 1000) {
 				OpenGL.glDeleteRenderbuffersEXT(local11, Static154.anIntArray236, 0);
@@ -2678,20 +2678,20 @@ public final class Class19_Sub3 extends Class19 {
 		}
 		while (!this.aClass341_47.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_47.method7712();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
+			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
-		@Pc(227) Class2 local227;
+		@Pc(227) Node local227;
 		while (!this.aClass341_52.method7709()) {
 			local227 = this.aClass341_52.method7712();
-			OpenGL.glDeleteProgramARB((int) local227.aLong328);
+			OpenGL.glDeleteProgramARB((int) local227.key);
 		}
 		while (!this.aClass341_53.method7709()) {
 			local227 = this.aClass341_53.method7712();
-			OpenGL.glDeleteObjectARB(local227.aLong328);
+			OpenGL.glDeleteObjectARB(local227.key);
 		}
 		while (!this.aClass341_47.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_47.method7712();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
+			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		this.aClass169_1.method3528();
 		if (this.E() > 100663296 && this.aLong248 + 60000L < Static588.currentTimeMillis()) {
@@ -2777,7 +2777,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(III)V")
 	public synchronized void method7037(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg1);
-		local8.aLong328 = arg0;
+		local8.key = arg0;
 		this.aClass341_49.method7718(local8);
 	}
 
@@ -3210,8 +3210,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(JI)V")
 	public synchronized void method7049(@OriginalArg(0) long arg0) {
-		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = arg0;
+		@Pc(7) Node local7 = new Node();
+		local7.key = arg0;
 		this.aClass341_53.method7718(local7);
 	}
 

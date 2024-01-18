@@ -123,35 +123,35 @@ public final class Class287 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(Lclient!ge;BI)V")
-	private void method6463(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method6463(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
-			this.anInt7217 = arg0.method7389();
+			this.anInt7217 = arg0.g2();
 		} else if (arg1 == 2) {
 			this.anInt7211 = arg0.method7390();
 		} else if (arg1 == 3) {
-			this.anInt7204 = arg0.method7389();
+			this.anInt7204 = arg0.g2();
 		} else if (arg1 == 4) {
-			this.anInt7201 = arg0.method7389();
+			this.anInt7201 = arg0.g2();
 		} else if (arg1 == 5) {
-			this.anInt7202 = arg0.method7389();
+			this.anInt7202 = arg0.g2();
 		} else if (arg1 == 6) {
-			this.anInt7208 = arg0.method7389();
+			this.anInt7208 = arg0.g2();
 		} else if (arg1 == 7) {
 			this.anInt7205 = arg0.method7363();
 		} else if (arg1 == 8) {
-			this.aString82 = arg0.method7350();
+			this.aString82 = arg0.gjstr2();
 		} else if (arg1 == 9) {
-			this.anInt7213 = arg0.method7389();
+			this.anInt7213 = arg0.g2();
 		} else if (arg1 == 10) {
 			this.anInt7212 = arg0.method7363();
 		} else if (arg1 == 11) {
 			this.anInt7200 = 0;
 		} else if (arg1 == 12) {
-			this.anInt7216 = arg0.method7403();
+			this.anInt7216 = arg0.g1();
 		} else if (arg1 == 13) {
 			this.anInt7199 = arg0.method7363();
 		} else if (arg1 == 14) {
-			this.anInt7200 = arg0.method7389();
+			this.anInt7200 = arg0.g2();
 		}
 	}
 
@@ -168,9 +168,9 @@ public final class Class287 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(ZLclient!ge;)V")
-	public void method6465(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method6465(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7403();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}

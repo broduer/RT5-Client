@@ -79,7 +79,7 @@ public final class Class164 {
 	public int anInt3967 = -1;
 
 	@OriginalMember(owner = "client!hi", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class164(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class164(@OriginalArg(0) Packet arg0) {
 		this.method3494(arg0);
 	}
 
@@ -174,7 +174,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(16) Class2 local16 = this.aClass28_19.method738(arg0);
+			@Pc(16) Node local16 = this.aClass28_19.method738(arg0);
 			return local16 != null && local16 instanceof Class2_Sub48 ? Long.valueOf(((Class2_Sub48) local16).aLong264) : null;
 		}
 	}
@@ -202,7 +202,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(32) Class2 local32 = this.aClass28_19.method738(arg1);
+			@Pc(32) Node local32 = this.aClass28_19.method738(arg1);
 			if (local32 != null) {
 				if (local32 instanceof Class2_Sub24) {
 					@Pc(42) Class2_Sub24 local42 = (Class2_Sub24) local32;
@@ -212,7 +212,7 @@ public final class Class164 {
 					local42.aString46 = arg0;
 					return true;
 				}
-				local32.method9464();
+				local32.unlink();
 			}
 		}
 		this.aClass28_19.method735(arg1, new Class2_Sub24(arg0));
@@ -252,7 +252,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(24) Class2 local24 = this.aClass28_19.method738(arg0);
+			@Pc(24) Node local24 = this.aClass28_19.method738(arg0);
 			return local24 != null && local24 instanceof Class2_Sub24 ? ((Class2_Sub24) local24).aString46 : null;
 		}
 	}
@@ -331,7 +331,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(29) Class2 local29 = this.aClass28_19.method738(arg0);
+			@Pc(29) Node local29 = this.aClass28_19.method738(arg0);
 			if (local29 != null) {
 				if (local29 instanceof Class2_Sub48) {
 					@Pc(39) Class2_Sub48 local39 = (Class2_Sub48) local29;
@@ -341,7 +341,7 @@ public final class Class164 {
 					local39.aLong264 = arg1;
 					return true;
 				}
-				local29.method9464();
+				local29.unlink();
 			}
 		}
 		this.aClass28_19.method735(arg0, new Class2_Sub48(arg1));
@@ -368,7 +368,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		} else {
-			@Pc(24) Class2 local24 = this.aClass28_19.method738(arg0);
+			@Pc(24) Node local24 = this.aClass28_19.method738(arg0);
 			return local24 != null && local24 instanceof Class2_Sub38 ? Integer.valueOf(((Class2_Sub38) local24).anInt6399) : null;
 		}
 	}
@@ -418,7 +418,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(63) Class2 local63 = this.aClass28_19.method738(arg3);
+			@Pc(63) Node local63 = this.aClass28_19.method738(arg3);
 			if (local63 != null) {
 				if (local63 instanceof Class2_Sub38) {
 					@Pc(73) Class2_Sub38 local73 = (Class2_Sub38) local63;
@@ -429,7 +429,7 @@ public final class Class164 {
 					local73.anInt6399 |= local43;
 					return true;
 				}
-				local63.method9464();
+				local63.unlink();
 			}
 		}
 		this.aClass28_19.method735(arg3, new Class2_Sub38(local43));
@@ -437,12 +437,12 @@ public final class Class164 {
 	}
 
 	@OriginalMember(owner = "client!hi", name = "a", descriptor = "(ILclient!ge;)V")
-	private void method3494(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(9) int local9 = arg0.method7403();
+	private void method3494(@OriginalArg(1) Packet arg0) {
+		@Pc(9) int local9 = arg0.g1();
 		if (local9 < 1 || local9 > 5) {
 			throw new RuntimeException("Unsupported ClanSettings version: " + local9);
 		}
-		@Pc(37) int local37 = arg0.method7403();
+		@Pc(37) int local37 = arg0.g1();
 		if ((local37 & 0x2) != 0) {
 			this.aBoolean306 = true;
 		}
@@ -457,22 +457,22 @@ public final class Class164 {
 			this.aLongArray7 = null;
 			this.aLongArray8 = null;
 		}
-		this.anInt3961 = arg0.method7356();
-		this.anInt3955 = arg0.method7356();
+		this.anInt3961 = arg0.g4();
+		this.anInt3955 = arg0.g4();
 		if (local9 <= 3 && this.anInt3955 != 0) {
 			this.anInt3955 += 16912800;
 		}
-		this.anInt3950 = arg0.method7389();
-		this.anInt3952 = arg0.method7403();
-		this.aString45 = arg0.method7365();
+		this.anInt3950 = arg0.g2();
+		this.anInt3952 = arg0.g1();
+		this.aString45 = arg0.gstr();
 		if (local9 >= 4) {
-			arg0.method7356();
+			arg0.g4();
 		}
-		this.aBoolean307 = arg0.method7403() == 1;
-		this.aByte68 = arg0.method7384();
-		this.aByte67 = arg0.method7384();
-		this.aByte66 = arg0.method7384();
-		this.aByte65 = arg0.method7384();
+		this.aBoolean307 = arg0.g1() == 1;
+		this.aByte68 = arg0.g1b();
+		this.aByte67 = arg0.g1b();
+		this.aByte66 = arg0.g1b();
+		this.aByte65 = arg0.g1b();
 		@Pc(282) int local282;
 		if (this.anInt3950 > 0) {
 			if (this.aBoolean308 && (this.aLongArray8 == null || this.aLongArray8.length < this.anInt3950)) {
@@ -492,17 +492,17 @@ public final class Class164 {
 			}
 			for (local282 = 0; local282 < this.anInt3950; local282++) {
 				if (this.aBoolean308) {
-					this.aLongArray8[local282] = arg0.method7405();
+					this.aLongArray8[local282] = arg0.g8();
 				}
 				if (this.aBoolean306) {
-					this.aStringArray18[local282] = arg0.method7410();
+					this.aStringArray18[local282] = arg0.fastgstr();
 				}
-				this.aByteArray40[local282] = arg0.method7384();
+				this.aByteArray40[local282] = arg0.g1b();
 				if (local9 >= 2) {
-					this.anIntArray309[local282] = arg0.method7356();
+					this.anIntArray309[local282] = arg0.g4();
 				}
 				if (local9 >= 5) {
-					this.anIntArray308[local282] = arg0.method7389();
+					this.anIntArray308[local282] = arg0.g2();
 				} else {
 					this.anIntArray308[local282] = 0;
 				}
@@ -518,33 +518,33 @@ public final class Class164 {
 			}
 			for (local282 = 0; local282 < this.anInt3952; local282++) {
 				if (this.aBoolean308) {
-					this.aLongArray7[local282] = arg0.method7405();
+					this.aLongArray7[local282] = arg0.g8();
 				}
 				if (this.aBoolean306) {
-					this.aStringArray19[local282] = arg0.method7410();
+					this.aStringArray19[local282] = arg0.fastgstr();
 				}
 			}
 		}
 		if (local9 < 3) {
 			return;
 		}
-		local282 = arg0.method7389();
+		local282 = arg0.g2();
 		if (local282 <= 0) {
 			return;
 		}
 		this.aClass28_19 = new Class28(local282 >= 16 ? 16 : Static440.method5969(local282));
 		while (local282-- > 0) {
-			@Pc(493) int local493 = arg0.method7356();
+			@Pc(493) int local493 = arg0.g4();
 			@Pc(497) int local497 = local493 & 0x3FFFFFFF;
 			@Pc(501) int local501 = local493 >>> 30;
 			if (local501 == 0) {
-				@Pc(510) int local510 = arg0.method7356();
+				@Pc(510) int local510 = arg0.g4();
 				this.aClass28_19.method735(local497, new Class2_Sub38(local510));
 			} else if (local501 == 1) {
-				@Pc(533) long local533 = arg0.method7405();
+				@Pc(533) long local533 = arg0.g8();
 				this.aClass28_19.method735(local497, new Class2_Sub48(local533));
 			} else if (local501 == 2) {
-				@Pc(556) String local556 = arg0.method7365();
+				@Pc(556) String local556 = arg0.gstr();
 				this.aClass28_19.method735(local497, new Class2_Sub24(local556));
 			}
 		}
@@ -556,7 +556,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			return null;
 		}
-		@Pc(16) Class2 local16 = this.aClass28_19.method738(arg0);
+		@Pc(16) Node local16 = this.aClass28_19.method738(arg0);
 		if (local16 != null && local16 instanceof Class2_Sub38) {
 			@Pc(50) int local50 = arg1 == 31 ? -1 : (0x1 << arg1 + 1) - 1;
 			return Integer.valueOf((((Class2_Sub38) local16).anInt6399 & local50) >>> arg2);
@@ -576,7 +576,7 @@ public final class Class164 {
 		if (this.aClass28_19 == null) {
 			this.aClass28_19 = new Class28(4);
 		} else {
-			@Pc(35) Class2 local35 = this.aClass28_19.method738(arg1);
+			@Pc(35) Node local35 = this.aClass28_19.method738(arg1);
 			if (local35 != null) {
 				if (local35 instanceof Class2_Sub38) {
 					@Pc(45) Class2_Sub38 local45 = (Class2_Sub38) local35;
@@ -586,7 +586,7 @@ public final class Class164 {
 					local45.anInt6399 = arg0;
 					return true;
 				}
-				local35.method9464();
+				local35.unlink();
 			}
 		}
 		this.aClass28_19.method735(arg1, new Class2_Sub38(arg0));

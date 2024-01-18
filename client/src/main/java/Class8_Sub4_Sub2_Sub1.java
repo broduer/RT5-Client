@@ -146,8 +146,8 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 			this.anInt7565 = (int) ((long) this.anInt7565 - ((long) this.anInt7565 * local356 >> 28));
 		}
 		if (local35.anIntArray775 != null) {
-			@Pc(437) Class2 local437 = local31.aClass341_22.aClass2_271;
-			for (@Pc(440) Class2 local440 = local437.aClass2_346; local440 != local437; local440 = local440.aClass2_346) {
+			@Pc(437) Node local437 = local31.aClass341_22.aClass2_271;
+			for (@Pc(440) Node local440 = local437.next; local440 != local437; local440 = local440.next) {
 				@Pc(444) Class2_Sub2_Sub5 local444 = (Class2_Sub2_Sub5) local440;
 				@Pc(447) Class280 local447 = local444.aClass280_1;
 				if (local447.anInt7003 != 1) {

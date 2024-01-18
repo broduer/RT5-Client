@@ -32,28 +32,28 @@ public final class Static300 {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!ge;)V")
-	public static void method4399(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7397();
+	public static void method4399(@OriginalArg(1) Packet arg0) {
+		@Pc(7) int local7 = arg0.gsmarts();
 		Static511.aClass65Array1 = new Class65[local7];
 		for (@Pc(12) int local12 = 0; local12 < local7; local12++) {
 			Static511.aClass65Array1[local12] = new Class65();
-			Static511.aClass65Array1[local12].anInt1617 = arg0.method7397();
-			Static511.aClass65Array1[local12].aString13 = arg0.method7350();
+			Static511.aClass65Array1[local12].anInt1617 = arg0.gsmarts();
+			Static511.aClass65Array1[local12].aString13 = arg0.gjstr2();
 		}
-		Static494.anInt7417 = arg0.method7397();
-		Static699.anInt10560 = arg0.method7397();
-		Static476.anInt7198 = arg0.method7397();
+		Static494.anInt7417 = arg0.gsmarts();
+		Static699.anInt10560 = arg0.gsmarts();
+		Static476.anInt7198 = arg0.gsmarts();
 		Static106.aClass299_Sub1Array1 = new Class299_Sub1[Static699.anInt10560 + 1 - Static494.anInt7417];
 		for (@Pc(63) int local63 = 0; local63 < Static476.anInt7198; local63++) {
-			@Pc(68) int local68 = arg0.method7397();
+			@Pc(68) int local68 = arg0.gsmarts();
 			@Pc(76) Class299_Sub1 local76 = Static106.aClass299_Sub1Array1[local68] = new Class299_Sub1();
-			local76.anInt7587 = arg0.method7403();
-			local76.anInt7586 = arg0.method7356();
+			local76.anInt7587 = arg0.g1();
+			local76.anInt7586 = arg0.g4();
 			local76.anInt7592 = Static494.anInt7417 + local68;
-			local76.aString91 = arg0.method7350();
-			local76.aString90 = arg0.method7350();
+			local76.aString91 = arg0.gjstr2();
+			local76.aString90 = arg0.gjstr2();
 		}
-		Static379.anInt5988 = arg0.method7356();
+		Static379.anInt5988 = arg0.g4();
 		Static518.aBoolean815 = true;
 	}
 

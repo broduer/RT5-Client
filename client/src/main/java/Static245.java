@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static245 {
 
 	@OriginalMember(owner = "client!hka", name = "j", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_114 = new Class347(80, -1);
+	public static final ClientProt aClass347_114 = new ClientProt(80, -1);
 
 	@OriginalMember(owner = "client!hka", name = "h", descriptor = "[I")
 	public static final int[] anIntArray773 = new int[] { 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 120 };

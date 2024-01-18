@@ -8,10 +8,10 @@ public final class Static678 {
 	public static long js5ConnectTime;
 
 	@OriginalMember(owner = "client!via", name = "a", descriptor = "(ILclient!ge;)V")
-	public static void method8908(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {
+	public static void method8908(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		for (@Pc(1) int local1 = 0; local1 < Static476.anInt7198; local1++) {
-			@Pc(6) int local6 = arg1.method7397();
-			@Pc(10) int local10 = arg1.method7389();
+			@Pc(6) int local6 = arg1.gsmarts();
+			@Pc(10) int local10 = arg1.g2();
 			if (local10 == 65535) {
 				local10 = -1;
 			}

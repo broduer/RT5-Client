@@ -108,13 +108,13 @@ public final class Class47_Sub1 extends Class47 {
 		if (this.aClass9_3 == null) {
 			return;
 		}
-		for (@Pc(23) Class2 local23 = this.aClass341_41.method7706(65280); local23 != null; local23 = this.aClass341_41.method7713()) {
-			if (local23.aLong328 == (long) arg0) {
+		for (@Pc(23) Node local23 = this.aClass341_41.method7706(65280); local23 != null; local23 = this.aClass341_41.method7713()) {
+			if (local23.key == (long) arg0) {
 				return;
 			}
 		}
-		@Pc(50) Class2 local50 = new Class2();
-		local50.aLong328 = arg0;
+		@Pc(50) Node local50 = new Node();
+		local50.key = arg0;
 		this.aClass341_41.method7718(local50);
 	}
 
@@ -123,8 +123,8 @@ public final class Class47_Sub1 extends Class47 {
 		if (this.aClass294_1 == null) {
 			return 0;
 		} else if (this.aBoolean567) {
-			@Pc(29) Class2 local29 = this.aClass341_42.method7706(65280);
-			return local29 == null ? 0 : (int) local29.aLong328;
+			@Pc(29) Node local29 = this.aClass341_42.method7706(65280);
+			return local29 == null ? 0 : (int) local29.key;
 		} else {
 			return this.aClass294_1.anInt7388;
 		}
@@ -137,20 +137,20 @@ public final class Class47_Sub1 extends Class47 {
 				return;
 			}
 			@Pc(33) boolean local33;
-			@Pc(38) Class2 local38;
+			@Pc(38) Node local38;
 			@Pc(44) int local44;
-			@Pc(147) Class2 local147;
+			@Pc(147) Node local147;
 			if (this.aBoolean567) {
 				local33 = true;
 				for (local38 = this.aClass341_42.method7706(65280); local38 != null; local38 = this.aClass341_42.method7713()) {
-					local44 = (int) local38.aLong328;
+					local44 = (int) local38.key;
 					if (this.aByteArray88[local44] == 0) {
 						this.method6658(local44, 1);
 					}
 					if (this.aByteArray88[local44] == 0) {
 						local33 = false;
 					} else {
-						local38.method9464();
+						local38.unlink();
 					}
 				}
 				while (this.aClass294_1.anIntArray598.length > this.anInt7497) {
@@ -165,8 +165,8 @@ public final class Class47_Sub1 extends Class47 {
 							this.method6658(this.anInt7497, 1);
 						}
 						if (this.aByteArray88[this.anInt7497] == 0) {
-							local147 = new Class2();
-							local147.aLong328 = this.anInt7497;
+							local147 = new Node();
+							local147.key = this.anInt7497;
 							local33 = false;
 							this.aClass341_42.method7718(local147);
 						}
@@ -180,12 +180,12 @@ public final class Class47_Sub1 extends Class47 {
 			} else if (this.aBoolean568) {
 				local33 = true;
 				for (local38 = this.aClass341_42.method7706(65280); local38 != null; local38 = this.aClass341_42.method7713()) {
-					local44 = (int) local38.aLong328;
+					local44 = (int) local38.key;
 					if (this.aByteArray88[local44] != 1) {
 						this.method6658(local44, 2);
 					}
 					if (this.aByteArray88[local44] == 1) {
-						local38.method9464();
+						local38.unlink();
 					} else {
 						local33 = false;
 					}
@@ -202,8 +202,8 @@ public final class Class47_Sub1 extends Class47 {
 							this.method6658(this.anInt7497, 2);
 						}
 						if (this.aByteArray88[this.anInt7497] != 1) {
-							local147 = new Class2();
-							local147.aLong328 = this.anInt7497;
+							local147 = new Node();
+							local147.key = this.anInt7497;
 							this.aClass341_42.method7718(local147);
 							local33 = false;
 						}
@@ -227,7 +227,7 @@ public final class Class47_Sub1 extends Class47 {
 					if (!local366.aBoolean778) {
 						throw new RuntimeException();
 					}
-					local366.method9464();
+					local366.unlink();
 				} else {
 					local366.aBoolean777 = true;
 				}
@@ -249,7 +249,7 @@ public final class Class47_Sub1 extends Class47 {
 			return null;
 		} else {
 			@Pc(26) byte[] local26 = local9.method8978();
-			local9.method9464();
+			local9.unlink();
 			return local26;
 		}
 	}
@@ -258,7 +258,7 @@ public final class Class47_Sub1 extends Class47 {
 	private Class2_Sub2_Sub17 method6658(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(19) Class2_Sub2_Sub17 local19 = (Class2_Sub2_Sub17) this.aClass28_36.method738(arg0);
 		if (local19 != null && arg1 == 0 && !local19.aBoolean778 && local19.aBoolean779) {
-			local19.method9464();
+			local19.unlink();
 			local19 = null;
 		}
 		if (local19 == null) {
@@ -333,7 +333,7 @@ public final class Class47_Sub1 extends Class47 {
 				this.aClass297_2.response = 0;
 			} catch (@Pc(498) RuntimeException local498) {
 				this.aClass297_2.method6626();
-				local19.method9464();
+				local19.unlink();
 				if (local19.aBoolean778 && !this.aClass297_2.method6637()) {
 					local383 = this.aClass297_2.method6640(this.anInt7487, arg0, true, (byte) 2);
 					this.aClass28_36.method735(arg0, local383);
@@ -350,7 +350,7 @@ public final class Class47_Sub1 extends Class47 {
 				}
 			}
 			if (!local19.aBoolean778) {
-				local19.method9464();
+				local19.unlink();
 			}
 			return local19;
 		}
@@ -382,12 +382,12 @@ public final class Class47_Sub1 extends Class47 {
 				this.aByteArray88[arg0] = 1;
 			}
 			if (!local19.aBoolean778) {
-				local19.method9464();
+				local19.unlink();
 			}
 			return local19;
 		} catch (@Pc(355) Exception local355) {
 			this.aByteArray88[arg0] = -1;
-			local19.method9464();
+			local19.unlink();
 			if (local19.aBoolean778 && !this.aClass297_2.method6637()) {
 				local383 = this.aClass297_2.method6640(this.anInt7487, arg0, true, (byte) 2);
 				this.aClass28_36.method735(arg0, local383);
@@ -408,10 +408,10 @@ public final class Class47_Sub1 extends Class47 {
 		if (this.aClass341_42 == null || this.method6649() == null) {
 			return;
 		}
-		for (@Pc(21) Class2 local21 = this.aClass341_41.method7706(65280); local21 != null; local21 = this.aClass341_41.method7713()) {
-			@Pc(29) int local29 = (int) local21.aLong328;
+		for (@Pc(21) Node local21 = this.aClass341_41.method7706(65280); local21 != null; local21 = this.aClass341_41.method7713()) {
+			@Pc(29) int local29 = (int) local21.key;
 			if (local29 < 0 || local29 >= this.aClass294_1.anInt7389 || this.aClass294_1.anIntArray598[local29] == 0) {
-				local21.method9464();
+				local21.unlink();
 			} else {
 				if (this.aByteArray88[local29] == 0) {
 					this.method6658(local29, 1);
@@ -420,7 +420,7 @@ public final class Class47_Sub1 extends Class47 {
 					this.method6658(local29, 2);
 				}
 				if (this.aByteArray88[local29] == 1) {
-					local21.method9464();
+					local21.unlink();
 				}
 			}
 		}

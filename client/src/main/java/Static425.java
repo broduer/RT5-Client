@@ -15,5 +15,5 @@ public final class Static425 {
 	public static final Class357 wtwipMode = new Class357("WTWIP", "office", "_wip", 3);
 
 	@OriginalMember(owner = "client!nh", name = "l", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_80 = new Class347(41, -1);
+	public static final ClientProt aClass347_80 = new ClientProt(41, -1);
 }

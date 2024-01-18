@@ -24,22 +24,13 @@ public final class Static12 {
 		return Static269.method3908(arg0, 16);
 	}
 
-	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(BII[B)I")
-	public static int method5170(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) byte[] arg2) {
-		@Pc(11) int local11 = -1;
-		for (@Pc(13) int local13 = arg1; local13 < arg0; local13++) {
-			local11 = local11 >>> 8 ^ Class390.anIntArray819[(local11 ^ arg2[local13]) & 0xFF];
-		}
-		return ~local11;
-	}
-
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Lclient!ge;I)V")
-	public static void method5171(@OriginalArg(0) Class2_Sub21 arg0) {
+	public static void method5171(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(20) int local20 = arg0.method7403();
+			@Pc(20) int local20 = arg0.g1();
 			if (local20 == 0) {
-				Static482.anInt7249 = arg0.method7389();
-				Static134.anInt10358 = arg0.method7389();
+				Static482.anInt7249 = arg0.g2();
+				Static134.anInt10358 = arg0.g2();
 			} else if (local20 == 255) {
 				return;
 			}

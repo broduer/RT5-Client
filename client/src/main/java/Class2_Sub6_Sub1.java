@@ -344,7 +344,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 			return false;
 		}
 		if (arg0.anInt2211 >= 0) {
-			arg0.method9464();
+			arg0.unlink();
 			if (arg0.anInt2207 > 0 && this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] == arg0) {
 				this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] = null;
 			}
@@ -543,7 +543,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 	@OriginalMember(owner = "client!bd", name = "b", descriptor = "(B)V")
 	public synchronized void method927() {
 		for (@Pc(5) Class2_Sub11 local5 = (Class2_Sub11) this.aClass28_7.method736(); local5 != null; local5 = (Class2_Sub11) this.aClass28_7.method740()) {
-			local5.method9464();
+			local5.unlink();
 		}
 	}
 
@@ -572,7 +572,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 				if (local14.anInt2211 < 0) {
 					this.aClass2_Sub16ArrayArray1[local14.anInt2196][local14.anInt2205] = null;
 				}
-				local14.method9464();
+				local14.unlink();
 			}
 		}
 	}
@@ -783,7 +783,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 		@Pc(15) boolean local15 = true;
 		@Pc(29) int[] local29 = new int[] { 22050 };
 		for (@Pc(35) Class2_Sub55 local35 = (Class2_Sub55) arg2.aClass28_8.method736(); local35 != null; local35 = (Class2_Sub55) arg2.aClass28_8.method740()) {
-			@Pc(40) int local40 = (int) local35.aLong328;
+			@Pc(40) int local40 = (int) local35.key;
 			@Pc(48) Class2_Sub11 local48 = (Class2_Sub11) this.aClass28_7.method738(local40);
 			if (local48 == null) {
 				local48 = Static680.method8924(arg1, local40);
@@ -829,7 +829,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 		arg0.anInt2193 = AudioChannel.globalSampleRate / 100;
 		if (arg0.anInt2211 >= 0 && (arg0.aClass2_Sub6_Sub2_1 == null || arg0.aClass2_Sub6_Sub2_1.method3311())) {
 			arg0.method2083();
-			arg0.method9464();
+			arg0.unlink();
 			if (arg0.anInt2207 > 0 && this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] == arg0) {
 				this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] = null;
 			}
@@ -900,7 +900,7 @@ public final class Class2_Sub6_Sub1 extends PcmStream {
 		}
 		arg0.method2083();
 		if (arg0.anInt2211 >= 0) {
-			arg0.method9464();
+			arg0.unlink();
 			if (arg0.anInt2207 > 0 && this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] == arg0) {
 				this.aClass2_Sub16ArrayArray2[arg0.anInt2196][arg0.anInt2207] = null;
 			}

@@ -18,10 +18,10 @@ public final class Static587 {
 	public static final int[] anIntArray689 = new int[] { 0xFFFF00, 0xFF0000, 65280, 65535, 16711935, 16777215 };
 
 	@OriginalMember(owner = "client!sia", name = "i", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_104 = new Class347(46, 3);
+	public static final ClientProt aClass347_104 = new ClientProt(46, 3);
 
 	@OriginalMember(owner = "client!sia", name = "a", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_105 = new Class347(87, 6);
+	public static final ClientProt aClass347_105 = new ClientProt(87, 6);
 
 	@OriginalMember(owner = "client!sia", name = "a", descriptor = "(Lclient!d;IIILjava/awt/Canvas;)Lclient!ha;")
 	public static Class19 method7705(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) Canvas arg3) {

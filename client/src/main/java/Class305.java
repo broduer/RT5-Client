@@ -25,107 +25,107 @@ public final class Class305 implements Interface4 {
 	public Class305(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class332 arg2) {
 		this.aClass332_99 = arg2;
 		this.aClass332_98 = arg1;
-		@Pc(24) Class2_Sub21 local24 = new Class2_Sub21(arg0.method7602(0, 0));
-		this.anInt7732 = local24.method7389();
+		@Pc(24) Packet local24 = new Packet(arg0.method7602(0, 0));
+		this.anInt7732 = local24.g2();
 		this.aClass118Array1 = new Class118[this.anInt7732];
 		for (@Pc(36) int local36 = 0; local36 < this.anInt7732; local36++) {
-			if (local24.method7403() == 1) {
+			if (local24.g1() == 1) {
 				this.aClass118Array1[local36] = new Class118();
 			}
 		}
 		for (@Pc(65) int local65 = 0; local65 < this.anInt7732; local65++) {
 			if (this.aClass118Array1[local65] != null) {
-				this.aClass118Array1[local65].aBoolean240 = local24.method7403() == 0;
+				this.aClass118Array1[local65].aBoolean240 = local24.g1() == 0;
 			}
 		}
 		for (@Pc(98) int local98 = 0; local98 < this.anInt7732; local98++) {
 			if (this.aClass118Array1[local98] != null) {
-				this.aClass118Array1[local98].aBoolean233 = local24.method7403() == 1;
+				this.aClass118Array1[local98].aBoolean233 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(132) int local132 = 0; local132 < this.anInt7732; local132++) {
 			if (this.aClass118Array1[local132] != null) {
-				this.aClass118Array1[local132].aBoolean234 = local24.method7403() == 1;
+				this.aClass118Array1[local132].aBoolean234 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(168) int local168 = 0; local168 < this.anInt7732; local168++) {
 			if (this.aClass118Array1[local168] != null) {
-				this.aClass118Array1[local168].aByte57 = local24.method7384();
+				this.aClass118Array1[local168].aByte57 = local24.g1b();
 			}
 		}
 		for (@Pc(200) int local200 = 0; local200 < this.anInt7732; local200++) {
 			if (this.aClass118Array1[local200] != null) {
-				this.aClass118Array1[local200].aByte58 = local24.method7384();
+				this.aClass118Array1[local200].aByte58 = local24.g1b();
 			}
 		}
 		for (@Pc(228) int local228 = 0; local228 < this.anInt7732; local228++) {
 			if (this.aClass118Array1[local228] != null) {
-				this.aClass118Array1[local228].aByte56 = local24.method7384();
+				this.aClass118Array1[local228].aByte56 = local24.g1b();
 			}
 		}
 		for (@Pc(256) int local256 = 0; local256 < this.anInt7732; local256++) {
 			if (this.aClass118Array1[local256] != null) {
-				this.aClass118Array1[local256].aByte55 = local24.method7384();
+				this.aClass118Array1[local256].aByte55 = local24.g1b();
 			}
 		}
 		for (@Pc(288) int local288 = 0; local288 < this.anInt7732; local288++) {
 			if (this.aClass118Array1[local288] != null) {
-				this.aClass118Array1[local288].aShort37 = (short) local24.method7389();
+				this.aClass118Array1[local288].aShort37 = (short) local24.g2();
 			}
 		}
 		for (@Pc(321) int local321 = 0; local321 < this.anInt7732; local321++) {
 			if (this.aClass118Array1[local321] != null) {
-				this.aClass118Array1[local321].aByte54 = local24.method7384();
+				this.aClass118Array1[local321].aByte54 = local24.g1b();
 			}
 		}
 		for (@Pc(353) int local353 = 0; local353 < this.anInt7732; local353++) {
 			if (this.aClass118Array1[local353] != null) {
-				this.aClass118Array1[local353].aByte52 = local24.method7384();
+				this.aClass118Array1[local353].aByte52 = local24.g1b();
 			}
 		}
 		for (@Pc(381) int local381 = 0; local381 < this.anInt7732; local381++) {
 			if (this.aClass118Array1[local381] != null) {
-				this.aClass118Array1[local381].aBoolean239 = local24.method7403() == 1;
+				this.aClass118Array1[local381].aBoolean239 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(421) int local421 = 0; local421 < this.anInt7732; local421++) {
 			if (this.aClass118Array1[local421] != null) {
-				this.aClass118Array1[local421].aBoolean238 = local24.method7403() == 1;
+				this.aClass118Array1[local421].aBoolean238 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(455) int local455 = 0; local455 < this.anInt7732; local455++) {
 			if (this.aClass118Array1[local455] != null) {
-				this.aClass118Array1[local455].aByte53 = local24.method7384();
+				this.aClass118Array1[local455].aByte53 = local24.g1b();
 			}
 		}
 		for (@Pc(483) int local483 = 0; local483 < this.anInt7732; local483++) {
 			if (this.aClass118Array1[local483] != null) {
-				this.aClass118Array1[local483].aBoolean236 = local24.method7403() == 1;
+				this.aClass118Array1[local483].aBoolean236 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(521) int local521 = 0; local521 < this.anInt7732; local521++) {
 			if (this.aClass118Array1[local521] != null) {
-				this.aClass118Array1[local521].aBoolean235 = local24.method7403() == 1;
+				this.aClass118Array1[local521].aBoolean235 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(559) int local559 = 0; local559 < this.anInt7732; local559++) {
 			if (this.aClass118Array1[local559] != null) {
-				this.aClass118Array1[local559].aBoolean237 = local24.method7403() == 1;
+				this.aClass118Array1[local559].aBoolean237 = local24.g1() == 1;
 			}
 		}
 		for (@Pc(595) int local595 = 0; local595 < this.anInt7732; local595++) {
 			if (this.aClass118Array1[local595] != null) {
-				this.aClass118Array1[local595].anInt2799 = local24.method7403();
+				this.aClass118Array1[local595].anInt2799 = local24.g1();
 			}
 		}
 		for (@Pc(627) int local627 = 0; local627 < this.anInt7732; local627++) {
 			if (this.aClass118Array1[local627] != null) {
-				this.aClass118Array1[local627].anInt2800 = local24.method7356();
+				this.aClass118Array1[local627].anInt2800 = local24.g4();
 			}
 		}
 		for (@Pc(655) int local655 = 0; local655 < this.anInt7732; local655++) {
 			if (this.aClass118Array1[local655] != null) {
-				this.aClass118Array1[local655].anInt2805 = local24.method7403();
+				this.aClass118Array1[local655].anInt2805 = local24.g1();
 			}
 		}
 	}
@@ -140,7 +140,7 @@ public final class Class305 implements Interface4 {
 		if (local30 == null) {
 			return null;
 		} else {
-			@Pc(43) Class2_Sub2_Sub21 local43 = new Class2_Sub2_Sub21(new Class2_Sub21(local30));
+			@Pc(43) Class2_Sub2_Sub21 local43 = new Class2_Sub2_Sub21(new Packet(local30));
 			this.aClass363_3.method8348(local43, arg0);
 			return local43;
 		}

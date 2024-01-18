@@ -21,7 +21,7 @@ public final class Static77 {
 		@Pc(13) Class2_Sub19 local13 = Static293.method4342(Static317.aClass347_62, Static405.aClass153_2.aClass186_1);
 		Static405.aClass153_2.method3275(local13);
 		for (@Pc(22) Class2_Sub4 local22 = (Class2_Sub4) Static548.aClass28_40.method736(); local22 != null; local22 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-			if (!local22.method9465()) {
+			if (!local22.isLinked()) {
 				local22 = (Class2_Sub4) Static548.aClass28_40.method736();
 				if (local22 == null) {
 					break;

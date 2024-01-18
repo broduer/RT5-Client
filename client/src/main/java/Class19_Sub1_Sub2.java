@@ -322,7 +322,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "b", descriptor = "(IIZ)V")
 	public synchronized void method8167(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		@Pc(20) Class2_Sub38 local20 = new Class2_Sub38(arg0);
-		local20.aLong328 = arg1;
+		local20.key = arg1;
 		this.aClass341_62.method7718(local20);
 	}
 
@@ -454,7 +454,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		@Pc(19) Class2_Sub38 local19;
 		while (!this.aClass341_61.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_61.method7712();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
+			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9167 -= local19.anInt6399;
 			if (local7 == 1000) {
 				OpenGL.glDeleteBuffersARB(local7, Static382.anIntArray465, 0);
@@ -467,7 +467,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		}
 		while (!this.aClass341_62.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_62.method7712();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
+			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9171 -= local19.anInt6399;
 			if (local7 == 1000) {
 				OpenGL.glDeleteTextures(local7, Static382.anIntArray465, 0);
@@ -492,7 +492,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		}
 		while (!this.aClass341_64.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_64.method7712();
-			Static382.anIntArray465[local7++] = (int) local19.aLong328;
+			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9169 -= local19.anInt6399;
 			if (local7 == 1000) {
 				OpenGL.glDeleteRenderbuffersEXT(local7, Static382.anIntArray465, 0);
@@ -504,20 +504,20 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		}
 		while (!this.aClass341_60.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_60.method7712();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
+			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
-		@Pc(227) Class2 local227;
+		@Pc(227) Node local227;
 		while (!this.aClass341_65.method7709()) {
 			local227 = this.aClass341_65.method7712();
-			OpenGL.glDeleteProgramARB((int) local227.aLong328);
+			OpenGL.glDeleteProgramARB((int) local227.key);
 		}
 		while (!this.aClass341_66.method7709()) {
 			local227 = this.aClass341_66.method7712();
-			OpenGL.glDeleteObjectARB(local227.aLong328);
+			OpenGL.glDeleteObjectARB(local227.key);
 		}
 		while (!this.aClass341_60.method7709()) {
 			local19 = (Class2_Sub38) this.aClass341_60.method7712();
-			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
+			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.currentTimeMillis()) {
 			System.gc();
@@ -534,8 +534,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "k", descriptor = "(II)V")
 	public synchronized void method8169(@OriginalArg(0) int arg0) {
-		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = arg0;
+		@Pc(7) Node local7 = new Node();
+		local7.key = arg0;
 		this.aClass341_65.method7718(local7);
 	}
 
@@ -667,7 +667,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(BII)V")
 	public synchronized void method8171(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) Class2_Sub38 local13 = new Class2_Sub38(arg1);
-		local13.aLong328 = arg0;
+		local13.key = arg0;
 		this.aClass341_61.method7718(local13);
 	}
 
@@ -683,8 +683,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IJ)V")
 	public synchronized void method8172(@OriginalArg(1) long arg0) {
-		@Pc(7) Class2 local7 = new Class2();
-		local7.aLong328 = arg0;
+		@Pc(7) Node local7 = new Node();
+		local7.key = arg0;
 		this.aClass341_66.method7718(local7);
 	}
 

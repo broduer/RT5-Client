@@ -9,7 +9,7 @@ public final class Static53 {
 	public static float aFloat28;
 
 	@OriginalMember(owner = "client!bp", name = "i", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_7 = new Class347(53, 3);
+	public static final ClientProt aClass347_7 = new ClientProt(53, 3);
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZLjava/lang/String;)I")
 	public static int method1168(@OriginalArg(1) String arg0) {

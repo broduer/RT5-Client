@@ -12,7 +12,7 @@ public final class Static408 {
 		Static524.aClass153_3.lastPacketType3 = null;
 		Static524.aClass153_3.lastPacketType2 = null;
 		Static524.aClass153_3.lastPacketType = null;
-		Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
+		Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 		Static102.method2022();
 		Static251.anInt4047 = 0;
 		Static723.aString129 = null;

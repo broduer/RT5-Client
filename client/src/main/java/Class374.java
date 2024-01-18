@@ -73,7 +73,7 @@ public final class Class374 {
 					@Pc(111) Class2_Sub27 local111 = (Class2_Sub27) this.aClass341_69.method7715();
 					local78 = new Class2_Sub27(arg0, local111.anInt4365);
 					this.aClass2_Sub27Array1[local111.anInt4369] = null;
-					local111.method9464();
+					local111.unlink();
 				}
 				this.aClass2_Sub27Array1[arg0] = local78;
 			} else {

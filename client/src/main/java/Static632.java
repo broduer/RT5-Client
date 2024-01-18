@@ -8,28 +8,28 @@ public final class Static632 {
 	public static int anInt9529;
 
 	@OriginalMember(owner = "client!u", name = "r", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_110 = new Class347(78, -1);
+	public static final ClientProt aClass347_110 = new ClientProt(78, -1);
 
 	@OriginalMember(owner = "client!u", name = "l", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray44 = new String[100];
 
 	@OriginalMember(owner = "client!u", name = "f", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_111 = new Class347(83, 18);
+	public static final ClientProt aClass347_111 = new ClientProt(83, 18);
 
 	@OriginalMember(owner = "client!u", name = "e", descriptor = "[F")
 	public static final float[] aFloatArray71 = new float[4];
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(Lclient!ge;I)Lclient!is;")
-	public static Class138 method8366(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(10) Class405 local10 = Static33.method882()[arg0.method7403()];
-		@Pc(17) Class103 local17 = Static313.method4551()[arg0.method7403()];
+	public static Class138 method8366(@OriginalArg(0) Packet arg0) {
+		@Pc(10) Class405 local10 = Static33.method882()[arg0.g1()];
+		@Pc(17) Class103 local17 = Static313.method4551()[arg0.g1()];
 		@Pc(21) int local21 = arg0.method7363();
 		@Pc(25) int local25 = arg0.method7363();
-		@Pc(29) int local29 = arg0.method7389();
-		@Pc(33) int local33 = arg0.method7389();
+		@Pc(29) int local29 = arg0.g2();
+		@Pc(33) int local33 = arg0.g2();
 		@Pc(37) int local37 = arg0.method7363();
-		@Pc(47) int local47 = arg0.method7356();
-		@Pc(51) int local51 = arg0.method7356();
+		@Pc(47) int local47 = arg0.g4();
+		@Pc(51) int local51 = arg0.g4();
 		return new Class138(local10, local17, local21, local25, local29, local33, local37, local47, local51);
 	}
 
@@ -138,7 +138,7 @@ public final class Static632 {
 		if (arg1.aClass2_Sub6_Sub2_3 != null) {
 			arg1.aClass2_Sub6_Sub2_3.method3327(local182);
 			arg1.aClass2_Sub6_Sub2_3.method3333(local214);
-			if (!arg1.aClass2_Sub6_Sub2_3.method9465()) {
+			if (!arg1.aClass2_Sub6_Sub2_3.isLinked()) {
 				arg1.aClass2_Sub6_Sub2_3 = null;
 				arg1.aClass2_Sub53_2 = null;
 				arg1.aClass2_Sub49_Sub1_3 = null;

@@ -59,7 +59,7 @@ public final class Class312 {
 		local16 = new Class291();
 		local16.aClass312_1 = this;
 		if (local39 != null) {
-			local16.method6490(new Class2_Sub21(local39));
+			local16.method6490(new Packet(local39));
 		}
 		synchronized (this.aClass82_172) {
 			this.aClass82_172.method2150(local16, arg0);

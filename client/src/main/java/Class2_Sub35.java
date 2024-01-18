@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!kw")
-public final class Class2_Sub35 extends Class2 {
+public final class Class2_Sub35 extends Node {
 
 	@OriginalMember(owner = "client!kw", name = "l", descriptor = "I")
 	public final int anInt5712;
@@ -34,16 +34,16 @@ public final class Class2_Sub35 extends Class2 {
 	public final int anInt5709;
 
 	@OriginalMember(owner = "client!kw", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class2_Sub35(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(5) int local5 = arg0.method7356();
+	public Class2_Sub35(@OriginalArg(0) Packet arg0) {
+		@Pc(5) int local5 = arg0.g4();
 		this.anInt5712 = local5 & 0x3FFF;
 		this.anInt5715 = local5 >>> 28;
 		this.anInt5711 = local5 >>> 14 & 0x3FFF;
-		this.anInt5706 = arg0.method7403();
-		this.anInt5714 = arg0.method7403();
-		this.anInt5710 = arg0.method7403();
-		this.anInt5705 = arg0.method7403();
-		this.anInt5716 = arg0.method7403();
-		this.anInt5709 = arg0.method7403();
+		this.anInt5706 = arg0.g1();
+		this.anInt5714 = arg0.g1();
+		this.anInt5710 = arg0.g1();
+		this.anInt5705 = arg0.g1();
+		this.anInt5716 = arg0.g1();
+		this.anInt5709 = arg0.g1();
 	}
 }

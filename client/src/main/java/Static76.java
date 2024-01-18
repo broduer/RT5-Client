@@ -25,7 +25,7 @@ public final class Static76 {
 			Static336.aClass2_Sub6_Sub3_1.method5890(local19.aClass2_Sub6_Sub2_4);
 			local19.aClass2_Sub6_Sub2_4 = null;
 		}
-		local19.method9464();
+		local19.unlink();
 	}
 
 	@OriginalMember(owner = "client!cha", name = "b", descriptor = "(B)V")
@@ -63,8 +63,8 @@ public final class Static76 {
 				Static6.anInt95 = 4;
 			}
 			if (Static6.anInt95 == 4 && Static405.aClass153_1.aClass350_1.method7939(1)) {
-				Static405.aClass153_1.aClass350_1.method7936(Static405.aClass153_1.aClass2_Sub21_Sub2_2.aByteArray93, 1, 0);
-				@Pc(139) int local139 = Static405.aClass153_1.aClass2_Sub21_Sub2_2.aByteArray93[0] & 0xFF;
+				Static405.aClass153_1.aClass350_1.method7936(Static405.aClass153_1.aClass2_Sub21_Sub2_2.data, 1, 0);
+				@Pc(139) int local139 = Static405.aClass153_1.aClass2_Sub21_Sub2_2.data[0] & 0xFF;
 				Static6.anInt95 = 0;
 				Static580.anInt8645 = local139;
 				Static405.aClass153_1.method3274();

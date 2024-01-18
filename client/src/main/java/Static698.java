@@ -71,7 +71,7 @@ public final class Static698 {
 	public static void method9130(@OriginalArg(0) boolean arg0, @OriginalArg(1) int arg1) {
 		@Pc(12) Class2_Sub22 local12 = Static556.method7310(arg1, arg0);
 		if (local12 != null) {
-			local12.method9464();
+			local12.unlink();
 		}
 	}
 
@@ -82,8 +82,8 @@ public final class Static698 {
 		}
 		@Pc(16) Class153 local16 = Static668.method8708();
 		@Pc(29) Class2_Sub19 local29 = Static293.method4342(Static244.aClass347_53, local16.aClass186_1);
-		local29.aClass2_Sub21_Sub2_1.method7396(Static231.method3379(arg0));
-		local29.aClass2_Sub21_Sub2_1.method7398(arg0);
+		local29.aClass2_Sub21_Sub2_1.p1(Static231.method3379(arg0));
+		local29.aClass2_Sub21_Sub2_1.pjstr(arg0);
 		local16.method3275(local29);
 	}
 }

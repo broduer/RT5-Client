@@ -53,9 +53,9 @@ public final class Static293 {
 	}
 
 	@OriginalMember(owner = "client!jfa", name = "a", descriptor = "(ILclient!ss;Lclient!iv;)Lclient!fk;")
-	public static Class2_Sub19 method4342(@OriginalArg(1) Class347 arg0, @OriginalArg(2) Class186 arg1) {
+	public static Class2_Sub19 method4342(@OriginalArg(1) ClientProt arg0, @OriginalArg(2) Class186 arg1) {
 		@Pc(6) Class2_Sub19 local6 = Static119.method2174();
-		local6.anInt2995 = arg0.anInt8851;
+		local6.anInt2995 = arg0.length;
 		local6.aClass347_32 = arg0;
 		if (local6.anInt2995 == -1) {
 			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(260);
@@ -69,7 +69,7 @@ public final class Static293 {
 			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(260);
 		}
 		local6.aClass2_Sub21_Sub2_1.method7429(arg1);
-		local6.aClass2_Sub21_Sub2_1.method7425(local6.aClass347_32.method7833());
+		local6.aClass2_Sub21_Sub2_1.method7425(local6.aClass347_32.getOpcode());
 		local6.anInt2998 = 0;
 		return local6;
 	}

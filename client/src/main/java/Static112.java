@@ -56,8 +56,8 @@ public final class Static112 {
 	}
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(BLclient!ge;)Lclient!jt;")
-	public static Class202 method2106(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7389();
+	public static Class202 method2106(@OriginalArg(1) Packet arg0) {
+		@Pc(7) int local7 = arg0.g2();
 		return new Class202(local7);
 	}
 

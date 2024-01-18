@@ -46,40 +46,40 @@ public final class Class39_Sub23 extends Class39 {
 	private final int anInt10006;
 
 	@OriginalMember(owner = "client!vca", name = "<init>", descriptor = "(Lclient!ge;II)V")
-	public Class39_Sub23(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public Class39_Sub23(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		super(arg0);
 		@Pc(10) int local10;
 		if (arg1 == 0) {
-			local10 = arg0.method7356();
+			local10 = arg0.g4();
 			this.anInt9999 = local10 & 0xFFFF;
 			this.anInt10009 = -1;
 			this.anInt10007 = local10 >>> 16;
 		} else {
 			this.anInt10007 = -1;
 			this.anInt9999 = -1;
-			this.anInt10009 = arg0.method7389();
+			this.anInt10009 = arg0.g2();
 		}
 		if (arg2 == 0) {
-			local10 = arg0.method7356();
+			local10 = arg0.g4();
 			this.anInt10012 = local10 >>> 16;
 			this.anInt10016 = -1;
 			this.anInt10000 = local10 & 0xFFFF;
 		} else {
 			this.anInt10000 = -1;
 			this.anInt10012 = -1;
-			this.anInt10016 = arg0.method7389();
+			this.anInt10016 = arg0.g2();
 		}
 		if (arg1 == 0 && arg2 == 0) {
-			this.anInt10010 = arg0.method7403();
+			this.anInt10010 = arg0.g1();
 		} else {
 			this.anInt10010 = -1;
 		}
-		this.anInt10003 = arg0.method7389();
-		this.anInt10001 = arg0.method7403();
-		this.anInt10015 = arg0.method7403();
+		this.anInt10003 = arg0.g2();
+		this.anInt10001 = arg0.g1();
+		this.anInt10015 = arg0.g1();
 		this.anInt10005 = arg0.method7390();
-		this.anInt10004 = arg0.method7389();
-		this.anInt10006 = arg0.method7403();
+		this.anInt10004 = arg0.g2();
+		this.anInt10006 = arg0.g1();
 	}
 
 	@OriginalMember(owner = "client!vca", name = "b", descriptor = "(I)V")

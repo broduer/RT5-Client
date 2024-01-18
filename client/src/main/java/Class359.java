@@ -28,8 +28,8 @@ public final class Class359 {
 	private final int[] anIntArray730;
 
 	@OriginalMember(owner = "client!tn", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class359(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7397();
+	public Class359(@OriginalArg(0) Packet arg0) {
+		@Pc(7) int local7 = arg0.gsmarts();
 		this.anIntArray735 = new int[local7];
 		this.anIntArray734 = new int[local7];
 		this.anIntArray729 = new int[local7];
@@ -38,11 +38,11 @@ public final class Class359 {
 		this.anIntArray732 = new int[local7];
 		this.anIntArray730 = new int[local7];
 		for (@Pc(37) int local37 = 0; local37 < local7; local37++) {
-			this.anIntArray733[local37] = arg0.method7389() - 5120;
-			this.anIntArray732[local37] = arg0.method7389() - 5120;
+			this.anIntArray733[local37] = arg0.g2() - 5120;
+			this.anIntArray732[local37] = arg0.g2() - 5120;
 			this.anIntArray735[local37] = arg0.method7363();
-			this.anIntArray729[local37] = arg0.method7389() - 5120;
-			this.anIntArray734[local37] = arg0.method7389() - 5120;
+			this.anIntArray729[local37] = arg0.g2() - 5120;
+			this.anIntArray734[local37] = arg0.g2() - 5120;
 			this.anIntArray731[local37] = arg0.method7363();
 			this.anIntArray730[local37] = arg0.method7363();
 		}

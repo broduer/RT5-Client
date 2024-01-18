@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wr")
-public final class Class2_Sub58 extends Class2 {
+public final class Class2_Sub58 extends Node {
 
 	@OriginalMember(owner = "client!wr", name = "o", descriptor = "Lclient!jaclib/memory/heap/NativeHeapBuffer;")
 	private NativeHeapBuffer aNativeHeapBuffer8;

@@ -17,7 +17,7 @@ public final class Static459 {
 	public static final boolean aBoolean523 = false;
 
 	@OriginalMember(owner = "client!oia", name = "y", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_87 = new Class347(70, -1);
+	public static final ClientProt aClass347_87 = new ClientProt(70, -1);
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "Ljava/util/Calendar;")
 	public static final Calendar aCalendar3 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));

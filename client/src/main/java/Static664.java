@@ -5,26 +5,26 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static664 {
 
 	@OriginalMember(owner = "client!vaa", name = "v", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_115 = new Class347(40, 11);
+	public static final ClientProt aClass347_115 = new ClientProt(40, 11);
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(ILclient!fk;)[I")
 	public static int[] method8659(@OriginalArg(1) Class2_Sub19 arg0) {
-		@Pc(8) Class2_Sub21 local8 = new Class2_Sub21(518);
+		@Pc(8) Packet local8 = new Packet(518);
 		@Pc(11) int[] local11 = new int[4];
 		for (@Pc(13) int local13 = 0; local13 < 4; local13++) {
 			local11[local13] = (int) (Math.random() * 9.9999999E7D);
 		}
-		local8.method7396(10);
-		local8.method7349(local11[0]);
-		local8.method7349(local11[1]);
-		local8.method7349(local11[2]);
-		local8.method7349(local11[3]);
+		local8.p1(10);
+		local8.p4(local11[0]);
+		local8.p4(local11[1]);
+		local8.p4(local11[2]);
+		local8.p4(local11[3]);
 		for (@Pc(70) int local70 = 0; local70 < 10; local70++) {
-			local8.method7349((int) (Math.random() * 9.9999999E7D));
+			local8.p4((int) (Math.random() * 9.9999999E7D));
 		}
-		local8.method7380((int) (Math.random() * 9.9999999E7D));
-		local8.method7392(Static374.aBigInteger2, Static262.aBigInteger1);
-		arg0.aClass2_Sub21_Sub2_1.method7393(local8.anInt8412, local8.aByteArray93, 0);
+		local8.p2((int) (Math.random() * 9.9999999E7D));
+		local8.rsaenc(Static374.aBigInteger2, Static262.aBigInteger1);
+		arg0.aClass2_Sub21_Sub2_1.pdata(local8.pos, local8.data, 0);
 		return local11;
 	}
 

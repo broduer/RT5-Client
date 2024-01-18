@@ -15,5 +15,5 @@ public final class Static98 {
 	public static int[] anIntArray176 = new int[4096];
 
 	@OriginalMember(owner = "client!db", name = "H", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_20 = new Class347(57, 3);
+	public static final ClientProt aClass347_20 = new ClientProt(57, 3);
 }

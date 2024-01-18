@@ -10,7 +10,7 @@ public final class Class193 {
 	private Class341 aClass341_27;
 
 	@OriginalMember(owner = "client!jg", name = "j", descriptor = "Lclient!ie;")
-	private Class2 aClass2_149;
+	private Node aClass2_149;
 
 	@OriginalMember(owner = "client!jg", name = "<init>", descriptor = "()V")
 	public Class193() {
@@ -22,25 +22,25 @@ public final class Class193 {
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(B)Lclient!ie;")
-	public Class2 method4349() {
-		@Pc(12) Class2 local12 = this.aClass2_149;
+	public Node method4349() {
+		@Pc(12) Node local12 = this.aClass2_149;
 		if (this.aClass341_27.aClass2_271 == local12) {
 			this.aClass2_149 = null;
 			return null;
 		} else {
-			this.aClass2_149 = local12.aClass2_346;
+			this.aClass2_149 = local12.next;
 			return local12;
 		}
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(I)Lclient!ie;")
-	public Class2 method4350() {
-		@Pc(8) Class2 local8 = this.aClass341_27.aClass2_271.aClass2_346;
+	public Node method4350() {
+		@Pc(8) Node local8 = this.aClass341_27.aClass2_271.next;
 		if (this.aClass341_27.aClass2_271 == local8) {
 			this.aClass2_149 = null;
 			return null;
 		} else {
-			this.aClass2_149 = local8.aClass2_346;
+			this.aClass2_149 = local8.next;
 			return local8;
 		}
 	}

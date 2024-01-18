@@ -90,12 +90,12 @@ public final class Class306 implements Interface23 {
 		for (@Pc(23) Class2_Sub48 local23 = arg0 ? (Class2_Sub48) this.aClass28_39.method736() : (Class2_Sub48) this.aClass28_39.method740(); local23 != null; local23 = (Class2_Sub48) this.aClass28_39.method740()) {
 			if ((local23.aLong264 & 0x3FFFFFFFFFFFFFFFL) < local8) {
 				if ((local23.aLong264 & 0x4000000000000000L) != 0L) {
-					@Pc(55) int local55 = (int) local23.aLong328;
+					@Pc(55) int local55 = (int) local23.key;
 					this.anIntArray621[local55] = this.anIntArray622[local55];
-					local23.method9464();
+					local23.unlink();
 					return local55;
 				}
-				local23.method9464();
+				local23.unlink();
 			}
 		}
 		return -1;

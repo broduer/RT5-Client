@@ -60,7 +60,7 @@ public final class Class375 {
 		if (local27 <= 0) {
 			this.aClass93_Sub2_6 = null;
 		} else {
-			@Pc(103) Class2_Sub21 local103 = new Class2_Sub21(local27 * 2);
+			@Pc(103) Packet local103 = new Packet(local27 * 2);
 			@Pc(123) int local123;
 			@Pc(131) short[] local131;
 			@Pc(135) int local135;
@@ -72,7 +72,7 @@ public final class Class375 {
 						local131 = arg2.aShortArrayArray6[local121++];
 						if (local131 != null) {
 							for (local135 = 0; local135 < local131.length; local135++) {
-								local103.method7380(local131[local135] & 0xFFFF);
+								local103.p2(local131[local135] & 0xFFFF);
 							}
 						}
 					}
@@ -90,7 +90,7 @@ public final class Class375 {
 					}
 				}
 			}
-			this.anInterface1_5 = this.aClass19_Sub3_36.method7017(false, local103.anInt8412, local103.aByteArray93);
+			this.anInterface1_5 = this.aClass19_Sub3_36.method7017(false, local103.pos, local103.data);
 			this.aClass134_Sub2_2 = new Class134_Sub2(this.aClass19_Sub3_36, 5123, null, 1);
 		}
 	}

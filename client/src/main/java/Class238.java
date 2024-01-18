@@ -22,9 +22,9 @@ public final class Class238 {
 	public final int anInt6000;
 
 	@OriginalMember(owner = "client!lw", name = "<init>", descriptor = "(Lclient!ge;I)V")
-	public Class238(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) int arg1) {
+	public Class238(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
 		this.anInt6005 = arg1;
-		@Pc(19) int local19 = arg0.method7403();
+		@Pc(19) int local19 = arg0.g1();
 		if (local19 == 0) {
 			this.anInt6000 = arg0.method7353();
 		} else if (local19 == 1) {
@@ -32,7 +32,7 @@ public final class Class238 {
 		} else {
 			this.anInt6000 = -1;
 		}
-		arg0.method7365();
+		arg0.gstr();
 	}
 
 	@OriginalMember(owner = "client!lw", name = "a", descriptor = "(IBII)V")

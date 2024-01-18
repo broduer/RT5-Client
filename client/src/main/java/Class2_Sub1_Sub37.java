@@ -74,15 +74,15 @@ public final class Class2_Sub1_Sub37 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!wfa", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 != 0) {
 			return;
 		}
-		this.anInt10666 = arg1.method7403();
-		this.anIntArrayArray259 = new int[arg1.method7403()][2];
+		this.anInt10666 = arg1.g1();
+		this.anIntArrayArray259 = new int[arg1.g1()][2];
 		for (@Pc(31) int local31 = 0; local31 < this.anIntArrayArray259.length; local31++) {
-			this.anIntArrayArray259[local31][0] = arg1.method7389();
-			this.anIntArrayArray259[local31][1] = arg1.method7389();
+			this.anIntArrayArray259[local31][0] = arg1.g2();
+			this.anIntArrayArray259[local31][1] = arg1.g2();
 		}
 	}
 

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static710 {
 
 	@OriginalMember(owner = "client!wha", name = "e", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_93 = new Class347(52, 8);
+	public static final ClientProt aClass347_93 = new ClientProt(52, 8);
 
 	@OriginalMember(owner = "client!wha", name = "l", descriptor = "I")
 	public static int anInt7577 = 0;
@@ -16,7 +16,7 @@ public final class Static710 {
 	@OriginalMember(owner = "client!wha", name = "a", descriptor = "(ILclient!hda;Lclient!hda;)V")
 	public static void method6717(@OriginalArg(1) Class158 arg0, @OriginalArg(2) Class158 arg1) {
 		@Pc(15) Class2_Sub19 local15 = Static293.method4342(Static671.aClass347_117, Static405.aClass153_2.aClass186_1);
-		local15.aClass2_Sub21_Sub2_1.method7380(arg1.anInt3770);
+		local15.aClass2_Sub21_Sub2_1.p2(arg1.anInt3770);
 		local15.aClass2_Sub21_Sub2_1.method7369(arg0.anInt3751);
 		local15.aClass2_Sub21_Sub2_1.method7400(arg0.anInt3770);
 		local15.aClass2_Sub21_Sub2_1.method7357(arg0.anInt3823);

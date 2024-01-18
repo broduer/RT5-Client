@@ -50,8 +50,8 @@ public final class Static437 {
 		if (local16) {
 			return;
 		}
-		@Pc(98) int local98 = arg0.anInt8412;
-		arg0.method7349(local10.anInt10394);
+		@Pc(98) int local98 = arg0.pos;
+		arg0.p4(local10.anInt10394);
 		for (@Pc(105) int local105 = 0; local105 < local10.anInt10392; local105++) {
 			if (local10.anIntArray829[local105] == 0) {
 				try {
@@ -61,17 +61,17 @@ public final class Static437 {
 					if (local130 == 0) {
 						local149 = (Field) local10.aPrivilegedRequestArray1[local105].result;
 						local177 = local149.getInt(null);
-						arg0.method7396(0);
-						arg0.method7349(local177);
+						arg0.p1(0);
+						arg0.p4(local177);
 					} else if (local130 == 1) {
 						local149 = (Field) local10.aPrivilegedRequestArray1[local105].result;
 						local149.setInt(null, local10.anIntArray827[local105]);
-						arg0.method7396(0);
+						arg0.p1(0);
 					} else if (local130 == 2) {
 						local149 = (Field) local10.aPrivilegedRequestArray1[local105].result;
 						local177 = local149.getModifiers();
-						arg0.method7396(0);
-						arg0.method7349(local177);
+						arg0.p1(0);
+						arg0.p4(local177);
 					}
 					@Pc(225) Method local225;
 					if (local130 == 3) {
@@ -84,54 +84,54 @@ public final class Static437 {
 						}
 						@Pc(283) Object local283 = local225.invoke(null, local254);
 						if (local283 == null) {
-							arg0.method7396(0);
+							arg0.p1(0);
 						} else if (local283 instanceof Number) {
-							arg0.method7396(1);
-							arg0.method7370(((Number) local283).longValue());
+							arg0.p1(1);
+							arg0.p8(((Number) local283).longValue());
 						} else if (local283 instanceof String) {
-							arg0.method7396(2);
-							arg0.method7398((String) local283);
+							arg0.p1(2);
+							arg0.pjstr((String) local283);
 						} else {
-							arg0.method7396(4);
+							arg0.p1(4);
 						}
 					} else if (local130 == 4) {
 						local225 = (Method) local10.aPrivilegedRequestArray2[local105].result;
 						local177 = local225.getModifiers();
-						arg0.method7396(0);
-						arg0.method7349(local177);
+						arg0.p1(0);
+						arg0.p4(local177);
 					}
 				} catch (@Pc(338) ClassNotFoundException local338) {
-					arg0.method7396(-10);
+					arg0.p1(-10);
 				} catch (@Pc(344) InvalidClassException local344) {
-					arg0.method7396(-11);
+					arg0.p1(-11);
 				} catch (@Pc(350) StreamCorruptedException local350) {
-					arg0.method7396(-12);
+					arg0.p1(-12);
 				} catch (@Pc(356) OptionalDataException local356) {
-					arg0.method7396(-13);
+					arg0.p1(-13);
 				} catch (@Pc(362) IllegalAccessException local362) {
-					arg0.method7396(-14);
+					arg0.p1(-14);
 				} catch (@Pc(368) IllegalArgumentException local368) {
-					arg0.method7396(-15);
+					arg0.p1(-15);
 				} catch (@Pc(374) InvocationTargetException local374) {
-					arg0.method7396(-16);
+					arg0.p1(-16);
 				} catch (@Pc(380) SecurityException local380) {
-					arg0.method7396(-17);
+					arg0.p1(-17);
 				} catch (@Pc(386) IOException local386) {
-					arg0.method7396(-18);
+					arg0.p1(-18);
 				} catch (@Pc(392) NullPointerException local392) {
-					arg0.method7396(-19);
+					arg0.p1(-19);
 				} catch (@Pc(398) Exception local398) {
-					arg0.method7396(-20);
+					arg0.p1(-20);
 				} catch (@Pc(404) Throwable local404) {
-					arg0.method7396(-21);
+					arg0.p1(-21);
 				}
 			} else {
-				arg0.method7396(local10.anIntArray829[local105]);
+				arg0.p1(local10.anIntArray829[local105]);
 			}
 		}
-		arg0.method7360(local98);
+		arg0.addcrc(local98);
 		if (-2 == -2) {
-			local10.method9464();
+			local10.unlink();
 		}
 	}
 

@@ -67,10 +67,10 @@ public final class Static28 {
 		@Pc(381) int local381;
 		@Pc(392) int local392;
 		for (@Pc(334) Class2_Sub17 local334 = (Class2_Sub17) Static497.aClass28_35.method736(); local334 != null; local334 = (Class2_Sub17) Static497.aClass28_35.method740()) {
-			local211 = (int) (local334.aLong328 >> 28 & 0x3L);
+			local211 = (int) (local334.key >> 28 & 0x3L);
 			if (Static643.anInt9630 == local211) {
-				local222 = (int) (local334.aLong328 & 0x3FFFL) - Static691.anInt10395;
-				@Pc(370) int local370 = (int) (local334.aLong328 >> 14 & 0x3FFFL) - Static116.anInt2279;
+				local222 = (int) (local334.key & 0x3FFFL) - Static691.anInt10395;
+				@Pc(370) int local370 = (int) (local334.key >> 14 & 0x3FFFL) - Static116.anInt2279;
 				local381 = local222 * 4 + 2 - local90 / 128;
 				local392 = local370 * 4 + 2 - local93 / 128;
 				Static6.method107(arg0, local30, Static471.aClass23Array11[0], local392, local381, arg2, arg3);

@@ -15,7 +15,7 @@ public final class Static675 {
 	public static int anInt10185;
 
 	@OriginalMember(owner = "client!vga", name = "i", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_118 = new Class347(50, 3);
+	public static final ClientProt aClass347_118 = new ClientProt(50, 3);
 
 	@OriginalMember(owner = "client!vga", name = "j", descriptor = "I")
 	public static int anInt10184 = -1;

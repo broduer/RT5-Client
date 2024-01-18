@@ -43,22 +43,22 @@ public final class Class255 {
 	public Class255(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class2_Sub44 arg1) {
 		this.aClass2_Sub44_1 = arg1;
 		try {
-			@Pc(24) Class2_Sub21 local24 = new Class2_Sub21(arg0);
-			@Pc(29) Class2_Sub21 local29 = new Class2_Sub21(arg0);
-			local24.method7403();
-			local24.anInt8412 += 2;
-			@Pc(43) int local43 = local24.method7403();
+			@Pc(24) Packet local24 = new Packet(arg0);
+			@Pc(29) Packet local29 = new Packet(arg0);
+			local24.g1();
+			local24.pos += 2;
+			@Pc(43) int local43 = local24.g1();
 			@Pc(45) int local45 = 0;
 			@Pc(47) int local47 = -1;
 			@Pc(49) int local49 = -1;
-			local29.anInt8412 = local24.anInt8412 + local43;
+			local29.pos = local24.pos + local43;
 			@Pc(64) int local64;
 			for (@Pc(57) int local57 = 0; local57 < local43; local57++) {
 				local64 = this.aClass2_Sub44_1.anIntArray619[local57];
 				if (local64 == 0) {
 					local47 = local57;
 				}
-				@Pc(72) int local72 = local24.method7403();
+				@Pc(72) int local72 = local24.g1();
 				if (local72 > 0) {
 					if (local64 == 0) {
 						local49 = local57;
@@ -105,7 +105,7 @@ public final class Class255 {
 					local45++;
 				}
 			}
-			if (local29.anInt8412 != arg0.length) {
+			if (local29.pos != arg0.length) {
 				throw new RuntimeException();
 			}
 			this.anInt6379 = local45;

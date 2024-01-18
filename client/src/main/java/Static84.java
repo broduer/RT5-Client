@@ -435,7 +435,7 @@ public final class Static84 {
 							if (local6.aBoolean300 && arg10 >= local30 && arg11 >= local32 && arg10 < local34 && arg11 < local36) {
 								for (@Pc(220) Class2_Sub42 local220 = (Class2_Sub42) Static521.aClass341_44.method7706(65280); local220 != null; local220 = (Class2_Sub42) Static521.aClass341_44.method7713()) {
 									if (local220.aBoolean544) {
-										local220.method9464();
+										local220.unlink();
 										local220.aClass158_14.aBoolean298 = false;
 									}
 								}

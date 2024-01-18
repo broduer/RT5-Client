@@ -24,14 +24,14 @@ public final class Static305 {
 	public static boolean aBoolean371 = false;
 
 	@OriginalMember(owner = "client!jm", name = "b", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_60 = new Class347(67, 3);
+	public static final ClientProt aClass347_60 = new ClientProt(67, 3);
 
 	@OriginalMember(owner = "client!jm", name = "h", descriptor = "Z")
 	public static boolean advert = false;
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(Lclient!ge;B)Lclient!qba;")
-	public static Class154_Sub4 method4444(@OriginalArg(0) Class2_Sub21 arg0) {
-		return new Class154_Sub4(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.method7403());
+	public static Class154_Sub4 method4444(@OriginalArg(0) Packet arg0) {
+		return new Class154_Sub4(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.g1());
 	}
 
 	@OriginalMember(owner = "client!jm", name = "a", descriptor = "(ILjava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/lang/String;B)V")

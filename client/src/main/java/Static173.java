@@ -9,7 +9,7 @@ public final class Static173 {
 	public static int[] anIntArray252;
 
 	@OriginalMember(owner = "client!fga", name = "o", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_30 = new Class347(82, 3);
+	public static final ClientProt aClass347_30 = new ClientProt(82, 3);
 
 	@OriginalMember(owner = "client!fga", name = "v", descriptor = "I")
 	public static int anInt2922 = -1;

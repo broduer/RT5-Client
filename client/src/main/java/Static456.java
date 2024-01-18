@@ -11,7 +11,7 @@ public final class Static456 {
 	public static int anInt6950;
 
 	@OriginalMember(owner = "client!oh", name = "r", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_85 = new Class347(30, -1);
+	public static final ClientProt aClass347_85 = new ClientProt(30, -1);
 
 	@OriginalMember(owner = "client!oh", name = "a", descriptor = "(IZ)V")
 	public static void method6235(@OriginalArg(1) boolean arg0) {
@@ -20,7 +20,7 @@ public final class Static456 {
 				Static347.method5101(Static377.anInt5950);
 			}
 			for (@Pc(21) Class2_Sub4 local21 = (Class2_Sub4) Static548.aClass28_40.method736(); local21 != null; local21 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-				if (!local21.method9465()) {
+				if (!local21.isLinked()) {
 					local21 = (Class2_Sub4) Static548.aClass28_40.method736();
 					if (local21 == null) {
 						break;

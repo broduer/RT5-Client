@@ -11,7 +11,7 @@ public final class Static161 {
 	public static long[][][] aLongArrayArrayArray1;
 
 	@OriginalMember(owner = "client!fa", name = "q", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_29 = new Class347(33, 0);
+	public static final ClientProt aClass347_29 = new ClientProt(33, 0);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ILclient!ca;ILclient!rka;I)V")
 	public static void method2585(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class2_Sub21_Sub2 arg2, @OriginalArg(4) int arg3) {
@@ -22,12 +22,12 @@ public final class Static161 {
 		@Pc(26) int local26;
 		@Pc(32) int local32;
 		if ((arg3 & 0x8000) != 0) {
-			local15 = arg2.method7403();
+			local15 = arg2.g1();
 			local18 = new int[local15];
 			local21 = new int[local15];
 			@Pc(24) int[] local24 = new int[local15];
 			for (local26 = 0; local26 < local15; local26++) {
-				local32 = arg2.method7389();
+				local32 = arg2.g2();
 				if (local32 == 65535) {
 					local32 = -1;
 				}
@@ -71,16 +71,16 @@ public final class Static161 {
 			arg0.aByte150 = arg2.method7355();
 			arg0.aByte147 = arg2.method7355();
 			arg0.aByte148 = arg2.method7406();
-			arg0.aByte149 = (byte) arg2.method7403();
+			arg0.aByte149 = (byte) arg2.g1();
 			arg0.anInt10789 = client.cycle + arg2.method7413();
-			arg0.anInt10781 = client.cycle + arg2.method7389();
+			arg0.anInt10781 = client.cycle + arg2.g2();
 		}
 		if ((arg3 & 0x200) != 0) {
 			local7 = arg2.method7406();
 		}
 		if ((arg3 & 0x2000) != 0) {
 			local15 = arg2.method7394();
-			arg0.anInt10766 = arg2.method7403();
+			arg0.anInt10766 = arg2.g1();
 			arg0.anInt10759 = arg2.method7408();
 			arg0.aBoolean819 = (local15 & 0x8000) != 0;
 			arg0.anInt10765 = local15 & 0x7FFF;
@@ -105,24 +105,24 @@ public final class Static161 {
 			arg0.aBoolean125 = arg2.method7408() == 1;
 		}
 		if ((arg3 & 0x4) != 0) {
-			local15 = arg2.method7403();
+			local15 = arg2.g1();
 			if (local15 > 0) {
 				for (local77 = 0; local77 < local15; local77++) {
 					local141 = -1;
 					local26 = -1;
-					local108 = arg2.method7397();
+					local108 = arg2.gsmarts();
 					local32 = -1;
 					if (local108 == 32767) {
-						local108 = arg2.method7397();
-						local26 = arg2.method7397();
-						local141 = arg2.method7397();
-						local32 = arg2.method7397();
+						local108 = arg2.gsmarts();
+						local26 = arg2.gsmarts();
+						local141 = arg2.gsmarts();
+						local32 = arg2.gsmarts();
 					} else if (local108 == 32766) {
 						local108 = -1;
 					} else {
-						local26 = arg2.method7397();
+						local26 = arg2.gsmarts();
 					}
-					@Pc(436) int local436 = arg2.method7397();
+					@Pc(436) int local436 = arg2.gsmarts();
 					@Pc(440) int local440 = arg2.method7408();
 					arg0.method9308(local32, local436, local440, local26, client.cycle, local141, local108);
 				}
@@ -135,7 +135,7 @@ public final class Static161 {
 			for (local141 = 0; local141 < local15; local141++) {
 				local26 = arg2.method7394();
 				if ((local26 & 0xC000) == 49152) {
-					local32 = arg2.method7389();
+					local32 = arg2.g2();
 					local18[local141] = local32 | local26 << 16;
 				} else {
 					local18[local141] = local26;
@@ -147,13 +147,13 @@ public final class Static161 {
 		if ((arg3 & 0x8) != 0) {
 			local15 = arg2.method7383();
 			@Pc(540) byte[] local540 = new byte[local15];
-			@Pc(545) Class2_Sub21 local545 = new Class2_Sub21(local540);
-			arg2.method7351(0, local15, local540);
+			@Pc(545) Packet local545 = new Packet(local540);
+			arg2.gdata(0, local15, local540);
 			Static462.aClass2_Sub21Array1[arg1] = local545;
 			arg0.method1420(local545);
 		}
 		if ((arg3 & 0x4000) != 0) {
-			@Pc(574) String local574 = arg2.method7365();
+			@Pc(574) String local574 = arg2.gstr();
 			if (local574.charAt(0) == '~') {
 				local574 = local574.substring(1);
 				Static44.method1072(local574, arg0.method1424(false), 0, arg0.aString8, arg0.method1422(), 2);
@@ -177,7 +177,7 @@ public final class Static161 {
 		}
 		if ((arg3 & 0x1000) != 0) {
 			arg0.anInt10779 = arg2.method7355();
-			arg0.anInt10782 = arg2.method7384();
+			arg0.anInt10782 = arg2.g1b();
 			arg0.anInt10790 = arg2.method7412();
 			arg0.anInt10787 = arg2.method7412();
 			arg0.anInt10788 = arg2.method7379() + client.cycle;
@@ -199,14 +199,14 @@ public final class Static161 {
 			arg0.anInt10791 = 0;
 		}
 		if ((arg3 & 0x20) != 0) {
-			arg0.anInt1474 = arg2.method7389();
+			arg0.anInt1474 = arg2.g2();
 			if (arg0.anInt10793 == 0) {
 				arg0.method9312(arg0.anInt1474);
 				arg0.anInt1474 = -1;
 			}
 		}
 		if ((arg3 & 0x2) != 0) {
-			local15 = arg2.method7389();
+			local15 = arg2.g2();
 			local77 = arg2.method7346();
 			if (local15 == 65535) {
 				local15 = -1;

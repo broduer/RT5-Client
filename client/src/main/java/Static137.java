@@ -8,7 +8,7 @@ public final class Static137 {
 	public static Hashtable nativeLibraries = new Hashtable();
 
 	@OriginalMember(owner = "client!ef", name = "e", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_28 = new Class347(7, -1);
+	public static final ClientProt aClass347_28 = new ClientProt(7, -1);
 
 	@OriginalMember(owner = "client!ef", name = "f", descriptor = "Lclient!om;")
 	public static final Class282 aClass282_4 = new Class282(1);

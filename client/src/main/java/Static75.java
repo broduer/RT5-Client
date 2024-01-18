@@ -58,7 +58,7 @@ public final class Static75 {
 	}
 
 	@OriginalMember(owner = "client!ch", name = "a", descriptor = "(BLclient!ge;)Lclient!kk;")
-	public static Class154_Sub2 method6247(@OriginalArg(1) Class2_Sub21 arg0) {
-		return new Class154_Sub2(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.method7390(), arg0.method7403());
+	public static Class154_Sub2 method6247(@OriginalArg(1) Packet arg0) {
+		return new Class154_Sub2(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.method7390(), arg0.g1());
 	}
 }

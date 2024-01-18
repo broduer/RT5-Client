@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!uj")
-public final class Class2_Sub53 extends Class2 {
+public final class Class2_Sub53 extends Node {
 
 	@OriginalMember(owner = "client!uj", name = "E", descriptor = "Z")
 	private boolean aBoolean745;
@@ -52,26 +52,26 @@ public final class Class2_Sub53 extends Class2 {
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "([B)V")
 	private void method8506(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Class2_Sub21 local4 = new Class2_Sub21(arg0);
-		this.anInt9706 = local4.method7356();
-		this.anInt9710 = local4.method7356();
-		this.anInt9711 = local4.method7356();
-		this.anInt9705 = local4.method7356();
+		@Pc(4) Packet local4 = new Packet(arg0);
+		this.anInt9706 = local4.g4();
+		this.anInt9710 = local4.g4();
+		this.anInt9711 = local4.g4();
+		this.anInt9705 = local4.g4();
 		if (this.anInt9705 < 0) {
 			this.anInt9705 = ~this.anInt9705;
 			this.aBoolean746 = true;
 		}
-		@Pc(40) int local40 = local4.method7356();
+		@Pc(40) int local40 = local4.g4();
 		this.aByteArrayArray33 = new byte[local40][];
 		for (@Pc(46) int local46 = 0; local46 < local40; local46++) {
 			@Pc(49) int local49 = 0;
 			@Pc(53) int local53;
 			do {
-				local53 = local4.method7403();
+				local53 = local4.g1();
 				local49 += local53;
 			} while (local53 >= 255);
 			@Pc(64) byte[] local64 = new byte[local49];
-			local4.method7351(0, local49, local64);
+			local4.gdata(0, local49, local64);
 			this.aByteArrayArray33[local46] = local64;
 		}
 	}

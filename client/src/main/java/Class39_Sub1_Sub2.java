@@ -15,11 +15,11 @@ public final class Class39_Sub1_Sub2 extends Class39_Sub1 {
 	private final int anInt10591;
 
 	@OriginalMember(owner = "client!wd", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub1_Sub2(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub1_Sub2(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt10592 = arg0.method7389();
-		this.anInt10590 = arg0.method7403();
-		this.anInt10591 = arg0.method7389();
+		this.anInt10592 = arg0.g2();
+		this.anInt10590 = arg0.g1();
+		this.anInt10591 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!wd", name = "b", descriptor = "(I)V")

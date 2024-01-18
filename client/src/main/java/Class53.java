@@ -44,9 +44,9 @@ public final class Class53 {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method1222(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method1222(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(12) int local12 = arg0.method7403();
+			@Pc(12) int local12 = arg0.g1();
 			if (local12 == 0) {
 				return;
 			}
@@ -96,7 +96,7 @@ public final class Class53 {
 					local296 = new Class2_Sub26(local283.aString46, local339);
 					this.aClass28_9.method735(local289, local296);
 				}
-				local296.anIntArray318[local296.anIntArray318.length - local339] = (int) local283.aLong328;
+				local296.anIntArray318[local296.anIntArray318.length - local339] = (int) local283.key;
 			}
 			return;
 		}
@@ -191,27 +191,27 @@ public final class Class53 {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IILclient!ge;)V")
-	private void method1234(@OriginalArg(0) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method1234(@OriginalArg(0) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.aChar2 = Static346.method5091(arg1.method7384());
+			this.aChar2 = Static346.method5091(arg1.g1b());
 		} else if (arg0 == 2) {
-			this.aChar1 = Static346.method5091(arg1.method7384());
+			this.aChar1 = Static346.method5091(arg1.g1b());
 		} else if (arg0 == 3) {
-			this.aString5 = arg1.method7365();
+			this.aString5 = arg1.gstr();
 		} else if (arg0 == 4) {
-			this.anInt1146 = arg1.method7356();
+			this.anInt1146 = arg1.g4();
 		} else {
 			@Pc(69) int local69;
 			if (arg0 == 5 || arg0 == 6) {
-				this.anInt1148 = arg1.method7389();
+				this.anInt1148 = arg1.g2();
 				@Pc(62) Class28 local62 = new Class28(Static440.method5969(this.anInt1148));
 				for (@Pc(64) int local64 = 0; local64 < this.anInt1148; local64++) {
-					local69 = arg1.method7356();
-					@Pc(79) Class2 local79;
+					local69 = arg1.g4();
+					@Pc(79) Node local79;
 					if (arg0 == 5) {
-						local79 = new Class2_Sub24(arg1.method7365());
+						local79 = new Class2_Sub24(arg1.gstr());
 					} else {
-						local79 = new Class2_Sub38(arg1.method7356());
+						local79 = new Class2_Sub38(arg1.g4());
 					}
 					local62.method735(local69, local79);
 				}
@@ -220,21 +220,21 @@ public final class Class53 {
 				@Pc(114) int local114;
 				@Pc(131) int local131;
 				if (arg0 == 7) {
-					local114 = arg1.method7389();
-					this.anInt1148 = arg1.method7389();
+					local114 = arg1.g2();
+					this.anInt1148 = arg1.g2();
 					@Pc(124) String[] local124 = new String[local114];
 					for (local69 = 0; local69 < this.anInt1148; local69++) {
-						local131 = arg1.method7389();
-						local124[local131] = arg1.method7365();
+						local131 = arg1.g2();
+						local124[local131] = arg1.gstr();
 					}
 					this.anObject3 = local124;
 				} else if (arg0 == 8) {
-					local114 = arg1.method7389();
-					this.anInt1148 = arg1.method7389();
+					local114 = arg1.g2();
+					this.anInt1148 = arg1.g2();
 					@Pc(164) Integer[] local164 = new Integer[local114];
 					for (local69 = 0; local69 < this.anInt1148; local69++) {
-						local131 = arg1.method7389();
-						local164[local131] = Integer.valueOf(arg1.method7356());
+						local131 = arg1.g2();
+						local164[local131] = Integer.valueOf(arg1.g4());
 					}
 					this.anObject3 = local164;
 				}
@@ -265,7 +265,7 @@ public final class Class53 {
 					local87 = new Class2_Sub40(local101);
 					this.aClass28_9.method735(local45.anInt6399, local87);
 				}
-				local87.anIntArray531[local87.anIntArray531.length - local101] = (int) local45.aLong328;
+				local87.anIntArray531[local87.anIntArray531.length - local101] = (int) local45.key;
 			}
 			return;
 		}

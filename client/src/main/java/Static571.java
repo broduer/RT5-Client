@@ -14,7 +14,7 @@ public final class Static571 {
 	public static final long aLong269 = (long) (Math.random() * 9.999999999E9D);
 
 	@OriginalMember(owner = "client!rw", name = "D", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_103 = new Class347(43, 3);
+	public static final ClientProt aClass347_103 = new ClientProt(43, 3);
 
 	@OriginalMember(owner = "client!rw", name = "d", descriptor = "(II)Z")
 	public static boolean method7573(@OriginalArg(1) int arg0) {
@@ -38,7 +38,7 @@ public final class Static571 {
 						if (local66[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local78.method3390(new Class2_Sub21(local66));
+						local78.method3390(new Packet(local66));
 					}
 				}
 			}

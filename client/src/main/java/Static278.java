@@ -13,7 +13,7 @@ public final class Static278 {
 	public static int[] anIntArray351 = new int[4096];
 
 	@OriginalMember(owner = "client!in", name = "R", descriptor = "Lclient!ss;")
-	public static Class347 aClass347_57 = new Class347(36, -1);
+	public static ClientProt aClass347_57 = new ClientProt(36, -1);
 
 	@OriginalMember(owner = "client!in", name = "a", descriptor = "(ZD)V")
 	public static void method4068(@OriginalArg(1) double arg0) {

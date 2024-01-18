@@ -9,7 +9,7 @@ public final class Static358 {
 	private static Class aClass28;
 
 	@OriginalMember(owner = "client!lf", name = "g", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_124 = new Class347(18, 8);
+	public static final ClientProt aClass347_124 = new ClientProt(18, 8);
 
 	@OriginalMember(owner = "client!lf", name = "r", descriptor = "Z")
 	public static boolean aBoolean804 = false;

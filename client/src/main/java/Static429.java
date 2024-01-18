@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static429 {
 
 	@OriginalMember(owner = "client!nj", name = "c", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_81 = new Class347(90, -1);
+	public static final ClientProt aClass347_81 = new ClientProt(90, -1);
 
 	@OriginalMember(owner = "client!nj", name = "g", descriptor = "[Z")
 	public static final boolean[] aBooleanArray21 = new boolean[200];

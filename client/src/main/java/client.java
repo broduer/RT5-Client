@@ -275,10 +275,10 @@ public final class client extends GameShell {
 			}
 			if (js5ConnectState == 2) {
 				js5Socket = new ClientStream((Socket) js5SocketRequest.result, GameShell.sign, 25000);
-				@Pc(251) Class2_Sub21 local251 = new Class2_Sub21(5);
-				local251.method7396(Static572.aClass167_54.anInt3984);
-				local251.method7349(667);
-				js5Socket.method5836(0, 5, local251.aByteArray93);
+				@Pc(251) Packet local251 = new Packet(5);
+				local251.p1(LoginProt.OPCODE_15.opcode);
+				local251.p4(667);
+				js5Socket.method5836(0, 5, local251.data);
 				js5ConnectState++;
 				Static678.js5ConnectTime = Static588.currentTimeMillis();
 			}
@@ -298,10 +298,10 @@ public final class client extends GameShell {
 			if (js5ConnectState == 4) {
 				@Pc(356) boolean loggedOut = Static181.method2778(Static283.anInt4588) || Static41.method1027(Static283.anInt4588) || Static620.method8328(Static283.anInt4588);
 				@Pc(359) Class328[] local359 = Static566.method7474();
-				@Pc(367) Class2_Sub21 local367 = new Class2_Sub21(local359.length * 4);
-				js5Socket.read(local367.aByteArray93.length, 0, local367.aByteArray93);
+				@Pc(367) Packet local367 = new Packet(local359.length * 4);
+				js5Socket.read(local367.data.length, 0, local367.data);
 				for (@Pc(378) int i = 0; i < local359.length; i++) {
-					local359[i].method7475(local367.method7356());
+					local359[i].method7475(local367.g4());
 				}
 				js5NetQueue.start(!loggedOut, js5Socket);
 				js5ConnectState = 0;
@@ -792,7 +792,7 @@ public final class client extends GameShell {
 		Static712.method9336();
 		Static66.aClass174_1 = new Class174(GameShell.sign);
 		js5NetQueue = new Class297();
-		Static545.method7248(new int[] { 20, 260 }, new int[] { 1000, 100 });
+		Packet.method7248(new int[] { 20, 260 }, new int[] { 1000, 100 });
 		if (Static446.liveMode != modewhere) {
 			Static163.fakeModelCacheEntries = new byte[50][];
 		}

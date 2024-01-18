@@ -29,14 +29,14 @@ public final class Static387 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ge;II)Ljava/lang/String;")
-	public static String method5448(@OriginalArg(0) Class2_Sub21 arg0) {
+	public static String method5448(@OriginalArg(0) Packet arg0) {
 		try {
-			@Pc(7) int local7 = arg0.method7397();
+			@Pc(7) int local7 = arg0.gsmarts();
 			if (local7 > 32767) {
 				local7 = 32767;
 			}
 			@Pc(19) byte[] local19 = new byte[local7];
-			arg0.anInt8412 += Static636.aClass199_1.method4445(local19, arg0.aByteArray93, local7, arg0.anInt8412, 0);
+			arg0.pos += Static636.aClass199_1.method4445(local19, arg0.data, local7, arg0.pos, 0);
 			return Static350.method5133(0, local19, local7);
 		} catch (@Pc(53) Exception local53) {
 			return "Cabbage";

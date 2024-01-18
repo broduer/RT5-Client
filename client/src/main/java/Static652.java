@@ -11,8 +11,8 @@ public final class Static652 {
 	public static int anInt9739 = 0;
 
 	@OriginalMember(owner = "client!uka", name = "a", descriptor = "(Lclient!ge;I)Lclient!gi;")
-	public static Class146 method8538(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(16) int local16 = arg0.method7356();
+	public static Class146 method8538(@OriginalArg(0) Packet arg0) {
+		@Pc(16) int local16 = arg0.g4();
 		return new Class146(local16);
 	}
 

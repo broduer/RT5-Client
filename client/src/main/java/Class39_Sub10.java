@@ -25,29 +25,29 @@ public final class Class39_Sub10 extends Class39 {
 	private final int anInt4133;
 
 	@OriginalMember(owner = "client!hs", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub10(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub10(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt4131 = arg0.method7389();
-		@Pc(13) int local13 = arg0.method7403();
+		this.anInt4131 = arg0.g2();
+		@Pc(13) int local13 = arg0.g1();
 		if ((local13 & 0x1) == 0) {
 			this.anInt4130 = -1;
 			this.anInt4136 = -1;
 		} else {
-			this.anInt4130 = arg0.method7389();
-			this.anInt4136 = arg0.method7389();
+			this.anInt4130 = arg0.g2();
+			this.anInt4136 = arg0.g2();
 		}
 		if ((local13 & 0x2) == 0) {
 			this.anInt4137 = -1;
 			this.anInt4134 = -1;
 		} else {
-			this.anInt4134 = arg0.method7389();
-			this.anInt4137 = arg0.method7389();
+			this.anInt4134 = arg0.g2();
+			this.anInt4137 = arg0.g2();
 		}
 		if ((local13 & 0x4) == 0) {
 			this.anInt4133 = -1;
 		} else {
-			@Pc(84) int local84 = arg0.method7389();
-			@Pc(88) int local88 = arg0.method7389();
+			@Pc(84) int local84 = arg0.g2();
+			@Pc(88) int local88 = arg0.g2();
 			@Pc(94) int local94 = local84 * 255 / local88;
 			if (local84 > 0 && local94 < 1) {
 				local94 = 1;

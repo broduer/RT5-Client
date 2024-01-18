@@ -10,7 +10,7 @@ public final class Static600 {
 	public static float aFloat179;
 
 	@OriginalMember(owner = "client!sv", name = "V", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_108 = new Class347(37, -1);
+	public static final ClientProt aClass347_108 = new ClientProt(37, -1);
 
 	@OriginalMember(owner = "client!sv", name = "N", descriptor = "[Lclient!dv;")
 	public static final Class88[] aClass88Array1 = new Class88[4];

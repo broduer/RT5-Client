@@ -10,7 +10,7 @@ public final class Static563 {
 	public static final int anInt8484 = 0xC8C0A8;
 
 	@OriginalMember(owner = "client!ro", name = "j", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_102 = new Class347(88, -1);
+	public static final ClientProt aClass347_102 = new ClientProt(88, -1);
 
 	@OriginalMember(owner = "client!ro", name = "a", descriptor = "()V")
 	public static void method7468() {

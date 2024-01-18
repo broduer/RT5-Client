@@ -20,8 +20,8 @@ public final class Static666 {
 			}
 			if (local18.status == 1) {
 				local5 = (Class83) local18.result;
-				@Pc(41) Class2_Sub21 local41 = Static400.aClass2_Sub34_28.method5117();
-				local5.method2162(local41.aByteArray93, 0, local41.anInt8412);
+				@Pc(41) Packet local41 = Static400.aClass2_Sub34_28.method5117();
+				local5.method2162(local41.data, 0, local41.pos);
 			}
 		} catch (@Pc(51) Exception local51) {
 		}

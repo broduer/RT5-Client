@@ -20,7 +20,7 @@ public final class Static527 {
 		for (@Pc(15) Class2_Sub2_Sub15 local15 = (Class2_Sub2_Sub15) Static505.aClass341_77.method7706(65280); local15 != null; local15 = (Class2_Sub2_Sub15) Static505.aClass341_77.method7713()) {
 			@Pc(20) Class8_Sub2_Sub1_Sub1 local20 = local15.aClass8_Sub2_Sub1_Sub1_1;
 			if (client.cycle > local20.anInt699) {
-				local15.method9464();
+				local15.unlink();
 				local20.method815();
 			} else if (client.cycle >= local20.anInt725) {
 				local20.method816();

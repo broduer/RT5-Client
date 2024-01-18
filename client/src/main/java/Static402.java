@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static402 {
 
 	@OriginalMember(owner = "client!ml", name = "p", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_72 = new Class347(76, 7);
+	public static final ClientProt aClass347_72 = new ClientProt(76, 7);
 
 	@OriginalMember(owner = "client!ml", name = "f", descriptor = "[B")
 	public static final byte[] aByteArray68 = new byte[2048];
@@ -34,7 +34,7 @@ public final class Static402 {
 		@Pc(21) byte[] local21 = Static331.aClass332_65.method7602(arg0, 0);
 		local10 = new Class378();
 		if (local21 != null) {
-			local10.method8518(arg0, new Class2_Sub21(local21));
+			local10.method8518(arg0, new Packet(local21));
 		}
 		Static153.aClass82_56.method2150(local10, arg0);
 		return local10;

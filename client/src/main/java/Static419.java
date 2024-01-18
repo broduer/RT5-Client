@@ -14,7 +14,7 @@ public final class Static419 {
 	public static final String[] aStringArray33 = new String[200];
 
 	@OriginalMember(owner = "client!ne", name = "p", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_77 = new Class347(42, 15);
+	public static final ClientProt aClass347_77 = new ClientProt(42, 15);
 
 	@OriginalMember(owner = "client!ne", name = "w", descriptor = "I")
 	public static int anInt6454 = 0;

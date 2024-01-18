@@ -15,7 +15,7 @@ public final class Static544 {
 				} else {
 					Static235.method3421(arg0.anInt4017, arg0.anInt4020, arg0.anInt4026, arg0.anInt4027, -1, arg0.anInt4022, arg0.anInt4021, arg0.anInt4013);
 				}
-				arg0.method9464();
+				arg0.unlink();
 			}
 		} else if (arg0.aBoolean310 && arg0.anInt4027 >= 1 && arg0.anInt4017 >= 1 && Static720.anInt10888 - 2 >= arg0.anInt4027 && Static501.anInt7591 - 2 >= arg0.anInt4017 && (arg0.anInt4025 < 0 || Static235.method3424(arg0.anInt4025, arg0.anInt4024))) {
 			if (arg1) {
@@ -25,9 +25,9 @@ public final class Static544 {
 			}
 			arg0.aBoolean310 = false;
 			if (!arg1 && arg0.anInt4013 == arg0.anInt4025 && arg0.anInt4013 == -1) {
-				arg0.method9464();
+				arg0.unlink();
 			} else if (!arg1 && arg0.anInt4013 == arg0.anInt4025 && arg0.anInt4023 == arg0.anInt4026 && arg0.anInt4024 == arg0.anInt4020) {
-				arg0.method9464();
+				arg0.unlink();
 			}
 		}
 	}

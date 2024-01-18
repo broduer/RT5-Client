@@ -204,9 +204,6 @@ public final class Static32 {
 	@OriginalMember(owner = "client!bba", name = "D", descriptor = "I")
 	public static int anInt776 = 0;
 
-	@OriginalMember(owner = "client!bba", name = "I", descriptor = "I")
-	public static int anInt777 = 0;
-
 	@OriginalMember(owner = "client!bba", name = "L", descriptor = "I")
 	public static int anInt780 = 100;
 
@@ -221,7 +218,7 @@ public final class Static32 {
 		}
 		local11.aClass2_Sub21_Sub2_1.method7377(arg0 + Static691.anInt10395);
 		local11.aClass2_Sub21_Sub2_1.method7377(Static116.anInt2279 + arg1);
-		local11.aClass2_Sub21_Sub2_1.method7396(Static334.aClass321_1.method8486(82) ? 1 : 0);
+		local11.aClass2_Sub21_Sub2_1.p1(Static334.aClass321_1.method8486(82) ? 1 : 0);
 		Static266.aBoolean583 = false;
 		Static675.anInt10184 = arg0;
 		Static212.anInt3476 = arg1;

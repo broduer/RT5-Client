@@ -3,18 +3,21 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ss")
-public final class Class347 {
+public final class ClientProt {
+
+	@OriginalMember(owner = "client!hja", name = "d", descriptor = "Lclient!ss;")
+	public static final ClientProt aClass347_52 = new ClientProt(72, -2);
 
 	@OriginalMember(owner = "client!ss", name = "g", descriptor = "I")
-	private final int anInt8853;
+	private final int opcode;
 
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "I")
-	public final int anInt8851;
+	public final int length;
 
 	@OriginalMember(owner = "client!ss", name = "<init>", descriptor = "(II)V")
-	public Class347(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.anInt8853 = arg0;
-		this.anInt8851 = arg1;
+	public ClientProt(@OriginalArg(0) int opcode, @OriginalArg(1) int length) {
+		this.opcode = opcode;
+		this.length = length;
 	}
 
 	@OriginalMember(owner = "client!ss", name = "toString", descriptor = "()Ljava/lang/String;")
@@ -24,7 +27,7 @@ public final class Class347 {
 	}
 
 	@OriginalMember(owner = "client!ss", name = "a", descriptor = "(I)I")
-	public int method7833() {
-		return this.anInt8853;
+	public int getOpcode() {
+		return this.opcode;
 	}
 }

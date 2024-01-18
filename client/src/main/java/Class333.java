@@ -10,7 +10,7 @@ public final class Class333 {
 	private Class28 aClass28_41;
 
 	@OriginalMember(owner = "client!sba", name = "j", descriptor = "Lclient!ie;")
-	private Class2 aClass2_266;
+	private Node aClass2_266;
 
 	@OriginalMember(owner = "client!sba", name = "k", descriptor = "I")
 	private int anInt8603 = 0;
@@ -25,17 +25,17 @@ public final class Class333 {
 	}
 
 	@OriginalMember(owner = "client!sba", name = "a", descriptor = "(I)Lclient!ie;")
-	public Class2 method7617() {
-		@Pc(23) Class2 local23;
+	public Node method7617() {
+		@Pc(23) Node local23;
 		if (this.anInt8603 > 0 && this.aClass28_41.aClass2Array1[this.anInt8603 - 1] != this.aClass2_266) {
 			local23 = this.aClass2_266;
-			this.aClass2_266 = local23.aClass2_346;
+			this.aClass2_266 = local23.next;
 			return local23;
 		}
 		while (this.aClass28_41.anInt640 > this.anInt8603) {
-			local23 = this.aClass28_41.aClass2Array1[this.anInt8603++].aClass2_346;
+			local23 = this.aClass28_41.aClass2Array1[this.anInt8603++].next;
 			if (this.aClass28_41.aClass2Array1[this.anInt8603 - 1] != local23) {
-				this.aClass2_266 = local23.aClass2_346;
+				this.aClass2_266 = local23.next;
 				return local23;
 			}
 		}
@@ -43,7 +43,7 @@ public final class Class333 {
 	}
 
 	@OriginalMember(owner = "client!sba", name = "a", descriptor = "(Z)Lclient!ie;")
-	public Class2 method7620() {
+	public Node method7620() {
 		this.anInt8603 = 0;
 		return this.method7617();
 	}

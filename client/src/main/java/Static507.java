@@ -8,7 +8,7 @@ public final class Static507 {
 	public static Class396[] aClass396Array1;
 
 	@OriginalMember(owner = "client!pw", name = "l", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_95 = new Class347(44, -1);
+	public static final ClientProt aClass347_95 = new ClientProt(44, -1);
 
 	@OriginalMember(owner = "client!pw", name = "t", descriptor = "Lclient!it;")
 	public static final Class184 aClass184_14 = new Class184(10, 2, 2, 0);

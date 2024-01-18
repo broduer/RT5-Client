@@ -44,7 +44,7 @@ public final class Class153 {
 	private int anInt3650 = 0;
 
 	@OriginalMember(owner = "client!gw", name = "d", descriptor = "Lclient!ge;")
-	private final Class2_Sub21 aClass2_Sub21_6 = new Class2_Sub21(1350);
+	private final Packet aClass2_Sub21_6 = new Packet(1350);
 
 	@OriginalMember(owner = "client!gw", name = "y", descriptor = "Lclient!rka;")
 	public final Class2_Sub21_Sub2 aClass2_Sub21_Sub2_2 = new Class2_Sub21_Sub2(15000);
@@ -88,18 +88,18 @@ public final class Class153 {
 		if (this.aClass350_1 == null || this.anInt3650 <= 0) {
 			return;
 		}
-		this.aClass2_Sub21_6.anInt8412 = 0;
+		this.aClass2_Sub21_6.pos = 0;
 		while (true) {
 			@Pc(23) Class2_Sub19 local23 = (Class2_Sub19) this.aClass341_17.method7706(65280);
-			if (local23 == null || local23.anInt2998 > this.aClass2_Sub21_6.aByteArray93.length - this.aClass2_Sub21_6.anInt8412) {
-				this.aClass350_1.method7938(this.aClass2_Sub21_6.aByteArray93, this.aClass2_Sub21_6.anInt8412);
+			if (local23 == null || local23.anInt2998 > this.aClass2_Sub21_6.data.length - this.aClass2_Sub21_6.pos) {
+				this.aClass350_1.method7938(this.aClass2_Sub21_6.data, this.aClass2_Sub21_6.pos);
 				this.anInt3657 = 0;
-				this.anInt3659 += this.aClass2_Sub21_6.anInt8412;
+				this.anInt3659 += this.aClass2_Sub21_6.pos;
 				break;
 			}
-			this.aClass2_Sub21_6.method7393(local23.anInt2998, local23.aClass2_Sub21_Sub2_1.aByteArray93, 0);
+			this.aClass2_Sub21_6.pdata(local23.anInt2998, local23.aClass2_Sub21_Sub2_1.data, 0);
 			this.anInt3650 -= local23.anInt2998;
-			local23.method9464();
+			local23.unlink();
 			local23.aClass2_Sub21_Sub2_1.method7372();
 			local23.method2768();
 		}
@@ -116,8 +116,8 @@ public final class Class153 {
 	@OriginalMember(owner = "client!gw", name = "a", descriptor = "(ILclient!fk;)V")
 	public void method3275(@OriginalArg(1) Class2_Sub19 arg0) {
 		this.aClass341_17.method7718(arg0);
-		arg0.anInt2998 = arg0.aClass2_Sub21_Sub2_1.anInt8412;
-		arg0.aClass2_Sub21_Sub2_1.anInt8412 = 0;
+		arg0.anInt2998 = arg0.aClass2_Sub21_Sub2_1.pos;
+		arg0.aClass2_Sub21_Sub2_1.pos = 0;
 		this.anInt3650 += arg0.anInt2998;
 	}
 }

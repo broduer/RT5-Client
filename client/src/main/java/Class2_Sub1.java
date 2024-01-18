@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pf")
-public abstract class Class2_Sub1 extends Class2 {
+public abstract class Class2_Sub1 extends Node {
 
 	@OriginalMember(owner = "client!pf", name = "l", descriptor = "I")
 	public int anInt10909;
@@ -53,7 +53,7 @@ public abstract class Class2_Sub1 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(ZLclient!ge;I)V")
-	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 	}
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(IIZ)V")

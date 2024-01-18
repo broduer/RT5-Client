@@ -7,13 +7,13 @@ public final class Static436 {
 	public static int anInt3863;
 
 	@OriginalMember(owner = "client!no", name = "d", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_44 = new Class347(22, 2);
+	public static final ClientProt aClass347_44 = new ClientProt(22, 2);
 
 	@OriginalMember(owner = "client!no", name = "c", descriptor = "I")
 	public static int anInt3860 = 0;
 
 	@OriginalMember(owner = "client!no", name = "a", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_45 = new Class347(32, -1);
+	public static final ClientProt aClass347_45 = new ClientProt(32, -1);
 
 	@OriginalMember(owner = "client!no", name = "c", descriptor = "(I)I")
 	public static int method3416() {

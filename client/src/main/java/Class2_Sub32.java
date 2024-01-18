@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!jw")
-public final class Class2_Sub32 extends Class2 {
+public final class Class2_Sub32 extends Node {
 
 	@OriginalMember(owner = "client!jw", name = "I", descriptor = "I")
 	private int anInt5045;
@@ -230,7 +230,7 @@ public final class Class2_Sub32 extends Class2 {
 		@Pc(30) int local30 = this.aClass178_Sub1_1.method7885(local23, local15);
 		if ((arg4 & 0x7F) == 0 || (arg2 & 0x7F) == 0) {
 			local7 = (long) local15 & 0xFFFFL | 0xFFFFL << 16 & (long) local23 << 16;
-			@Pc(63) Class2 local63 = this.aClass28_25.method738(local7);
+			@Pc(63) Node local63 = this.aClass28_25.method738(local7);
 			if (local63 != null) {
 				this.method4568(((Class2_Sub50) local63).aShort119);
 				return;

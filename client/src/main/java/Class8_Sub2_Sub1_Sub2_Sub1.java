@@ -409,9 +409,9 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 	}
 
 	@OriginalMember(owner = "client!ca", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method1420(@OriginalArg(0) Class2_Sub21 arg0) {
-		arg0.anInt8412 = 0;
-		@Pc(12) int local12 = arg0.method7403();
+	public void method1420(@OriginalArg(0) Packet arg0) {
+		arg0.pos = 0;
+		@Pc(12) int local12 = arg0.g1();
 		this.aByte32 = (byte) (local12 & 0x1);
 		@Pc(21) boolean local21 = this.aBoolean126;
 		this.aBoolean126 = (local12 & 0x2) != 0;
@@ -421,10 +421,10 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 		this.aByte31 = (byte) (local12 >> 6 & 0x3);
 		super.anInt10718 += this.method9309((byte) 44) - local44 << 8;
 		super.anInt10722 += this.method9309((byte) 111) - local44 << 8;
-		this.aByte33 = arg0.method7384();
-		this.anInt1437 = arg0.method7384();
-		this.anInt1438 = arg0.method7384();
-		this.aBoolean124 = arg0.method7384() == 1;
+		this.aByte33 = arg0.g1b();
+		this.anInt1437 = arg0.g1b();
+		this.anInt1438 = arg0.g1b();
+		this.aBoolean124 = arg0.g1b() == 1;
 		if (Static446.liveMode == client.modewhere && Static608.anInt9316 >= 2) {
 			this.aBoolean124 = false;
 		}
@@ -439,15 +439,15 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 		@Pc(240) int local240;
 		for (@Pc(151) int local151 = 0; local151 < Static125.aClass390_1.anIntArray821.length; local151++) {
 			if (Static125.aClass390_1.anIntArray821[local151] != 1) {
-				local165 = arg0.method7403();
+				local165 = arg0.g1();
 				if (local165 == 0) {
 					local139[local151] = 0;
 				} else {
-					local184 = arg0.method7403();
+					local184 = arg0.g1();
 					local191 = (local165 << 8) + local184;
 					if (local151 == 0 && local191 == 65535) {
-						local134 = arg0.method7389();
-						this.anInt1440 = arg0.method7403();
+						local134 = arg0.g2();
+						this.anInt1440 = arg0.g1();
 						break;
 					}
 					if (local191 >= 32768) {
@@ -465,7 +465,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 			}
 		}
 		if (local134 == -1) {
-			local165 = arg0.method7389();
+			local165 = arg0.g2();
 			local184 = 0;
 			for (local191 = 0; local191 < Static125.aClass390_1.anIntArray821.length; local191++) {
 				if (Static125.aClass390_1.anIntArray821[local191] == 0) {
@@ -478,21 +478,21 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 		}
 		@Pc(332) int[] local332 = new int[10];
 		for (local184 = 0; local184 < 10; local184++) {
-			local191 = arg0.method7403();
+			local191 = arg0.g1();
 			if (local184 >= Static339.aShortArrayArrayArray2.length || local191 < 0 || Static339.aShortArrayArrayArray2[local184][0].length <= local191) {
 				local191 = 0;
 			}
 			local332[local184] = local191;
 		}
-		this.anInt1450 = arg0.method7389();
-		this.aString8 = arg0.method7365();
+		this.anInt1450 = arg0.g2();
+		this.aString8 = arg0.gstr();
 		if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == this) {
 			Static515.aString96 = this.aString8;
 		}
 		this.aString9 = this.aString8;
-		this.anInt1451 = arg0.method7403();
+		this.anInt1451 = arg0.g1();
 		if (local40) {
-			this.anInt1443 = arg0.method7389();
+			this.anInt1443 = arg0.g2();
 			this.anInt1444 = this.anInt1451;
 			if (this.anInt1443 == 65535) {
 				this.anInt1443 = -1;
@@ -500,14 +500,14 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 			this.anInt1478 = -1;
 		} else {
 			this.anInt1443 = 0;
-			this.anInt1444 = arg0.method7403();
-			this.anInt1478 = arg0.method7403();
+			this.anInt1444 = arg0.g1();
+			this.anInt1478 = arg0.g1();
 			if (this.anInt1478 == 255) {
 				this.anInt1478 = -1;
 			}
 		}
 		local191 = this.anInt1459;
-		this.anInt1459 = arg0.method7403();
+		this.anInt1459 = arg0.g1();
 		@Pc(490) int local490;
 		if (this.anInt1459 == 0) {
 			Static76.method1552(this);
@@ -517,11 +517,11 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 			local490 = this.anInt1452;
 			@Pc(493) int local493 = this.anInt1476;
 			@Pc(496) int local496 = this.anInt1467;
-			this.anInt1462 = arg0.method7389();
-			this.anInt1466 = arg0.method7389();
-			this.anInt1452 = arg0.method7389();
-			this.anInt1476 = arg0.method7389();
-			this.anInt1467 = arg0.method7403();
+			this.anInt1462 = arg0.g2();
+			this.anInt1466 = arg0.g2();
+			this.anInt1452 = arg0.g2();
+			this.anInt1476 = arg0.g2();
+			this.anInt1467 = arg0.g1();
 			if (this.aBoolean126 != local21 || this.anInt1459 != local191 || local240 != this.anInt1462 || local487 != this.anInt1466 || this.anInt1452 != local490 || this.anInt1476 != local493 || local496 != this.anInt1467) {
 				Static247.method3523(this);
 			}

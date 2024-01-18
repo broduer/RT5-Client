@@ -119,7 +119,7 @@ public final class Static679 {
 		if (Static400.aBoolean623) {
 			return;
 		}
-		arg0.method9464();
+		arg0.unlink();
 		Static594.anInt8801--;
 		if (!arg0.aBoolean551) {
 			@Pc(79) long local79 = arg0.aLong234;

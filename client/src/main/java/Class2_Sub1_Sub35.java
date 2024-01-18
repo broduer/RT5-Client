@@ -39,13 +39,13 @@ public final class Class2_Sub1_Sub35 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!vi", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.anInt10261 = arg1.method7389();
+			this.anInt10261 = arg1.g2();
 		} else if (arg2 == 1) {
-			this.anInt10259 = arg1.method7389();
+			this.anInt10259 = arg1.g2();
 		} else if (arg2 == 2) {
-			super.aBoolean825 = arg1.method7403() == 1;
+			super.aBoolean825 = arg1.g1() == 1;
 		}
 	}
 

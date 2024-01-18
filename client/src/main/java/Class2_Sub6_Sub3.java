@@ -51,7 +51,7 @@ public final class Class2_Sub6_Sub3 extends PcmStream {
 					this.method5895(local60);
 				} else {
 					local60.anInt101 = local68;
-					this.method5893(local60.aClass2_346, local60);
+					this.method5893(local60.next, local60);
 				}
 			}
 		} while (arg2 != 0);
@@ -69,7 +69,7 @@ public final class Class2_Sub6_Sub3 extends PcmStream {
 
 	@OriginalMember(owner = "client!nn", name = "b", descriptor = "(Lclient!dea;)V")
 	public synchronized void method5890(@OriginalArg(0) PcmStream arg0) {
-		arg0.method9464();
+		arg0.unlink();
 	}
 
 	@OriginalMember(owner = "client!nn", name = "b", descriptor = "(I)V")
@@ -93,12 +93,12 @@ public final class Class2_Sub6_Sub3 extends PcmStream {
 	}
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!ie;Lclient!ada;)V")
-	private void method5893(@OriginalArg(0) Class2 arg0, @OriginalArg(1) Class2_Sub3 arg1) {
+	private void method5893(@OriginalArg(0) Node arg0, @OriginalArg(1) Class2_Sub3 arg1) {
 		while (arg0 != this.aClass341_36.aClass2_271 && ((Class2_Sub3) arg0).anInt101 <= arg1.anInt101) {
-			arg0 = arg0.aClass2_346;
+			arg0 = arg0.next;
 		}
 		Static201.method7375(arg0, arg1);
-		this.anInt6624 = ((Class2_Sub3) this.aClass341_36.aClass2_271.aClass2_346).anInt101;
+		this.anInt6624 = ((Class2_Sub3) this.aClass341_36.aClass2_271.next).anInt101;
 	}
 
 	@OriginalMember(owner = "client!nn", name = "c", descriptor = "()Lclient!dea;")
@@ -133,7 +133,7 @@ public final class Class2_Sub6_Sub3 extends PcmStream {
 					this.method5895(local50);
 				} else {
 					local50.anInt101 = local58;
-					this.method5893(local50.aClass2_346, local50);
+					this.method5893(local50.next, local50);
 				}
 			}
 		} while (arg0 != 0);
@@ -153,9 +153,9 @@ public final class Class2_Sub6_Sub3 extends PcmStream {
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!ada;)V")
 	private void method5895(@OriginalArg(0) Class2_Sub3 arg0) {
-		arg0.method9464();
+		arg0.unlink();
 		arg0.method113();
-		@Pc(9) Class2 local9 = this.aClass341_36.aClass2_271.aClass2_346;
+		@Pc(9) Node local9 = this.aClass341_36.aClass2_271.next;
 		if (local9 == this.aClass341_36.aClass2_271) {
 			this.anInt6624 = -1;
 		} else {

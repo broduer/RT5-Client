@@ -13,7 +13,7 @@ public final class Static121 {
 		if (local17 != null) {
 			local17.aClass224_Sub1_1.method9188();
 			Static635.method8387(local17.anInt182, local17.aBoolean15);
-			local17.method9464();
+			local17.unlink();
 		}
 	}
 

@@ -29,8 +29,8 @@ public final class Static449 {
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BZZLclient!aha;)V")
 	public static void method6122(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class2_Sub4 arg2) {
 		@Pc(6) int local6 = arg2.anInt147;
-		@Pc(10) int local10 = (int) arg2.aLong328;
-		arg2.method9464();
+		@Pc(10) int local10 = (int) arg2.key;
+		arg2.unlink();
 		if (arg1) {
 			Static347.method5101(local6);
 		}
@@ -45,14 +45,14 @@ public final class Static449 {
 		}
 		@Pc(55) Class333 local55 = new Class333(Static548.aClass28_40);
 		for (@Pc(60) Class2_Sub4 local60 = (Class2_Sub4) local55.method7620(); local60 != null; local60 = (Class2_Sub4) local55.method7617()) {
-			if (!local60.method9465()) {
+			if (!local60.isLinked()) {
 				local60 = (Class2_Sub4) local55.method7620();
 				if (local60 == null) {
 					break;
 				}
 			}
 			if (local60.anInt146 == 3) {
-				@Pc(84) int local84 = (int) local60.aLong328;
+				@Pc(84) int local84 = (int) local60.key;
 				if (local6 == local84 >>> 16) {
 					method6122(arg0, true, local60);
 				}

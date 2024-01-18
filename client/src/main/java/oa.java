@@ -331,7 +331,7 @@ public final class oa extends Class19 implements Interface5 {
 		}
 		@Pc(18) p local18 = (p) this.aClass28_33.method738(arg0.hashCode());
 		if (local18 != null) {
-			local18.method9464();
+			local18.unlink();
 			local18.method6449();
 		}
 	}

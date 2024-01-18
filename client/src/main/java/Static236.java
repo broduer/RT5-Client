@@ -12,7 +12,7 @@ public final class Static236 {
 	public static PrivilegedRequest aPrivilegedRequest_2;
 
 	@OriginalMember(owner = "client!hfa", name = "v", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_50 = new Class347(69, 7);
+	public static final ClientProt aClass347_50 = new ClientProt(69, 7);
 
 	@OriginalMember(owner = "client!hfa", name = "r", descriptor = "Z")
 	public static boolean aBoolean304 = false;
@@ -41,7 +41,7 @@ public final class Static236 {
 		} catch (@Pc(29) Exception local29) {
 			@Pc(106) String local106 = "T2 - " + (arg0.packetType == null ? -1 : arg0.packetType.getOpcode()) + "," + (arg0.lastPacketType2 == null ? -1 : arg0.lastPacketType2.getOpcode()) + "," + (arg0.lastPacketType3 == null ? -1 : arg0.lastPacketType3.getOpcode()) + " - " + arg0.length + "," + (Static691.anInt10395 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2279 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
 			for (@Pc(108) int local108 = 0; arg0.length > local108 && local108 < 50; local108++) {
-				local106 = local106 + arg0.aClass2_Sub21_Sub2_2.aByteArray93[local108] + ",";
+				local106 = local106 + arg0.aClass2_Sub21_Sub2_2.data[local108] + ",";
 			}
 			TracingException.report(local29, local106);
 			Static233.method3409(false);

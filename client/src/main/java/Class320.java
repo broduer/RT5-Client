@@ -51,9 +51,9 @@ public final class Class320 {
 	}
 
 	@OriginalMember(owner = "client!re", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method7263(@OriginalArg(1) Class2_Sub21 arg0) {
+	public void method7263(@OriginalArg(1) Packet arg0) {
 		while (true) {
-			@Pc(7) int local7 = arg0.method7403();
+			@Pc(7) int local7 = arg0.g1();
 			if (local7 == 0) {
 				return;
 			}
@@ -62,13 +62,13 @@ public final class Class320 {
 	}
 
 	@OriginalMember(owner = "client!re", name = "a", descriptor = "(BLclient!ge;I)V")
-	private void method7264(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) int arg1) {
+	private void method7264(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt8272 = Static579.method7640(arg0.method7390());
 		} else if (arg1 == 2) {
-			this.anInt8278 = arg0.method7403();
+			this.anInt8278 = arg0.g1();
 		} else if (arg1 == 3) {
-			this.anInt8278 = arg0.method7389();
+			this.anInt8278 = arg0.g2();
 			if (this.anInt8278 == 65535) {
 				this.anInt8278 = -1;
 			}
@@ -79,19 +79,19 @@ public final class Class320 {
 		} else if (arg1 == 8) {
 			this.aClass96_5.anInt2518 = this.anInt8276;
 		} else if (arg1 == 9) {
-			this.anInt8273 = arg0.method7389() << 2;
+			this.anInt8273 = arg0.g2() << 2;
 		} else if (arg1 == 10) {
 			this.aBoolean628 = false;
 		} else if (arg1 == 11) {
-			this.anInt8274 = arg0.method7403();
+			this.anInt8274 = arg0.g1();
 		} else if (arg1 == 12) {
 			this.aBoolean629 = true;
 		} else if (arg1 == 13) {
 			this.anInt8283 = arg0.method7390();
 		} else if (arg1 == 14) {
-			this.anInt8275 = arg0.method7403() << 2;
+			this.anInt8275 = arg0.g1() << 2;
 		} else if (arg1 == 16) {
-			this.anInt8279 = arg0.method7403();
+			this.anInt8279 = arg0.g1();
 		}
 	}
 }

@@ -78,11 +78,11 @@ public final class Class2_Sub1_Sub24 extends Class2_Sub1 {
 
 	@OriginalMember(owner = "client!ot", name = "a", descriptor = "(ZLclient!ge;I)V")
 	@Override
-	public void method9423(@OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2) {
+	public void method9423(@OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
 		if (arg2 == 0) {
-			this.aClass154Array1 = new Class154[arg1.method7403()];
+			this.aClass154Array1 = new Class154[arg1.g1()];
 			for (@Pc(33) int local33 = 0; local33 < this.aClass154Array1.length; local33++) {
-				@Pc(39) int local39 = arg1.method7403();
+				@Pc(39) int local39 = arg1.g1();
 				if (local39 == 0) {
 					this.aClass154Array1[local33] = Static305.method4444(arg1);
 				} else if (local39 == 1) {
@@ -94,7 +94,7 @@ public final class Class2_Sub1_Sub24 extends Class2_Sub1 {
 				}
 			}
 		} else if (arg2 == 1) {
-			super.aBoolean825 = arg1.method7403() == 1;
+			super.aBoolean825 = arg1.g1() == 1;
 		}
 	}
 }

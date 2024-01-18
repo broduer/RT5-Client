@@ -19,7 +19,7 @@ public final class Static176 {
 	}
 
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "(ILclient!ge;)V")
-	public static void method6697(@OriginalArg(1) Class2_Sub21 arg0) {
+	public static void method6697(@OriginalArg(1) Packet arg0) {
 		@Pc(6) byte[] local6 = new byte[24];
 		if (Static690.aClass245_5 != null) {
 			@Pc(18) int local18;
@@ -37,6 +37,6 @@ public final class Static176 {
 				}
 			}
 		}
-		arg0.method7393(24, local6, 0);
+		arg0.pdata(24, local6, 0);
 	}
 }

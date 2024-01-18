@@ -24,9 +24,9 @@ public final class Class298 {
 	}
 
 	@OriginalMember(owner = "client!po", name = "a", descriptor = "(Lclient!ge;B)V")
-	public void method6680(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method6680(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(3) int local3 = arg0.method7403();
+			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {
 				return;
 			}
@@ -35,15 +35,15 @@ public final class Class298 {
 	}
 
 	@OriginalMember(owner = "client!po", name = "a", descriptor = "(IILclient!ge;)V")
-	private void method6681(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method6681(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.aChar6 = Static346.method5091(arg1.method7384());
+			this.aChar6 = Static346.method5091(arg1.g1b());
 		} else if (arg0 == 2) {
-			this.anInt7532 = arg1.method7356();
+			this.anInt7532 = arg1.g4();
 		} else if (arg0 == 4) {
 			this.aBoolean570 = false;
 		} else if (arg0 == 5) {
-			this.aString89 = arg1.method7365();
+			this.aString89 = arg1.gstr();
 		}
 	}
 }

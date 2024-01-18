@@ -8,10 +8,10 @@ public final class Static546 {
 	public static int anInt8267;
 
 	@OriginalMember(owner = "client!rd", name = "r", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_97 = new Class347(66, 3);
+	public static final ClientProt aClass347_97 = new ClientProt(66, 3);
 
 	@OriginalMember(owner = "client!rd", name = "q", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_98 = new Class347(61, 8);
+	public static final ClientProt aClass347_98 = new ClientProt(61, 8);
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(I)[Lclient!it;")
 	public static Class184[] method7256() {

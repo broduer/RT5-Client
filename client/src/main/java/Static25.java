@@ -23,7 +23,7 @@ public final class Static25 {
 				Static347.method5101(Static377.anInt5950);
 			}
 			for (@Pc(16) Class2_Sub4 local16 = (Class2_Sub4) Static548.aClass28_40.method736(); local16 != null; local16 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-				if (!local16.method9465()) {
+				if (!local16.isLinked()) {
 					local16 = (Class2_Sub4) Static548.aClass28_40.method736();
 					if (local16 == null) {
 						break;

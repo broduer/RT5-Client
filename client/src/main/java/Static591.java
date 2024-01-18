@@ -8,7 +8,7 @@ public final class Static591 {
 	public static final Interface27[] anInterface27Array2 = new Interface27[75];
 
 	@OriginalMember(owner = "client!sl", name = "B", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_107 = new Class347(92, 3);
+	public static final ClientProt aClass347_107 = new ClientProt(92, 3);
 
 	@OriginalMember(owner = "client!sl", name = "A", descriptor = "I")
 	public static int anInt8763 = 0;
@@ -22,8 +22,4 @@ public final class Static591 {
 		}
 	}
 
-	@OriginalMember(owner = "client!sl", name = "a", descriptor = "(IZ[B)I")
-	public static int method7765(@OriginalArg(0) int arg0, @OriginalArg(2) byte[] arg1) {
-		return Static12.method5170(arg0, 0, arg1);
-	}
 }

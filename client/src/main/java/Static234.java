@@ -9,6 +9,6 @@ public final class Static234 {
 	public static boolean aBoolean303 = false;
 
 	@OriginalMember(owner = "client!hea", name = "o", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_46 = new Class347(79, -1);
+	public static final ClientProt aClass347_46 = new ClientProt(79, -1);
 
 }

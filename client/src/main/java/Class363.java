@@ -49,11 +49,11 @@ public final class Class363 {
 	public void method8348(@OriginalArg(1) Class2_Sub2 arg0, @OriginalArg(2) long arg1) {
 		if (this.anInt9509 == 0) {
 			@Pc(19) Class2_Sub2 local19 = this.aClass194_15.method4353();
-			local19.method9464();
+			local19.unlink();
 			local19.method9267();
 			if (this.aClass2_Sub2_57 == local19) {
 				local19 = this.aClass194_15.method4353();
-				local19.method9464();
+				local19.unlink();
 				local19.method9267();
 			}
 		} else {
@@ -76,7 +76,7 @@ public final class Class363 {
 	public void method8351(@OriginalArg(1) long arg0) {
 		@Pc(18) Class2_Sub2 local18 = (Class2_Sub2) this.aClass28_42.method738(arg0);
 		if (local18 != null) {
-			local18.method9464();
+			local18.unlink();
 			local18.method9267();
 			this.anInt9509++;
 		}

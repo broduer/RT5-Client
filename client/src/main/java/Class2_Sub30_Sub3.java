@@ -10,12 +10,12 @@ public final class Class2_Sub30_Sub3 extends Class2_Sub30 {
 
 	@OriginalMember(owner = "client!qca", name = "a", descriptor = "(Lclient!ge;I)V")
 	@Override
-	public void method7654(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.anInt7702 = arg0.method7389();
-		arg0.method7403();
-		if (arg0.method7403() != 255) {
-			arg0.anInt8412--;
-			arg0.method7405();
+	public void method7654(@OriginalArg(0) Packet arg0) {
+		this.anInt7702 = arg0.g2();
+		arg0.g1();
+		if (arg0.g1() != 255) {
+			arg0.pos--;
+			arg0.g8();
 		}
 	}
 

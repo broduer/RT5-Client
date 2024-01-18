@@ -18,17 +18,17 @@ public class Protocol {
 				if (!local8.method7939(1)) {
 					return false;
 				}
-				local8.method7936(arg0.aClass2_Sub21_Sub2_2.aByteArray93, 1, 0);
+				local8.method7936(arg0.aClass2_Sub21_Sub2_2.data, 1, 0);
 				arg0.anInt3656 = 0;
 				arg0.anInt3654++;
 				arg0.aBoolean279 = false;
 			}
-			local11.anInt8412 = 0;
+			local11.pos = 0;
 			if (local11.method7420()) {
 				if (!local8.method7939(1)) {
 					return false;
 				}
-				local8.method7936(arg0.aClass2_Sub21_Sub2_2.aByteArray93, 1, 1);
+				local8.method7936(arg0.aClass2_Sub21_Sub2_2.data, 1, 1);
 				arg0.anInt3654++;
 				arg0.anInt3656 = 0;
 			}
@@ -36,7 +36,7 @@ public class Protocol {
 			@Pc(96) ServerProt[] local96 = Static585.method7684();
 			local100 = local11.method7428();
 			if (local100 < 0 || local96.length <= local100) {
-				throw new IOException("invo:" + local100 + " ip:" + local11.anInt8412);
+				throw new IOException("invo:" + local100 + " ip:" + local11.pos);
 			}
 			arg0.packetType = local96[local100];
 			arg0.length = arg0.packetType.length;
@@ -45,8 +45,8 @@ public class Protocol {
 			if (!local8.method7939(1)) {
 				return false;
 			}
-			local8.method7936(local11.aByteArray93, 1, 0);
-			arg0.length = local11.aByteArray93[0] & 0xFF;
+			local8.method7936(local11.data, 1, 0);
+			arg0.length = local11.data[0] & 0xFF;
 			arg0.anInt3654++;
 			arg0.anInt3656 = 0;
 		}
@@ -54,9 +54,9 @@ public class Protocol {
 			if (!local8.method7939(2)) {
 				return false;
 			}
-			local8.method7936(local11.aByteArray93, 2, 0);
-			local11.anInt8412 = 0;
-			arg0.length = local11.method7389();
+			local8.method7936(local11.data, 2, 0);
+			local11.pos = 0;
+			arg0.length = local11.g2();
 			arg0.anInt3654 += 2;
 			arg0.anInt3656 = 0;
 		}
@@ -64,8 +64,8 @@ public class Protocol {
 			if (!local8.method7939(arg0.length)) {
 				return false;
 			}
-			local11.anInt8412 = 0;
-			local8.method7936(local11.aByteArray93, arg0.length, 0);
+			local11.pos = 0;
+			local8.method7936(local11.data, arg0.length, 0);
 			arg0.anInt3654 += arg0.length;
 			arg0.anInt3656 = 0;
 		}
@@ -106,8 +106,8 @@ public class Protocol {
 			arg0.packetType = null;
 			return true;
 		} else if (ServerProt.OPCODE_89 == arg0.packetType) {
-			Static331.aString52 = arg0.length <= 2 ? Static32.aClass32_26.method877(client.lang) : local11.method7365();
-			Static331.anInt5458 = arg0.length <= 0 ? -1 : local11.method7389();
+			Static331.aString52 = arg0.length <= 2 ? Static32.aClass32_26.method877(client.lang) : local11.gstr();
+			Static331.anInt5458 = arg0.length <= 0 ? -1 : local11.g2();
 			if (Static331.anInt5458 == 65535) {
 				Static331.anInt5458 = -1;
 			}
@@ -152,7 +152,7 @@ public class Protocol {
 					return true;
 				} else if (arg0.packetType == ServerProt.OPCODE_118) {
 					Static400.anInt8125 = Static642.anInt9625;
-					local446 = local11.method7403() == 1;
+					local446 = local11.g1() == 1;
 					if (arg0.length != 1) {
 						if (local446) {
 							Static128.aClass164_8 = new Class164(local11);
@@ -180,17 +180,17 @@ public class Protocol {
 					@Pc(665) boolean local665;
 					@Pc(667) int local667;
 					if (arg0.packetType == ServerProt.OPCODE_20) {
-						local446 = local11.method7403() == 1;
-						local627 = local11.method7365();
+						local446 = local11.g1() == 1;
+						local627 = local11.gstr();
 						local629 = local627;
 						if (local446) {
-							local629 = local11.method7365();
+							local629 = local11.gstr();
 						}
-						local639 = local11.method7405();
-						local644 = local11.method7389();
+						local639 = local11.g8();
+						local644 = local11.g2();
 						local649 = local11.method7390();
-						local653 = local11.method7403();
-						local657 = local11.method7389();
+						local653 = local11.g1();
+						local657 = local11.g2();
 						@Pc(663) long local663 = (local644 << 32) + local649;
 						local665 = false;
 						local667 = 0;
@@ -222,17 +222,17 @@ public class Protocol {
 						arg0.packetType = null;
 						return true;
 					} else if (arg0.packetType == ServerProt.OPCODE_88) {
-						local446 = local11.method7403() == 1;
+						local446 = local11.g1() == 1;
 						@Pc(854) byte[] local854 = new byte[arg0.length - 1];
-						local11.method7351(0, arg0.length - 1, local854);
+						local11.gdata(0, arg0.length - 1, local854);
 						Static113.method2121(local854, local446);
 						arg0.packetType = null;
 						return true;
 					} else {
 						@Pc(892) boolean local892;
 						if (arg0.packetType == ServerProt.OPCODE_144) {
-							local277 = local11.method7356();
-							local892 = local11.method7403() == 1;
+							local277 = local11.g4();
+							local892 = local11.g1() == 1;
 							if (Static684.aBoolean776 != local892 || Static134.anInt10354 != local277) {
 								Static134.anInt10354 = local277;
 								Static684.aBoolean776 = local892;
@@ -243,7 +243,7 @@ public class Protocol {
 						}
 						@Pc(931) byte local931;
 						if (ServerProt.OPCODE_101 == arg0.packetType) {
-							local277 = local11.method7389();
+							local277 = local11.g2();
 							local931 = local11.method7412();
 							Static34.aClass306_1.method6880(local277, local931);
 							arg0.packetType = null;
@@ -264,12 +264,12 @@ public class Protocol {
 							@Pc(1090) String local1090;
 							@Pc(983) long local983;
 							if (ServerProt.OPCODE_131 == arg0.packetType) {
-								local446 = local11.method7403() == 1;
-								local627 = local11.method7365();
-								local983 = local11.method7389();
+								local446 = local11.g1() == 1;
+								local627 = local11.gstr();
+								local983 = local11.g2();
 								local988 = local11.method7390();
-								local992 = local11.method7403();
-								local996 = local11.method7389();
+								local992 = local11.g1();
+								local996 = local11.g2();
 								local1002 = (local983 << 32) + local988;
 								local1004 = false;
 								@Pc(1013) Class2_Sub47 local1013 = local446 ? Static45.aClass2_Sub47_1 : Static674.aClass2_Sub47_3;
@@ -326,7 +326,7 @@ public class Protocol {
 								arg0.packetType = null;
 								return true;
 							} else if (arg0.packetType == ServerProt.OPCODE_68) {
-								Static578.anInt8619 = local11.method7403();
+								Static578.anInt8619 = local11.g1();
 								arg0.packetType = null;
 								return true;
 							} else if (arg0.packetType == ServerProt.OPCODE_58) {
@@ -356,18 +356,18 @@ public class Protocol {
 								@Pc(1750) String local1750;
 								@Pc(1491) boolean local1491;
 								if (arg0.packetType == ServerProt.OPCODE_85) {
-									while (local11.anInt8412 < arg0.length) {
-										local446 = local11.method7403() == 1;
-										local627 = local11.method7365();
-										local629 = local11.method7365();
-										local1409 = local11.method7389();
-										local1413 = local11.method7403();
-										local1425 = local11.method7403() == 1;
+									while (local11.pos < arg0.length) {
+										local446 = local11.g1() == 1;
+										local627 = local11.gstr();
+										local629 = local11.gstr();
+										local1409 = local11.g2();
+										local1413 = local11.g1();
+										local1425 = local11.g1() == 1;
 										local1427 = "";
 										@Pc(1429) boolean local1429 = false;
 										if (local1409 > 0) {
-											local1427 = local11.method7365();
-											local1429 = local11.method7403() == 1;
+											local1427 = local11.gstr();
+											local1429 = local11.g1() == 1;
 										}
 										for (local1449 = 0; local1449 < Static327.anInt5411; local1449++) {
 											if (local446) {
@@ -472,29 +472,29 @@ public class Protocol {
 									arg0.packetType = null;
 									return true;
 								} else if (ServerProt.OPCODE_84 == arg0.packetType) {
-									local277 = local11.method7356();
-									local100 = local11.method7389();
+									local277 = local11.g4();
+									local100 = local11.g2();
 									Static34.aClass306_1.method6878(local277, local100);
 									arg0.packetType = null;
 									return true;
 								} else {
 									@Pc(1937) String local1937;
 									if (arg0.packetType == ServerProt.OPCODE_97) {
-										local1937 = local11.method7365();
-										local100 = local11.method7389();
+										local1937 = local11.gstr();
+										local100 = local11.g2();
 										local629 = Static288.aClass139_2.method2950(local100).method3903(local11);
 										Static662.method8632(local1937, local1937, local100, local629, null, 0, local1937, 19);
 										arg0.packetType = null;
 										return true;
 									} else if (arg0.packetType == ServerProt.OPCODE_78) {
-										local277 = local11.method7389();
+										local277 = local11.g2();
 										if (local277 == 65535) {
 											local277 = -1;
 										}
-										local100 = local11.method7403();
-										local526 = local11.method7389();
-										local1409 = local11.method7403();
-										local1413 = local11.method7389();
+										local100 = local11.g1();
+										local526 = local11.g2();
+										local1409 = local11.g1();
+										local1413 = local11.g2();
 										Static186.method2818(local277, local100, local1413, local526, local1409, false);
 										arg0.packetType = null;
 										return true;
@@ -518,15 +518,15 @@ public class Protocol {
 										@Pc(2080) boolean local2080;
 										@Pc(2098) int local2098;
 										if (arg0.packetType == ServerProt.OPCODE_37) {
-											local277 = local11.method7389();
-											local100 = local11.method7403();
+											local277 = local11.g2();
+											local100 = local11.g1();
 											local2080 = (local100 & 0x1) == 1;
 											Static205.method3089(local277, local2080);
-											local1409 = local11.method7389();
+											local1409 = local11.g2();
 											for (local1413 = 0; local1413 < local1409; local1413++) {
-												local2098 = local11.method7403();
+												local2098 = local11.g1();
 												if (local2098 == 255) {
-													local2098 = local11.method7356();
+													local2098 = local11.g4();
 												}
 												local992 = local11.method7379();
 												Static341.method5041(local2080, local2098, local1413, local992 - 1, local277);
@@ -535,20 +535,20 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_129 == arg0.packetType) {
-											local277 = local11.method7356();
+											local277 = local11.g4();
 											Static439.aPrivilegedRequest_4 = GameShell.sign.method8989(local277);
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_112 == arg0.packetType) {
 											local277 = local11.method7379();
-											local100 = local11.method7356();
+											local100 = local11.g4();
 											Static574.method7580();
 											Static540.method6544(local100, local277);
 											arg0.packetType = null;
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_44) {
 											local277 = local11.method7378();
-											local100 = local11.method7389();
+											local100 = local11.g2();
 											local526 = local11.method7413();
 											local1409 = local11.method7394();
 											Static574.method7580();
@@ -556,7 +556,7 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_18) {
-											local277 = local11.method7356();
+											local277 = local11.g4();
 											Static574.method7580();
 											Static479.method6469(Static312.anInt5017, 5, 0, local277);
 											arg0.packetType = null;
@@ -570,17 +570,17 @@ public class Protocol {
 											arg0.packetType = null;
 											return false;
 										} else if (arg0.packetType == ServerProt.OPCODE_80) {
-											local277 = local11.method7389();
-											local100 = local11.method7403();
+											local277 = local11.g2();
+											local100 = local11.g1();
 											local2080 = (local100 & 0x1) == 1;
-											while (arg0.length > local11.anInt8412) {
-												local1409 = local11.method7397();
-												local1413 = local11.method7389();
+											while (arg0.length > local11.pos) {
+												local1409 = local11.gsmarts();
+												local1413 = local11.g2();
 												local2098 = 0;
 												if (local1413 != 0) {
-													local2098 = local11.method7403();
+													local2098 = local11.g1();
 													if (local2098 == 255) {
-														local2098 = local11.method7356();
+														local2098 = local11.g4();
 													}
 												}
 												Static341.method5041(local2080, local2098, local1409, local1413 - 1, local277);
@@ -589,16 +589,16 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_50 == arg0.packetType) {
-											local1937 = local11.method7365();
+											local1937 = local11.gstr();
 											@Pc(2379) Object[] local2379 = new Object[local1937.length() + 1];
 											for (local526 = local1937.length() - 1; local526 >= 0; local526--) {
 												if (local1937.charAt(local526) == 's') {
-													local2379[local526 + 1] = local11.method7365();
+													local2379[local526 + 1] = local11.gstr();
 												} else {
-													local2379[local526 + 1] = Integer.valueOf(local11.method7356());
+													local2379[local526 + 1] = Integer.valueOf(local11.g4());
 												}
 											}
-											local2379[0] = Integer.valueOf(local11.method7356());
+											local2379[0] = Integer.valueOf(local11.g4());
 											Static574.method7580();
 											@Pc(2442) Class2_Sub42 local2442 = new Class2_Sub42();
 											local2442.anObjectArray36 = local2379;
@@ -607,7 +607,7 @@ public class Protocol {
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_2) {
 											local277 = local11.method7379();
-											local100 = local11.method7356();
+											local100 = local11.g4();
 											Static574.method7580();
 											Static647.method8474(local100, local277);
 											arg0.packetType = null;
@@ -634,7 +634,7 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_21 == arg0.packetType) {
-											Static708.method9237(local11.method7365());
+											Static708.method9237(local11.gstr());
 											arg0.packetType = null;
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_74) {
@@ -652,15 +652,15 @@ public class Protocol {
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_125) {
 											if (Static620.method8328(Static283.anInt4588)) {
-												Static249.anInt4019 = (int) ((float) local11.method7389() * 2.5F);
+												Static249.anInt4019 = (int) ((float) local11.g2() * 2.5F);
 											} else {
-												Static249.anInt4019 = local11.method7389() * 30;
+												Static249.anInt4019 = local11.g2() * 30;
 											}
 											arg0.packetType = null;
 											Static321.anInt5128 = Static642.anInt9625;
 											return true;
 										} else if (ServerProt.OPCODE_100 == arg0.packetType) {
-											Static486.aByte115 = local11.method7384();
+											Static486.aByte115 = local11.g1b();
 											arg0.packetType = null;
 											if (Static486.aByte115 == 0 || Static486.aByte115 == 1) {
 												Static587.aBoolean664 = true;
@@ -674,7 +674,7 @@ public class Protocol {
 											return true;
 										} else if (arg0.packetType == ServerProt.OPCODE_79) {
 											Static39.anInt953 = Static642.anInt9625;
-											local446 = local11.method7403() == 1;
+											local446 = local11.g1() == 1;
 											@Pc(2736) Class68 local2736 = new Class68(local11);
 											@Pc(2740) Class2_Sub47 local2740;
 											if (local446) {
@@ -687,7 +687,7 @@ public class Protocol {
 											return true;
 										} else if (ServerProt.OPCODE_82 == arg0.packetType) {
 											local277 = local11.method7347();
-											local100 = local11.method7389();
+											local100 = local11.g2();
 											Static574.method7580();
 											Static2.method62(local100, local277);
 											arg0.packetType = null;
@@ -723,8 +723,8 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_64 == arg0.packetType) {
-											local277 = local11.method7389();
-											local931 = local11.method7384();
+											local277 = local11.g2();
+											local931 = local11.g1b();
 											if (Static279.anObjectArray35 == null) {
 												Static279.anObjectArray35 = new Object[Static628.aClass344_5.anInt8793];
 											}
@@ -733,22 +733,22 @@ public class Protocol {
 											arg0.packetType = null;
 											return true;
 										} else if (ServerProt.OPCODE_132 == arg0.packetType) {
-											local277 = local11.method7389();
+											local277 = local11.g2();
 											Static607.anInt9277 = -1;
 											Static717.anInt10846 = local277;
 											Static1.anInt10827 = 1;
 											Static504.aClass332_95.method7588(Static717.anInt10846);
-											local100 = local11.method7389();
+											local100 = local11.g2();
 											Static322.anIntArrayArray265 = new int[local100][4];
 											for (local526 = 0; local526 < local100; local526++) {
 												for (local1409 = 0; local1409 < 4; local1409++) {
-													Static322.anIntArrayArray265[local526][local1409] = local11.method7356();
+													Static322.anIntArrayArray265[local526][local1409] = local11.g4();
 												}
 											}
-											local1409 = local11.method7403();
-											Static518.aClass2_Sub21_18 = new Class2_Sub21(local1409);
-											Static518.aClass2_Sub21_18.method7393(local1409, local11.aByteArray93, local11.anInt8412);
-											local11.anInt8412 += local1409;
+											local1409 = local11.g1();
+											Static518.aClass2_Sub21_18 = new Packet(local1409);
+											Static518.aClass2_Sub21_18.pdata(local1409, local11.data, local11.pos);
+											local11.pos += local1409;
 											arg0.packetType = null;
 											return false;
 										} else {
@@ -764,16 +764,16 @@ public class Protocol {
 												arg0.packetType = null;
 												return true;
 											} else if (arg0.packetType == ServerProt.OPCODE_42) {
-												local446 = local11.method7403() == 1;
-												local627 = local11.method7365();
+												local446 = local11.g1() == 1;
+												local627 = local11.gstr();
 												local629 = local627;
 												if (local446) {
-													local629 = local11.method7365();
+													local629 = local11.gstr();
 												}
-												local639 = local11.method7389();
+												local639 = local11.g2();
 												local644 = local11.method7390();
-												local996 = local11.method7403();
-												local1449 = local11.method7389();
+												local996 = local11.g1();
+												local1449 = local11.g2();
 												@Pc(3134) long local3134 = local644 + (local639 << 32);
 												@Pc(3136) boolean local3136 = false;
 												local1021 = 0;
@@ -827,12 +827,12 @@ public class Protocol {
 												arg0.packetType = null;
 												return true;
 											} else if (arg0.packetType == ServerProt.OPCODE_134) {
-												Static726.aClass282_7 = Static189.method2864(local11.method7403());
+												Static726.aClass282_7 = Static189.method2864(local11.g1());
 												arg0.packetType = null;
 												return true;
 											} else if (ServerProt.OPCODE_130 == arg0.packetType) {
 												local277 = local11.method7383();
-												local100 = local11.method7356();
+												local100 = local11.g4();
 												local526 = local11.method7379();
 												local1409 = local11.method7379();
 												Static574.method7580();
@@ -843,11 +843,11 @@ public class Protocol {
 												@Pc(3502) int local3502;
 												@Pc(3582) String local3582;
 												if (arg0.packetType == ServerProt.OPCODE_138) {
-													local446 = local11.method7403() == 1;
-													local627 = local11.method7365();
-													local983 = local11.method7389();
+													local446 = local11.g1() == 1;
+													local627 = local11.gstr();
+													local983 = local11.g2();
 													local988 = local11.method7390();
-													local992 = local11.method7403();
+													local992 = local11.g1();
 													local649 = (local983 << 32) + local988;
 													local1491 = false;
 													@Pc(3494) Class2_Sub47 local3494 = local446 ? Static45.aClass2_Sub47_1 : Static674.aClass2_Sub47_3;
@@ -887,7 +887,7 @@ public class Protocol {
 													arg0.packetType = null;
 													return true;
 												} else if (arg0.packetType == ServerProt.OPCODE_81) {
-													local277 = local11.method7403();
+													local277 = local11.g1();
 													local100 = local277 >> 5;
 													local526 = local277 & 0x1F;
 													if (local526 == 0) {
@@ -897,12 +897,12 @@ public class Protocol {
 													}
 													@Pc(3721) Class256 local3721 = new Class256();
 													local3721.anInt6383 = local526;
-													local3721.anInt6387 = local11.method7403();
+													local3721.anInt6387 = local11.g1();
 													if (local3721.anInt6387 >= 0 && local3721.anInt6387 < Static28.aClass23Array1.length) {
 														if (local3721.anInt6383 == 1 || local3721.anInt6383 == 10) {
-															local3721.anInt6386 = local11.method7389();
-															local3721.anInt6380 = local11.method7389();
-															local11.anInt8412 += 4;
+															local3721.anInt6386 = local11.g2();
+															local3721.anInt6380 = local11.g2();
+															local11.pos += 4;
 														} else if (local3721.anInt6383 >= 2 && local3721.anInt6383 <= 6) {
 															if (local3721.anInt6383 == 2) {
 																local3721.anInt6382 = 256;
@@ -925,13 +925,13 @@ public class Protocol {
 																local3721.anInt6389 = 256;
 															}
 															local3721.anInt6383 = 2;
-															local3721.anInt6388 = local11.method7403();
-															local3721.anInt6389 += local11.method7389() - Static691.anInt10395 << 9;
-															local3721.anInt6382 += local11.method7389() - Static116.anInt2279 << 9;
-															local3721.anInt6385 = local11.method7403() << 2;
-															local3721.anInt6384 = local11.method7389();
+															local3721.anInt6388 = local11.g1();
+															local3721.anInt6389 += local11.g2() - Static691.anInt10395 << 9;
+															local3721.anInt6382 += local11.g2() - Static116.anInt2279 << 9;
+															local3721.anInt6385 = local11.g1() << 2;
+															local3721.anInt6384 = local11.g2();
 														}
-														local3721.anInt6391 = local11.method7389();
+														local3721.anInt6391 = local11.g2();
 														if (local3721.anInt6391 == 65535) {
 															local3721.anInt6391 = -1;
 														}
@@ -946,9 +946,9 @@ public class Protocol {
 													Static150.anInt2641 = local277;
 													return true;
 												} else if (arg0.packetType == ServerProt.OPCODE_56) {
-													local11.anInt8412 += 28;
-													if (local11.method7386()) {
-														Static83.method1608(local11.anInt8412 - 28, local11);
+													local11.pos += 28;
+													if (local11.checkcrc()) {
+														Static83.method1608(local11.pos - 28, local11);
 													}
 													arg0.packetType = null;
 													return true;
@@ -957,7 +957,7 @@ public class Protocol {
 													if (local277 == 65535) {
 														local277 = -1;
 													}
-													local100 = local11.method7356();
+													local100 = local11.g4();
 													local526 = local11.method7378();
 													Static574.method7580();
 													Static301.method4401(local526, local100, local277);
@@ -968,7 +968,7 @@ public class Protocol {
 													return true;
 												} else if (arg0.packetType == ServerProt.OPCODE_113) {
 													local277 = local11.method7383();
-													local100 = local11.method7389();
+													local100 = local11.g2();
 													Static574.method7580();
 													Static515.method6809(true, local100, local277);
 													arg0.packetType = null;
@@ -980,11 +980,11 @@ public class Protocol {
 													arg0.packetType = null;
 													return true;
 												} else if (arg0.packetType == ServerProt.OPCODE_61) {
-													local277 = local11.method7403();
-													if (local11.method7403() == 0) {
+													local277 = local11.g1();
+													if (local11.g1() == 0) {
 														Static105.aClass171Array1[local277] = new Class171();
 													} else {
-														local11.anInt8412--;
+														local11.pos--;
 														Static105.aClass171Array1[local277] = new Class171(local11);
 													}
 													Static526.anInt8090 = Static642.anInt9625;
@@ -1004,20 +1004,20 @@ public class Protocol {
 													@Pc(4175) String local4175;
 													@Pc(4177) String local4177;
 													if (arg0.packetType == ServerProt.OPCODE_102) {
-														local277 = local11.method7397();
-														local100 = local11.method7356();
-														local526 = local11.method7403();
+														local277 = local11.gsmarts();
+														local100 = local11.g4();
+														local526 = local11.g1();
 														local4175 = "";
 														local4177 = local4175;
 														if ((local526 & 0x1) != 0) {
-															local4175 = local11.method7365();
+															local4175 = local11.gstr();
 															if ((local526 & 0x2) == 0) {
 																local4177 = local4175;
 															} else {
-																local4177 = local11.method7365();
+																local4177 = local11.gstr();
 															}
 														}
-														local1750 = local11.method7365();
+														local1750 = local11.gstr();
 														if (local277 == 99) {
 															Static79.method1579(local1750);
 														} else if (local277 == 98) {
@@ -1036,7 +1036,7 @@ public class Protocol {
 														return true;
 													} else if (ServerProt.OPCODE_54 == arg0.packetType) {
 														local277 = local11.method7413();
-														local627 = local11.method7365();
+														local627 = local11.gstr();
 														Static574.method7580();
 														Static394.method5551(local277, local627);
 														arg0.packetType = null;
@@ -1060,15 +1060,15 @@ public class Protocol {
 														arg0.packetType = null;
 														return true;
 													} else if (ServerProt.OPCODE_57 == arg0.packetType) {
-														Static436.anInt3860 = local11.method7403();
+														Static436.anInt3860 = local11.g1();
 														for (local277 = 0; local277 < Static436.anInt3860; local277++) {
-															Static632.aStringArray44[local277] = local11.method7365();
-															Static446.aStringArray35[local277] = local11.method7365();
+															Static632.aStringArray44[local277] = local11.gstr();
+															Static446.aStringArray35[local277] = local11.gstr();
 															if (Static446.aStringArray35[local277].equals("")) {
 																Static446.aStringArray35[local277] = Static632.aStringArray44[local277];
 															}
-															Static10.aStringArray1[local277] = local11.method7365();
-															Static316.aStringArray41[local277] = local11.method7365();
+															Static10.aStringArray1[local277] = local11.gstr();
+															Static316.aStringArray41[local277] = local11.gstr();
 															if (Static316.aStringArray41[local277].equals("")) {
 																Static316.aStringArray41[local277] = Static10.aStringArray1[local277];
 															}
@@ -1087,7 +1087,7 @@ public class Protocol {
 														if (local100 == 65535) {
 															local100 = -1;
 														}
-														local629 = local11.method7365();
+														local629 = local11.gstr();
 														local1409 = local11.method7408();
 														if (local1409 >= 1 && local1409 <= 8) {
 															if (local629.equalsIgnoreCase("null")) {
@@ -1108,7 +1108,7 @@ public class Protocol {
 																local277 = -1;
 															}
 															local100 = local11.method7378();
-															local526 = local11.method7389();
+															local526 = local11.g2();
 															if (local526 == 65535) {
 																local526 = -1;
 															}
@@ -1119,7 +1119,7 @@ public class Protocol {
 																local4597 = (Class2_Sub41) Static291.aClass28_24.method738(local644);
 																if (local4597 != null) {
 																	local4611 = new Class2_Sub41(local4597.anInt6930, local1409);
-																	local4597.method9464();
+																	local4597.unlink();
 																} else if (local1413 == -1) {
 																	local4611 = new Class2_Sub41(Static145.method2412(local100).aClass2_Sub41_2.anInt6930, local1409);
 																} else {
@@ -1132,8 +1132,8 @@ public class Protocol {
 														}
 														@Pc(4669) long local4669;
 														if (arg0.packetType == ServerProt.OPCODE_66) {
-															local277 = local11.method7389();
-															local4669 = local11.method7405();
+															local277 = local11.g2();
+															local4669 = local11.g8();
 															if (Static279.anObjectArray35 == null) {
 																Static279.anObjectArray35 = new Object[Static628.aClass344_5.anInt8793];
 															}
@@ -1144,7 +1144,7 @@ public class Protocol {
 														} else if (ServerProt.OPCODE_115 == arg0.packetType) {
 															local277 = local11.method7379();
 															local100 = local11.method7413();
-															local526 = local11.method7356();
+															local526 = local11.g4();
 															Static574.method7580();
 															Static295.method4354(local526, local277 + (local100 << 16));
 															arg0.packetType = null;
@@ -1160,7 +1160,7 @@ public class Protocol {
 																local100 = local11.method7378();
 																local526 = local11.method7381();
 																local1409 = local11.method7381();
-																local1413 = local11.method7389();
+																local1413 = local11.g2();
 																local2098 = local11.method7379();
 																if (local2098 == 65535) {
 																	local2098 = -1;
@@ -1294,7 +1294,7 @@ public class Protocol {
 																			@Pc(5270) Class2_Sub2_Sub20 local5270 = (Class2_Sub2_Sub20) Static346.aClass28_29.method738(local657 << 16 | local3502);
 																			if (local5270 != null) {
 																				local5270.aClass8_Sub2_Sub1_Sub5_1.method6607();
-																				local5270.method9464();
+																				local5270.unlink();
 																			}
 																		} else {
 																			local1021 = local657 * 512 + 256;
@@ -1311,7 +1311,7 @@ public class Protocol {
 																arg0.packetType = null;
 																return true;
 															} else if (ServerProt.OPCODE_98 == arg0.packetType) {
-																local277 = local11.method7356();
+																local277 = local11.g4();
 																local100 = local11.method7379();
 																if (local100 == 65535) {
 																	local100 = -1;
@@ -1341,7 +1341,7 @@ public class Protocol {
 																		Static449.method6122(false, local5438 == null || local5438.anInt147 != local5445.anInt147, local5445);
 																	}
 																	if (local5438 != null) {
-																		local5438.method9464();
+																		local5438.unlink();
 																		Static548.aClass28_40.method735(local277, local5438);
 																	}
 																	@Pc(5487) Class158 local5487 = Static145.method2412(local100);
@@ -1361,7 +1361,7 @@ public class Protocol {
 																} else if (arg0.packetType == ServerProt.OPCODE_5) {
 																	local277 = local11.method7413();
 																	local100 = local11.method7346();
-																	local526 = local11.method7403();
+																	local526 = local11.g1();
 																	Static574.method7580();
 																	local5445 = (Class2_Sub4) Static548.aClass28_40.method738(local100);
 																	if (local5445 != null) {
@@ -1374,14 +1374,14 @@ public class Protocol {
 																	local277 = local11.method7408();
 																	local100 = local11.method7413() << 2;
 																	local526 = local11.method7383();
-																	local1409 = local11.method7403();
+																	local1409 = local11.g1();
 																	local1413 = local11.method7383();
 																	Static574.method7580();
 																	Static638.method8404(local1409, local277, local526, local100, local1413);
 																	arg0.packetType = null;
 																	return true;
 																} else if (ServerProt.OPCODE_13 == arg0.packetType) {
-																	Static703.anInt10599 = local11.method7403();
+																	Static703.anInt10599 = local11.g1();
 																	arg0.packetType = null;
 																	Static321.anInt5128 = Static642.anInt9625;
 																	return true;
@@ -1395,22 +1395,22 @@ public class Protocol {
 																	arg0.packetType = null;
 																	return true;
 																} else if (ServerProt.OPCODE_140 == arg0.packetType) {
-																	local1937 = local11.method7365();
+																	local1937 = local11.gstr();
 																	local100 = local11.method7394();
 																	Static574.method7580();
 																	Static394.method5551(local100, local1937);
 																	arg0.packetType = null;
 																	return true;
 																} else if (arg0.packetType == ServerProt.OPCODE_120) {
-																	local446 = local11.method7403() == 1;
-																	local627 = local11.method7365();
+																	local446 = local11.g1() == 1;
+																	local627 = local11.gstr();
 																	local629 = local627;
 																	if (local446) {
-																		local629 = local11.method7365();
+																		local629 = local11.gstr();
 																	}
-																	local639 = local11.method7389();
+																	local639 = local11.g2();
 																	local644 = local11.method7390();
-																	local996 = local11.method7403();
+																	local996 = local11.g1();
 																	local1002 = local644 + (local639 << 32);
 																	local1004 = false;
 																	local3502 = 0;
@@ -1479,9 +1479,9 @@ public class Protocol {
 																	arg0.packetType = null;
 																	return true;
 																} else if (arg0.packetType == ServerProt.OPCODE_110) {
-																	local277 = local11.method7389();
-																	local100 = local11.method7389();
-																	local526 = local11.method7389();
+																	local277 = local11.g2();
+																	local100 = local11.g2();
+																	local526 = local11.g2();
 																	Static574.method7580();
 																	if (Static453.aClass158ArrayArray2[local277] != null) {
 																		for (local1409 = local100; local1409 < local526; local1409++) {
@@ -1495,7 +1495,7 @@ public class Protocol {
 																	return true;
 																} else if (arg0.packetType == ServerProt.OPCODE_109) {
 																	local277 = local11.method7347();
-																	local100 = local11.method7389();
+																	local100 = local11.g2();
 																	local526 = local11.method7378();
 																	Static574.method7580();
 																	Static479.method6469(local100, 5, local526, local277);
@@ -1506,13 +1506,13 @@ public class Protocol {
 																	arg0.packetType = null;
 																	return true;
 																} else if (ServerProt.OPCODE_121 == arg0.packetType) {
-																	local277 = local11.method7389();
+																	local277 = local11.g2();
 																	if (local277 == 65535) {
 																		local277 = -1;
 																	}
-																	local100 = local11.method7403();
-																	local526 = local11.method7389();
-																	local1409 = local11.method7403();
+																	local100 = local11.g1();
+																	local526 = local11.g2();
+																	local1409 = local11.g1();
 																	Static186.method2818(local277, local100, 256, local526, local1409, true);
 																	arg0.packetType = null;
 																	return true;
@@ -1526,22 +1526,22 @@ public class Protocol {
 																	arg0.packetType = null;
 																	return true;
 																} else if (ServerProt.OPCODE_72 == arg0.packetType) {
-																	Static133.anInt2467 = local11.method7403();
-																	Static87.anInt1814 = local11.method7403();
+																	Static133.anInt2467 = local11.g1();
+																	Static87.anInt1814 = local11.g1();
 																	arg0.packetType = null;
 																	return true;
 																} else if (ServerProt.OPCODE_26 == arg0.packetType) {
-																	Static626.anInt9502 = local11.method7384() << 3;
+																	Static626.anInt9502 = local11.g1b() << 3;
 																	Static270.anInt4367 = local11.method7355() << 3;
-																	Static87.anInt1818 = local11.method7403();
+																	Static87.anInt1818 = local11.g1();
 																	for (@Pc(6277) Class2_Sub17 local6277 = (Class2_Sub17) Static497.aClass28_35.method736(); local6277 != null; local6277 = (Class2_Sub17) Static497.aClass28_35.method740()) {
-																		local100 = (int) (local6277.aLong328 >> 28 & 0x3L);
-																		local526 = (int) (local6277.aLong328 & 0x3FFFL);
+																		local100 = (int) (local6277.key >> 28 & 0x3L);
+																		local526 = (int) (local6277.key & 0x3FFFL);
 																		local1409 = local526 - Static691.anInt10395;
-																		local1413 = (int) (local6277.aLong328 >> 14 & 0x3FFFL);
+																		local1413 = (int) (local6277.key >> 14 & 0x3FFFL);
 																		local2098 = local1413 - Static116.anInt2279;
 																		if (Static87.anInt1818 == local100 && local1409 >= Static626.anInt9502 && Static626.anInt9502 + 8 > local1409 && local2098 >= Static270.anInt4367 && Static270.anInt4367 + 8 > local2098) {
-																			local6277.method9464();
+																			local6277.unlink();
 																			if (local1409 >= 0 && local2098 >= 0 && Static720.anInt10888 > local1409 && local2098 < Static501.anInt7591) {
 																				Static468.method7648(Static87.anInt1818, local2098, local1409);
 																			}
@@ -1569,13 +1569,13 @@ public class Protocol {
 																} else {
 																	@Pc(6565) boolean local6565;
 																	if (ServerProt.OPCODE_133 == arg0.packetType) {
-																		local446 = local11.method7403() == 1;
-																		local627 = local11.method7365();
+																		local446 = local11.g1() == 1;
+																		local627 = local11.gstr();
 																		local629 = local627;
 																		if (local446) {
-																			local629 = local11.method7365();
+																			local629 = local11.gstr();
 																		}
-																		local1409 = local11.method7403();
+																		local1409 = local11.g1();
 																		local6565 = false;
 																		if (local1409 <= 1) {
 																			if (Static389.aBoolean459 && !Static34.aBoolean62 || Static617.aBoolean725) {
@@ -1597,9 +1597,9 @@ public class Protocol {
 																		arg0.packetType = null;
 																		return true;
 																	} else if (ServerProt.OPCODE_94 == arg0.packetType) {
-																		local277 = local11.method7389();
-																		local627 = local11.method7365();
-																		local2080 = local11.method7403() == 1;
+																		local277 = local11.g2();
+																		local627 = local11.gstr();
+																		local2080 = local11.g1() == 1;
 																		Static718.aBoolean824 = local2080;
 																		Static459.aClass231_2 = Static344.aClass231_1;
 																		Static430.method5824(local277, local627);
@@ -1619,7 +1619,7 @@ public class Protocol {
 																		return true;
 																	} else if (arg0.packetType == ServerProt.OPCODE_7) {
 																		Static39.anInt953 = Static642.anInt9625;
-																		local446 = local11.method7403() == 1;
+																		local446 = local11.g1() == 1;
 																		if (arg0.length != 1) {
 																			if (local446) {
 																				Static45.aClass2_Sub47_1 = new Class2_Sub47(local11);
@@ -1639,9 +1639,9 @@ public class Protocol {
 																	} else if (ServerProt.OPCODE_87 == arg0.packetType) {
 																		Static626.anInt9502 = local11.method7406() << 3;
 																		Static87.anInt1818 = local11.method7381();
-																		Static270.anInt4367 = local11.method7384() << 3;
-																		while (local11.anInt8412 < arg0.length) {
-																			@Pc(6873) Class289 local6873 = Static559.method7426()[local11.method7403()];
+																		Static270.anInt4367 = local11.g1b() << 3;
+																		while (local11.pos < arg0.length) {
+																			@Pc(6873) Class289 local6873 = Static559.method7426()[local11.g1()];
 																			Static605.method7919(local6873);
 																		}
 																		arg0.packetType = null;
@@ -1669,15 +1669,15 @@ public class Protocol {
 																		arg0.packetType = null;
 																		return true;
 																	} else if (ServerProt.OPCODE_105 == arg0.packetType) {
-																		local277 = local11.method7403();
+																		local277 = local11.g1();
 																		local892 = (local277 & 0x1) == 1;
-																		local629 = local11.method7365();
-																		local4175 = local11.method7365();
+																		local629 = local11.gstr();
+																		local4175 = local11.gstr();
 																		if (local4175.equals("")) {
 																			local4175 = local629;
 																		}
-																		local4177 = local11.method7365();
-																		local1750 = local11.method7365();
+																		local4177 = local11.gstr();
+																		local1750 = local11.gstr();
 																		if (local1750.equals("")) {
 																			local1750 = local4177;
 																		}
@@ -1711,14 +1711,14 @@ public class Protocol {
 																		arg0.packetType = null;
 																		return true;
 																	} else if (ServerProt.OPCODE_116 == arg0.packetType) {
-																		local446 = local11.method7403() == 1;
-																		local627 = local11.method7365();
+																		local446 = local11.g1() == 1;
+																		local627 = local11.gstr();
 																		local629 = local627;
 																		if (local446) {
-																			local629 = local11.method7365();
+																			local629 = local11.gstr();
 																		}
-																		local1409 = local11.method7403();
-																		local1413 = local11.method7389();
+																		local1409 = local11.g1();
+																		local1413 = local11.g2();
 																		local1425 = false;
 																		if (local1409 <= 1 && Static71.method1524(local629)) {
 																			local1425 = true;
@@ -1736,11 +1736,11 @@ public class Protocol {
 																		arg0.packetType = null;
 																		return true;
 																	} else if (arg0.packetType == ServerProt.OPCODE_19) {
-																		local277 = local11.method7356();
-																		local100 = local11.method7356();
+																		local277 = local11.g4();
+																		local100 = local11.g4();
 																		@Pc(7309) Class2_Sub19 local7309 = Static293.method4342(Static128.aClass347_106, arg0.aClass186_1);
-																		local7309.aClass2_Sub21_Sub2_1.method7349(local277);
-																		local7309.aClass2_Sub21_Sub2_1.method7349(local100);
+																		local7309.aClass2_Sub21_Sub2_1.p4(local277);
+																		local7309.aClass2_Sub21_Sub2_1.p4(local100);
 																		arg0.method3275(local7309);
 																		arg0.packetType = null;
 																		return true;
@@ -1751,15 +1751,15 @@ public class Protocol {
 																	} else {
 																		@Pc(7394) Class243 local7394;
 																		if (arg0.packetType == ServerProt.OPCODE_24) {
-																			local1937 = local11.method7365();
-																			local2080 = local11.method7403() == 1;
+																			local1937 = local11.gstr();
+																			local2080 = local11.g1() == 1;
 																			if (local2080) {
-																				local627 = local11.method7365();
+																				local627 = local11.gstr();
 																			} else {
 																				local627 = local1937;
 																			}
-																			local1409 = local11.method7389();
-																			@Pc(7377) byte local7377 = local11.method7384();
+																			local1409 = local11.g2();
+																			@Pc(7377) byte local7377 = local11.g1b();
 																			local1425 = false;
 																			if (local7377 == -128) {
 																				local1425 = true;
@@ -1780,7 +1780,7 @@ public class Protocol {
 																					Static87.aClass243Array1[Static706.anInt10661] = null;
 																				}
 																			} else {
-																				local1427 = local11.method7365();
+																				local1427 = local11.gstr();
 																				local7394 = new Class243();
 																				local7394.aString67 = local1937;
 																				local7394.aString66 = local627;
@@ -1825,8 +1825,8 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_52) {
-																			local277 = local11.method7389();
-																			local100 = local11.method7356();
+																			local277 = local11.g2();
+																			local100 = local11.g4();
 																			if (Static279.anObjectArray35 == null) {
 																				Static279.anObjectArray35 = new Object[Static628.aClass344_5.anInt8793];
 																			}
@@ -1835,7 +1835,7 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (ServerProt.OPCODE_91 == arg0.packetType) {
-																			local277 = local11.method7389();
+																			local277 = local11.g2();
 																			@Pc(7724) Class8_Sub2_Sub1_Sub2_Sub1 local7724;
 																			if (local277 == Static312.anInt5017) {
 																				local7724 = Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2;
@@ -1846,8 +1846,8 @@ public class Protocol {
 																				arg0.packetType = null;
 																				return true;
 																			}
-																			local526 = local11.method7389();
-																			local1409 = local11.method7403();
+																			local526 = local11.g2();
+																			local1409 = local11.g1();
 																			local6565 = (local526 & 0x8000) != 0;
 																			if (local7724.aString9 != null && local7724.aClass203_1 != null) {
 																				local1425 = false;
@@ -1886,14 +1886,14 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_106) {
-																			local277 = local11.method7389();
+																			local277 = local11.g2();
 																			if (local277 == 65535) {
 																				local277 = -1;
 																			}
-																			local100 = local11.method7403();
-																			local526 = local11.method7389();
-																			local1409 = local11.method7403();
-																			local1413 = local11.method7389();
+																			local100 = local11.g1();
+																			local526 = local11.g2();
+																			local1409 = local11.g1();
+																			local1413 = local11.g2();
 																			Static161.method2586(local1413, local526, local277, local100, local1409);
 																			arg0.packetType = null;
 																			return true;
@@ -1917,7 +1917,7 @@ public class Protocol {
 																				local4597 = (Class2_Sub41) Static291.aClass28_24.method738(local644);
 																				if (local4597 != null) {
 																					local4611 = new Class2_Sub41(local1409, local4597.anInt6925);
-																					local4597.method9464();
+																					local4597.unlink();
 																				} else if (local1413 == -1) {
 																					local4611 = new Class2_Sub41(local1409, Static145.method2412(local100).aClass2_Sub41_2.anInt6925);
 																				} else {
@@ -1928,9 +1928,9 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_76) {
-																			local277 = local11.method7389();
-																			local100 = local11.method7356();
-																			local526 = local11.method7389();
+																			local277 = local11.g2();
+																			local100 = local11.g4();
+																			local526 = local11.g2();
 																			local1409 = local11.method7383();
 																			Static574.method7580();
 																			Static167.method2630(local526, local1409, local100, local277);
@@ -1938,7 +1938,7 @@ public class Protocol {
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_46) {
 																			Static626.anInt9502 = local11.method7412() << 3;
-																			Static270.anInt4367 = local11.method7384() << 3;
+																			Static270.anInt4367 = local11.g1b() << 3;
 																			Static87.anInt1818 = local11.method7383();
 																			arg0.packetType = null;
 																			return true;
@@ -1961,8 +1961,8 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (ServerProt.OPCODE_126 == arg0.packetType) {
-																			Static106.anInt2162 = local11.method7399();
-																			Static389.aBoolean459 = local11.method7403() == 1;
+																			Static106.anInt2162 = local11.g3s();
+																			Static389.aBoolean459 = local11.g1() == 1;
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_111) {
@@ -1973,14 +1973,14 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_77) {
-																			local1937 = local11.method7365();
+																			local1937 = local11.gstr();
 																			local627 = Static130.method2280(Static15.method189(local11));
 																			Static44.method1072(local627, local1937, 0, local1937, local1937, 6);
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_30) {
 																			Static400.anInt8125 = Static642.anInt9625;
-																			local446 = local11.method7403() == 1;
+																			local446 = local11.g1() == 1;
 																			@Pc(8376) Class20 local8376 = new Class20(local11);
 																			@Pc(8380) Class164 local8380;
 																			if (local446) {
@@ -1992,8 +1992,8 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_33) {
-																			local277 = local11.method7356();
-																			local627 = local11.method7365();
+																			local277 = local11.g4();
+																			local627 = local11.gstr();
 																			Static574.method7580();
 																			Static211.method5005(local277, local627);
 																			arg0.packetType = null;
@@ -2034,15 +2034,15 @@ public class Protocol {
 																				Static158.aString28 = null;
 																				return true;
 																			}
-																			Static158.aString28 = local11.method7365();
-																			local446 = local11.method7403() == 1;
+																			Static158.aString28 = local11.gstr();
+																			local446 = local11.g1() == 1;
 																			if (local446) {
-																				local11.method7365();
+																				local11.gstr();
 																			}
-																			local4669 = local11.method7405();
+																			local4669 = local11.g8();
 																			Static723.aString129 = Static287.method4154(local4669);
-																			Static673.aByte140 = local11.method7384();
-																			local1409 = local11.method7403();
+																			Static673.aByte140 = local11.g1b();
+																			local1409 = local11.g1();
 																			if (local1409 == 255) {
 																				arg0.packetType = null;
 																				return true;
@@ -2051,17 +2051,17 @@ public class Protocol {
 																			@Pc(8611) Class243[] local8611 = new Class243[100];
 																			for (local2098 = 0; local2098 < Static706.anInt10661; local2098++) {
 																				local8611[local2098] = new Class243();
-																				local8611[local2098].aString67 = local11.method7365();
-																				local446 = local11.method7403() == 1;
+																				local8611[local2098].aString67 = local11.gstr();
+																				local446 = local11.g1() == 1;
 																				if (local446) {
-																					local8611[local2098].aString66 = local11.method7365();
+																					local8611[local2098].aString66 = local11.gstr();
 																				} else {
 																					local8611[local2098].aString66 = local8611[local2098].aString67;
 																				}
 																				local8611[local2098].aString68 = Static390.method5499(local8611[local2098].aString66);
-																				local8611[local2098].anInt6168 = local11.method7389();
-																				local8611[local2098].aByte99 = local11.method7384();
-																				local8611[local2098].aString65 = local11.method7365();
+																				local8611[local2098].anInt6168 = local11.g2();
+																				local8611[local2098].aByte99 = local11.g1b();
+																				local8611[local2098].aString65 = local11.gstr();
 																				if (local8611[local2098].aString66.equals(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9)) {
 																					Static682.aByte142 = local8611[local2098].aByte99;
 																				}
@@ -2090,7 +2090,7 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_55) {
-																			local277 = local11.method7403();
+																			local277 = local11.g1();
 																			local100 = local11.method7381();
 																			if (local277 == 255) {
 																				local100 = -1;
@@ -2104,8 +2104,8 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_53) {
-																			local277 = local11.method7389();
-																			local627 = local11.method7365();
+																			local277 = local11.g2();
+																			local627 = local11.gstr();
 																			if (Static279.anObjectArray35 == null) {
 																				Static279.anObjectArray35 = new Object[Static628.aClass344_5.anInt8793];
 																			}
@@ -2114,16 +2114,16 @@ public class Protocol {
 																			arg0.packetType = null;
 																			return true;
 																		} else if (arg0.packetType == ServerProt.OPCODE_40) {
-																			local446 = local11.method7403() == 1;
-																			local627 = local11.method7365();
+																			local446 = local11.g1() == 1;
+																			local627 = local11.gstr();
 																			local629 = local627;
 																			if (local446) {
-																				local629 = local11.method7365();
+																				local629 = local11.gstr();
 																			}
-																			local639 = local11.method7405();
-																			local644 = local11.method7389();
+																			local639 = local11.g8();
+																			local644 = local11.g2();
 																			local649 = local11.method7390();
-																			local653 = local11.method7403();
+																			local653 = local11.g1();
 																			@Pc(8945) long local8945 = local649 + (local644 << 32);
 																			local4857 = false;
 																			local1097 = 0;

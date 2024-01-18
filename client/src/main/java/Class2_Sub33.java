@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!kia")
-public final class Class2_Sub33 extends Class2 {
+public final class Class2_Sub33 extends Node {
 
 	@OriginalMember(owner = "client!kia", name = "n", descriptor = "I")
 	private int anInt5471;
@@ -55,7 +55,7 @@ public final class Class2_Sub33 extends Class2 {
 	private final Interface1 anInterface1_2;
 
 	@OriginalMember(owner = "client!kia", name = "u", descriptor = "Lclient!ge;")
-	private Class2_Sub21 aClass2_Sub21_8;
+	private Packet aClass2_Sub21_8;
 
 	@OriginalMember(owner = "client!kia", name = "l", descriptor = "Lclient!jfa;")
 	private Class2_Sub21_Sub1 aClass2_Sub21_Sub1_2;
@@ -132,7 +132,7 @@ public final class Class2_Sub33 extends Class2 {
 			this.aClass94_5 = null;
 			this.anInterface1_2 = null;
 		} else {
-			this.aClass2_Sub21_8 = new Class2_Sub21(this.anInt5466 * 2);
+			this.aClass2_Sub21_8 = new Packet(this.anInt5466 * 2);
 			this.aClass2_Sub21_Sub1_2 = new Class2_Sub21_Sub1(this.anInt5466 * 16);
 			this.aClass28_26 = new Class28(Static440.method5969(this.anInt5466));
 			local148 = 0;
@@ -193,8 +193,8 @@ public final class Class2_Sub33 extends Class2 {
 				}
 				local148++;
 			}
-			this.anInterface1_2 = this.aClass19_Sub3_23.method7017(false, this.aClass2_Sub21_8.anInt8412, this.aClass2_Sub21_8.aByteArray93);
-			this.anInterface12_3 = this.aClass19_Sub3_23.method7031(false, this.aClass2_Sub21_Sub1_2.anInt8412, this.aClass2_Sub21_Sub1_2.aByteArray93, 16);
+			this.anInterface1_2 = this.aClass19_Sub3_23.method7017(false, this.aClass2_Sub21_8.pos, this.aClass2_Sub21_8.data);
+			this.anInterface12_3 = this.aClass19_Sub3_23.method7031(false, this.aClass2_Sub21_Sub1_2.pos, this.aClass2_Sub21_Sub1_2.data, 16);
 			this.aClass94_4 = new Class94(this.anInterface12_3, 5126, 3, 0);
 			this.aClass94_5 = new Class94(this.anInterface12_3, 5121, 4, 12);
 		}
@@ -212,7 +212,7 @@ public final class Class2_Sub33 extends Class2 {
 		@Pc(30) int local30 = this.aClass178_Sub2_2.method7885(local23, local15);
 		if ((arg1 & 0x7F) == 0 || (arg0 & 0x7F) == 0) {
 			local7 = ((long) local23 & 0xFFFFL) << 16 | (long) local15 & 0xFFFFL;
-			@Pc(64) Class2 local64 = this.aClass28_26.method738(local7);
+			@Pc(64) Node local64 = this.aClass28_26.method738(local7);
 			if (local64 != null) {
 				this.method4941(((Class2_Sub50) local64).aShort119);
 				return;
@@ -311,10 +311,10 @@ public final class Class2_Sub33 extends Class2 {
 		if (local614 > 255) {
 			local614 = 255;
 		}
-		this.aClass2_Sub21_Sub1_2.method7396(local586);
-		this.aClass2_Sub21_Sub1_2.method7396(local601);
-		this.aClass2_Sub21_Sub1_2.method7396(local614);
-		this.aClass2_Sub21_Sub1_2.method7396(255);
+		this.aClass2_Sub21_Sub1_2.p1(local586);
+		this.aClass2_Sub21_Sub1_2.p1(local601);
+		this.aClass2_Sub21_Sub1_2.p1(local614);
+		this.aClass2_Sub21_Sub1_2.p1(255);
 		this.method4941(local83);
 	}
 
@@ -340,7 +340,7 @@ public final class Class2_Sub33 extends Class2 {
 	@OriginalMember(owner = "client!kia", name = "a", descriptor = "(BS)V")
 	private void method4941(@OriginalArg(1) short arg0) {
 		if (this.aClass19_Sub3_23.aBoolean619) {
-			this.aClass2_Sub21_8.method7380(arg0);
+			this.aClass2_Sub21_8.p2(arg0);
 		} else {
 			this.aClass2_Sub21_8.method7361(arg0);
 		}

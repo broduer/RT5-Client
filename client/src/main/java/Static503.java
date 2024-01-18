@@ -12,7 +12,7 @@ public final class Static503 {
 	public static final Class28 aClass28_38 = new Class28(16);
 
 	@OriginalMember(owner = "client!ps", name = "h", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_94 = new Class347(65, 11);
+	public static final ClientProt aClass347_94 = new ClientProt(65, 11);
 
 	@OriginalMember(owner = "client!ps", name = "b", descriptor = "Z")
 	public static boolean aBoolean578 = true;

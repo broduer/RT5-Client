@@ -6,11 +6,6 @@ public final class Static254 {
 	@OriginalMember(owner = "client!hr", name = "i", descriptor = "I")
 	public static int anInt4126;
 
-	@OriginalMember(owner = "client!hr", name = "d", descriptor = "(I)[Lclient!hja;")
-	public static Class167[] method3604() {
-		return new Class167[] { Static572.aClass167_53, Static572.aClass167_54, Static572.aClass167_55, Static572.aClass167_56, Static572.aClass167_57, Static572.aClass167_58, Static572.aClass167_59, Static572.aClass167_60, Static572.aClass167_61, Static572.aClass167_62, Static572.aClass167_63, Static572.aClass167_64, Static572.aClass167_65 };
-	}
-
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
 		Static6.aClass332_1.anInt8579 = 1;
@@ -72,7 +67,7 @@ public final class Static254 {
 			Static347.method5101(Static377.anInt5950);
 		}
 		for (@Pc(8803) Class2_Sub4 local8803 = (Class2_Sub4) Static548.aClass28_40.method736(); local8803 != null; local8803 = (Class2_Sub4) Static548.aClass28_40.method740()) {
-			if (!local8803.method9465()) {
+			if (!local8803.isLinked()) {
 				local8803 = (Class2_Sub4) Static548.aClass28_40.method736();
 				if (local8803 == null) {
 					break;

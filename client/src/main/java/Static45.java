@@ -6,5 +6,5 @@ public final class Static45 {
 	public static Class2_Sub47 aClass2_Sub47_1;
 
 	@OriginalMember(owner = "client!bj", name = "i", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_5 = new Class347(48, 0);
+	public static final ClientProt aClass347_5 = new ClientProt(48, 0);
 }

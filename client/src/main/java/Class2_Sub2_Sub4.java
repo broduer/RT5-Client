@@ -34,7 +34,7 @@ public final class Class2_Sub2_Sub4 extends Class2_Sub2 {
 		if (this.anInt1541 != 0) {
 			return local15 != this.method1468();
 		}
-		this.method9464();
+		this.unlink();
 		this.method9267();
 		Static31.anInt770--;
 		Static717.aClass82_232.method2150(this, arg0.aLong234);

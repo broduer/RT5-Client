@@ -24,14 +24,14 @@ public final class Class39_Sub18 extends Class39 {
 	private final int anInt8207;
 
 	@OriginalMember(owner = "client!ra", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub18(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub18(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt8204 = arg0.method7389();
-		this.anInt8206 = arg0.method7389();
-		this.anInt8203 = arg0.method7389();
-		this.anInt8205 = arg0.method7389();
-		this.anInt8201 = arg0.method7389();
-		this.anInt8207 = arg0.method7389();
+		this.anInt8204 = arg0.g2();
+		this.anInt8206 = arg0.g2();
+		this.anInt8203 = arg0.g2();
+		this.anInt8205 = arg0.g2();
+		this.anInt8201 = arg0.g2();
+		this.anInt8207 = arg0.g2();
 	}
 
 	@OriginalMember(owner = "client!ra", name = "b", descriptor = "(I)V")

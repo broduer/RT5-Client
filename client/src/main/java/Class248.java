@@ -58,7 +58,7 @@ public final class Class248 {
 		local16.aClass248_2 = this;
 		local16.anInt2599 = arg0;
 		if (local39 != null) {
-			local16.method2423(new Class2_Sub21(local39));
+			local16.method2423(new Packet(local39));
 		}
 		local16.method2430();
 		synchronized (this.aClass82_134) {

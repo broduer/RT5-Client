@@ -123,7 +123,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 		if (this.anInt3696 < 0) {
 			if (this.anInt3689 <= 0) {
 				this.method3335();
-				this.method9464();
+				this.unlink();
 				return;
 			}
 			this.anInt3696 = 0;
@@ -131,7 +131,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 		if (this.anInt3696 >= local29) {
 			if (this.anInt3689 >= 0) {
 				this.method3335();
-				this.method9464();
+				this.unlink();
 				return;
 			}
 			this.anInt3696 = local29 - 1;
@@ -209,7 +209,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 				if (this.anInt3696 < 0) {
 					this.anInt3696 = -1;
 					this.method3335();
-					this.method9464();
+					this.unlink();
 					return;
 				}
 			} else {
@@ -217,7 +217,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 				if (this.anInt3696 >= local29) {
 					this.anInt3696 = local29;
 					this.method3335();
-					this.method9464();
+					this.unlink();
 				}
 			}
 		} else if (this.aBoolean281) {
@@ -336,12 +336,12 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 	public synchronized void method3320(@OriginalArg(0) int arg0) {
 		if (arg0 == 0) {
 			this.method3322();
-			this.method9464();
+			this.unlink();
 		} else if (this.anInt3690 == 0 && this.anInt3687 == 0) {
 			this.anInt3694 = 0;
 			this.anInt3695 = 0;
 			this.anInt3686 = 0;
-			this.method9464();
+			this.unlink();
 		} else {
 			@Pc(31) int local31 = -this.anInt3686;
 			if (this.anInt3686 > local31) {
@@ -485,7 +485,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 				if (this.anInt3695 == Integer.MIN_VALUE) {
 					this.anInt3695 = 0;
 					this.anInt3686 = this.anInt3690 = this.anInt3687 = 0;
-					this.method9464();
+					this.unlink();
 					arg0 = this.anInt3694;
 				}
 				this.anInt3694 = 0;
@@ -508,7 +508,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 		if (this.anInt3696 < 0) {
 			if (this.anInt3689 <= 0) {
 				this.method3335();
-				this.method9464();
+				this.unlink();
 				return;
 			}
 			this.anInt3696 = 0;
@@ -516,7 +516,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 		if (this.anInt3696 >= local87) {
 			if (this.anInt3689 >= 0) {
 				this.method3335();
-				this.method9464();
+				this.unlink();
 				return;
 			}
 			this.anInt3696 = local87 - 1;
@@ -584,13 +584,13 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 				if (this.anInt3696 < 0) {
 					this.anInt3696 = -1;
 					this.method3335();
-					this.method9464();
+					this.unlink();
 					return;
 				}
 			} else if (this.anInt3696 >= local87) {
 				this.anInt3696 = local87;
 				this.method3335();
-				this.method9464();
+				this.unlink();
 			}
 		} else if (this.aBoolean281) {
 			if (this.anInt3689 < 0) {
@@ -689,7 +689,7 @@ public final class Class2_Sub6_Sub2 extends PcmStream {
 		} else if (this.anInt3695 == Integer.MIN_VALUE) {
 			this.anInt3695 = 0;
 			this.anInt3686 = this.anInt3690 = this.anInt3687 = 0;
-			this.method9464();
+			this.unlink();
 			return true;
 		} else {
 			this.method3314();

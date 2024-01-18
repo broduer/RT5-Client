@@ -19,7 +19,7 @@ public final class Static556 {
 		@Pc(30) Class333 local30 = new Class333(Static548.aClass28_40);
 		for (@Pc(35) Class2_Sub4 local35 = (Class2_Sub4) local30.method7620(); local35 != null; local35 = (Class2_Sub4) local30.method7617()) {
 			if (local35.anInt147 == local25) {
-				return Static145.method2412((int) local35.aLong328);
+				return Static145.method2412((int) local35.key);
 			}
 		}
 		return null;

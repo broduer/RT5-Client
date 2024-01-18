@@ -23,7 +23,7 @@ public final class Static58 {
 					Static336.aClass2_Sub6_Sub3_1.method5890(local17.aClass2_Sub6_Sub2_4);
 					local17.aClass2_Sub6_Sub2_4 = null;
 				}
-				local17.method9464();
+				local17.unlink();
 				return;
 			}
 		}

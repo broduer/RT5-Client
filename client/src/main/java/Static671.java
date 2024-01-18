@@ -9,6 +9,6 @@ public final class Static671 {
 	public static int anInt10053 = 0;
 
 	@OriginalMember(owner = "client!ve", name = "c", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_117 = new Class347(26, 16);
+	public static final ClientProt aClass347_117 = new ClientProt(26, 16);
 
 }

@@ -7,7 +7,7 @@ public final class Static297 {
 	public static boolean aBoolean368;
 
 	@OriginalMember(owner = "client!jha", name = "o", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_59 = new Class347(9, 3);
+	public static final ClientProt aClass347_59 = new ClientProt(9, 3);
 
 	@OriginalMember(owner = "client!jha", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray24 = new String[8];

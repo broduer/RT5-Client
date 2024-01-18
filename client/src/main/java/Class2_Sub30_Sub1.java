@@ -30,15 +30,15 @@ public final class Class2_Sub30_Sub1 extends Class2_Sub30 {
 
 	@OriginalMember(owner = "client!jb", name = "a", descriptor = "(Lclient!ge;I)V")
 	@Override
-	public void method7654(@OriginalArg(0) Class2_Sub21 arg0) {
-		if (arg0.method7403() != 255) {
-			arg0.anInt8412--;
-			this.aLong149 = arg0.method7405();
+	public void method7654(@OriginalArg(0) Packet arg0) {
+		if (arg0.g1() != 255) {
+			arg0.pos--;
+			this.aLong149 = arg0.g8();
 		}
-		this.aString50 = arg0.method7410();
-		this.anInt4633 = arg0.method7389();
-		this.aByte79 = arg0.method7384();
-		arg0.method7405();
+		this.aString50 = arg0.fastgstr();
+		this.anInt4633 = arg0.g2();
+		this.aByte79 = arg0.g1b();
+		arg0.g8();
 		if (Static459.aBoolean523) {
 			System.out.println("memberhash:" + this.aLong149 + " membername:" + this.aString50);
 		}

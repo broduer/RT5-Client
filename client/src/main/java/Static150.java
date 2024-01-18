@@ -29,7 +29,7 @@ public final class Static150 {
 	}
 
 	@OriginalMember(owner = "client!en", name = "a", descriptor = "(BLclient!ge;)Lclient!hba;")
-	public static Class154_Sub1 method2456(@OriginalArg(1) Class2_Sub21 arg0) {
-		return new Class154_Sub1(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.method7390(), arg0.method7403());
+	public static Class154_Sub1 method2456(@OriginalArg(1) Packet arg0) {
+		return new Class154_Sub1(arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7363(), arg0.method7390(), arg0.method7390(), arg0.g1());
 	}
 }

@@ -1063,7 +1063,7 @@ public abstract class Class19_Sub1 extends Class19 {
 		if (this.aBoolean688) {
 			return;
 		}
-		for (@Pc(9) Class2 local9 = this.aClass341_59.method7706(65280); local9 != null; local9 = this.aClass341_59.method7713()) {
+		for (@Pc(9) Node local9 = this.aClass341_59.method7706(65280); local9 != null; local9 = this.aClass341_59.method7713()) {
 			((Class2_Sub13_Sub2) local9).method2101();
 		}
 		@Pc(28) Enumeration local28 = this.aHashtable6.keys();

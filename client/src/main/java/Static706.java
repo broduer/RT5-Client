@@ -114,8 +114,8 @@ public final class Static706 {
 		}
 		@Pc(230) Class153 local230 = Static668.method8708();
 		@Pc(236) Class2_Sub19 local236 = Static293.method4342(Static669.aClass347_116, local230.aClass186_1);
-		local236.aClass2_Sub21_Sub2_1.method7396(Static231.method3379(arg0));
-		local236.aClass2_Sub21_Sub2_1.method7398(arg0);
+		local236.aClass2_Sub21_Sub2_1.p1(Static231.method3379(arg0));
+		local236.aClass2_Sub21_Sub2_1.pjstr(arg0);
 		local230.method3275(local236);
 	}
 }

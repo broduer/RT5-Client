@@ -29,7 +29,7 @@ public final class Static440 {
 		@Pc(21) Class2_Sub2_Sub2 local21 = (Class2_Sub2_Sub2) Static658.aClass28_43.method738(arg1 | (long) arg0 << 56);
 		if (local21 == null) {
 			local21 = new Class2_Sub2_Sub2(arg0, arg1);
-			Static658.aClass28_43.method735(local21.aLong328, local21);
+			Static658.aClass28_43.method735(local21.key, local21);
 		}
 		return local21;
 	}

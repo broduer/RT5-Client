@@ -16,7 +16,7 @@ public final class Class308_Sub1 extends Class308 {
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(III[Lclient!eq;Lclient!ha;[B)V")
 	public void method7899(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class110[] arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) byte[] arg4) {
-		@Pc(8) Class2_Sub21 local8 = new Class2_Sub21(arg4);
+		@Pc(8) Packet local8 = new Packet(arg4);
 		@Pc(18) int local18 = -1;
 		while (true) {
 			@Pc(22) int local22 = local8.method7352();
@@ -26,7 +26,7 @@ public final class Class308_Sub1 extends Class308 {
 			local18 += local22;
 			@Pc(30) int local30 = 0;
 			while (true) {
-				@Pc(34) int local34 = local8.method7397();
+				@Pc(34) int local34 = local8.gsmarts();
 				if (local34 == 0) {
 					break;
 				}
@@ -34,7 +34,7 @@ public final class Class308_Sub1 extends Class308 {
 				@Pc(46) int local46 = local30 & 0x3F;
 				@Pc(52) int local52 = local30 >> 6 & 0x3F;
 				@Pc(56) int local56 = local30 >> 12;
-				@Pc(60) int local60 = local8.method7403();
+				@Pc(60) int local60 = local8.g1();
 				@Pc(64) int local64 = local60 >> 2;
 				@Pc(68) int local68 = local60 & 0x3;
 				@Pc(73) int local73 = local52 + arg0;
@@ -57,7 +57,7 @@ public final class Class308_Sub1 extends Class308 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(ILclient!ge;ILclient!ha;I)V")
-	public void method7900(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3) {
+	public void method7900(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3) {
 		if (super.aBoolean674) {
 			return;
 		}
@@ -72,19 +72,19 @@ public final class Class308_Sub1 extends Class308 {
 						@Pc(504) int local504;
 						@Pc(143) int local143;
 						@Pc(147) int local147;
-						while (arg1.aByteArray93.length > arg1.anInt8412) {
-							local28 = arg1.method7403();
+						while (arg1.data.length > arg1.pos) {
+							local28 = arg1.g1();
 							if (local28 != 0) {
 								@Pc(149) int local149;
 								@Pc(153) int local153;
 								@Pc(290) int local290;
 								if (local28 == 1) {
-									local86 = arg1.method7403();
+									local86 = arg1.g1();
 									if (local86 > 0) {
 										for (local504 = 0; local504 < local86; local504++) {
 											@Pc(512) Class355 local512 = new Class355(arg3, arg1, 2);
 											if (local512.anInt9406 == 31) {
-												@Pc(523) Class394 local523 = Static48.aClass386_1.method8821(arg1.method7389());
+												@Pc(523) Class394 local523 = Static48.aClass386_1.method8821(arg1.g2());
 												local512.method8251(local523.anInt10402, local523.anInt10400, local523.anInt10401, local523.anInt10405);
 											}
 											if (arg3.method7962() > 0) {
@@ -116,7 +116,7 @@ public final class Class308_Sub1 extends Class308 {
 									}
 									local10 = true;
 									for (local86 = 0; local86 < 4; local86++) {
-										@Pc(91) byte local91 = arg1.method7384();
+										@Pc(91) byte local91 = arg1.g1b();
 										if (local91 == 0 && super.aByteArrayArrayArray12[local86] != null) {
 											local143 = arg2;
 											local147 = arg2 + 64;
@@ -155,7 +155,7 @@ public final class Class308_Sub1 extends Class308 {
 											}
 											for (local143 = 0; local143 < 64; local143 += 4) {
 												for (local147 = 0; local147 < 64; local147 += 4) {
-													@Pc(280) byte local280 = arg1.method7384();
+													@Pc(280) byte local280 = arg1.g1b();
 													for (local153 = local143 + arg2; local153 < local143 + arg2 + 4; local153++) {
 														for (local290 = arg0 + local147; local290 < arg0 + local147 + 4; local290++) {
 															if (local153 >= 0 && super.anInt8930 > local153 && local290 >= 0 && super.anInt8928 > local290) {
@@ -632,7 +632,7 @@ public final class Class308_Sub1 extends Class308 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(IILclient!ha;ILclient!ge;IIIII)V")
-	public void method7902(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class2_Sub21 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
+	public void method7902(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Packet arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
 		if (super.aBoolean674) {
 			return;
 		}
@@ -645,20 +645,20 @@ public final class Class308_Sub1 extends Class308 {
 			@Pc(63) int local63;
 			@Pc(327) int local327;
 			@Pc(70) int local70;
-			while (arg3.anInt8412 < arg3.aByteArray93.length) {
-				local35 = arg3.method7403();
+			while (arg3.pos < arg3.data.length) {
+				local35 = arg3.g1();
 				if (local35 != 0) {
 					@Pc(122) int local122;
 					@Pc(176) int local176;
 					@Pc(200) int local200;
 					@Pc(116) int local116;
 					if (local35 == 1) {
-						local63 = arg3.method7403();
+						local63 = arg3.g1();
 						if (local63 > 0) {
 							for (local70 = 0; local70 < local63; local70++) {
 								@Pc(78) Class355 local78 = new Class355(arg1, arg3, 2);
 								if (local78.anInt9406 == 31) {
-									@Pc(91) Class394 local91 = Static48.aClass386_1.method8821(arg3.method7389());
+									@Pc(91) Class394 local91 = Static48.aClass386_1.method8821(arg3.g2());
 									local78.method8251(local91.anInt10402, local91.anInt10400, local91.anInt10401, local91.anInt10405);
 								}
 								if (arg1.method7962() > 0) {
@@ -693,7 +693,7 @@ public final class Class308_Sub1 extends Class308 {
 							super.aByteArrayArrayArray12 = new byte[4][][];
 						}
 						for (local63 = 0; local63 < 4; local63++) {
-							@Pc(311) byte local311 = arg3.method7384();
+							@Pc(311) byte local311 = arg3.g1b();
 							@Pc(331) int local331;
 							if (local311 == 0 && super.aByteArrayArrayArray12[arg4] != null) {
 								if (arg7 >= local63) {
@@ -735,7 +735,7 @@ public final class Class308_Sub1 extends Class308 {
 								}
 								for (local327 = 0; local327 < 64; local327 += 4) {
 									for (local331 = 0; local331 < 64; local331 += 4) {
-										@Pc(466) byte local466 = arg3.method7384();
+										@Pc(466) byte local466 = arg3.g1b();
 										if (arg7 >= local63) {
 											for (local122 = local327; local122 < local327 + 4; local122++) {
 												for (local176 = local331; local176 < local331 + 4; local176++) {
@@ -810,7 +810,7 @@ public final class Class308_Sub1 extends Class308 {
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(I[Lclient!eq;ILclient!ha;BII[BIII)V")
 	public void method7904(@OriginalArg(0) int arg0, @OriginalArg(1) Class110[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) byte[] arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
-		@Pc(26) Class2_Sub21 local26 = new Class2_Sub21(arg6);
+		@Pc(26) Packet local26 = new Packet(arg6);
 		@Pc(28) int local28 = -1;
 		while (true) {
 			@Pc(32) int local32 = local26.method7352();
@@ -820,7 +820,7 @@ public final class Class308_Sub1 extends Class308 {
 			local28 += local32;
 			@Pc(40) int local40 = 0;
 			while (true) {
-				@Pc(44) int local44 = local26.method7397();
+				@Pc(44) int local44 = local26.gsmarts();
 				if (local44 == 0) {
 					break;
 				}
@@ -828,7 +828,7 @@ public final class Class308_Sub1 extends Class308 {
 				@Pc(59) int local59 = local40 & 0x3F;
 				@Pc(65) int local65 = local40 >> 6 & 0x3F;
 				@Pc(69) int local69 = local40 >> 12;
-				@Pc(73) int local73 = local26.method7403();
+				@Pc(73) int local73 = local26.g1();
 				@Pc(77) int local77 = local73 >> 2;
 				@Pc(81) int local81 = local73 & 0x3;
 				if (arg8 == local69 && arg0 <= local65 && local65 < arg0 + 8 && arg9 <= local59 && local59 < arg9 + 8) {

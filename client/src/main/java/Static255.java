@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static255 {
 
 	@OriginalMember(owner = "client!hs", name = "n", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_54 = new Class347(4, 8);
+	public static final ClientProt aClass347_54 = new ClientProt(4, 8);
 
 	@OriginalMember(owner = "client!hs", name = "a", descriptor = "(Lclient!sb;BLclient!d;ILjava/awt/Canvas;I)Lclient!ha;")
 	public static Class19 method3612(@OriginalArg(0) Class332 arg0, @OriginalArg(2) Interface4 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Canvas arg3, @OriginalArg(5) int arg4) {

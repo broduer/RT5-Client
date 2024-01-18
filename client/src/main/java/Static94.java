@@ -25,7 +25,7 @@ public final class Static94 {
 	public static void method1841() {
 		Static524.aClass153_3.method3272();
 		Static524.aClass153_3.packetType = null;
-		Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
+		Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 		Static524.aClass153_3.anInt3656 = 0;
 		Static524.aClass153_3.lastPacketType3 = null;
 		Static524.aClass153_3.lastPacketType2 = null;

@@ -45,7 +45,7 @@ public final class Class45 {
 		}
 		local16 = new Class220();
 		if (local39 != null) {
-			local16.method5134(new Class2_Sub21(local39));
+			local16.method5134(new Packet(local39));
 		}
 		local16.method5130();
 		@Pc(66) Class82 local66 = this.aClass82_17;

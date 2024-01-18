@@ -16,17 +16,17 @@ public final class Static104 {
 	@OriginalMember(owner = "client!de", name = "a", descriptor = "(BLjava/lang/String;)V")
 	public static void method2029(@OriginalArg(1) String arg0) {
 		@Pc(6) Class2_Sub19 local6 = Static273.method3962();
-		local6.aClass2_Sub21_Sub2_1.method7396(Static572.aClass167_63.anInt3984);
-		local6.aClass2_Sub21_Sub2_1.method7380(0);
-		@Pc(28) int local28 = local6.aClass2_Sub21_Sub2_1.anInt8412;
-		local6.aClass2_Sub21_Sub2_1.method7380(667);
+		local6.aClass2_Sub21_Sub2_1.p1(LoginProt.OPCODE_28.opcode);
+		local6.aClass2_Sub21_Sub2_1.p2(0);
+		@Pc(28) int local28 = local6.aClass2_Sub21_Sub2_1.pos;
+		local6.aClass2_Sub21_Sub2_1.p2(667);
 		@Pc(39) int[] local39 = Static664.method8659(local6);
-		@Pc(43) int local43 = local6.aClass2_Sub21_Sub2_1.anInt8412;
-		local6.aClass2_Sub21_Sub2_1.method7398(arg0);
-		local6.aClass2_Sub21_Sub2_1.method7396(client.lang);
-		local6.aClass2_Sub21_Sub2_1.anInt8412 += 7;
-		local6.aClass2_Sub21_Sub2_1.method7373(local39, local43, local6.aClass2_Sub21_Sub2_1.anInt8412);
-		local6.aClass2_Sub21_Sub2_1.method7364(local6.aClass2_Sub21_Sub2_1.anInt8412 - local28);
+		@Pc(43) int local43 = local6.aClass2_Sub21_Sub2_1.pos;
+		local6.aClass2_Sub21_Sub2_1.pjstr(arg0);
+		local6.aClass2_Sub21_Sub2_1.p1(client.lang);
+		local6.aClass2_Sub21_Sub2_1.pos += 7;
+		local6.aClass2_Sub21_Sub2_1.method7373(local39, local43, local6.aClass2_Sub21_Sub2_1.pos);
+		local6.aClass2_Sub21_Sub2_1.psize2(local6.aClass2_Sub21_Sub2_1.pos - local28);
 		Static405.aClass153_1.method3275(local6);
 		Static580.anInt8645 = -3;
 		Static654.anInt9765 = 0;

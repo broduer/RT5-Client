@@ -11,20 +11,20 @@ public final class Static452 {
 	public static final Class82 aClass82_149 = new Class82(8);
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(ILclient!ge;)Lclient!fea;")
-	public static Class125 method6178(@OriginalArg(1) Class2_Sub21 arg0) {
-		@Pc(7) String local7 = arg0.method7365();
-		@Pc(14) Class405 local14 = Static33.method882()[arg0.method7403()];
-		@Pc(23) Class103 local23 = Static313.method4551()[arg0.method7403()];
+	public static Class125 method6178(@OriginalArg(1) Packet arg0) {
+		@Pc(7) String local7 = arg0.gstr();
+		@Pc(14) Class405 local14 = Static33.method882()[arg0.g1()];
+		@Pc(23) Class103 local23 = Static313.method4551()[arg0.g1()];
 		@Pc(27) int local27 = arg0.method7363();
 		@Pc(33) int local33 = arg0.method7363();
-		@Pc(39) int local39 = arg0.method7403();
-		@Pc(49) int local49 = arg0.method7403();
-		@Pc(53) int local53 = arg0.method7403();
-		@Pc(57) int local57 = arg0.method7389();
-		@Pc(61) int local61 = arg0.method7389();
-		@Pc(65) int local65 = arg0.method7356();
-		@Pc(69) int local69 = arg0.method7356();
-		@Pc(73) int local73 = arg0.method7356();
+		@Pc(39) int local39 = arg0.g1();
+		@Pc(49) int local49 = arg0.g1();
+		@Pc(53) int local53 = arg0.g1();
+		@Pc(57) int local57 = arg0.g2();
+		@Pc(61) int local61 = arg0.g2();
+		@Pc(65) int local65 = arg0.g4();
+		@Pc(69) int local69 = arg0.g4();
+		@Pc(73) int local73 = arg0.g4();
 		return new Class125(local7, local14, local23, local27, local33, local39, local49, local53, local57, local61, local65, local69, local73);
 	}
 

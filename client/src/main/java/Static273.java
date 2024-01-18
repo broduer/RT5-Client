@@ -20,7 +20,7 @@ public final class Static273 {
 	public static boolean aBoolean340 = true;
 
 	@OriginalMember(owner = "client!ik", name = "J", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_55 = new Class347(49, 3);
+	public static final ClientProt aClass347_55 = new ClientProt(49, 3);
 
 	@OriginalMember(owner = "client!ik", name = "a", descriptor = "(II)V")
 	public static void method3959(@OriginalArg(0) int arg0) {

@@ -19,11 +19,11 @@ public final class Class2_Sub14_Sub4 extends Class2_Sub14 {
 
 	@OriginalMember(owner = "client!gka", name = "a", descriptor = "(ILclient!ge;)V")
 	@Override
-	public void method8622(@OriginalArg(1) Class2_Sub21 arg0) {
-		if (arg0.method7403() != 255) {
-			arg0.anInt8412--;
-			this.aLong118 = arg0.method7405();
+	public void method8622(@OriginalArg(1) Packet arg0) {
+		if (arg0.g1() != 255) {
+			arg0.pos--;
+			this.aLong118 = arg0.g8();
 		}
-		this.aString37 = arg0.method7410();
+		this.aString37 = arg0.fastgstr();
 	}
 }

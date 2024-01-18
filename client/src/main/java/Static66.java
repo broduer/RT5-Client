@@ -17,7 +17,7 @@ public final class Static66 {
 		local10 = new Class280();
 		local10.anInt7001 = arg0;
 		if (local21 != null) {
-			local10.method6281(new Class2_Sub21(local21));
+			local10.method6281(new Packet(local21));
 		}
 		local10.method6280();
 		if (local10.anInt7003 == 2 && Static503.aClass28_38.method738(arg0) == null) {

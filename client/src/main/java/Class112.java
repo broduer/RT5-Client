@@ -223,7 +223,7 @@ public final class Class112 {
 		local26.aStringArray46 = this.aStringArray11.clone();
 		local26.aStringArray45 = this.aStringArray10.clone();
 		if (local53 != null) {
-			local26.method8798(new Class2_Sub21(local53));
+			local26.method8798(new Packet(local53));
 		}
 		local26.method8814();
 		if (local26.anInt10114 != -1) {
@@ -244,10 +244,10 @@ public final class Class112 {
 			local26.aBoolean772 = false;
 			if (local26.aClass28_44 != null) {
 				@Pc(195) boolean local195 = false;
-				for (@Pc(200) Class2 local200 = local26.aClass28_44.method736(); local200 != null; local200 = local26.aClass28_44.method740()) {
-					@Pc(209) Class298 local209 = this.aClass49_1.method1161((int) local200.aLong328);
+				for (@Pc(200) Node local200 = local26.aClass28_44.method736(); local200 != null; local200 = local26.aClass28_44.method740()) {
+					@Pc(209) Class298 local209 = this.aClass49_1.method1161((int) local200.key);
 					if (local209.aBoolean570) {
-						local200.method9464();
+						local200.unlink();
 					} else {
 						local195 = true;
 					}

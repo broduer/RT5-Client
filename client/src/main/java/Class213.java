@@ -48,13 +48,13 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(Lclient!ge;)V")
-	public void method4956(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.anInt5493 = arg0.method7403();
+	public void method4956(@OriginalArg(0) Packet arg0) {
+		this.anInt5493 = arg0.g1();
 		this.anIntArray407 = new int[this.anInt5493];
 		this.anIntArray408 = new int[this.anInt5493];
 		for (@Pc(16) int local16 = 0; local16 < this.anInt5493; local16++) {
-			this.anIntArray407[local16] = arg0.method7389();
-			this.anIntArray408[local16] = arg0.method7389();
+			this.anIntArray407[local16] = arg0.g2();
+			this.anIntArray408[local16] = arg0.g2();
 		}
 	}
 
@@ -85,10 +85,10 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!kl", name = "b", descriptor = "(Lclient!ge;)V")
-	public void method4959(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.anInt5496 = arg0.method7403();
-		this.anInt5494 = arg0.method7356();
-		this.anInt5495 = arg0.method7356();
+	public void method4959(@OriginalArg(0) Packet arg0) {
+		this.anInt5496 = arg0.g1();
+		this.anInt5494 = arg0.g4();
+		this.anInt5495 = arg0.g4();
 		this.method4956(arg0);
 	}
 }

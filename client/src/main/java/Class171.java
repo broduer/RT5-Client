@@ -28,13 +28,13 @@ public final class Class171 {
 	}
 
 	@OriginalMember(owner = "client!ho", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class171(@OriginalArg(0) Class2_Sub21 arg0) {
-		this.aByte69 = arg0.method7384();
-		this.anInt4044 = arg0.method7389();
-		this.anInt4051 = arg0.method7356();
-		this.anInt4045 = arg0.method7356();
-		this.anInt4046 = arg0.method7356();
-		this.anInt4043 = arg0.method7356();
+	public Class171(@OriginalArg(0) Packet arg0) {
+		this.aByte69 = arg0.g1b();
+		this.anInt4044 = arg0.g2();
+		this.anInt4051 = arg0.g4();
+		this.anInt4045 = arg0.g4();
+		this.anInt4046 = arg0.g4();
+		this.anInt4043 = arg0.g4();
 	}
 
 	@OriginalMember(owner = "client!ho", name = "a", descriptor = "(Z)I")

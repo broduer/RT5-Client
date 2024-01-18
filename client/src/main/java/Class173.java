@@ -51,9 +51,9 @@ public final class Class173 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(IILclient!ge;)V")
-	private void method3691(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub21 arg1) {
+	private void method3691(@OriginalArg(1) int arg0, @OriginalArg(2) Packet arg1) {
 		if (arg0 == 1) {
-			this.anInt4178 = arg1.method7389();
+			this.anInt4178 = arg1.g2();
 		} else if (arg0 == 2) {
 			this.anInt4176 = arg1.method7390();
 		} else if (arg0 == 3) {
@@ -64,9 +64,9 @@ public final class Class173 {
 	}
 
 	@OriginalMember(owner = "client!ia", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method3694(@OriginalArg(0) Class2_Sub21 arg0) {
+	public void method3694(@OriginalArg(0) Packet arg0) {
 		while (true) {
-			@Pc(7) int local7 = arg0.method7403();
+			@Pc(7) int local7 = arg0.g1();
 			if (local7 == 0) {
 				return;
 			}

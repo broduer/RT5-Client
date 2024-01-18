@@ -22,7 +22,7 @@ public final class Static405 {
 	public static final Class2_Sub54 aClass2_Sub54_1 = new Class2_Sub54(0, 0);
 
 	@OriginalMember(owner = "client!mn", name = "i", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_73 = new Class347(55, 7);
+	public static final ClientProt aClass347_73 = new ClientProt(55, 7);
 
 	@OriginalMember(owner = "client!mn", name = "a", descriptor = "(Lclient!d;Lclient!sb;Z)V")
 	public static void method5599(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) Class332 arg1) {

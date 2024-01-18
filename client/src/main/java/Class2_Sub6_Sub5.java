@@ -77,7 +77,7 @@ public final class Class2_Sub6_Sub5 extends PcmStream {
 			@Pc(14) Class2_Sub2_Sub8 local14 = this.method9152();
 			if (local14 == null) {
 				if (this.aBoolean796) {
-					this.method9464();
+					this.unlink();
 					Static341.aClass363_1.method8352();
 				}
 				return;
@@ -121,7 +121,7 @@ public final class Class2_Sub6_Sub5 extends PcmStream {
 	private synchronized void method9151() {
 		@Pc(7) Class2_Sub2_Sub8 local7 = this.method9152();
 		if (local7 != null) {
-			local7.method9464();
+			local7.unlink();
 			this.anInt10563--;
 			this.anInt10564 = 0;
 			Static341.aClass363_1.method8348(local7, local7.method2133());
@@ -192,7 +192,7 @@ public final class Class2_Sub6_Sub5 extends PcmStream {
 				}
 			}
 		} else if (this.aBoolean796) {
-			this.method9464();
+			this.unlink();
 			Static341.aClass363_1.method8352();
 		}
 	}

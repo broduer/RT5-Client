@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static235 {
 
 	@OriginalMember(owner = "client!hf", name = "n", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_47 = new Class347(5, 4);
+	public static final ClientProt aClass347_47 = new ClientProt(5, 4);
 
 	@OriginalMember(owner = "client!hf", name = "h", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_48 = new Class347(45, 7);
+	public static final ClientProt aClass347_48 = new ClientProt(45, 7);
 
 	@OriginalMember(owner = "client!hf", name = "g", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_49 = new Class347(75, 4);
+	public static final ClientProt aClass347_49 = new ClientProt(75, 4);
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(IIIIIIIII)V")
 	public static void method3421(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(8) int arg7) {
@@ -50,8 +50,8 @@ public final class Static235 {
 	}
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(Lclient!ge;B)Lclient!pi;")
-	public static Class39 method3425(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7403();
+	public static Class39 method3425(@OriginalArg(0) Packet arg0) {
+		@Pc(7) int local7 = arg0.g1();
 		@Pc(19) Class155 local19 = Static471.method6416(local7);
 		@Pc(21) Class39 local21 = null;
 		if (Static458.aClass155_31 == local19) {

@@ -96,7 +96,7 @@ public final class Class8_Sub5 extends Class8 {
 					}
 				}
 			}
-			local16.method9464();
+			local16.unlink();
 			this.anInt4161--;
 			if (local16.method9268()) {
 				local16.method9267();

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!pw")
-public final class Class2_Sub43 extends Class2 {
+public final class Class2_Sub43 extends Node {
 
 	@OriginalMember(owner = "client!pw", name = "M", descriptor = "I")
 	private int anInt7621;
@@ -224,29 +224,29 @@ public final class Class2_Sub43 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pw", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method6749(@OriginalArg(0) Class2_Sub21 arg0) {
-		arg0.method7396(5);
-		arg0.method7396(this.anInt7634);
-		arg0.method7396(this.aBoolean580 ? 1 : 0);
-		arg0.method7396(this.anInt7635);
-		arg0.method7396(this.anInt7640);
-		arg0.method7396(this.javaRelease);
-		arg0.method7396(this.javaVersion);
-		arg0.method7396(this.javaUpdate);
-		arg0.method7396(this.aBoolean581 ? 1 : 0);
-		arg0.method7380(this.anInt7636);
-		arg0.method7396(this.processorCount);
-		arg0.method7395(this.anInt7633);
-		arg0.method7380(this.anInt7627);
-		arg0.method7396(this.anInt7628);
-		arg0.method7396(this.anInt7637);
-		arg0.method7396(this.anInt7621);
-		arg0.method7368(this.aString95);
-		arg0.method7368(this.aString93);
-		arg0.method7368(this.aString94);
-		arg0.method7368(this.aString92);
-		arg0.method7396(this.anInt7638);
-		arg0.method7380(this.anInt7639);
+	public void method6749(@OriginalArg(0) Packet arg0) {
+		arg0.p1(5);
+		arg0.p1(this.anInt7634);
+		arg0.p1(this.aBoolean580 ? 1 : 0);
+		arg0.p1(this.anInt7635);
+		arg0.p1(this.anInt7640);
+		arg0.p1(this.javaRelease);
+		arg0.p1(this.javaVersion);
+		arg0.p1(this.javaUpdate);
+		arg0.p1(this.aBoolean581 ? 1 : 0);
+		arg0.p2(this.anInt7636);
+		arg0.p1(this.processorCount);
+		arg0.p3(this.anInt7633);
+		arg0.p2(this.anInt7627);
+		arg0.p1(this.anInt7628);
+		arg0.p1(this.anInt7637);
+		arg0.p1(this.anInt7621);
+		arg0.pjstr2(this.aString95);
+		arg0.pjstr2(this.aString93);
+		arg0.pjstr2(this.aString94);
+		arg0.pjstr2(this.aString92);
+		arg0.p1(this.anInt7638);
+		arg0.p2(this.anInt7639);
 	}
 
 	@OriginalMember(owner = "client!pw", name = "b", descriptor = "(B)I")

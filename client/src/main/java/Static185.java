@@ -15,7 +15,7 @@ public final class Static185 {
 	public static final Class121 aClass121_3 = new Class121();
 
 	@OriginalMember(owner = "client!fn", name = "s", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_35 = new Class347(0, 7);
+	public static final ClientProt aClass347_35 = new ClientProt(0, 7);
 
 	@OriginalMember(owner = "client!fn", name = "a", descriptor = "(Lclient!ha;IIIIIIII)V")
 	public static void method2814(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7) {

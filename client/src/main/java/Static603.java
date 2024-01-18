@@ -12,7 +12,7 @@ public final class Static603 {
 	public static final int[][][] anIntArrayArrayArray18 = new int[2][][];
 
 	@OriginalMember(owner = "client!taa", name = "E", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_109 = new Class347(29, -1);
+	public static final ClientProt aClass347_109 = new ClientProt(29, -1);
 
 	@OriginalMember(owner = "client!taa", name = "b", descriptor = "(Z)V")
 	public static void method7906() {

@@ -12,10 +12,10 @@ public final class Class39_Sub5 extends Class39 {
 	private final int anInt3005;
 
 	@OriginalMember(owner = "client!fka", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub5(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub5(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt3009 = arg0.method7389();
-		this.anInt3005 = arg0.method7356();
+		this.anInt3009 = arg0.g2();
+		this.anInt3005 = arg0.g4();
 	}
 
 	@OriginalMember(owner = "client!fka", name = "b", descriptor = "(I)V")

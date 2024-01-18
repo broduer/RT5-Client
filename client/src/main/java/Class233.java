@@ -13,15 +13,15 @@ public final class Class233 {
 	private final int[] anIntArray454;
 
 	@OriginalMember(owner = "client!lka", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class233(@OriginalArg(0) Class2_Sub21 arg0) {
-		@Pc(7) int local7 = arg0.method7397();
+	public Class233(@OriginalArg(0) Packet arg0) {
+		@Pc(7) int local7 = arg0.gsmarts();
 		this.anIntArray453 = new int[local7];
 		this.anIntArray454 = new int[local7];
 		for (@Pc(17) int local17 = 0; local17 < local7; local17++) {
-			@Pc(23) int local23 = arg0.method7403();
+			@Pc(23) int local23 = arg0.g1();
 			this.anIntArray454[local17] = local23;
-			@Pc(32) int local32 = arg0.method7389();
-			@Pc(36) int local36 = arg0.method7389();
+			@Pc(32) int local32 = arg0.g2();
+			@Pc(36) int local36 = arg0.g2();
 			this.anIntArray453[local17] = local36 + (local32 << 16);
 		}
 	}

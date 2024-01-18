@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!iia")
-public final class Class2_Sub27 extends Class2 {
+public final class Class2_Sub27 extends Node {
 
 	@OriginalMember(owner = "client!iia", name = "k", descriptor = "I")
 	public final int anInt4369;

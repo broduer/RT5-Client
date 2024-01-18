@@ -36,7 +36,7 @@ public final class Static231 {
 	public static final int anInt3743 = Static434.method5860(16);
 
 	@OriginalMember(owner = "client!hd", name = "e", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_41 = new Class347(34, 4);
+	public static final ClientProt aClass347_41 = new ClientProt(34, 4);
 
 	@OriginalMember(owner = "client!hd", name = "b", descriptor = "(I)V")
 	public static void method3375() {
@@ -562,13 +562,13 @@ public final class Static231 {
 				}
 				if (arg2.startsWith("pc")) {
 					@Pc(1833) Class153 local1833 = Static668.method8708();
-					@Pc(1839) Class2_Sub19 local1839 = Static293.method4342(Static243.aClass347_52, local1833.aClass186_1);
-					local1839.aClass2_Sub21_Sub2_1.method7396(0);
-					local521 = local1839.aClass2_Sub21_Sub2_1.anInt8412;
+					@Pc(1839) Class2_Sub19 local1839 = Static293.method4342(ClientProt.aClass347_52, local1833.aClass186_1);
+					local1839.aClass2_Sub21_Sub2_1.p1(0);
+					local521 = local1839.aClass2_Sub21_Sub2_1.pos;
 					local582 = arg2.indexOf(" ", 4);
-					local1839.aClass2_Sub21_Sub2_1.method7398(arg2.substring(3, local582));
+					local1839.aClass2_Sub21_Sub2_1.pjstr(arg2.substring(3, local582));
 					Static523.method3446(local1839.aClass2_Sub21_Sub2_1, arg2.substring(local582));
-					local1839.aClass2_Sub21_Sub2_1.method7387(local1839.aClass2_Sub21_Sub2_1.anInt8412 - local521);
+					local1839.aClass2_Sub21_Sub2_1.method7387(local1839.aClass2_Sub21_Sub2_1.pos - local521);
 					local1833.method3275(local1839);
 					return;
 				}
@@ -803,10 +803,10 @@ public final class Static231 {
 				}
 				if (Static283.anInt4588 == 11) {
 					@Pc(2836) Class2_Sub19 local2836 = Static293.method4342(Static459.aClass347_87, Static405.aClass153_2.aClass186_1);
-					local2836.aClass2_Sub21_Sub2_1.method7396(arg2.length() + 3);
-					local2836.aClass2_Sub21_Sub2_1.method7396(arg0 ? 1 : 0);
-					local2836.aClass2_Sub21_Sub2_1.method7396(arg1 ? 1 : 0);
-					local2836.aClass2_Sub21_Sub2_1.method7398(arg2);
+					local2836.aClass2_Sub21_Sub2_1.p1(arg2.length() + 3);
+					local2836.aClass2_Sub21_Sub2_1.p1(arg0 ? 1 : 0);
+					local2836.aClass2_Sub21_Sub2_1.p1(arg1 ? 1 : 0);
+					local2836.aClass2_Sub21_Sub2_1.pjstr(arg2);
 					Static405.aClass153_2.method3275(local2836);
 				}
 				if (arg2.startsWith("fps ") && client.modewhere != Static446.liveMode) {
@@ -871,9 +871,9 @@ public final class Static231 {
 		}
 		@Pc(216) Class153 local216 = Static668.method8708();
 		@Pc(222) Class2_Sub19 local222 = Static293.method4342(Static113.aClass347_22, local216.aClass186_1);
-		local222.aClass2_Sub21_Sub2_1.method7396(method3379(arg1) + 1);
-		local222.aClass2_Sub21_Sub2_1.method7398(arg1);
-		local222.aClass2_Sub21_Sub2_1.method7396(arg0 ? 1 : 0);
+		local222.aClass2_Sub21_Sub2_1.p1(method3379(arg1) + 1);
+		local222.aClass2_Sub21_Sub2_1.pjstr(arg1);
+		local222.aClass2_Sub21_Sub2_1.p1(arg0 ? 1 : 0);
 		local216.method3275(local222);
 	}
 }

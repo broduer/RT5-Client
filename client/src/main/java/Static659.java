@@ -39,13 +39,13 @@ public final class Static659 {
 	}
 
 	@OriginalMember(owner = "client!ut", name = "d", descriptor = "(B)Lclient!ge;")
-	public static Class2_Sub21 method8615() {
-		@Pc(6) Class2_Sub21 local6 = Static570.method7559();
-		local6.method7370(0L);
-		local6.method7398(Static59.aString63);
-		local6.method7370(Static430.aLong209);
-		local6.method7370(Static571.aLong269);
-		local6.method7392(Static374.aBigInteger2, Static262.aBigInteger1);
+	public static Packet method8615() {
+		@Pc(6) Packet local6 = Static570.method7559();
+		local6.p8(0L);
+		local6.pjstr(Static59.aString63);
+		local6.p8(Static430.aLong209);
+		local6.p8(Static571.aLong269);
+		local6.rsaenc(Static374.aBigInteger2, Static262.aBigInteger1);
 		return local6;
 	}
 }

@@ -33,7 +33,7 @@ public final class Class79 {
 		}
 		local18 = new Class266();
 		if (local41 != null) {
-			local18.method5928(new Class2_Sub21(local41));
+			local18.method5928(new Packet(local41));
 		}
 		synchronized (this.aClass82_47) {
 			this.aClass82_47.method2150(local18, arg0);

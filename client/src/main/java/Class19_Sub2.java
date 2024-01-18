@@ -910,7 +910,7 @@ public final class Class19_Sub2 extends Class19 {
 		if (local8 == null) {
 			return;
 		}
-		local8.method9464();
+		local8.unlink();
 		local8 = Static538.method7199(arg2, arg0, arg1);
 		this.aClass28_20.method735(arg0.hashCode(), local8);
 		if (this.aCanvas3 != arg0 || this.aClass87_1 != null) {
@@ -2852,7 +2852,7 @@ public final class Class19_Sub2 extends Class19 {
 		}
 		@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) this.aClass28_20.method738(arg0.hashCode());
 		if (local17 != null) {
-			local17.method9464();
+			local17.unlink();
 		}
 	}
 

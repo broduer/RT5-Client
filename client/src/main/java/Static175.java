@@ -9,7 +9,7 @@ public final class Static175 {
 	public static Clipboard clipboard;
 
 	@OriginalMember(owner = "client!fha", name = "b", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_31 = new Class347(21, 15);
+	public static final ClientProt aClass347_31 = new ClientProt(21, 15);
 
 	@OriginalMember(owner = "client!fha", name = "a", descriptor = "(IIIIIB)V")
 	public static void method2701(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4) {

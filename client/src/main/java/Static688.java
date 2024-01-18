@@ -9,9 +9,6 @@ public final class Static688 {
 	@OriginalMember(owner = "client!vp", name = "K", descriptor = "I")
 	public static int anInt10384;
 
-	@OriginalMember(owner = "client!vp", name = "F", descriptor = "I")
-	public static int anInt10383 = 0;
-
 	@OriginalMember(owner = "client!vp", name = "e", descriptor = "(B)I")
 	public static int method8981() {
 		return 15;

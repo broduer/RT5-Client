@@ -12,7 +12,7 @@ public final class Static512 {
 	public static final Class155 aClass155_35 = new Class155(40);
 
 	@OriginalMember(owner = "client!qba", name = "k", descriptor = "Lclient!ss;")
-	public static final Class347 aClass347_96 = new Class347(63, 4);
+	public static final ClientProt aClass347_96 = new ClientProt(63, 4);
 
 	@OriginalMember(owner = "client!qba", name = "l", descriptor = "I")
 	public static int anInt7687 = 0;

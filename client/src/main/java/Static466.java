@@ -325,8 +325,8 @@ public final class Static466 {
 	@OriginalMember(owner = "client!om", name = "b", descriptor = "(Z)V")
 	public static void method6332() {
 		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
-		@Pc(12) int local12 = local8.method7389();
-		@Pc(16) int local16 = local8.method7403();
+		@Pc(12) int local12 = local8.g2();
+		@Pc(16) int local16 = local8.g1();
 		@Pc(28) boolean local28 = local8.method7383() == 1;
 		Static117.anInt2291 = local8.method7383();
 		@Pc(36) int local36 = local8.method7379();
@@ -349,11 +349,11 @@ public final class Static466 {
 			}
 		}
 		local8.method7418();
-		local50 = (Static405.aClass153_2.length - local8.anInt8412) / 16;
+		local50 = (Static405.aClass153_2.length - local8.pos) / 16;
 		Static22.anIntArrayArray11 = new int[local50][4];
 		for (local54 = 0; local54 < local50; local54++) {
 			for (local61 = 0; local61 < 4; local61++) {
-				Static22.anIntArrayArray11[local54][local61] = local8.method7356();
+				Static22.anIntArrayArray11[local54][local61] = local8.g4();
 			}
 		}
 		Static118.aByteArrayArray3 = new byte[local50][];

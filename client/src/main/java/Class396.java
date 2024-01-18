@@ -24,9 +24,9 @@ public final class Class396 {
 	public final int anInt10443;
 
 	@OriginalMember(owner = "client!w", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class396(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class396(@OriginalArg(0) Packet arg0) {
 		this.anInt10449 = arg0.method7353();
-		this.anInt10443 = arg0.method7403();
+		this.anInt10443 = arg0.g1();
 	}
 
 	@OriginalMember(owner = "client!w", name = "b", descriptor = "(B)V")

@@ -15,10 +15,10 @@ public final class Class39_Sub13 extends Class39 {
 	private final int anInt5452;
 
 	@OriginalMember(owner = "client!kha", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub13(@OriginalArg(0) Class2_Sub21 arg0) {
+	public Class39_Sub13(@OriginalArg(0) Packet arg0) {
 		super(arg0);
-		this.anInt5450 = arg0.method7389();
-		this.anInt5452 = arg0.method7403();
+		this.anInt5450 = arg0.g2();
+		this.anInt5452 = arg0.g1();
 	}
 
 	@OriginalMember(owner = "client!kha", name = "a", descriptor = "(Z)Z")
