@@ -1,0 +1,26 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalMember;
+import org.openrs2.deob.annotation.Pc;
+
+public final class Static396 {
+
+	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(IB[B)[B")
+	public static byte[] method3932(@OriginalArg(0) int arg0, @OriginalArg(2) byte[] arg1) {
+		@Pc(14) byte[] local14 = new byte[arg0];
+		Static734.method5448(arg1, 0, local14, 0, arg0);
+		return local14;
+	}
+
+	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(I)V")
+	public static void method3933() {
+		@Pc(10) Class153 local10 = Static668.method6208();
+		@Pc(18) Class2_Sub19 local18 = Static293.method3000(Static244.aClass345_53, local10.aClass186_1);
+		local18.aClass2_Sub21_Sub2_1.method5198(0);
+		local10.method2339(local18);
+	}
+
+	@OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lclient!ge;B)Lclient!pfa;")
+	public static Class154_Sub3 method3934(@OriginalArg(0) Class2_Sub21 arg0) {
+		return new Class154_Sub3(arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5165(), arg0.method5192(), arg0.method5205());
+	}
+}
