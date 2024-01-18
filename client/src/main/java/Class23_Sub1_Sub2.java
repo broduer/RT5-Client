@@ -1571,7 +1571,7 @@ public final class Class23_Sub1_Sub2 extends Class23_Sub1 {
 			@Pc(211) int local211 = local205 * super.anInt9328;
 			@Pc(221) int local221 = local205 * super.aClass19_Sub2_10.anInt4219;
 			for (@Pc(223) int local223 = 0; local223 < super.anInt9328; local223++) {
-				this.anIntArray528[local211 + local223] = this.anIntArray528[local211 + local223] & 0xFFFFFF | (local203[local221 + local223] == 0 ? 0 : -16777216);
+				this.anIntArray528[local211 + local223] = this.anIntArray528[local211 + local223] & 0xFFFFFF | (local203[local221 + local223] == 0 ? 0 : 0xFF000000);
 			}
 		}
 	}

@@ -32,7 +32,7 @@ public final class Static65 {
 			local5.method8001();
 		}
 		@Pc(71) int local71 = (int) (Static588.method7722() - local36);
-		local5.method7978(100, 100, 0, 0, -16777216);
+		local5.method7978(100, 100, 0, 0, 0xFF000000);
 		if (local7) {
 			local5.method7947();
 		}

@@ -19,7 +19,7 @@ public final class Static28 {
 		@Pc(30) Class1 local30 = local23.aClass1_1;
 		arg1.KA(arg3, arg0, arg3 + arg2.anInt3813, arg0 - -arg2.anInt3756);
 		if (Static578.anInt8619 == 2 || Static578.anInt8619 == 5 || Static12.aClass23_26 == null) {
-			arg1.A(-16777216, local30, arg3, arg0);
+			arg1.A(0xFF000000, local30, arg3, arg0);
 			return;
 		}
 		@Pc(90) int local90;

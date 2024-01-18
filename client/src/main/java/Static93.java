@@ -29,7 +29,7 @@ public final class Static93 {
 		@Pc(57) int local57;
 		if (Static273.anInt4416 < 100) {
 			local38 = arg5 / 2 + arg1;
-			arg4.aa(arg1, arg2, arg5, arg0, -16777216, 0);
+			arg4.aa(arg1, arg2, arg5, arg0, 0xFF000000, 0);
 			local57 = arg2 + arg0 / 2 - 20 - 18;
 			arg4.method7983(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.anInt5582].getRGB(), 0);
 			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4416 * 3, 30, Static718.aColorArray3[Static338.anInt5582].getRGB(), 0);

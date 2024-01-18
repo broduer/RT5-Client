@@ -31,7 +31,7 @@ public final class Static515 {
 	@OriginalMember(owner = "client!qda", name = "a", descriptor = "(BILclient!ha;III)V")
 	public static void method6808(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		arg1.KA(arg3, arg4, arg3 + arg0, arg2 + arg4);
-		arg1.method7978(arg0, arg2, arg4, arg3, -16777216);
+		arg1.method7978(arg0, arg2, arg4, arg3, 0xFF000000);
 		if (Static273.anInt4416 < 100) {
 			return;
 		}

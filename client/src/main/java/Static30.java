@@ -445,10 +445,10 @@ public final class Static30 {
 								} else if ((local17 + anInt5672 & 0x4) == (local57 + anInt5665 & 0x4)) {
 									local175 = anIntArray419[aClass96_2.anInt2518 + 1];
 								} else {
-									local175 = -11840664;
+									local175 = 0xFF4B5368;
 								}
 								if (local175 == 0) {
-									local175 = -16777216;
+									local175 = 0xFF000000;
 								}
 								arg0.aa(local28, local70, local44, local84, local175, 0);
 							} else if (local179 <= 0) {
@@ -475,10 +475,10 @@ public final class Static30 {
 						} else if ((local17 + anInt5672 & 0x4) == (local57 + anInt5665 & 0x4)) {
 							local93 = anIntArray419[aClass96_2.anInt2518 + 1];
 						} else {
-							local93 = -11840664;
+							local93 = 0xFF4B5368;
 						}
 						if (local93 == 0) {
-							local93 = -16777216;
+							local93 = 0xFF000000;
 						}
 						arg0.aa(local28, local70, local44, local84, local93, 0);
 					}

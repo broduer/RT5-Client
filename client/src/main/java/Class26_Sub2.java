@@ -55,7 +55,7 @@ public final class Class26_Sub2 extends Class26 {
 		super.aClass19_Sub1_21.method8149(Static188.aClass168_1, 0);
 		super.aClass19_Sub1_21.method8062(0);
 		super.aClass19_Sub1_21.method8145(0);
-		super.aClass19_Sub1_21.method8119(-16777216);
+		super.aClass19_Sub1_21.method8119(0xFF000000);
 		super.aClass19_Sub1_21.method8149(Static454.aClass168_5, 0);
 		this.method8303();
 	}

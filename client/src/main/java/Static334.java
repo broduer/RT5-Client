@@ -45,12 +45,12 @@ public final class Static334 {
 				Static665.aClass19_15.method7961(Static574.anIntArray683[1], Static625.anIntArray737[1], Static574.anIntArray683[0], local136, Static625.anIntArray737[0]);
 			}
 		}
-		Static242.aClass14_7.method8836(10, 75, "Dynamic: " + Static125.anInt2361 + "/" + 5000, -16777216, -256);
-		Static242.aClass14_7.method8836(10, 90, "Total Opaque Onscreen: " + Static546.anInt8267 + "/" + 10000, -16777216, -256);
-		Static242.aClass14_7.method8836(10, 105, "Total Trans Onscreen: " + Static645.anInt9637 + "/" + 5000, -16777216, -256);
-		Static242.aClass14_7.method8836(10, 120, "Occluders: " + (Static317.anInt5063 + Static444.anInt6772) + " Active: " + Static469.anInt7093, -16777216, -256);
-		Static242.aClass14_7.method8836(10, 135, "Occluded: Ground:" + Static298.anInt4827 + " Walls: " + Static679.anInt10306 + " CPs: " + Static356.anInt5793 + " Pixels: " + Static432.anInt527, -16777216, -256);
-		Static242.aClass14_7.method8836(10, 150, "Occlude Calc Took: " + Static666.aLong301 / 1000L + "us", -16777216, -256);
+		Static242.aClass14_7.method8836(10, 75, "Dynamic: " + Static125.anInt2361 + "/" + 5000, 0xFF000000, -256);
+		Static242.aClass14_7.method8836(10, 90, "Total Opaque Onscreen: " + Static546.anInt8267 + "/" + 10000, 0xFF000000, -256);
+		Static242.aClass14_7.method8836(10, 105, "Total Trans Onscreen: " + Static645.anInt9637 + "/" + 5000, 0xFF000000, -256);
+		Static242.aClass14_7.method8836(10, 120, "Occluders: " + (Static317.anInt5063 + Static444.anInt6772) + " Active: " + Static469.anInt7093, 0xFF000000, -256);
+		Static242.aClass14_7.method8836(10, 135, "Occluded: Ground:" + Static298.anInt4827 + " Walls: " + Static679.anInt10306 + " CPs: " + Static356.anInt5793 + " Pixels: " + Static432.anInt527, 0xFF000000, -256);
+		Static242.aClass14_7.method8836(10, 150, "Occlude Calc Took: " + Static666.aLong301 / 1000L + "us", 0xFF000000, -256);
 		if (Static684.anInt10332 != 2 || Static485.anIntArray886 == null) {
 			return;
 		}

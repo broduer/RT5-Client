@@ -697,7 +697,7 @@ public final class Static608 {
 				local2749 = local2663 | 0xFF000000;
 				local1321 = Static352.aClass80Array1[local233].method2108();
 				if (local1321 == 0) {
-					Static180.aClass14_3.method8835(-16777216, local267 + arg2, local2627, local1179 + arg0, local2749);
+					Static180.aClass14_3.method8835(0xFF000000, local267 + arg2, local2627, local1179 + arg0, local2749);
 					local1274 -= local321 >> 1;
 					local409 -= local321 >> 1;
 				}
@@ -729,7 +729,7 @@ public final class Static608 {
 					Static163.aClass19_17.T(arg2 + local267 - 50, arg0, local267 + arg2 + 50, arg0 - -arg3);
 					local409 += 50 - local1325;
 					local1274 += 50 - local1325;
-					Static180.aClass14_3.method8836(arg2 + local267 + 50 - local1325, local1179 + arg0, local2627, -16777216, local2749);
+					Static180.aClass14_3.method8836(arg2 + local267 + 50 - local1325, local1179 + arg0, local2627, 0xFF000000, local2749);
 					Static163.aClass19_17.KA(arg2, arg0, arg2 + arg1, arg3 + arg0);
 				}
 				if (local1321 == 5) {
@@ -746,11 +746,11 @@ public final class Static608 {
 					local409 -= local321 >> 1;
 					local1274 -= local321 >> 1;
 					local412 += local1325;
-					Static180.aClass14_3.method8835(-16777216, arg2 + local267, local2627, local1325 + local1179 + arg0, local2749);
+					Static180.aClass14_3.method8835(0xFF000000, arg2 + local267, local2627, local1325 + local1179 + arg0, local2749);
 					Static163.aClass19_17.KA(arg2, arg0, arg2 + arg1, arg0 + arg3);
 				}
 			} else {
-				Static180.aClass14_3.method8835(-16777216, local267 + arg2, local2627, arg0 + local1179, -256);
+				Static180.aClass14_3.method8835(0xFF000000, local267 + arg2, local2627, arg0 + local1179, -256);
 				local409 -= local321 >> 1;
 				local1274 -= local321 >> 1;
 			}

@@ -48,7 +48,7 @@ public abstract class Class14 {
 		if (arg5 == null) {
 			return;
 		}
-		this.method8832(arg4, -16777216);
+		this.method8832(arg4, 0xFF000000);
 		@Pc(32) double local32 = 7.0D - (double) arg0 / 8.0D;
 		if (local32 < 0.0D) {
 			local32 = 0.0D;
@@ -217,7 +217,7 @@ public abstract class Class14 {
 									@Pc(136) int local136 = Static647.method8480(local54.substring(4));
 									@Pc(140) Class23 local140 = arg0[local136];
 									@Pc(150) int local150 = arg7 == null ? local140.method8199() : arg7[local136];
-									if ((Static658.anInt9827 & 0xFF000000) == -16777216) {
+									if ((Static658.anInt9827 & 0xFF000000) == 0xFF000000) {
 										local140.method8204(arg4, this.aClass383_12.anInt10054 + local5 - local150, 1, 0, 1);
 									} else {
 										local140.method8204(arg4, local5 + this.aClass383_12.anInt10054 - local150, 0, Static658.anInt9827 & 0xFF000000 | 0xFFFFFF, 1);
@@ -424,7 +424,7 @@ public abstract class Class14 {
 		if (arg1 == null) {
 			return;
 		}
-		this.method8832(arg3, -16777216);
+		this.method8832(arg3, 0xFF000000);
 		@Pc(17) int local17 = arg1.length();
 		@Pc(20) int[] local20 = new int[local17];
 		@Pc(23) int[] local23 = new int[local17];
@@ -440,7 +440,7 @@ public abstract class Class14 {
 		if (arg2 == null) {
 			return;
 		}
-		this.method8832(arg0, -16777216);
+		this.method8832(arg0, 0xFF000000);
 		@Pc(17) int local17 = arg2.length();
 		@Pc(25) int[] local25 = new int[local17];
 		for (@Pc(27) int local27 = 0; local27 < local17; local27++) {

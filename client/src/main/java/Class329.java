@@ -84,7 +84,7 @@ public final class Class329 {
 		for (@Pc(9) int local9 = 0; local9 < arg1.length(); local9++) {
 			@Pc(16) int local16 = anIntArray679[arg1.charAt(local9)];
 			if (arg6) {
-				this.aClass23Array13[local16].method8204(arg3 + 1, arg4 + 1, 0, -16777216, 1);
+				this.aClass23Array13[local16].method8204(arg3 + 1, arg4 + 1, 0, 0xFF000000, 1);
 			}
 			this.aClass23Array13[local16].method8204(arg3, arg4, 0, local7, 1);
 			arg3 += this.anIntArray678[local16];

@@ -14,7 +14,7 @@ public final class Static292 {
 	public static int[] anIntArray387 = new int[1];
 
 	@OriginalMember(owner = "client!jea", name = "a", descriptor = "(ILclient!ha;IIIBI)V")
-	public static void method4611(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(6) int arg4) {
+	public static void method4611(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) int arg6) {
 		if ((Static26.aClass23_5 == null || Static63.aClass23_8 == null || Static261.aClass23_18 == null) && Static721.aClass332_128.method7588(Static337.anInt5581) && Static721.aClass332_128.method7588(Static176.anInt7555) && Static721.aClass332_128.method7588(Static282.anInt4432)) {
 			@Pc(46) Class409 local46 = Static735.method9389(Static721.aClass332_128, Static176.anInt7555, 0);
 			Static63.aClass23_8 = arg1.method7955(local46, true);
@@ -31,15 +31,15 @@ public final class Static292 {
 		}
 		@Pc(103) int local103 = (arg3 - Static261.aClass23_18.method8206() * 2) / Static26.aClass23_5.method8206();
 		for (@Pc(105) int local105 = 0; local105 < local103; local105++) {
-			Static26.aClass23_5.method8209(Static261.aClass23_18.method8206() + arg2 + Static26.aClass23_5.method8206() * local105, -Static26.aClass23_5.method8189() + arg4 + arg0);
+			Static26.aClass23_5.method8209(Static261.aClass23_18.method8206() + arg2 + Static26.aClass23_5.method8206() * local105, -Static26.aClass23_5.method8189() + arg6 + arg0);
 		}
-		@Pc(145) int local145 = (arg4 - Static261.aClass23_18.method8189() - 20) / Static63.aClass23_8.method8189();
+		@Pc(145) int local145 = (arg6 - arg4 - Static261.aClass23_18.method8189()) / Static63.aClass23_8.method8189();
 		for (@Pc(147) int local147 = 0; local147 < local145; local147++) {
-			Static63.aClass23_8.method8209(arg2, arg0 + Static63.aClass23_8.method8189() * local147 + 20);
-			Static542.aClass23_33.method8209(arg3 + arg2 - Static542.aClass23_33.method8206(), arg0 - -20 + Static63.aClass23_8.method8189() * local147);
+			Static63.aClass23_8.method8209(arg2, arg4 + arg0 + Static63.aClass23_8.method8189() * local147);
+			Static542.aClass23_33.method8209(arg3 + arg2 - Static542.aClass23_33.method8206(), arg0 - -arg4 + Static63.aClass23_8.method8189() * local147);
 		}
-		Static261.aClass23_18.method8209(arg2, arg0 + arg4 - Static261.aClass23_18.method8189());
-		Static561.aClass23_34.method8209(arg3 + arg2 - Static261.aClass23_18.method8206(), arg4 + (arg0 - Static261.aClass23_18.method8189()));
+		Static261.aClass23_18.method8209(arg2, arg0 + arg6 - Static261.aClass23_18.method8189());
+		Static561.aClass23_34.method8209(arg3 + arg2 - Static261.aClass23_18.method8206(), arg6 + (arg0 - Static261.aClass23_18.method8189()));
 	}
 
 	@OriginalMember(owner = "client!jea", name = "b", descriptor = "(IIIIIIII)V")

@@ -194,7 +194,7 @@ public final class Class14_Sub5 extends Class14 {
 		if (local18 <= 0 || local23 <= 0) {
 			return;
 		}
-		if ((arg3 & -16777216) == -16777216) {
+		if ((arg3 & 0xFF000000) == 0xFF000000) {
 			this.method8847(this.aByteArrayArray35[arg0], this.aClass19_Sub2_11.anIntArray319, arg3, local41, local33, local18, local23, local37, local39);
 		} else if ((arg3 & 0xFF000000) != 0) {
 			this.method8846(this.aByteArrayArray35[arg0], this.aClass19_Sub2_11.anIntArray319, arg3, local41, local33, local18, local23, local37, local39);
@@ -246,7 +246,7 @@ public final class Class14_Sub5 extends Class14 {
 		if (local28 <= 0 || local33 <= 0) {
 			return;
 		}
-		if ((arg3 & -16777216) == -16777216) {
+		if ((arg3 & 0xFF000000) == 0xFF000000) {
 			this.method8844(this.aByteArrayArray35[arg0], this.aClass19_Sub2_11.anIntArray319, arg3, local51, local43, local28, local33, local47, local49, arg1, arg2, this.anIntArray805[arg0], arg5, arg6, arg7);
 		} else {
 			this.method8845(this.aByteArrayArray35[arg0], this.aClass19_Sub2_11.anIntArray319, arg3, local51, local43, local28, local33, local47, local49, arg1, arg2, this.anIntArray805[arg0], arg5, arg6, arg7);

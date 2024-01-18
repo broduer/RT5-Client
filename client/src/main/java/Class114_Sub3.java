@@ -771,7 +771,7 @@ public final class Class114_Sub3 extends Class114 {
 				this.aClass221_1.anInt5744 = this.aByteArray96[arg0] & 0xFF;
 			}
 			if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-				local81 = -16777216;
+				local81 = 0xFF000000;
 				if (this.aByteArray96 != null) {
 					local81 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 				}
@@ -823,7 +823,7 @@ public final class Class114_Sub3 extends Class114 {
 			this.aClass221_1.anInt5744 = this.aByteArray96[arg0] & 0xFF;
 		}
 		if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-			local333 = -16777216;
+			local333 = 0xFF000000;
 			if (this.aByteArray96 != null) {
 				local333 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 			}
@@ -1456,7 +1456,7 @@ public final class Class114_Sub3 extends Class114 {
 				this.aClass221_1.anInt5744 = this.aByteArray96[arg0] & 0xFF;
 			}
 			if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-				local81 = -16777216;
+				local81 = 0xFF000000;
 				if (this.aByteArray96 != null) {
 					local81 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 				}
@@ -1508,7 +1508,7 @@ public final class Class114_Sub3 extends Class114 {
 			this.aClass221_1.anInt5744 = this.aByteArray96[arg0] & 0xFF;
 		}
 		if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-			local333 = -16777216;
+			local333 = 0xFF000000;
 			if (this.aByteArray96 != null) {
 				local333 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 			}
@@ -3087,7 +3087,7 @@ public final class Class114_Sub3 extends Class114 {
 		@Pc(9) short local9 = this.aShortArray120[arg0];
 		@Pc(14) short local14 = this.aShortArray126[arg0];
 		if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-			@Pc(181) int local181 = -16777216;
+			@Pc(181) int local181 = 0xFF000000;
 			if (this.aByteArray96 != null) {
 				local181 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 			}
@@ -3227,7 +3227,7 @@ public final class Class114_Sub3 extends Class114 {
 				this.aClass221_1.aBoolean434 = true;
 			}
 			if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-				local938 = -16777216;
+				local938 = 0xFF000000;
 				if (this.aByteArray96 != null) {
 					local938 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 				}
@@ -3261,7 +3261,7 @@ public final class Class114_Sub3 extends Class114 {
 				return;
 			}
 		}
-		local938 = -16777216;
+		local938 = 0xFF000000;
 		if (this.aByteArray96 != null) {
 			local938 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 		}
@@ -3446,7 +3446,7 @@ public final class Class114_Sub3 extends Class114 {
 				this.aClass221_1.aBoolean434 = true;
 			}
 			if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-				local938 = -16777216;
+				local938 = 0xFF000000;
 				if (this.aByteArray96 != null) {
 					local938 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 				}
@@ -3480,7 +3480,7 @@ public final class Class114_Sub3 extends Class114 {
 				return;
 			}
 		}
-		local938 = -16777216;
+		local938 = 0xFF000000;
 		if (this.aByteArray96 != null) {
 			local938 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 		}
@@ -4324,7 +4324,7 @@ public final class Class114_Sub3 extends Class114 {
 		@Pc(9) short local9 = this.aShortArray120[arg0];
 		@Pc(14) short local14 = this.aShortArray126[arg0];
 		if (this.aShortArray124 != null && this.aShortArray124[arg0] != -1) {
-			@Pc(181) int local181 = -16777216;
+			@Pc(181) int local181 = 0xFF000000;
 			if (this.aByteArray96 != null) {
 				local181 = 255 - (this.aByteArray96[arg0] & 0xFF) << 24;
 			}

@@ -35,7 +35,7 @@ public final class Static294 {
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(IIZIII)V")
 	public static void method4346(@OriginalArg(1) int arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
 		if (Static334.aClass293ArrayArrayArray1 == null) {
-			Static163.aClass19_17.method7978(arg2, arg3, arg0, arg4, -16777216);
+			Static163.aClass19_17.method7978(arg2, arg3, arg0, arg4, 0xFF000000);
 			return;
 		}
 		@Pc(19) boolean local19 = false;
@@ -47,7 +47,7 @@ public final class Static294 {
 			local19 = true;
 		}
 		if (local19) {
-			Static163.aClass19_17.method7978(arg2, arg3, arg0, arg4, -16777216);
+			Static163.aClass19_17.method7978(arg2, arg3, arg0, arg4, 0xFF000000);
 			return;
 		}
 		Static198.anInt3285++;
@@ -186,7 +186,7 @@ public final class Static294 {
 			Static426.aBoolean72 = false;
 		}
 		if (Static426.aBoolean72) {
-			Static163.aClass19_17.method7978(local155, local161, local159, local153, -16777216);
+			Static163.aClass19_17.method7978(local155, local161, local159, local153, 0xFF000000);
 			Static694.method9035(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1056), false, Static694.aClass383_13, Static437.aClass14_9);
 		}
 		Static501.method6723(false);

@@ -961,15 +961,9 @@ public final class Class19_Sub2 extends Class19 {
 		@Pc(34) int local34 = 50 - this.anInt4220;
 		@Pc(39) int local39 = 90 - this.anInt4220;
 		local6.aBoolean434 = local14 < 0 || local14 > local6.anInt5745 || local19 < 0 || local19 > local6.anInt5745 || local24 < 0 || local24 > local6.anInt5745;
-		if (255 == 255 && true) {
-			local6.anInt5744 = 0;
-			local6.aBoolean433 = false;
-			local6.method5148((float) local29, (float) local34, (float) local39, (float) local14, (float) local19, (float) local24, (float) 100, (float) 100, (float) 100, -65536, -65536, -65536);
-		} else {
-			local6.anInt5744 = 0;
-			local6.aBoolean433 = false;
-			local6.method5148((float) local29, (float) local34, (float) local39, (float) local14, (float) local19, (float) local24, (float) 100, (float) 100, (float) 100, -65536, -65536, -65536);
-		}
+		local6.anInt5744 = 0;
+		local6.aBoolean433 = false;
+		local6.method5148((float) local29, (float) local34, (float) local39, (float) local14, (float) local19, (float) local24, (float) 100, (float) 100, (float) 100, -65536, -65536, -65536);
 		local6.aBoolean436 = true;
 	}
 

@@ -370,7 +370,7 @@ public final class Class23_Sub3 extends Class23 {
 		for (@Pc(180) int local180 = 0; local180 < this.anInt6626; local180++) {
 			@Pc(187) int local187 = local180 * this.anInt6646;
 			for (@Pc(189) int local189 = 0; local189 < this.anInt6646; local189++) {
-				local22[local189 + local187] = local22[local187 + local189] & 0xFFFFFF | (local15[local189 + local187] == 0 ? 0 : -16777216);
+				local22[local189 + local187] = local22[local187 + local189] & 0xFFFFFF | (local15[local189 + local187] == 0 ? 0 : 0xFF000000);
 			}
 		}
 		this.method5921(0, 0, this.anInt6646, this.anInt6626, local22, this.anInt6646);

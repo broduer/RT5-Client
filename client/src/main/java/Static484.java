@@ -41,7 +41,7 @@ public final class Static484 {
 		}
 		@Pc(95) int[] local95 = new int[262144];
 		for (local25 = 0; local25 < local95.length; local25++) {
-			local95[local25] = -16777216;
+			local95[local25] = 0xFF000000;
 		}
 		Static12.aClass23_26 = arg0.method7953(512, 512, 512, local95);
 		Static104.method2033();
@@ -85,7 +85,7 @@ public final class Static484 {
 					local216 += 4;
 				}
 				arg0.KA(0, 0, Static200.anInt3311 * 4 + local214, local216 - -(Static200.anInt3311 * 4));
-				arg0.GA(-16777216);
+				arg0.GA(0xFF000000);
 				@Pc(284) int local284;
 				for (local278 = arg1; local278 <= 3; local278++) {
 					for (local281 = 0; local281 <= Static200.anInt3311; local281++) {

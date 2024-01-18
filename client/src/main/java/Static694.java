@@ -93,7 +93,7 @@ public final class Static694 {
 		} else {
 			local40 = arg3.method8748(null, arg1, 250);
 			local49 = arg3.method8746(arg1, null, 250) * 13;
-			arg0.aa(6, 6, local40 + 4 + 4, local49 + 4 + 4, -16777216, 0);
+			arg0.aa(6, 6, local40 + 4 + 4, local49 + 4 + 4, 0xFF000000, 0);
 			arg0.method7983(6, 6, local40 + 8, 4 + 4 + local49, -1, 0);
 			arg4.method8833(0, null, -1, arg1, null, null, 10, -1, 0, 1, 10, 1, 0, local40, local49);
 			Static585.method7677(local40 + 8, 6, local49 + 4 + 4, 6);

@@ -58,14 +58,14 @@ public final class Static546 {
 				for (@Pc(139) int local139 = 0; local139 < local128.length; local139++) {
 					@Pc(147) int local147 = local139 * local137 + 8;
 					arg0.KA(local147 + local7, local9, local147 + local7 + local137 - 8, local9 + 350);
-					Static437.aClass14_9.method8836(local7 + local147, -Static694.aClass383_13.anInt10063 + -2 + local9 + 350 + -Static644.anInt9634 + -((local119 + -Static213.anInt3481) * Static161.anInt2806), Static386.method5446(local128[local139]), -16777216, -1);
+					Static437.aClass14_9.method8836(local7 + local147, -Static694.aClass383_13.anInt10063 + -2 + local9 + 350 + -Static644.anInt9634 + -((local119 + -Static213.anInt3481) * Static161.anInt2806), Static386.method5446(local128[local139]), 0xFF000000, -1);
 				}
 			}
 		}
-		Static665.aClass14_12.method8841(Static680.anInt10317 + local7 - 25, "Build: 667", -1, -16777216, local9 + 350 - 20);
+		Static665.aClass14_12.method8841(Static680.anInt10317 + local7 - 25, "Build: 667", -1, 0xFF000000, local9 + 350 - 20);
 		arg0.KA(local7, local9, Static680.anInt10317 + local7, local9 + 350);
 		arg0.method7998(local9 + 350 - Static644.anInt9634, -1, local7, Static680.anInt10317);
-		Static180.aClass14_3.method8836(local7 + 10, local9 - (Static42.aClass383_4.anInt10063 + -350 + 1), "--> " + Static386.method5446(Static110.aString19), -16777216, -1);
+		Static180.aClass14_3.method8836(local7 + 10, local9 - (Static42.aClass383_4.anInt10063 + -350 + 1), "--> " + Static386.method5446(Static110.aString19), 0xFF000000, -1);
 		if (-29 <= -49) {
 			anInt8267 = -2;
 		}

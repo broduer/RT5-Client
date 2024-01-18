@@ -52,7 +52,7 @@ public final class Static646 {
 		}
 		Static163.aClass19_17.KA(arg1, arg2, arg1 + arg0.anInt3813, arg2 + arg0.anInt3756);
 		if (Static578.anInt8619 >= 3) {
-			Static163.aClass19_17.A(-16777216, local8.aClass1_1, arg1, arg2);
+			Static163.aClass19_17.A(0xFF000000, local8.aClass1_1, arg1, arg2);
 		} else {
 			Static12.aClass23_27.method8190((float) arg0.anInt3813 / 2.0F + (float) arg1, (float) arg0.anInt3756 / 2.0F + (float) arg2, ((int) -Static171.aFloat64 & 0x3FFF) << 2, local8.aClass1_1, arg1, arg2);
 		}

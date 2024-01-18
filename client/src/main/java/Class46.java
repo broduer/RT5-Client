@@ -84,7 +84,7 @@ public final class Class46 implements Runnable {
 					} else {
 						Static658.method8598(local29, this.aClass2_Sub7Array2);
 						if (Static242.aClass14_7 != null) {
-							Static242.aClass14_7.method8836(local29.anInt10720, local29.anInt10726, this.aClass304_1.aString97, -16777216, -256);
+							Static242.aClass14_7.method8836(local29.anInt10720, local29.anInt10726, this.aClass304_1.aString97, 0xFF000000, -256);
 						}
 					}
 				} else {

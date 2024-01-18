@@ -104,7 +104,7 @@ public final class Class101_Sub9 extends Class101 {
 		this.aClass36_6 = new Class36(super.aClass19_Sub3_42, 2);
 		this.aClass36_6.method1002(0);
 		super.aClass19_Sub3_42.method7021(1);
-		super.aClass19_Sub3_42.method6992(-16777216);
+		super.aClass19_Sub3_42.method6992(0xFF000000);
 		super.aClass19_Sub3_42.method7038(7681, 260);
 		super.aClass19_Sub3_42.method7036(0, 34166);
 		super.aClass19_Sub3_42.method7021(0);

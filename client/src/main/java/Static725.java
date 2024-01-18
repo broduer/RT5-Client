@@ -41,9 +41,6 @@ public final class Static725 {
 		for (@Pc(117) int local117 = 0; local117 < Static317.anInt5063; local117++) {
 			Static494.method6608(arg1, Static384.aClass75Array2[local117], arg0);
 		}
-		if (-20 != -20) {
-			anIntArray890 = null;
-		}
 		for (@Pc(149) int local149 = 0; local149 < Static444.anInt6772; local149++) {
 			Static494.method6608(arg1, Static607.aClass75Array4[local149], arg0);
 		}

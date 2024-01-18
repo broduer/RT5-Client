@@ -14,7 +14,7 @@ public final class Static532 {
 			for (local24 = 0; local24 < arg4; local24++) {
 				local34 = local24 * arg2 + arg0[local24];
 				for (local36 = 0; local36 < arg1[local24]; local36++) {
-					local73[local34++] = -16777216;
+					local73[local34++] = 0xFF000000;
 				}
 			}
 			return new Class1_Sub2(arg3, arg2, arg4, local73);
