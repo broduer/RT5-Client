@@ -32,7 +32,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 		super(arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, false, (byte) 0);
 		this.anInt7423 = arg0;
 		this.anInt7421 = arg11;
-		@Pc(36) Class229 local36 = Static23.aClass128_1.method2694(this.anInt7423);
+		@Pc(36) SpotAnimType local36 = client.spotanimTypeList.method2694(this.anInt7423);
 		@Pc(39) int local39 = local36.anInt5862;
 		if (local39 != -1) {
 			this.aClass152_8 = new Class152_Sub2(this, false);
@@ -60,7 +60,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!pja", name = "a", descriptor = "(IILclient!ha;I)Lclient!ka;")
 	private Class114 method6601(@OriginalArg(1) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2) {
-		@Pc(8) Class229 local8 = Static23.aClass128_1.method2694(arg0);
+		@Pc(8) SpotAnimType local8 = client.spotanimTypeList.method2694(arg0);
 		@Pc(22) Class178 local22 = Static706.aClass178Array3[super.aByte144];
 		@Pc(36) Class178 local36 = super.aByte143 < 3 ? Static706.aClass178Array3[super.aByte143 + 1] : null;
 		return this.aClass152_8 == null || this.aClass152_8.method9109() ? local8.method5256((byte) 2, true, super.anInt10722, null, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1) : local8.method5256((byte) 2, true, super.anInt10722, this.aClass152_8, local36, super.anInt10718, local22, arg2, super.anInt10719, arg1);
@@ -90,10 +90,7 @@ public final class Class8_Sub2_Sub1_Sub5 extends Class8_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!pja", name = "i", descriptor = "(I)Z")
 	@Override
-	public boolean method9297(@OriginalArg(0) int arg0) {
-		if (arg0 != 0) {
-			Static494.anInt7431 = 119;
-		}
+	public boolean method9297() {
 		return false;
 	}
 

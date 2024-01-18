@@ -57,7 +57,7 @@ public final class Static57 {
 	}
 
 	@OriginalMember(owner = "client!bt", name = "a", descriptor = "(IIIZILclient!sb;Z)V")
-	public static void method1225(@OriginalArg(1) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) Class332 arg2) {
+	public static void method1225(@OriginalArg(1) int arg0, @OriginalArg(4) int arg1, @OriginalArg(5) Js5 arg2) {
 		Static676.aClass332_121 = arg2;
 		Static497.aBoolean564 = false;
 		Static190.anInt3121 = 2;
@@ -90,7 +90,7 @@ public final class Static57 {
 		for (@Pc(28) int local28 = 0; local28 < local24; local28++) {
 			@Pc(35) Class8_Sub2_Sub1_Sub2_Sub1 local35 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local26[local28]];
 			if (local35.aString9 != null && local35.aString9.equalsIgnoreCase(arg0) && (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 == local35 && (Static717.anInt10851 & 0x10) != 0 || (Static717.anInt10851 & 0x8) != 0)) {
-				@Pc(75) Class2_Sub19 local75 = Static293.method4342(Static664.aClass347_115, Static405.aClass153_2.aClass186_1);
+				@Pc(75) Node_Sub19 local75 = Static293.method4342(Static664.aClass347_115, Static405.aClass153_2.aClass186_1);
 				local75.aClass2_Sub21_Sub2_1.method7369(local26[local28]);
 				local75.aClass2_Sub21_Sub2_1.method7385(Static450.anInt6840);
 				local75.aClass2_Sub21_Sub2_1.p2(Static162.anInt2808);
@@ -103,7 +103,7 @@ public final class Static57 {
 			}
 		}
 		if (!local22) {
-			Static67.method6105(Static32.aClass32_21.method877(client.lang) + arg0);
+			Static67.method6105(Static32.aClass32_21.getLocalization(client.lang) + arg0);
 		}
 		if (Static156.aBoolean223) {
 			Static470.method6391();

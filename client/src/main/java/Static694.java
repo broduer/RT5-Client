@@ -1,4 +1,3 @@
-import java.util.Random;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -19,28 +18,6 @@ public final class Static694 {
 
 	@OriginalMember(owner = "client!vv", name = "F", descriptor = "Lclient!fma;")
 	public static final Class131 aClass131_6 = new Class131();
-
-	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(IZ)[B")
-	public static byte[] method9034(@OriginalArg(0) int arg0) {
-		@Pc(17) Class2_Sub2_Sub7 local17 = (Class2_Sub2_Sub7) Static541.aClass363_4.method8349(arg0);
-		if (local17 == null) {
-			@Pc(22) byte[] local22 = new byte[512];
-			@Pc(28) Random local28 = new Random(arg0);
-			for (@Pc(30) int local30 = 0; local30 < 255; local30++) {
-				local22[local30] = (byte) local30;
-			}
-			for (@Pc(42) int local42 = 0; local42 < 255; local42++) {
-				@Pc(48) int local48 = 255 - local42;
-				@Pc(53) int local53 = Static623.method8333(local48, local28);
-				@Pc(57) byte local57 = local22[local53];
-				local22[local53] = local22[local48];
-				local22[local48] = local22[511 - local42] = local57;
-			}
-			local17 = new Class2_Sub2_Sub7(local22);
-			Static541.aClass363_4.method8348(local17, arg0);
-		}
-		return local17.aByteArray21;
-	}
 
 	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(Lclient!ha;Ljava/lang/String;ZLclient!ve;Lclient!da;I)V")
 	public static void renderLoadingText(@OriginalArg(0) Class19 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class383 arg3, @OriginalArg(4) Class14 arg4) {

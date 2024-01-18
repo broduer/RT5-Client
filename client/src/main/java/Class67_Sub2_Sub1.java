@@ -51,14 +51,14 @@ public final class Class67_Sub2_Sub1 extends Class67_Sub2 {
 			Static601.anIntArray705[0] = this.anInt10366;
 			Static601.anIntArray705[2] = this.anInt10363;
 			Static601.anIntArray705[3] = this.anInt10368;
-			@Pc(42) Interface4 local42 = this.aClass19_Sub1_22.anInterface4_10;
+			@Pc(42) TextureProvider local42 = this.aClass19_Sub1_22.anInterface4_10;
 			@Pc(44) boolean local44 = false;
 			@Pc(46) int local46 = 0;
 			for (@Pc(48) int local48 = 0; local48 < 6; local48++) {
 				if (!local42.method6821(Static601.anIntArray705[local48])) {
 					return null;
 				}
-				@Pc(71) Class118 local71 = local42.method6824(Static601.anIntArray705[local48]);
+				@Pc(71) Material local71 = local42.method6824(Static601.anIntArray705[local48]);
 				@Pc(79) int local79 = local71.aBoolean233 ? 64 : 128;
 				if (local79 > local46) {
 					local46 = local79;

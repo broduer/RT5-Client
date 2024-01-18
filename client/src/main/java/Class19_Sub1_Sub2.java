@@ -33,25 +33,25 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	private boolean aBoolean703;
 
 	@OriginalMember(owner = "client!tca", name = "jh", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_60 = new Class341();
+	private final LinkedList aClass341_60 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "oi", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_61 = new Class341();
+	private final LinkedList aClass341_61 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "oh", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_62 = new Class341();
+	private final LinkedList aClass341_62 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Gi", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_63 = new Class341();
+	private final LinkedList aClass341_63 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Ji", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_64 = new Class341();
+	private final LinkedList aClass341_64 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "ii", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_65 = new Class341();
+	private final LinkedList aClass341_65 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "Ng", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_66 = new Class341();
+	private final LinkedList aClass341_66 = new LinkedList();
 
 	@OriginalMember(owner = "client!tca", name = "ni", descriptor = "[Lclient!gla;")
 	private final Class72_Sub1[] aClass72_Sub1Array1 = new Class72_Sub1[16];
@@ -102,7 +102,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public final int anInt9303;
 
 	@OriginalMember(owner = "client!tca", name = "<init>", descriptor = "(Lclient!jaggl/OpenGL;Ljava/awt/Canvas;JLclient!d;Lclient!sb;I)V")
-	public Class19_Sub1_Sub2(@OriginalArg(0) OpenGL arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(2) long arg2, @OriginalArg(3) Interface4 arg3, @OriginalArg(4) Class332 arg4, @OriginalArg(5) int arg5) {
+	public Class19_Sub1_Sub2(@OriginalArg(0) OpenGL arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(2) long arg2, @OriginalArg(3) TextureProvider arg3, @OriginalArg(4) Js5 arg4, @OriginalArg(5) int arg5) {
 		super(arg1, Long.valueOf(arg2), arg3, arg4, arg5, 1);
 		try {
 			this.anOpenGL2 = arg0;
@@ -321,9 +321,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "b", descriptor = "(IIZ)V")
 	public synchronized void method8167(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(20) Class2_Sub38 local20 = new Class2_Sub38(arg0);
+		@Pc(20) Node_Sub38 local20 = new Node_Sub38(arg0);
 		local20.key = arg1;
-		this.aClass341_62.method7718(local20);
+		this.aClass341_62.insertBefore(local20);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "i", descriptor = "(II)Lclient!rea;")
@@ -451,9 +451,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public synchronized void method7984(@OriginalArg(0) int arg0) {
 		@Pc(7) int local7 = 0;
 		@Pc(11) int local11 = arg0 & Integer.MAX_VALUE;
-		@Pc(19) Class2_Sub38 local19;
-		while (!this.aClass341_61.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_61.method7712();
+		@Pc(19) Node_Sub38 local19;
+		while (!this.aClass341_61.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_61.removeHead();
 			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9167 -= local19.anInt6399;
 			if (local7 == 1000) {
@@ -465,8 +465,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteBuffersARB(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass341_62.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_62.method7712();
+		while (!this.aClass341_62.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_62.removeHead();
 			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9171 -= local19.anInt6399;
 			if (local7 == 1000) {
@@ -478,8 +478,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteTextures(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass341_63.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_63.method7712();
+		while (!this.aClass341_63.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_63.removeHead();
 			Static382.anIntArray465[local7++] = local19.anInt6399;
 			if (local7 == 1000) {
 				OpenGL.glDeleteFramebuffersEXT(local7, Static382.anIntArray465, 0);
@@ -490,8 +490,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			OpenGL.glDeleteFramebuffersEXT(local7, Static382.anIntArray465, 0);
 			local7 = 0;
 		}
-		while (!this.aClass341_64.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_64.method7712();
+		while (!this.aClass341_64.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_64.removeHead();
 			Static382.anIntArray465[local7++] = (int) local19.key;
 			super.anInt9169 -= local19.anInt6399;
 			if (local7 == 1000) {
@@ -502,21 +502,21 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		if (local7 > 0) {
 			OpenGL.glDeleteRenderbuffersEXT(local7, Static382.anIntArray465, 0);
 		}
-		while (!this.aClass341_60.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_60.method7712();
+		while (!this.aClass341_60.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_60.removeHead();
 			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		@Pc(227) Node local227;
-		while (!this.aClass341_65.method7709()) {
-			local227 = this.aClass341_65.method7712();
+		while (!this.aClass341_65.isEmpty()) {
+			local227 = this.aClass341_65.removeHead();
 			OpenGL.glDeleteProgramARB((int) local227.key);
 		}
-		while (!this.aClass341_66.method7709()) {
-			local227 = this.aClass341_66.method7712();
+		while (!this.aClass341_66.isEmpty()) {
+			local227 = this.aClass341_66.removeHead();
 			OpenGL.glDeleteObjectARB(local227.key);
 		}
-		while (!this.aClass341_60.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_60.method7712();
+		while (!this.aClass341_60.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_60.removeHead();
 			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.currentTimeMillis()) {
@@ -536,7 +536,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public synchronized void method8169(@OriginalArg(0) int arg0) {
 		@Pc(7) Node local7 = new Node();
 		local7.key = arg0;
-		this.aClass341_65.method7718(local7);
+		this.aClass341_65.insertBefore(local7);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "GA", descriptor = "(I)V")
@@ -666,9 +666,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(BII)V")
 	public synchronized void method8171(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(13) Class2_Sub38 local13 = new Class2_Sub38(arg1);
+		@Pc(13) Node_Sub38 local13 = new Node_Sub38(arg1);
 		local13.key = arg0;
-		this.aClass341_61.method7718(local13);
+		this.aClass341_61.insertBefore(local13);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "d", descriptor = "()V")
@@ -685,7 +685,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public synchronized void method8172(@OriginalArg(1) long arg0) {
 		@Pc(7) Node local7 = new Node();
 		local7.key = arg0;
-		this.aClass341_66.method7718(local7);
+		this.aClass341_66.insertBefore(local7);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "j", descriptor = "()V")
@@ -1118,7 +1118,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		this.method8103();
 		@Pc(18) int local18;
 		for (local18 = 0; super.anInt9203 > local18; local18++) {
-			@Pc(25) Class2_Sub7 local25 = super.aClass2_Sub7Array6[local18];
+			@Pc(25) Node_Sub7 local25 = super.aClass2_Sub7Array6[local18];
 			@Pc(29) int local29 = local25.method8438();
 			@Pc(34) int local34 = local18 + 16386;
 			@Pc(40) float local40 = local25.method8435() / 255.0F;

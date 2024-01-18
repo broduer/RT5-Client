@@ -60,7 +60,7 @@ public final class Class375 {
 		if (local27 <= 0) {
 			this.aClass93_Sub2_6 = null;
 		} else {
-			@Pc(103) Packet local103 = new Packet(local27 * 2);
+			@Pc(103) Buffer local103 = new Buffer(local27 * 2);
 			@Pc(123) int local123;
 			@Pc(131) short[] local131;
 			@Pc(135) int local135;

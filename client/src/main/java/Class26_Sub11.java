@@ -55,13 +55,13 @@ public final class Class26_Sub11 extends Class26 {
 	}
 
 	@OriginalMember(owner = "client!tj", name = "<init>", descriptor = "(Lclient!tca;Lclient!sb;)V")
-	public Class26_Sub11(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Class332 arg1) {
+	public Class26_Sub11(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Js5 arg1) {
 		super(arg0);
 		if (arg1 != null && arg0.aBoolean709) {
-			this.aClass135_2 = Static294.method4345(arg0, arg1.method7607("gl", "uw_ground_unlit"));
-			this.aClass135_3 = Static294.method4345(arg0, arg1.method7607("gl", "uw_ground_lit"));
-			this.aClass135_5 = Static294.method4345(arg0, arg1.method7607("gl", "uw_model_unlit"));
-			this.aClass135_4 = Static294.method4345(arg0, arg1.method7607("gl", "uw_model_lit"));
+			this.aClass135_2 = Static294.method4345(arg0, arg1.fetchFile("gl", "uw_ground_unlit"));
+			this.aClass135_3 = Static294.method4345(arg0, arg1.fetchFile("gl", "uw_ground_lit"));
+			this.aClass135_5 = Static294.method4345(arg0, arg1.fetchFile("gl", "uw_model_unlit"));
+			this.aClass135_4 = Static294.method4345(arg0, arg1.fetchFile("gl", "uw_model_lit"));
 			if (this.aClass135_4 != null & this.aClass135_2 != null & this.aClass135_3 != null & this.aClass135_5 != null) {
 				this.anInterface18_6 = super.aClass19_Sub1_21.method8041(false, 1, 2, new int[] { 0, -1 });
 				this.anInterface18_6.method9059(false, false);

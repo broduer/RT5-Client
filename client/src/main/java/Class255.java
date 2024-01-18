@@ -10,7 +10,7 @@ public final class Class255 {
 	public boolean aBoolean469 = false;
 
 	@OriginalMember(owner = "client!nb", name = "o", descriptor = "Lclient!qda;")
-	public Class2_Sub44 aClass2_Sub44_1 = null;
+	public Node_Sub44 aClass2_Sub44_1 = null;
 
 	@OriginalMember(owner = "client!nb", name = "e", descriptor = "Z")
 	public boolean aBoolean470 = false;
@@ -40,11 +40,11 @@ public final class Class255 {
 	public byte[] aByteArray70;
 
 	@OriginalMember(owner = "client!nb", name = "<init>", descriptor = "([BLclient!qda;)V")
-	public Class255(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Class2_Sub44 arg1) {
+	public Class255(@OriginalArg(0) byte[] arg0, @OriginalArg(1) Node_Sub44 arg1) {
 		this.aClass2_Sub44_1 = arg1;
 		try {
-			@Pc(24) Packet local24 = new Packet(arg0);
-			@Pc(29) Packet local29 = new Packet(arg0);
+			@Pc(24) Buffer local24 = new Buffer(arg0);
+			@Pc(29) Buffer local29 = new Buffer(arg0);
 			local24.g1();
 			local24.pos += 2;
 			@Pc(43) int local43 = local24.g1();

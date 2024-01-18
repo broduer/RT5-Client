@@ -12,7 +12,7 @@ public final class Static611 {
 
 	@OriginalMember(owner = "client!tfa", name = "a", descriptor = "(II)V")
 	public static void method8234(@OriginalArg(1) int arg0) {
-		@Pc(23) Class2_Sub2_Sub2 local23 = Static440.method5970(3, arg0);
+		@Pc(23) SecondaryNode_Sub2 local23 = Static440.method5970(3, arg0);
 		local23.method205();
 	}
 
@@ -41,7 +41,7 @@ public final class Static611 {
 	}
 
 	@OriginalMember(owner = "client!tfa", name = "a", descriptor = "(IIILclient!sb;ZI)V")
-	public static void method8236(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class332 arg2) {
+	public static void method8236(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Js5 arg2) {
 		Static184.method2797(0L, arg0, arg1, arg2);
 	}
 }

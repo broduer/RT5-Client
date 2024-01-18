@@ -9,10 +9,10 @@ public final class Class115 implements Interface15 {
 	private final String aString29;
 
 	@OriginalMember(owner = "client!ev", name = "c", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_30;
+	private final Js5 aClass332_30;
 
 	@OriginalMember(owner = "client!ev", name = "<init>", descriptor = "(Lclient!sb;Ljava/lang/String;)V")
-	public Class115(@OriginalArg(0) Class332 arg0, @OriginalArg(1) String arg1) {
+	public Class115(@OriginalArg(0) Js5 arg0, @OriginalArg(1) String arg1) {
 		this.aString29 = arg1;
 		this.aClass332_30 = arg0;
 	}

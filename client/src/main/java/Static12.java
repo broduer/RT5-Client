@@ -25,7 +25,7 @@ public final class Static12 {
 	}
 
 	@OriginalMember(owner = "client!ah", name = "a", descriptor = "(Lclient!ge;I)V")
-	public static void method5171(@OriginalArg(0) Packet arg0) {
+	public static void method5171(@OriginalArg(0) Buffer arg0) {
 		while (true) {
 			@Pc(20) int local20 = arg0.g1();
 			if (local20 == 0) {

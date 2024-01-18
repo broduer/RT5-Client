@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static390 {
 
 	@OriginalMember(owner = "client!mda", name = "P", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_5;
+	public static WorldMapFont aClass329_5;
 
 	@OriginalMember(owner = "client!mda", name = "x", descriptor = "[I")
 	public static final int[] anIntArray476 = new int[] { 1, 4, 1, 2, 1 };
@@ -51,7 +51,7 @@ public final class Static390 {
 	}
 
 	@OriginalMember(owner = "client!mda", name = "a", descriptor = "(ZI)Lclient!rt;")
-	public static Class329 method5500(@OriginalArg(1) int arg0) {
+	public static WorldMapFont method5500(@OriginalArg(1) int arg0) {
 		if (arg0 == 0) {
 			if ((double) Static30.aFloat105 == 3.0D) {
 				return Static559.aClass329_7;
@@ -97,15 +97,15 @@ public final class Static390 {
 
 	@OriginalMember(owner = "client!mda", name = "a", descriptor = "(IZIZI)I")
 	public static int method5501(@OriginalArg(1) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(4) int arg2) {
-		@Pc(18) Class2_Sub22 local18 = Static556.method7310(arg2, false);
+		@Pc(18) Node_Sub22 local18 = Static556.method7310(arg2, false);
 		if (local18 == null) {
 			return 0;
 		}
 		@Pc(25) int local25 = 0;
 		for (@Pc(27) int local27 = 0; local27 < local18.anIntArray278.length; local27++) {
-			if (local18.anIntArray278[local27] >= 0 && local18.anIntArray278[local27] < Static419.aClass112_1.anInt2679) {
-				@Pc(54) Class384 local54 = Static419.aClass112_1.method2486(local18.anIntArray278[local27]);
-				@Pc(64) int local64 = local54.method8801(arg1, Static386.aClass49_2.method1161(arg1).anInt7532);
+			if (local18.anIntArray278[local27] >= 0 && local18.anIntArray278[local27] < client.objTypeList.anInt2679) {
+				@Pc(54) ObjType local54 = client.objTypeList.get(local18.anIntArray278[local27]);
+				@Pc(64) int local64 = local54.method8801(arg1, client.paramTypeList.method1161(arg1).anInt7532);
 				if (arg0) {
 					local25 += local64 * local18.anIntArray279[local27];
 				} else {

@@ -26,7 +26,7 @@ public final class Static115 {
 			return;
 		}
 		if (arg0 != -1) {
-			@Pc(28) Class391 local28 = Static354.aClass269_1.method5980(arg0);
+			@Pc(28) CursorType local28 = client.cursorTypeList.method5980(arg0);
 			@Pc(32) Class409 local32 = local28.method8941();
 			if (local32 == null) {
 				arg0 = -1;

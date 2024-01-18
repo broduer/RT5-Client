@@ -102,7 +102,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 		this.anInt708 = arg10;
 		this.anInt707 = arg8;
 		this.anInt711 = arg9;
-		@Pc(82) int local82 = Static23.aClass128_1.method2694(this.anInt718).anInt5862;
+		@Pc(82) int local82 = client.spotanimTypeList.method2694(this.anInt718).anInt5862;
 		this.aClass152_1 = new Class152_Sub2(this, false);
 		this.aClass152_1.method9120(true, local82);
 	}
@@ -180,7 +180,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(ILclient!ha;I)Lclient!ka;")
 	private Class114 method814(@OriginalArg(0) int arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) int arg2) {
-		@Pc(17) Class229 local17 = Static23.aClass128_1.method2694(this.anInt718);
+		@Pc(17) SpotAnimType local17 = client.spotanimTypeList.method2694(this.anInt718);
 		return local17.method5259(this.aClass152_1, (byte) 2, arg0, arg1);
 	}
 
@@ -216,7 +216,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 				}
 			} else {
 				local35 = this.anInt708 - 1;
-				@Pc(58) Class2_Sub45 local58 = (Class2_Sub45) Static18.aClass28_2.method738(local35);
+				@Pc(58) Node_Sub45 local58 = (Node_Sub45) Static18.aClass28_2.get(local35);
 				if (local58 != null) {
 					local21 = local58.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				}
@@ -231,7 +231,7 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 		if (this.anInt697 < 0) {
 			return;
 		}
-		@Pc(105) Class291 local105 = local21.method9324();
+		@Pc(105) BasType local105 = local21.method9324();
 		@Pc(107) int local107 = 0;
 		@Pc(109) int local109 = 0;
 		if (local105.anIntArrayArray181 != null && local105.anIntArrayArray181[this.anInt697] != null) {
@@ -249,8 +249,8 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 				local187 = local21.anIntArray877[this.anInt697];
 			}
 			@Pc(213) int local213 = local187 - local185 & 0x3FFF;
-			@Pc(217) int local217 = Class363.anIntArray741[local213];
-			@Pc(221) int local221 = Class363.anIntArray740[local213];
+			@Pc(217) int local217 = Class114_Sub1.anIntArray741[local213];
+			@Pc(221) int local221 = Class114_Sub1.anIntArray740[local213];
 			@Pc(232) int local232 = local217 * local109 + local221 * local107 >> 14;
 			local109 = local109 * local221 - local217 * local107 >> 14;
 			super.anInt10722 += local109;
@@ -287,8 +287,8 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 
 	@OriginalMember(owner = "client!b", name = "i", descriptor = "(I)Z")
 	@Override
-	public boolean method9297(@OriginalArg(0) int arg0) {
-		return arg0 != 0;
+	public boolean method9297() {
+		return false;
 	}
 
 	@OriginalMember(owner = "client!b", name = "d", descriptor = "(Lclient!ha;I)V")

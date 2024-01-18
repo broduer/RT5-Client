@@ -6,7 +6,7 @@ public final class Static133 {
 	public static float aFloat63;
 
 	@OriginalMember(owner = "client!ed", name = "g", descriptor = "Lclient!sia;")
-	public static final Class341 aClass341_13 = new Class341();
+	public static final LinkedList aClass341_13 = new LinkedList();
 
 	@OriginalMember(owner = "client!ed", name = "d", descriptor = "Lclient!ss;")
 	public static final ClientProt aClass347_26 = new ClientProt(89, 4);

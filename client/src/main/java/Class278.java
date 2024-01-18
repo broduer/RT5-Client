@@ -14,10 +14,10 @@ public final class Class278 {
 	private Class93_Sub2 aClass93_Sub2_4;
 
 	@OriginalMember(owner = "client!oia", name = "i", descriptor = "Lclient!ut;")
-	private Class2_Sub2_Sub19 aClass2_Sub2_Sub19_1;
+	private SecondaryNode_Sub19 aClass2_Sub2_Sub19_1;
 
 	@OriginalMember(owner = "client!oia", name = "F", descriptor = "Lclient!ut;")
-	private Class2_Sub2_Sub19 aClass2_Sub2_Sub19_2;
+	private SecondaryNode_Sub19 aClass2_Sub2_Sub19_2;
 
 	@OriginalMember(owner = "client!oia", name = "C", descriptor = "I")
 	private int anInt6965 = 1;
@@ -32,7 +32,7 @@ public final class Class278 {
 	private int anInt6963 = 0;
 
 	@OriginalMember(owner = "client!oia", name = "l", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_39 = new Class341();
+	private final LinkedList aClass341_39 = new LinkedList();
 
 	@OriginalMember(owner = "client!oia", name = "m", descriptor = "[Lclient!rq;")
 	private Class93_Sub2[] aClass93_Sub2Array2 = new Class93_Sub2[2];
@@ -94,12 +94,12 @@ public final class Class278 {
 				this.aClass93_Sub2_4 = null;
 			}
 			if (this.aClass408_3 != null) {
-				this.aClass2_Sub2_Sub19_1 = new Class2_Sub2_Sub19(this.aClass19_Sub3_32, 6402, this.anInt6965, this.anInt6964, this.aClass19_Sub3_32.anInt8009);
+				this.aClass2_Sub2_Sub19_1 = new SecondaryNode_Sub19(this.aClass19_Sub3_32, 6402, this.anInt6965, this.anInt6964, this.aClass19_Sub3_32.anInt8009);
 			}
 			if (this.aBoolean528) {
 				this.aClass93_Sub2_4 = new Class93_Sub2(this.aClass19_Sub3_32, 34037, 6402, this.anInt6965, this.anInt6964);
 			} else if (this.aClass2_Sub2_Sub19_1 == null) {
-				this.aClass2_Sub2_Sub19_1 = new Class2_Sub2_Sub19(this.aClass19_Sub3_32, 6402, this.anInt6965, this.anInt6964);
+				this.aClass2_Sub2_Sub19_1 = new SecondaryNode_Sub19(this.aClass19_Sub3_32, 6402, this.anInt6965, this.anInt6964);
 			}
 			this.aBoolean525 = true;
 			this.aBoolean524 = true;
@@ -119,7 +119,7 @@ public final class Class278 {
 				this.aClass93_Sub2Array2[1] = null;
 			}
 			if (this.aClass408_3 != null) {
-				this.aClass2_Sub2_Sub19_2 = new Class2_Sub2_Sub19(this.aClass19_Sub3_32, this.anInt6976, this.anInt6965, this.anInt6964, this.aClass19_Sub3_32.anInt8009);
+				this.aClass2_Sub2_Sub19_2 = new SecondaryNode_Sub19(this.aClass19_Sub3_32, this.anInt6976, this.anInt6965, this.anInt6964, this.aClass19_Sub3_32.anInt8009);
 			}
 			this.aClass93_Sub2Array2[0] = new Class93_Sub2(this.aClass19_Sub3_32, 34037, this.anInt6976, this.anInt6965, this.anInt6964);
 			this.aClass93_Sub2Array2[1] = this.anInt6975 <= 1 ? null : new Class93_Sub2(this.aClass19_Sub3_32, 34037, this.anInt6976, this.anInt6965, this.anInt6964);
@@ -198,12 +198,12 @@ public final class Class278 {
 		this.aClass19_Sub3_32.la();
 		@Pc(90) int local90 = 0;
 		@Pc(99) int local99 = 1;
-		@Pc(115) Class2_Sub31 local115;
-		for (@Pc(105) Class2_Sub31 local105 = (Class2_Sub31) this.aClass341_39.method7706(65280); local105 != null; local105 = local115) {
-			local115 = (Class2_Sub31) this.aClass341_39.method7713();
-			@Pc(119) int local119 = local105.method4612();
+		@Pc(115) PostProcessor local115;
+		for (@Pc(105) PostProcessor local105 = (PostProcessor) this.aClass341_39.head(); local105 != null; local105 = local115) {
+			local115 = (PostProcessor) this.aClass341_39.next();
+			@Pc(119) int local119 = local105.getColorAttachments();
 			for (@Pc(121) int local121 = 0; local121 < local119; local121++) {
-				local105.method4618(this.aClass93_Sub2_4, this.aClass93_Sub2Array2[local90], local121);
+				local105.preProcess(this.aClass93_Sub2_4, this.aClass93_Sub2Array2[local90], local121);
 				if (local115 == null && local119 - 1 == local121) {
 					this.aClass19_Sub3_32.method7000(this.aClass408_4);
 					this.aClass19_Sub3_32.method7029(0, 0);
@@ -238,7 +238,7 @@ public final class Class278 {
 					OpenGL.glVertex2i(this.anInt6965, 0);
 					OpenGL.glEnd();
 				}
-				local105.method4614(local121);
+				local105.postProcess(local121);
 				local90 = local90 + 1 & 0x1;
 				local99 = local99 + 1 & 0x1;
 			}
@@ -247,16 +247,16 @@ public final class Class278 {
 	}
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "(Lclient!jea;B)Z")
-	public boolean method6253(@OriginalArg(0) Class2_Sub31 arg0) {
+	public boolean method6253(@OriginalArg(0) PostProcessor arg0) {
 		if (this.aClass408_5 != null) {
-			if (arg0.method4616() || arg0.method4624()) {
-				this.aClass341_39.method7718(arg0);
+			if (arg0.isInitialised() || arg0.method4624()) {
+				this.aClass341_39.insertBefore(arg0);
 				this.method6254();
 				if (this.method6251()) {
 					if (this.anInt6965 != -1 && this.anInt6964 != -1) {
-						arg0.method4621(this.anInt6965, this.anInt6964);
+						arg0.setSize(this.anInt6965, this.anInt6964);
 					}
-					arg0.aBoolean387 = true;
+					arg0.enabled = true;
 					return true;
 				}
 			}
@@ -271,12 +271,12 @@ public final class Class278 {
 		@Pc(15) int local15 = 0;
 		@Pc(17) int local17 = 0;
 		@Pc(32) int local32;
-		for (@Pc(25) Class2_Sub31 local25 = (Class2_Sub31) this.aClass341_39.method7706(65280); local25 != null; local25 = (Class2_Sub31) this.aClass341_39.method7713()) {
-			local32 = local25.method4619();
+		for (@Pc(25) PostProcessor local25 = (PostProcessor) this.aClass341_39.head(); local25 != null; local25 = (PostProcessor) this.aClass341_39.next()) {
+			local32 = local25.getColorDepth();
 			if (local15 < local32) {
 				local15 = local32;
 			}
-			local17 += local25.method4612();
+			local17 += local25.getColorAttachments();
 			local13 |= local25.method4620();
 		}
 		if (local15 == 2) {
@@ -314,9 +314,9 @@ public final class Class278 {
 		this.aClass408_5 = this.aClass408_3 = this.aClass408_4 = null;
 		this.aClass93_Sub2Array2 = null;
 		this.aClass93_Sub2_4 = null;
-		if (!this.aClass341_39.method7709()) {
-			for (@Pc(41) Node local41 = this.aClass341_39.method7706(65280); local41 != this.aClass341_39.aClass2_271; local41 = local41.next) {
-				((Class2_Sub31) local41).method4615();
+		if (!this.aClass341_39.isEmpty()) {
+			for (@Pc(41) Node local41 = this.aClass341_39.head(); local41 != this.aClass341_39.sentinel; local41 = local41.next) {
+				((PostProcessor) local41).method4615();
 			}
 		}
 		this.anInt6965 = this.anInt6964 = 1;
@@ -324,14 +324,14 @@ public final class Class278 {
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "(IIIII)Z")
 	public boolean method6257(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		if (this.aClass408_5 == null || this.aClass341_39.method7709()) {
+		if (this.aClass408_5 == null || this.aClass341_39.isEmpty()) {
 			return false;
 		}
 		if (arg0 != this.anInt6965 || arg2 != this.anInt6964) {
 			this.anInt6965 = arg0;
 			this.anInt6964 = arg2;
-			for (@Pc(43) Node local43 = this.aClass341_39.method7706(65280); local43 != this.aClass341_39.aClass2_271; local43 = local43.next) {
-				((Class2_Sub31) local43).method4621(this.anInt6965, this.anInt6964);
+			for (@Pc(43) Node local43 = this.aClass341_39.head(); local43 != this.aClass341_39.sentinel; local43 = local43.next) {
+				((PostProcessor) local43).setSize(this.anInt6965, this.anInt6964);
 			}
 			this.aBoolean526 = true;
 			this.aBoolean527 = true;
@@ -350,8 +350,8 @@ public final class Class278 {
 	}
 
 	@OriginalMember(owner = "client!oia", name = "a", descriptor = "(ILclient!jea;)V")
-	public void method6258(@OriginalArg(1) Class2_Sub31 arg0) {
-		arg0.aBoolean387 = false;
+	public void method6258(@OriginalArg(1) PostProcessor arg0) {
+		arg0.enabled = false;
 		arg0.method4615();
 		arg0.unlink();
 		this.method6254();

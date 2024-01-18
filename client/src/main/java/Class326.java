@@ -30,7 +30,7 @@ public final class Class326 implements Interface24 {
 	@OriginalMember(owner = "client!rla", name = "a", descriptor = "(I)J")
 	@Override
 	public long method7440() {
-		@Pc(5) long[] local5 = Class2_Sub2_Sub14.aLongArray21;
+		@Pc(5) long[] local5 = Buffer.aLongArray21;
 		@Pc(7) long local7 = -1L;
 		@Pc(22) long local22 = local5[(int) ((local7 ^ (long) this.anInt8456) & 0xFFL)] ^ local7 >>> 8;
 		@Pc(39) long local39 = local22 >>> 8 ^ local5[(int) ((local22 ^ (long) (this.anInt8457 >> 8)) & 0xFFL)];

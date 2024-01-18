@@ -11,8 +11,8 @@ public final class Static89 {
 	public static final Class155 aClass155_9 = new Class155(2);
 
 	@OriginalMember(owner = "client!cp", name = "a", descriptor = "(ILclient!ca;IILclient!wj;Lclient!c;BI)V")
-	public static void method1714(@OriginalArg(0) int arg0, @OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class8_Sub2_Sub1_Sub2_Sub2 arg4, @OriginalArg(5) Class54 arg5, @OriginalArg(7) int arg6) {
-		@Pc(7) Class2_Sub51 local7 = new Class2_Sub51();
+	public static void method1714(@OriginalArg(0) int arg0, @OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class8_Sub2_Sub1_Sub2_Sub2 arg4, @OriginalArg(5) LocType arg5, @OriginalArg(7) int arg6) {
+		@Pc(7) Node_Sub51 local7 = new Node_Sub51();
 		local7.anInt9376 = arg0;
 		local7.anInt9383 = arg2 << 9;
 		local7.anInt9378 = arg3 << 9;
@@ -44,7 +44,7 @@ public final class Static89 {
 			if (local7.anIntArray718 != null) {
 				local7.anInt9377 = (int) ((double) (local7.anInt9380 - local7.anInt9391) * Math.random()) + local7.anInt9391;
 			}
-			Static460.aClass341_40.method7718(local7);
+			Static460.aClass341_40.insertBefore(local7);
 			return;
 		}
 		if (arg4 != null) {
@@ -65,7 +65,7 @@ public final class Static89 {
 				local7.anInt9382 = local37.anInt6762 << 9;
 				local7.anInt9386 = local37.anInt6756;
 			}
-			Static717.aClass341_81.method7718(local7);
+			Static717.aClass341_81.insertBefore(local7);
 			return;
 		}
 		if (arg1 == null) {
@@ -81,7 +81,7 @@ public final class Static89 {
 		local7.anInt9384 = arg1.anInt1467;
 		local7.anInt9381 = 0;
 		local7.aBoolean715 = arg1.aBoolean126;
-		Static113.aClass28_12.method735(arg1.anInt10768, local7);
+		Static113.aClass28_12.put(arg1.anInt10768, local7);
 		return;
 	}
 

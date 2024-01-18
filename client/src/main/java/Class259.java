@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class259 {
 
 	@OriginalMember(owner = "client!nfa", name = "c", descriptor = "Lclient!rw;")
-	public Class2_Sub2_Sub18 aClass2_Sub2_Sub18_1;
+	public SecondaryNode_Sub18 aClass2_Sub2_Sub18_1;
 
 	@OriginalMember(owner = "client!nfa", name = "f", descriptor = "I")
 	public int anInt6468;
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "Lclient!rw;")
-	public Class2_Sub2_Sub18 aClass2_Sub2_Sub18_2;
+	public SecondaryNode_Sub18 aClass2_Sub2_Sub18_2;
 
 	@OriginalMember(owner = "client!nfa", name = "k", descriptor = "I")
 	public int anInt6470;
@@ -24,7 +24,7 @@ public final class Class259 {
 	public boolean aBoolean481 = false;
 
 	@OriginalMember(owner = "client!nfa", name = "a", descriptor = "(Lclient!bp;BLclient!cka;II[I)Z")
-	public boolean method5776(@OriginalArg(0) Class50 arg0, @OriginalArg(2) Class69 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4) {
+	public boolean method5776(@OriginalArg(0) SeqTypeList arg0, @OriginalArg(2) SeqType arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int[] arg4) {
 		if (this.aBoolean481) {
 			return true;
 		} else if (arg4.length <= arg3) {

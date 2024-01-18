@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static540 {
 
-	@OriginalMember(owner = "client!r", name = "z", descriptor = "Lclient!dh;")
-	public static Class79 aClass79_6;
-
 	@OriginalMember(owner = "client!r", name = "t", descriptor = "[I")
 	public static final int[] anIntArray594 = new int[] { 7, 8, 9, 10, 11, 12, 13, 15 };
 
@@ -37,7 +34,7 @@ public final class Static540 {
 
 	@OriginalMember(owner = "client!r", name = "a", descriptor = "(IBI)V")
 	public static void method6544(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5970(1, arg1);
+		@Pc(16) SecondaryNode_Sub2 local16 = Static440.method5970(1, arg1);
 		local16.method202();
 		local16.anInt197 = arg0;
 	}

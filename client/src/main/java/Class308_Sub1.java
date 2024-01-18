@@ -11,12 +11,12 @@ public final class Class308_Sub1 extends Class308 {
 
 	@OriginalMember(owner = "client!taa", name = "<init>", descriptor = "(IIIZ)V")
 	public Class308_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) {
-		super(arg0, arg1, arg2, arg3, Static467.aClass96_3, Static540.aClass79_6);
+		super(arg0, arg1, arg2, arg3, client.floTypeList, client.fluTypeList);
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(III[Lclient!eq;Lclient!ha;[B)V")
 	public void method7899(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class110[] arg2, @OriginalArg(4) Class19 arg3, @OriginalArg(5) byte[] arg4) {
-		@Pc(8) Packet local8 = new Packet(arg4);
+		@Pc(8) Buffer local8 = new Buffer(arg4);
 		@Pc(18) int local18 = -1;
 		while (true) {
 			@Pc(22) int local22 = local8.method7352();
@@ -57,7 +57,7 @@ public final class Class308_Sub1 extends Class308 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(ILclient!ge;ILclient!ha;I)V")
-	public void method7900(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3) {
+	public void method7900(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3) {
 		if (super.aBoolean674) {
 			return;
 		}
@@ -84,11 +84,11 @@ public final class Class308_Sub1 extends Class308 {
 										for (local504 = 0; local504 < local86; local504++) {
 											@Pc(512) Class355 local512 = new Class355(arg3, arg1, 2);
 											if (local512.anInt9406 == 31) {
-												@Pc(523) Class394 local523 = Static48.aClass386_1.method8821(arg1.g2());
+												@Pc(523) LightType local523 = client.lightTypeList.method8821(arg1.g2());
 												local512.method8251(local523.anInt10402, local523.anInt10400, local523.anInt10401, local523.anInt10405);
 											}
 											if (arg3.method7962() > 0) {
-												@Pc(543) Class2_Sub7 local543 = local512.aClass2_Sub7_3;
+												@Pc(543) Node_Sub7 local543 = local512.aClass2_Sub7_3;
 												local149 = (arg2 << 9) + local543.method8433();
 												local153 = (arg0 << 9) + local543.method8436();
 												local290 = local149 >> 9;
@@ -255,7 +255,7 @@ public final class Class308_Sub1 extends Class308 {
 		if (arg8 < this.anInt8943) {
 			this.anInt8943 = arg8;
 		}
-		@Pc(40) Class54 local40 = Static354.aClass142_4.method3063(arg1, 82);
+		@Pc(40) LocType local40 = client.locTypeList.method3063(arg1, 82);
 		if (Static400.aClass2_Sub34_28.aClass57_Sub30_1.method8363() == 0 && local40.aBoolean90) {
 			return;
 		}
@@ -545,7 +545,7 @@ public final class Class308_Sub1 extends Class308 {
 								local1844 = 65;
 								local1850 = (Interface25) Static302.method4421(arg8, arg5, arg3);
 								if (local1850 != null) {
-									local1844 = Static354.aClass142_4.method3063(local1850.method6866(-32136), 32).anInt1248 + 1;
+									local1844 = client.locTypeList.method3063(local1850.method6866(-32136), 32).anInt1248 + 1;
 								}
 								if (local248) {
 									local1916 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, Static485.anIntArray887[arg6] * local1844, Static609.anIntArray715[arg6] * local1844, arg0, arg6);
@@ -561,7 +561,7 @@ public final class Class308_Sub1 extends Class308 {
 								local1844 = 33;
 								local1850 = (Interface25) Static302.method4421(arg8, arg5, arg3);
 								if (local1850 != null) {
-									local1844 = Static354.aClass142_4.method3063(local1850.method6866(-32136), 115).anInt1248 / 2 + 1;
+									local1844 = client.locTypeList.method3063(local1850.method6866(-32136), 115).anInt1248 / 2 + 1;
 								}
 								if (local248) {
 									local1916 = new Class8_Sub2_Sub4_Sub1(arg4, local40, arg8, arg7, local179, local170, local187, super.aBoolean674, Static485.anIntArray887[arg6] * local1844, local1844 * Static609.anIntArray715[arg6], arg0, arg6 + 4);
@@ -590,7 +590,7 @@ public final class Class308_Sub1 extends Class308 {
 								local495 = 33;
 								@Pc(2134) Interface25 local2134 = (Interface25) Static302.method4421(arg8, arg5, arg3);
 								if (local2134 != null) {
-									local495 = Static354.aClass142_4.method3063(local2134.method6866(-32136), 92).anInt1248 / 2 + 1;
+									local495 = client.locTypeList.method3063(local2134.method6866(-32136), 92).anInt1248 / 2 + 1;
 								}
 								@Pc(2178) Class8_Sub2_Sub4 local2178;
 								@Pc(2200) Class8_Sub2_Sub4 local2200;
@@ -632,7 +632,7 @@ public final class Class308_Sub1 extends Class308 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(IILclient!ha;ILclient!ge;IIIII)V")
-	public void method7902(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Packet arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
+	public void method7902(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Buffer arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8) {
 		if (super.aBoolean674) {
 			return;
 		}
@@ -658,11 +658,11 @@ public final class Class308_Sub1 extends Class308 {
 							for (local70 = 0; local70 < local63; local70++) {
 								@Pc(78) Class355 local78 = new Class355(arg1, arg3, 2);
 								if (local78.anInt9406 == 31) {
-									@Pc(91) Class394 local91 = Static48.aClass386_1.method8821(arg3.g2());
+									@Pc(91) LightType local91 = client.lightTypeList.method8821(arg3.g2());
 									local78.method8251(local91.anInt10402, local91.anInt10400, local91.anInt10401, local91.anInt10405);
 								}
 								if (arg1.method7962() > 0) {
-									@Pc(108) Class2_Sub7 local108 = local78.aClass2_Sub7_3;
+									@Pc(108) Node_Sub7 local108 = local78.aClass2_Sub7_3;
 									local116 = local108.method8433() >> 9;
 									local122 = local108.method8436() >> 9;
 									if (arg7 == local78.anInt9395 && local116 >= local18 && local116 < local18 + 8 && local122 >= local24 && local24 + 8 > local122) {
@@ -810,7 +810,7 @@ public final class Class308_Sub1 extends Class308 {
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(I[Lclient!eq;ILclient!ha;BII[BIII)V")
 	public void method7904(@OriginalArg(0) int arg0, @OriginalArg(1) Class110[] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class19 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5, @OriginalArg(7) byte[] arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9) {
-		@Pc(26) Packet local26 = new Packet(arg6);
+		@Pc(26) Buffer local26 = new Buffer(arg6);
 		@Pc(28) int local28 = -1;
 		while (true) {
 			@Pc(32) int local32 = local26.method7352();
@@ -832,7 +832,7 @@ public final class Class308_Sub1 extends Class308 {
 				@Pc(77) int local77 = local73 >> 2;
 				@Pc(81) int local81 = local73 & 0x3;
 				if (arg8 == local69 && arg0 <= local65 && local65 < arg0 + 8 && arg9 <= local59 && local59 < arg9 + 8) {
-					@Pc(113) Class54 local113 = Static354.aClass142_4.method3063(local28, 89);
+					@Pc(113) LocType local113 = client.locTypeList.method3063(local28, 89);
 					@Pc(130) int local130 = Static48.method1095(local113.anInt1275, local59 & 0x7, local113.anInt1234, local81, local65 & 0x7, arg7) + arg4;
 					@Pc(147) int local147 = Static521.method6881(arg7, local59 & 0x7, local113.anInt1234, local81, local113.anInt1275, local65 & 0x7) + arg5;
 					if (local130 > 0 && local147 > 0 && local130 < super.anInt8930 - 1 && local147 < super.anInt8928 - 1) {
@@ -923,7 +923,7 @@ public final class Class308_Sub1 extends Class308 {
 		if (local13 == null) {
 			return;
 		}
-		@Pc(22) Class54 local22 = Static354.aClass142_4.method3063(local13.method6866(-32136), 98);
+		@Pc(22) LocType local22 = client.locTypeList.method3063(local13.method6866(-32136), 98);
 		@Pc(26) int local26 = local13.method6865();
 		@Pc(30) int local30 = local13.method6862(23796);
 		if (local22.method1303()) {

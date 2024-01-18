@@ -16,8 +16,4 @@ public final class Static593 {
 		return arg0 && arg1 >= 0 ? Static102.method2027(false, arg1, 10, arg0) : Integer.toString(arg1);
 	}
 
-	@OriginalMember(owner = "client!sm", name = "a", descriptor = "(II)I")
-	public static int method7788(@OriginalArg(1) int arg0) {
-		return arg0 >>> 8;
-	}
 }

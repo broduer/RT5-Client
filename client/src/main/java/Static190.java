@@ -8,9 +8,6 @@ public final class Static190 {
 	@OriginalMember(owner = "client!fs", name = "h", descriptor = "I")
 	public static int anInt3121;
 
-	@OriginalMember(owner = "client!fs", name = "d", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_38;
-
 	@OriginalMember(owner = "client!fs", name = "c", descriptor = "[I")
 	public static final int[] anIntArray265 = new int[] { 3, 7, 15 };
 

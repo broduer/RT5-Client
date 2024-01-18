@@ -4,20 +4,14 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static354 {
 
-	@OriginalMember(owner = "client!ld", name = "i", descriptor = "Lclient!nv;")
-	public static Class269 aClass269_1;
-
 	@OriginalMember(owner = "client!ld", name = "m", descriptor = "I")
 	public static int anInt5779;
-
-	@OriginalMember(owner = "client!ld", name = "b", descriptor = "Lclient!gea;")
-	public static Class142 aClass142_4;
 
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "I")
 	public static int anInt5783;
 
 	@OriginalMember(owner = "client!ld", name = "p", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_120 = new Class82(32);
+	public static final SoftLruHashTable aClass82_120 = new SoftLruHashTable(32);
 
 	@OriginalMember(owner = "client!ld", name = "k", descriptor = "Z")
 	public static boolean aBoolean439 = false;

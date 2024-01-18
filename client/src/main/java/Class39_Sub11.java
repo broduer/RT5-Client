@@ -21,7 +21,7 @@ public final class Class39_Sub11 extends Class39 {
 	private final int anInt4263;
 
 	@OriginalMember(owner = "client!ica", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub11(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub11(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.anInt4266 = arg0.g2();
 		this.anInt4265 = arg0.g2();

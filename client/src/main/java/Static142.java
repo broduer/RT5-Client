@@ -7,11 +7,8 @@ public final class Static142 {
 	@OriginalMember(owner = "client!eha", name = "a", descriptor = "[[Z")
 	public static boolean[][] aBooleanArrayArray1;
 
-	@OriginalMember(owner = "client!eha", name = "c", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_25;
-
 	@OriginalMember(owner = "client!eha", name = "d", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_1;
+	public static WorldMapFont aClass329_1;
 
 	@OriginalMember(owner = "client!eha", name = "e", descriptor = "[I")
 	public static final int[] anIntArray225 = new int[32];

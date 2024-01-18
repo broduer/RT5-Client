@@ -19,7 +19,7 @@ public final class Static326 {
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(ILclient!ca;)I")
 	public static int method4877(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0) {
 		@Pc(6) int local6 = arg0.anInt1452;
-		@Pc(10) Class291 local10 = arg0.method9324();
+		@Pc(10) BasType local10 = arg0.method9324();
 		@Pc(15) int local15 = arg0.aClass152_10.method9121();
 		if (local15 == -1 || arg0.aBoolean818) {
 			local6 = arg0.anInt1462;

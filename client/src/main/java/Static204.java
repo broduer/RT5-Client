@@ -8,10 +8,10 @@ public final class Static204 {
 	public static final Class155 aClass155_14 = new Class155(22);
 
 	@OriginalMember(owner = "client!gfa", name = "u", descriptor = "Lclient!sia;")
-	public static final Class341 aClass341_16 = new Class341();
+	public static final LinkedList aClass341_16 = new LinkedList();
 
 	@OriginalMember(owner = "client!gfa", name = "a", descriptor = "(Lclient!sb;I)V")
-	public static void method3079(@OriginalArg(0) Class332 arg0) {
+	public static void method3079(@OriginalArg(0) Js5 arg0) {
 		Static159.anInt2796 = arg0.getGroupId("hitbar_default");
 		Static434.anInt6599 = arg0.getGroupId("timerbar_default");
 		Static67.anInt6805 = arg0.getGroupId("headicons_pk");

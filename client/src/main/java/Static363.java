@@ -53,15 +53,15 @@ public final class Static363 {
 			return 1;
 		}
 		if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922()) {
-			Static667.method8702(true, Static32.aClass32_13.method877(client.lang), arg1);
+			Static667.method8702(true, Static32.aClass32_13.getLocalization(client.lang), arg1);
 			if (arg1 != Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922()) {
 				return -1;
 			}
 		}
 		try {
 			@Pc(43) Dimension local43 = GameShell.canvas.getSize();
-			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_13.method877(client.lang), true, Static694.aClass383_13, Static437.aClass14_9);
-			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, Static190.aClass332_38);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_13.getLocalization(client.lang), true, Static694.aClass383_13, Static437.aClass14_9);
+			@Pc(67) Class88 local67 = Static121.method2201(Static65.aClass3_1.anInt81, client.js5Archive7);
 			@Pc(70) long local70 = Static588.currentTimeMillis();
 			Static163.aClass19_17.la();
 			Static460.aClass73_10.method7132(0, Static247.anInt4004, 0);

@@ -8,7 +8,7 @@ public final class Static371 {
 
 	@OriginalMember(owner = "client!lma", name = "b", descriptor = "(I)V")
 	public static void method5291() {
-		@Pc(22) Class2_Sub19 local22 = Static293.method4342(Static587.aClass347_105, Static405.aClass153_2.aClass186_1);
+		@Pc(22) Node_Sub19 local22 = Static293.method4342(Static587.aClass347_105, Static405.aClass153_2.aClass186_1);
 		local22.aClass2_Sub21_Sub2_1.p1(Static36.method978());
 		local22.aClass2_Sub21_Sub2_1.p2(GameShell.canvasWidth);
 		local22.aClass2_Sub21_Sub2_1.p2(GameShell.canvasHeight);

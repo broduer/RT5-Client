@@ -23,7 +23,7 @@ public final class Static407 {
 
 	@OriginalMember(owner = "client!mr", name = "a", descriptor = "(B)V")
 	public static void method5635() {
-		@Pc(16) Class2_Sub9 local16 = (Class2_Sub9) Static226.aClass341_58.method7706(65280);
+		@Pc(16) Node_Sub9 local16 = (Node_Sub9) Static226.aClass341_58.head();
 		@Pc(30) boolean local30 = Static109.aClass158_3 != null || Static460.anInt6985 > 0;
 		@Pc(34) int local34 = local16.method5338();
 		@Pc(38) int local38 = local16.method5340();

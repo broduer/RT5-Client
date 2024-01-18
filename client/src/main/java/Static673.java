@@ -8,7 +8,7 @@ public final class Static673 {
 	public static byte aByte140;
 
 	@OriginalMember(owner = "client!vf", name = "J", descriptor = "Lclient!ul;")
-	public static final Class379 runescapeGame = new Class379("runescape", "RuneScape", 0);
+	public static final ModeGame runescapeGame = new ModeGame("runescape", "RuneScape", 0);
 
 	@OriginalMember(owner = "client!vf", name = "F", descriptor = "I")
 	public static int anInt10106 = -1;

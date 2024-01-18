@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class270 {
 
 	@OriginalMember(owner = "client!o", name = "tb", descriptor = "Lclient!av;")
-	private Class28 aClass28_32;
+	private HashTable aClass28_32;
 
 	@OriginalMember(owner = "client!o", name = "gb", descriptor = "[B")
 	private byte[] aByteArray80;
@@ -46,7 +46,7 @@ public final class Class270 {
 	private byte aByte108;
 
 	@OriginalMember(owner = "client!o", name = "A", descriptor = "Lclient!ql;")
-	public Class310 aClass310_1;
+	public NpcTypeList aClass310_1;
 
 	@OriginalMember(owner = "client!o", name = "Z", descriptor = "[I")
 	public int[] anIntArray535;
@@ -255,7 +255,7 @@ public final class Class270 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method5993(@OriginalArg(1) Packet arg0) {
+	public void method5993(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(15) int local15 = arg0.g1();
 			if (local15 == 0) {
@@ -266,7 +266,7 @@ public final class Class270 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(ILclient!ge;B)V")
-	private void method5997(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
+	private void method5997(@OriginalArg(0) int arg0, @OriginalArg(1) Buffer arg1) {
 		@Pc(12) int local12;
 		@Pc(18) int local18;
 		if (arg0 == 1) {
@@ -464,18 +464,18 @@ public final class Class270 {
 				local12 = arg1.g1();
 				if (this.aClass28_32 == null) {
 					local18 = Static440.method5969(local12);
-					this.aClass28_32 = new Class28(local18);
+					this.aClass28_32 = new HashTable(local18);
 				}
 				for (local18 = 0; local18 < local12; local18++) {
 					@Pc(761) boolean local761 = arg1.g1() == 1;
-					@Pc(765) int local765 = arg1.method7390();
+					@Pc(765) int local765 = arg1.g3();
 					@Pc(774) Node local774;
 					if (local761) {
-						local774 = new Class2_Sub24(arg1.gstr());
+						local774 = new Node_Sub24(arg1.gstr());
 					} else {
-						local774 = new Class2_Sub38(arg1.g4());
+						local774 = new Node_Sub38(arg1.g4());
 					}
-					this.aClass28_32.method735(local765, local774);
+					this.aClass28_32.put(local765, local774);
 				}
 			}
 		}
@@ -486,7 +486,7 @@ public final class Class270 {
 		if (this.aClass28_32 == null) {
 			return arg0;
 		} else {
-			@Pc(23) Class2_Sub24 local23 = (Class2_Sub24) this.aClass28_32.method738(arg1);
+			@Pc(23) Node_Sub24 local23 = (Node_Sub24) this.aClass28_32.get(arg1);
 			return local23 == null ? arg0 : local23.aString46;
 		}
 	}
@@ -507,10 +507,10 @@ public final class Class270 {
 			if (arg1 != null) {
 				local71 |= arg1.aLong312 << 24;
 			}
-			@Pc(84) Class82 local84 = this.aClass310_1.aClass82_171;
+			@Pc(84) SoftLruHashTable local84 = this.aClass310_1.headModels;
 			@Pc(94) Class114 local94;
-			synchronized (this.aClass310_1.aClass82_171) {
-				local94 = (Class114) this.aClass310_1.aClass82_171.method2156(local71);
+			synchronized (this.aClass310_1.headModels) {
+				local94 = (Class114) this.aClass310_1.headModels.get(local71);
 			}
 			if (local94 == null || (local94.ua() & local54) != local54) {
 				if (local94 != null) {
@@ -528,7 +528,7 @@ public final class Class270 {
 				}
 				@Pc(163) int[] local163 = arg1 == null || arg1.anIntArray816 == null ? this.anIntArray534 : arg1.anIntArray816;
 				@Pc(165) boolean local165 = false;
-				@Pc(169) Class332 local169 = this.aClass310_1.aClass332_102;
+				@Pc(169) Js5 local169 = this.aClass310_1.aClass332_102;
 				synchronized (this.aClass310_1.aClass332_102) {
 					for (@Pc(173) int local173 = 0; local173 < local163.length; local173++) {
 						if (!this.aClass310_1.aClass332_102.method7593(0, local163[local173])) {
@@ -540,7 +540,7 @@ public final class Class270 {
 					return null;
 				}
 				@Pc(215) Class88[] local215 = new Class88[local163.length];
-				@Pc(219) Class332 local219 = this.aClass310_1.aClass332_102;
+				@Pc(219) Js5 local219 = this.aClass310_1.aClass332_102;
 				synchronized (this.aClass310_1.aClass332_102) {
 					@Pc(223) int local223 = 0;
 					while (true) {
@@ -593,9 +593,9 @@ public final class Class270 {
 					local94.method7495(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
 				}
 				local94.s(local54);
-				@Pc(469) Class82 local469 = this.aClass310_1.aClass82_171;
-				synchronized (this.aClass310_1.aClass82_171) {
-					this.aClass310_1.aClass82_171.method2150(local94, local71);
+				@Pc(469) SoftLruHashTable local469 = this.aClass310_1.headModels;
+				synchronized (this.aClass310_1.headModels) {
+					this.aClass310_1.headModels.put(local94, local71);
 				}
 			}
 			if (arg0 != null) {
@@ -608,7 +608,7 @@ public final class Class270 {
 	}
 
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!uk;Lclient!ha;Lclient!qp;BLclient!gu;I[ILclient!vk;Lclient!gu;I[Lclient!gu;)Lclient!ka;")
-	public Class114 method6000(@OriginalArg(0) Interface23 arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) Class312 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int[] arg5, @OriginalArg(7) Class388 arg6, @OriginalArg(8) Class152 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class152[] arg9) {
+	public Class114 method6000(@OriginalArg(0) Interface23 arg0, @OriginalArg(1) Class19 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int[] arg5, @OriginalArg(7) Class388 arg6, @OriginalArg(8) Class152 arg7, @OriginalArg(9) int arg8, @OriginalArg(10) Class152[] arg9) {
 		if (this.anIntArray532 != null) {
 			@Pc(11) Class270 local11 = this.method5992(65535, arg0);
 			return local11 == null ? null : local11.method6000(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
@@ -640,12 +640,12 @@ public final class Class270 {
 		if (arg6 != null) {
 			local116 |= arg6.aLong312 << 24;
 		}
-		@Pc(129) Class82 local129 = this.aClass310_1.aClass82_170;
+		@Pc(129) SoftLruHashTable local129 = this.aClass310_1.bodyModels;
 		@Pc(139) Class114 local139;
-		synchronized (this.aClass310_1.aClass82_170) {
-			local139 = (Class114) this.aClass310_1.aClass82_170.method2156(local116);
+		synchronized (this.aClass310_1.bodyModels) {
+			local139 = (Class114) this.aClass310_1.bodyModels.get(local116);
 		}
-		@Pc(147) Class291 local147 = null;
+		@Pc(147) BasType local147 = null;
 		if (this.anInt6746 != -1) {
 			local147 = arg2.method7125(this.anInt6746);
 		}
@@ -668,7 +668,7 @@ public final class Class270 {
 			}
 			@Pc(216) int[] local216 = arg6 == null || arg6.anIntArray816 == null ? this.anIntArray535 : arg6.anIntArray816;
 			@Pc(218) boolean local218 = false;
-			@Pc(222) Class332 local222 = this.aClass310_1.aClass332_102;
+			@Pc(222) Js5 local222 = this.aClass310_1.aClass332_102;
 			synchronized (this.aClass310_1.aClass332_102) {
 				for (local226 = 0; local226 < local216.length; local226++) {
 					if (local216[local226] != -1 && !this.aClass310_1.aClass332_102.method7593(0, local216[local226])) {
@@ -682,7 +682,7 @@ public final class Class270 {
 			@Pc(267) Class88[] local267 = new Class88[local216.length];
 			for (local226 = 0; local226 < local216.length; local226++) {
 				if (local216[local226] != -1) {
-					@Pc(280) Class332 local280 = this.aClass310_1.aClass332_102;
+					@Pc(280) Js5 local280 = this.aClass310_1.aClass332_102;
 					synchronized (this.aClass310_1.aClass332_102) {
 						local267[local226] = Static121.method2201(local216[local226], this.aClass310_1.aClass332_102);
 					}
@@ -758,9 +758,9 @@ public final class Class270 {
 				local139.method7495(this.aByte104, this.aByte106, this.aByte108, this.aByte105 & 0xFF);
 			}
 			local139.s(local32);
-			@Pc(685) Class82 local685 = this.aClass310_1.aClass82_170;
-			synchronized (this.aClass310_1.aClass82_170) {
-				this.aClass310_1.aClass82_170.method2150(local139, local116);
+			@Pc(685) SoftLruHashTable local685 = this.aClass310_1.bodyModels;
+			synchronized (this.aClass310_1.bodyModels) {
+				this.aClass310_1.bodyModels.put(local139, local116);
 			}
 		}
 		@Pc(706) Class114 local706 = local139.method7502((byte) 4, local32, true);
@@ -833,7 +833,7 @@ public final class Class270 {
 		if (this.aClass28_32 == null) {
 			return arg1;
 		} else {
-			@Pc(25) Class2_Sub38 local25 = (Class2_Sub38) this.aClass28_32.method738(arg0);
+			@Pc(25) Node_Sub38 local25 = (Node_Sub38) this.aClass28_32.get(arg0);
 			return local25 == null ? arg1 : local25.anInt6399;
 		}
 	}

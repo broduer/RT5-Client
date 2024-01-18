@@ -12,7 +12,7 @@ public final class Class39_Sub8 extends Class39 {
 	private final int anInt3645;
 
 	@OriginalMember(owner = "client!gv", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub8(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub8(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.aString39 = arg0.gstr();
 		this.anInt3645 = arg0.g2();

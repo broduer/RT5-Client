@@ -12,8 +12,8 @@ public final class Static717 {
 	public static final Class282 aClass282_6 = new Class282(0);
 
 	@OriginalMember(owner = "client!wn", name = "k", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_232 = new Class82(30);
+	public static final SoftLruHashTable aClass82_232 = new SoftLruHashTable(30);
 
 	@OriginalMember(owner = "client!wn", name = "f", descriptor = "Lclient!sia;")
-	public static final Class341 aClass341_81 = new Class341();
+	public static final LinkedList aClass341_81 = new LinkedList();
 }

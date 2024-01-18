@@ -8,18 +8,13 @@ public final class Static359 {
 	public static int[] anIntArray449;
 
 	@OriginalMember(owner = "client!lfa", name = "k", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_3;
+	public static WorldMapFont aClass329_3;
 
 	@OriginalMember(owner = "client!lfa", name = "g", descriptor = "I")
 	public static int anInt5821;
 
 	@OriginalMember(owner = "client!lfa", name = "a", descriptor = "[Z")
 	public static final boolean[] aBooleanArray17 = new boolean[100];
-
-	@OriginalMember(owner = "client!lfa", name = "a", descriptor = "(II)I")
-	public static int method5231(@OriginalArg(0) int arg0) {
-		return arg0 >>> 8;
-	}
 
 	@OriginalMember(owner = "client!lfa", name = "a", descriptor = "([III[II[[B[B[[B)I")
 	public static int method5232(@OriginalArg(0) int[] arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int[] arg2, @OriginalArg(4) int arg3, @OriginalArg(5) byte[][] arg4, @OriginalArg(6) byte[] arg5, @OriginalArg(7) byte[][] arg6) {

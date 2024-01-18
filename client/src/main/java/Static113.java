@@ -11,7 +11,7 @@ public final class Static113 {
 	public static final ClientProt aClass347_22 = new ClientProt(17, -1);
 
 	@OriginalMember(owner = "client!dja", name = "h", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_12 = new Class28(16);
+	public static final HashTable aClass28_12 = new HashTable(16);
 
 	@OriginalMember(owner = "client!dja", name = "n", descriptor = "Z")
 	public static boolean aBoolean198 = false;
@@ -27,7 +27,7 @@ public final class Static113 {
 	@OriginalMember(owner = "client!dja", name = "a", descriptor = "([BBZ)V")
 	public static void method2121(@OriginalArg(0) byte[] arg0, @OriginalArg(2) boolean arg1) {
 		if (Static339.aClass2_Sub21_9 == null) {
-			Static339.aClass2_Sub21_9 = new Packet(20000);
+			Static339.aClass2_Sub21_9 = new Buffer(20000);
 		}
 		Static339.aClass2_Sub21_9.pdata(arg0.length, arg0, 0);
 		if (!arg1) {

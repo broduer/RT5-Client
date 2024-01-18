@@ -19,7 +19,7 @@ public final class Static502 {
 				}
 			}
 		}
-		@Pc(54) Class70 local54 = (Class70) Static627.aClass82_200.method2156((arg0 ? 1 : 0) | arg3 << 1);
+		@Pc(54) Class70 local54 = (Class70) Static627.aClass82_200.get((arg0 ? 1 : 0) | arg3 << 1);
 		if (local54 != null) {
 			if (arg2 && local54.aClass383_5 == null) {
 				@Pc(70) Class383 local70 = Static238.method3468(arg3, Static237.aClass332_87);
@@ -43,12 +43,12 @@ public final class Static502 {
 		} else {
 			local54 = new Class70(arg1.method8017(local94, local84, arg0));
 		}
-		Static627.aClass82_200.method2150(local54, arg3 << 1 | (arg0 ? 1 : 0));
+		Static627.aClass82_200.put(local54, arg3 << 1 | (arg0 ? 1 : 0));
 		return local54;
 	}
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(BLclient!ge;)Lclient!il;")
-	public static Class138_Sub3 method6727(@OriginalArg(1) Packet arg0) {
+	public static Class138_Sub3 method6727(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) Class138 local7 = Static632.method8366(arg0);
 		@Pc(23) int local23 = arg0.g4();
 		@Pc(27) int local27 = arg0.g4();
@@ -57,7 +57,7 @@ public final class Static502 {
 
 	@OriginalMember(owner = "client!pr", name = "a", descriptor = "(B[B)V")
 	public static void method6728(@OriginalArg(1) byte[] arg0) {
-		@Pc(10) Packet local10 = new Packet(arg0);
+		@Pc(10) Buffer local10 = new Buffer(arg0);
 		while (true) {
 			@Pc(14) int local14;
 			@Pc(55) int local55;

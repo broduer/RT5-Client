@@ -15,7 +15,7 @@ public final class Static623 {
 	public static final boolean[] aBooleanArray30 = new boolean[200];
 
 	@OriginalMember(owner = "client!tm", name = "a", descriptor = "(IILjava/util/Random;)I")
-	public static int method8333(@OriginalArg(1) int arg1, @OriginalArg(2) Random arg2) {
+	public static int nextInt(@OriginalArg(1) int arg1, @OriginalArg(2) Random arg2) {
 		if (arg1 <= 0) {
 			throw new IllegalArgumentException();
 		} else if (Static700.method9157(arg1)) {

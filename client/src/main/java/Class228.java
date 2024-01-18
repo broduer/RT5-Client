@@ -9,35 +9,34 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class228 implements Runnable {
 
 	@OriginalMember(owner = "client!lha", name = "h", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_32 = new Class341();
+	private final LinkedList aClass341_32 = new LinkedList();
 
 	@OriginalMember(owner = "client!lha", name = "d", descriptor = "Ljava/lang/Thread;")
-	private Thread aThread4 = new Thread(this);
+	private Thread thread = new Thread(this);
 
 	@OriginalMember(owner = "client!lha", name = "<init>", descriptor = "()V")
 	public Class228() {
-		this.aThread4.setDaemon(true);
-		this.aThread4.start();
+		this.thread.setDaemon(true);
+		this.thread.start();
 	}
 
 	@OriginalMember(owner = "client!lha", name = "run", descriptor = "()V")
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(8) Class341 local8 = this.aClass341_32;
-			@Pc(43) Class2_Sub12 local43;
+			@Pc(43) Node_Sub12 local43;
 			synchronized (this.aClass341_32) {
 				@Pc(15) Node local15;
-				for (local15 = this.aClass341_32.method7712(); local15 == null; local15 = this.aClass341_32.method7712()) {
+				for (local15 = this.aClass341_32.removeHead(); local15 == null; local15 = this.aClass341_32.removeHead()) {
 					try {
 						this.aClass341_32.wait();
 					} catch (@Pc(23) InterruptedException local23) {
 					}
 				}
-				if (!(local15 instanceof Class2_Sub12)) {
+				if (!(local15 instanceof Node_Sub12)) {
 					return;
 				}
-				local43 = (Class2_Sub12) local15;
+				local43 = (Node_Sub12) local15;
 			}
 			@Pc(69) int local69;
 			try {
@@ -52,34 +51,33 @@ public final class Class228 implements Runnable {
 
 	@OriginalMember(owner = "client!lha", name = "a", descriptor = "(I)V")
 	public void method5250() {
-		if (this.aThread4 == null) {
+		if (this.thread == null) {
 			return;
 		}
 		this.method5251(new Node());
 		try {
-			this.aThread4.join();
+			this.thread.join();
 		} catch (@Pc(23) InterruptedException local23) {
 		}
-		this.aThread4 = null;
+		this.thread = null;
 	}
 
 	@OriginalMember(owner = "client!lha", name = "a", descriptor = "(ILclient!ie;)V")
 	private void method5251(@OriginalArg(1) Node arg0) {
-		@Pc(2) Class341 local2 = this.aClass341_32;
 		synchronized (this.aClass341_32) {
-			this.aClass341_32.method7718(arg0);
+			this.aClass341_32.insertBefore(arg0);
 			this.aClass341_32.notify();
 		}
 	}
 
 	@OriginalMember(owner = "client!lha", name = "a", descriptor = "(BLjava/lang/String;)Lclient!cja;")
-	public Class2_Sub12 method5252(@OriginalArg(1) String arg0) {
-		if (this.aThread4 == null) {
+	public Node_Sub12 method5252(@OriginalArg(1) String arg0) {
+		if (this.thread == null) {
 			throw new IllegalStateException("");
 		} else if (arg0 == null) {
 			throw new IllegalArgumentException("");
 		} else {
-			@Pc(32) Class2_Sub12 local32 = new Class2_Sub12(arg0);
+			@Pc(32) Node_Sub12 local32 = new Node_Sub12(arg0);
 			this.method5251(local32);
 			return local32;
 		}

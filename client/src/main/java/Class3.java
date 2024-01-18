@@ -43,13 +43,13 @@ public final class Class3 {
 	public int anInt87 = 3;
 
 	@OriginalMember(owner = "client!aba", name = "<init>", descriptor = "(Lclient!sb;)V")
-	public Class3(@OriginalArg(0) Class332 arg0) {
+	public Class3(@OriginalArg(0) Js5 arg0) {
 		@Pc(30) byte[] local30 = arg0.method7596(3);
-		this.method93(new Packet(local30));
+		this.method93(new Buffer(local30));
 	}
 
 	@OriginalMember(owner = "client!aba", name = "a", descriptor = "(Lclient!ge;I)V")
-	private void method93(@OriginalArg(0) Packet arg0) {
+	private void method93(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) boolean local7 = false;
 		while (true) {
 			while (true) {
@@ -100,9 +100,9 @@ public final class Class3 {
 					}
 				} while (local13 == 4);
 				if (local13 == 5) {
-					this.anInt88 = arg0.method7390();
+					this.anInt88 = arg0.g3();
 				} else if (local13 == 6) {
-					this.anInt82 = arg0.method7390();
+					this.anInt82 = arg0.g3();
 				} else if (local13 == 7) {
 					this.aShortArrayArrayArray1 = new short[10][4][];
 					this.aShortArrayArray1 = new short[10][4];

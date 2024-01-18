@@ -110,7 +110,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	protected Class372[] aClass372Array3;
 
 	@OriginalMember(owner = "client!am", name = "Hf", descriptor = "[Lclient!lca;")
-	protected Class2_Sub7[] aClass2_Sub7Array6;
+	protected Node_Sub7[] aClass2_Sub7Array6;
 
 	@OriginalMember(owner = "client!am", name = "df", descriptor = "Lclient!eda;")
 	private Class67_Sub2 aClass67_Sub2_3;
@@ -179,7 +179,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	private int anInt9212;
 
 	@OriginalMember(owner = "client!am", name = "vb", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_59 = new Class341();
+	private final LinkedList aClass341_59 = new LinkedList();
 
 	@OriginalMember(owner = "client!am", name = "jg", descriptor = "Z")
 	protected boolean aBoolean677 = true;
@@ -407,7 +407,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	private final Class73_Sub1 aClass73_Sub1_21 = new Class73_Sub1();
 
 	@OriginalMember(owner = "client!am", name = "Td", descriptor = "Lclient!sb;")
-	protected final Class332 aClass332_112;
+	protected final Js5 aClass332_112;
 
 	@OriginalMember(owner = "client!am", name = "T", descriptor = "Ljava/lang/Object;")
 	protected final Object anObject16;
@@ -446,7 +446,7 @@ public abstract class Class19_Sub1 extends Class19 {
 	private final Class336 aClass336_3;
 
 	@OriginalMember(owner = "client!am", name = "<init>", descriptor = "(Ljava/awt/Canvas;Ljava/lang/Object;Lclient!d;Lclient!sb;II)V")
-	protected Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) Interface4 arg2, @OriginalArg(3) Class332 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
+	protected Class19_Sub1(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Object arg1, @OriginalArg(2) TextureProvider arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
 		super(arg2);
 		try {
 			this.aClass332_112 = arg3;
@@ -465,7 +465,7 @@ public abstract class Class19_Sub1 extends Class19 {
 				this.aClass336_3 = new Class336(this, super.anInterface4_10);
 				this.aNativeInterface3 = new NativeInterface(super.anInterface4_10.method6820(), this.anInt9204);
 				for (@Pc(371) int local371 = 0; local371 < super.anInterface4_10.method6820(); local371++) {
-					@Pc(378) Class118 local378 = super.anInterface4_10.method6824(local371);
+					@Pc(378) Material local378 = super.anInterface4_10.method6824(local371);
 					if (local378 != null) {
 						this.aNativeInterface3.initTextureMetrics(local371, local378.aByte58, local378.aByte57);
 					}
@@ -559,8 +559,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public final Class2_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
-		return new Class2_Sub7_Sub2(arg0, arg1, arg2, arg3, arg4, arg5);
+	public final Node_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		return new Node_Sub7_Sub2(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@OriginalMember(owner = "client!am", name = "za", descriptor = "(IIIII)V")
@@ -1063,8 +1063,8 @@ public abstract class Class19_Sub1 extends Class19 {
 		if (this.aBoolean688) {
 			return;
 		}
-		for (@Pc(9) Node local9 = this.aClass341_59.method7706(65280); local9 != null; local9 = this.aClass341_59.method7713()) {
-			((Class2_Sub13_Sub2) local9).method2101();
+		for (@Pc(9) Node local9 = this.aClass341_59.head(); local9 != null; local9 = this.aClass341_59.next()) {
+			((Node_Sub13_Sub2) local9).method2101();
 		}
 		@Pc(28) Enumeration local28 = this.aHashtable6.keys();
 		while (local28.hasMoreElements()) {
@@ -1225,8 +1225,8 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public final void method7945(@OriginalArg(0) Class2_Sub13 arg0) {
-		this.aNativeHeap6 = ((Class2_Sub13_Sub2) arg0).aNativeHeap3;
+	public final void method7945(@OriginalArg(0) Node_Sub13 arg0) {
+		this.aNativeHeap6 = ((Node_Sub13_Sub2) arg0).aNativeHeap3;
 		this.aNativeHeapBuffer6 = this.aNativeHeap6.a(32768, false);
 	}
 
@@ -1362,9 +1362,9 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public final Class2_Sub13 method7968(@OriginalArg(0) int arg0) {
-		@Pc(8) Class2_Sub13_Sub2 local8 = new Class2_Sub13_Sub2(arg0);
-		this.aClass341_59.method7718(local8);
+	public final Node_Sub13 method7968(@OriginalArg(0) int arg0) {
+		@Pc(8) Node_Sub13_Sub2 local8 = new Node_Sub13_Sub2(arg0);
+		this.aClass341_59.insertBefore(local8);
 		return local8;
 	}
 
@@ -1909,7 +1909,7 @@ public abstract class Class19_Sub1 extends Class19 {
 
 	@OriginalMember(owner = "client!am", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public final void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public final void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Node_Sub7[] arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0; local7++) {
 			this.aClass2_Sub7Array6[local7] = arg1[local7];
 		}
@@ -2085,7 +2085,7 @@ public abstract class Class19_Sub1 extends Class19 {
 				this.method8038();
 			} else {
 				local29 = this.aClass336_3.method7661(arg1);
-				@Pc(60) Class118 local60 = super.anInterface4_10.method6824(arg1);
+				@Pc(60) Material local60 = super.anInterface4_10.method6824(arg1);
 				if (local60.aByte54 == 0 && local60.aByte52 == 0) {
 					this.method8038();
 				} else {
@@ -2455,9 +2455,9 @@ public abstract class Class19_Sub1 extends Class19 {
 			this.aClass372Array3[local38] = Static215.aClass372_2;
 			this.aClass73_Sub1Array3[local38] = new Class73_Sub1();
 		}
-		this.aClass2_Sub7Array6 = new Class2_Sub7[this.anInt9208 - 2];
+		this.aClass2_Sub7Array6 = new Node_Sub7[this.anInt9208 - 2];
 		this.anInterface17_3 = this.method8074(Static172.aClass92_8, Static702.aClass399_16, 1, 1);
-		this.method7945(new Class2_Sub13_Sub2(262144));
+		this.method7945(new Node_Sub13_Sub2(262144));
 		this.aClass246_17 = this.method8155(new Class239[] { new Class239(new Class157[] { Static231.aClass157_1, Static231.aClass157_5 }) });
 		this.aClass246_21 = this.method8155(new Class239[] { new Class239(new Class157[] { Static231.aClass157_1, Static231.aClass157_3 }) });
 		this.aClass246_20 = this.method8155(new Class239[] { new Class239(Static231.aClass157_1), new Class239(Static231.aClass157_3), new Class239(Static231.aClass157_5), new Class239(Static231.aClass157_2) });

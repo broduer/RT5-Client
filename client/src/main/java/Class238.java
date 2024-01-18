@@ -22,7 +22,7 @@ public final class Class238 {
 	public final int anInt6000;
 
 	@OriginalMember(owner = "client!lw", name = "<init>", descriptor = "(Lclient!ge;I)V")
-	public Class238(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1) {
+	public Class238(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1) {
 		this.anInt6005 = arg1;
 		@Pc(19) int local19 = arg0.g1();
 		if (local19 == 0) {
@@ -65,7 +65,7 @@ public final class Class238 {
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1 = new Class8_Sub2_Sub1_Sub2_Sub2(25);
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10780 = client.cycle;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10768 = this.anInt6005;
-				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9335(Static690.aClass310_2.method7099(this.anInt6000));
+				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9335(client.npcTypeList.method7099(this.anInt6000));
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9317(this.aClass8_Sub2_Sub1_Sub2_Sub2_1.aClass270_1.anInt6733);
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10786 = this.aClass8_Sub2_Sub1_Sub2_Sub2_1.aClass270_1.anInt6768 << 3;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10767 = Static457.anInt6954++;

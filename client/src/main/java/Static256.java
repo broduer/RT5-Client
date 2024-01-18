@@ -13,7 +13,7 @@ public final class Static256 {
 	public static final Class184 aClass184_10 = new Class184(14, 0, 4, 1);
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(IILclient!sb;Lclient!d;Ljava/awt/Canvas;)Lclient!ha;")
-	public static Class19 method3637(@OriginalArg(0) int arg0, @OriginalArg(2) Class332 arg1, @OriginalArg(3) Interface4 arg2, @OriginalArg(4) Canvas arg3) {
+	public static Class19 method3637(@OriginalArg(0) int arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) TextureProvider arg2, @OriginalArg(4) Canvas arg3) {
 		if (!Static651.method8523()) {
 			throw new RuntimeException("");
 		} else if (Static14.method179("jaggl")) {
@@ -32,7 +32,7 @@ public final class Static256 {
 
 	@OriginalMember(owner = "client!hu", name = "a", descriptor = "(ZLclient!cg;Z)V")
 	public static void method3638(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0, @OriginalArg(2) boolean arg1) {
-		@Pc(9) Class291 local9 = arg0.method9324();
+		@Pc(9) BasType local9 = arg0.method9324();
 		if (arg0.anInt10793 == 0) {
 			arg0.anInt10792 = 0;
 			Static524.anInt8065 = 0;
@@ -40,7 +40,7 @@ public final class Static256 {
 			return;
 		}
 		if (arg0.aClass152_11.method9116() && !arg0.aClass152_11.method9113()) {
-			@Pc(41) Class69 local41 = arg0.aClass152_11.method9114();
+			@Pc(41) SeqType local41 = arg0.aClass152_11.method9114();
 			if (arg0.anInt10791 > 0 && local41.anInt1649 == 0) {
 				Static524.anInt8065 = 0;
 				Static521.anInt7779 = -1;
@@ -56,9 +56,9 @@ public final class Static256 {
 		}
 		for (@Pc(86) int local86 = 0; local86 < arg0.aClass201Array3.length; local86++) {
 			if (arg0.aClass201Array3[local86].anInt4947 != -1 && arg0.aClass201Array3[local86].aClass152_7.method9113()) {
-				@Pc(117) Class229 local117 = Static23.aClass128_1.method2694(arg0.aClass201Array3[local86].anInt4947);
+				@Pc(117) SpotAnimType local117 = client.spotanimTypeList.method2694(arg0.aClass201Array3[local86].anInt4947);
 				if (local117.aBoolean448 && local117.anInt5862 != -1) {
-					@Pc(133) Class69 local133 = Static25.aClass50_1.method1162(local117.anInt5862);
+					@Pc(133) SeqType local133 = client.seqTypeList.method1162(local117.anInt5862);
 					if (arg0.anInt10791 > 0 && local133.anInt1649 == 0) {
 						Static521.anInt7779 = -1;
 						arg0.anInt10792++;
@@ -242,8 +242,8 @@ public final class Static256 {
 		if (local33 * local33 < local59) {
 			return;
 		}
-		@Pc(74) int local74 = Class363.anIntArray741[local11];
-		@Pc(78) int local78 = Class363.anIntArray740[local11];
+		@Pc(74) int local74 = Class114_Sub1.anIntArray741[local11];
+		@Pc(78) int local78 = Class114_Sub1.anIntArray740[local11];
 		if (Static511.anInt7668 != 4) {
 			local74 = local74 * 256 / (Static660.anInt9861 + 256);
 			local78 = local78 * 256 / (Static660.anInt9861 + 256);

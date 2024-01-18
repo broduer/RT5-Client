@@ -24,10 +24,10 @@ public final class Static412 {
 
 	@OriginalMember(owner = "client!naa", name = "a", descriptor = "(B)V")
 	public static void method5700() {
-		@Pc(9) int[] local9 = new int[Static419.aClass112_1.anInt2679];
+		@Pc(9) int[] local9 = new int[client.objTypeList.anInt2679];
 		@Pc(11) int local11 = 0;
-		for (@Pc(13) int local13 = 0; local13 < Static419.aClass112_1.anInt2679; local13++) {
-			@Pc(20) Class384 local20 = Static419.aClass112_1.method2486(local13);
+		for (@Pc(13) int local13 = 0; local13 < client.objTypeList.anInt2679; local13++) {
+			@Pc(20) ObjType local20 = client.objTypeList.get(local13);
 			if (local20.anInt10111 >= 0 || local20.anInt10131 >= 0) {
 				local9[local11++] = local13;
 			}

@@ -8,7 +8,7 @@ public final class Static580 {
 	public static float aFloat176;
 
 	@OriginalMember(owner = "client!sea", name = "y", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_186 = new Class82(260);
+	public static final SoftLruHashTable aClass82_186 = new SoftLruHashTable(260);
 
 	@OriginalMember(owner = "client!sea", name = "z", descriptor = "I")
 	public static int anInt8645 = -2;
@@ -29,7 +29,7 @@ public final class Static580 {
 
 	@OriginalMember(owner = "client!sea", name = "a", descriptor = "(II)V")
 	public static void method7658(@OriginalArg(0) int arg0) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(10, arg0);
+		@Pc(9) SecondaryNode_Sub2 local9 = Static440.method5970(10, arg0);
 		local9.method205();
 	}
 }

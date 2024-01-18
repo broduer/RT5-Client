@@ -16,7 +16,7 @@ public class Class152_Sub2 extends Class152 {
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(ILclient!cka;B)V")
 	@Override
-	protected final void method9093(@OriginalArg(0) int arg0, @OriginalArg(1) Class69 arg1) {
+	protected final void method9093(@OriginalArg(0) int arg0, @OriginalArg(1) SeqType arg1) {
 		Static431.method5834(arg1, arg0, this.aClass8_Sub2_24);
 	}
 }

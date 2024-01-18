@@ -14,7 +14,7 @@ public final class Static161 {
 	public static final ClientProt aClass347_29 = new ClientProt(33, 0);
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ILclient!ca;ILclient!rka;I)V")
-	public static void method2585(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class2_Sub21_Sub2 arg2, @OriginalArg(4) int arg3) {
+	public static void method2585(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Packet arg2, @OriginalArg(4) int arg3) {
 		@Pc(7) byte local7 = -1;
 		@Pc(15) int local15;
 		@Pc(18) int[] local18;
@@ -147,7 +147,7 @@ public final class Static161 {
 		if ((arg3 & 0x8) != 0) {
 			local15 = arg2.method7383();
 			@Pc(540) byte[] local540 = new byte[local15];
-			@Pc(545) Packet local545 = new Packet(local540);
+			@Pc(545) Buffer local545 = new Buffer(local540);
 			arg2.gdata(0, local15, local540);
 			Static462.aClass2_Sub21Array1[arg1] = local545;
 			arg0.method1420(local545);
@@ -261,20 +261,20 @@ public final class Static161 {
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(I)V")
 	public static void method2588() {
-		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) Packet local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		while (local8.method7427(Static405.aClass153_2.length) >= 15) {
 			@Pc(22) int local22 = local8.method7419(15);
 			if (local22 == 32767) {
 				break;
 			}
 			@Pc(29) boolean local29 = false;
-			@Pc(36) Class2_Sub45 local36 = (Class2_Sub45) Static18.aClass28_2.method738(local22);
+			@Pc(36) Node_Sub45 local36 = (Node_Sub45) Static18.aClass28_2.get(local22);
 			@Pc(42) Class8_Sub2_Sub1_Sub2_Sub2 local42;
 			if (local36 == null) {
 				local42 = new Class8_Sub2_Sub1_Sub2_Sub2();
 				local42.anInt10768 = local22;
-				local36 = new Class2_Sub45(local42);
-				Static18.aClass28_2.method735(local22, local36);
+				local36 = new Node_Sub45(local42);
+				Static18.aClass28_2.put(local22, local36);
 				Static592.aClass2_Sub45Array1[Static416.anInt6398++] = local36;
 				local29 = true;
 			}
@@ -294,7 +294,7 @@ public final class Static161 {
 				local131 -= 32;
 			}
 			@Pc(144) int local144 = local8.method7419(2);
-			local42.method9335(Static690.aClass310_2.method7099(local8.method7419(15)));
+			local42.method9335(client.npcTypeList.method7099(local8.method7419(15)));
 			@Pc(159) int local159 = local8.method7419(5);
 			if (local159 > 15) {
 				local159 -= 32;

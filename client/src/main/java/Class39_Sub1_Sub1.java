@@ -16,7 +16,7 @@ public final class Class39_Sub1_Sub1 extends Class39_Sub1 {
 	private final int anInt990;
 
 	@OriginalMember(owner = "client!bh", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub1_Sub1(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub1_Sub1(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		@Pc(6) int local6 = arg0.g4();
 		this.anInt991 = local6 & 0xFFFF;
@@ -34,6 +34,6 @@ public final class Class39_Sub1_Sub1 extends Class39_Sub1 {
 			local30++;
 		}
 		@Pc(79) Class8_Sub2_Sub1_Sub5 local79 = new Class8_Sub2_Sub1_Sub5(super.anInt10586, 0, this.anInt990, local30, local10, Static102.method2025(this.anInt990, -29754, local17, local10) - super.anInt10588, local17, this.anInt987, this.anInt987, this.anInt991, this.anInt991, super.anInt10584, false);
-		Static346.aClass28_29.method735(this.anInt987 << 16 | this.anInt991, new Class2_Sub2_Sub20(local79));
+		Static346.aClass28_29.put(this.anInt987 << 16 | this.anInt991, new SecondaryNode_Sub20(local79));
 	}
 }

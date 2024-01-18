@@ -24,15 +24,15 @@ public final class Static408 {
 	}
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(ZLclient!el;)Z")
-	public static boolean method5641(@OriginalArg(1) Class105 arg0) {
+	public static boolean method5641(@OriginalArg(1) MelType arg0) {
 		if (arg0 == null) {
 			return false;
 		} else if (!arg0.aBoolean214) {
 			return false;
 		} else if (!arg0.method2425(Static30.anInterface23_3)) {
 			return false;
-		} else if (Static268.aClass28_22.method738(arg0.anInt2599) == null) {
-			return Static232.aClass28_18.method738(arg0.anInt2606) == null;
+		} else if (Static268.aClass28_22.get(arg0.anInt2599) == null) {
+			return Static232.aClass28_18.get(arg0.anInt2606) == null;
 		} else {
 			return false;
 		}

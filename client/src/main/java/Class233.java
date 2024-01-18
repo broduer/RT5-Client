@@ -13,7 +13,7 @@ public final class Class233 {
 	private final int[] anIntArray454;
 
 	@OriginalMember(owner = "client!lka", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class233(@OriginalArg(0) Packet arg0) {
+	public Class233(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) int local7 = arg0.gsmarts();
 		this.anIntArray453 = new int[local7];
 		this.anIntArray454 = new int[local7];

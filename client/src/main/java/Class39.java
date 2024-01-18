@@ -9,7 +9,7 @@ public abstract class Class39 {
 	public final int anInt10581;
 
 	@OriginalMember(owner = "client!pi", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39(@OriginalArg(0) Packet arg0) {
+	public Class39(@OriginalArg(0) Buffer arg0) {
 		this.anInt10581 = arg0.g2();
 	}
 

@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class137 implements Interface15 {
 
 	@OriginalMember(owner = "client!ft", name = "c", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_39;
+	private final Js5 aClass332_39;
 
 	@OriginalMember(owner = "client!ft", name = "<init>", descriptor = "(Lclient!sb;)V")
-	public Class137(@OriginalArg(0) Class332 arg0) {
+	public Class137(@OriginalArg(0) Js5 arg0) {
 		this.aClass332_39 = arg0;
 	}
 

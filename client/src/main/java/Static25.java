@@ -4,14 +4,11 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static25 {
 
-	@OriginalMember(owner = "client!as", name = "d", descriptor = "Lclient!bp;")
-	public static Class50 aClass50_1;
-
 	@OriginalMember(owner = "client!as", name = "g", descriptor = "I")
 	public static int anInt600;
 
 	@OriginalMember(owner = "client!as", name = "c", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_4 = new Class28(32);
+	public static final HashTable aClass28_4 = new HashTable(32);
 
 	@OriginalMember(owner = "client!as", name = "b", descriptor = "S")
 	public static short aShort1 = 1;
@@ -22,9 +19,9 @@ public final class Static25 {
 			if (Static377.anInt5950 != -1) {
 				Static347.method5101(Static377.anInt5950);
 			}
-			for (@Pc(16) Class2_Sub4 local16 = (Class2_Sub4) Static548.aClass28_40.method736(); local16 != null; local16 = (Class2_Sub4) Static548.aClass28_40.method740()) {
+			for (@Pc(16) Node_Sub4 local16 = (Node_Sub4) Static548.aClass28_40.method736(); local16 != null; local16 = (Node_Sub4) Static548.aClass28_40.method740()) {
 				if (!local16.isLinked()) {
-					local16 = (Class2_Sub4) Static548.aClass28_40.method736();
+					local16 = (Node_Sub4) Static548.aClass28_40.method736();
 					if (local16 == null) {
 						break;
 					}
@@ -32,7 +29,7 @@ public final class Static25 {
 				Static449.method6122(false, true, local16);
 			}
 			Static377.anInt5950 = -1;
-			Static548.aClass28_40 = new Class28(8);
+			Static548.aClass28_40 = new HashTable(8);
 			Static656.method6699();
 			Static377.anInt5950 = Static65.aClass3_1.anInt82;
 			Static640.method8442(false);

@@ -33,9 +33,9 @@ public final class Static679 {
 			@Pc(53) int local53;
 			@Pc(55) int local55;
 			@Pc(71) int local71;
-			@Pc(134) Class2_Sub2_Sub16 local134;
+			@Pc(134) SecondaryNode_Sub16 local134;
 			if (Static236.aBoolean304) {
-				@Pc(262) Class301 local262;
+				@Pc(262) SecondaryLinkedListIterator local262;
 				if (Static71.anInt1583 < local28 && Static71.anInt1583 + Static682.anInt10323 > local28) {
 					local53 = -1;
 					for (local55 = 0; local55 < Static31.anInt770; local55++) {
@@ -53,10 +53,10 @@ public final class Static679 {
 					}
 					if (local53 != -1) {
 						local71 = 0;
-						local262 = new Class301(Static350.aClass194_8);
-						for (@Pc(368) Class2_Sub2_Sub4 local368 = (Class2_Sub2_Sub4) local262.method6731(); local368 != null; local368 = (Class2_Sub2_Sub4) local262.method6730()) {
+						local262 = new SecondaryLinkedListIterator(Static350.aClass194_8);
+						for (@Pc(368) SecondaryNode_Sub4 local368 = (SecondaryNode_Sub4) local262.head(); local368 != null; local368 = (SecondaryNode_Sub4) local262.next()) {
 							if (local71++ == local53) {
-								return ((Class2_Sub2_Sub16) local368.aClass194_3.aClass2_Sub2_36.aClass2_Sub2_66).anInt7339;
+								return ((SecondaryNode_Sub16) local368.aClass194_3.sentinel.secondaryNext).anInt7339;
 							}
 						}
 					}
@@ -77,8 +77,8 @@ public final class Static679 {
 					}
 					if (local53 != -1) {
 						local71 = 0;
-						local262 = new Class301(Static139.aClass2_Sub2_Sub4_1.aClass194_3);
-						for (local134 = (Class2_Sub2_Sub16) local262.method6731(); local134 != null; local134 = (Class2_Sub2_Sub16) local262.method6730()) {
+						local262 = new SecondaryLinkedListIterator(Static139.aClass2_Sub2_Sub4_1.aClass194_3);
+						for (local134 = (SecondaryNode_Sub16) local262.head(); local134 != null; local134 = (SecondaryNode_Sub16) local262.next()) {
 							if (local71++ == local53) {
 								return local134.anInt7339;
 							}
@@ -103,7 +103,7 @@ public final class Static679 {
 				if (local53 != -1) {
 					local71 = 0;
 					@Pc(129) Class193 local129 = new Class193(Static693.aClass341_79);
-					for (local134 = (Class2_Sub2_Sub16) local129.method4350(); local134 != null; local134 = (Class2_Sub2_Sub16) local129.method4349()) {
+					for (local134 = (SecondaryNode_Sub16) local129.method4350(); local134 != null; local134 = (SecondaryNode_Sub16) local129.method4349()) {
 						if (local53 == local71++) {
 							return local134.anInt7339;
 						}
@@ -115,7 +115,7 @@ public final class Static679 {
 	}
 
 	@OriginalMember(owner = "client!vj", name = "a", descriptor = "(ILclient!pg;)V")
-	public static void method8918(@OriginalArg(1) Class2_Sub2_Sub16 arg0) {
+	public static void method8918(@OriginalArg(1) SecondaryNode_Sub16 arg0) {
 		if (Static400.aBoolean623) {
 			return;
 		}
@@ -123,18 +123,18 @@ public final class Static679 {
 		Static594.anInt8801--;
 		if (!arg0.aBoolean551) {
 			@Pc(79) long local79 = arg0.aLong234;
-			@Pc(85) Class2_Sub2_Sub4 local85;
-			for (local85 = (Class2_Sub2_Sub4) Static490.aClass28_34.method738(local79); local85 != null && !local85.aString10.equals(arg0.aString86); local85 = (Class2_Sub2_Sub4) Static490.aClass28_34.method744()) {
+			@Pc(85) SecondaryNode_Sub4 local85;
+			for (local85 = (SecondaryNode_Sub4) Static490.aClass28_34.get(local79); local85 != null && !local85.aString10.equals(arg0.aString86); local85 = (SecondaryNode_Sub4) Static490.aClass28_34.method744()) {
 			}
 			if (local85 != null && local85.method1469(arg0)) {
 				Static385.method5431(local85);
 			}
 			return;
 		}
-		for (@Pc(22) Class2_Sub2_Sub4 local22 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4359(); local22 != null; local22 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4357()) {
+		for (@Pc(22) SecondaryNode_Sub4 local22 = (SecondaryNode_Sub4) Static350.aClass194_8.head(); local22 != null; local22 = (SecondaryNode_Sub4) Static350.aClass194_8.next()) {
 			if (local22.aString10.equals(arg0.aString86)) {
 				@Pc(31) boolean local31 = false;
-				for (@Pc(37) Class2_Sub2_Sub16 local37 = (Class2_Sub2_Sub16) local22.aClass194_3.method4359(); local37 != null; local37 = (Class2_Sub2_Sub16) local22.aClass194_3.method4357()) {
+				for (@Pc(37) SecondaryNode_Sub16 local37 = (SecondaryNode_Sub16) local22.aClass194_3.head(); local37 != null; local37 = (SecondaryNode_Sub16) local22.aClass194_3.next()) {
 					if (local37 == arg0) {
 						local31 = true;
 						if (local22.method1469(arg0)) {

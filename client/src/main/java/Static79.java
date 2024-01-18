@@ -12,18 +12,18 @@ public final class Static79 {
 
 	@OriginalMember(owner = "client!cja", name = "b", descriptor = "(B)V")
 	public static void method1578() {
-		for (@Pc(10) Class2_Sub2_Sub4 local10 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4359(); local10 != null; local10 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4357()) {
+		for (@Pc(10) SecondaryNode_Sub4 local10 = (SecondaryNode_Sub4) Static350.aClass194_8.head(); local10 != null; local10 = (SecondaryNode_Sub4) Static350.aClass194_8.next()) {
 			if (local10.anInt1541 > 1) {
 				local10.anInt1541 = 0;
-				Static717.aClass82_232.method2150(local10, ((Class2_Sub2_Sub16) local10.aClass194_3.aClass2_Sub2_36.aClass2_Sub2_66).aLong234);
-				local10.aClass194_3.method4358();
+				Static717.aClass82_232.put(local10, ((SecondaryNode_Sub16) local10.aClass194_3.sentinel.secondaryNext).aLong234);
+				local10.aClass194_3.clear();
 			}
 		}
 		Static594.anInt8801 = 0;
 		Static31.anInt770 = 0;
-		Static693.aClass341_79.method7707();
-		Static490.aClass28_34.method737();
-		Static350.aClass194_8.method4358();
+		Static693.aClass341_79.clear();
+		Static490.aClass28_34.clear();
+		Static350.aClass194_8.clear();
 		Static84.method1662(Static525.aClass2_Sub2_Sub16_12);
 	}
 

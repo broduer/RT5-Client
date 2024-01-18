@@ -49,7 +49,7 @@ public final class Class280 {
 	private boolean aBoolean530 = false;
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(Lclient!ge;II)V")
-	private void method6278(@OriginalArg(0) Packet arg0, @OriginalArg(2) int arg1) {
+	private void method6278(@OriginalArg(0) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.anInt7009 = arg0.g2();
 		} else if (arg1 == 2) {
@@ -74,7 +74,7 @@ public final class Class280 {
 
 	@OriginalMember(owner = "client!ok", name = "b", descriptor = "(B)V")
 	public void method6280() {
-		this.anInt6997 = Class363.anIntArray740[this.anInt7009 << 3];
+		this.anInt6997 = Class114_Sub1.anIntArray740[this.anInt7009 << 3];
 		@Pc(15) long local15 = this.anInt7000;
 		@Pc(19) long local19 = this.anInt7008;
 		@Pc(23) long local23 = this.anInt6996;
@@ -96,7 +96,7 @@ public final class Class280 {
 	}
 
 	@OriginalMember(owner = "client!ok", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method6281(@OriginalArg(1) Packet arg0) {
+	public void method6281(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(17) int local17 = arg0.g1();
 			if (local17 == 0) {

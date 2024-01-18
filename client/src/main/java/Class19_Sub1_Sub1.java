@@ -7,7 +7,6 @@ import jagdx.D3DLIGHT;
 import jagdx.D3DPRESENT_PARAMETERS;
 import jagdx.GeometryBuffer;
 import jagdx.IDirect3D;
-import jagdx.IDirect3DBaseTexture;
 import jagdx.IDirect3DDevice;
 import jagdx.IDirect3DEventQuery;
 import jagdx.IDirect3DPixelShader;
@@ -102,7 +101,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	private final boolean[] aBooleanArray16;
 
 	@OriginalMember(owner = "client!kea", name = "createToolkit", descriptor = "(Ljava/awt/Canvas;Lclient!d;Lclient!sb;Ljava/lang/Integer;)Lclient!ha;")
-	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Integer arg3) {
+	public static Class19 createToolkit(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Integer arg3) {
 		@Pc(1) Class19_Sub1_Sub1 local1 = null;
 		try {
 			@Pc(3) byte local3 = 0;
@@ -166,7 +165,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!kea", name = "<init>", descriptor = "(IILjava/awt/Canvas;Lclient!jaclib/peer/ti;Lclient!jagdx/IDirect3D;Lclient!jagdx/IDirect3DDevice;Lclient!tda;Lclient!jagdx/D3DPRESENT_PARAMETERS;Lclient!jagdx/D3DCAPS;Lclient!d;Lclient!sb;I)V")
-	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) ti arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class351 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) Interface4 arg9, @OriginalArg(10) Class332 arg10, @OriginalArg(11) int arg11) {
+	private Class19_Sub1_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Canvas arg2, @OriginalArg(3) ti arg3, @OriginalArg(4) IDirect3D arg4, @OriginalArg(5) IDirect3DDevice arg5, @OriginalArg(6) Class351 arg6, @OriginalArg(7) D3DPRESENT_PARAMETERS arg7, @OriginalArg(8) D3DCAPS arg8, @OriginalArg(9) TextureProvider arg9, @OriginalArg(10) Js5 arg10, @OriginalArg(11) int arg11) {
 		super(arg2, arg6, arg9, arg10, arg11, 0);
 		try {
 			this.aD3DCAPS1 = arg8;
@@ -756,7 +755,7 @@ public final class Class19_Sub1_Sub1 extends Class19_Sub1 {
 	protected void method8056() {
 		@Pc(1) int local1;
 		for (local1 = 0; local1 < this.anInt9203; local1++) {
-			@Pc(10) Class2_Sub7 local10 = this.aClass2_Sub7Array6[local1];
+			@Pc(10) Node_Sub7 local10 = this.aClass2_Sub7Array6[local1];
 			@Pc(14) int local14 = local1 + 2;
 			@Pc(18) int local18 = local10.method8438();
 			@Pc(24) float local24 = local10.method8435() / 255.0F;

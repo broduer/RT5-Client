@@ -116,4 +116,16 @@ public final class TracingException extends RuntimeException {
 		this.cause = cause;
 		this.message = message;
 	}
+
+	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!fl;")
+	public static TracingException wrap(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		@Pc(12) TracingException local12;
+		if (arg0 instanceof TracingException) {
+			local12 = (TracingException) arg0;
+			local12.message = local12.message + ' ' + arg1;
+		} else {
+			local12 = new TracingException(arg0, arg1);
+		}
+		return local12;
+	}
 }

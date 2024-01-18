@@ -7,7 +7,7 @@ public final class Static291 {
 	public static Class23[] aClass23Array8;
 
 	@OriginalMember(owner = "client!je", name = "h", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_24 = new Class28(512);
+	public static final HashTable aClass28_24 = new HashTable(512);
 
 	@OriginalMember(owner = "client!je", name = "b", descriptor = "(II)I")
 	public static int method4233(@OriginalArg(1) int arg0) {

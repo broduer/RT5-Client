@@ -8,8 +8,8 @@ public final class Static506 {
 	public static final int[] anIntArray728 = new int[] { 28, 35, 40, 44 };
 
 	@OriginalMember(owner = "client!pv", name = "a", descriptor = "(IIILclient!c;I)V")
-	public static void method8319(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class54 arg3) {
-		for (@Pc(18) Class2_Sub51 local18 = (Class2_Sub51) Static460.aClass341_40.method7706(65280); local18 != null; local18 = (Class2_Sub51) Static460.aClass341_40.method7713()) {
+	public static void method8319(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) LocType arg3) {
+		for (@Pc(18) Node_Sub51 local18 = (Node_Sub51) Static460.aClass341_40.head(); local18 != null; local18 = (Node_Sub51) Static460.aClass341_40.next()) {
 			if (local18.anInt9376 == arg2 && local18.anInt9383 == arg0 << 9 && local18.anInt9378 == arg1 << 9 && arg3.anInt1261 == local18.aClass54_1.anInt1261) {
 				if (local18.aClass2_Sub6_Sub2_4 != null) {
 					Static336.aClass2_Sub6_Sub3_1.method5890(local18.aClass2_Sub6_Sub2_4);

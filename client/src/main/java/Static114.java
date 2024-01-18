@@ -25,8 +25,8 @@ public final class Static114 {
 		} else {
 			local64 = Static29.anInt726 + (int) Static171.aFloat64 & 0x3FFF;
 		}
-		@Pc(77) int local77 = Class363.anIntArray741[local64];
-		@Pc(81) int local81 = Class363.anIntArray740[local64];
+		@Pc(77) int local77 = Class114_Sub1.anIntArray741[local64];
+		@Pc(81) int local81 = Class114_Sub1.anIntArray740[local64];
 		if (Static511.anInt7668 != 4) {
 			local81 = local81 * 256 / (Static660.anInt9861 + 256);
 			local77 = local77 * 256 / (Static660.anInt9861 + 256);

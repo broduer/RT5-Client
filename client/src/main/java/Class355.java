@@ -19,7 +19,7 @@ public final class Class355 {
 	private int anInt9397;
 
 	@OriginalMember(owner = "client!th", name = "r", descriptor = "Lclient!lca;")
-	public Class2_Sub7 aClass2_Sub7_3;
+	public Node_Sub7 aClass2_Sub7_3;
 
 	@OriginalMember(owner = "client!th", name = "v", descriptor = "Z")
 	public boolean aBoolean718;
@@ -48,7 +48,7 @@ public final class Class355 {
 	}
 
 	@OriginalMember(owner = "client!th", name = "<init>", descriptor = "(Lclient!ha;Lclient!ge;I)V")
-	public Class355(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Packet arg1, @OriginalArg(2) int arg2) {
+	public Class355(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Buffer arg1, @OriginalArg(2) int arg2) {
 		if (Static695.anIntArray868 == null) {
 			Static344.method5050();
 		}
@@ -95,7 +95,7 @@ public final class Class355 {
 			@Pc(27) int local27 = arg1 * this.anInt9403 / 50 + this.anInt9397 & 0x7FF;
 			@Pc(30) int local30 = this.anInt9405;
 			if (local30 == 1) {
-				local71 = (Class363.anIntArray741[local27 << 3] >> 4) + 1024;
+				local71 = (Class114_Sub1.anIntArray741[local27 << 3] >> 4) + 1024;
 			} else if (local30 == 3) {
 				local71 = Static695.anIntArray868[local27] >> 1;
 			} else if (local30 == 4) {

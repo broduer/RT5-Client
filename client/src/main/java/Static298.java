@@ -23,8 +23,8 @@ public final class Static298 {
 
 	@OriginalMember(owner = "client!ji", name = "b", descriptor = "(I)V")
 	public static void method4392() {
-		Static25.aClass28_4.method737();
-		Static391.aClass341_34.method7707();
+		Static25.aClass28_4.clear();
+		Static391.aClass341_34.clear();
 		Static507.aClass396Array1 = null;
 		Static75.aClass359Array2 = null;
 		Static219.aClass238Array1 = null;

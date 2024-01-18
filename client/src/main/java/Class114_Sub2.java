@@ -215,13 +215,13 @@ public final class Class114_Sub2 extends Class114 {
 		if (Static340.method5019(arg5, arg2)) {
 			this.aClass136_1 = new Class136();
 		}
-		@Pc(116) Interface4 local116 = arg0.anInterface4_10;
+		@Pc(116) TextureProvider local116 = arg0.anInterface4_10;
 		@Pc(120) int[] local120 = new int[arg1.anInt2371];
 		this.anIntArray411 = new int[arg1.anInt2372 + 1];
 		for (@Pc(129) int local129 = 0; local129 < arg1.anInt2371; local129++) {
 			if (arg1.aByteArray25 == null || arg1.aByteArray25[local129] != 2) {
 				if (arg1.aShortArray25 != null && arg1.aShortArray25[local129] != -1) {
-					@Pc(168) Class118 local168 = local116.method6824(arg1.aShortArray25[local129] & 0xFFFF);
+					@Pc(168) Material local168 = local116.method6824(arg1.aShortArray25[local129] & 0xFFFF);
 					if (((this.anInt5548 & 0x40) == 0 || !local168.aBoolean240) && local168.aBoolean234) {
 						continue;
 					}
@@ -240,7 +240,7 @@ public final class Class114_Sub2 extends Class114 {
 		@Pc(481) int local481;
 		for (@Pc(266) int local266 = 0; local266 < this.anInt5580; local266++) {
 			@Pc(274) int local274 = local120[local266];
-			@Pc(276) Class118 local276 = null;
+			@Pc(276) Material local276 = null;
 			local278 = 0;
 			@Pc(280) byte local280 = 0;
 			@Pc(282) byte local282 = 0;
@@ -255,7 +255,7 @@ public final class Class114_Sub2 extends Class114 {
 							local289 = true;
 						}
 						if (local307.anInt9719 != -1) {
-							@Pc(323) Class118 local323 = local116.method6824(local307.anInt9719);
+							@Pc(323) Material local323 = local116.method6824(local307.anInt9719);
 							if (local323.anInt2805 == 2) {
 								this.aBoolean421 = true;
 							}
@@ -439,7 +439,7 @@ public final class Class114_Sub2 extends Class114 {
 			}
 			local1260 = arg1.aShortArray25 == null ? -1 : arg1.aShortArray25[local1216];
 			if (local1260 != -1 && (this.anInt5548 & 0x40) != 0) {
-				@Pc(1278) Class118 local1278 = local116.method6824(local1260 & 0xFFFF);
+				@Pc(1278) Material local1278 = local116.method6824(local1260 & 0xFFFF);
 				if (local1278.aBoolean240) {
 					local1260 = -1;
 				}
@@ -743,7 +743,7 @@ public final class Class114_Sub2 extends Class114 {
 	@OriginalMember(owner = "client!kla", name = "aa", descriptor = "(SS)V")
 	@Override
 	public void aa(@OriginalArg(0) short arg0, @OriginalArg(1) short arg1) {
-		@Pc(9) Interface4 local9 = this.aClass19_Sub3_24.anInterface4_10;
+		@Pc(9) TextureProvider local9 = this.aClass19_Sub3_24.anInterface4_10;
 		for (@Pc(11) int local11 = 0; local11 < this.anInt5580; local11++) {
 			if (arg0 == this.aShortArray75[local11]) {
 				this.aShortArray75[local11] = arg1;
@@ -752,14 +752,14 @@ public final class Class114_Sub2 extends Class114 {
 		@Pc(39) byte local39 = 0;
 		@Pc(41) byte local41 = 0;
 		if (arg0 != -1) {
-			@Pc(53) Class118 local53 = local9.method6824(arg0 & 0xFFFF);
+			@Pc(53) Material local53 = local9.method6824(arg0 & 0xFFFF);
 			local39 = local53.aByte58;
 			local41 = local53.aByte57;
 		}
 		@Pc(61) byte local61 = 0;
 		@Pc(63) byte local63 = 0;
 		if (arg1 != -1) {
-			@Pc(73) Class118 local73 = local9.method6824(arg1 & 0xFFFF);
+			@Pc(73) Material local73 = local9.method6824(arg1 & 0xFFFF);
 			local61 = local73.aByte58;
 			local63 = local73.aByte57;
 			if (local73.aByte54 != 0 || local73.aByte52 != 0) {
@@ -1025,7 +1025,7 @@ public final class Class114_Sub2 extends Class114 {
 
 	@OriginalMember(owner = "client!kla", name = "ba", descriptor = "(Lclient!r;)Lclient!r;")
 	@Override
-	public Class2_Sub2_Sub9 ba(@OriginalArg(0) Class2_Sub2_Sub9 arg0) {
+	public SecondaryNode_Sub9 ba(@OriginalArg(0) SecondaryNode_Sub9 arg0) {
 		if (this.anInt5557 == 0) {
 			return null;
 		}
@@ -1052,13 +1052,13 @@ public final class Class114_Sub2 extends Class114 {
 		}
 		@Pc(175) int local175 = local60 + 1 - local43;
 		@Pc(182) int local182 = local132 + 1 - local116;
-		@Pc(185) Class2_Sub2_Sub9_Sub2 local185 = (Class2_Sub2_Sub9_Sub2) arg0;
-		@Pc(197) Class2_Sub2_Sub9_Sub2 local197;
+		@Pc(185) SecondaryNode_Sub9_Sub2 local185 = (SecondaryNode_Sub9_Sub2) arg0;
+		@Pc(197) SecondaryNode_Sub9_Sub2 local197;
 		if (local185 != null && local185.method6552(local182, local175)) {
 			local197 = local185;
 			local185.method6553();
 		} else {
-			local197 = new Class2_Sub2_Sub9_Sub2(this.aClass19_Sub3_24, local175, local182);
+			local197 = new SecondaryNode_Sub9_Sub2(this.aClass19_Sub3_24, local175, local182);
 		}
 		local197.method6551(local60, local116, local132, local43);
 		this.method4994(local197);
@@ -1251,7 +1251,7 @@ public final class Class114_Sub2 extends Class114 {
 	private int method4992(@OriginalArg(1) byte arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) short arg3) {
 		@Pc(20) int local20 = Static154.anIntArray237[Static468.method7655(arg1, arg2)];
 		if (arg3 != -1) {
-			@Pc(33) Class118 local33 = this.aClass19_Sub3_24.anInterface4_10.method6824(arg3 & 0xFFFF);
+			@Pc(33) Material local33 = this.aClass19_Sub3_24.anInterface4_10.method6824(arg3 & 0xFFFF);
 			@Pc(38) int local38 = local33.aByte58 & 0xFF;
 			@Pc(49) int local49;
 			@Pc(78) int local78;
@@ -1294,8 +1294,8 @@ public final class Class114_Sub2 extends Class114 {
 	@OriginalMember(owner = "client!kla", name = "a", descriptor = "(I)V")
 	@Override
 	public void a(@OriginalArg(0) int arg0) {
-		@Pc(9) int local9 = Class363.anIntArray741[arg0];
-		@Pc(13) int local13 = Class363.anIntArray740[arg0];
+		@Pc(9) int local9 = Class114_Sub1.anIntArray741[arg0];
+		@Pc(13) int local13 = Class114_Sub1.anIntArray740[arg0];
 		for (@Pc(15) int local15 = 0; local15 < this.anInt5562; local15++) {
 			@Pc(36) int local36 = this.anIntArray412[local15] * local9 + this.anIntArray410[local15] * local13 >> 14;
 			this.anIntArray412[local15] = this.anIntArray412[local15] * local13 - this.anIntArray410[local15] * local9 >> 14;
@@ -1344,7 +1344,7 @@ public final class Class114_Sub2 extends Class114 {
 	}
 
 	@OriginalMember(owner = "client!kla", name = "a", descriptor = "(Lclient!ph;Z)V")
-	private void method4994(@OriginalArg(0) Class2_Sub2_Sub9_Sub2 arg0) {
+	private void method4994(@OriginalArg(0) SecondaryNode_Sub9_Sub2 arg0) {
 		if (this.anInt5557 > this.aClass19_Sub3_24.anIntArray623.length) {
 			this.aClass19_Sub3_24.anIntArray625 = new int[this.anInt5557];
 			this.aClass19_Sub3_24.anIntArray623 = new int[this.anInt5557];
@@ -1669,9 +1669,9 @@ public final class Class114_Sub2 extends Class114 {
 		if (this.anInt5525 * 6 <= this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3.data.length) {
 			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3.pos = 0;
 		} else {
-			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1((this.anInt5525 + 100) * 6);
+			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3 = new GlBuffer((this.anInt5525 + 100) * 6);
 		}
-		@Pc(46) Class2_Sub21_Sub1 local46 = this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3;
+		@Pc(46) GlBuffer local46 = this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3;
 		@Pc(52) int local52;
 		if (this.aClass19_Sub3_24.aBoolean619) {
 			for (local52 = 0; local52 < this.anInt5525; local52++) {
@@ -2035,22 +2035,22 @@ public final class Class114_Sub2 extends Class114 {
 					this.anIntArray409[local14] -= Static564.anInt8488;
 					this.anIntArray412[local14] -= Static78.anInt1631;
 					if (arg3 != 0) {
-						local20 = Class363.anIntArray741[arg3];
-						local185 = Class363.anIntArray740[arg3];
+						local20 = Class114_Sub1.anIntArray741[arg3];
+						local185 = Class114_Sub1.anIntArray740[arg3];
 						local203 = this.anIntArray410[local14] * local185 + local20 * this.anIntArray409[local14] + 16383 >> 14;
 						this.anIntArray409[local14] = local185 * this.anIntArray409[local14] + 16383 - this.anIntArray410[local14] * local20 >> 14;
 						this.anIntArray410[local14] = local203;
 					}
 					if (arg1 != 0) {
-						local20 = Class363.anIntArray741[arg1];
-						local185 = Class363.anIntArray740[arg1];
+						local20 = Class114_Sub1.anIntArray741[arg1];
+						local185 = Class114_Sub1.anIntArray740[arg1];
 						local203 = this.anIntArray409[local14] * local185 + 16383 - local20 * this.anIntArray412[local14] >> 14;
 						this.anIntArray412[local14] = local185 * this.anIntArray412[local14] + this.anIntArray409[local14] * local20 + 16383 >> 14;
 						this.anIntArray409[local14] = local203;
 					}
 					if (arg2 != 0) {
-						local20 = Class363.anIntArray741[arg2];
-						local185 = Class363.anIntArray740[arg2];
+						local20 = Class114_Sub1.anIntArray741[arg2];
+						local185 = Class114_Sub1.anIntArray740[arg2];
 						local203 = this.anIntArray410[local14] * local185 + local20 * this.anIntArray412[local14] + 16383 >> 14;
 						this.anIntArray412[local14] = this.anIntArray412[local14] * local185 + 16383 - local20 * this.anIntArray410[local14] >> 14;
 						this.anIntArray410[local14] = local203;
@@ -2162,8 +2162,8 @@ public final class Class114_Sub2 extends Class114 {
 	@OriginalMember(owner = "client!kla", name = "VA", descriptor = "(I)V")
 	@Override
 	public void VA(@OriginalArg(0) int arg0) {
-		@Pc(9) int local9 = Class363.anIntArray741[arg0];
-		@Pc(13) int local13 = Class363.anIntArray740[arg0];
+		@Pc(9) int local9 = Class114_Sub1.anIntArray741[arg0];
+		@Pc(13) int local13 = Class114_Sub1.anIntArray740[arg0];
 		for (@Pc(15) int local15 = 0; local15 < this.anInt5562; local15++) {
 			@Pc(33) int local33 = local9 * this.anIntArray409[local15] + local13 * this.anIntArray410[local15] >> 14;
 			this.anIntArray409[local15] = this.anIntArray409[local15] * local13 - this.anIntArray410[local15] * local9 >> 14;
@@ -2295,22 +2295,22 @@ public final class Class114_Sub2 extends Class114 {
 								this.anIntArray409[local56] -= Static564.anInt8488;
 								this.anIntArray412[local56] -= Static78.anInt1631;
 								if (arg4 != 0) {
-									local62 = Class363.anIntArray741[arg4];
-									local401 = Class363.anIntArray740[arg4];
+									local62 = Class114_Sub1.anIntArray741[arg4];
+									local401 = Class114_Sub1.anIntArray740[arg4];
 									local423 = local401 * this.anIntArray410[local56] + local62 * this.anIntArray409[local56] + 16383 >> 14;
 									this.anIntArray409[local56] = local401 * this.anIntArray409[local56] + 16383 - local62 * this.anIntArray410[local56] >> 14;
 									this.anIntArray410[local56] = local423;
 								}
 								if (arg2 != 0) {
-									local62 = Class363.anIntArray741[arg2];
-									local401 = Class363.anIntArray740[arg2];
+									local62 = Class114_Sub1.anIntArray741[arg2];
+									local401 = Class114_Sub1.anIntArray740[arg2];
 									local423 = local401 * this.anIntArray409[local56] + 16383 - local62 * this.anIntArray412[local56] >> 14;
 									this.anIntArray412[local56] = this.anIntArray412[local56] * local401 + local62 * this.anIntArray409[local56] + 16383 >> 14;
 									this.anIntArray409[local56] = local423;
 								}
 								if (arg3 != 0) {
-									local62 = Class363.anIntArray741[arg3];
-									local401 = Class363.anIntArray740[arg3];
+									local62 = Class114_Sub1.anIntArray741[arg3];
+									local401 = Class114_Sub1.anIntArray740[arg3];
 									local423 = this.anIntArray410[local56] * local401 + local62 * this.anIntArray412[local56] + 16383 >> 14;
 									this.anIntArray412[local56] = this.anIntArray412[local56] * local401 + 16383 - local62 * this.anIntArray410[local56] >> 14;
 									this.anIntArray410[local56] = local423;
@@ -2338,22 +2338,22 @@ public final class Class114_Sub2 extends Class114 {
 											break;
 										}
 										if (arg4 != 0) {
-											local486 = Class363.anIntArray741[arg4];
-											local490 = Class363.anIntArray740[arg4];
+											local486 = Class114_Sub1.anIntArray741[arg4];
+											local490 = Class114_Sub1.anIntArray740[arg4];
 											local494 = this.aShortArray69[local482] * local490 + local486 * this.aShortArray73[local482] + 16383 >> 14;
 											this.aShortArray73[local482] = (short) (local490 * this.aShortArray73[local482] + 16383 - local486 * this.aShortArray69[local482] >> 14);
 											this.aShortArray69[local482] = (short) local494;
 										}
 										if (arg2 != 0) {
-											local486 = Class363.anIntArray741[arg2];
-											local490 = Class363.anIntArray740[arg2];
+											local486 = Class114_Sub1.anIntArray741[arg2];
+											local490 = Class114_Sub1.anIntArray740[arg2];
 											local494 = local490 * this.aShortArray73[local482] + 16383 - this.aShortArray72[local482] * local486 >> 14;
 											this.aShortArray72[local482] = (short) (this.aShortArray72[local482] * local490 + this.aShortArray73[local482] * local486 + 16383 >> 14);
 											this.aShortArray73[local482] = (short) local494;
 										}
 										if (arg3 != 0) {
-											local486 = Class363.anIntArray741[arg3];
-											local490 = Class363.anIntArray740[arg3];
+											local486 = Class114_Sub1.anIntArray741[arg3];
+											local490 = Class114_Sub1.anIntArray740[arg3];
 											local494 = this.aShortArray69[local482] * local490 + local486 * this.aShortArray72[local482] + 16383 >> 14;
 											this.aShortArray72[local482] = (short) (this.aShortArray72[local482] * local490 + 16383 - local486 * this.aShortArray69[local482] >> 14);
 											this.aShortArray69[local482] = (short) local494;
@@ -2390,12 +2390,12 @@ public final class Class114_Sub2 extends Class114 {
 					Static143.aBoolean315 = false;
 				}
 				@Pc(470) int[] local470 = new int[9];
-				local423 = Class363.anIntArray740[arg2];
-				local455 = Class363.anIntArray741[arg2];
-				local482 = Class363.anIntArray740[arg3];
-				local486 = Class363.anIntArray741[arg3];
-				local490 = Class363.anIntArray740[arg4];
-				local494 = Class363.anIntArray741[arg4];
+				local423 = Class114_Sub1.anIntArray740[arg2];
+				local455 = Class114_Sub1.anIntArray741[arg2];
+				local482 = Class114_Sub1.anIntArray740[arg3];
+				local486 = Class114_Sub1.anIntArray741[arg3];
+				local490 = Class114_Sub1.anIntArray740[arg4];
+				local494 = Class114_Sub1.anIntArray741[arg4];
 				local502 = local490 * local455 + 8192 >> 14;
 				local510 = local494 * local455 + 8192 >> 14;
 				local470[0] = local510 * local486 + local482 * local490 + 8192 >> 14;
@@ -2696,8 +2696,8 @@ public final class Class114_Sub2 extends Class114 {
 	@OriginalMember(owner = "client!kla", name = "k", descriptor = "(I)V")
 	@Override
 	public void k(@OriginalArg(0) int arg0) {
-		@Pc(9) int local9 = Class363.anIntArray741[arg0];
-		@Pc(13) int local13 = Class363.anIntArray740[arg0];
+		@Pc(9) int local9 = Class114_Sub1.anIntArray741[arg0];
+		@Pc(13) int local13 = Class114_Sub1.anIntArray740[arg0];
 		@Pc(33) int local33;
 		for (@Pc(15) int local15 = 0; local15 < this.anInt5562; local15++) {
 			local33 = this.anIntArray410[local15] * local13 + this.anIntArray412[local15] * local9 >> 14;
@@ -2790,9 +2790,9 @@ public final class Class114_Sub2 extends Class114 {
 		if (this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3.data.length >= local118 * this.anInt5557) {
 			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3.pos = 0;
 		} else {
-			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1(local118 * (this.anInt5557 + 100));
+			this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3 = new GlBuffer(local118 * (this.anInt5557 + 100));
 		}
-		@Pc(203) Class2_Sub21_Sub1 local203 = this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3;
+		@Pc(203) GlBuffer local203 = this.aClass19_Sub3_24.aClass2_Sub21_Sub1_3;
 		@Pc(213) int local213;
 		@Pc(222) int local222;
 		@Pc(250) int local250;
@@ -3481,22 +3481,22 @@ public final class Class114_Sub2 extends Class114 {
 							this.anIntArray409[local55] -= Static564.anInt8488;
 							this.anIntArray412[local55] -= Static78.anInt1631;
 							if (arg4 != 0) {
-								local61 = Class363.anIntArray741[arg4];
-								local286 = Class363.anIntArray740[arg4];
+								local61 = Class114_Sub1.anIntArray741[arg4];
+								local286 = Class114_Sub1.anIntArray740[arg4];
 								local304 = this.anIntArray410[local55] * local286 + this.anIntArray409[local55] * local61 + 16383 >> 14;
 								this.anIntArray409[local55] = this.anIntArray409[local55] * local286 + 16383 - this.anIntArray410[local55] * local61 >> 14;
 								this.anIntArray410[local55] = local304;
 							}
 							if (arg2 != 0) {
-								local61 = Class363.anIntArray741[arg2];
-								local286 = Class363.anIntArray740[arg2];
+								local61 = Class114_Sub1.anIntArray741[arg2];
+								local286 = Class114_Sub1.anIntArray740[arg2];
 								local304 = local286 * this.anIntArray409[local55] + 16383 - this.anIntArray412[local55] * local61 >> 14;
 								this.anIntArray412[local55] = local61 * this.anIntArray409[local55] + local286 * this.anIntArray412[local55] + 16383 >> 14;
 								this.anIntArray409[local55] = local304;
 							}
 							if (arg3 != 0) {
-								local61 = Class363.anIntArray741[arg3];
-								local286 = Class363.anIntArray740[arg3];
+								local61 = Class114_Sub1.anIntArray741[arg3];
+								local286 = Class114_Sub1.anIntArray740[arg3];
 								local304 = local286 * this.anIntArray410[local55] + local61 * this.anIntArray412[local55] + 16383 >> 14;
 								this.anIntArray412[local55] = this.anIntArray412[local55] * local286 + 16383 - local61 * this.anIntArray410[local55] >> 14;
 								this.anIntArray410[local55] = local304;
@@ -3512,22 +3512,22 @@ public final class Class114_Sub2 extends Class114 {
 							this.anIntArray409[local55] -= Static564.anInt8488;
 							this.anIntArray412[local55] -= Static78.anInt1631;
 							if (arg2 != 0) {
-								local61 = Class363.anIntArray741[arg2];
-								local286 = Class363.anIntArray740[arg2];
+								local61 = Class114_Sub1.anIntArray741[arg2];
+								local286 = Class114_Sub1.anIntArray740[arg2];
 								local304 = this.anIntArray409[local55] * local286 + 16383 - local61 * this.anIntArray412[local55] >> 14;
 								this.anIntArray412[local55] = this.anIntArray412[local55] * local286 + this.anIntArray409[local55] * local61 + 16383 >> 14;
 								this.anIntArray409[local55] = local304;
 							}
 							if (arg4 != 0) {
-								local61 = Class363.anIntArray741[arg4];
-								local286 = Class363.anIntArray740[arg4];
+								local61 = Class114_Sub1.anIntArray741[arg4];
+								local286 = Class114_Sub1.anIntArray740[arg4];
 								local304 = local286 * this.anIntArray410[local55] + this.anIntArray409[local55] * local61 + 16383 >> 14;
 								this.anIntArray409[local55] = this.anIntArray409[local55] * local286 + 16383 - local61 * this.anIntArray410[local55] >> 14;
 								this.anIntArray410[local55] = local304;
 							}
 							if (arg3 != 0) {
-								local61 = Class363.anIntArray741[arg3];
-								local286 = Class363.anIntArray740[arg3];
+								local61 = Class114_Sub1.anIntArray741[arg3];
+								local286 = Class114_Sub1.anIntArray740[arg3];
 								local304 = this.anIntArray412[local55] * local61 + local286 * this.anIntArray410[local55] + 16383 >> 14;
 								this.anIntArray412[local55] = local286 * this.anIntArray412[local55] + 16383 - local61 * this.anIntArray410[local55] >> 14;
 								this.anIntArray410[local55] = local304;
@@ -3557,22 +3557,22 @@ public final class Class114_Sub2 extends Class114 {
 								@Pc(799) int local799;
 								@Pc(818) int local818;
 								if (arg4 != 0) {
-									local795 = Class363.anIntArray741[arg4];
-									local799 = Class363.anIntArray740[arg4];
+									local795 = Class114_Sub1.anIntArray741[arg4];
+									local799 = Class114_Sub1.anIntArray740[arg4];
 									local818 = local795 * this.aShortArray73[local780] + this.aShortArray69[local780] * local799 + 16383 >> 14;
 									this.aShortArray73[local780] = (short) (this.aShortArray73[local780] * local799 + 16383 - this.aShortArray69[local780] * local795 >> 14);
 									this.aShortArray69[local780] = (short) local818;
 								}
 								if (arg2 != 0) {
-									local795 = Class363.anIntArray741[arg2];
-									local799 = Class363.anIntArray740[arg2];
+									local795 = Class114_Sub1.anIntArray741[arg2];
+									local799 = Class114_Sub1.anIntArray740[arg2];
 									local818 = local799 * this.aShortArray73[local780] + 16383 - local795 * this.aShortArray72[local780] >> 14;
 									this.aShortArray72[local780] = (short) (this.aShortArray72[local780] * local799 + this.aShortArray73[local780] * local795 + 16383 >> 14);
 									this.aShortArray73[local780] = (short) local818;
 								}
 								if (arg3 != 0) {
-									local795 = Class363.anIntArray741[arg3];
-									local799 = Class363.anIntArray740[arg3];
+									local795 = Class114_Sub1.anIntArray741[arg3];
+									local799 = Class114_Sub1.anIntArray740[arg3];
 									local818 = local799 * this.aShortArray69[local780] + this.aShortArray72[local780] * local795 + 16383 >> 14;
 									this.aShortArray72[local780] = (short) (this.aShortArray72[local780] * local799 + 16383 - local795 * this.aShortArray69[local780] >> 14);
 									this.aShortArray69[local780] = (short) local818;
@@ -3903,8 +3903,8 @@ public final class Class114_Sub2 extends Class114 {
 	@OriginalMember(owner = "client!kla", name = "FA", descriptor = "(I)V")
 	@Override
 	public void FA(@OriginalArg(0) int arg0) {
-		@Pc(9) int local9 = Class363.anIntArray741[arg0];
-		@Pc(13) int local13 = Class363.anIntArray740[arg0];
+		@Pc(9) int local9 = Class114_Sub1.anIntArray741[arg0];
+		@Pc(13) int local13 = Class114_Sub1.anIntArray740[arg0];
 		for (@Pc(15) int local15 = 0; local15 < this.anInt5562; local15++) {
 			@Pc(35) int local35 = this.anIntArray409[local15] * local13 - local9 * this.anIntArray412[local15] >> 14;
 			this.anIntArray412[local15] = local9 * this.anIntArray409[local15] + local13 * this.anIntArray412[local15] >> 14;

@@ -14,10 +14,10 @@ public final class Static93 {
 	private static Class aClass6;
 
 	@OriginalMember(owner = "client!cu", name = "T", descriptor = "Lclient!ofa;")
-	public static final Class2_Sub41 aClass2_Sub41_1 = new Class2_Sub41(0, -1);
+	public static final ServerActiveProperties aClass2_Sub41_1 = new ServerActiveProperties(0, -1);
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(IIIILclient!d;Lclient!ha;I)V")
-	public static void method1832(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Interface4 arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5) {
+	public static void method1832(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) TextureProvider arg3, @OriginalArg(5) Class19 arg4, @OriginalArg(6) int arg5) {
 		if (Static273.anInt4416 < 100) {
 			Static719.method9124(arg3, arg4);
 		}
@@ -30,7 +30,7 @@ public final class Static93 {
 			local57 = arg2 + arg0 / 2 - 20 - 18;
 			arg4.method7983(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.colourid].getRGB(), 0);
 			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4416 * 3, 30, Static718.aColorArray3[Static338.colourid].getRGB(), 0);
-			Static180.aClass14_3.method8835(-1, local38, Static32.aClass32_18.method877(client.lang), local57 + 20, Static399.aColorArray2[Static338.colourid].getRGB());
+			Static180.aClass14_3.method8835(-1, local38, Static32.aClass32_18.getLocalization(client.lang), local57 + 20, Static399.aColorArray2[Static338.colourid].getRGB());
 			return;
 		}
 		@Pc(114) int local114 = Static164.anInt2818 - (int) ((float) arg5 / Static30.aFloat105);
@@ -43,7 +43,7 @@ public final class Static93 {
 		Static534.anInt8134 = Static164.anInt2818 - (int) ((float) arg5 / Static30.aFloat105);
 		Static30.method5069(Static30.anInt5675 + local114, local38 - -Static30.anInt5668, local57 + Static30.anInt5675, local155 - -Static30.anInt5668, arg1, arg2, arg5 + arg1, arg0 + arg2 + 1);
 		Static30.method5067(arg4);
-		@Pc(203) Class341 local203 = Static30.method5088(arg4);
+		@Pc(203) LinkedList local203 = Static30.method5088(arg4);
 		Static368.method5279(local203, arg4);
 		if (Static320.anInt5101 > 0) {
 			Static212.anInt3477--;

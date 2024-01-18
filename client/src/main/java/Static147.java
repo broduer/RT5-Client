@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static147 {
 
-	@OriginalMember(owner = "client!eka", name = "l", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_26;
-
 	@OriginalMember(owner = "client!eka", name = "c", descriptor = "[I")
 	public static final int[] anIntArray226 = new int[2];
 
@@ -107,7 +104,7 @@ public final class Static147 {
 					}
 				} else {
 					if (Static501.aBoolean576) {
-						Static416.method5714(false, -1, 0L, local140, local142, Static32.aClass32_27.method877(client.lang), 11, true, -1, "", local142 | local140 << 0, true);
+						Static416.method5714(false, -1, 0L, local140, local142, Static32.aClass32_27.getLocalization(client.lang), 11, true, -1, "", local142 | local140 << 0, true);
 					}
 					Static416.method5714(false, -1, 0L, local140, local142, Static331.aString52, 58, true, Static331.anInt5458, "", local142 | local140 << 0, true);
 				}
@@ -148,7 +145,7 @@ public final class Static147 {
 							local286 = local610.anInt10718 - (local610.method9309((byte) 79) - 1 << 8);
 							local295 = local610.anInt10722 - (local610.method9309((byte) 61) - 1 << 8);
 							for (local306 = 0; local306 < Static390.anInt6146; local306++) {
-								@Pc(690) Class2_Sub45 local690 = (Class2_Sub45) Static18.aClass28_2.method738(Static103.anIntArray187[local306]);
+								@Pc(690) Node_Sub45 local690 = (Node_Sub45) Static18.aClass28_2.get(Static103.anIntArray187[local306]);
 								if (local690 != null) {
 									@Pc(695) Class8_Sub2_Sub1_Sub2_Sub2 local695 = local690.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 									if (client.cycle != local695.anInt10771 && local695.aBoolean817) {
@@ -188,7 +185,7 @@ public final class Static147 {
 								local614 = local988.anInt10718 - (local988.aClass270_1.anInt6733 - 1 << 8);
 								local286 = local988.anInt10722 - (local988.aClass270_1.anInt6733 - 1 << 8);
 								for (local295 = 0; local295 < Static390.anInt6146; local295++) {
-									@Pc(1081) Class2_Sub45 local1081 = (Class2_Sub45) Static18.aClass28_2.method738(Static103.anIntArray187[local295]);
+									@Pc(1081) Node_Sub45 local1081 = (Node_Sub45) Static18.aClass28_2.get(Static103.anIntArray187[local295]);
 									if (local1081 != null) {
 										@Pc(1086) Class8_Sub2_Sub1_Sub2_Sub2 local1086 = local1081.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 										if (local1086.anInt10771 != client.cycle && local1086 != local988 && local1086.aBoolean817) {
@@ -225,13 +222,13 @@ public final class Static147 {
 					if (local543.aClass8_Sub2_18 instanceof Class8_Sub2_Sub5_Sub1) {
 						@Pc(1385) int local1385 = local186 + Static691.anInt10395;
 						local614 = Static116.anInt2279 + local584;
-						@Pc(1406) Class2_Sub17 local1406 = (Class2_Sub17) Static497.aClass28_35.method738(local614 << 14 | local543.aClass8_Sub2_18.aByte144 << 28 | local1385);
+						@Pc(1406) Node_Sub17 local1406 = (Node_Sub17) Static497.aClass28_35.get(local614 << 14 | local543.aClass8_Sub2_18.aByte144 << 28 | local1385);
 						if (local1406 != null) {
 							local295 = 0;
-							for (@Pc(1416) Class2_Sub15 local1416 = (Class2_Sub15) local1406.aClass341_12.method7715(); local1416 != null; local1416 = (Class2_Sub15) local1406.aClass341_12.method7716()) {
-								@Pc(1424) Class384 local1424 = Static419.aClass112_1.method2486(local1416.anInt1967);
+							for (@Pc(1416) Node_Sub15 local1416 = (Node_Sub15) local1406.aClass341_12.tail(); local1416 != null; local1416 = (Node_Sub15) local1406.aClass341_12.prev()) {
+								@Pc(1424) ObjType local1424 = client.objTypeList.get(local1416.anInt1967);
 								if (Static156.aBoolean223 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local543.aClass8_Sub2_18.aByte144) {
-									@Pc(1451) Class298 local1451 = Static610.anInt9355 == -1 ? null : Static386.aClass49_2.method1161(Static610.anInt9355);
+									@Pc(1451) ParamType local1451 = Static610.anInt9355 == -1 ? null : client.paramTypeList.method1161(Static610.anInt9355);
 									if ((Static717.anInt10851 & 0x1) != 0 && (local1451 == null || local1424.method8801(Static610.anInt9355, local1451.anInt7532) != local1451.anInt7532)) {
 										Static416.method5714(false, -1, local1416.anInt1967, local186, local584, Static153.aString27, 17, true, Static369.anInt4275, Static128.aString108 + " -> <col=ff9040>" + local1424.aString118, local295, false);
 									}
@@ -276,13 +273,13 @@ public final class Static147 {
 					}
 					if (local543.aClass8_Sub2_18 instanceof Interface25) {
 						@Pc(1654) Interface25 local1654 = (Interface25) local543.aClass8_Sub2_18;
-						@Pc(1661) Class54 local1661 = Static354.aClass142_4.method3063(local1654.method6866(-32136), 102);
+						@Pc(1661) LocType local1661 = client.locTypeList.method3063(local1654.method6866(-32136), 102);
 						if (local1661.anIntArray113 != null) {
 							local1661 = local1661.method1301(13, Static34.aClass306_1);
 						}
 						if (local1661 != null) {
 							if (Static156.aBoolean223 && Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local543.aClass8_Sub2_18.aByte144) {
-								@Pc(1697) Class298 local1697 = Static610.anInt9355 == -1 ? null : Static386.aClass49_2.method1161(Static610.anInt9355);
+								@Pc(1697) ParamType local1697 = Static610.anInt9355 == -1 ? null : client.paramTypeList.method1161(Static610.anInt9355);
 								if ((Static717.anInt10851 & 0x4) != 0 && (local1697 == null || local1661.method1316(local1697.anInt7532, Static610.anInt9355) != local1697.anInt7532)) {
 									Static416.method5714(false, -1, Static277.method4042(local1654, local584, local186), local186, local584, Static153.aString27, 60, true, Static369.anInt4275, Static128.aString108 + " -> <col=00ffff>" + local1661.aString7, local1654.hashCode(), false);
 								}
@@ -357,7 +354,7 @@ public final class Static147 {
 
 	@OriginalMember(owner = "client!eka", name = "a", descriptor = "(IIB)V")
 	public static void method2420(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(5, arg0);
+		@Pc(9) SecondaryNode_Sub2 local9 = Static440.method5970(5, arg0);
 		local9.method202();
 		local9.anInt197 = arg1;
 	}

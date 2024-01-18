@@ -96,14 +96,14 @@ public final class Static397 {
 		if (local7 == -1) {
 			return;
 		}
-		@Pc(27) Class23 local27 = (Class23) Static541.aClass82_174.method2156(local7);
+		@Pc(27) Class23 local27 = (Class23) Static541.aClass82_174.get(local7);
 		if (local27 == null) {
-			@Pc(34) Class409[] local34 = Static735.method9382(Static721.aClass332_128, local7);
+			@Pc(34) Class409[] local34 = Static735.method9382(client.js5Archive8, local7);
 			if (local34 == null) {
 				return;
 			}
 			local27 = Static163.aClass19_17.method7955(local34[0], true);
-			Static541.aClass82_174.method2150(local27, local7);
+			Static541.aClass82_174.put(local27, local7);
 		}
 		Static418.method7867(arg1.aByte144, arg1.anInt10722, 0, arg1.anInt10718, arg1.method9309((byte) 55) * 256);
 		@Pc(75) int local75 = arg0 + Static215.anIntArray284[0] - 18;

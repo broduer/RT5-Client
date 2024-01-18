@@ -23,7 +23,7 @@ public final class Class383 {
 
 	@OriginalMember(owner = "client!ve", name = "<init>", descriptor = "([B)V")
 	public Class383(@OriginalArg(0) byte[] arg0) {
-		@Pc(6) Packet local6 = new Packet(arg0);
+		@Pc(6) Buffer local6 = new Buffer(arg0);
 		@Pc(10) int local10 = local6.g1();
 		if (local10 != 0) {
 			throw new RuntimeException("");

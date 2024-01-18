@@ -103,7 +103,7 @@ public final class Static489 {
 		@Pc(10) boolean local10 = true;
 		for (@Pc(12) int local12 = 0; local12 < Static319.aByteArrayArray16.length; local12++) {
 			if (Static267.mapGroupIds[local12] != -1 && Static319.aByteArrayArray16[local12] == null) {
-				Static319.aByteArrayArray16[local12] = client.js5Archive5.method7602(0, Static267.mapGroupIds[local12]);
+				Static319.aByteArrayArray16[local12] = client.js5Archive5.fetchFile(0, Static267.mapGroupIds[local12]);
 				if (Static319.aByteArrayArray16[local12] == null) {
 					Static593.anInt8787++;
 					local10 = false;
@@ -117,14 +117,14 @@ public final class Static489 {
 				}
 			}
 			if (Static68.underwaterMapGroupIds[local12] != -1 && Static177.aByteArrayArray5[local12] == null) {
-				Static177.aByteArrayArray5[local12] = client.js5Archive5.method7602(0, Static68.underwaterMapGroupIds[local12]);
+				Static177.aByteArrayArray5[local12] = client.js5Archive5.fetchFile(0, Static68.underwaterMapGroupIds[local12]);
 				if (Static177.aByteArrayArray5[local12] == null) {
 					Static593.anInt8787++;
 					local10 = false;
 				}
 			}
 			if (Static298.underwaterLocGroupIds[local12] != -1 && Static421.aByteArrayArray19[local12] == null) {
-				Static421.aByteArrayArray19[local12] = client.js5Archive5.method7602(0, Static298.underwaterLocGroupIds[local12]);
+				Static421.aByteArrayArray19[local12] = client.js5Archive5.fetchFile(0, Static298.underwaterLocGroupIds[local12]);
 				if (Static421.aByteArrayArray19[local12] == null) {
 					Static593.anInt8787++;
 					local10 = false;
@@ -139,10 +139,10 @@ public final class Static489 {
 			}
 		}
 		if (Static42.aClass257_2 == null) {
-			if (Static162.aClass2_Sub2_Sub13_2 == null || !Static120.aClass332_19.method7594(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
+			if (Static162.aClass2_Sub2_Sub13_2 == null || !client.js5Archive23.method7594(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
 				Static42.aClass257_2 = new Class257(0);
-			} else if (Static120.aClass332_19.method7605(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
-				Static42.aClass257_2 = Static284.method4103(Static174.aBoolean249, Static120.aClass332_19, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
+			} else if (client.js5Archive23.method7605(Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements")) {
+				Static42.aClass257_2 = Static284.method4103(Static174.aBoolean249, client.js5Archive23, Static162.aClass2_Sub2_Sub13_2.aString48 + "_staticelements");
 			} else {
 				local10 = false;
 				Static593.anInt8787++;
@@ -183,7 +183,7 @@ public final class Static489 {
 			return;
 		}
 		if (Static213.anInt3482 != 0) {
-			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(client.lang) + "<br>(100%)", true, Static694.aClass383_13, Static437.aClass14_9);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.getLocalization(client.lang) + "<br>(100%)", true, Static694.aClass383_13, Static437.aClass14_9);
 		}
 		Static557.method7338();
 		Static352.method5187();
@@ -313,7 +313,7 @@ public final class Static489 {
 		Static197.method2949();
 		Static352.method5187();
 		Static442.method5976();
-		@Pc(920) Class2_Sub19 local920;
+		@Pc(920) Node_Sub19 local920;
 		if (GameShell.frame != null && Static405.aClass153_2.aClass350_1 != null && Static283.anInt4588 == 12) {
 			local920 = Static293.method4342(Static694.aClass347_122, Static405.aClass153_2.aClass186_1);
 			local920.aClass2_Sub21_Sub2_1.p4(1057001181);

@@ -1,5 +1,3 @@
-import java.awt.Canvas;
-import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
@@ -11,26 +9,12 @@ public final class Static538 {
 	@OriginalMember(owner = "client!qv", name = "f", descriptor = "F")
 	public static float aFloat174;
 
-	@OriginalMember(owner = "client!qv", name = "a", descriptor = "(ILjava/awt/Canvas;II)Lclient!cda;")
-	public static Class2_Sub10 method7199(@OriginalArg(0) int arg0, @OriginalArg(1) Canvas arg1, @OriginalArg(3) int arg2) {
-		try {
-			@Pc(13) Class local13 = Class.forName("Class2_Sub10_Sub2");
-			@Pc(17) Class2_Sub10 local17 = (Class2_Sub10) local13.getDeclaredConstructor().newInstance();
-			local17.method6339(arg2, arg0, arg1);
-			return local17;
-		} catch (@Pc(26) Throwable local26) {
-			@Pc(30) Class2_Sub10_Sub1 local30 = new Class2_Sub10_Sub1();
-			local30.method6339(arg2, arg0, arg1);
-			return local30;
-		}
-	}
-
 	@OriginalMember(owner = "client!qv", name = "a", descriptor = "(Z)V")
 	public static void method7200() {
-		@Pc(15) Class2_Sub21_Sub2 local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(15) Packet local15 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		for (@Pc(17) int local17 = 0; local17 < Static86.anInt1806; local17++) {
 			@Pc(23) int local23 = Static458.anIntArray553[local17];
-			@Pc(31) Class8_Sub2_Sub1_Sub2_Sub2 local31 = ((Class2_Sub45) Static18.aClass28_2.method738(local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
+			@Pc(31) Class8_Sub2_Sub1_Sub2_Sub2 local31 = ((Node_Sub45) Static18.aClass28_2.get(local23)).aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			@Pc(35) int local35 = local15.g1();
 			if ((local35 & 0x80) != 0) {
 				local35 += local15.g1() << 8;
@@ -125,7 +109,7 @@ public final class Static538 {
 				if (local31.aClass270_1.method5991()) {
 					Static58.method1259(local31);
 				}
-				local31.method9335(Static690.aClass310_2.method7099(local15.method7379()));
+				local31.method9335(client.npcTypeList.method7099(local15.method7379()));
 				local31.method9317(local31.aClass270_1.anInt6733);
 				local31.anInt10786 = local31.aClass270_1.anInt6768 << 3;
 				if (local31.aClass270_1.method5991()) {

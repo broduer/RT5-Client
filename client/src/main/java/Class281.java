@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class281 {
 
 	@OriginalMember(owner = "client!oka", name = "i", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_92;
+	private final Js5 aClass332_92;
 
 	@OriginalMember(owner = "client!oka", name = "d", descriptor = "I")
 	private final int anInt7015;
@@ -20,10 +20,10 @@ public final class Class281 {
 	private final boolean[] aBooleanArray22;
 
 	@OriginalMember(owner = "client!oka", name = "<init>", descriptor = "(Lclient!ul;ILclient!sb;)V")
-	public Class281(@OriginalArg(0) Class379 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class332 arg2) {
+	public Class281(@OriginalArg(0) ModeGame arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Js5 arg2) {
 		this.aClass332_92 = arg2;
-		this.aClass332_92.method7615(1);
-		@Pc(22) Packet local22 = new Packet(this.aClass332_92.method7602(0, 0));
+		this.aClass332_92.getGroupCapacity(1);
+		@Pc(22) Buffer local22 = new Buffer(this.aClass332_92.fetchFile(0, 0));
 		@Pc(26) int local26 = local22.g1();
 		if (local26 > 3) {
 			this.aBooleanArray22 = new boolean[0];
@@ -102,7 +102,7 @@ public final class Class281 {
 			@Pc(77) int[] local77 = new int[this.anIntArrayArray171[arg0].length];
 			Static734.method7702(this.anIntArrayArray171[arg0], 0, local77, 0, local77.length);
 			for (@Pc(99) int local99 = local66; local99 < local77.length; local99++) {
-				@Pc(112) int local112 = local66 + Static623.method8333(local77.length - local66, local70);
+				@Pc(112) int local112 = local66 + Static623.nextInt(local77.length - local66, local70);
 				@Pc(116) int local116 = local77[local99];
 				local77[local99] = local77[local112];
 				local77[local112] = local116;
@@ -120,9 +120,9 @@ public final class Class281 {
 
 	@OriginalMember(owner = "client!oka", name = "a", descriptor = "(IZ)Lclient!de;")
 	public Class76 method6284(@OriginalArg(0) int arg0) {
-		@Pc(10) byte[] local10 = this.aClass332_92.method7602(arg0, 1);
+		@Pc(10) byte[] local10 = this.aClass332_92.fetchFile(arg0, 1);
 		@Pc(14) Class76 local14 = new Class76();
-		local14.method2032(new Packet(local10));
+		local14.method2032(new Buffer(local10));
 		return local14;
 	}
 }

@@ -13,7 +13,7 @@ public final class Static522 {
 	public static int js5PrevErrors = 0;
 
 	@OriginalMember(owner = "client!qha", name = "Xd", descriptor = "Lclient!cja;")
-	public static Class2_Sub12 aClass2_Sub12_4 = null;
+	public static Node_Sub12 aClass2_Sub12_4 = null;
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIJ)Ljava/lang/String;")
 	public static String method7001(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
@@ -25,7 +25,7 @@ public final class Static522 {
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(ILclient!bn;)V")
-	public static void method7048(@OriginalArg(1) Class2_Sub8 arg0) {
+	public static void method7048(@OriginalArg(1) Node_Sub8 arg0) {
 		Static581.aClass2_Sub6_Sub1_3.method934(arg0, false);
 		if (Static426.aClass56_2 != null) {
 			Static426.aClass56_2.setStream(Static581.aClass2_Sub6_Sub1_3);

@@ -187,21 +187,21 @@ public final class Static294 {
 		}
 		if (Static426.aBoolean72) {
 			Static163.aClass19_17.method7978(local155, local161, local159, local153, 0xFF000000);
-			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(client.lang), false, Static694.aClass383_13, Static437.aClass14_9);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.getLocalization(client.lang), false, Static694.aClass383_13, Static437.aClass14_9);
 		}
 		Static501.method6723(false);
 	}
 
 	@OriginalMember(owner = "client!jg", name = "a", descriptor = "(ILclient!ge;)Lclient!pf;")
-	public static Class2_Sub1 method4348(@OriginalArg(1) Packet arg0) {
+	public static TextureOp method4348(@OriginalArg(1) Buffer arg0) {
 		arg0.g1();
 		@Pc(13) int local13 = arg0.g1();
-		@Pc(17) Class2_Sub1 local17 = Static96.method8828(local13);
-		local17.anInt10909 = arg0.g1();
+		@Pc(17) TextureOp local17 = TextureOp.create(local13);
+		local17.imageCacheCapacity = arg0.g1();
 		@Pc(32) int local32 = arg0.g1();
 		for (@Pc(34) int local34 = 0; local34 < local32; local34++) {
 			@Pc(40) int local40 = arg0.g1();
-			local17.method9423(arg0, local40);
+			local17.decode(arg0, local40);
 		}
 		local17.method9428();
 		return local17;

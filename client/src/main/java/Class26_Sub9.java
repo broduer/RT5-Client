@@ -18,12 +18,12 @@ public final class Class26_Sub9 extends Class26 {
 	private final IDirect3DVertexShader anIDirect3DVertexShader7;
 
 	@OriginalMember(owner = "client!qn", name = "<init>", descriptor = "(Lclient!kea;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub9(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub9(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass19_Sub1_Sub1_7 = arg0;
 		this.aClass7_6 = arg2;
 		if (arg1 != null && this.aClass7_6.method116() && (this.aClass19_Sub1_Sub1_7.aD3DCAPS1.VertexShaderVersion & 0xFFFF) >= 257) {
-			this.anIDirect3DVertexShader7 = this.aClass19_Sub1_Sub1_7.anIDirect3DDevice1.b(arg1.method7607("dx", "transparent_water"));
+			this.anIDirect3DVertexShader7 = this.aClass19_Sub1_Sub1_7.anIDirect3DDevice1.b(arg1.fetchFile("dx", "transparent_water"));
 		} else {
 			this.anIDirect3DVertexShader7 = null;
 		}

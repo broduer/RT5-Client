@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static409 {
 
 	@OriginalMember(owner = "client!mt", name = "O", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_85;
+	public static Js5 aClass332_85;
 
 	@OriginalMember(owner = "client!mt", name = "P", descriptor = "F")
 	public static float aFloat118;
@@ -20,14 +20,14 @@ public final class Static409 {
 	public static int anInt6338 = -1;
 
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(ILclient!cm;Lclient!cm;)V")
-	public static void method5661(@OriginalArg(1) Class2_Sub2 arg0, @OriginalArg(2) Class2_Sub2 arg1) {
-		if (arg1.aClass2_Sub2_67 != null) {
-			arg1.method9267();
+	public static void method5661(@OriginalArg(1) SecondaryNode arg0, @OriginalArg(2) SecondaryNode arg1) {
+		if (arg1.secondaryPrev != null) {
+			arg1.unlinkSecondary();
 		}
-		arg1.aClass2_Sub2_66 = arg0.aClass2_Sub2_66;
-		arg1.aClass2_Sub2_67 = arg0;
-		arg1.aClass2_Sub2_67.aClass2_Sub2_66 = arg1;
-		arg1.aClass2_Sub2_66.aClass2_Sub2_67 = arg1;
+		arg1.secondaryNext = arg0.secondaryNext;
+		arg1.secondaryPrev = arg0;
+		arg1.secondaryPrev.secondaryNext = arg1;
+		arg1.secondaryNext.secondaryPrev = arg1;
 	}
 
 	@OriginalMember(owner = "client!mt", name = "a", descriptor = "(II[[[Lclient!pha;IIZ)Z")

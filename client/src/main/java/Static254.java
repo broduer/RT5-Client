@@ -8,7 +8,7 @@ public final class Static254 {
 
 	@OriginalMember(owner = "client!hr", name = "c", descriptor = "(I)V")
 	public static void method3605() {
-		Static6.aClass332_1.anInt8579 = 1;
+		client.js5Archive2.discardUnpacked = 1;
 		if (Static283.anInt4588 == 15) {
 			Static187.method2842();
 		}
@@ -39,13 +39,13 @@ public final class Static254 {
 		}
 		Static390.anInt6146 = 0;
 		Static416.anInt6398 = 0;
-		Static18.aClass28_2.method737();
-		Static505.aClass341_77.method7707();
-		Static346.aClass28_29.method737();
+		Static18.aClass28_2.clear();
+		Static505.aClass341_77.clear();
+		Static346.aClass28_29.clear();
 		Static422.aClass130_9.method2789();
-		Static497.aClass28_35.method737();
-		Static159.aClass341_15 = new Class341();
-		Static227.aClass341_18 = new Class341();
+		Static497.aClass28_35.clear();
+		Static159.aClass341_15 = new LinkedList();
+		Static227.aClass341_18 = new LinkedList();
 		Static34.aClass306_1.method6874();
 		Static457.method6237();
 		Static121.anInt2342 = 0;
@@ -66,9 +66,9 @@ public final class Static254 {
 		if (Static377.anInt5950 != -1) {
 			Static347.method5101(Static377.anInt5950);
 		}
-		for (@Pc(8803) Class2_Sub4 local8803 = (Class2_Sub4) Static548.aClass28_40.method736(); local8803 != null; local8803 = (Class2_Sub4) Static548.aClass28_40.method740()) {
+		for (@Pc(8803) Node_Sub4 local8803 = (Node_Sub4) Static548.aClass28_40.method736(); local8803 != null; local8803 = (Node_Sub4) Static548.aClass28_40.method740()) {
 			if (!local8803.isLinked()) {
-				local8803 = (Class2_Sub4) Static548.aClass28_40.method736();
+				local8803 = (Node_Sub4) Static548.aClass28_40.method736();
 				if (local8803 == null) {
 					break;
 				}
@@ -76,7 +76,7 @@ public final class Static254 {
 			Static449.method6122(false, true, local8803);
 		}
 		Static377.anInt5950 = -1;
-		Static548.aClass28_40 = new Class28(8);
+		Static548.aClass28_40 = new HashTable(8);
 		Static656.method6699();
 		Static390.aClass158_9 = null;
 		for (@Pc(8849) int local8849 = 0; local8849 < 8; local8849++) {
@@ -100,7 +100,7 @@ public final class Static254 {
 		Static218.method3187();
 		Static273.aBoolean339 = true;
 		Static637.recolorPalette = Static419.recolorPalette = Static553.recolorPalette = Static238.recolorPalette = new short[256];
-		Static331.aString52 = Static32.aClass32_26.method877(client.lang);
+		Static331.aString52 = Static32.aClass32_26.getLocalization(client.lang);
 		Static400.aClass2_Sub34_28.method5111(Static400.aClass2_Sub34_28.aClass57_Sub4_1.method2143(), Static400.aClass2_Sub34_28.aClass57_Sub4_2);
 		Static400.aClass2_Sub34_28.method5111(Static400.aClass2_Sub34_28.aClass57_Sub19_1.method5967(), Static400.aClass2_Sub34_28.aClass57_Sub19_2);
 		Static334.anInt5475 = 0;
@@ -108,7 +108,7 @@ public final class Static254 {
 		Static371.method5291();
 		Static211.aClass2_Sub12_3 = null;
 		Static675.aLong307 = 0L;
-		Static6.aClass332_1.anInt8579 = 2;
+		client.js5Archive2.discardUnpacked = 2;
 	}
 
 	@OriginalMember(owner = "client!hr", name = "b", descriptor = "(I)V")

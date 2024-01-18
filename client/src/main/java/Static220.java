@@ -14,7 +14,7 @@ public final class Static220 {
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(IBIII)V")
 	public static void method3198(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		for (@Pc(6) Class2_Sub51 local6 = (Class2_Sub51) Static460.aClass341_40.method7706(65280); local6 != null; local6 = (Class2_Sub51) Static460.aClass341_40.method7713()) {
+		for (@Pc(6) Node_Sub51 local6 = (Node_Sub51) Static460.aClass341_40.head(); local6 != null; local6 = (Node_Sub51) Static460.aClass341_40.next()) {
 			Static632.method8373(arg0, local6, arg3, arg2, arg1);
 		}
 		if (-123 <= -127) {
@@ -22,9 +22,9 @@ public final class Static220 {
 		}
 		@Pc(154) int local154;
 		@Pc(198) boolean local198;
-		for (@Pc(42) Class2_Sub51 local42 = (Class2_Sub51) Static717.aClass341_81.method7706(65280); local42 != null; local42 = (Class2_Sub51) Static717.aClass341_81.method7713()) {
+		for (@Pc(42) Node_Sub51 local42 = (Node_Sub51) Static717.aClass341_81.head(); local42 != null; local42 = (Node_Sub51) Static717.aClass341_81.next()) {
 			@Pc(46) byte local46 = 1;
-			@Pc(51) Class291 local51 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9324();
+			@Pc(51) BasType local51 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9324();
 			@Pc(57) int local57 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aClass152_10.method9121();
 			if (local57 == -1 || local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.aBoolean818) {
 				local46 = 0;
@@ -74,9 +74,9 @@ public final class Static220 {
 			local42.anInt9375 = local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.anInt10722 + (local42.aClass8_Sub2_Sub1_Sub2_Sub2_3.method9309((byte) 68) << 8);
 			Static632.method8373(arg0, local42, arg3, arg2, arg1);
 		}
-		for (@Pc(329) Class2_Sub51 local329 = (Class2_Sub51) Static113.aClass28_12.method736(); local329 != null; local329 = (Class2_Sub51) Static113.aClass28_12.method740()) {
+		for (@Pc(329) Node_Sub51 local329 = (Node_Sub51) Static113.aClass28_12.method736(); local329 != null; local329 = (Node_Sub51) Static113.aClass28_12.method740()) {
 			@Pc(333) byte local333 = 1;
-			@Pc(338) Class291 local338 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.method9324();
+			@Pc(338) BasType local338 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.method9324();
 			local154 = local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.aClass152_10.method9121();
 			if (local154 == -1 || local329.aClass8_Sub2_Sub1_Sub2_Sub1_3.aBoolean818) {
 				local333 = 0;
@@ -147,7 +147,7 @@ public final class Static220 {
 	}
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(Lclient!cd;Lclient!sb;Lclient!sb;Lclient!sb;ILclient!bd;)Z")
-	public static boolean method3201(@OriginalArg(0) AudioChannel arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Class332 arg3, @OriginalArg(5) Class2_Sub6_Sub1 arg4) {
+	public static boolean method3201(@OriginalArg(0) AudioChannel arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Js5 arg2, @OriginalArg(3) Js5 arg3, @OriginalArg(5) MidiPcmStream arg4) {
 		Static581.aClass2_Sub6_Sub1_3 = arg4;
 		Static296.aClass332_61 = arg1;
 		Static91.aClass332_117 = arg2;

@@ -10,7 +10,7 @@ public final class t extends Class178 implements Interface5 {
 	public long nativeid;
 
 	@OriginalMember(owner = "client!t", name = "C", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_57 = new Class341();
+	private final LinkedList aClass341_57 = new LinkedList();
 
 	@OriginalMember(owner = "client!t", name = "A", descriptor = "I")
 	private int anInt8921 = -1;
@@ -42,7 +42,7 @@ public final class t extends Class178 implements Interface5 {
 		this.anInt8921 = -1;
 		@Pc(4) int local4 = 0;
 		@Pc(10) float[] local10 = new float[this.aClass341_57.method7708()];
-		for (@Pc(16) Class2_Sub7 local16 = (Class2_Sub7) this.aClass341_57.method7706(65280); local16 != null; local16 = (Class2_Sub7) this.aClass341_57.method7713()) {
+		for (@Pc(16) Node_Sub7 local16 = (Node_Sub7) this.aClass341_57.head(); local16 != null; local16 = (Node_Sub7) this.aClass341_57.next()) {
 			local10[local4++] = local16.method8435();
 		}
 		this.q(local10);
@@ -61,8 +61,8 @@ public final class t extends Class178 implements Interface5 {
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(Lclient!lca;[I)V")
 	@Override
-	public void method7875(@OriginalArg(0) Class2_Sub7 arg0, @OriginalArg(1) int[] arg1) {
-		this.aClass341_57.method7718(arg0);
+	public void method7875(@OriginalArg(0) Node_Sub7 arg0, @OriginalArg(1) int[] arg1) {
+		this.aClass341_57.insertBefore(arg0);
 		this.V(arg0.hashCode(), arg0.method8433(), arg0.method8432(), arg0.method8436(), arg0.method8439(), arg0.method8438(), arg1);
 	}
 
@@ -85,7 +85,7 @@ public final class t extends Class178 implements Interface5 {
 		this.anInt8921 = arg5;
 		@Pc(4) int local4 = 0;
 		@Pc(10) float[] local10 = new float[this.aClass341_57.method7708()];
-		for (@Pc(16) Class2_Sub7 local16 = (Class2_Sub7) this.aClass341_57.method7706(65280); local16 != null; local16 = (Class2_Sub7) this.aClass341_57.method7713()) {
+		for (@Pc(16) Node_Sub7 local16 = (Node_Sub7) this.aClass341_57.head(); local16 != null; local16 = (Node_Sub7) this.aClass341_57.next()) {
 			local10[local4++] = local16.method8435();
 		}
 		this.q(local10);
@@ -185,15 +185,15 @@ public final class t extends Class178 implements Interface5 {
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(Lclient!r;IIIIZ)Z")
 	@Override
-	public boolean method7881(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public boolean method7881(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		return true;
 	}
 
 	@OriginalMember(owner = "client!t", name = "wa", descriptor = "(Lclient!r;IIIIZ)V")
-	public native void wa(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
+	public native void wa(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
 
 	@OriginalMember(owner = "client!t", name = "CA", descriptor = "(Lclient!r;IIIIZ)V")
-	public native void CA(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
+	public native void CA(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5);
 
 	@OriginalMember(owner = "client!t", name = "ka", descriptor = "(III)V")
 	public native void ka(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
@@ -205,7 +205,7 @@ public final class t extends Class178 implements Interface5 {
 	public native void w(@OriginalArg(0) boolean arg0);
 
 	@OriginalMember(owner = "client!t", name = "fa", descriptor = "(IILclient!r;)Lclient!r;")
-	public native Class2_Sub2_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub9 arg2);
+	public native SecondaryNode_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryNode_Sub9 arg2);
 
 	@OriginalMember(owner = "client!t", name = "a", descriptor = "(IIIIIII[[Z)V")
 	@Override

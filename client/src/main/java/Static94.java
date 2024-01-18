@@ -14,7 +14,7 @@ public final class Static94 {
 
 	@OriginalMember(owner = "client!cv", name = "b", descriptor = "(B)V")
 	public static void method1840() {
-		for (@Pc(4) Class2_Sub2_Sub16 local4 = (Class2_Sub2_Sub16) Static693.aClass341_79.method7706(65280); local4 != null; local4 = (Class2_Sub2_Sub16) Static693.aClass341_79.method7713()) {
+		for (@Pc(4) SecondaryNode_Sub16 local4 = (SecondaryNode_Sub16) Static693.aClass341_79.head(); local4 != null; local4 = (SecondaryNode_Sub16) Static693.aClass341_79.next()) {
 			if (Static466.method6333(local4.anInt7335)) {
 				Static679.method8918(local4);
 			}

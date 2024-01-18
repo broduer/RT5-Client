@@ -20,7 +20,7 @@ public final class Static112 {
 		if (arg0.anInt10750 != -1) {
 			@Pc(24) Class8_Sub2_Sub1_Sub2 local24 = null;
 			if (arg0.anInt10750 < 32768) {
-				@Pc(54) Class2_Sub45 local54 = (Class2_Sub45) Static18.aClass28_2.method738(arg0.anInt10750);
+				@Pc(54) Node_Sub45 local54 = (Node_Sub45) Static18.aClass28_2.get(arg0.anInt10750);
 				if (local54 != null) {
 					local24 = local54.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				}
@@ -56,7 +56,7 @@ public final class Static112 {
 	}
 
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(BLclient!ge;)Lclient!jt;")
-	public static Class202 method2106(@OriginalArg(1) Packet arg0) {
+	public static Class202 method2106(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g2();
 		return new Class202(local7);
 	}

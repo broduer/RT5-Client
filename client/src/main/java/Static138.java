@@ -6,5 +6,5 @@ public final class Static138 {
 	public static int anInt2521 = -1;
 
 	@OriginalMember(owner = "client!efa", name = "e", descriptor = "Lclient!jga;")
-	public static final Class194 aClass194_6 = new Class194();
+	public static final SecondaryLinkedList aClass194_6 = new SecondaryLinkedList();
 }

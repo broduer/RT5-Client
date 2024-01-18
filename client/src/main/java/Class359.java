@@ -28,7 +28,7 @@ public final class Class359 {
 	private final int[] anIntArray730;
 
 	@OriginalMember(owner = "client!tn", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class359(@OriginalArg(0) Packet arg0) {
+	public Class359(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) int local7 = arg0.gsmarts();
 		this.anIntArray735 = new int[local7];
 		this.anIntArray734 = new int[local7];

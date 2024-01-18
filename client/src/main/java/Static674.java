@@ -10,7 +10,7 @@ public final class Static674 {
 	public static int anInt10156;
 
 	@OriginalMember(owner = "client!vfa", name = "Gb", descriptor = "Lclient!rfa;")
-	public static Class2_Sub47 aClass2_Sub47_3;
+	public static ClanChannel aClass2_Sub47_3;
 
 	@OriginalMember(owner = "client!vfa", name = "a", descriptor = "(II)V")
 	public static void method8796(@OriginalArg(0) int arg0) {
@@ -26,7 +26,7 @@ public final class Static674 {
 		Static719.musicChannel = AudioChannel.create(GameShell.sign, 0, 22050, GameShell.canvas);
 		Static697.method9127(Static48.method1100(null));
 		Static559.aClass56_3 = AudioChannel.create(GameShell.sign, 1, 2048, GameShell.canvas);
-		Static336.aClass2_Sub6_Sub3_1 = new Class2_Sub6_Sub3();
+		Static336.aClass2_Sub6_Sub3_1 = new MixerPcmStream();
 		Static559.aClass56_3.setStream(Static336.aClass2_Sub6_Sub3_1);
 		Static681.aClass226_2 = new Class226(22050, AudioChannel.globalSampleRate);
 		Static550.method7273();

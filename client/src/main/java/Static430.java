@@ -65,7 +65,7 @@ public final class Static430 {
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(Ljava/lang/String;II)V")
 	public static void method5826(@OriginalArg(0) String arg0, @OriginalArg(2) int arg1) {
 		@Pc(10) Class153 local10 = Static668.method8708();
-		@Pc(16) Class2_Sub19 local16 = Static293.method4342(Static425.aClass347_80, local10.aClass186_1);
+		@Pc(16) Node_Sub19 local16 = Static293.method4342(Static425.aClass347_80, local10.aClass186_1);
 		local16.aClass2_Sub21_Sub2_1.p1(Static231.method3379(arg0) + 1);
 		local16.aClass2_Sub21_Sub2_1.pjstr(arg0);
 		local16.aClass2_Sub21_Sub2_1.method7348(arg1);

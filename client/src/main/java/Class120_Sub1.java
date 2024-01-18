@@ -34,10 +34,10 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 	private Component aComponent1;
 
 	@OriginalMember(owner = "client!ht", name = "n", descriptor = "Lclient!sia;")
-	private Class341 aClass341_20 = new Class341();
+	private LinkedList aClass341_20 = new LinkedList();
 
 	@OriginalMember(owner = "client!ht", name = "q", descriptor = "Lclient!sia;")
-	private Class341 aClass341_21 = new Class341();
+	private LinkedList aClass341_21 = new LinkedList();
 
 	@OriginalMember(owner = "client!ht", name = "o", descriptor = "Z")
 	private final boolean aBoolean321;
@@ -78,13 +78,13 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(IIIII)V")
 	private void method3627(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(3) Class2_Sub9_Sub1 local3 = new Class2_Sub9_Sub1();
+		@Pc(3) Node_Sub9_Sub1 local3 = new Node_Sub9_Sub1();
 		local3.anInt1897 = arg1;
 		local3.anInt1896 = arg2;
 		local3.anInt1895 = arg0;
 		local3.aLong68 = Static588.currentTimeMillis();
 		local3.anInt1898 = arg3;
-		this.aClass341_21.method7718(local3);
+		this.aClass341_21.insertBefore(local3);
 	}
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(ZII)V")
@@ -98,8 +98,8 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(B)Lclient!bv;")
 	@Override
-	public Class2_Sub9 method8858() {
-		return (Class2_Sub9) this.aClass341_20.method7712();
+	public Node_Sub9 method8858() {
+		return (Node_Sub9) this.aClass341_20.removeHead();
 	}
 
 	@OriginalMember(owner = "client!ht", name = "a", descriptor = "(ILjava/awt/Component;)V")
@@ -199,10 +199,10 @@ public final class Class120_Sub1 extends Class120 implements MouseListener, Mous
 		this.anInt4144 = this.anInt4146;
 		this.anInt4143 = this.anInt4148;
 		this.anInt4145 = this.anInt4147;
-		@Pc(23) Class341 local23 = this.aClass341_20;
+		@Pc(23) LinkedList local23 = this.aClass341_20;
 		this.aClass341_20 = this.aClass341_21;
 		this.aClass341_21 = local23;
-		this.aClass341_21.method7707();
+		this.aClass341_21.clear();
 	}
 
 	@OriginalMember(owner = "client!ht", name = "b", descriptor = "(I)Z")

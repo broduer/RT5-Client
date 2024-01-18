@@ -32,10 +32,10 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 	private Component aComponent5;
 
 	@OriginalMember(owner = "client!vha", name = "J", descriptor = "Lclient!sia;")
-	private Class341 aClass341_74 = new Class341();
+	private LinkedList aClass341_74 = new LinkedList();
 
 	@OriginalMember(owner = "client!vha", name = "K", descriptor = "Lclient!sia;")
-	private Class341 aClass341_75 = new Class341();
+	private LinkedList aClass341_75 = new LinkedList();
 
 	@OriginalMember(owner = "client!vha", name = "p", descriptor = "Z")
 	private final boolean aBoolean773;
@@ -48,13 +48,13 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!vha", name = "a", descriptor = "(IIBII)V")
 	private void method8862(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		@Pc(15) Class2_Sub9_Sub2 local15 = new Class2_Sub9_Sub2();
+		@Pc(15) Node_Sub9_Sub2 local15 = new Node_Sub9_Sub2();
 		local15.anInt5966 = arg2;
 		local15.anInt5957 = arg3;
 		local15.anInt5962 = arg1;
 		local15.anInt5960 = arg0;
 		local15.aLong181 = Static588.currentTimeMillis();
-		this.aClass341_75.method7718(local15);
+		this.aClass341_75.insertBefore(local15);
 	}
 
 	@OriginalMember(owner = "client!vha", name = "c", descriptor = "(I)Z")
@@ -191,8 +191,8 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 
 	@OriginalMember(owner = "client!vha", name = "a", descriptor = "(B)Lclient!bv;")
 	@Override
-	public Class2_Sub9 method8858() {
-		return (Class2_Sub9) this.aClass341_74.method7712();
+	public Node_Sub9 method8858() {
+		return (Node_Sub9) this.aClass341_74.removeHead();
 	}
 
 	@OriginalMember(owner = "client!vha", name = "mouseReleased", descriptor = "(Ljava/awt/event/MouseEvent;)V")
@@ -229,9 +229,9 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 		this.anInt10232 = this.anInt10238;
 		this.anInt10225 = this.anInt10236;
 		this.anInt10224 = this.anInt10237;
-		@Pc(18) Class341 local18 = this.aClass341_74;
+		@Pc(18) LinkedList local18 = this.aClass341_74;
 		this.aClass341_74 = this.aClass341_75;
 		this.aClass341_75 = local18;
-		this.aClass341_75.method7707();
+		this.aClass341_75.clear();
 	}
 }

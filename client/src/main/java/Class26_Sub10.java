@@ -28,13 +28,13 @@ public final class Class26_Sub10 extends Class26 {
 	private final boolean aBoolean643;
 
 	@OriginalMember(owner = "client!rn", name = "<init>", descriptor = "(Lclient!kea;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub10(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub10(@OriginalArg(0) Class19_Sub1_Sub1 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass19_Sub1_Sub1_8 = arg0;
 		this.aClass7_7 = arg2;
 		if (arg1 != null && this.aClass19_Sub1_21.aBoolean686 && this.aClass19_Sub1_21.aBoolean697 && (this.aClass19_Sub1_Sub1_8.aD3DCAPS1.VertexShaderVersion & 0xFFFF) >= 257) {
-			this.anIDirect3DVertexShader8 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.b(arg1.method7607("dx", "environment_mapped_water_v"));
-			this.anIDirect3DPixelShader1 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.a(arg1.method7607("dx", "environment_mapped_water_f"));
+			this.anIDirect3DVertexShader8 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.b(arg1.fetchFile("dx", "environment_mapped_water_v"));
+			this.anIDirect3DPixelShader1 = this.aClass19_Sub1_Sub1_8.anIDirect3DDevice1.a(arg1.fetchFile("dx", "environment_mapped_water_f"));
 			this.aBoolean643 = this.anIDirect3DVertexShader8 != null && this.anIDirect3DPixelShader1 != null && this.aClass7_7.method115();
 		} else {
 			this.aBoolean643 = false;

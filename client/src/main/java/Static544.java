@@ -7,7 +7,7 @@ public final class Static544 {
 	public static boolean aBoolean625 = false;
 
 	@OriginalMember(owner = "client!rc", name = "a", descriptor = "(Lclient!hma;ZI)V")
-	public static void method7221(@OriginalArg(0) Class2_Sub25 arg0, @OriginalArg(1) boolean arg1) {
+	public static void method7221(@OriginalArg(0) Node_Sub25 arg0, @OriginalArg(1) boolean arg1) {
 		if (arg0.aBoolean309) {
 			if (arg0.anInt4013 < 0 || Static235.method3424(arg0.anInt4013, arg0.anInt4020)) {
 				if (arg1) {

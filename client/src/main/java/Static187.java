@@ -37,9 +37,9 @@ public final class Static187 {
 			Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local48] = null;
 		}
 		Static390.anInt6146 = 0;
-		Static18.aClass28_2.method737();
+		Static18.aClass28_2.clear();
 		Static416.anInt6398 = 0;
-		Static497.aClass28_35.method737();
+		Static497.aClass28_35.clear();
 		Static693.method9019();
 		Static334.anInt5475 = 0;
 		Static34.aClass306_1.method6874();
@@ -52,7 +52,7 @@ public final class Static187 {
 	}
 
 	@OriginalMember(owner = "client!fp", name = "a", descriptor = "(Lclient!sb;I)V")
-	public static void method2844(@OriginalArg(0) Class332 arg0) {
+	public static void method2844(@OriginalArg(0) Js5 arg0) {
 		Static559.anInt8434 = 0;
 		Static600.anInt8904 = 0;
 		Static342.aClass130_7 = new Class130();

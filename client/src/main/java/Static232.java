@@ -11,23 +11,23 @@ public final class Static232 {
 	public static int anInt3774 = 0;
 
 	@OriginalMember(owner = "client!hda", name = "ob", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_18 = new Class28(8);
+	public static final HashTable aClass28_18 = new HashTable(8);
 
 	@OriginalMember(owner = "client!hda", name = "u", descriptor = "Lclient!mia;")
 	public static final Class244 aClass244_6 = new Class244("", 21);
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;IIIIILclient!pg;IIIII)V")
-	public static void method3387(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class2_Sub2_Sub16 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
+	public static void method3387(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) SecondaryNode_Sub16 arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10) {
 		if (arg9 < arg10 && arg1 + arg9 > arg10 && arg8 > arg4 - 13 && arg4 + 3 > arg8 && arg6.aBoolean552) {
 			arg7 = arg5;
 		}
 		@Pc(49) int[] local49 = null;
 		if (Static245.method8642(arg6.anInt7335)) {
-			local49 = Static419.aClass112_1.method2486((int) arg6.aLong233).anIntArray800;
+			local49 = client.objTypeList.get((int) arg6.aLong233).anIntArray800;
 		} else if (arg6.anInt7338 != -1) {
-			local49 = Static419.aClass112_1.method2486(arg6.anInt7338).anIntArray800;
+			local49 = client.objTypeList.get(arg6.anInt7338).anIntArray800;
 		} else if (Static598.method7832(arg6.anInt7335)) {
-			@Pc(110) Class2_Sub45 local110 = (Class2_Sub45) Static18.aClass28_2.method738((int) arg6.aLong233);
+			@Pc(110) Node_Sub45 local110 = (Node_Sub45) Static18.aClass28_2.get((int) arg6.aLong233);
 			if (local110 != null) {
 				@Pc(115) Class8_Sub2_Sub1_Sub2_Sub2 local115 = local110.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(118) Class270 local118 = local115.aClass270_1;
@@ -39,7 +39,7 @@ public final class Static232 {
 				}
 			}
 		} else if (Static523.method3444(arg6.anInt7335)) {
-			@Pc(87) Class54 local87 = Static354.aClass142_4.method3063((int) (arg6.aLong233 >>> 32 & 0x7FFFFFFFL), 99);
+			@Pc(87) LocType local87 = client.locTypeList.method3063((int) (arg6.aLong233 >>> 32 & 0x7FFFFFFFL), 99);
 			if (local87.anIntArray113 != null) {
 				local87 = local87.method1301(13, Static34.aClass306_1);
 			}
@@ -107,7 +107,7 @@ public final class Static232 {
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(I)Z")
 	public static boolean method3400() {
-		@Pc(10) Class2_Sub57 local10 = (Class2_Sub57) Static631.aClass341_78.method7706(65280);
+		@Pc(10) Node_Sub57 local10 = (Node_Sub57) Static631.aClass341_78.head();
 		if (local10 == null) {
 			return false;
 		}

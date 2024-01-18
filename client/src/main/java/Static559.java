@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static559 {
 
 	@OriginalMember(owner = "client!rka", name = "Ub", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_7;
+	public static WorldMapFont aClass329_7;
 
 	@OriginalMember(owner = "client!rka", name = "Qb", descriptor = "Lclient!cd;")
 	public static AudioChannel aClass56_3;
@@ -14,7 +14,7 @@ public final class Static559 {
 
 	@OriginalMember(owner = "client!rka", name = "b", descriptor = "(ZI)V")
 	public static void method7421() {
-		@Pc(5) Class82 local5 = Static580.aClass82_186;
+		@Pc(5) SoftLruHashTable local5 = Static580.aClass82_186;
 		synchronized (Static580.aClass82_186) {
 			Static580.aClass82_186.method2147(5);
 		}

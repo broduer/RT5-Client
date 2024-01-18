@@ -25,11 +25,11 @@ public final class Static440 {
 	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(IIJ)Lclient!aj;")
-	public static Class2_Sub2_Sub2 method5970(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
-		@Pc(21) Class2_Sub2_Sub2 local21 = (Class2_Sub2_Sub2) Static658.aClass28_43.method738(arg1 | (long) arg0 << 56);
+	public static SecondaryNode_Sub2 method5970(@OriginalArg(1) int arg0, @OriginalArg(2) long arg1) {
+		@Pc(21) SecondaryNode_Sub2 local21 = (SecondaryNode_Sub2) Static658.aClass28_43.get(arg1 | (long) arg0 << 56);
 		if (local21 == null) {
-			local21 = new Class2_Sub2_Sub2(arg0, arg1);
-			Static658.aClass28_43.method735(local21.key, local21);
+			local21 = new SecondaryNode_Sub2(arg0, arg1);
+			Static658.aClass28_43.put(local21.key, local21);
 		}
 		return local21;
 	}

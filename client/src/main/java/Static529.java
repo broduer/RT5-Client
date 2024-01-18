@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static529 {
 
-	@OriginalMember(owner = "client!qla", name = "a", descriptor = "Lclient!hf;")
-	public static Class161 aClass161_1;
-
 	@OriginalMember(owner = "client!qla", name = "d", descriptor = "I")
 	public static int anInt8112 = -1;
 
@@ -21,7 +18,7 @@ public final class Static529 {
 	}
 
 	@OriginalMember(owner = "client!qla", name = "a", descriptor = "(ILclient!sb;Lclient!vq;)V")
-	public static void method7103(@OriginalArg(1) Class332 arg0, @OriginalArg(2) signlink arg1) {
+	public static void method7103(@OriginalArg(1) Js5 arg0, @OriginalArg(2) signlink arg1) {
 		Static442.aClass332_90 = arg0;
 		Static185.aString34 = "";
 		Static93.sign = arg1;

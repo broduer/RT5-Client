@@ -28,7 +28,7 @@ public final class Class40 {
 	private int[] anIntArray73;
 
 	@OriginalMember(owner = "client!bha", name = "h", descriptor = "Lclient!ge;")
-	private final Packet aClass2_Sub21_3 = new Packet(null);
+	private final Buffer aClass2_Sub21_3 = new Buffer(null);
 
 	@OriginalMember(owner = "client!bha", name = "<init>", descriptor = "()V")
 	public Class40() {
@@ -88,7 +88,7 @@ public final class Class40 {
 			this.aClass2_Sub21_3.pos += local12;
 			return 1;
 		} else if (local7 == 81) {
-			@Pc(32) int local32 = this.aClass2_Sub21_3.method7390();
+			@Pc(32) int local32 = this.aClass2_Sub21_3.g3();
 			local12 -= 3;
 			@Pc(38) int local38 = this.anIntArray70[arg0];
 			this.aLong31 += (long) local38 * (long) (this.anInt993 - local32);

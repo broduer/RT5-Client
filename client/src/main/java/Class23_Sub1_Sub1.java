@@ -35,7 +35,7 @@ public final class Class23_Sub1_Sub1 extends Class23_Sub1 {
 			for (@Pc(28) int local28 = 0; local28 < arg4; local28++) {
 				@Pc(34) int local34 = arg1[arg2++];
 				if (local34 >>> 24 == 255) {
-					this.anIntArray32[local23++] = (local34 & 0xFFFFFF) == 0 ? -16777215 : local34;
+					this.anIntArray32[local23++] = (local34 & 0xFFFFFF) == 0 ? 0xFF000001 : local34;
 				} else {
 					this.anIntArray32[local23++] = 0;
 				}

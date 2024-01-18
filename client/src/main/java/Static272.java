@@ -6,9 +6,6 @@ public final class Static272 {
 	@OriginalMember(owner = "client!ija", name = "q", descriptor = "[[S")
 	public static short[][] aShortArrayArray5;
 
-	@OriginalMember(owner = "client!ija", name = "m", descriptor = "Lclient!bka;")
-	public static Class45 aClass45_1;
-
 	@OriginalMember(owner = "client!ija", name = "j", descriptor = "Lclient!vq;")
 	public static signlink sign;
 

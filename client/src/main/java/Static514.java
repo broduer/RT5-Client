@@ -16,7 +16,7 @@ public final class Static514 {
 	public static int anInt7703 = -1;
 
 	@OriginalMember(owner = "client!qca", name = "a", descriptor = "(ZLclient!sb;)V")
-	public static void method6799(@OriginalArg(1) Class332 arg0) {
+	public static void method6799(@OriginalArg(1) Js5 arg0) {
 		Static309.aClass332_62 = arg0;
 	}
 }

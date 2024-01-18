@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public class Class152 {
 
 	@OriginalMember(owner = "client!gu", name = "L", descriptor = "Lclient!cka;")
-	public Class69 aClass69_4;
+	public SeqType aClass69_4;
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "I")
 	private int anInt10497;
@@ -51,7 +51,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "a", descriptor = "(ILclient!cka;B)V")
-	protected void method9093(@OriginalArg(0) int arg0, @OriginalArg(1) Class69 arg1) {
+	protected void method9093(@OriginalArg(0) int arg0, @OriginalArg(1) SeqType arg1) {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(I)I")
@@ -198,7 +198,7 @@ public class Class152 {
 	}
 
 	@OriginalMember(owner = "client!gu", name = "b", descriptor = "(B)Lclient!cka;")
-	public final Class69 method9114() {
+	public final SeqType method9114() {
 		return this.aClass69_4;
 	}
 

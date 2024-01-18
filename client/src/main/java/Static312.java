@@ -8,7 +8,7 @@ public final class Static312 {
 	public static int anInt5018;
 
 	@OriginalMember(owner = "client!jt", name = "a", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_106 = new Class82(50);
+	public static final SoftLruHashTable aClass82_106 = new SoftLruHashTable(50);
 
 	@OriginalMember(owner = "client!jt", name = "g", descriptor = "I")
 	public static int anInt5017 = -1;
@@ -33,14 +33,14 @@ public final class Static312 {
 		if (arg0.anObjectArray10 != null) {
 			@Pc(17) Class158 local17 = Static15.method186(Static77.anInt1621, Static450.anInt6840);
 			if (local17 != null) {
-				@Pc(23) Class2_Sub42 local23 = new Class2_Sub42();
+				@Pc(23) Node_Sub42 local23 = new Node_Sub42();
 				local23.anObjectArray36 = arg0.anObjectArray10;
 				local23.aClass158_14 = arg0;
 				local23.aClass158_13 = local17;
 				Static472.method6427(local23);
 			}
 		}
-		@Pc(45) Class2_Sub19 local45 = Static293.method4342(Static505.aClass347_119, Static405.aClass153_2.aClass186_1);
+		@Pc(45) Node_Sub19 local45 = Static293.method4342(Static505.aClass347_119, Static405.aClass153_2.aClass186_1);
 		local45.aClass2_Sub21_Sub2_1.method7357(arg0.anInt3823);
 		local45.aClass2_Sub21_Sub2_1.method7400(Static162.anInt2808);
 		local45.aClass2_Sub21_Sub2_1.method7377(Static77.anInt1621);

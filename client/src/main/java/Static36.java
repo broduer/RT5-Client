@@ -5,16 +5,13 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static36 {
 
-	@OriginalMember(owner = "client!bda", name = "E", descriptor = "Lclient!nh;")
-	public static Class262 aClass262_1;
-
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(IB)V")
 	public static void method977(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
 		Static101.method2000();
 		if (arg1 < 92) {
 			return;
 		}
-		@Pc(16) int local16 = aClass262_1.method5789(arg0).anInt8324;
+		@Pc(16) int local16 = client.varpTypeList.method5789(arg0).anInt8324;
 		if (local16 == 0) {
 			return;
 		}

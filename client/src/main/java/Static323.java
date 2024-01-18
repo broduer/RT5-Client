@@ -31,9 +31,9 @@ public final class Static323 {
 					if (local16 != null) {
 						@Pc(21) Class8_Sub2_Sub3 local21 = local16.aClass8_Sub2_Sub3_2;
 						@Pc(24) Class8_Sub2_Sub3 local24 = local16.aClass8_Sub2_Sub3_1;
-						if (local21 != null && local21.method9297(0)) {
+						if (local21 != null && local21.method9297()) {
 							Static535.method7155(local21, local1, local4, local7, 1, 1);
-							if (local24 != null && local24.method9297(0)) {
+							if (local24 != null && local24.method9297()) {
 								Static535.method7155(local24, local1, local4, local7, 1, 1);
 								local24.method9292(0, false, Static665.aClass19_15, 0, (byte) 126, 0, local21);
 								local24.method9287(27811);
@@ -42,13 +42,13 @@ public final class Static323 {
 						}
 						for (@Pc(76) Class288 local76 = local16.aClass288_2; local76 != null; local76 = local76.aClass288_1) {
 							@Pc(80) Class8_Sub2_Sub1 local80 = local76.aClass8_Sub2_Sub1_1;
-							if (local80 != null && local80.method9297(0)) {
+							if (local80 != null && local80.method9297()) {
 								Static535.method7155(local80, local1, local4, local7, local80.aShort134 + 1 - local80.aShort131, local80.aShort133 - local80.aShort132 + 1);
 								local80.method9287(27811);
 							}
 						}
 						@Pc(120) Class8_Sub2_Sub2 local120 = local16.aClass8_Sub2_Sub2_1;
-						if (local120 != null && local120.method9297(0)) {
+						if (local120 != null && local120.method9297()) {
 							Static453.method6216(local120, local1, local4, local7);
 							local120.method9287(27811);
 						}

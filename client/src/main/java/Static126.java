@@ -49,7 +49,7 @@ public final class Static126 {
 
 	@OriginalMember(owner = "client!du", name = "b", descriptor = "(I)V")
 	public static void method2229() {
-		@Pc(1) Class82 local1 = Static354.aClass82_120;
+		@Pc(1) SoftLruHashTable local1 = Static354.aClass82_120;
 		synchronized (Static354.aClass82_120) {
 			Static354.aClass82_120.method2151();
 		}

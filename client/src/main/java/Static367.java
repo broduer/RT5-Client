@@ -8,7 +8,7 @@ public final class Static367 {
 
 	@OriginalMember(owner = "client!lk", name = "a", descriptor = "(I)V")
 	public static void method5274() {
-		@Pc(1) Class82 local1 = Static354.aClass82_120;
+		@Pc(1) SoftLruHashTable local1 = Static354.aClass82_120;
 		synchronized (Static354.aClass82_120) {
 			Static354.aClass82_120.method2157();
 		}

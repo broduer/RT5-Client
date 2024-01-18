@@ -26,7 +26,7 @@ public final class Static53 {
 			if (!Static442.aClass332_90.method7584(local36, "")) {
 				return -1;
 			} else if (Static442.aClass332_90.method7605(local36)) {
-				@Pc(62) byte[] local62 = Static442.aClass332_90.method7607(local36, "");
+				@Pc(62) byte[] local62 = Static442.aClass332_90.fetchFile(local36, "");
 				@Pc(68) File local68;
 				try {
 					local68 = Static649.method8497(local22);

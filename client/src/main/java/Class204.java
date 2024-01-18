@@ -24,7 +24,7 @@ public final class Class204 {
 			return false;
 		}
 		@Pc(14) Class408 local14 = this.aClass19_Sub3_21.aClass408_7;
-		@Pc(25) Class2_Sub2_Sub19 local25 = new Class2_Sub2_Sub19(this.aClass19_Sub3_21, 6408, arg1.anInt10438, arg1.anInt10429);
+		@Pc(25) SecondaryNode_Sub19 local25 = new SecondaryNode_Sub19(this.aClass19_Sub3_21, 6408, arg1.anInt10438, arg1.anInt10429);
 		@Pc(35) boolean local35 = false;
 		this.aClass19_Sub3_21.method6974(local14);
 		local14.method9373(local25, 0);

@@ -5,14 +5,14 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static735 {
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;II)[Lclient!wp;")
-	public static Class409[] method9382(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
-		@Pc(5) byte[] local5 = arg0.method7602(0, arg1);
+	public static Class409[] method9382(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
+		@Pc(5) byte[] local5 = arg0.fetchFile(0, arg1);
 		return local5 == null ? null : method9383(local5);
 	}
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "([B)[Lclient!wp;")
 	public static Class409[] method9383(@OriginalArg(0) byte[] arg0) {
-		@Pc(4) Packet local4 = new Packet(arg0);
+		@Pc(4) Buffer local4 = new Buffer(arg0);
 		local4.pos = arg0.length - 2;
 		@Pc(14) int local14 = local4.g2();
 		@Pc(17) Class409[] local17 = new Class409[local14];
@@ -43,7 +43,7 @@ public final class Static735 {
 		local4.pos = arg0.length - local14 * 8 - (local56 - 1) * 3 - 7;
 		@Pc(160) int[] local160 = new int[local56];
 		for (@Pc(162) int local162 = 1; local162 < local56; local162++) {
-			local160[local162] = local4.method7390();
+			local160[local162] = local4.g3();
 			if (local160[local162] == 0) {
 				local160[local162] = 1;
 			}
@@ -105,19 +105,19 @@ public final class Static735 {
 	}
 
 	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;I)Lclient!wp;")
-	public static Class409 method9386(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+	public static Class409 method9386(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method7596(arg1);
 		return local4 == null ? null : method9383(local4)[0];
 	}
 
 	@OriginalMember(owner = "client!wp", name = "b", descriptor = "(Lclient!sb;II)Lclient!wp;")
-	public static Class409 method9389(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(5) byte[] local5 = arg0.method7602(arg2, arg1);
+	public static Class409 method9389(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(5) byte[] local5 = arg0.fetchFile(arg2, arg1);
 		return local5 == null ? null : method9383(local5)[0];
 	}
 
 	@OriginalMember(owner = "client!wp", name = "a", descriptor = "(Lclient!sb;I)[Lclient!wp;")
-	public static Class409[] method9394(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+	public static Class409[] method9394(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		@Pc(4) byte[] local4 = arg0.method7596(arg1);
 		return local4 == null ? null : method9383(local4);
 	}

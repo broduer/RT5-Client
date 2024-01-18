@@ -10,13 +10,13 @@ public final class Class109 implements Interface13 {
 	private Class23 aClass23_9;
 
 	@OriginalMember(owner = "client!en", name = "a", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_27;
+	private final Js5 aClass332_27;
 
 	@OriginalMember(owner = "client!en", name = "g", descriptor = "Lclient!jt;")
 	private final Class202 aClass202_1;
 
 	@OriginalMember(owner = "client!en", name = "<init>", descriptor = "(Lclient!sb;Lclient!jt;)V")
-	public Class109(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class202 arg1) {
+	public Class109(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class202 arg1) {
 		this.aClass332_27 = arg0;
 		this.aClass202_1 = arg1;
 	}

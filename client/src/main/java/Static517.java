@@ -14,12 +14,12 @@ public final class Static517 {
 	public static final Class155 aClass155_36 = new Class155(15);
 
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Lclient!sb;III)Lclient!ip;")
-	public static Class2_Sub2_Sub13 method6827(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(14) Packet local14 = new Packet(arg0.method7602(arg2, arg1));
-		@Pc(50) Class2_Sub2_Sub13 local50 = new Class2_Sub2_Sub13(arg2, local14.gstr(), local14.gstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
+	public static Map method6827(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+		@Pc(14) Buffer local14 = new Buffer(arg0.fetchFile(arg2, arg1));
+		@Pc(50) Map local50 = new Map(arg2, local14.gstr(), local14.gstr(), local14.g4(), local14.g4(), local14.g1() == 1, local14.g1(), local14.g1());
 		@Pc(54) int local54 = local14.g1();
 		for (@Pc(56) int local56 = 0; local56 < local54; local56++) {
-			local50.aClass341_26.method7718(new Class2_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
+			local50.aClass341_26.insertBefore(new Node_Sub56(local14.g1(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2(), local14.g2()));
 		}
 		local50.method4090();
 		return local50;

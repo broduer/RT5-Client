@@ -10,7 +10,7 @@ public final class Static681 {
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(I[B)Z")
 	public static boolean method8926(@OriginalArg(1) byte[] arg0) {
-		@Pc(8) Packet local8 = new Packet(arg0);
+		@Pc(8) Buffer local8 = new Buffer(arg0);
 		@Pc(12) int local12 = local8.g1();
 		if (local12 != 2) {
 			return false;
@@ -25,13 +25,13 @@ public final class Static681 {
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(III)V")
 	public static void method8927(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(16, arg0);
+		@Pc(9) SecondaryNode_Sub2 local9 = Static440.method5970(16, arg0);
 		local9.method202();
 		local9.anInt197 = arg1;
 	}
 
 	@OriginalMember(owner = "client!vk", name = "a", descriptor = "(ILjava/awt/Component;)Lclient!rg;")
 	public static Class321 method8928(@OriginalArg(1) Component arg0) {
-		return new Class321_Sub1(arg0);
+		return new Keyboard(arg0);
 	}
 }

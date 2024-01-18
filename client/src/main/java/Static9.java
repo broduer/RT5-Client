@@ -23,7 +23,7 @@ public final class Static9 {
 
 	@OriginalMember(owner = "client!af", name = "a", descriptor = "([BZ)V")
 	public static void method124(@OriginalArg(0) byte[] arg0) {
-		@Pc(15) Packet local15 = new Packet(arg0);
+		@Pc(15) Buffer local15 = new Buffer(arg0);
 		while (true) {
 			@Pc(19) int local19 = local15.g1();
 			if (local19 == 0) {

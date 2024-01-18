@@ -17,7 +17,7 @@ public final class Static643 {
 	}
 
 	@OriginalMember(owner = "client!uf", name = "a", descriptor = "(IILclient!d;ILjava/awt/Canvas;)Lclient!ha;")
-	public static Class19 method8450(@OriginalArg(0) int arg0, @OriginalArg(2) Interface4 arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Canvas arg3) {
+	public static Class19 method8450(@OriginalArg(0) int arg0, @OriginalArg(2) TextureProvider arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Canvas arg3) {
 		return new Class19_Sub2(arg3, arg1, arg0, arg2);
 	}
 
@@ -31,7 +31,7 @@ public final class Static643 {
 					if (local9.aClass158Array1 != null) {
 						method8451(local9.anInt3823, local9.aClass158Array1);
 					}
-					@Pc(56) Class2_Sub4 local56 = (Class2_Sub4) Static548.aClass28_40.method738(local9.anInt3823);
+					@Pc(56) Node_Sub4 local56 = (Node_Sub4) Static548.aClass28_40.get(local9.anInt3823);
 					if (local56 != null) {
 						Static26.method716(local56.anInt147);
 					}

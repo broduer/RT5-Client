@@ -9,7 +9,7 @@ public final class Static293 {
 	private static Class aClass10;
 
 	@OriginalMember(owner = "client!jfa", name = "a", descriptor = "(ILclient!hma;)V")
-	public static void method4339(@OriginalArg(1) Class2_Sub25 arg0) {
+	public static void method4339(@OriginalArg(1) Node_Sub25 arg0) {
 		if (Static334.aClass293ArrayArrayArray1 == null) {
 			return;
 		}
@@ -53,20 +53,20 @@ public final class Static293 {
 	}
 
 	@OriginalMember(owner = "client!jfa", name = "a", descriptor = "(ILclient!ss;Lclient!iv;)Lclient!fk;")
-	public static Class2_Sub19 method4342(@OriginalArg(1) ClientProt arg0, @OriginalArg(2) Class186 arg1) {
-		@Pc(6) Class2_Sub19 local6 = Static119.method2174();
+	public static Node_Sub19 method4342(@OriginalArg(1) ClientProt arg0, @OriginalArg(2) Class186 arg1) {
+		@Pc(6) Node_Sub19 local6 = Static119.method2174();
 		local6.anInt2995 = arg0.length;
 		local6.aClass347_32 = arg0;
 		if (local6.anInt2995 == -1) {
-			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(260);
+			local6.aClass2_Sub21_Sub2_1 = new Packet(260);
 		} else if (local6.anInt2995 == -2) {
-			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(10000);
+			local6.aClass2_Sub21_Sub2_1 = new Packet(10000);
 		} else if (local6.anInt2995 <= 18) {
-			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(20);
+			local6.aClass2_Sub21_Sub2_1 = new Packet(20);
 		} else if (local6.anInt2995 <= 98) {
-			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(100);
+			local6.aClass2_Sub21_Sub2_1 = new Packet(100);
 		} else {
-			local6.aClass2_Sub21_Sub2_1 = new Class2_Sub21_Sub2(260);
+			local6.aClass2_Sub21_Sub2_1 = new Packet(260);
 		}
 		local6.aClass2_Sub21_Sub2_1.method7429(arg1);
 		local6.aClass2_Sub21_Sub2_1.method7425(local6.aClass347_32.getOpcode());

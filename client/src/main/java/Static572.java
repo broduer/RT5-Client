@@ -22,13 +22,13 @@ public final class Static572 {
 
 	@OriginalMember(owner = "client!s", name = "b", descriptor = "(III)V")
 	public static void method7883(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(11) int local11 = Static42.aClass383_4.method8751(Static32.aClass32_24.method877(client.lang));
+		@Pc(11) int local11 = Static42.aClass383_4.method8751(Static32.aClass32_24.getLocalization(client.lang));
 		@Pc(68) int local68;
 		@Pc(27) int local27;
 		if (Static236.aBoolean304) {
-			for (@Pc(18) Class2_Sub2_Sub4 local18 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4359(); local18 != null; local18 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4357()) {
+			for (@Pc(18) SecondaryNode_Sub4 local18 = (SecondaryNode_Sub4) Static350.aClass194_8.head(); local18 != null; local18 = (SecondaryNode_Sub4) Static350.aClass194_8.next()) {
 				if (local18.anInt1541 == 1) {
-					local27 = Static249.method3536((Class2_Sub2_Sub16) local18.aClass194_3.aClass2_Sub2_36.aClass2_Sub2_66);
+					local27 = Static249.method3536((SecondaryNode_Sub16) local18.aClass194_3.sentinel.secondaryNext);
 				} else {
 					local27 = Static192.method2875(local18);
 				}
@@ -40,7 +40,7 @@ public final class Static572 {
 			Static407.anInt6308 = (Static60.aBoolean87 ? 26 : 22) + Static31.anInt770 * 16;
 			local68 = Static31.anInt770 * 16 + 21;
 		} else {
-			for (@Pc(74) Class2_Sub2_Sub16 local74 = (Class2_Sub2_Sub16) Static693.aClass341_79.method7706(65280); local74 != null; local74 = (Class2_Sub2_Sub16) Static693.aClass341_79.method7713()) {
+			for (@Pc(74) SecondaryNode_Sub16 local74 = (SecondaryNode_Sub16) Static693.aClass341_79.head(); local74 != null; local74 = (SecondaryNode_Sub16) Static693.aClass341_79.next()) {
 				local27 = Static249.method3536(local74);
 				if (local11 < local27) {
 					local11 = local27;

@@ -58,12 +58,12 @@ public final class Static488 {
 	}
 
 	@OriginalMember(owner = "client!pga", name = "a", descriptor = "(II)Lclient!fj;")
-	public static Class2_Sub2_Sub10 method6532(@OriginalArg(0) int arg0) {
-		@Pc(10) Class2_Sub2_Sub10 local10 = (Class2_Sub2_Sub10) Static480.aClass363_2.method8349(arg0);
+	public static SecondaryNode_Sub10 method6532(@OriginalArg(0) int arg0) {
+		@Pc(10) SecondaryNode_Sub10 local10 = (SecondaryNode_Sub10) Static480.aClass363_2.get(arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static31.aClass332_6.method7602(0, arg0);
+		@Pc(21) byte[] local21 = client.js5Archive12.fetchFile(0, arg0);
 		if (local21 == null || local21.length <= 1) {
 			return null;
 		}
@@ -72,7 +72,7 @@ public final class Static488 {
 		} catch (@Pc(38) Exception local38) {
 			throw new RuntimeException(local38.getMessage() + " S: " + arg0);
 		}
-		Static480.aClass363_2.method8348(local10, arg0);
+		Static480.aClass363_2.put(local10, arg0);
 		return local10;
 	}
 }

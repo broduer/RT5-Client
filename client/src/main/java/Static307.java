@@ -8,7 +8,7 @@ public final class Static307 {
 	private static boolean aBoolean380 = false;
 
 	@OriginalMember(owner = "client!jo", name = "c", descriptor = "Lclient!sia;")
-	private static final Class341 aClass341_28 = new Class341();
+	private static final LinkedList aClass341_28 = new LinkedList();
 
 	@OriginalMember(owner = "client!jo", name = "a", descriptor = "I")
 	private static int anInt4941 = 0;
@@ -21,16 +21,16 @@ public final class Static307 {
 		if (anInt4941 <= 0) {
 			arg0.w(false);
 		} else {
-			@Pc(15) Class2_Sub52 local15 = new Class2_Sub52();
+			@Pc(15) Node_Sub52 local15 = new Node_Sub52();
 			local15.anInterface5_1 = arg0;
-			aClass341_28.method7718(local15);
+			aClass341_28.insertBefore(local15);
 		}
 	}
 
 	@OriginalMember(owner = "client!jo", name = "c", descriptor = "(I)V")
 	public static synchronized void method4485() {
 		while (true) {
-			@Pc(4) Class2_Sub52 local4 = (Class2_Sub52) aClass341_28.method7712();
+			@Pc(4) Node_Sub52 local4 = (Node_Sub52) aClass341_28.removeHead();
 			if (local4 == null) {
 				return;
 			}

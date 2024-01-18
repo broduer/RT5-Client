@@ -31,7 +31,7 @@ public final class Class8_Sub5 extends Class8 {
 	private int anInt4159 = 0;
 
 	@OriginalMember(owner = "client!hv", name = "k", descriptor = "Lclient!sia;")
-	public Class341 aClass341_22 = new Class341();
+	public LinkedList aClass341_22 = new LinkedList();
 
 	@OriginalMember(owner = "client!hv", name = "j", descriptor = "Z")
 	private boolean aBoolean326 = false;
@@ -86,7 +86,7 @@ public final class Class8_Sub5 extends Class8 {
 			Static257.aBooleanArray6[local1] = false;
 		}
 		@Pc(21) int local21;
-		label71: for (@Pc(16) Class2_Sub2_Sub5 local16 = (Class2_Sub2_Sub5) this.aClass341_22.method7706(65280); local16 != null; local16 = (Class2_Sub2_Sub5) this.aClass341_22.method7713()) {
+		label71: for (@Pc(16) SecondaryNode_Sub5 local16 = (SecondaryNode_Sub5) this.aClass341_22.head(); local16 != null; local16 = (SecondaryNode_Sub5) this.aClass341_22.next()) {
 			if (arg0 != null) {
 				for (local21 = 0; local21 < arg0.length; local21++) {
 					if (local16.aClass251_1 == arg0[local21] || local16.aClass251_1 == arg0[local21].aClass251_2) {
@@ -98,8 +98,8 @@ public final class Class8_Sub5 extends Class8 {
 			}
 			local16.unlink();
 			this.anInt4161--;
-			if (local16.method9268()) {
-				local16.method9267();
+			if (local16.isSecondaryLinked()) {
+				local16.unlinkSecondary();
 				Static654.anInt9766--;
 			}
 		}
@@ -108,16 +108,16 @@ public final class Class8_Sub5 extends Class8 {
 		}
 		for (local21 = 0; local21 < arg0.length && local21 != 8 && this.anInt4161 != 8; local21++) {
 			if (!Static257.aBooleanArray6[local21]) {
-				@Pc(96) Class2_Sub2_Sub5 local96 = null;
+				@Pc(96) SecondaryNode_Sub5 local96 = null;
 				if (arg0[local21].method5597().anInt7003 == 1 && Static654.anInt9766 < 32) {
-					local96 = new Class2_Sub2_Sub5(arg0[local21], this);
-					Static519.aClass144_1.method3094(local96, arg0[local21].anInt6268);
+					local96 = new SecondaryNode_Sub5(arg0[local21], this);
+					Static519.aClass144_1.put(local96, arg0[local21].anInt6268);
 					Static654.anInt9766++;
 				}
 				if (local96 == null) {
-					local96 = new Class2_Sub2_Sub5(arg0[local21], this);
+					local96 = new SecondaryNode_Sub5(arg0[local21], this);
 				}
-				this.aClass341_22.method7718(local96);
+				this.aClass341_22.insertBefore(local96);
 				this.anInt4161++;
 				Static257.aBooleanArray6[local21] = true;
 			}
@@ -180,9 +180,9 @@ public final class Class8_Sub5 extends Class8 {
 	@OriginalMember(owner = "client!hv", name = "d", descriptor = "()V")
 	public void method3652() {
 		this.aBoolean324 = true;
-		for (@Pc(8) Class2_Sub2_Sub5 local8 = (Class2_Sub2_Sub5) this.aClass341_22.method7706(65280); local8 != null; local8 = (Class2_Sub2_Sub5) this.aClass341_22.method7713()) {
+		for (@Pc(8) SecondaryNode_Sub5 local8 = (SecondaryNode_Sub5) this.aClass341_22.head(); local8 != null; local8 = (SecondaryNode_Sub5) this.aClass341_22.next()) {
 			if (local8.aClass280_1.anInt7003 == 1) {
-				local8.method9267();
+				local8.unlinkSecondary();
 			}
 		}
 		for (@Pc(27) int local27 = 0; local27 < this.aClass8_Sub4_Sub2_Sub1Array1.length; local27++) {
@@ -194,7 +194,7 @@ public final class Class8_Sub5 extends Class8 {
 		this.anInt4158 = 0;
 		this.aClass130_6 = new Class130();
 		this.anInt4159 = 0;
-		this.aClass341_22 = new Class341();
+		this.aClass341_22 = new LinkedList();
 		this.anInt4161 = 0;
 		this.method9281();
 		Static81.aClass8_Sub5Array1[Static349.anInt5713] = this;

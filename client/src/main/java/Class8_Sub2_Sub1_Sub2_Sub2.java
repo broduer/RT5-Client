@@ -128,7 +128,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 			super.anInt10760 = (int) ((float) super.anInt10760 - (float) local75 / 10.0F);
 		}
 		local22.method7141(super.anInt10718, -super.anInt10760 + super.anInt10719 - 20, super.anInt10722);
-		@Pc(104) Class291 local104 = this.method9324();
+		@Pc(104) BasType local104 = this.method9324();
 		@Pc(118) Class270 local118 = this.aClass270_1.anIntArray532 == null ? this.aClass270_1 : this.aClass270_1.method5992(65535, Static34.aClass306_1);
 		super.aBoolean820 = false;
 		@Pc(123) Class8_Sub7 local123 = null;
@@ -189,7 +189,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 	@OriginalMember(owner = "client!wj", name = "a", descriptor = "(IZLclient!ha;)Z")
 	private boolean method9331(@OriginalArg(0) int arg0, @OriginalArg(2) Class19 arg1) {
 		@Pc(5) int local5 = arg0;
-		@Pc(9) Class291 local9 = this.method9324();
+		@Pc(9) BasType local9 = this.method9324();
 		@Pc(27) Class152 local27 = super.aClass152_11.method9116() && !super.aClass152_11.method9113() ? super.aClass152_11 : null;
 		@Pc(47) Class152 local47 = super.aClass152_10.method9116() && (!super.aBoolean818 || local27 == null) ? super.aClass152_10 : null;
 		@Pc(50) int local50 = local9.anInt7255;
@@ -202,7 +202,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 			arg0 |= 0x80000;
 		}
 		@Pc(111) int local111 = super.aClass126_7.method2673(16383);
-		@Pc(134) Class114 local134 = super.aClass114Array3[0] = this.aClass270_1.method6000(Static34.aClass306_1, arg1, Static574.aClass312_2, local27, local111, super.anIntArray877, this.aClass388_1, local47, arg0, super.aClass152_Sub2_Sub1Array3);
+		@Pc(134) Class114 local134 = super.aClass114Array3[0] = this.aClass270_1.method6000(Static34.aClass306_1, arg1, client.basTypeList, local27, local111, super.anIntArray877, this.aClass388_1, local47, arg0, super.aClass152_Sub2_Sub1Array3);
 		if (local134 == null) {
 			return false;
 		}
@@ -270,9 +270,6 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 	@OriginalMember(owner = "client!wj", name = "h", descriptor = "(B)I")
 	@Override
 	public int method9311(@OriginalArg(0) byte arg0) {
-		if (arg0 >= -48) {
-			this.method9297(117);
-		}
 		if (this.aClass270_1.anIntArray532 != null) {
 			@Pc(22) Class270 local22 = this.aClass270_1.method5992(65535, Static34.aClass306_1);
 			if (local22 != null && local22.anInt6735 != -1) {
@@ -320,8 +317,8 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 		}
 		for (@Pc(110) int local110 = 0; local110 < super.aClass201Array3.length; local110++) {
 			if (super.aClass201Array3[local110].anInt4947 != -1) {
-				@Pc(131) Class229 local131 = Static23.aClass128_1.method2694(super.aClass201Array3[local110].anInt4947);
-				if (local131.aBoolean448 && local131.anInt5862 != -1 && Static25.aClass50_1.method1162(local131.anInt5862).anInt1661 == 1) {
+				@Pc(131) SpotAnimType local131 = client.spotanimTypeList.method2694(super.aClass201Array3[local110].anInt4947);
+				if (local131.aBoolean448 && local131.anInt5862 != -1 && client.seqTypeList.method1162(local131.anInt5862).anInt1661 == 1) {
 					super.aClass201Array3[local110].aClass152_7.method9120(true, -1);
 					super.aClass201Array3[local110].anInt4947 = -1;
 				}
@@ -352,8 +349,8 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 		}
 		for (@Pc(61) int local61 = 0; local61 < super.aClass201Array3.length; local61++) {
 			if (super.aClass201Array3[local61].anInt4947 != -1) {
-				@Pc(81) Class229 local81 = Static23.aClass128_1.method2694(super.aClass201Array3[local61].anInt4947);
-				if (local81.aBoolean448 && local81.anInt5862 != -1 && Static25.aClass50_1.method1162(local81.anInt5862).anInt1661 == 1) {
+				@Pc(81) SpotAnimType local81 = client.spotanimTypeList.method2694(super.aClass201Array3[local61].anInt4947);
+				if (local81.aBoolean448 && local81.anInt5862 != -1 && client.seqTypeList.method1162(local81.anInt5862).anInt1661 == 1) {
 					super.aClass201Array3[local61].aClass152_7.method9120(true, -1);
 					super.aClass201Array3[local61].anInt4947 = -1;
 				}
@@ -415,10 +412,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 
 	@OriginalMember(owner = "client!wj", name = "i", descriptor = "(I)Z")
 	@Override
-	public boolean method9297(@OriginalArg(0) int arg0) {
-		if (arg0 != 0) {
-			this.method9329();
-		}
+	public boolean method9297() {
 		return false;
 	}
 

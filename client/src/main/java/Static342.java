@@ -11,7 +11,7 @@ public final class Static342 {
 	public static final ClientProt aClass347_61 = new ClientProt(47, 7);
 
 	@OriginalMember(owner = "client!kp", name = "a", descriptor = "(ILclient!jm;)V")
-	public static void method4469(@OriginalArg(1) Class199 arg0) {
+	public static void method4469(@OriginalArg(1) HuffmanCodec arg0) {
 		Static636.aClass199_1 = arg0;
 	}
 

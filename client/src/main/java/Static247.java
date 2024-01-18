@@ -9,7 +9,7 @@ public final class Static247 {
 
 	@OriginalMember(owner = "client!hla", name = "a", descriptor = "(ILclient!ca;)V")
 	public static void method3523(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub1 arg0) {
-		@Pc(16) Class2_Sub51 local16 = (Class2_Sub51) Static113.aClass28_12.method738(arg0.anInt10768);
+		@Pc(16) Node_Sub51 local16 = (Node_Sub51) Static113.aClass28_12.get(arg0.anInt10768);
 		if (local16 == null) {
 			Static89.method1714(arg0.aByte144, arg0, arg0.anIntArray879[0], arg0.anIntArray878[0], null, null, 0);
 		} else {

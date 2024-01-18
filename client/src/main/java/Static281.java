@@ -7,9 +7,6 @@ public final class Static281 {
 	@OriginalMember(owner = "client!iq", name = "c", descriptor = "I")
 	public static int anInt4580;
 
-	@OriginalMember(owner = "client!iq", name = "a", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_60;
-
 	@OriginalMember(owner = "client!iq", name = "a", descriptor = "(ILclient!pea;)V")
 	public static void method4092(@OriginalArg(1) Class8_Sub7 arg0) {
 		arg0.aClass8_Sub2_18 = null;

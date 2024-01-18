@@ -8,7 +8,7 @@ public final class Static618 {
 	public static int anInt9475;
 
 	@OriginalMember(owner = "client!tja", name = "G", descriptor = "Lclient!sia;")
-	public static final Class341 aClass341_68 = new Class341();
+	public static final LinkedList aClass341_68 = new LinkedList();
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(III)Z")
 	public static boolean method8323(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
@@ -16,7 +16,7 @@ public final class Static618 {
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(BLclient!ge;)V")
-	public static void method8324(@OriginalArg(1) Packet arg0) {
+	public static void method8324(@OriginalArg(1) Buffer arg0) {
 		if (arg0.data.length - arg0.pos < 1) {
 			return;
 		}
@@ -31,14 +31,14 @@ public final class Static618 {
 		for (@Pc(80) int local80 = 0; local80 < local62; local80++) {
 			@Pc(86) int local86 = arg0.g2();
 			@Pc(90) int local90 = arg0.g4();
-			if (local86 < Static511.anIntArray614.length && Static118.aBooleanArray4[local86] && (Static691.aClass212_1.method4954(local86).aChar5 != '1' || local90 >= -1 && local90 <= 1)) {
+			if (local86 < Static511.anIntArray614.length && Static118.aBooleanArray4[local86] && (client.varclientTypeList.method4954(local86).aChar5 != '1' || local90 >= -1 && local90 <= 1)) {
 				Static511.anIntArray614[local86] = local90;
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(Lclient!sb;IZIIIZ)V")
-	public static void method8325(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
+	public static void method8325(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(4) int arg2, @OriginalArg(5) int arg3) {
 		if (arg3 <= 0) {
 			Static611.method8236(arg2, arg1, arg0);
 			return;
@@ -57,7 +57,7 @@ public final class Static618 {
 	}
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(Lclient!rka;B)V")
-	public static void method8326(@OriginalArg(0) Class2_Sub21_Sub2 arg0) {
+	public static void method8326(@OriginalArg(0) Packet arg0) {
 		for (@Pc(10) int local10 = 0; local10 < Static652.anInt9739; local10++) {
 			@Pc(18) int local18 = Static321.anIntArray388[local10];
 			@Pc(22) Class8_Sub2_Sub1_Sub2_Sub1 local22 = Static621.aClass8_Sub2_Sub1_Sub2_Sub1Array3[local18];
@@ -84,10 +84,10 @@ public final class Static618 {
 			local12 &= 0xFFFFFDFF;
 		}
 		@Pc(58) long local58 = ((long) arg3 << 48) + ((long) arg11 << 32) + (long) (arg5 + (arg7 << 16) + (arg0 << 24));
-		@Pc(60) Class82 local60 = Static354.aClass82_120;
+		@Pc(60) SoftLruHashTable local60 = Static354.aClass82_120;
 		@Pc(68) Class114 local68;
 		synchronized (Static354.aClass82_120) {
-			local68 = (Class114) Static354.aClass82_120.method2156(local58);
+			local68 = (Class114) Static354.aClass82_120.get(local58);
 		}
 		if (local68 == null || arg6.method7967(local68.ua(), local12) != 0) {
 			if (local68 != null) {
@@ -118,8 +118,8 @@ public final class Static618 {
 				local185 = local143[local175];
 				for (local187 = 0; local187 < local106; local187++) {
 					@Pc(195) int local195 = (local187 << 14) / local106;
-					@Pc(203) int local203 = Class363.anIntArray741[local195] * local181 >> 14;
-					local211 = local185 * Class363.anIntArray740[local195] >> 14;
+					@Pc(203) int local203 = Class114_Sub1.anIntArray741[local195] * local181 >> 14;
+					local211 = local185 * Class114_Sub1.anIntArray740[local195] >> 14;
 					local173[local175][local187] = local162.method2230(local211, 0, local203);
 				}
 			}
@@ -138,9 +138,9 @@ public final class Static618 {
 				}
 			}
 			local68 = arg6.method7959(local162, local12, Static722.anInt10934, 64, 768);
-			@Pc(440) Class82 local440 = Static354.aClass82_120;
+			@Pc(440) SoftLruHashTable local440 = Static354.aClass82_120;
 			synchronized (Static354.aClass82_120) {
-				Static354.aClass82_120.method2150(local68, local58);
+				Static354.aClass82_120.put(local68, local58);
 			}
 		}
 		@Pc(456) int local456 = arg1.V();

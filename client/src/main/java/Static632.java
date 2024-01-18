@@ -20,7 +20,7 @@ public final class Static632 {
 	public static final float[] aFloatArray71 = new float[4];
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(Lclient!ge;I)Lclient!is;")
-	public static Class138 method8366(@OriginalArg(0) Packet arg0) {
+	public static Class138 method8366(@OriginalArg(0) Buffer arg0) {
 		@Pc(10) Class405 local10 = Static33.method882()[arg0.g1()];
 		@Pc(17) Class103 local17 = Static313.method4551()[arg0.g1()];
 		@Pc(21) int local21 = arg0.method7363();
@@ -39,7 +39,7 @@ public final class Static632 {
 	}
 
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(ILclient!tg;IIBI)V")
-	public static void method8373(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub51 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
+	public static void method8373(@OriginalArg(0) int arg0, @OriginalArg(1) Node_Sub51 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(5) int arg4) {
 		if (arg1.anInt9379 == -1 && arg1.anIntArray718 == null) {
 			return;
 		}
@@ -103,7 +103,7 @@ public final class Static632 {
 			}
 			local214 = (16384 - local275 >> 1) + local264 * local275 / 8192;
 		}
-		@Pc(391) Class2_Sub6_Sub2 local391;
+		@Pc(391) SoundPcmStream local391;
 		if (arg1.aClass2_Sub6_Sub2_4 != null) {
 			arg1.aClass2_Sub6_Sub2_4.method3327(local182);
 			arg1.aClass2_Sub6_Sub2_4.method3333(local214);
@@ -111,7 +111,7 @@ public final class Static632 {
 			local264 = arg1.anInt9386 == 256 && arg1.anInt9385 == 256 ? 256 : Static159.method2572(arg1.anInt9385, arg1.anInt9386);
 			if (arg1.aBoolean715) {
 				if (arg1.aClass2_Sub53_3 == null) {
-					arg1.aClass2_Sub53_3 = Static650.method8505(Static147.aClass332_26, arg1.anInt9379);
+					arg1.aClass2_Sub53_3 = Static650.method8505(client.js5Archive14, arg1.anInt9379);
 				}
 				if (arg1.aClass2_Sub53_3 != null) {
 					if (arg1.aClass2_Sub49_Sub1_4 == null) {
@@ -125,10 +125,10 @@ public final class Static632 {
 					}
 				}
 			} else {
-				@Pc(408) Class89 local408 = Static729.method2245(Static281.aClass332_60, arg1.anInt9379, 0);
+				@Pc(408) Class89 local408 = Static729.method2245(client.js5Archive4, arg1.anInt9379, 0);
 				if (local408 != null) {
-					@Pc(415) Class2_Sub49_Sub1 local415 = local408.method2247().method7828(Static681.aClass226_2);
-					@Pc(423) Class2_Sub6_Sub2 local423 = Static730.method3346(local415, local264, local182 << 6, local214);
+					@Pc(415) PcmSound local415 = local408.method2247().method7828(Static681.aClass226_2);
+					@Pc(423) SoundPcmStream local423 = Static730.method3346(local415, local264, local182 << 6, local214);
 					local423.method3318(-1);
 					Static336.aClass2_Sub6_Sub3_1.method5889(local423);
 					arg1.aClass2_Sub6_Sub2_4 = local423;
@@ -147,10 +147,10 @@ public final class Static632 {
 			local264 = arg1.anInt9386 == 256 && arg1.anInt9385 == 256 ? 256 : arg1.anInt9385 + (int) ((double) (arg1.anInt9386 - arg1.anInt9385) * Math.random());
 			if (!arg1.aBoolean716) {
 				local275 = (int) ((double) arg1.anIntArray718.length * Math.random());
-				@Pc(536) Class89 local536 = Static729.method2245(Static281.aClass332_60, arg1.anIntArray718[local275], 0);
+				@Pc(536) Class89 local536 = Static729.method2245(client.js5Archive4, arg1.anIntArray718[local275], 0);
 				if (local536 != null) {
-					@Pc(543) Class2_Sub49_Sub1 local543 = local536.method2247().method7828(Static681.aClass226_2);
-					@Pc(551) Class2_Sub6_Sub2 local551 = Static730.method3346(local543, local264, local182 << 6, local214);
+					@Pc(543) PcmSound local543 = local536.method2247().method7828(Static681.aClass226_2);
+					@Pc(551) SoundPcmStream local551 = Static730.method3346(local543, local264, local182 << 6, local214);
 					local551.method3318(0);
 					Static336.aClass2_Sub6_Sub3_1.method5889(local551);
 					arg1.anInt9377 = (int) (Math.random() * (double) (arg1.anInt9380 - arg1.anInt9391)) + arg1.anInt9391;
@@ -161,7 +161,7 @@ public final class Static632 {
 			}
 			if (arg1.aClass2_Sub53_2 == null) {
 				local275 = (int) (Math.random() * (double) arg1.anIntArray718.length);
-				arg1.aClass2_Sub53_2 = Static650.method8505(Static147.aClass332_26, arg1.anIntArray718[local275]);
+				arg1.aClass2_Sub53_2 = Static650.method8505(client.js5Archive14, arg1.anIntArray718[local275]);
 			}
 			if (arg1.aClass2_Sub53_2 != null) {
 				if (arg1.aClass2_Sub49_Sub1_3 == null) {

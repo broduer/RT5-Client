@@ -32,7 +32,7 @@ public final class oa extends Class19 implements Interface5 {
 	private boolean aBoolean509 = false;
 
 	@OriginalMember(owner = "client!oa", name = "E", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_38 = new Class341();
+	private final LinkedList aClass341_38 = new LinkedList();
 
 	@OriginalMember(owner = "client!oa", name = "I", descriptor = "I")
 	private int anInt6789 = 4096;
@@ -41,7 +41,7 @@ public final class oa extends Class19 implements Interface5 {
 	private int anInt6790 = 4096;
 
 	@OriginalMember(owner = "client!oa", name = "x", descriptor = "Lclient!av;")
-	private final Class28 aClass28_33 = new Class28(4);
+	private final HashTable aClass28_33 = new HashTable(4);
 
 	@OriginalMember(owner = "client!oa", name = "G", descriptor = "Z")
 	private boolean aBoolean510 = false;
@@ -50,7 +50,7 @@ public final class oa extends Class19 implements Interface5 {
 	private Class73 aClass73_8;
 
 	@OriginalMember(owner = "client!oa", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!d;II)V")
-	public oa(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public oa(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		super(arg1);
 		try {
 			if (!Static14.method179("sw3d")) {
@@ -96,7 +96,7 @@ public final class oa extends Class19 implements Interface5 {
 	public void method7984(@OriginalArg(0) int arg0) {
 		Static307.method4485();
 		this.d(arg0);
-		for (@Pc(10) ya local10 = (ya) this.aClass341_38.method7706(65280); local10 != null; local10 = (ya) this.aClass341_38.method7713()) {
+		for (@Pc(10) ya local10 = (ya) this.aClass341_38.head(); local10 != null; local10 = (ya) this.aClass341_38.next()) {
 			local10.r();
 		}
 	}
@@ -130,7 +130,7 @@ public final class oa extends Class19 implements Interface5 {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "MA", descriptor = "(Lclient!d;II)V")
-	public native void MA(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
+	public native void MA(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2);
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!lk;Z)V")
 	private void method6092(@OriginalArg(0) Class232 arg0) {
@@ -161,7 +161,7 @@ public final class oa extends Class19 implements Interface5 {
 			this.aP1 = null;
 			this.t(null);
 		} else {
-			@Pc(10) p local10 = (p) this.aClass28_33.method738(arg0.hashCode());
+			@Pc(10) p local10 = (p) this.aClass28_33.get(arg0.hashCode());
 			this.aP1 = local10;
 			this.t(local10);
 		}
@@ -173,7 +173,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method7942(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738(arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aClass28_33.get(arg0.hashCode());
 		local8.method6446(arg0, arg1, arg2);
 		if (arg0 != null && arg0 == this.aP1.aCanvas9) {
 			this.method8026(arg0);
@@ -245,7 +245,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public void method7945(@OriginalArg(0) Class2_Sub13 arg0) {
+	public void method7945(@OriginalArg(0) Node_Sub13 arg0) {
 		this.aYa2 = (ya) arg0;
 		this.va(arg0);
 	}
@@ -300,8 +300,8 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public Class2_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
-		return new Class2_Sub7_Sub3(arg0, arg1, arg2, arg3, arg4, arg5);
+	public Node_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		return new Node_Sub7_Sub3(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@OriginalMember(owner = "client!oa", name = "KA", descriptor = "(IIII)V")
@@ -310,7 +310,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "c", descriptor = "(S)Z")
 	private boolean c(@OriginalArg(0) short arg0) {
 		synchronized (this) {
-			@Pc(9) Class118 local9 = super.anInterface4_10.method6824(arg0);
+			@Pc(9) Material local9 = super.anInterface4_10.method6824(arg0);
 			if (local9 == null) {
 				return false;
 			} else {
@@ -329,7 +329,7 @@ public final class oa extends Class19 implements Interface5 {
 		if (this.aP1.aCanvas9 == arg0) {
 			this.method8026(null);
 		}
-		@Pc(18) p local18 = (p) this.aClass28_33.method738(arg0.hashCode());
+		@Pc(18) p local18 = (p) this.aClass28_33.get(arg0.hashCode());
 		if (local18 != null) {
 			local18.unlink();
 			local18.method6449();
@@ -370,9 +370,9 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public Class2_Sub13 method7968(@OriginalArg(0) int arg0) {
+	public Node_Sub13 method7968(@OriginalArg(0) int arg0) {
 		@Pc(5) ya local5 = new ya(this, arg0);
-		this.aClass341_38.method7718(local5);
+		this.aClass341_38.insertBefore(local5);
 		return local5;
 	}
 
@@ -474,7 +474,7 @@ public final class oa extends Class19 implements Interface5 {
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(Ljava/awt/Canvas;II)V")
 	@Override
 	public void method8029(@OriginalArg(0) Canvas arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		@Pc(8) p local8 = (p) this.aClass28_33.method738(arg0.hashCode());
+		@Pc(8) p local8 = (p) this.aClass28_33.get(arg0.hashCode());
 		if (local8 == null) {
 			try {
 				@Pc(15) Class local15 = Class.forName("java.awt.Canvas");
@@ -483,7 +483,7 @@ public final class oa extends Class19 implements Interface5 {
 			} catch (@Pc(39) Exception local39) {
 			}
 			local8 = new p(this, arg0, arg1, arg2);
-			this.aClass28_33.method735(arg0.hashCode(), local8);
+			this.aClass28_33.put(arg0.hashCode(), local8);
 		} else if (local8.anInt7182 != arg1 || local8.anInt7183 != arg2) {
 			local8.method6446(arg0, arg1, arg2);
 		}
@@ -581,12 +581,12 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "WA", descriptor = "(S)Z")
 	private boolean WA(@OriginalArg(0) short arg0) {
-		@Pc(2) Interface4 local2 = super.anInterface4_10;
+		@Pc(2) TextureProvider local2 = super.anInterface4_10;
 		synchronized (super.anInterface4_10) {
 			if (!super.anInterface4_10.method6821(arg0)) {
 				return false;
 			}
-			@Pc(22) Class118 local22 = super.anInterface4_10.method6824(arg0);
+			@Pc(22) Material local22 = super.anInterface4_10.method6824(arg0);
 			if (local22 == null) {
 				return false;
 			}
@@ -627,7 +627,7 @@ public final class oa extends Class19 implements Interface5 {
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Node_Sub7[] arg1) {
 		@Pc(1) int local1 = 0;
 		for (@Pc(3) int local3 = 0; local3 < arg0; local3++) {
 			Static445.anIntArray540[local1++] = arg1[local3].method8433();
@@ -777,11 +777,11 @@ public final class oa extends Class19 implements Interface5 {
 		this.aP1 = null;
 		this.aYa2 = null;
 		this.aClass73_8 = null;
-		this.aClass28_33.method737();
-		for (@Pc(26) ya local26 = (ya) this.aClass341_38.method7706(65280); local26 != null; local26 = (ya) this.aClass341_38.method7713()) {
+		this.aClass28_33.clear();
+		for (@Pc(26) ya local26 = (ya) this.aClass341_38.head(); local26 != null; local26 = (ya) this.aClass341_38.next()) {
 			local26.ga();
 		}
-		this.aClass341_38.method7707();
+		this.aClass341_38.clear();
 		this.FA();
 		if (this.aBoolean510) {
 			Static300.method4397(false, true);
@@ -808,7 +808,7 @@ public final class oa extends Class19 implements Interface5 {
 	public native void la();
 
 	@OriginalMember(owner = "client!oa", name = "va", descriptor = "(Lclient!za;)V")
-	public native void va(@OriginalArg(0) Class2_Sub13 arg0);
+	public native void va(@OriginalArg(0) Node_Sub13 arg0);
 
 	@OriginalMember(owner = "client!oa", name = "C", descriptor = "(Z)V")
 	public native void C(@OriginalArg(0) boolean arg0);

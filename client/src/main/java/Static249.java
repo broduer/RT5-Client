@@ -34,15 +34,15 @@ public final class Static249 {
 	}
 
 	@OriginalMember(owner = "client!hma", name = "a", descriptor = "(BLclient!pg;)I")
-	public static int method3536(@OriginalArg(1) Class2_Sub2_Sub16 arg0) {
+	public static int method3536(@OriginalArg(1) SecondaryNode_Sub16 arg0) {
 		@Pc(15) String local15 = Static518.method9300(arg0);
 		@Pc(17) int[] local17 = null;
 		if (Static245.method8642(arg0.anInt7335)) {
-			local17 = Static419.aClass112_1.method2486((int) arg0.aLong233).anIntArray800;
+			local17 = client.objTypeList.get((int) arg0.aLong233).anIntArray800;
 		} else if (arg0.anInt7338 != -1) {
-			local17 = Static419.aClass112_1.method2486(arg0.anInt7338).anIntArray800;
+			local17 = client.objTypeList.get(arg0.anInt7338).anIntArray800;
 		} else if (Static598.method7832(arg0.anInt7335)) {
-			@Pc(51) Class2_Sub45 local51 = (Class2_Sub45) Static18.aClass28_2.method738((int) arg0.aLong233);
+			@Pc(51) Node_Sub45 local51 = (Node_Sub45) Static18.aClass28_2.get((int) arg0.aLong233);
 			if (local51 != null) {
 				@Pc(56) Class8_Sub2_Sub1_Sub2_Sub2 local56 = local51.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 				@Pc(59) Class270 local59 = local56.aClass270_1;
@@ -54,7 +54,7 @@ public final class Static249 {
 				}
 			}
 		} else if (Static523.method3444(arg0.anInt7335)) {
-			@Pc(89) Class54 local89 = Static354.aClass142_4.method3063((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL), 46);
+			@Pc(89) LocType local89 = client.locTypeList.method3063((int) (arg0.aLong233 >>> 32 & 0x7FFFFFFFL), 46);
 			if (local89.anIntArray113 != null) {
 				local89 = local89.method1301(13, Static34.aClass306_1);
 			}

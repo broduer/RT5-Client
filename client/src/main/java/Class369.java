@@ -64,12 +64,12 @@ public final class Class369 {
 	}
 
 	@OriginalMember(owner = "client!uc", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class369(@OriginalArg(0) Packet arg0) {
+	public Class369(@OriginalArg(0) Buffer arg0) {
 		this.method8393(arg0);
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(Lclient!ge;I)V")
-	public void method8391(@OriginalArg(0) Packet arg0) {
+	public void method8391(@OriginalArg(0) Buffer arg0) {
 		@Pc(17) int local17 = arg0.g2();
 		@Pc(21) int local21 = arg0.method7363();
 		@Pc(25) int local25 = arg0.method7363();
@@ -80,14 +80,14 @@ public final class Class369 {
 	}
 
 	@OriginalMember(owner = "client!uc", name = "a", descriptor = "(Lclient!ge;Z)V")
-	public void method8392(@OriginalArg(0) Packet arg0) {
+	public void method8392(@OriginalArg(0) Buffer arg0) {
 		this.aFloat201 = (float) (arg0.g1() * 8) / 255.0F;
 		this.aFloat200 = (float) (arg0.g1() * 8) / 255.0F;
 		this.aFloat203 = (float) (arg0.g1() * 8) / 255.0F;
 	}
 
 	@OriginalMember(owner = "client!uc", name = "b", descriptor = "(Lclient!ge;I)V")
-	public void method8393(@OriginalArg(0) Packet arg0) {
+	public void method8393(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		if (Static400.aClass2_Sub34_28.aClass57_Sub24_1.method7089() == 1 && Static425.aClass19_13.method7962() > 0) {
 			if ((local7 & 0x1) == 0) {

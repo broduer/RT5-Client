@@ -10,15 +10,15 @@ public final class Static723 {
 	public static int anInt10958;
 
 	@OriginalMember(owner = "client!wu", name = "E", descriptor = "Lclient!ul;")
-	public static final Class379 aClass379_9 = new Class379("stellardawn", "Stellar Dawn", 1);
+	public static final ModeGame aClass379_9 = new ModeGame("stellardawn", "Stellar Dawn", 1);
 
 	@OriginalMember(owner = "client!wu", name = "z", descriptor = "Ljava/lang/String;")
 	public static String aString129 = null;
 
 	@OriginalMember(owner = "client!wu", name = "e", descriptor = "(I)V")
 	public static void method9457() {
-		Static268.aClass28_22.method737();
-		Static232.aClass28_18.method737();
+		Static268.aClass28_22.clear();
+		Static232.aClass28_18.clear();
 	}
 
 	@OriginalMember(owner = "client!wu", name = "c", descriptor = "(B)V")

@@ -9,13 +9,13 @@ import org.openrs2.deob.annotation.Pc;
 public abstract class Class19 {
 
 	@OriginalMember(owner = "client!ha", name = "j", descriptor = "Lclient!d;")
-	public final Interface4 anInterface4_10;
+	public final TextureProvider anInterface4_10;
 
 	@OriginalMember(owner = "client!ha", name = "b", descriptor = "I")
 	public final int anInt8986;
 
 	@OriginalMember(owner = "client!ha", name = "<init>", descriptor = "(Lclient!d;)V")
-	public Class19(@OriginalArg(0) Interface4 arg0) {
+	public Class19(@OriginalArg(0) TextureProvider arg0) {
 		this.anInterface4_10 = arg0;
 		@Pc(6) int local6 = -1;
 		for (@Pc(8) int local8 = 0; local8 < 8; local8++) {
@@ -50,7 +50,7 @@ public abstract class Class19 {
 	public abstract boolean method7944();
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!za;)V")
-	public abstract void method7945(@OriginalArg(0) Class2_Sub13 arg0);
+	public abstract void method7945(@OriginalArg(0) Node_Sub13 arg0);
 
 	@OriginalMember(owner = "client!ha", name = "aa", descriptor = "(IIIIII)V")
 	public abstract void aa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5);
@@ -74,7 +74,7 @@ public abstract class Class19 {
 	public abstract void K(@OriginalArg(0) int[] arg0);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
-	public abstract Class2_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5);
+	public abstract Node_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(IIIIIILclient!aa;IIIII)V")
 	public abstract void method7949(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(6) Class1 arg5, @OriginalArg(7) int arg6, @OriginalArg(8) int arg7, @OriginalArg(9) int arg8, @OriginalArg(10) int arg9, @OriginalArg(11) int arg10);
@@ -155,7 +155,7 @@ public abstract class Class19 {
 	public abstract int method7967(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(I)Lclient!za;")
-	public abstract Class2_Sub13 method7968(@OriginalArg(0) int arg0);
+	public abstract Node_Sub13 method7968(@OriginalArg(0) int arg0);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(II)Lclient!eca;")
 	public abstract Interface6 method7969(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1);
@@ -364,7 +364,7 @@ public abstract class Class19 {
 	public abstract int r(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(I[Lclient!lca;)V")
-	public abstract void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1);
+	public abstract void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Node_Sub7[] arg1);
 
 	@OriginalMember(owner = "client!ha", name = "a", descriptor = "(Lclient!ve;[Lclient!wp;Z)Lclient!da;")
 	public abstract Class14 method8017(@OriginalArg(0) Class383 arg0, @OriginalArg(1) Class409[] arg1, @OriginalArg(2) boolean arg2);

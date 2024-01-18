@@ -76,7 +76,7 @@ public final class Class260 {
 	}
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(Lclient!ge;)V")
-	public void method5782(@OriginalArg(0) Packet arg0) {
+	public void method5782(@OriginalArg(0) Buffer arg0) {
 		this.aClass213_5 = new Class213();
 		this.aClass213_5.method4959(arg0);
 		this.aClass213_7 = new Class213();

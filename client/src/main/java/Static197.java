@@ -8,8 +8,8 @@ public final class Static197 {
 
 	@OriginalMember(owner = "client!gba", name = "a", descriptor = "(Z)V")
 	public static void method2949() {
-		@Pc(8) Class2_Sub25 local8;
-		for (local8 = (Class2_Sub25) Static159.aClass341_15.method7706(65280); local8 != null; local8 = (Class2_Sub25) Static159.aClass341_15.method7713()) {
+		@Pc(8) Node_Sub25 local8;
+		for (local8 = (Node_Sub25) Static159.aClass341_15.head(); local8 != null; local8 = (Node_Sub25) Static159.aClass341_15.next()) {
 			if (local8.aBoolean309) {
 				local8.unlink();
 			} else {
@@ -19,7 +19,7 @@ public final class Static197 {
 				}
 			}
 		}
-		for (local8 = (Class2_Sub25) Static227.aClass341_18.method7706(65280); local8 != null; local8 = (Class2_Sub25) Static227.aClass341_18.method7713()) {
+		for (local8 = (Node_Sub25) Static227.aClass341_18.head(); local8 != null; local8 = (Node_Sub25) Static227.aClass341_18.next()) {
 			if (local8.aBoolean309) {
 				local8.unlink();
 			} else {

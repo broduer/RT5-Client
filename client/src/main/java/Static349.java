@@ -14,7 +14,7 @@ public final class Static349 {
 	public static final char[] aCharArray6 = new char[] { '[', ']', '#' };
 
 	@OriginalMember(owner = "client!kw", name = "a", descriptor = "(IILclient!sb;IZIJB)V")
-	public static void method5126(@OriginalArg(2) Class332 arg0, @OriginalArg(3) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) long arg3) {
+	public static void method5126(@OriginalArg(2) Js5 arg0, @OriginalArg(3) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) long arg3) {
 		Static24.anInt597 = arg1;
 		Static96.anInt10199 = 1;
 		Static611.anInt9361 = 0;

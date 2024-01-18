@@ -8,10 +8,10 @@ public final class Static54 {
 	public static int anInt1088;
 
 	@OriginalMember(owner = "client!bq", name = "E", descriptor = "[I")
-	public static int[] anIntArray92;
+	public static int[] normalizedX;
 
 	@OriginalMember(owner = "client!bq", name = "t", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_25 = new Class82(5);
+	public static final SoftLruHashTable aClass82_25 = new SoftLruHashTable(5);
 
 	@OriginalMember(owner = "client!bq", name = "a", descriptor = "(I)V")
 	public static void method1179() {

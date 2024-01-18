@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static296 {
 
 	@OriginalMember(owner = "client!jh", name = "n", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_61;
+	public static Js5 aClass332_61;
 
 	@OriginalMember(owner = "client!jh", name = "e", descriptor = "Lclient!om;")
 	public static final Class282 aClass282_5 = new Class282(2);
@@ -18,20 +18,20 @@ public final class Static296 {
 
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(Lclient!gp;BIIII)V")
 	public static void method4368(@OriginalArg(0) Class150 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(15) Class2_Sub25 local15 = null;
-		for (@Pc(20) Class2_Sub25 local20 = (Class2_Sub25) Static227.aClass341_18.method7706(65280); local20 != null; local20 = (Class2_Sub25) Static227.aClass341_18.method7713()) {
+		@Pc(15) Node_Sub25 local15 = null;
+		for (@Pc(20) Node_Sub25 local20 = (Node_Sub25) Static227.aClass341_18.head(); local20 != null; local20 = (Node_Sub25) Static227.aClass341_18.next()) {
 			if (local20.anInt4021 == arg1 && local20.anInt4027 == arg3 && local20.anInt4017 == arg4 && arg2 == local20.anInt4022) {
 				local15 = local20;
 				break;
 			}
 		}
 		if (local15 == null) {
-			local15 = new Class2_Sub25();
+			local15 = new Node_Sub25();
 			local15.anInt4021 = arg1;
 			local15.anInt4027 = arg3;
 			local15.anInt4017 = arg4;
 			local15.anInt4022 = arg2;
-			Static227.aClass341_18.method7718(local15);
+			Static227.aClass341_18.insertBefore(local15);
 		}
 		local15.aBoolean309 = false;
 		local15.aClass150_1 = arg0;
@@ -48,10 +48,10 @@ public final class Static296 {
 			local5 |= 0x40;
 		}
 		Static335.method4952(local5);
-		Static354.aClass142_4.method3065(local5);
-		Static419.aClass112_1.method2481(local5);
-		Static690.aClass310_2.method7100(local5);
-		Static23.aClass128_1.method2695(local5);
+		client.locTypeList.method3065(local5);
+		client.objTypeList.method2481(local5);
+		client.npcTypeList.method7100(local5);
+		client.spotanimTypeList.method2695(local5);
 		Static41.method1029(local5);
 		Static298.method4395(local5);
 		Static534.method7129(local5);

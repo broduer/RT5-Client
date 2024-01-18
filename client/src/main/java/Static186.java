@@ -10,7 +10,7 @@ public final class Static186 {
 	public static Object anObject7;
 
 	@OriginalMember(owner = "client!fo", name = "k", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_67 = new Class82(4);
+	public static final SoftLruHashTable aClass82_67 = new SoftLruHashTable(4);
 
 	@OriginalMember(owner = "client!fo", name = "d", descriptor = "I")
 	public static int anInt3068 = 0;
@@ -23,7 +23,7 @@ public final class Static186 {
 	}
 
 	@OriginalMember(owner = "client!fo", name = "d", descriptor = "(I)Lclient!ip;")
-	public static Class2_Sub2_Sub13 method2819() {
+	public static Map method2819() {
 		return Static30.aClass2_Sub2_Sub13_3;
 	}
 

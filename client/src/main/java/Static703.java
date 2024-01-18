@@ -10,7 +10,7 @@ public final class Static703 {
 	public static final boolean aBoolean799 = true;
 
 	@OriginalMember(owner = "client!we", name = "a", descriptor = "(ZLclient!sb;)V")
-	public static void method9176(@OriginalArg(1) Class332 arg0) {
+	public static void method9176(@OriginalArg(1) Js5 arg0) {
 		Static409.aClass332_85 = arg0;
 	}
 

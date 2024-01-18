@@ -7,16 +7,16 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class169 {
 
 	@OriginalMember(owner = "client!hm", name = "f", descriptor = "Lclient!dla;")
-	private final Class82 aClass82_85 = new Class82(256);
+	private final SoftLruHashTable aClass82_85 = new SoftLruHashTable(256);
 
 	@OriginalMember(owner = "client!hm", name = "a", descriptor = "Lclient!d;")
-	private final Interface4 anInterface4_4;
+	private final TextureProvider anInterface4_4;
 
 	@OriginalMember(owner = "client!hm", name = "c", descriptor = "Lclient!qha;")
 	private final Class19_Sub3 aClass19_Sub3_17;
 
 	@OriginalMember(owner = "client!hm", name = "<init>", descriptor = "(Lclient!qha;Lclient!d;)V")
-	public Class169(@OriginalArg(0) Class19_Sub3 arg0, @OriginalArg(1) Interface4 arg1) {
+	public Class169(@OriginalArg(0) Class19_Sub3 arg0, @OriginalArg(1) TextureProvider arg1) {
 		this.anInterface4_4 = arg1;
 		this.aClass19_Sub3_17 = arg0;
 	}
@@ -33,11 +33,11 @@ public final class Class169 {
 
 	@OriginalMember(owner = "client!hm", name = "a", descriptor = "(BI)Lclient!rq;")
 	public Class93_Sub2 method3529(@OriginalArg(1) int arg0) {
-		@Pc(10) Object local10 = this.aClass82_85.method2156(arg0);
+		@Pc(10) Object local10 = this.aClass82_85.get(arg0);
 		if (local10 != null) {
 			return (Class93_Sub2) local10;
 		} else if (this.anInterface4_4.method6821(arg0)) {
-			@Pc(33) Class118 local33 = this.anInterface4_4.method6824(arg0);
+			@Pc(33) Material local33 = this.anInterface4_4.method6824(arg0);
 			@Pc(52) int local52 = local33.aBoolean233 ? 64 : this.aClass19_Sub3_17.anInt8004;
 			@Pc(90) Class93_Sub2 local90;
 			if (local33.aBoolean237 && this.aClass19_Sub3_17.method8021()) {
@@ -53,7 +53,7 @@ public final class Class169 {
 				local90 = new Class93_Sub2(this.aClass19_Sub3_17, 3553, 6408, local52, local52, local33.aByte53 != 0, local114, 0, 0, false);
 			}
 			local90.method2946(local33.aBoolean236, local33.aBoolean235);
-			this.aClass82_85.method2150(local90, arg0);
+			this.aClass82_85.put(local90, arg0);
 			return local90;
 		} else {
 			return null;

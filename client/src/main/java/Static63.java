@@ -16,7 +16,7 @@ public final class Static63 {
 		if (arg1 == -1 && !Static501.jingle) {
 			Static100.method1988();
 		} else if (arg1 != -1 && (Static588.anInt8716 != arg1 || !Static52.method1157(-122)) && local12 != 0 && !Static501.jingle) {
-			Static618.method8325(Static398.aClass332_81, local12, arg1, arg2);
+			Static618.method8325(client.js5Archive6, local12, arg1, arg2);
 			Static550.method7273();
 		}
 		if (Static588.anInt8716 != arg1) {

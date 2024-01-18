@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static484 {
 
 	@OriginalMember(owner = "client!pea", name = "l", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_6;
+	public static WorldMapFont aClass329_6;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!pea", name = "n", descriptor = "Ljava/lang/Class;")
@@ -141,7 +141,7 @@ public final class Static484 {
 		arg0.GA(-16777215);
 		Static469.method6369();
 		Static536.anInt8171 = 0;
-		Static612.aClass341_67.method7707();
+		Static612.aClass341_67.clear();
 		if (!Static113.aBoolean198) {
 			for (local211 = local9; local211 < local9 + 104; local211++) {
 				for (local214 = local15; local214 < local15 + 104; local214++) {
@@ -158,13 +158,13 @@ public final class Static484 {
 								local730 = Static114.method2134(local216, local211, local214);
 							}
 							if (local730 != null) {
-								@Pc(776) Class54 local776 = Static354.aClass142_4.method3063(local730.method6866(-32136), 100);
+								@Pc(776) LocType local776 = client.locTypeList.method3063(local730.method6866(-32136), 100);
 								if (!local776.aBoolean95 || Static174.aBoolean249) {
 									local238 = local776.anInt1238;
 									if (local776.anIntArray113 != null) {
 										for (local249 = 0; local249 < local776.anIntArray113.length; local249++) {
 											if (local776.anIntArray113[local249] != -1) {
-												@Pc(808) Class54 local808 = Static354.aClass142_4.method3063(local776.anIntArray113[local249], 87);
+												@Pc(808) LocType local808 = client.locTypeList.method3063(local776.anIntArray113[local249], 87);
 												if (local808.anInt1238 >= 0) {
 													local238 = local808.anInt1238;
 												}
@@ -174,7 +174,7 @@ public final class Static484 {
 									if (local238 >= 0) {
 										@Pc(832) boolean local832 = false;
 										if (local238 >= 0) {
-											@Pc(842) Class105 local842 = Static577.aClass248_4.method5591(local238);
+											@Pc(842) MelType local842 = client.melTypeList.method5591(local238);
 											if (local842 != null && local842.aBoolean216) {
 												local832 = true;
 											}
@@ -213,26 +213,26 @@ public final class Static484 {
 				}
 			}
 			if (Static42.aClass257_2 != null) {
-				Static6.aClass332_1.anInt8579 = 1;
-				Static577.aClass248_4.method5590(1024, 64);
+				client.js5Archive2.discardUnpacked = 1;
+				client.melTypeList.method5590(1024, 64);
 				for (local214 = 0; local214 < Static42.aClass257_2.anInt6393; local214++) {
 					local216 = Static42.aClass257_2.anIntArray495[local214];
 					if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 == local216 >> 28) {
 						local218 = (local216 >> 14 & 0x3FFF) - Static691.anInt10395;
 						local229 = (local216 & 0x3FFF) - Static116.anInt2279;
 						if (local218 >= 0 && local218 < Static720.anInt10888 && local229 >= 0 && local229 < Static501.anInt7591) {
-							Static612.aClass341_67.method7718(new Class2_Sub38(local214));
+							Static612.aClass341_67.insertBefore(new Node_Sub38(local214));
 						} else {
-							@Pc(1199) Class105 local1199 = Static577.aClass248_4.method5591(Static42.aClass257_2.anIntArray496[local214]);
+							@Pc(1199) MelType local1199 = client.melTypeList.method5591(Static42.aClass257_2.anIntArray496[local214]);
 							if (local1199.anIntArray228 != null && local1199.anInt2623 + local218 >= 0 && local218 + local1199.anInt2607 < Static720.anInt10888 && local1199.anInt2603 + local229 >= 0 && local229 + local1199.anInt2597 < Static501.anInt7591) {
-								Static612.aClass341_67.method7718(new Class2_Sub38(local214));
+								Static612.aClass341_67.insertBefore(new Node_Sub38(local214));
 							}
 						}
 					}
 				}
-				Static577.aClass248_4.method5590(128, 64);
-				Static6.aClass332_1.anInt8579 = 2;
-				Static6.aClass332_1.method7599();
+				client.melTypeList.method5590(128, 64);
+				client.js5Archive2.discardUnpacked = 2;
+				client.js5Archive2.method7599();
 			}
 		}
 		return true;

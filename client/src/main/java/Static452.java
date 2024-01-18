@@ -8,10 +8,10 @@ public final class Static452 {
 	public static int anInt6890 = 0;
 
 	@OriginalMember(owner = "client!oea", name = "w", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_149 = new Class82(8);
+	public static final SoftLruHashTable aClass82_149 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(ILclient!ge;)Lclient!fea;")
-	public static Class125 method6178(@OriginalArg(1) Packet arg0) {
+	public static Class125 method6178(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) String local7 = arg0.gstr();
 		@Pc(14) Class405 local14 = Static33.method882()[arg0.g1()];
 		@Pc(23) Class103 local23 = Static313.method4551()[arg0.g1()];
@@ -29,8 +29,8 @@ public final class Static452 {
 	}
 
 	@OriginalMember(owner = "client!oea", name = "a", descriptor = "(Lclient!c;BILclient!ha;II)V")
-	public static void method6180(@OriginalArg(0) Class54 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
-		@Pc(9) Class173 local9 = Static720.aClass365_4.method8369(arg0.anInt1244);
+	public static void method6180(@OriginalArg(0) LocType arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class19 arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4) {
+		@Pc(9) MsiType local9 = client.msiTypeList.method8369(arg0.anInt1244);
 		if (local9.anInt4178 == -1) {
 			return;
 		}

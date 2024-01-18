@@ -57,8 +57,8 @@ public final class Class170 {
 	}
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(BIILclient!r;)V")
-	public void method3541(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class2_Sub2_Sub9 arg2) {
-		@Pc(6) Class2_Sub2_Sub9_Sub2 local6 = (Class2_Sub2_Sub9_Sub2) arg2;
+	public void method3541(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) SecondaryNode_Sub9 arg2) {
+		@Pc(6) SecondaryNode_Sub9_Sub2 local6 = (SecondaryNode_Sub9_Sub2) arg2;
 		arg0 += local6.anInt7371 + 1;
 		arg1 += local6.anInt7374 + 1;
 		@Pc(27) int local27 = arg1 * this.anInt4033 + arg0;
@@ -147,7 +147,7 @@ public final class Class170 {
 					local77 = 0;
 					local84 = local70 << this.anInt4036;
 					local86 = local70 + 1 << this.anInt4036;
-					@Pc(262) Class2_Sub21_Sub1 local262 = this.aClass19_Sub3_18.aClass2_Sub21_Sub1_3;
+					@Pc(262) GlBuffer local262 = this.aClass19_Sub3_18.aClass2_Sub21_Sub1_3;
 					local262.pos = 0;
 					for (@Pc(267) int local267 = local61; local267 < local68; local267++) {
 						if (-arg4 <= local267 - arg2 && local267 - arg2 <= arg4) {
@@ -191,8 +191,8 @@ public final class Class170 {
 	}
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(IILclient!r;I)Z")
-	public boolean method3543(@OriginalArg(1) int arg0, @OriginalArg(2) Class2_Sub2_Sub9 arg1, @OriginalArg(3) int arg2) {
-		@Pc(6) Class2_Sub2_Sub9_Sub2 local6 = (Class2_Sub2_Sub9_Sub2) arg1;
+	public boolean method3543(@OriginalArg(1) int arg0, @OriginalArg(2) SecondaryNode_Sub9 arg1, @OriginalArg(3) int arg2) {
+		@Pc(6) SecondaryNode_Sub9_Sub2 local6 = (SecondaryNode_Sub9_Sub2) arg1;
 		arg2 += local6.anInt7374 + 1;
 		arg0 += local6.anInt7371 + 1;
 		@Pc(27) int local27 = arg2 * this.anInt4033 + arg0;
@@ -231,8 +231,8 @@ public final class Class170 {
 	}
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(ILclient!r;IB)V")
-	public void method3544(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub2_Sub9 arg1, @OriginalArg(2) int arg2) {
-		@Pc(6) Class2_Sub2_Sub9_Sub2 local6 = (Class2_Sub2_Sub9_Sub2) arg1;
+	public void method3544(@OriginalArg(0) int arg0, @OriginalArg(1) SecondaryNode_Sub9 arg1, @OriginalArg(2) int arg2) {
+		@Pc(6) SecondaryNode_Sub9_Sub2 local6 = (SecondaryNode_Sub9_Sub2) arg1;
 		arg0 += local6.anInt7374 + 1;
 		arg2 += local6.anInt7371 + 1;
 		@Pc(27) int local27 = this.anInt4033 * arg0 + arg2;

@@ -52,12 +52,12 @@ public final class Class87 implements Interface9 {
 	@OriginalMember(owner = "client!du", name = "a", descriptor = "(IIIIIIZZ)V")
 	@Override
 	public void method9046(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(6) boolean arg4) {
-		Static22.method588(0, arg2, this.aClass19_Sub2_3.aFloatArray26, arg4 ? this.aClass19_Sub2_3.aClass2_Sub10_1.anIntArray567 : null, this.aClass19_Sub2_3.aClass2_Sub10_1.anInt7074, this.aFloatArray16, this.anInt2366, 0, this.anIntArray203, arg3, arg0, arg1);
+		Static22.method588(0, arg2, this.aClass19_Sub2_3.aFloatArray26, arg4 ? this.aClass19_Sub2_3.aClass2_Sub10_1.pixels : null, this.aClass19_Sub2_3.aClass2_Sub10_1.width, this.aFloatArray16, this.anInt2366, 0, this.anIntArray203, arg3, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!du", name = "b", descriptor = "(IIIIIIZZ)V")
 	@Override
 	public void method9047(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5) {
-		Static22.method588(arg5, arg2, this.aFloatArray16, this.anIntArray203, this.anInt2366, this.aClass19_Sub2_3.aFloatArray26, this.aClass19_Sub2_3.aClass2_Sub10_1.anInt7074, arg4, this.aClass19_Sub2_3.aClass2_Sub10_1.anIntArray567, arg3, arg0, arg1);
+		Static22.method588(arg5, arg2, this.aFloatArray16, this.anIntArray203, this.anInt2366, this.aClass19_Sub2_3.aFloatArray26, this.aClass19_Sub2_3.aClass2_Sub10_1.width, arg4, this.aClass19_Sub2_3.aClass2_Sub10_1.pixels, arg3, arg0, arg1);
 	}
 }

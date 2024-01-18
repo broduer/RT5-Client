@@ -10,9 +10,6 @@ public final class Static668 {
 	@OriginalMember(owner = "client!vca", name = "r", descriptor = "Lclient!lja;")
 	public static Class231 aClass231_5;
 
-	@OriginalMember(owner = "client!vca", name = "o", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_119;
-
 	@OriginalMember(owner = "client!vca", name = "i", descriptor = "Lclient!pc;")
 	public static final Class289 aClass289_16 = new Class289(12, 7);
 
@@ -31,7 +28,7 @@ public final class Static668 {
 		Static30.aClass2_Sub2_Sub13_3 = null;
 		Static273.anInt4416 = 0;
 		Static30.method5077();
-		Static30.aClass341_31.method7707();
+		Static30.aClass341_31.clear();
 		Static359.aClass329_3 = null;
 		Static484.aClass329_6 = null;
 		Static30.aClass257_3 = null;
@@ -54,7 +51,7 @@ public final class Static668 {
 		if (Static30.aClass142_3 != null) {
 			Static30.aClass142_3.method3062(64);
 		}
-		Static529.aClass161_1.method3420(64);
+		client.varbitTypeList.method3420(64);
 	}
 
 	@OriginalMember(owner = "client!vca", name = "a", descriptor = "(B)Lclient!gw;")

@@ -17,12 +17,12 @@ public final class Class26_Sub1 extends Class26 {
 	private final Class135 aClass135_1;
 
 	@OriginalMember(owner = "client!at", name = "<init>", descriptor = "(Lclient!tca;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub1(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub1(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass19_Sub1_Sub2_1 = arg0;
 		this.aClass7_2 = arg2;
 		if (arg1 != null && this.aClass7_2.method116() && this.aClass19_Sub1_Sub2_1.aBoolean709) {
-			this.aClass135_1 = Static294.method4345(this.aClass19_Sub1_Sub2_1, arg1.method7607("gl", "transparent_water"));
+			this.aClass135_1 = Static294.method4345(this.aClass19_Sub1_Sub2_1, arg1.fetchFile("gl", "transparent_water"));
 		} else {
 			this.aClass135_1 = null;
 		}

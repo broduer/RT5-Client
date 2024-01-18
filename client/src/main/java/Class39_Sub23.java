@@ -46,7 +46,7 @@ public final class Class39_Sub23 extends Class39 {
 	private final int anInt10006;
 
 	@OriginalMember(owner = "client!vca", name = "<init>", descriptor = "(Lclient!ge;II)V")
-	public Class39_Sub23(@OriginalArg(0) Packet arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public Class39_Sub23(@OriginalArg(0) Buffer arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		super(arg0);
 		@Pc(10) int local10;
 		if (arg1 == 0) {
@@ -77,7 +77,7 @@ public final class Class39_Sub23 extends Class39 {
 		this.anInt10003 = arg0.g2();
 		this.anInt10001 = arg0.g1();
 		this.anInt10015 = arg0.g1();
-		this.anInt10005 = arg0.method7390();
+		this.anInt10005 = arg0.g3();
 		this.anInt10004 = arg0.g2();
 		this.anInt10006 = arg0.g1();
 	}
@@ -115,6 +115,6 @@ public final class Class39_Sub23 extends Class39 {
 		@Pc(91) int local91 = this.anInt10006 << 2;
 		@Pc(128) Class8_Sub2_Sub1_Sub1 local128 = new Class8_Sub2_Sub1_Sub1(this.anInt10003, local18, local18, local24, local21, this.anInt10001 << 2, client.cycle, client.cycle + this.anInt10005, this.anInt10004, local91, this.anInt10009 + 1, this.anInt10016 + 1, this.anInt10015 << 2, false, 0);
 		local128.method813(this.anInt10015 << 2, this.anInt10005 + client.cycle, local56, local63);
-		Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local128));
+		Static505.aClass341_77.insertBefore(new SecondaryNode_Sub15(local128));
 	}
 }

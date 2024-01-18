@@ -61,7 +61,7 @@ public final class Class364 implements Runnable {
 		if (this.aPrivilegedRequest_7 == null) {
 			try {
 				@Pc(23) int local23 = Static446.liveMode == client.modewhere ? 80 : client.world.id + 7000;
-				this.aPrivilegedRequest_7 = GameShell.sign.openurl(new URL("http://" + client.world.address + ":" + local23 + "/news.ws?game=" + Static392.game.id));
+				this.aPrivilegedRequest_7 = GameShell.sign.openurl(new URL("http://" + client.world.address + ":" + local23 + "/news.ws?game=" + client.game.id));
 			} catch (@Pc(54) MalformedURLException local54) {
 				return true;
 			}

@@ -14,13 +14,13 @@ public final class Static719 {
 	public static final Class155 aClass155_45 = new Class155(60);
 
 	@OriginalMember(owner = "client!wq", name = "a", descriptor = "(Lclient!d;Lclient!ha;Z)V")
-	public static void method9124(@OriginalArg(0) Interface4 arg0, @OriginalArg(1) Class19 arg1) {
+	public static void method9124(@OriginalArg(0) TextureProvider arg0, @OriginalArg(1) Class19 arg1) {
 		if (Static30.aClass2_Sub2_Sub13_3 == null) {
 			return;
 		}
 		if (Static273.anInt4416 < 10) {
 			if (!Static30.aClass332_74.method7605(Static30.aClass2_Sub2_Sub13_3.aString48)) {
-				Static273.anInt4416 = Static120.aClass332_19.method7600(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
+				Static273.anInt4416 = client.js5Archive23.method7600(Static30.aClass2_Sub2_Sub13_3.aString48) / 10;
 				return;
 			}
 			Static700.method9159();
@@ -80,7 +80,7 @@ public final class Static719 {
 			Static30.aByteArrayArrayArray5 = Static640.method8444(Static30.anInt5663);
 			Static387.method5447();
 			Static30.method5076();
-			Static551.aClass341_54 = new Class341();
+			Static551.aClass341_54 = new LinkedList();
 			Static30.anInt5661 += (int) (Math.random() * 5.0D) - 2;
 			if (Static30.anInt5661 < -8) {
 				Static30.anInt5661 = -8;
@@ -99,7 +99,7 @@ public final class Static719 {
 			Static30.aClass248_3.method5590(1024, 256);
 			Static30.aClass365_3.method8372(256, 256);
 			Static30.aClass142_3.method3062(4096);
-			Static529.aClass161_1.method3420(256);
+			client.varbitTypeList.method3420(256);
 			Static273.anInt4416 = 20;
 		} else if (Static273.anInt4416 == 20) {
 			Static314.method4575(true);
@@ -121,42 +121,42 @@ public final class Static719 {
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 70) {
-			Static559.aClass329_7 = new Class329(arg1, 11, true, GameShell.canvas);
+			Static559.aClass329_7 = new WorldMapFont(arg1, 11, true, GameShell.canvas);
 			Static273.anInt4416 = 73;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 73) {
-			Static484.aClass329_6 = new Class329(arg1, 12, true, GameShell.canvas);
+			Static484.aClass329_6 = new WorldMapFont(arg1, 12, true, GameShell.canvas);
 			Static273.anInt4416 = 76;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 76) {
-			Static142.aClass329_1 = new Class329(arg1, 14, true, GameShell.canvas);
+			Static142.aClass329_1 = new WorldMapFont(arg1, 14, true, GameShell.canvas);
 			Static273.anInt4416 = 79;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 79) {
-			Static651.aClass329_8 = new Class329(arg1, 17, true, GameShell.canvas);
+			Static651.aClass329_8 = new WorldMapFont(arg1, 17, true, GameShell.canvas);
 			Static273.anInt4416 = 82;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 82) {
-			Static275.aClass329_2 = new Class329(arg1, 19, true, GameShell.canvas);
+			Static275.aClass329_2 = new WorldMapFont(arg1, 19, true, GameShell.canvas);
 			Static273.anInt4416 = 85;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 85) {
-			Static390.aClass329_5 = new Class329(arg1, 22, true, GameShell.canvas);
+			Static390.aClass329_5 = new WorldMapFont(arg1, 22, true, GameShell.canvas);
 			Static273.anInt4416 = 88;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 88) {
-			Static364.aClass329_4 = new Class329(arg1, 26, true, GameShell.canvas);
+			Static364.aClass329_4 = new WorldMapFont(arg1, 26, true, GameShell.canvas);
 			Static273.anInt4416 = 91;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else {
-			Static359.aClass329_3 = new Class329(arg1, 30, true, GameShell.canvas);
+			Static359.aClass329_3 = new WorldMapFont(arg1, 30, true, GameShell.canvas);
 			Static273.anInt4416 = 100;
 			Static314.method4575(true);
 			Static199.method2977();

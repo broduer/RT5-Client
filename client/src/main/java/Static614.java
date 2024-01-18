@@ -6,9 +6,6 @@ import java.util.Calendar;
 
 public final class Static614 {
 
-	@OriginalMember(owner = "client!th", name = "n", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_114;
-
 	@OriginalMember(owner = "client!th", name = "p", descriptor = "I")
 	public static int anInt9399;
 

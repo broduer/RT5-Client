@@ -41,16 +41,16 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 	@OriginalMember(owner = "client!sv", name = "d", descriptor = "(B)I")
 	@Override
 	public int method9294() {
-		@Pc(9) Class384 local9 = Static419.aClass112_1.method2486(this.anInt8891);
+		@Pc(9) ObjType local9 = client.objTypeList.get(this.anInt8891);
 		@Pc(12) int local12 = local9.anInt10166;
 		if (this.anInt8902 != -1) {
-			@Pc(22) Class384 local22 = Static419.aClass112_1.method2486(this.anInt8902);
+			@Pc(22) ObjType local22 = client.objTypeList.get(this.anInt8902);
 			if (local22.anInt10166 > local12) {
 				local12 = local22.anInt10166;
 			}
 		}
 		if (this.anInt8900 != -1) {
-			@Pc(48) Class384 local48 = Static419.aClass112_1.method2486(this.anInt8900);
+			@Pc(48) ObjType local48 = client.objTypeList.get(this.anInt8900);
 			if (local48.anInt10166 > local12) {
 				local12 = local48.anInt10166;
 			}
@@ -104,21 +104,21 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 		}
 		@Pc(16) Class73 local16 = arg3.method7992();
 		local16.method7132(super.anInt10718, super.anInt10719 - 10, super.anInt10722);
-		@Pc(32) Class384 local32 = Static419.aClass112_1.method2486(this.anInt8891);
+		@Pc(32) ObjType local32 = client.objTypeList.get(this.anInt8891);
 		@Pc(42) Class114 local42 = local32.method8812(null, 131072, null, this.anInt8897, arg3);
 		if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local32.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local32.anInt10166))) {
 			return true;
 		}
-		@Pc(82) Class384 local82;
+		@Pc(82) ObjType local82;
 		if (this.anInt8902 != -1) {
-			local82 = Static419.aClass112_1.method2486(this.anInt8902);
+			local82 = client.objTypeList.get(this.anInt8902);
 			local42 = local82.method8812(null, 131072, null, this.anInt8898, arg3);
 			if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local82.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local82.anInt10166))) {
 				return true;
 			}
 		}
 		if (this.anInt8900 != -1) {
-			local82 = Static419.aClass112_1.method2486(this.anInt8900);
+			local82 = client.objTypeList.get(this.anInt8900);
 			local42 = local82.method8812(null, 131072, null, this.anInt8896, arg3);
 			if (local42 != null && (Static504.aBoolean579 ? local42.method7490(arg1, arg0, local16, true, local82.anInt10166, Static582.anInt8651) : local42.method7493(arg1, arg0, local16, true, local82.anInt10166))) {
 				return true;
@@ -198,7 +198,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 		this.aBoolean673 = false;
 		@Pc(369) Class114 local369;
 		if (this.anInt8900 != -1) {
-			local369 = Static419.aClass112_1.method2486(this.anInt8900).method8812(null, 2048, null, this.anInt8896, arg0);
+			local369 = client.objTypeList.get(this.anInt8900).method8812(null, 2048, null, this.anInt8896, arg0);
 			if (local369 != null) {
 				if (Static504.aBoolean579) {
 					local369.method7491(local94, local345.aClass8_Sub6Array1[2], Static582.anInt8651, 0);
@@ -210,7 +210,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 			}
 		}
 		if (this.anInt8902 != -1) {
-			local369 = Static419.aClass112_1.method2486(this.anInt8902).method8812(null, 2048, null, this.anInt8898, arg0);
+			local369 = client.objTypeList.get(this.anInt8902).method8812(null, 2048, null, this.anInt8898, arg0);
 			if (local369 != null) {
 				if (Static504.aBoolean579) {
 					local369.method7491(local94, local345.aClass8_Sub6Array1[1], Static582.anInt8651, 0);
@@ -223,7 +223,7 @@ public final class Class8_Sub2_Sub5_Sub1 extends Class8_Sub2_Sub5 {
 				}
 			}
 		}
-		local369 = Static419.aClass112_1.method2486(this.anInt8891).method8812(null, 2048, null, this.anInt8897, arg0);
+		local369 = client.objTypeList.get(this.anInt8891).method8812(null, 2048, null, this.anInt8897, arg0);
 		if (local369 != null) {
 			if (Static504.aBoolean579) {
 				local369.method7491(local94, local345.aClass8_Sub6Array1[0], Static582.anInt8651, 0);

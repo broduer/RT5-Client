@@ -8,7 +8,7 @@ public final class Static311 {
 	public static boolean aBoolean384 = false;
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(Lclient!bn;I)Z")
-	public static boolean method4544(@OriginalArg(0) Class2_Sub8 arg0) {
+	public static boolean method4544(@OriginalArg(0) Node_Sub8 arg0) {
 		if (arg0 == null) {
 			return true;
 		}
@@ -39,13 +39,13 @@ public final class Static311 {
 
 	@OriginalMember(owner = "client!js", name = "a", descriptor = "(ZBZIILjava/lang/String;Ljava/lang/String;)V")
 	public static void method4545(@OriginalArg(0) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) String arg4, @OriginalArg(6) String arg5) {
-		Static380.aClass332_79.anInt8579 = 1;
+		client.js5Archive19.discardUnpacked = 1;
 		@Pc(9) String local9 = arg4.toLowerCase();
 		@Pc(12) short[] local12 = new short[16];
 		@Pc(14) int local14 = -1;
 		@Pc(16) String local16 = null;
 		if (arg3 != -1) {
-			@Pc(25) Class298 local25 = Static386.aClass49_2.method1161(arg3);
+			@Pc(25) ParamType local25 = client.paramTypeList.method1161(arg3);
 			if (local25 == null || local25.method6679() != arg0) {
 				return;
 			}
@@ -56,8 +56,8 @@ public final class Static311 {
 			}
 		}
 		@Pc(54) int local54 = 0;
-		for (@Pc(56) int local56 = 0; local56 < Static419.aClass112_1.anInt2679; local56++) {
-			@Pc(62) Class384 local62 = Static419.aClass112_1.method2486(local56);
+		for (@Pc(56) int local56 = 0; local56 < client.objTypeList.anInt2679; local56++) {
+			@Pc(62) ObjType local62 = client.objTypeList.get(local56);
 			if ((!arg1 || local62.aBoolean772) && local62.anInt10114 == -1 && local62.anInt10110 == -1 && local62.anInt10172 == -1 && local62.anInt10128 == 0 && local62.aString118.toLowerCase().indexOf(local9) != -1) {
 				if (arg3 != -1) {
 					if (arg0) {
@@ -88,10 +88,10 @@ public final class Static311 {
 		Static256.aShortArray63 = local12;
 		@Pc(203) String[] local203 = new String[Static606.anInt8971];
 		for (@Pc(205) int local205 = 0; local205 < Static606.anInt8971; local205++) {
-			local203[local205] = Static419.aClass112_1.method2486(local12[local205]).aString118;
+			local203[local205] = client.objTypeList.get(local12[local205]).aString118;
 		}
 		Static554.method7299(local203, Static256.aShortArray63);
-		Static380.aClass332_79.method7599();
-		Static380.aClass332_79.anInt8579 = 2;
+		client.js5Archive19.method7599();
+		client.js5Archive19.discardUnpacked = 2;
 	}
 }

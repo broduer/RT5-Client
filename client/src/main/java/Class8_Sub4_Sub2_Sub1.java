@@ -146,9 +146,9 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 			this.anInt7565 = (int) ((long) this.anInt7565 - ((long) this.anInt7565 * local356 >> 28));
 		}
 		if (local35.anIntArray775 != null) {
-			@Pc(437) Node local437 = local31.aClass341_22.aClass2_271;
+			@Pc(437) Node local437 = local31.aClass341_22.sentinel;
 			for (@Pc(440) Node local440 = local437.next; local440 != local437; local440 = local440.next) {
-				@Pc(444) Class2_Sub2_Sub5 local444 = (Class2_Sub2_Sub5) local440;
+				@Pc(444) SecondaryNode_Sub5 local444 = (SecondaryNode_Sub5) local440;
 				@Pc(447) Class280 local447 = local444.aClass280_1;
 				if (local447.anInt7003 != 1) {
 					@Pc(453) boolean local453 = false;
@@ -208,7 +208,7 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 		}
 		if (local35.anIntArray776 != null) {
 			for (local317 = 0; local317 < local35.anIntArray776.length; local317++) {
-				@Pc(776) Class2_Sub2_Sub5 local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3095(local35.anIntArray776[local317]);
+				@Pc(776) SecondaryNode_Sub5 local776 = (SecondaryNode_Sub5) Static519.aClass144_1.get(local35.anIntArray776[local317]);
 				while (local776 != null) {
 					@Pc(780) Class280 local780 = local776.aClass280_1;
 					@Pc(786) double local786 = local17 - local776.anInt1835;
@@ -216,7 +216,7 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 					@Pc(798) double local798 = local27 - local776.anInt1829;
 					@Pc(810) double local810 = local786 * local786 + local792 * local792 + local798 * local798;
 					if (local810 > (double) local780.aLong221) {
-						local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3096();
+						local776 = (SecondaryNode_Sub5) Static519.aClass144_1.nextWithKey();
 					} else {
 						@Pc(825) double local825 = Math.sqrt(local810);
 						if (local825 == 0.0D) {
@@ -224,7 +224,7 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 						}
 						@Pc(857) double local857 = (local786 * (double) local776.anInt1833 + local792 * (double) local780.anInt7008 + local798 * (double) local776.anInt1831) * 65535.0D / ((double) local780.anInt7007 * local825);
 						if (local857 < (double) local780.anInt6997) {
-							local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3096();
+							local776 = (SecondaryNode_Sub5) Static519.aClass144_1.nextWithKey();
 						} else {
 							@Pc(871) double local871 = 0.0D;
 							if (local780.anInt7006 == 1) {
@@ -256,7 +256,7 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 								super.anInt7557 = (int) ((double) super.anInt7557 + ((double) local780.anInt7008 - local871) * (double) arg1);
 								super.anInt7559 = (int) ((double) super.anInt7559 + ((double) local776.anInt1831 - local871) * (double) arg1);
 							}
-							local776 = (Class2_Sub2_Sub5) Static519.aClass144_1.method3096();
+							local776 = (SecondaryNode_Sub5) Static519.aClass144_1.nextWithKey();
 						}
 					}
 				}
@@ -267,7 +267,7 @@ public final class Class8_Sub4_Sub2_Sub1 extends Class8_Sub4_Sub2 {
 				local35.anIntArray774 = new int[local35.anIntArray777.length];
 				for (local317 = 0; local317 < local35.anIntArray777.length; local317++) {
 					Static66.method1487(local35.anIntArray777[local317]);
-					local35.anIntArray774[local317] = ((Class2_Sub38) Static503.aClass28_38.method738(local35.anIntArray777[local317])).anInt6399;
+					local35.anIntArray774[local317] = ((Node_Sub38) Static503.aClass28_38.get(local35.anIntArray777[local317])).anInt6399;
 				}
 			}
 			for (local317 = 0; local317 < local35.anIntArray774.length; local317++) {

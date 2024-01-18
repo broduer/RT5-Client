@@ -11,11 +11,11 @@ public final class Static595 {
 	public static void method7814(@OriginalArg(1) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
 		Static164.method2606();
 		if (arg2 == 0) {
-			Static163.aClass19_17 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, 0, GameShell.canvas, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380() * 2);
+			Static163.aClass19_17 = Static255.method3612(client.js5Archive31, client.textureProvider, 0, GameShell.canvas, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380() * 2);
 			if (arg0 != null) {
 				Static163.aClass19_17.GA(0);
 				@Pc(36) Class383 local36 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-				@Pc(45) Class14 local45 = Static163.aClass19_17.method8017(local36, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+				@Pc(45) Class14 local45 = Static163.aClass19_17.method8017(local36, Static735.method9382(client.js5Archive8, Static539.anInt8196), true);
 				Static288.method4189();
 				Static694.renderLoadingText(Static163.aClass19_17, arg0, true, local36, local45);
 			}
@@ -23,10 +23,10 @@ public final class Static595 {
 			@Pc(57) Class19 local57 = null;
 			@Pc(85) Class14 local85;
 			if (arg0 != null) {
-				local57 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, 0, GameShell.canvas, 0);
+				local57 = Static255.method3612(client.js5Archive31, client.textureProvider, 0, GameShell.canvas, 0);
 				local57.GA(0);
 				@Pc(76) Class383 local76 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-				local85 = local57.method8017(local76, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+				local85 = local57.method8017(local76, Static735.method9382(client.js5Archive8, Static539.anInt8196), true);
 				Static288.method4189();
 				Static694.renderLoadingText(local57, arg0, true, local76, local85);
 			}
@@ -34,11 +34,11 @@ public final class Static595 {
 			label216: {
 				try {
 					var14 = true;
-					Static163.aClass19_17 = Static255.method3612(Static124.aClass332_20, Static56.anInterface4_3, arg2, GameShell.canvas, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380() * 2);
+					Static163.aClass19_17 = Static255.method3612(client.js5Archive31, client.textureProvider, arg2, GameShell.canvas, Static400.aClass2_Sub34_28.aClass57_Sub13_1.method4380() * 2);
 					if (arg0 != null) {
 						local57.GA(0);
 						@Pc(118) Class383 local118 = Static74.method1535(Static539.anInt8196, Static697.aClass332_123);
-						@Pc(127) Class14 local127 = local57.method8017(local118, Static735.method9382(Static721.aClass332_128, Static539.anInt8196), true);
+						@Pc(127) Class14 local127 = local57.method8017(local118, Static735.method9382(client.js5Archive8, Static539.anInt8196), true);
 						Static288.method4189();
 						Static694.renderLoadingText(local57, arg0, true, local118, local127);
 					}
@@ -49,7 +49,7 @@ public final class Static595 {
 						} catch (@Pc(152) Throwable ex) {
 							ex.printStackTrace();
 						}
-						@Pc(158) Class2_Sub13 local158;
+						@Pc(158) Node_Sub13 local158;
 						if (local141) {
 							local158 = Static163.aClass19_17.method7968(146800640);
 						} else {
@@ -149,7 +149,7 @@ public final class Static595 {
 	}
 
 	@OriginalMember(owner = "client!so", name = "a", descriptor = "(Lclient!ge;Lclient!vfa;I)Lclient!bs;")
-	public static Class52 method7818(@OriginalArg(0) Packet arg0, @OriginalArg(1) Class384 arg1) {
+	public static Class52 method7818(@OriginalArg(0) Buffer arg0, @OriginalArg(1) ObjType arg1) {
 		@Pc(10) Class52 local10 = new Class52(arg1);
 		@Pc(14) int local14 = arg0.g1();
 		@Pc(23) boolean local23 = (local14 & 0x1) != 0;

@@ -42,7 +42,7 @@ public abstract class Class8_Sub2_Sub5 extends Class8_Sub2 {
 
 	@OriginalMember(owner = "client!nda", name = "a", descriptor = "([Lclient!lca;I)I")
 	@Override
-	public final int method9295(@OriginalArg(0) Class2_Sub7[] arg0) {
+	public final int method9295(@OriginalArg(0) Node_Sub7[] arg0) {
 		return this.method9284(arg0, super.anInt10722 >> Static52.anInt1070, super.anInt10718 >> Static52.anInt1070);
 	}
 
@@ -56,10 +56,7 @@ public abstract class Class8_Sub2_Sub5 extends Class8_Sub2 {
 
 	@OriginalMember(owner = "client!nda", name = "i", descriptor = "(I)Z")
 	@Override
-	public final boolean method9297(@OriginalArg(0) int arg0) {
-		if (arg0 != 0) {
-			this.method9291((byte) -87, null);
-		}
+	public final boolean method9297() {
 		return false;
 	}
 }

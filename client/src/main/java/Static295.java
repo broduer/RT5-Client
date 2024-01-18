@@ -9,7 +9,7 @@ public final class Static295 {
 
 	@OriginalMember(owner = "client!jga", name = "a", descriptor = "(III)V")
 	public static void method4354(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(14) Class2_Sub2_Sub2 local14 = Static440.method5970(13, arg0);
+		@Pc(14) SecondaryNode_Sub2 local14 = Static440.method5970(13, arg0);
 		local14.method202();
 		local14.anInt197 = arg1;
 	}

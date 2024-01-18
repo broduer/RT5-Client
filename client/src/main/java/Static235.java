@@ -42,7 +42,7 @@ public final class Static235 {
 		if (arg1 == 11) {
 			arg1 = 10;
 		}
-		@Pc(19) Class54 local19 = Static354.aClass142_4.method3063(arg0, 61);
+		@Pc(19) LocType local19 = client.locTypeList.method3063(arg0, 61);
 		if (arg1 >= 5 && arg1 <= 8) {
 			arg1 = 4;
 		}
@@ -50,7 +50,7 @@ public final class Static235 {
 	}
 
 	@OriginalMember(owner = "client!hf", name = "a", descriptor = "(Lclient!ge;B)Lclient!pi;")
-	public static Class39 method3425(@OriginalArg(0) Packet arg0) {
+	public static Class39 method3425(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		@Pc(19) Class155 local19 = Static471.method6416(local7);
 		@Pc(21) Class39 local21 = null;

@@ -13,13 +13,13 @@ public final class Class133 implements Interface13 {
 	private final Class125 aClass125_1;
 
 	@OriginalMember(owner = "client!fo", name = "j", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_36;
+	private final Js5 aClass332_36;
 
 	@OriginalMember(owner = "client!fo", name = "n", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_37;
+	private final Js5 aClass332_37;
 
 	@OriginalMember(owner = "client!fo", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!fea;)V")
-	public Class133(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class125 arg2) {
+	public Class133(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class125 arg2) {
 		this.aClass125_1 = arg2;
 		this.aClass332_36 = arg1;
 		this.aClass332_37 = arg0;

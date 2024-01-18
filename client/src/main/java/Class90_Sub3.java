@@ -10,7 +10,7 @@ public final class Class90_Sub3 extends Class90 {
 	private Class23 aClass23_28;
 
 	@OriginalMember(owner = "client!lq", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!gha;)V")
-	public Class90_Sub3(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class138_Sub2 arg2) {
+	public Class90_Sub3(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138_Sub2 arg2) {
 		super(arg0, arg1, arg2);
 	}
 

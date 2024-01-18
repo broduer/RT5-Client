@@ -9,7 +9,7 @@ public final class Class39_Sub20 extends Class39 {
 	private final int anInt8618;
 
 	@OriginalMember(owner = "client!sda", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub20(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub20(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.anInt8618 = arg0.g2();
 	}

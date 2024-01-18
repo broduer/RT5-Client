@@ -34,7 +34,7 @@ public final class Static135 {
 
 	@OriginalMember(owner = "client!ee", name = "a", descriptor = "(ZI)V")
 	public static void method7246(@OriginalArg(1) int arg0) {
-		@Pc(14) Class2_Sub2_Sub2 local14 = Static440.method5970(1, arg0);
+		@Pc(14) SecondaryNode_Sub2 local14 = Static440.method5970(1, arg0);
 		local14.method205();
 	}
 }

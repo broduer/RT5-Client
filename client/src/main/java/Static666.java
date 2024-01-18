@@ -8,7 +8,7 @@ public final class Static666 {
 	public static long aLong301;
 
 	@OriginalMember(owner = "client!vba", name = "M", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_118;
+	public static Js5 aClass332_118;
 
 	@OriginalMember(owner = "client!vba", name = "h", descriptor = "(I)V")
 	public static void method8700(@OriginalArg(0) int arg0) {
@@ -20,7 +20,7 @@ public final class Static666 {
 			}
 			if (local18.status == 1) {
 				local5 = (Class83) local18.result;
-				@Pc(41) Packet local41 = Static400.aClass2_Sub34_28.method5117();
+				@Pc(41) Buffer local41 = Static400.aClass2_Sub34_28.encode();
 				local5.method2162(local41.data, 0, local41.pos);
 			}
 		} catch (@Pc(51) Exception local51) {

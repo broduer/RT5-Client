@@ -20,12 +20,12 @@ public final class Class26_Sub3 extends Class26 {
 	private final boolean aBoolean243;
 
 	@OriginalMember(owner = "client!fd", name = "<init>", descriptor = "(Lclient!tca;Lclient!sb;Lclient!ae;)V")
-	public Class26_Sub3(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class7 arg2) {
+	public Class26_Sub3(@OriginalArg(0) Class19_Sub1_Sub2 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class7 arg2) {
 		super(arg0);
 		this.aClass7_4 = arg2;
 		if (arg1 != null && arg0.aBoolean704 && arg0.aBoolean708) {
-			@Pc(29) Class267 local29 = Static34.method884(35633, arg1.method7607("gl", "environment_mapped_water_v"), arg0);
-			@Pc(43) Class267 local43 = Static34.method884(35632, arg1.method7607("gl", "environment_mapped_water_f"), arg0);
+			@Pc(29) Class267 local29 = Static34.method884(35633, arg1.fetchFile("gl", "environment_mapped_water_v"), arg0);
+			@Pc(43) Class267 local43 = Static34.method884(35632, arg1.fetchFile("gl", "environment_mapped_water_f"), arg0);
 			this.aClass319_1 = Static223.method9095(new Class267[] { local29, local43 }, arg0);
 			this.aBoolean243 = this.aClass319_1 != null && this.aClass7_4.method115();
 		} else {

@@ -19,12 +19,12 @@ public final class Class39_Sub17 extends Class39 {
 	private final int anInt7648;
 
 	@OriginalMember(owner = "client!q", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub17(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub17(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.anInt7645 = arg0.g2();
 		this.anIntArray611 = new int[4];
 		this.anInt7647 = arg0.method7353();
-		Static734.method7697(this.anIntArray611, 0, this.anIntArray611.length, this.anInt7647);
+		Static734.fill(this.anIntArray611, 0, this.anIntArray611.length, this.anInt7647);
 		this.anInt7648 = arg0.g4();
 	}
 

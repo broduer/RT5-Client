@@ -11,7 +11,7 @@ public final class Static346 {
 	public static final float[] aFloatArray41 = new float[2];
 
 	@OriginalMember(owner = "client!kt", name = "P", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_29 = new Class28(16);
+	public static final HashTable aClass28_29 = new HashTable(16);
 
 	@OriginalMember(owner = "client!kt", name = "R", descriptor = "[I")
 	public static int[] anIntArray420 = new int[4];
@@ -44,7 +44,7 @@ public final class Static346 {
 		@Pc(33) int local33;
 		for (@Pc(25) int local25 = 0; local25 < Static78.anInt1629; local25++) {
 			local33 = Static118.anIntArray197[local25];
-			@Pc(40) Class2_Sub45 local40 = (Class2_Sub45) Static18.aClass28_2.method738(local33);
+			@Pc(40) Node_Sub45 local40 = (Node_Sub45) Static18.aClass28_2.get(local33);
 			@Pc(43) Class8_Sub2_Sub1_Sub2_Sub2 local43 = local40.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 			if (local43.anInt10780 != Static572.anInt8920) {
 				if (Static400.aBoolean623 && Static321.method4629(local33)) {
@@ -66,7 +66,7 @@ public final class Static346 {
 			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.pos + " psize:" + Static405.aClass153_2.length);
 		}
 		for (local33 = 0; local33 < Static390.anInt6146; local33++) {
-			if (Static18.aClass28_2.method738(Static103.anIntArray187[local33]) == null) {
+			if (Static18.aClass28_2.get(Static103.anIntArray187[local33]) == null) {
 				throw new RuntimeException("gnp2 pos:" + local33 + " size:" + Static390.anInt6146);
 			}
 		}

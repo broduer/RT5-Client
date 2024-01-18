@@ -27,16 +27,16 @@ public final class Static402 {
 
 	@OriginalMember(owner = "client!ml", name = "c", descriptor = "(II)Lclient!uja;")
 	public static Class378 method5589(@OriginalArg(1) int arg0) {
-		@Pc(10) Class378 local10 = (Class378) Static153.aClass82_56.method2156(arg0);
+		@Pc(10) Class378 local10 = (Class378) Static153.aClass82_56.get(arg0);
 		if (local10 != null) {
 			return local10;
 		}
-		@Pc(21) byte[] local21 = Static331.aClass332_65.method7602(arg0, 0);
+		@Pc(21) byte[] local21 = Static331.aClass332_65.fetchFile(arg0, 0);
 		local10 = new Class378();
 		if (local21 != null) {
-			local10.method8518(arg0, new Packet(local21));
+			local10.method8518(arg0, new Buffer(local21));
 		}
-		Static153.aClass82_56.method2150(local10, arg0);
+		Static153.aClass82_56.put(local10, arg0);
 		return local10;
 	}
 

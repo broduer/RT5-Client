@@ -19,7 +19,7 @@ public final class Class339 {
 	private Class114 aClass114_8;
 
 	@OriginalMember(owner = "client!sh", name = "d", descriptor = "Lclient!r;")
-	private Class2_Sub2_Sub9 aClass2_Sub2_Sub9_6;
+	private SecondaryNode_Sub9 aClass2_Sub2_Sub9_6;
 
 	@OriginalMember(owner = "client!sh", name = "b", descriptor = "[Z")
 	private boolean[] aBooleanArray27;
@@ -67,7 +67,7 @@ public final class Class339 {
 	private final Class152 aClass152_9;
 
 	@OriginalMember(owner = "client!sh", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIILclient!eo;ZI)V")
-	public Class339(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8) {
+	public Class339(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8) {
 		this.aByte133 = (byte) arg5;
 		this.anInt8687 = arg3;
 		this.aByte132 = (byte) arg4;
@@ -127,8 +127,8 @@ public final class Class339 {
 		@Pc(10) int local10 = arg1;
 		@Pc(12) boolean local12 = false;
 		if (arg1 == -1) {
-			@Pc(21) Class54 local21 = Static354.aClass142_4.method3063(this.anInt8673, 74);
-			@Pc(23) Class54 local23 = local21;
+			@Pc(21) LocType local21 = client.locTypeList.method3063(this.anInt8673, 74);
+			@Pc(23) LocType local23 = local21;
 			if (local21.anIntArray113 != null) {
 				local21 = local21.method1301(13, Static1.anInt10827 == 3 ? Static298.anInterface23_2 : Static34.aClass306_1);
 			}
@@ -178,7 +178,7 @@ public final class Class339 {
 
 	@OriginalMember(owner = "client!sh", name = "a", descriptor = "(Lclient!ha;ZZZI)Lclient!ka;")
 	public Class114 method7685(@OriginalArg(0) Class19 arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) boolean arg3, @OriginalArg(4) int arg4) {
-		@Pc(11) Class54 local11 = Static354.aClass142_4.method3063(this.anInt8673, 119);
+		@Pc(11) LocType local11 = client.locTypeList.method3063(this.anInt8673, 119);
 		if (local11.anIntArray113 != null) {
 			local11 = local11.method1301(13, Static1.anInt10827 == 3 ? Static298.anInterface23_2 : Static34.aClass306_1);
 		}
@@ -306,7 +306,7 @@ public final class Class339 {
 		@Pc(11) Class330[] local11 = arg1.method7489();
 		@Pc(14) Class251[] local14 = arg1.method7487();
 		if ((this.aClass8_Sub5_7 == null || this.aClass8_Sub5_7.aBoolean324) && (local11 != null || local14 != null)) {
-			@Pc(37) Class54 local37 = Static354.aClass142_4.method3063(this.anInt8673, 115);
+			@Pc(37) LocType local37 = client.locTypeList.method3063(this.anInt8673, 115);
 			if (local37.anIntArray113 != null) {
 				local37 = local37.method1301(arg3 + 9840, Static1.anInt10827 == 3 ? Static298.anInterface23_2 : Static34.aClass306_1);
 			}

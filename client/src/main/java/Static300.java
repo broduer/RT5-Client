@@ -32,7 +32,7 @@ public final class Static300 {
 	}
 
 	@OriginalMember(owner = "client!jj", name = "a", descriptor = "(ILclient!ge;)V")
-	public static void method4399(@OriginalArg(1) Packet arg0) {
+	public static void method4399(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) int local7 = arg0.gsmarts();
 		Static511.aClass65Array1 = new Class65[local7];
 		for (@Pc(12) int local12 = 0; local12 < local7; local12++) {

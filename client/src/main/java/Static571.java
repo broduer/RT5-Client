@@ -21,7 +21,7 @@ public final class Static571 {
 		if (Static132.aBooleanArray5[arg0]) {
 			return true;
 		} else if (Static666.aClass332_118.method7614(arg0)) {
-			@Pc(25) int local25 = Static666.aClass332_118.method7615(arg0);
+			@Pc(25) int local25 = Static666.aClass332_118.getGroupCapacity(arg0);
 			if (local25 == 0) {
 				Static132.aBooleanArray5[arg0] = true;
 				return true;
@@ -31,14 +31,14 @@ public final class Static571 {
 			}
 			for (@Pc(53) int local53 = 0; local53 < local25; local53++) {
 				if (Static453.aClass158ArrayArray2[arg0][local53] == null) {
-					@Pc(66) byte[] local66 = Static666.aClass332_118.method7602(local53, arg0);
+					@Pc(66) byte[] local66 = Static666.aClass332_118.fetchFile(local53, arg0);
 					if (local66 != null) {
 						@Pc(78) Class158 local78 = Static453.aClass158ArrayArray2[arg0][local53] = new Class158();
 						local78.anInt3823 = local53 + (arg0 << 16);
 						if (local66[0] != -1) {
 							throw new IllegalStateException("if1");
 						}
-						local78.method3390(new Packet(local66));
+						local78.method3390(new Buffer(local66));
 					}
 				}
 			}

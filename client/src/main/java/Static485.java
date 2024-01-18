@@ -15,9 +15,9 @@ public final class Static485 {
 
 	@OriginalMember(owner = "client!pf", name = "a", descriptor = "(Lclient!hda;ILclient!ha;)V")
 	public static void method9422(@OriginalArg(0) Class158 arg0, @OriginalArg(2) Class19 arg1) {
-		@Pc(38) boolean local38 = Static419.aClass112_1.method2483(arg0.aBoolean288 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass203_1 : null, arg1, arg0.anInt3767, arg0.anInt3770, arg0.anInt3783, arg0.anInt3828, arg0.anInt3809 | 0xFF000000) == null;
+		@Pc(38) boolean local38 = client.objTypeList.method2483(arg0.aBoolean288 ? Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aClass203_1 : null, arg1, arg0.anInt3767, arg0.anInt3770, arg0.anInt3783, arg0.anInt3828, arg0.anInt3809 | 0xFF000000) == null;
 		if (local38) {
-			Static133.aClass341_13.method7718(new Class2_Sub36(arg0.anInt3770, arg0.anInt3828, arg0.anInt3783, arg0.anInt3809 | 0xFF000000, arg0.anInt3767, arg0.aBoolean288));
+			Static133.aClass341_13.insertBefore(new Node_Sub36(arg0.anInt3770, arg0.anInt3828, arg0.anInt3783, arg0.anInt3809 | 0xFF000000, arg0.anInt3767, arg0.aBoolean288));
 			Static178.method2729(arg0);
 		}
 	}

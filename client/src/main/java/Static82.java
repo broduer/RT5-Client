@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static82 {
 
 	@OriginalMember(owner = "client!cl", name = "a", descriptor = "(BLclient!sb;Lclient!sb;[I)V")
-	public static void method1592(@OriginalArg(1) Class332 arg0, @OriginalArg(2) Class332 arg1, @OriginalArg(3) int[] arg2) {
+	public static void method1592(@OriginalArg(1) Js5 arg0, @OriginalArg(2) Js5 arg1, @OriginalArg(3) int[] arg2) {
 		Static555.aClass332_106 = arg1;
 		Static237.aClass332_87 = arg0;
 		if (arg2 != null) {

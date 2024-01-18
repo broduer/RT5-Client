@@ -157,7 +157,7 @@ public final class Class158 {
 	public Object[] anObjectArray26;
 
 	@OriginalMember(owner = "client!hda", name = "qd", descriptor = "Lclient!av;")
-	private Class28 aClass28_17;
+	private HashTable aClass28_17;
 
 	@OriginalMember(owner = "client!hda", name = "tc", descriptor = "I")
 	public int anInt3826;
@@ -412,7 +412,7 @@ public final class Class158 {
 	public int anInt3834 = 1;
 
 	@OriginalMember(owner = "client!hda", name = "w", descriptor = "Lclient!ofa;")
-	public Class2_Sub41 aClass2_Sub41_2 = Static93.aClass2_Sub41_1;
+	public ServerActiveProperties aClass2_Sub41_2 = Static93.aClass2_Sub41_1;
 
 	@OriginalMember(owner = "client!hda", name = "Ec", descriptor = "I")
 	public int anInt3817 = 0;
@@ -484,7 +484,7 @@ public final class Class158 {
 	public Class23 method3383(@OriginalArg(1) Class19 arg0) {
 		Static544.aBoolean625 = false;
 		@Pc(54) long local54 = ((long) this.anInt3809 << 40) + (((this.aBoolean292 ? 1L : 0L) << 35) + (long) this.anInt3821 - (-((long) this.anInt3783 << 36) + -((this.aBoolean291 ? 1L : 0L) << 38)) + ((this.aBoolean293 ? 1L : 0L) << 39));
-		@Pc(60) Class23 local60 = (Class23) Static473.aClass82_157.method2156(local54);
+		@Pc(60) Class23 local60 = (Class23) Static473.aClass82_157.get(local54);
 		if (local60 != null) {
 			return local60;
 		}
@@ -508,7 +508,7 @@ public final class Class158 {
 			local71.method9392(1);
 		}
 		if (this.anInt3783 >= 2) {
-			local71.method9392(16777215);
+			local71.method9392(0xFFFFFF);
 		}
 		if (this.anInt3809 != 0) {
 			local71.method9388(this.anInt3809 | 0xFF000000);
@@ -534,20 +534,20 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "b", descriptor = "(III)V")
 	public void method3385(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		if (this.aClass28_17 == null) {
-			this.aClass28_17 = new Class28(16);
-			this.aClass28_17.method735(arg0, new Class2_Sub38(arg1));
+			this.aClass28_17 = new HashTable(16);
+			this.aClass28_17.put(arg0, new Node_Sub38(arg1));
 			return;
 		}
-		@Pc(34) Class2_Sub38 local34 = (Class2_Sub38) this.aClass28_17.method738(arg0);
+		@Pc(34) Node_Sub38 local34 = (Node_Sub38) this.aClass28_17.get(arg0);
 		if (local34 == null) {
-			this.aClass28_17.method735(arg0, new Class2_Sub38(arg1));
+			this.aClass28_17.put(arg0, new Node_Sub38(arg1));
 		} else {
 			local34.anInt6399 = arg1;
 		}
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(ZLclient!ge;)[Ljava/lang/Object;")
-	private Object[] method3386(@OriginalArg(1) Packet arg0) {
+	private Object[] method3386(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		if (local7 == 0) {
 			return null;
@@ -583,13 +583,13 @@ public final class Class158 {
 		if (this.aClass28_17 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub24 local17 = (Class2_Sub24) this.aClass28_17.method738(arg1);
+			@Pc(17) Node_Sub24 local17 = (Node_Sub24) this.aClass28_17.get(arg1);
 			return local17 == null ? arg0 : local17.aString46;
 		}
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ge;B)V")
-	public void method3390(@OriginalArg(0) Packet arg0) {
+	public void method3390(@OriginalArg(0) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		if (local7 == 255) {
 			local7 = -1;
@@ -710,7 +710,7 @@ public final class Class158 {
 			this.anInt3789 = arg0.g4();
 			this.aBoolean287 = arg0.g1() == 1;
 		}
-		local191 = arg0.method7390();
+		local191 = arg0.g3();
 		@Pc(628) int local628 = arg0.g1();
 		@Pc(653) int local653;
 		if (local628 != 0) {
@@ -768,7 +768,7 @@ public final class Class158 {
 		this.anInt3841 = arg0.g1();
 		this.aString43 = arg0.gstr();
 		local730 = -1;
-		if (Static622.method6860(local191) != 0) {
+		if (ServerActiveProperties.getTargetMask(local191) != 0) {
 			local730 = arg0.g2();
 			if (local730 == 65535) {
 				local730 = -1;
@@ -788,21 +788,21 @@ public final class Class158 {
 				this.anInt3793 = -1;
 			}
 		}
-		this.aClass2_Sub41_2 = new Class2_Sub41(local191, local730);
+		this.aClass2_Sub41_2 = new ServerActiveProperties(local191, local730);
 		if (local7 >= 0) {
 			local767 = arg0.g1();
 			@Pc(929) int local929;
 			@Pc(933) int local933;
 			for (@Pc(924) int local924 = 0; local924 < local767; local924++) {
-				local929 = arg0.method7390();
+				local929 = arg0.g3();
 				local933 = arg0.g4();
-				this.aClass28_17.method735(local929, new Class2_Sub38(local933));
+				this.aClass28_17.put(local929, new Node_Sub38(local933));
 			}
 			local929 = arg0.g1();
 			for (local933 = 0; local933 < local929; local933++) {
-				@Pc(958) int local958 = arg0.method7390();
+				@Pc(958) int local958 = arg0.g3();
 				@Pc(962) String local962 = arg0.gjstr2();
-				this.aClass28_17.method735(local958, new Class2_Sub24(local962));
+				this.aClass28_17.put(local958, new Node_Sub24(local962));
 			}
 		}
 		this.anObjectArray13 = this.method3386(arg0);
@@ -852,11 +852,11 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;I)Lclient!he;")
 	public Class159 method3393(@OriginalArg(0) Class19 arg0) {
 		@Pc(15) long local15 = (long) this.anInt3751 & 0xFFFFFFFFL | (long) this.anInt3823 << 32;
-		@Pc(21) Class159 local21 = (Class159) Static449.aClass82_146.method2156(local15);
+		@Pc(21) Class159 local21 = (Class159) Static449.aClass82_146.get(local15);
 		if (local21 != null) {
 			if (local21.anInt3847 != this.anInt3821) {
 				local21 = null;
-				Static449.aClass82_146.method2154(local15);
+				Static449.aClass82_146.remove(local15);
 			}
 			if (local21 != null) {
 				return local21;
@@ -893,7 +893,7 @@ public final class Class158 {
 			return null;
 		} else {
 			local21 = new Class159(local77, local86, local92, local89, local180, this.anInt3821);
-			Static449.aClass82_146.method2150(local21, local15);
+			Static449.aClass82_146.put(local21, local15);
 			return local21;
 		}
 	}
@@ -901,13 +901,13 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "b", descriptor = "(Ljava/lang/String;II)V")
 	public void method3396(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1) {
 		if (this.aClass28_17 == null) {
-			this.aClass28_17 = new Class28(16);
-			this.aClass28_17.method735(arg1, new Class2_Sub24(arg0));
+			this.aClass28_17 = new HashTable(16);
+			this.aClass28_17.put(arg1, new Node_Sub24(arg0));
 			return;
 		}
-		@Pc(32) Class2_Sub24 local32 = (Class2_Sub24) this.aClass28_17.method738(arg1);
+		@Pc(32) Node_Sub24 local32 = (Node_Sub24) this.aClass28_17.get(arg1);
 		if (local32 == null) {
-			this.aClass28_17.method735(arg1, new Class2_Sub24(arg0));
+			this.aClass28_17.put(arg1, new Node_Sub24(arg0));
 		} else {
 			local32.aString46 = arg0;
 		}
@@ -931,7 +931,7 @@ public final class Class158 {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(BLclient!ge;)[I")
-	private int[] method3398(@OriginalArg(1) Packet arg0) {
+	private int[] method3398(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) int local7 = arg0.g1();
 		if (local7 == 0) {
 			return null;
@@ -985,7 +985,7 @@ public final class Class158 {
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Lclient!ha;Lclient!gu;Lclient!qp;Lclient!kr;BLclient!bp;Lclient!ju;Lclient!uk;Lclient!ql;Lclient!es;ILclient!vk;)Lclient!ka;")
-	public Class114 method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) Class312 arg2, @OriginalArg(3) Class217 arg3, @OriginalArg(5) Class50 arg4, @OriginalArg(6) Class203 arg5, @OriginalArg(7) Interface23 arg6, @OriginalArg(8) Class310 arg7, @OriginalArg(9) Class112 arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class388 arg10) {
+	public Class114 method3401(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(2) BasTypeList arg2, @OriginalArg(3) IdkTypeList arg3, @OriginalArg(5) SeqTypeList arg4, @OriginalArg(6) Class203 arg5, @OriginalArg(7) Interface23 arg6, @OriginalArg(8) NpcTypeList arg7, @OriginalArg(9) ObjTypeList arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class388 arg10) {
 		Static544.aBoolean625 = false;
 		if (this.anInt3834 == 0) {
 			return null;
@@ -996,7 +996,7 @@ public final class Class158 {
 				arg9 = arg1.method9108() | 0x800;
 			}
 			@Pc(53) long local53 = -1L;
-			@Pc(55) long[] local55 = Class2_Sub2_Sub14.aLongArray21;
+			@Pc(55) long[] local55 = Buffer.aLongArray21;
 			@Pc(60) int local60;
 			if (this.aShortArray57 != null) {
 				for (local60 = 0; local60 < this.aShortArray57.length; local60++) {
@@ -1017,7 +1017,7 @@ public final class Class158 {
 				arg9 |= 0x8000;
 			}
 			@Pc(271) long local271 = local53 & 0x3FFFFFFFFFL | (long) this.anInt3842 << 38 | (long) this.anInt3834 << 54 | (long) arg0.anInt8986 << 59;
-			@Pc(277) Class114 local277 = (Class114) Static312.aClass82_106.method2156(local271);
+			@Pc(277) Class114 local277 = (Class114) Static312.aClass82_106.get(local271);
 			if (local277 == null || arg0.method7967(local277.ua(), arg9) != 0) {
 				if (local277 != null) {
 					arg9 = arg0.method8020(arg9, local277.ua());
@@ -1042,7 +1042,7 @@ public final class Class158 {
 						local277.aa(this.aShortArray58[local339], this.aShortArray56[local339]);
 					}
 				}
-				Static312.aClass82_106.method2150(local277, local271);
+				Static312.aClass82_106.put(local277, local271);
 			}
 			if (arg1 != null) {
 				local277 = local277.method7502((byte) 1, arg9, true);
@@ -1072,7 +1072,7 @@ public final class Class158 {
 					return local438;
 				}
 			} else if (this.anInt3834 == 4) {
-				@Pc(489) Class384 local489 = arg8.method2486(this.anInt3842);
+				@Pc(489) ObjType local489 = arg8.get(this.anInt3842);
 				@Pc(498) Class114 local498 = local489.method8812(arg1, 2048, arg5, 10, arg0);
 				if (local498 == null) {
 					Static544.aBoolean625 = true;
@@ -1110,7 +1110,7 @@ public final class Class158 {
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(II)V")
 	public void method3402(@OriginalArg(0) int arg0) {
 		if (this.aClass28_17 != null) {
-			@Pc(14) Node local14 = this.aClass28_17.method738(arg0);
+			@Pc(14) Node local14 = this.aClass28_17.get(arg0);
 			if (local14 != null) {
 				local14.unlink();
 			}
@@ -1129,21 +1129,21 @@ public final class Class158 {
 		if (this.aClass28_17 == null) {
 			return arg0;
 		} else {
-			@Pc(17) Class2_Sub38 local17 = (Class2_Sub38) this.aClass28_17.method738(arg1);
+			@Pc(17) Node_Sub38 local17 = (Node_Sub38) this.aClass28_17.get(arg1);
 			return local17 == null ? arg0 : local17.anInt6399;
 		}
 	}
 
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(ILclient!dg;Lclient!qk;)Lclient!gm;")
-	public Class148 method3405(@OriginalArg(1) Class78 arg0, @OriginalArg(2) Class309 arg1) {
+	public Class148 method3405(@OriginalArg(1) SkyBoxSphereTypeList arg0, @OriginalArg(2) SkyBoxTypeList arg1) {
 		if (this.anInt3835 == -1) {
 			return null;
 		}
 		@Pc(48) long local48 = (long) this.anInt3835 & 0xFFFFL | ((long) this.anInt3792 & 0xFFFFL) << 16 | ((long) this.anInt3773 & 0xFFFFL) << 48 | 0xFFFFL << 32 & (long) this.anInt3807 << 32;
-		@Pc(54) Class148 local54 = (Class148) Static444.aClass82_145.method2156(local48);
+		@Pc(54) Class148 local54 = (Class148) Static444.aClass82_145.get(local48);
 		if (local54 == null) {
 			local54 = arg1.method7079(arg0, this.anInt3792, this.anInt3835, this.anInt3807, this.anInt3773);
-			Static444.aClass82_145.method2150(local54, local48);
+			Static444.aClass82_145.put(local54, local48);
 		}
 		return local54;
 	}

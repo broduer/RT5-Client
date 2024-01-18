@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static619 {
 
-	@OriginalMember(owner = "client!tk", name = "d", descriptor = "Lclient!vka;")
-	public static Class389 aClass389_2;
-
 	@OriginalMember(owner = "client!tk", name = "a", descriptor = "I")
 	public static int anInt1573;
 
@@ -84,7 +81,7 @@ public final class Static619 {
 		Static470.anInt7134 = arg0;
 		@Pc(18) String local18 = null;
 		if (Static265.sskey != null) {
-			@Pc(25) Packet local25 = new Packet(Static265.sskey);
+			@Pc(25) Buffer local25 = new Buffer(Static265.sskey);
 			local18 = Static287.method4154(local25.g8());
 			Static430.aLong209 = local25.g8();
 		}

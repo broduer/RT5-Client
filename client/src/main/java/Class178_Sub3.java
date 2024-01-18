@@ -132,18 +132,18 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!lca;[I)V")
 	@Override
-	public void method7875(@OriginalArg(0) Class2_Sub7 arg0, @OriginalArg(1) int[] arg1) {
+	public void method7875(@OriginalArg(0) Node_Sub7 arg0, @OriginalArg(1) int[] arg1) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(Lclient!r;IIIIZ)Z")
 	@Override
-	public boolean method7881(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public boolean method7881(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		return false;
 	}
 
 	@OriginalMember(owner = "client!qs", name = "CA", descriptor = "(Lclient!r;IIIIZ)V")
 	@Override
-	public void CA(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public void CA(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(IIZLclient!wf;Lclient!lb;[I[I[I[II)V")
@@ -1275,7 +1275,7 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "wa", descriptor = "(Lclient!r;IIIIZ)V")
 	@Override
-	public void wa(@OriginalArg(0) Class2_Sub2_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
+	public void wa(@OriginalArg(0) SecondaryNode_Sub9 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) boolean arg5) {
 	}
 
 	@OriginalMember(owner = "client!qs", name = "a", descriptor = "(II[I[I[I[I[I[I[I[I[I[I[IIIIZ)V")
@@ -1346,7 +1346,7 @@ public final class Class178_Sub3 extends Class178 {
 				}
 				local370 = arg11[local323];
 				if (local370 != -1) {
-					@Pc(490) Class118 local490 = this.aClass19_Sub2_8.anInterface4_10.method6824(local370);
+					@Pc(490) Material local490 = this.aClass19_Sub2_8.anInterface4_10.method6824(local370);
 					if (!local490.aBoolean240) {
 						local454 = true;
 						if (this.method7169(local490.aByte56) || local490.aByte54 != 0 || local490.aByte52 != 0) {
@@ -1408,7 +1408,7 @@ public final class Class178_Sub3 extends Class178 {
 			if (super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0 + 1][arg1] && super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0 + 1][arg1 + 1] && super.anIntArrayArray226[arg0][arg1] == super.anIntArrayArray226[arg0][arg1 + 1]) {
 				local741.aByte59 = (byte) (local741.aByte59 | 0x1);
 			}
-			@Pc(849) Class118 local849 = null;
+			@Pc(849) Material local849 = null;
 			if (local85 != -1) {
 				local849 = this.aClass19_Sub2_8.anInterface4_10.method6824(local85);
 			}
@@ -2118,7 +2118,7 @@ public final class Class178_Sub3 extends Class178 {
 
 	@OriginalMember(owner = "client!qs", name = "fa", descriptor = "(IILclient!r;)Lclient!r;")
 	@Override
-	public Class2_Sub2_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Class2_Sub2_Sub9 arg2) {
+	public SecondaryNode_Sub9 fa(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) SecondaryNode_Sub9 arg2) {
 		return null;
 	}
 }

@@ -14,9 +14,9 @@ public final class Static457 {
 
 	@OriginalMember(owner = "client!oha", name = "a", descriptor = "(B)V")
 	public static void method6237() {
-		Static658.aClass28_43.method737();
-		Static59.aClass194_9.method4358();
-		Static138.aClass194_6.method4358();
+		Static658.aClass28_43.clear();
+		Static59.aClass194_9.clear();
+		Static138.aClass194_6.clear();
 	}
 
 	@OriginalMember(owner = "client!oha", name = "b", descriptor = "(B)V")

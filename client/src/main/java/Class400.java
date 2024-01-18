@@ -10,13 +10,13 @@ public final class Class400 {
 	private Class364 aClass364_2;
 
 	@OriginalMember(owner = "client!we", name = "d", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_124;
+	private final Js5 aClass332_124;
 
 	@OriginalMember(owner = "client!we", name = "e", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_125;
+	private final Js5 aClass332_125;
 
 	@OriginalMember(owner = "client!we", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;)V")
-	public Class400(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1) {
+	public Class400(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1) {
 		this.aClass332_124 = arg1;
 		this.aClass332_125 = arg0;
 	}

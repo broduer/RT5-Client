@@ -32,7 +32,7 @@ public final class Class203 {
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(I)V")
 	private void method4550() {
-		@Pc(5) long[] local5 = Class2_Sub2_Sub14.aLongArray21;
+		@Pc(5) long[] local5 = Buffer.aLongArray21;
 		this.aLong160 = -1L;
 		this.aLong160 = local5[(int) ((this.aLong160 ^ (long) (this.anInt5024 >> 8)) & 0xFFL)] ^ this.aLong160 >>> 8;
 		this.aLong160 = this.aLong160 >>> 8 ^ local5[(int) (((long) this.anInt5024 ^ this.aLong160) & 0xFFL)];
@@ -103,7 +103,7 @@ public final class Class203 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!es;Lclient!gu;IZLclient!qp;Lclient!bp;I[ILclient!vl;Lclient!kr;Lclient!ha;Lclient!ql;[Lclient!gu;ILclient!gu;Lclient!uk;)Lclient!ka;")
-	public Class114 method4553(@OriginalArg(0) Class112 arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(4) Class312 arg2, @OriginalArg(5) Class50 arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) Class390 arg6, @OriginalArg(9) Class217 arg7, @OriginalArg(10) Class19 arg8, @OriginalArg(11) Class310 arg9, @OriginalArg(12) Class152[] arg10, @OriginalArg(13) int arg11, @OriginalArg(14) Class152 arg12, @OriginalArg(15) Interface23 arg13) {
+	public Class114 method4553(@OriginalArg(0) ObjTypeList arg0, @OriginalArg(1) Class152 arg1, @OriginalArg(4) BasTypeList arg2, @OriginalArg(5) SeqTypeList arg3, @OriginalArg(6) int arg4, @OriginalArg(7) int[] arg5, @OriginalArg(8) Class390 arg6, @OriginalArg(9) IdkTypeList arg7, @OriginalArg(10) Class19 arg8, @OriginalArg(11) NpcTypeList arg9, @OriginalArg(12) Class152[] arg10, @OriginalArg(13) int arg11, @OriginalArg(14) Class152 arg12, @OriginalArg(15) Interface23 arg13) {
 		if (this.anInt5029 != -1) {
 			return arg9.method7099(this.anInt5029).method6000(arg13, arg8, arg2, arg1, arg11, arg5, null, arg12, arg4, arg10);
 		}
@@ -115,7 +115,7 @@ public final class Class203 {
 		@Pc(72) int local72;
 		@Pc(116) int local116;
 		if (arg1 != null) {
-			@Pc(50) Class69 local50 = arg1.method9114();
+			@Pc(50) SeqType local50 = arg1.method9114();
 			if (local50 != null && (local50.anInt1659 >= 0 || local50.anInt1658 >= 0)) {
 				local34 = new int[this.anIntArray381.length];
 				for (local72 = 0; local72 < local34.length; local72++) {
@@ -182,9 +182,9 @@ public final class Class203 {
 		}
 		@Pc(342) Class114 local342;
 		synchronized (Static580.aClass82_186) {
-			local342 = (Class114) Static580.aClass82_186.method2156(local31);
+			local342 = (Class114) Static580.aClass82_186.get(local31);
 		}
-		@Pc(350) Class291 local350 = null;
+		@Pc(350) BasType local350 = null;
 		if (this.anInt5024 != -1) {
 			local350 = arg2.method7125(this.anInt5024);
 		}
@@ -204,7 +204,7 @@ public final class Class203 {
 					if (local388) {
 						if (this.aLong159 != -1L) {
 							synchronized (Static580.aClass82_186) {
-								local342 = (Class114) Static580.aClass82_186.method2156(this.aLong159);
+								local342 = (Class114) Static580.aClass82_186.get(this.aLong159);
 							}
 						}
 						if (local342 == null || arg8.method7967(local342.ua(), local28) != 0) {
@@ -221,7 +221,7 @@ public final class Class203 {
 								if (!local614 && this.aClass52Array1 != null && this.aClass52Array1[local586] != null) {
 									local593 = this.aClass52Array1[local586];
 								}
-								local633 = arg0.method2486(local591 & 0x3FFFFFFF).method8806(local593, this.aBoolean385);
+								local633 = arg0.get(local591 & 0x3FFFFFFF).method8806(local593, this.aBoolean385);
 								if (local633 != null) {
 									local584[local586] = local633;
 								}
@@ -271,7 +271,7 @@ public final class Class203 {
 						}
 						local342.s(local28);
 						synchronized (Static580.aClass82_186) {
-							Static580.aClass82_186.method2150(local342, local31);
+							Static580.aClass82_186.put(local342, local31);
 						}
 						this.aLong159 = local31;
 					}
@@ -308,7 +308,7 @@ public final class Class203 {
 					if (!local399 && this.aClass52Array1 != null && this.aClass52Array1[local390] != null) {
 						local397 = this.aClass52Array1[local390];
 					}
-					if (!arg0.method2486(local395 & 0x3FFFFFFF).method8809(this.aBoolean385, local397)) {
+					if (!arg0.get(local395 & 0x3FFFFFFF).method8809(this.aBoolean385, local397)) {
 						local388 = true;
 					}
 				} else if ((Integer.MIN_VALUE & local395) != 0 && !arg7.method5049(local395 & 0x3FFFFFFF).method6623()) {
@@ -376,7 +376,7 @@ public final class Class203 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(IBLclient!kr;I)V")
-	public void method4555(@OriginalArg(0) int arg0, @OriginalArg(2) Class217 arg1, @OriginalArg(3) int arg2) {
+	public void method4555(@OriginalArg(0) int arg0, @OriginalArg(2) IdkTypeList arg1, @OriginalArg(3) int arg2) {
 		@Pc(7) int local7 = Static264.anIntArray891[arg2];
 		if (arg1.method5049(arg0) != null) {
 			this.anIntArray381[local7] = Integer.MIN_VALUE | arg0;
@@ -391,12 +391,12 @@ public final class Class203 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!gu;IILclient!bp;Lclient!ha;BLclient!kr;II)Lclient!ka;")
-	public Class114 method4557(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class50 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(6) Class217 arg5, @OriginalArg(7) int arg6) {
+	public Class114 method4557(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) SeqTypeList arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(6) IdkTypeList arg5, @OriginalArg(7) int arg6) {
 		@Pc(16) int local16 = arg0 == null ? 2048 : arg0.method9108() | 0x800;
 		@Pc(29) long local29 = (long) arg1 | (long) arg2 << 32 | (long) (arg6 << 16);
 		@Pc(39) Class114 local39;
 		synchronized (Static54.aClass82_25) {
-			local39 = (Class114) Static54.aClass82_25.method2156(local29);
+			local39 = (Class114) Static54.aClass82_25.get(local29);
 		}
 		if (local39 == null || arg4.method7967(local39.ua(), local16) != 0) {
 			if (local39 != null) {
@@ -431,9 +431,9 @@ public final class Class203 {
 				}
 			}
 			local39.s(local16);
-			@Pc(228) Class82 local228 = Static54.aClass82_25;
+			@Pc(228) SoftLruHashTable local228 = Static54.aClass82_25;
 			synchronized (Static54.aClass82_25) {
-				Static54.aClass82_25.method2150(local39, local29);
+				Static54.aClass82_25.put(local39, local29);
 			}
 		}
 		if (arg0 == null) {
@@ -446,24 +446,24 @@ public final class Class203 {
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(BIILclient!es;)V")
-	public void method4558(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class112 arg2) {
+	public void method4558(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) ObjTypeList arg2) {
 		if (arg0 == -1) {
 			this.anIntArray381[arg1] = 0;
-		} else if (arg2.method2486(arg0) != null) {
+		} else if (arg2.get(arg0) != null) {
 			this.anIntArray381[arg1] = arg0 | 0x40000000;
 			this.method4550();
 		}
 	}
 
 	@OriginalMember(owner = "client!ju", name = "a", descriptor = "(Lclient!kr;BLclient!bp;Lclient!uk;Lclient!gu;Lclient!es;Lclient!ql;Lclient!ha;I)Lclient!ka;")
-	public Class114 method4559(@OriginalArg(0) Class217 arg0, @OriginalArg(2) Class50 arg1, @OriginalArg(3) Interface23 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) Class112 arg4, @OriginalArg(6) Class310 arg5, @OriginalArg(7) Class19 arg6) {
+	public Class114 method4559(@OriginalArg(0) IdkTypeList arg0, @OriginalArg(2) SeqTypeList arg1, @OriginalArg(3) Interface23 arg2, @OriginalArg(4) Class152 arg3, @OriginalArg(5) ObjTypeList arg4, @OriginalArg(6) NpcTypeList arg5, @OriginalArg(7) Class19 arg6) {
 		if (this.anInt5029 != -1) {
 			return arg5.method7099(this.anInt5029).method5999(arg3, null, arg6, arg2);
 		}
 		@Pc(35) int local35 = arg3 == null ? 2048 : arg3.method9108() | 0x800;
 		@Pc(48) Class114 local48;
 		synchronized (Static54.aClass82_25) {
-			local48 = (Class114) Static54.aClass82_25.method2156(this.aLong160);
+			local48 = (Class114) Static54.aClass82_25.get(this.aLong160);
 		}
 		if (local48 == null || arg6.method7967(local48.ua(), local35) != 0) {
 			if (local48 != null) {
@@ -477,7 +477,7 @@ public final class Class203 {
 					if (this.aClass52Array1 != null && this.aClass52Array1[local83] != null) {
 						local94 = this.aClass52Array1[local83];
 					}
-					if (!arg4.method2486(local92 & 0x3FFFFFFF).method8815(local94, this.aBoolean385)) {
+					if (!arg4.get(local92 & 0x3FFFFFFF).method8815(local94, this.aBoolean385)) {
 						local81 = true;
 					}
 				} else if ((Integer.MIN_VALUE & local92) != 0 && !arg0.method5049(local92 & 0x3FFFFFFF).method6622()) {
@@ -497,7 +497,7 @@ public final class Class203 {
 					if (this.aClass52Array1 != null && this.aClass52Array1[local176] != null) {
 						local187 = this.aClass52Array1[local176];
 					}
-					local220 = arg4.method2486(local185 & 0x3FFFFFFF).method8808(this.aBoolean385, local187);
+					local220 = arg4.get(local185 & 0x3FFFFFFF).method8808(this.aBoolean385, local187);
 					if (local220 != null) {
 						local172[local174++] = local220;
 					}
@@ -520,7 +520,7 @@ public final class Class203 {
 			}
 			local48.s(local35);
 			synchronized (Static54.aClass82_25) {
-				Static54.aClass82_25.method2150(local48, this.aLong160);
+				Static54.aClass82_25.put(local48, this.aLong160);
 			}
 		}
 		if (arg3 == null) {

@@ -29,7 +29,7 @@ public final class Static387 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(Lclient!ge;II)Ljava/lang/String;")
-	public static String method5448(@OriginalArg(0) Packet arg0) {
+	public static String method5448(@OriginalArg(0) Buffer arg0) {
 		try {
 			@Pc(7) int local7 = arg0.gsmarts();
 			if (local7 > 32767) {

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static228 {
 
 	@OriginalMember(owner = "client!hba", name = "n", descriptor = "Lclient!nj;")
-	public static Class264 aClass264_1;
+	public static Js5MasterIndex aClass264_1;
 
 	@OriginalMember(owner = "client!hba", name = "m", descriptor = "S")
 	public static short aShort45 = 256;

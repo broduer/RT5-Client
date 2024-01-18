@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static8 {
 
 	@OriginalMember(owner = "client!aea", name = "k", descriptor = "Lclient!bd;")
-	public static Class2_Sub6_Sub1 aClass2_Sub6_Sub1_1;
+	public static MidiPcmStream aClass2_Sub6_Sub1_1;
 
 	@OriginalMember(owner = "client!aea", name = "i", descriptor = "Lclient!ss;")
 	public static final ClientProt aClass347_1 = new ClientProt(38, -1);

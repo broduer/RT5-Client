@@ -15,12 +15,12 @@ public final class Static468 {
 			return;
 		}
 		@Pc(67) long local67 = local12 << 14 | arg0 << 28 | local8;
-		@Pc(73) Class2_Sub17 local73 = (Class2_Sub17) Static497.aClass28_35.method738(local67);
+		@Pc(73) Node_Sub17 local73 = (Node_Sub17) Static497.aClass28_35.get(local67);
 		if (local73 == null) {
 			Static638.method8405(arg0, arg2, arg1);
 			return;
 		}
-		@Pc(88) Class2_Sub15 local88 = (Class2_Sub15) local73.aClass341_12.method7706(65280);
+		@Pc(88) Node_Sub15 local88 = (Node_Sub15) local73.aClass341_12.head();
 		if (local88 == null) {
 			Static638.method8405(arg0, arg2, arg1);
 			return;
@@ -34,7 +34,7 @@ public final class Static468 {
 		local103.anInt8897 = local88.anInt1968;
 		local103.anInt8891 = local88.anInt1967;
 		label56: while (true) {
-			@Pc(146) Class2_Sub15 local146 = (Class2_Sub15) local73.aClass341_12.method7713();
+			@Pc(146) Node_Sub15 local146 = (Node_Sub15) local73.aClass341_12.next();
 			if (local146 == null) {
 				break;
 			}
@@ -42,7 +42,7 @@ public final class Static468 {
 				local103.anInt8898 = local146.anInt1968;
 				local103.anInt8902 = local146.anInt1967;
 				while (true) {
-					@Pc(171) Class2_Sub15 local171 = (Class2_Sub15) local73.aClass341_12.method7713();
+					@Pc(171) Node_Sub15 local171 = (Node_Sub15) local73.aClass341_12.next();
 					if (local171 == null) {
 						break label56;
 					}
@@ -118,8 +118,8 @@ public final class Static468 {
 	@OriginalMember(owner = "client!op", name = "a", descriptor = "(Lclient!gu;Lclient!ka;Lclient!gu;B)V")
 	public static void method7652(@OriginalArg(0) Class152 arg0, @OriginalArg(1) Class114 arg1, @OriginalArg(2) Class152 arg2) {
 		if (arg0.method9118() && arg2.method9118()) {
-			@Pc(12) Class69 local12 = arg0.aClass69_4;
-			@Pc(15) Class69 local15 = arg2.aClass69_4;
+			@Pc(12) SeqType local12 = arg0.aClass69_4;
+			@Pc(15) SeqType local15 = arg2.aClass69_4;
 			arg1.method7484(arg2.anInt10506, arg0.aClass259_8.anInt6468, arg0.aClass259_8.aClass2_Sub2_Sub18_2, arg2.aClass259_8.anInt6470, arg0.aClass259_8.anInt6470, arg2.aClass259_8.aClass2_Sub2_Sub18_2, arg0.aClass259_8.aClass2_Sub2_Sub18_1, arg0.anInt10506, local12.aBoolean140 | local15.aBoolean140, local15.anIntArray157[arg2.anInt10517], arg2.aClass259_8.aClass2_Sub2_Sub18_1, local12.aBooleanArray3, local12.anIntArray157[arg0.anInt10517], arg2.aClass259_8.anInt6468);
 		}
 	}

@@ -18,8 +18,8 @@ public final class Static119 {
 	}
 
 	@OriginalMember(owner = "client!dma", name = "b", descriptor = "(I)Lclient!fk;")
-	public static Class2_Sub19 method2174() {
-		return Static76.anInt1611 == 0 ? new Class2_Sub19() : Static372.aClass2_Sub19Array1[--Static76.anInt1611];
+	public static Node_Sub19 method2174() {
+		return Static76.anInt1611 == 0 ? new Node_Sub19() : Static372.aClass2_Sub19Array1[--Static76.anInt1611];
 	}
 
 	@OriginalMember(owner = "client!dma", name = "a", descriptor = "(IBI)Z")

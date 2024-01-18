@@ -131,8 +131,8 @@ public final class Static50 {
 			if (arg0.aClass201Array3[local50].anInt4947 != -1) {
 				local75 = arg0.aClass201Array3[local50].aClass152_7;
 				if (local75.method9113()) {
-					@Pc(88) Class229 local88 = Static23.aClass128_1.method2694(arg0.aClass201Array3[local50].anInt4947);
-					@Pc(92) Class69 local92 = local75.method9114();
+					@Pc(88) SpotAnimType local88 = client.spotanimTypeList.method2694(arg0.aClass201Array3[local50].anInt4947);
+					@Pc(92) SeqType local92 = local75.method9114();
 					if (local88.aBoolean448) {
 						if (local92.anInt1649 == 3) {
 							if (arg0.anInt10791 > 0 && client.cycle >= arg0.anInt10788 && arg0.anInt10784 < client.cycle) {
@@ -154,7 +154,7 @@ public final class Static50 {
 		local75 = arg0.aClass152_11;
 		if (local75.method9116()) {
 			label83: {
-				@Pc(214) Class69 local214 = local75.method9114();
+				@Pc(214) SeqType local214 = local75.method9114();
 				if (local214.anInt1649 == 3) {
 					if (arg0.anInt10791 > 0 && arg0.anInt10788 <= client.cycle && client.cycle > arg0.anInt10784) {
 						arg0.anIntArray869 = null;
@@ -188,7 +188,7 @@ public final class Static50 {
 
 	@OriginalMember(owner = "client!bm", name = "a", descriptor = "(IIB)V")
 	public static void method6646(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class2_Sub2_Sub2 local8 = Static440.method5970(15, 0L);
+		@Pc(8) SecondaryNode_Sub2 local8 = Static440.method5970(15, 0L);
 		local8.method202();
 		local8.anInt197 = arg1;
 		local8.anInt195 = arg0;

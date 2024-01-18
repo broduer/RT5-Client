@@ -11,7 +11,7 @@ public final class Static424 {
 
 	@OriginalMember(owner = "client!nga", name = "a", descriptor = "(I)V")
 	public static void method5786() {
-		@Pc(1) Class82 local1 = Static580.aClass82_186;
+		@Pc(1) SoftLruHashTable local1 = Static580.aClass82_186;
 		synchronized (Static580.aClass82_186) {
 			Static580.aClass82_186.method2151();
 		}

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class333 {
 
 	@OriginalMember(owner = "client!sba", name = "i", descriptor = "Lclient!av;")
-	private Class28 aClass28_41;
+	private HashTable aClass28_41;
 
 	@OriginalMember(owner = "client!sba", name = "j", descriptor = "Lclient!ie;")
 	private Node aClass2_266;
@@ -20,7 +20,7 @@ public final class Class333 {
 	}
 
 	@OriginalMember(owner = "client!sba", name = "<init>", descriptor = "(Lclient!av;)V")
-	public Class333(@OriginalArg(0) Class28 arg0) {
+	public Class333(@OriginalArg(0) HashTable arg0) {
 		this.aClass28_41 = arg0;
 	}
 

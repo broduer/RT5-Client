@@ -11,7 +11,7 @@ public final class Static449 {
 	public static int[] anIntArray546;
 
 	@OriginalMember(owner = "client!od", name = "l", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_146 = new Class82(8);
+	public static final SoftLruHashTable aClass82_146 = new SoftLruHashTable(8);
 
 	@OriginalMember(owner = "client!od", name = "e", descriptor = "Z")
 	public static boolean aBoolean511 = false;
@@ -27,7 +27,7 @@ public final class Static449 {
 	}
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(BZZLclient!aha;)V")
-	public static void method6122(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Class2_Sub4 arg2) {
+	public static void method6122(@OriginalArg(1) boolean arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) Node_Sub4 arg2) {
 		@Pc(6) int local6 = arg2.anInt147;
 		@Pc(10) int local10 = (int) arg2.key;
 		arg2.unlink();
@@ -44,9 +44,9 @@ public final class Static449 {
 			Static145.method2411(1, Static377.anInt5950);
 		}
 		@Pc(55) Class333 local55 = new Class333(Static548.aClass28_40);
-		for (@Pc(60) Class2_Sub4 local60 = (Class2_Sub4) local55.method7620(); local60 != null; local60 = (Class2_Sub4) local55.method7617()) {
+		for (@Pc(60) Node_Sub4 local60 = (Node_Sub4) local55.method7620(); local60 != null; local60 = (Node_Sub4) local55.method7617()) {
 			if (!local60.isLinked()) {
-				local60 = (Class2_Sub4) local55.method7620();
+				local60 = (Node_Sub4) local55.method7620();
 				if (local60 == null) {
 					break;
 				}
@@ -80,11 +80,11 @@ public final class Static449 {
 
 	@OriginalMember(owner = "client!od", name = "a", descriptor = "(ILclient!uv;)Z")
 	public static boolean method6125(@OriginalArg(1) Interface25 arg0) {
-		@Pc(17) Class54 local17 = Static354.aClass142_4.method3063(arg0.method6866(-32136), 49);
+		@Pc(17) LocType local17 = client.locTypeList.method3063(arg0.method6866(-32136), 49);
 		if (local17.anInt1244 == -1) {
 			return true;
 		} else {
-			@Pc(31) Class173 local31 = Static720.aClass365_4.method8369(local17.anInt1244);
+			@Pc(31) MsiType local31 = client.msiTypeList.method8369(local17.anInt1244);
 			return local31.anInt4178 == -1 ? true : local31.method3690();
 		}
 	}

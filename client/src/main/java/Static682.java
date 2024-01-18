@@ -30,7 +30,7 @@ public final class Static682 {
 
 	@OriginalMember(owner = "client!vka", name = "b", descriptor = "(II)V")
 	public static void method8933(@OriginalArg(1) int arg0) {
-		@Pc(17) Class2_Sub2_Sub2 local17 = Static440.method5970(20, arg0);
+		@Pc(17) SecondaryNode_Sub2 local17 = Static440.method5970(20, arg0);
 		local17.method205();
 	}
 

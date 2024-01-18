@@ -173,12 +173,12 @@ public final class Class8_Sub8 extends Class8 {
 					} else {
 						local252 = (int) ((double) this.anInt8296 * Math.random()) + this.anInt8295;
 						local252 &= 0x3FFF;
-						local362 = Class363.anIntArray741[local252];
-						local414 = Class363.anIntArray740[local252];
+						local362 = Class114_Sub1.anIntArray741[local252];
+						local414 = Class114_Sub1.anIntArray740[local252];
 						local435 = this.anInt8299 + (int) ((double) this.anInt8297 * Math.random());
 						local435 &= 0x1FFF;
-						local577 = Class363.anIntArray741[local435];
-						local581 = Class363.anIntArray740[local435];
+						local577 = Class114_Sub1.anIntArray741[local435];
+						local581 = Class114_Sub1.anIntArray740[local435];
 						local218 = local414 * local577 >> 13;
 						local226 = (local581 << 1) * -1;
 						local235 = local577 * local362 >> 13;

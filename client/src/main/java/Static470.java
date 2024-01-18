@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static470 {
 
 	@OriginalMember(owner = "client!or", name = "F", descriptor = "Lclient!pg;")
-	public static Class2_Sub2_Sub16 aClass2_Sub2_Sub16_10;
+	public static SecondaryNode_Sub16 aClass2_Sub2_Sub16_10;
 
 	@OriginalMember(owner = "client!or", name = "J", descriptor = "S")
 	public static short aShort82;
@@ -53,7 +53,7 @@ public final class Static470 {
 		if (!Static103.aBoolean195) {
 			return;
 		}
-		if (Static84.method1661(arg0).anInt6930 == 0 && arg0.anInt3831 != 0) {
+		if (Static84.method1661(arg0).events == 0 && arg0.anInt3831 != 0) {
 			return;
 		}
 		if (arg0.anInt3745 < 0) {
@@ -78,7 +78,7 @@ public final class Static470 {
 		}
 		@Pc(14) Class158 local14 = Static15.method186(Static77.anInt1621, Static450.anInt6840);
 		if (local14 != null && local14.anObjectArray16 != null) {
-			@Pc(25) Class2_Sub42 local25 = new Class2_Sub42();
+			@Pc(25) Node_Sub42 local25 = new Node_Sub42();
 			local25.anObjectArray36 = local14.anObjectArray16;
 			local25.aClass158_14 = local14;
 			Static472.method6427(local25);

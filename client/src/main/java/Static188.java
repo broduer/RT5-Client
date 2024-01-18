@@ -179,7 +179,7 @@ public final class Static188 {
 	}
 
 	@OriginalMember(owner = "client!fq", name = "a", descriptor = "(ILclient!sb;)I")
-	public static int method2860(@OriginalArg(1) Class332 arg0) {
+	public static int method2860(@OriginalArg(1) Js5 arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0.method7588(Static159.anInt2796)) {
 			local5++;

@@ -68,10 +68,10 @@ public final class Static650 {
 	private static boolean aBoolean747 = false;
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;I)Lclient!uj;")
-	public static Class2_Sub53 method8505(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1) {
+	public static Node_Sub53 method8505(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1) {
 		if (method8512(arg0)) {
 			@Pc(14) byte[] local14 = arg0.method7596(arg1);
-			return local14 == null ? null : new Class2_Sub53(local14);
+			return local14 == null ? null : new Node_Sub53(local14);
 		} else {
 			arg0.method7588(arg1);
 			return null;
@@ -188,9 +188,9 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;)Z")
-	public static boolean method8512(@OriginalArg(0) Class332 arg0) {
+	public static boolean method8512(@OriginalArg(0) Js5 arg0) {
 		if (!aBoolean747) {
-			@Pc(7) byte[] local7 = arg0.method7602(0, 0);
+			@Pc(7) byte[] local7 = arg0.fetchFile(0, 0);
 			if (local7 == null) {
 				return false;
 			}
@@ -200,10 +200,10 @@ public final class Static650 {
 	}
 
 	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(Lclient!sb;II)Lclient!uj;")
-	public static Class2_Sub53 method8513(@OriginalArg(0) Class332 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public static Node_Sub53 method8513(@OriginalArg(0) Js5 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (method8512(arg0)) {
-			@Pc(16) byte[] local16 = arg0.method7602(arg2, arg1);
-			return local16 == null ? null : new Class2_Sub53(local16);
+			@Pc(16) byte[] local16 = arg0.fetchFile(arg2, arg1);
+			return local16 == null ? null : new Node_Sub53(local16);
 		} else {
 			arg0.method7593(arg2, arg1);
 			return null;

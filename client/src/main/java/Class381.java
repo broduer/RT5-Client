@@ -205,7 +205,7 @@ public final class Class381 {
 	private int anInt9959 = 100;
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(BLclient!ge;I)V")
-	private void method8660(@OriginalArg(1) Packet arg0, @OriginalArg(2) int arg1) {
+	private void method8660(@OriginalArg(1) Buffer arg0, @OriginalArg(2) int arg1) {
 		if (arg1 == 1) {
 			this.aShort124 = (short) arg0.g2();
 			this.aShort125 = (short) arg0.g2();
@@ -360,7 +360,7 @@ public final class Class381 {
 	}
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(BLclient!ge;)V")
-	public void method8663(@OriginalArg(1) Packet arg0) {
+	public void method8663(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(3) int local3 = arg0.g1();
 			if (local3 == 0) {

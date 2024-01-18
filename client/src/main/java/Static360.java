@@ -22,15 +22,15 @@ public final class Static360 {
 		}
 		@Pc(53) int local53;
 		if (Static403.aClass249_2 == Static178.aClass249_1) {
-			@Pc(36) byte[] local36 = Static504.aClass332_95.method7596(arg0);
+			@Pc(36) byte[] local36 = client.js5Archive35.method7596(arg0);
 			if (local36 == null) {
 				return false;
 			}
-			@Pc(46) Packet local46 = new Packet(local36);
+			@Pc(46) Buffer local46 = new Buffer(local36);
 			Static12.method5171(local46);
 			local53 = local46.g1();
 			for (@Pc(55) int local55 = 0; local55 < local53; local55++) {
-				Static391.aClass341_34.method7718(new Class2_Sub35(local46));
+				Static391.aClass341_34.insertBefore(new Node_Sub35(local46));
 			}
 			@Pc(78) int local78 = local46.gsmarts();
 			Static75.aClass359Array2 = new Class359[local78];
@@ -98,9 +98,9 @@ public final class Static360 {
 			local8 = local8.substring(0, local13) + "," + local8.substring(local13);
 		}
 		if (local8.length() > 9) {
-			return " <col=00ff80>" + local8.substring(0, local8.length() - 8) + Static32.aClass32_33.method877(client.lang) + " (" + local8 + ")</col>";
+			return " <col=00ff80>" + local8.substring(0, local8.length() - 8) + Static32.aClass32_33.getLocalization(client.lang) + " (" + local8 + ")</col>";
 		} else if (local8.length() > 6) {
-			return " <col=ffffff>" + local8.substring(0, local8.length() - 4) + Static32.aClass32_35.method877(client.lang) + " (" + local8 + ")</col>";
+			return " <col=ffffff>" + local8.substring(0, local8.length() - 4) + Static32.aClass32_35.getLocalization(client.lang) + " (" + local8 + ")</col>";
 		} else {
 			return " <col=ffff00>" + local8 + "</col>";
 		}

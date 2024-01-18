@@ -43,7 +43,7 @@ public final class Static507 {
 		if (arg3.aByte62 == 4) {
 			arg3.anInt3756 = arg3.anInt3813 * arg3.anInt3760 / arg3.anInt3806;
 		}
-		if (Static103.aBoolean195 && (Static84.method1661(arg3).anInt6930 != 0 || arg3.anInt3831 == 0)) {
+		if (Static103.aBoolean195 && (Static84.method1661(arg3).events != 0 || arg3.anInt3831 == 0)) {
 			if (arg3.anInt3756 < 5 && arg3.anInt3813 < 5) {
 				arg3.anInt3756 = 5;
 				arg3.anInt3813 = 5;
@@ -60,16 +60,16 @@ public final class Static507 {
 			Static610.aClass158_16 = arg3;
 		}
 		if (arg0 && arg3.anObjectArray19 != null && (local6 != arg3.anInt3813 || local16 != arg3.anInt3756)) {
-			@Pc(225) Class2_Sub42 local225 = new Class2_Sub42();
+			@Pc(225) Node_Sub42 local225 = new Node_Sub42();
 			local225.anObjectArray36 = arg3.anObjectArray19;
 			local225.aClass158_14 = arg3;
-			Static521.aClass341_44.method7718(local225);
+			Static521.aClass341_44.insertBefore(local225);
 		}
 	}
 
 	@OriginalMember(owner = "client!pw", name = "c", descriptor = "(Z)V")
 	public static void method6751() {
-		for (@Pc(15) Class2_Sub5 local15 = (Class2_Sub5) Static106.aClass28_11.method736(); local15 != null; local15 = (Class2_Sub5) Static106.aClass28_11.method740()) {
+		for (@Pc(15) Node_Sub5 local15 = (Node_Sub5) Static106.aClass28_11.method736(); local15 != null; local15 = (Node_Sub5) Static106.aClass28_11.method740()) {
 			if (local15.aBoolean18) {
 				local15.aBoolean18 = false;
 			} else {

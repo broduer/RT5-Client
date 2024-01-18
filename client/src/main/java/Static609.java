@@ -26,7 +26,7 @@ public final class Static609 {
 
 	@OriginalMember(owner = "client!tea", name = "a", descriptor = "(ZI)V")
 	public static void method8220(@OriginalArg(0) boolean arg0) {
-		for (@Pc(8) Class2_Sub51 local8 = (Class2_Sub51) Static460.aClass341_40.method7706(65280); local8 != null; local8 = (Class2_Sub51) Static460.aClass341_40.method7713()) {
+		for (@Pc(8) Node_Sub51 local8 = (Node_Sub51) Static460.aClass341_40.head(); local8 != null; local8 = (Node_Sub51) Static460.aClass341_40.next()) {
 			if (local8.aClass2_Sub6_Sub2_4 != null) {
 				Static336.aClass2_Sub6_Sub3_1.method5890(local8.aClass2_Sub6_Sub2_4);
 				local8.aClass2_Sub6_Sub2_4 = null;
@@ -40,14 +40,14 @@ public final class Static609 {
 		if (!arg0) {
 			return;
 		}
-		for (@Pc(57) Class2_Sub51 local57 = (Class2_Sub51) Static717.aClass341_81.method7706(65280); local57 != null; local57 = (Class2_Sub51) Static717.aClass341_81.method7713()) {
+		for (@Pc(57) Node_Sub51 local57 = (Node_Sub51) Static717.aClass341_81.head(); local57 != null; local57 = (Node_Sub51) Static717.aClass341_81.next()) {
 			if (local57.aClass2_Sub6_Sub2_4 != null) {
 				Static336.aClass2_Sub6_Sub3_1.method5890(local57.aClass2_Sub6_Sub2_4);
 				local57.aClass2_Sub6_Sub2_4 = null;
 			}
 			local57.unlink();
 		}
-		for (@Pc(85) Class2_Sub51 local85 = (Class2_Sub51) Static113.aClass28_12.method736(); local85 != null; local85 = (Class2_Sub51) Static113.aClass28_12.method740()) {
+		for (@Pc(85) Node_Sub51 local85 = (Node_Sub51) Static113.aClass28_12.method736(); local85 != null; local85 = (Node_Sub51) Static113.aClass28_12.method740()) {
 			if (local85.aClass2_Sub6_Sub2_4 != null) {
 				Static336.aClass2_Sub6_Sub3_1.method5890(local85.aClass2_Sub6_Sub2_4);
 				local85.aClass2_Sub6_Sub2_4 = null;
@@ -57,13 +57,13 @@ public final class Static609 {
 	}
 
 	@OriginalMember(owner = "client!tea", name = "a", descriptor = "(IIILclient!cba;)V")
-	public static void method8221(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) Class2_Sub2_Sub4 arg2) {
+	public static void method8221(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) SecondaryNode_Sub4 arg2) {
 		if (!Static400.aBoolean623) {
 			return;
 		}
 		@Pc(11) int local11 = 0;
 		@Pc(23) int local23;
-		for (@Pc(17) Class2_Sub2_Sub16 local17 = (Class2_Sub2_Sub16) arg2.aClass194_3.method4359(); local17 != null; local17 = (Class2_Sub2_Sub16) arg2.aClass194_3.method4357()) {
+		for (@Pc(17) SecondaryNode_Sub16 local17 = (SecondaryNode_Sub16) arg2.aClass194_3.head(); local17 != null; local17 = (SecondaryNode_Sub16) arg2.aClass194_3.next()) {
 			local23 = Static249.method3536(local17);
 			if (local23 > local11) {
 				local11 = local23;

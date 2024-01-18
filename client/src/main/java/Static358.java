@@ -26,7 +26,7 @@ public final class Static358 {
 		for (@Pc(1) int local1 = 0; local1 < Static319.anInt5097; local1++) {
 			if (!Static279.aBooleanArray11[local1]) {
 				@Pc(10) Class355 local10 = Static265.aClass355Array1[local1];
-				@Pc(13) Class2_Sub7 local13 = local10.aClass2_Sub7_3;
+				@Pc(13) Node_Sub7 local13 = local10.aClass2_Sub7_3;
 				@Pc(16) int local16 = local10.anInt9395;
 				@Pc(22) int local22 = local13.method8439() - Static247.anInt4004;
 				@Pc(30) int local30 = (local22 * 2 >> Static52.anInt1070) + 1;

@@ -13,10 +13,10 @@ public class Class37 implements Interface13 {
 	protected final Class160 aClass160_2;
 
 	@OriginalMember(owner = "client!nha", name = "n", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_8;
+	private final Js5 aClass332_8;
 
 	@OriginalMember(owner = "client!nha", name = "<init>", descriptor = "(Lclient!sb;Lclient!no;)V")
-	public Class37(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class160 arg1) {
+	public Class37(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class160 arg1) {
 		this.aClass160_2 = arg1;
 		this.aClass332_8 = arg0;
 	}

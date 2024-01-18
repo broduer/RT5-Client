@@ -74,10 +74,10 @@ public final class Static385 {
 	}
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(Lclient!cba;B)V")
-	public static void method5431(@OriginalArg(0) Class2_Sub2_Sub4 arg0) {
+	public static void method5431(@OriginalArg(0) SecondaryNode_Sub4 arg0) {
 		@Pc(5) boolean local5 = false;
-		arg0.method9267();
-		for (@Pc(21) Class2_Sub2_Sub4 local21 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4359(); local21 != null; local21 = (Class2_Sub2_Sub4) Static350.aClass194_8.method4357()) {
+		arg0.unlinkSecondary();
+		for (@Pc(21) SecondaryNode_Sub4 local21 = (SecondaryNode_Sub4) Static350.aClass194_8.head(); local21 != null; local21 = (SecondaryNode_Sub4) Static350.aClass194_8.next()) {
 			if (Static546.method7257(arg0.method1468(), local21.method1468())) {
 				local5 = true;
 				Static409.method5661(local21, arg0);
@@ -85,7 +85,7 @@ public final class Static385 {
 			}
 		}
 		if (!local5) {
-			Static350.aClass194_8.method4355(arg0);
+			Static350.aClass194_8.addTail(arg0);
 		}
 	}
 }

@@ -34,10 +34,10 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 	public Class114 aClass114_4;
 
 	@OriginalMember(owner = "client!jda", name = "eb", descriptor = "Lclient!r;")
-	private Class2_Sub2_Sub9 aClass2_Sub2_Sub9_3;
+	private SecondaryNode_Sub9 aClass2_Sub2_Sub9_3;
 
 	@OriginalMember(owner = "client!jda", name = "<init>", descriptor = "(Lclient!ha;Lclient!c;IIIIIZIIIIIIZ)V")
-	public Class8_Sub2_Sub1_Sub3(@OriginalArg(0) Class19 arg0, @OriginalArg(1) Class54 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) boolean arg14) {
+	public Class8_Sub2_Sub1_Sub3(@OriginalArg(0) Class19 arg0, @OriginalArg(1) LocType arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) boolean arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) int arg13, @OriginalArg(14) boolean arg14) {
 		super(arg2, arg3, arg4, arg5, arg6, arg8, arg9, arg10, arg11, arg1.anInt1223 == 1, Static194.method2904(arg12, arg13));
 		this.aBoolean364 = arg1.anInt1276 != 0 && !arg7;
 		this.aBoolean363 = arg7;
@@ -73,7 +73,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 	@OriginalMember(owner = "client!jda", name = "a", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method6864(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
-		@Pc(16) Class2_Sub2_Sub9 local16;
+		@Pc(16) SecondaryNode_Sub9 local16;
 		if (this.aClass2_Sub2_Sub9_3 == null && this.aBoolean362) {
 			@Pc(27) Class274 local27 = this.method4230(arg0, true, 262144);
 			local16 = local27 == null ? null : local27.aClass2_Sub2_Sub9_5;
@@ -119,10 +119,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 
 	@OriginalMember(owner = "client!jda", name = "i", descriptor = "(I)Z")
 	@Override
-	public boolean method9297(@OriginalArg(0) int arg0) {
-		if (arg0 != 0) {
-			this.method9287(61);
-		}
+	public boolean method9297() {
 		return this.aBoolean365;
 	}
 
@@ -197,7 +194,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 	@OriginalMember(owner = "client!jda", name = "b", descriptor = "(Lclient!ha;I)V")
 	@Override
 	public void method6868(@OriginalArg(0) Class19 arg0) {
-		@Pc(21) Class2_Sub2_Sub9 local21;
+		@Pc(21) SecondaryNode_Sub9 local21;
 		if (this.aClass2_Sub2_Sub9_3 == null && this.aBoolean362) {
 			@Pc(32) Class274 local32 = this.method4230(arg0, true, 262144);
 			local21 = local32 == null ? null : local32.aClass2_Sub2_Sub9_5;
@@ -275,7 +272,7 @@ public final class Class8_Sub2_Sub1_Sub3 extends Class8_Sub2_Sub1 implements Int
 
 	@OriginalMember(owner = "client!jda", name = "a", descriptor = "(Lclient!ha;BZI)Lclient!od;")
 	private Class274 method4230(@OriginalArg(0) Class19 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
-		@Pc(11) Class54 local11 = Static354.aClass142_4.method3063(this.aShort57 & 0xFFFF, 73);
+		@Pc(11) LocType local11 = client.locTypeList.method3063(this.aShort57 & 0xFFFF, 73);
 		@Pc(27) Class178 local27;
 		@Pc(33) Class178 local33;
 		if (this.aBoolean363) {

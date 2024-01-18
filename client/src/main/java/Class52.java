@@ -24,7 +24,7 @@ public final class Class52 {
 	public short[] aShortArray10;
 
 	@OriginalMember(owner = "client!bs", name = "<init>", descriptor = "(Lclient!vfa;)V")
-	public Class52(@OriginalArg(0) Class384 arg0) {
+	public Class52(@OriginalArg(0) ObjType arg0) {
 		this.anIntArray97[0] = arg0.anInt10111;
 		this.anIntArray97[1] = arg0.anInt10129;
 		this.anIntArray97[2] = arg0.anInt10122;

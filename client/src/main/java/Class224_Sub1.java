@@ -17,19 +17,19 @@ public final class Class224_Sub1 extends Class224 {
 	private byte[][] aByteArrayArray37 = new byte[10][];
 
 	@OriginalMember(owner = "client!wea", name = "S", descriptor = "Lclient!ge;")
-	private final Packet aClass2_Sub21_16 = new Packet(null);
+	private final Buffer aClass2_Sub21_16 = new Buffer(null);
 
 	@OriginalMember(owner = "client!wea", name = "O", descriptor = "Lclient!ge;")
-	private final Packet aClass2_Sub21_17 = new Packet(null);
+	private final Buffer aClass2_Sub21_17 = new Buffer(null);
 
 	@OriginalMember(owner = "client!wea", name = "L", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_126;
+	private final Js5 aClass332_126;
 
 	@OriginalMember(owner = "client!wea", name = "K", descriptor = "I")
 	private final int anInt10622;
 
 	@OriginalMember(owner = "client!wea", name = "<init>", descriptor = "(ILclient!sb;I)V")
-	public Class224_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) int arg2) {
+	public Class224_Sub1(@OriginalArg(0) int arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) int arg2) {
 		super(arg0);
 		this.aClass332_126 = arg1;
 		this.anInt10622 = arg2;
@@ -42,7 +42,7 @@ public final class Class224_Sub1 extends Class224 {
 		}
 		for (@Pc(12) int local12 = 0; local12 < 10 && local12 + this.anInt10624 < this.anIntArray834.length; local12++) {
 			if (this.aByteArrayArray37[local12] == null && this.aClass332_126.method7593(0, this.anIntArray834[this.anInt10624 + local12])) {
-				this.aByteArrayArray37[local12] = this.aClass332_126.method7602(0, this.anIntArray834[this.anInt10624 + local12]);
+				this.aByteArrayArray37[local12] = this.aClass332_126.fetchFile(0, this.anIntArray834[this.anInt10624 + local12]);
 			}
 		}
 		if (arg0 < 93) {
@@ -59,7 +59,7 @@ public final class Class224_Sub1 extends Class224 {
 			if (!this.aClass332_126.method7593(0, this.anInt10622)) {
 				return 0;
 			}
-			@Pc(29) byte[] local29 = this.aClass332_126.method7602(0, this.anInt10622);
+			@Pc(29) byte[] local29 = this.aClass332_126.fetchFile(0, this.anInt10622);
 			if (local29 == null) {
 				throw new IllegalStateException("");
 			}

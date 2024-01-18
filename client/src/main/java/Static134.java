@@ -39,7 +39,7 @@ public final class Static134 {
 		if (arg0.aClass158Array1 != null) {
 			Static220.method3200(local16, arg1, local37, arg0.aClass158Array1, arg0.anInt3823);
 		}
-		@Pc(72) Class2_Sub4 local72 = (Class2_Sub4) Static548.aClass28_40.method738(arg0.anInt3823);
+		@Pc(72) Node_Sub4 local72 = (Node_Sub4) Static548.aClass28_40.get(arg0.anInt3823);
 		if (local72 != null) {
 			Static19.method265(arg1, local72.anInt147, local37, local16);
 		}

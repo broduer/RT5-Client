@@ -8,14 +8,14 @@ public final class Static145 {
 	public static int anInt2570 = 0;
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(ZLclient!cm;Lclient!cm;)V")
-	public static void method2408(@OriginalArg(1) Class2_Sub2 arg0, @OriginalArg(2) Class2_Sub2 arg1) {
-		if (arg0.aClass2_Sub2_67 != null) {
-			arg0.method9267();
+	public static void method2408(@OriginalArg(1) SecondaryNode arg0, @OriginalArg(2) SecondaryNode arg1) {
+		if (arg0.secondaryPrev != null) {
+			arg0.unlinkSecondary();
 		}
-		arg0.aClass2_Sub2_67 = arg1.aClass2_Sub2_67;
-		arg0.aClass2_Sub2_66 = arg1;
-		arg0.aClass2_Sub2_67.aClass2_Sub2_66 = arg0;
-		arg0.aClass2_Sub2_66.aClass2_Sub2_67 = arg0;
+		arg0.secondaryPrev = arg1.secondaryPrev;
+		arg0.secondaryNext = arg1;
+		arg0.secondaryPrev.secondaryNext = arg0;
+		arg0.secondaryNext.secondaryPrev = arg0;
 	}
 
 	@OriginalMember(owner = "client!eja", name = "a", descriptor = "(I)V")
@@ -61,7 +61,7 @@ public final class Static145 {
 					@Pc(164) int local164 = local72 & 0x3FFF;
 					local95 = arg0.anInt10722 - (local164 - Static116.anInt2279) * 512 - 256;
 				} else if ((local25 & 0x8000) == 0) {
-					@Pc(111) Class2_Sub45 local111 = (Class2_Sub45) Static18.aClass28_2.method738(local25);
+					@Pc(111) Node_Sub45 local111 = (Node_Sub45) Static18.aClass28_2.get(local25);
 					if (local111 == null) {
 						arg0.method9314(local19, -1);
 						continue;

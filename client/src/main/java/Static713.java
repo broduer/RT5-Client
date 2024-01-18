@@ -8,7 +8,7 @@ public final class Static713 {
 	public static final ClientProt aClass347_125 = new ClientProt(25, 8);
 
 	@OriginalMember(owner = "client!wk", name = "h", descriptor = "Lclient!dla;")
-	public static final Class82 aClass82_231 = new Class82(64);
+	public static final SoftLruHashTable aClass82_231 = new SoftLruHashTable(64);
 
 	@OriginalMember(owner = "client!wk", name = "g", descriptor = "Lclient!tka;")
 	public static final Class357 wtqaMode = new Class357("WTQA", "office", "_qa", 2);

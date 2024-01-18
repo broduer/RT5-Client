@@ -15,28 +15,28 @@ public final class Static2 {
 
 	@OriginalMember(owner = "client!aaa", name = "d", descriptor = "(III)V")
 	public static void method62(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(9) Class2_Sub2_Sub2 local9 = Static440.method5970(6, arg1);
+		@Pc(9) SecondaryNode_Sub2 local9 = Static440.method5970(6, arg1);
 		local9.method202();
 		local9.anInt197 = arg0;
 	}
 
 	@OriginalMember(owner = "client!aaa", name = "a", descriptor = "(IBIILclient!cv;)V")
-	public static void method63(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class2_Sub15 arg3) {
+	public static void method63(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Node_Sub15 arg3) {
 		@Pc(16) long local16 = arg1 << 14 | arg0 << 28 | arg2;
-		@Pc(22) Class2_Sub17 local22 = (Class2_Sub17) Static497.aClass28_35.method738(local16);
+		@Pc(22) Node_Sub17 local22 = (Node_Sub17) Static497.aClass28_35.get(local16);
 		if (local22 == null) {
-			local22 = new Class2_Sub17();
-			Static497.aClass28_35.method735(local16, local22);
-			local22.aClass341_12.method7718(arg3);
+			local22 = new Node_Sub17();
+			Static497.aClass28_35.put(local16, local22);
+			local22.aClass341_12.insertBefore(arg3);
 			return;
 		}
-		@Pc(45) Class384 local45 = Static419.aClass112_1.method2486(arg3.anInt1967);
+		@Pc(45) ObjType local45 = client.objTypeList.get(arg3.anInt1967);
 		@Pc(48) int local48 = local45.anInt10170;
 		if (local45.anInt10142 == 1) {
 			local48 *= arg3.anInt1968 + 1;
 		}
-		for (@Pc(65) Class2_Sub15 local65 = (Class2_Sub15) local22.aClass341_12.method7706(65280); local65 != null; local65 = (Class2_Sub15) local22.aClass341_12.method7713()) {
-			local45 = Static419.aClass112_1.method2486(local65.anInt1967);
+		for (@Pc(65) Node_Sub15 local65 = (Node_Sub15) local22.aClass341_12.head(); local65 != null; local65 = (Node_Sub15) local22.aClass341_12.next()) {
+			local45 = client.objTypeList.get(local65.anInt1967);
 			@Pc(78) int local78 = local45.anInt10170;
 			if (local45.anInt10142 == 1) {
 				local78 *= local65.anInt1968 + 1;
@@ -47,7 +47,7 @@ public final class Static2 {
 			}
 		}
 		if (-108 == -108) {
-			local22.aClass341_12.method7718(arg3);
+			local22.aClass341_12.insertBefore(arg3);
 		}
 	}
 

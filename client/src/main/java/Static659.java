@@ -35,12 +35,12 @@ public final class Static659 {
 		if (Static150.settings != null) {
 			local44 = "/p=" + Static150.settings;
 		}
-		return "http://" + local15 + "." + Static392.game.name + ".com/l=" + client.lang + "/a=" + Static323.affid + local44 + "/";
+		return "http://" + local15 + "." + client.game.name + ".com/l=" + client.lang + "/a=" + Static323.affid + local44 + "/";
 	}
 
 	@OriginalMember(owner = "client!ut", name = "d", descriptor = "(B)Lclient!ge;")
-	public static Packet method8615() {
-		@Pc(6) Packet local6 = Static570.method7559();
+	public static Buffer method8615() {
+		@Pc(6) Buffer local6 = Static570.method7559();
 		local6.p8(0L);
 		local6.pjstr(Static59.aString63);
 		local6.p8(Static430.aLong209);

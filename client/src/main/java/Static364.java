@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static364 {
 
 	@OriginalMember(owner = "client!lia", name = "r", descriptor = "Lclient!rt;")
-	public static Class329 aClass329_4;
+	public static WorldMapFont aClass329_4;
 
 	@OriginalMember(owner = "client!lia", name = "p", descriptor = "D")
 	public static double aDouble17;
@@ -17,12 +17,12 @@ public final class Static364 {
 	public static final boolean[] aBooleanArray18 = new boolean[100];
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(Z)Lclient!fu;")
-	public static Class2_Sub20 method5255() {
+	public static MapElement method5255() {
 		if (Static30.aClass341_31 == null || Static444.aClass193_1 == null) {
 			return null;
 		}
-		for (@Pc(17) Class2_Sub20 local17 = (Class2_Sub20) Static444.aClass193_1.method4349(); local17 != null; local17 = (Class2_Sub20) Static444.aClass193_1.method4349()) {
-			@Pc(30) Class105 local30 = Static30.aClass248_3.method5591(local17.anInt3140);
+		for (@Pc(17) MapElement local17 = (MapElement) Static444.aClass193_1.method4349(); local17 != null; local17 = (MapElement) Static444.aClass193_1.method4349()) {
+			@Pc(30) MelType local30 = Static30.aClass248_3.method5591(local17.anInt3140);
 			if (local30 != null && local30.aBoolean217 && local30.method2425(Static30.anInterface23_3)) {
 				return local17;
 			}
@@ -97,7 +97,7 @@ public final class Static364 {
 				}
 				Static135.anInt8246 = 2;
 			}
-			@Pc(186) Class2_Sub19 local186;
+			@Pc(186) Node_Sub19 local186;
 			@Pc(203) int local203;
 			@Pc(250) int local250;
 			if (Static135.anInt8246 == 2) {
@@ -119,7 +119,7 @@ public final class Static364 {
 					if (Static299.anInt4841 == 2) {
 						local186.aClass2_Sub21_Sub2_1.p1(Static283.anInt4588 == 14 ? 1 : 0);
 					}
-					@Pc(229) Packet local229 = Static570.method7559();
+					@Pc(229) Buffer local229 = Static570.method7559();
 					local229.p1(Static129.anInt2418);
 					local229.p2((int) (Math.random() * 9.9999999E7D));
 					local229.p1(client.lang);
@@ -128,7 +128,7 @@ public final class Static364 {
 						local229.p4((int) (Math.random() * 9.9999999E7D));
 					}
 					local229.p8(Static571.aLong269);
-					local229.p1(Static392.game.id);
+					local229.p1(client.game.id);
 					local229.p1((int) (Math.random() * 9.9999999E7D));
 					local229.rsaenc(Static374.aBigInteger2, Static262.aBigInteger1);
 					local186.aClass2_Sub21_Sub2_1.pdata(local229.pos, local229.data, 0);
@@ -205,14 +205,14 @@ public final class Static364 {
 				Static430.aLong209 = Static524.aClass153_3.aClass2_Sub21_Sub2_2.g8();
 				Static135.anInt8246 = 8;
 			}
-			@Pc(618) Class2_Sub21_Sub2 local618;
+			@Pc(618) Packet local618;
 			if (Static135.anInt8246 == 8) {
 				Static524.aClass153_3.aClass2_Sub21_Sub2_2.pos = 0;
 				Static524.aClass153_3.method3272();
 				local186 = Static273.method3962();
 				local618 = local186.aClass2_Sub21_Sub2_1;
 				@Pc(646) int local646;
-				@Pc(672) Packet local672;
+				@Pc(672) Buffer local672;
 				@Pc(627) LoginProt local627;
 				if (Static299.anInt4841 == 2) {
 					if (Static311.aBoolean384) {
@@ -241,11 +241,11 @@ public final class Static364 {
 					Static176.method6697(local618);
 					local618.pjstr(Static150.settings);
 					local618.p4(Static323.affid);
-					local672 = Static400.aClass2_Sub34_28.method5117();
+					local672 = Static400.aClass2_Sub34_28.encode();
 					local618.p1(local672.pos);
 					local618.pdata(local672.pos, local672.data, 0);
 					Static503.aBoolean578 = true;
-					@Pc(748) Packet local748 = new Packet(Static292.instance.method6752());
+					@Pc(748) Buffer local748 = new Buffer(Static292.instance.method6752());
 					Static292.instance.method6749(local748);
 					local618.pdata(local748.data.length, local748.data, 0);
 					local618.p4(Static334.anInt5475);
@@ -277,7 +277,7 @@ public final class Static364 {
 						local646 = local618.pos;
 						local618.pjstr(Static449.aString75);
 					}
-					local618.p1(Static392.game.id);
+					local618.p1(client.game.id);
 					local618.p1(client.lang);
 					Static176.method6697(local618);
 					local618.pjstr(Static150.settings);
@@ -392,7 +392,7 @@ public final class Static364 {
 				Static524.aClass153_3.aClass350_1 = null;
 				Static564.method7472();
 			} else if (Static135.anInt8246 != 13) {
-				@Pc(1435) Class2_Sub21_Sub2 local1435;
+				@Pc(1435) Packet local1435;
 				if (Static135.anInt8246 == 14) {
 					local1435 = Static524.aClass153_3.aClass2_Sub21_Sub2_2;
 					if (Static299.anInt4841 == 2) {
@@ -412,9 +412,9 @@ public final class Static364 {
 						Static106.anInt2162 = local1435.g3s();
 						Static174.aBoolean249 = local1435.g1() == 1;
 						Static416.aString71 = local1435.gstr();
-						Static354.aClass142_4.method3059(Static174.aBoolean249);
-						Static419.aClass112_1.method2485(Static174.aBoolean249);
-						Static690.aClass310_2.method7097(Static174.aBoolean249);
+						client.locTypeList.method3059(Static174.aBoolean249);
+						client.objTypeList.method2485(Static174.aBoolean249);
+						client.npcTypeList.method7097(Static174.aBoolean249);
 					} else if (Static524.aClass153_3.aClass350_1.method7939(Static94.anInt1970)) {
 						Static524.aClass153_3.aClass350_1.method7936(local1435.data, Static94.anInt1970, 0);
 						local1435.pos = 0;

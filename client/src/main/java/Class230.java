@@ -65,7 +65,7 @@ public final class Class230 {
 	}
 
 	@OriginalMember(owner = "client!lj", name = "a", descriptor = "(Lclient!ge;Lclient!kl;)V")
-	public void method5264(@OriginalArg(0) Packet arg0, @OriginalArg(1) Class213 arg1) {
+	public void method5264(@OriginalArg(0) Buffer arg0, @OriginalArg(1) Class213 arg1) {
 		@Pc(3) int local3 = arg0.g1();
 		this.anIntArray452[0] = local3 >> 4;
 		this.anIntArray452[1] = local3 & 0xF;

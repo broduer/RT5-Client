@@ -72,7 +72,7 @@ public final class Static734 {
 	}
 
 	@OriginalMember(owner = "client!si", name = "a", descriptor = "([IIII)V")
-	public static void method7697(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
+	public static void fill(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(5) int local5 = arg1 + arg2 - 7;
 		while (arg1 < local5) {
 			arg0[arg1++] = arg3;

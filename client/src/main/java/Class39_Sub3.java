@@ -9,7 +9,7 @@ public final class Class39_Sub3 extends Class39 {
 	private final int anInt2356;
 
 	@OriginalMember(owner = "client!ds", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub3(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub3(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.anInt2356 = arg0.g2();
 	}

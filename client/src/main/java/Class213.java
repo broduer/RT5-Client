@@ -48,7 +48,7 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!kl", name = "a", descriptor = "(Lclient!ge;)V")
-	public void method4956(@OriginalArg(0) Packet arg0) {
+	public void method4956(@OriginalArg(0) Buffer arg0) {
 		this.anInt5493 = arg0.g1();
 		this.anIntArray407 = new int[this.anInt5493];
 		this.anIntArray408 = new int[this.anInt5493];
@@ -85,7 +85,7 @@ public final class Class213 {
 	}
 
 	@OriginalMember(owner = "client!kl", name = "b", descriptor = "(Lclient!ge;)V")
-	public void method4959(@OriginalArg(0) Packet arg0) {
+	public void method4959(@OriginalArg(0) Buffer arg0) {
 		this.anInt5496 = arg0.g1();
 		this.anInt5494 = arg0.g4();
 		this.anInt5495 = arg0.g4();

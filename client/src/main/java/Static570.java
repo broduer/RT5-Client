@@ -39,8 +39,8 @@ public final class Static570 {
 	}
 
 	@OriginalMember(owner = "client!rv", name = "b", descriptor = "(I)Lclient!ge;")
-	public static Packet method7559() {
-		@Pc(8) Packet local8 = new Packet(518);
+	public static Buffer method7559() {
+		@Pc(8) Buffer local8 = new Buffer(518);
 		Static219.anIntArray287 = new int[4];
 		Static219.anIntArray287[2] = (int) (Math.random() * 9.9999999E7D);
 		Static219.anIntArray287[0] = (int) (Math.random() * 9.9999999E7D);

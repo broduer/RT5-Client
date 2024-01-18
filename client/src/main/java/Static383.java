@@ -8,7 +8,7 @@ public final class Static383 {
 	public static int anInt6021 = -1;
 
 	@OriginalMember(owner = "client!ma", name = "a", descriptor = "(ILclient!rka;I)Z")
-	public static boolean method5386(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21_Sub2 arg1) {
+	public static boolean method5386(@OriginalArg(0) int arg0, @OriginalArg(1) Packet arg1) {
 		@Pc(18) int local18 = arg1.method7419(2);
 		@Pc(45) int local45;
 		@Pc(50) int local50;

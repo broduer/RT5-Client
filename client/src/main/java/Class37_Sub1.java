@@ -10,7 +10,7 @@ public final class Class37_Sub1 extends Class37 {
 	private int anInt950 = 0;
 
 	@OriginalMember(owner = "client!bf", name = "<init>", descriptor = "(Lclient!sb;Lclient!hea;)V")
-	public Class37_Sub1(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class160_Sub1 arg1) {
+	public Class37_Sub1(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Class160_Sub1 arg1) {
 		super(arg0, arg1);
 	}
 

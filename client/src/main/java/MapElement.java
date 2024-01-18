@@ -1,0 +1,33 @@
+import org.openrs2.deob.annotation.OriginalArg;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+@OriginalClass("client!fu")
+public final class MapElement extends Node {
+
+	@OriginalMember(owner = "client!fu", name = "u", descriptor = "I")
+	public int anInt3131;
+
+	@OriginalMember(owner = "client!fu", name = "v", descriptor = "I")
+	public int anInt3133;
+
+	@OriginalMember(owner = "client!fu", name = "l", descriptor = "I")
+	public int anInt3134;
+
+	@OriginalMember(owner = "client!fu", name = "o", descriptor = "I")
+	public int anInt3138;
+
+	@OriginalMember(owner = "client!fu", name = "t", descriptor = "I")
+	public int anInt3139;
+
+	@OriginalMember(owner = "client!fu", name = "n", descriptor = "Z")
+	public boolean aBoolean256 = false;
+
+	@OriginalMember(owner = "client!fu", name = "m", descriptor = "I")
+	public int anInt3140 = -1;
+
+	@OriginalMember(owner = "client!fu", name = "<init>", descriptor = "(I)V")
+	public MapElement(@OriginalArg(0) int arg0) {
+		this.anInt3140 = arg0;
+	}
+}

@@ -8,10 +8,10 @@ public final class Static59 {
 	public static Class73 aClass73_5;
 
 	@OriginalMember(owner = "client!bv", name = "k", descriptor = "Lclient!jga;")
-	public static final Class194 aClass194_9 = new Class194();
+	public static final SecondaryLinkedList aClass194_9 = new SecondaryLinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "o", descriptor = "Lclient!sia;")
-	public static final Class341 aClass341_33 = new Class341();
+	public static final LinkedList aClass341_33 = new LinkedList();
 
 	@OriginalMember(owner = "client!bv", name = "n", descriptor = "I")
 	public static int anInt5956 = 999999;
@@ -23,7 +23,7 @@ public final class Static59 {
 	public static final Class155 aClass155_25 = new Class155(43);
 
 	@OriginalMember(owner = "client!bv", name = "a", descriptor = "(Lclient!rka;I)I")
-	public static int method5336(@OriginalArg(0) Class2_Sub21_Sub2 arg0) {
+	public static int method5336(@OriginalArg(0) Packet arg0) {
 		@Pc(10) int local10 = arg0.method7419(2);
 		@Pc(22) int local22;
 		if (local10 == 0) {

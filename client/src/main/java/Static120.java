@@ -5,9 +5,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static120 {
 
-	@OriginalMember(owner = "client!dn", name = "G", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_19;
-
 	@OriginalMember(owner = "client!dn", name = "a", descriptor = "(IIILjava/lang/String;I)V")
 	public static void method2193(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
 		@Pc(8) Class158 local8 = Static15.method186(arg1, arg0);
@@ -15,17 +12,17 @@ public final class Static120 {
 			return;
 		}
 		if (local8.anObjectArray15 != null) {
-			@Pc(19) Class2_Sub42 local19 = new Class2_Sub42();
+			@Pc(19) Node_Sub42 local19 = new Node_Sub42();
 			local19.anObjectArray36 = local8.anObjectArray15;
 			local19.anInt7240 = arg3;
 			local19.aString84 = arg2;
 			local19.aClass158_14 = local8;
 			Static472.method6427(local19);
 		}
-		if (Static283.anInt4588 != 11 || !Static84.method1661(local8).method6228(arg3 - 1)) {
+		if (Static283.anInt4588 != 11 || !Static84.method1661(local8).isButtonEnabled(arg3 - 1)) {
 			return;
 		}
-		@Pc(64) Class2_Sub19 local64;
+		@Pc(64) Node_Sub19 local64;
 		if (arg3 == 1) {
 			local64 = Static293.method4342(Static546.aClass347_98, Static405.aClass153_2.aClass186_1);
 			Static277.method4040(arg0, local8.anInt3770, local64, arg1);
@@ -41,7 +38,7 @@ public final class Static120 {
 			Static277.method4040(arg0, local8.anInt3770, local64, arg1);
 			Static405.aClass153_2.method3275(local64);
 		}
-		@Pc(148) Class2_Sub19 local148;
+		@Pc(148) Node_Sub19 local148;
 		if (arg3 == 4) {
 			local148 = Static293.method4342(Static710.aClass347_93, Static405.aClass153_2.aClass186_1);
 			Static277.method4040(arg0, local8.anInt3770, local148, arg1);

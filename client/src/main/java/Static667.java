@@ -15,7 +15,7 @@ public final class Static667 {
 		Static158.method2569();
 		Static570.method7556(Static163.aClass19_17);
 		Static469.method6365(Static163.aClass19_17);
-		Static239.method3472(Static721.aClass332_128, Static163.aClass19_17);
+		Static239.method3472(client.js5Archive8, Static163.aClass19_17);
 		Static329.method1649();
 		Static331.method4932(Static679.aClass23Array14);
 		Static469.method6369();

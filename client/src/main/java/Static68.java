@@ -3,17 +3,11 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static68 {
 
-	@OriginalMember(owner = "client!cd", name = "c", descriptor = "Lclient!gt;")
-	public static Class151 aClass151_3;
-
-	@OriginalMember(owner = "client!cd", name = "r", descriptor = "Lclient!kr;")
-	public static Class217 aClass217_3;
-
 	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
 	public static int[] underwaterMapGroupIds;
 
 	@OriginalMember(owner = "client!cd", name = "g", descriptor = "I")
-	public static final int anInt4107 = 16777215;
+	public static final int anInt4107 = 0xFFFFFF;
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(JZ)I")
 	public static int method3585(@OriginalArg(0) long arg0) {

@@ -11,7 +11,7 @@ public final class Static331 {
 	public static int anInt5459;
 
 	@OriginalMember(owner = "client!ki", name = "h", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_65;
+	public static Js5 aClass332_65;
 
 	@OriginalMember(owner = "client!ki", name = "i", descriptor = "I")
 	public static int anInt5458 = -1;

@@ -8,13 +8,13 @@ public final class Static658 {
 	public static int anInt9826;
 
 	@OriginalMember(owner = "client!us", name = "k", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_43 = new Class28(16);
+	public static final HashTable aClass28_43 = new HashTable(16);
 
 	@OriginalMember(owner = "client!us", name = "m", descriptor = "I")
 	public static int anInt9827 = 0;
 
 	@OriginalMember(owner = "client!us", name = "a", descriptor = "(Lclient!eo;[Lclient!lca;)V")
-	public static void method8598(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public static void method8598(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) Node_Sub7[] arg1) {
 		@Pc(6) int local6;
 		if (Static442.aBoolean500) {
 			local6 = arg0.method9295(arg1);

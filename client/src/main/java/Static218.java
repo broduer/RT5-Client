@@ -40,7 +40,7 @@ public final class Static218 {
 						throw new IOException("EOF");
 					}
 				}
-				Static618.method8324(new Packet(local41));
+				Static618.method8324(new Buffer(local41));
 			}
 		} catch (@Pc(88) Exception local88) {
 		}

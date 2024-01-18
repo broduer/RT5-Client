@@ -34,10 +34,4 @@ public final class Static624 {
 		}
 	}
 
-	@OriginalMember(owner = "client!tn", name = "a", descriptor = "(ZIII)V")
-	public static void method8338(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		@Pc(37) String local37 = "tele " + arg0 + "," + (arg2 >> 6) + "," + (arg1 >> 6) + "," + (arg2 & 0x3F) + "," + (arg1 & 0x3F);
-		System.out.println(local37);
-		Static231.method3381(true, false, local37);
-	}
 }

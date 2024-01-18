@@ -8,8 +8,8 @@ public final class Static664 {
 	public static final ClientProt aClass347_115 = new ClientProt(40, 11);
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(ILclient!fk;)[I")
-	public static int[] method8659(@OriginalArg(1) Class2_Sub19 arg0) {
-		@Pc(8) Packet local8 = new Packet(518);
+	public static int[] method8659(@OriginalArg(1) Node_Sub19 arg0) {
+		@Pc(8) Buffer local8 = new Buffer(518);
 		@Pc(11) int[] local11 = new int[4];
 		for (@Pc(13) int local13 = 0; local13 < 4; local13++) {
 			local11[local13] = (int) (Math.random() * 9.9999999E7D);
@@ -84,29 +84,29 @@ public final class Static664 {
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(I)V")
 	public static void method8666() {
-		Static467.aClass96_3.method2351();
-		Static540.aClass79_6.method2072();
-		Static68.aClass217_3.method5048();
-		Static354.aClass142_4.method3058();
-		Static690.aClass310_2.method7096();
-		Static419.aClass112_1.method2480();
-		Static25.aClass50_1.method1164();
-		Static23.aClass128_1.method2697();
-		Static529.aClass161_1.method3423();
-		Static36.aClass262_1.method5788();
-		Static628.aClass344_5.method7794();
-		Static648.aClass17_1.method266();
-		Static574.aClass312_2.method7124();
-		Static720.aClass365_4.method8367();
-		Static577.aClass248_4.method5592();
-		Static272.aClass45_1.method1093();
-		Static386.aClass49_2.method1156();
-		Static324.aClass309_1.method7076();
-		Static99.aClass78_1.method2053();
-		Static48.aClass386_1.method8822();
-		Static354.aClass269_1.method5979();
-		Static652.aClass216_1.method5047();
-		Static561.aClass222_2.method5190();
+		client.floTypeList.method2351();
+		client.fluTypeList.method2072();
+		client.idkTypeList.method5048();
+		client.locTypeList.method3058();
+		client.npcTypeList.method7096();
+		client.objTypeList.method2480();
+		client.seqTypeList.method1164();
+		client.spotanimTypeList.method2697();
+		client.varbitTypeList.method3423();
+		client.varpTypeList.method5788();
+		client.varclanTypeList.method7794();
+		client.varclansettingTypeList.method266();
+		client.basTypeList.method7124();
+		client.msiTypeList.method8367();
+		client.melTypeList.method5592();
+		client.questTypeList.method1093();
+		client.paramTypeList.method1156();
+		client.skyboxTypeList.method7076();
+		client.skyboxsphereTypeList.method2053();
+		client.lightTypeList.method8822();
+		client.cursorTypeList.method5979();
+		client.structTypeList.method5047();
+		client.hitmarkTypeList.method5190();
 		Static424.method5786();
 		Static570.method7560();
 		Static553.method7297();

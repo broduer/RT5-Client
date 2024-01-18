@@ -22,9 +22,9 @@ public final class Class390 {
 	public int anInt10329 = -1;
 
 	@OriginalMember(owner = "client!vl", name = "<init>", descriptor = "(Lclient!sb;)V")
-	public Class390(@OriginalArg(0) Class332 arg0) {
+	public Class390(@OriginalArg(0) Js5 arg0) {
 		@Pc(12) byte[] local12 = arg0.method7596(6);
-		this.method8936(new Packet(local12));
+		this.method8936(new Buffer(local12));
 		if (this.anIntArray821 == null) {
 			throw new RuntimeException("");
 		}
@@ -36,7 +36,7 @@ public final class Class390 {
 	}
 
 	@OriginalMember(owner = "client!vl", name = "a", descriptor = "(ILclient!ge;)V")
-	private void method8936(@OriginalArg(1) Packet arg0) {
+	private void method8936(@OriginalArg(1) Buffer arg0) {
 		while (true) {
 			@Pc(12) int local12 = arg0.g1();
 			if (local12 == 0) {

@@ -7,9 +7,6 @@ public final class Static344 {
 	@OriginalMember(owner = "client!kr", name = "f", descriptor = "Lclient!lja;")
 	public static Class231 aClass231_1;
 
-	@OriginalMember(owner = "client!kr", name = "g", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_73;
-
 	@OriginalMember(owner = "client!kr", name = "i", descriptor = "I")
 	public static int anInt5637 = -50;
 
@@ -45,10 +42,10 @@ public final class Static344 {
 	@OriginalMember(owner = "client!kr", name = "a", descriptor = "(ZIIII)Lclient!gm;")
 	public static Class148 method5054(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		@Pc(31) long local31 = (long) arg1 & 0xFFFFL | ((long) arg3 & 0xFFFFL) << 16 | (long) arg2 << 48 & 0xFFFFL << 48 | ((long) arg0 & 0xFFFFL) << 32;
-		@Pc(43) Class148 local43 = (Class148) Static123.aClass82_53.method2156(local31);
+		@Pc(43) Class148 local43 = (Class148) Static123.aClass82_53.get(local31);
 		if (local43 == null) {
-			local43 = Static324.aClass309_1.method7079(Static99.aClass78_1, arg3, arg1, arg0, arg2);
-			Static123.aClass82_53.method2150(local43, local31);
+			local43 = client.skyboxTypeList.method7079(client.skyboxsphereTypeList, arg3, arg1, arg0, arg2);
+			Static123.aClass82_53.put(local43, local31);
 		}
 		return local43;
 	}

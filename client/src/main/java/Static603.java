@@ -43,7 +43,7 @@ public final class Static603 {
 			}
 			@Pc(119) int local119 = Static354.aClass158_8.anInt3820 + local46 - Static123.anInt2350;
 			@Pc(127) int local127 = Static354.aClass158_8.anInt3778 + local52 - Static169.anInt2862;
-			@Pc(197) Class2_Sub42 local197;
+			@Pc(197) Node_Sub42 local197;
 			if (Static189.aClass120_1.method8851()) {
 				if (Static109.aClass158_3.anInt3808 < Static181.anInt3012) {
 					@Pc(141) int local141 = local46 - Static655.anInt9789;
@@ -53,7 +53,7 @@ public final class Static603 {
 					}
 				}
 				if (Static109.aClass158_3.anObjectArray30 != null && Static172.aBoolean246) {
-					local197 = new Class2_Sub42();
+					local197 = new Node_Sub42();
 					local197.aClass158_14 = Static109.aClass158_3;
 					local197.anInt7239 = local119;
 					local197.anInt7235 = local127;
@@ -65,7 +65,7 @@ public final class Static603 {
 				if (Static172.aBoolean246) {
 					Static470.method6391();
 					if (Static109.aClass158_3.anObjectArray5 != null) {
-						local197 = new Class2_Sub42();
+						local197 = new Node_Sub42();
 						local197.aClass158_13 = Static327.aClass158_7;
 						local197.anInt7239 = local119;
 						local197.aClass158_14 = Static109.aClass158_3;
@@ -89,7 +89,7 @@ public final class Static603 {
 	}
 
 	@OriginalMember(owner = "client!taa", name = "a", descriptor = "(BLclient!fu;Lclient!ha;Lclient!el;)V")
-	public static void method7909(@OriginalArg(1) Class2_Sub20 arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) Class105 arg2) {
+	public static void method7909(@OriginalArg(1) MapElement arg0, @OriginalArg(2) Class19 arg1, @OriginalArg(3) MelType arg2) {
 		@Pc(8) Class23 local8 = arg2.method2428(arg1);
 		if (local8 == null) {
 			return;
@@ -165,7 +165,7 @@ public final class Static603 {
 			return;
 		}
 		local15 >>= 0x1;
-		@Pc(393) Class2_Sub37 local393 = new Class2_Sub37(arg0);
+		@Pc(393) MapElementBounds local393 = new MapElementBounds(arg0);
 		local393.anInt6210 = local15 + local31;
 		local393.anInt6207 = local259;
 		local393.anInt6212 = local246;
@@ -174,6 +174,6 @@ public final class Static603 {
 		local393.anInt6206 = local34 - local15;
 		local393.anInt6204 = local248;
 		local393.anInt6205 = local257;
-		Static551.aClass341_54.method7718(local393);
+		Static551.aClass341_54.insertBefore(local393);
 	}
 }

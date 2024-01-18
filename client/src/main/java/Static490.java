@@ -5,12 +5,12 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static490 {
 
 	@OriginalMember(owner = "client!pha", name = "m", descriptor = "Lclient!av;")
-	public static final Class28 aClass28_34 = new Class28(16);
+	public static final HashTable aClass28_34 = new HashTable(16);
 
 	@OriginalMember(owner = "client!pha", name = "a", descriptor = "(ZIIIIIIIF)[[I")
 	public static int[][] method6558(@OriginalArg(8) float arg0) {
 		@Pc(7) int[][] local7 = new int[256][64];
-		@Pc(11) Class2_Sub1_Sub27 local11 = new Class2_Sub1_Sub27();
+		@Pc(11) TextureOpPerlinNoise local11 = new TextureOpPerlinNoise();
 		local11.anInt8823 = (int) (arg0 * 4096.0F);
 		local11.aBoolean668 = false;
 		local11.anInt8829 = 4;

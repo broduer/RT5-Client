@@ -25,7 +25,7 @@ public final class Class39_Sub10 extends Class39 {
 	private final int anInt4133;
 
 	@OriginalMember(owner = "client!hs", name = "<init>", descriptor = "(Lclient!ge;)V")
-	public Class39_Sub10(@OriginalArg(0) Packet arg0) {
+	public Class39_Sub10(@OriginalArg(0) Buffer arg0) {
 		super(arg0);
 		this.anInt4131 = arg0.g2();
 		@Pc(13) int local13 = arg0.g1();

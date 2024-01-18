@@ -457,13 +457,13 @@ public final class Class88 {
 
 	@OriginalMember(owner = "client!dv", name = "a", descriptor = "([BZ)V")
 	private void method2235(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Packet local8 = new Packet(arg0);
-		@Pc(13) Packet local13 = new Packet(arg0);
-		@Pc(18) Packet local18 = new Packet(arg0);
-		@Pc(23) Packet local23 = new Packet(arg0);
-		@Pc(28) Packet local28 = new Packet(arg0);
-		@Pc(33) Packet local33 = new Packet(arg0);
-		@Pc(38) Packet local38 = new Packet(arg0);
+		@Pc(8) Buffer local8 = new Buffer(arg0);
+		@Pc(13) Buffer local13 = new Buffer(arg0);
+		@Pc(18) Buffer local18 = new Buffer(arg0);
+		@Pc(23) Buffer local23 = new Buffer(arg0);
+		@Pc(28) Buffer local28 = new Buffer(arg0);
+		@Pc(33) Buffer local33 = new Buffer(arg0);
+		@Pc(38) Buffer local38 = new Buffer(arg0);
 		local8.pos = arg0.length - 23;
 		this.anInt2381 = local8.g2();
 		this.anInt2371 = local8.g2();
@@ -767,13 +767,13 @@ public final class Class88 {
 					if (this.anInt2388 < 14) {
 						this.anIntArray207[local882] = local18.g2();
 					} else {
-						this.anIntArray207[local882] = local18.method7390();
+						this.anIntArray207[local882] = local18.g3();
 					}
 					this.anIntArray208[local882] = local18.g2();
 				} else {
-					this.anIntArray211[local882] = local18.method7390();
-					this.anIntArray207[local882] = local18.method7390();
-					this.anIntArray208[local882] = local18.method7390();
+					this.anIntArray211[local882] = local18.g3();
+					this.anIntArray207[local882] = local18.g3();
+					this.anIntArray208[local882] = local18.g3();
 				}
 				this.aByteArray27[local882] = local23.g1b();
 				this.aByteArray23[local882] = local28.g1b();
@@ -786,15 +786,15 @@ public final class Class88 {
 				if (this.anInt2388 < 15) {
 					this.anIntArray211[local882] = local18.g2();
 					if (this.anInt2388 >= 14) {
-						this.anIntArray207[local882] = local18.method7390();
+						this.anIntArray207[local882] = local18.g3();
 					} else {
 						this.anIntArray207[local882] = local18.g2();
 					}
 					this.anIntArray208[local882] = local18.g2();
 				} else {
-					this.anIntArray211[local882] = local18.method7390();
-					this.anIntArray207[local882] = local18.method7390();
-					this.anIntArray208[local882] = local18.method7390();
+					this.anIntArray211[local882] = local18.g3();
+					this.anIntArray207[local882] = local18.g3();
+					this.anIntArray208[local882] = local18.g3();
 				}
 				this.aByteArray27[local882] = local23.g1b();
 				this.aByteArray23[local882] = local28.g1b();
@@ -811,13 +811,13 @@ public final class Class88 {
 					if (this.anInt2388 < 14) {
 						this.anIntArray207[local882] = local18.g2();
 					} else {
-						this.anIntArray207[local882] = local18.method7390();
+						this.anIntArray207[local882] = local18.g3();
 					}
 					this.anIntArray208[local882] = local18.g2();
 				} else {
-					this.anIntArray211[local882] = local18.method7390();
-					this.anIntArray207[local882] = local18.method7390();
-					this.anIntArray208[local882] = local18.method7390();
+					this.anIntArray211[local882] = local18.g3();
+					this.anIntArray207[local882] = local18.g3();
+					this.anIntArray208[local882] = local18.g3();
 				}
 				this.aByteArray27[local882] = local23.g1b();
 				this.aByteArray23[local882] = local28.g1b();
@@ -880,8 +880,8 @@ public final class Class88 {
 		@Pc(11) int local11;
 		@Pc(28) int local28;
 		if (arg0 != 0) {
-			local5 = Class363.anIntArray741[arg0];
-			local9 = Class363.anIntArray740[arg0];
+			local5 = Class114_Sub1.anIntArray741[arg0];
+			local9 = Class114_Sub1.anIntArray740[arg0];
 			for (local11 = 0; local11 < this.anInt2381; local11++) {
 				local28 = local9 * this.anIntArray213[local11] + local5 * this.anIntArray205[local11] >> 14;
 				this.anIntArray205[local11] = local9 * this.anIntArray205[local11] - this.anIntArray213[local11] * local5 >> 14;
@@ -889,8 +889,8 @@ public final class Class88 {
 			}
 		}
 		if (arg1 != 0) {
-			local5 = Class363.anIntArray741[arg1];
-			local9 = Class363.anIntArray740[arg1];
+			local5 = Class114_Sub1.anIntArray741[arg1];
+			local9 = Class114_Sub1.anIntArray740[arg1];
 			for (local11 = 0; local11 < this.anInt2381; local11++) {
 				local28 = local9 * this.anIntArray205[local11] - local5 * this.anIntArray204[local11] >> 14;
 				this.anIntArray204[local11] = local5 * this.anIntArray205[local11] + this.anIntArray204[local11] * local9 >> 14;
@@ -900,8 +900,8 @@ public final class Class88 {
 		if (arg2 == 0) {
 			return;
 		}
-		local5 = Class363.anIntArray741[arg2];
-		local9 = Class363.anIntArray740[arg2];
+		local5 = Class114_Sub1.anIntArray741[arg2];
+		local9 = Class114_Sub1.anIntArray740[arg2];
 		for (local11 = 0; local11 < this.anInt2381; local11++) {
 			local28 = local5 * this.anIntArray204[local11] + local9 * this.anIntArray213[local11] >> 14;
 			this.anIntArray204[local11] = this.anIntArray204[local11] * local9 - local5 * this.anIntArray213[local11] >> 14;
@@ -1009,11 +1009,11 @@ public final class Class88 {
 	private void method2242(@OriginalArg(1) byte[] arg0) {
 		@Pc(5) boolean local5 = false;
 		@Pc(7) boolean local7 = false;
-		@Pc(12) Packet local12 = new Packet(arg0);
-		@Pc(17) Packet local17 = new Packet(arg0);
-		@Pc(22) Packet local22 = new Packet(arg0);
-		@Pc(27) Packet local27 = new Packet(arg0);
-		@Pc(32) Packet local32 = new Packet(arg0);
+		@Pc(12) Buffer local12 = new Buffer(arg0);
+		@Pc(17) Buffer local17 = new Buffer(arg0);
+		@Pc(22) Buffer local22 = new Buffer(arg0);
+		@Pc(27) Buffer local27 = new Buffer(arg0);
+		@Pc(32) Buffer local32 = new Buffer(arg0);
 		local12.pos = arg0.length - 18;
 		this.anInt2381 = local12.g2();
 		this.anInt2371 = local12.g2();

@@ -260,7 +260,7 @@ public final class Class19_Sub3 extends Class19 {
 	public int anInt8012 = 3;
 
 	@OriginalMember(owner = "client!qha", name = "sf", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_46 = new Class341();
+	private final LinkedList aClass341_46 = new LinkedList();
 
 	@OriginalMember(owner = "client!qha", name = "Yc", descriptor = "[Lclient!jf;")
 	private final Interface14[] anInterface14Array1 = new Interface14[4];
@@ -281,25 +281,25 @@ public final class Class19_Sub3 extends Class19 {
 	private final Interface14[] anInterface14Array3 = new Interface14[4];
 
 	@OriginalMember(owner = "client!qha", name = "rh", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_47;
+	private final LinkedList aClass341_47;
 
 	@OriginalMember(owner = "client!qha", name = "Zf", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_48;
+	private final LinkedList aClass341_48;
 
 	@OriginalMember(owner = "client!qha", name = "gf", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_49;
+	private final LinkedList aClass341_49;
 
 	@OriginalMember(owner = "client!qha", name = "Pg", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_50;
+	private final LinkedList aClass341_50;
 
 	@OriginalMember(owner = "client!qha", name = "ed", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_51;
+	private final LinkedList aClass341_51;
 
 	@OriginalMember(owner = "client!qha", name = "Zb", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_52;
+	private final LinkedList aClass341_52;
 
 	@OriginalMember(owner = "client!qha", name = "Hg", descriptor = "Lclient!sia;")
-	private final Class341 aClass341_53;
+	private final LinkedList aClass341_53;
 
 	@OriginalMember(owner = "client!qha", name = "hh", descriptor = "Lclient!qr;")
 	public final Class73_Sub3 aClass73_Sub3_3;
@@ -311,7 +311,7 @@ public final class Class19_Sub3 extends Class19 {
 	public final Class73_Sub3 aClass73_Sub3_5;
 
 	@OriginalMember(owner = "client!qha", name = "Mc", descriptor = "[Lclient!lca;")
-	private final Class2_Sub7[] aClass2_Sub7Array5;
+	private final Node_Sub7[] aClass2_Sub7Array5;
 
 	@OriginalMember(owner = "client!qha", name = "E", descriptor = "F")
 	public float aFloat129;
@@ -440,7 +440,7 @@ public final class Class19_Sub3 extends Class19 {
 	private final float[] aFloatArray55;
 
 	@OriginalMember(owner = "client!qha", name = "qb", descriptor = "Lclient!jfa;")
-	public Class2_Sub21_Sub1 aClass2_Sub21_Sub1_3;
+	public GlBuffer aClass2_Sub21_Sub1_3;
 
 	@OriginalMember(owner = "client!qha", name = "W", descriptor = "[B")
 	public final byte[] aByteArray90;
@@ -509,27 +509,27 @@ public final class Class19_Sub3 extends Class19 {
 	private final Class278 aClass278_1;
 
 	@OriginalMember(owner = "client!qha", name = "ub", descriptor = "Lclient!kca;")
-	private Class2_Sub31_Sub1 aClass2_Sub31_Sub1_1;
+	private BloomPostProcessor aClass2_Sub31_Sub1_1;
 
 	@OriginalMember(owner = "client!qha", name = "vf", descriptor = "Lclient!eg;")
 	private final Class98 aClass98_1;
 
 	@OriginalMember(owner = "client!qha", name = "<init>", descriptor = "(Ljava/awt/Canvas;Lclient!d;I)V")
-	public Class19_Sub3(@OriginalArg(0) Canvas arg0, @OriginalArg(1) Interface4 arg1, @OriginalArg(2) int arg2) {
+	public Class19_Sub3(@OriginalArg(0) Canvas arg0, @OriginalArg(1) TextureProvider arg1, @OriginalArg(2) int arg2) {
 		super(arg1);
-		new Class194();
-		new Class28(16);
-		this.aClass341_47 = new Class341();
-		this.aClass341_48 = new Class341();
-		this.aClass341_49 = new Class341();
-		this.aClass341_50 = new Class341();
-		this.aClass341_51 = new Class341();
-		this.aClass341_52 = new Class341();
-		this.aClass341_53 = new Class341();
+		new SecondaryLinkedList();
+		new HashTable(16);
+		this.aClass341_47 = new LinkedList();
+		this.aClass341_48 = new LinkedList();
+		this.aClass341_49 = new LinkedList();
+		this.aClass341_50 = new LinkedList();
+		this.aClass341_51 = new LinkedList();
+		this.aClass341_52 = new LinkedList();
+		this.aClass341_53 = new LinkedList();
 		this.aClass73_Sub3_3 = new Class73_Sub3();
 		this.aClass73_Sub3_4 = new Class73_Sub3();
 		this.aClass73_Sub3_5 = new Class73_Sub3();
-		this.aClass2_Sub7Array5 = new Class2_Sub7[Static509.anInt7657];
+		this.aClass2_Sub7Array5 = new Node_Sub7[Static509.anInt7657];
 		this.aFloat129 = -1.0F;
 		this.aFloatArray53 = new float[4];
 		this.anInt8025 = -1;
@@ -572,7 +572,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.anInt8055 = 0;
 		this.anInt8039 = 0;
 		this.aFloatArray55 = new float[4];
-		this.aClass2_Sub21_Sub1_3 = new Class2_Sub21_Sub1(8192);
+		this.aClass2_Sub21_Sub1_3 = new GlBuffer(8192);
 		this.aByteArray90 = new byte[16384];
 		this.anIntArray624 = new int[1];
 		this.anIntArray625 = new int[1];
@@ -657,7 +657,7 @@ public final class Class19_Sub3 extends Class19 {
 				this.aClass204_1 = new Class204(this);
 				this.aClass278_1 = new Class278(this);
 				if (this.aClass278_1.method6255()) {
-					this.aClass2_Sub31_Sub1_1 = new Class2_Sub31_Sub1(this);
+					this.aClass2_Sub31_Sub1_1 = new BloomPostProcessor(this);
 					if (!this.aClass2_Sub31_Sub1_1.method4630()) {
 						this.aClass2_Sub31_Sub1_1.method4615();
 						this.aClass2_Sub31_Sub1_1 = null;
@@ -750,8 +750,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "i", descriptor = "(II)V")
 	public synchronized void method6975(@OriginalArg(0) int arg0) {
-		@Pc(19) Class2_Sub38 local19 = new Class2_Sub38(arg0);
-		this.aClass341_50.method7718(local19);
+		@Pc(19) Node_Sub38 local19 = new Node_Sub38(arg0);
+		this.aClass341_50.insertBefore(local19);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "v", descriptor = "(I)V")
@@ -782,9 +782,9 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "(III)V")
 	public synchronized void method6978(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg0);
+		@Pc(8) Node_Sub38 local8 = new Node_Sub38(arg0);
 		local8.key = arg1;
-		this.aClass341_48.method7718(local8);
+		this.aClass341_48.insertBefore(local8);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "KA", descriptor = "(IIII)V")
@@ -1085,7 +1085,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "w", descriptor = "()Z")
 	@Override
 	public boolean method8021() {
-		return this.aClass2_Sub31_Sub1_1 != null && this.aClass2_Sub31_Sub1_1.method4623();
+		return this.aClass2_Sub31_Sub1_1 != null && this.aClass2_Sub31_Sub1_1.isEnabled();
 	}
 
 	@OriginalMember(owner = "client!qha", name = "A", descriptor = "(ILclient!aa;II)V")
@@ -1117,8 +1117,8 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "u", descriptor = "()V")
 	@Override
 	protected void method7994() {
-		for (@Pc(8) Node local8 = this.aClass341_46.method7706(65280); local8 != null; local8 = this.aClass341_46.method7713()) {
-			((Class2_Sub13_Sub1) local8).method1609();
+		for (@Pc(8) Node local8 = this.aClass341_46.head(); local8 != null; local8 = this.aClass341_46.next()) {
+			((Node_Sub13_Sub1) local8).method1609();
 		}
 		if (this.aClass278_1 != null) {
 			this.aClass278_1.method6256();
@@ -1188,7 +1188,7 @@ public final class Class19_Sub3 extends Class19 {
 	private void method6987() {
 		@Pc(7) int local7;
 		for (local7 = 0; local7 < this.anInt8054; local7++) {
-			@Pc(14) Class2_Sub7 local14 = this.aClass2_Sub7Array5[local7];
+			@Pc(14) Node_Sub7 local14 = this.aClass2_Sub7Array5[local7];
 			@Pc(18) int local18 = local7 + 16386;
 			Static376.aFloatArray43[0] = (float) local14.method8433();
 			Static376.aFloatArray43[1] = (float) local14.method8432();
@@ -1266,9 +1266,9 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IBI)V")
 	public synchronized void method6990(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(18) Class2_Sub38 local18 = new Class2_Sub38(arg1);
+		@Pc(18) Node_Sub38 local18 = new Node_Sub38(arg1);
 		local18.key = arg0;
-		this.aClass341_51.method7718(local18);
+		this.aClass341_51.insertBefore(local18);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(Lclient!dv;IIII)Lclient!ka;")
@@ -1396,7 +1396,7 @@ public final class Class19_Sub3 extends Class19 {
 		if (this.aClass2_Sub31_Sub1_1 == null) {
 			return false;
 		}
-		if (!this.aClass2_Sub31_Sub1_1.method4623()) {
+		if (!this.aClass2_Sub31_Sub1_1.isEnabled()) {
 			if (!this.aClass278_1.method6253(this.aClass2_Sub31_Sub1_1)) {
 				return false;
 			}
@@ -1407,12 +1407,12 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(Lclient!za;)V")
 	@Override
-	public void method7945(@OriginalArg(0) Class2_Sub13 arg0) {
-		this.aNativeHeap5 = ((Class2_Sub13_Sub1) arg0).aNativeHeap2;
+	public void method7945(@OriginalArg(0) Node_Sub13 arg0) {
+		this.aNativeHeap5 = ((Node_Sub13_Sub1) arg0).aNativeHeap2;
 		if (this.anInterface12_7 != null) {
 			return;
 		}
-		@Pc(16) Class2_Sub21_Sub1 local16 = new Class2_Sub21_Sub1(80);
+		@Pc(16) GlBuffer local16 = new GlBuffer(80);
 		if (this.aBoolean619) {
 			local16.method4343(-1.0F);
 			local16.method4343(-1.0F);
@@ -1758,9 +1758,9 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(I)Lclient!za;")
 	@Override
-	public Class2_Sub13 method7968(@OriginalArg(0) int arg0) {
-		@Pc(8) Class2_Sub13_Sub1 local8 = new Class2_Sub13_Sub1(arg0);
-		this.aClass341_46.method7718(local8);
+	public Node_Sub13 method7968(@OriginalArg(0) int arg0) {
+		@Pc(8) Node_Sub13_Sub1 local8 = new Node_Sub13_Sub1(arg0);
+		this.aClass341_46.insertBefore(local8);
 		return local8;
 	}
 
@@ -2000,7 +2000,7 @@ public final class Class19_Sub3 extends Class19 {
 	public synchronized void method7014(@OriginalArg(1) int arg0) {
 		@Pc(12) Node local12 = new Node();
 		local12.key = arg0;
-		this.aClass341_52.method7718(local12);
+		this.aClass341_52.insertBefore(local12);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(ZI)V")
@@ -2088,7 +2088,7 @@ public final class Class19_Sub3 extends Class19 {
 				this.method7006();
 			} else {
 				local33 = this.aClass169_1.method3529(arg0);
-				@Pc(69) Class118 local69 = super.anInterface4_10.method6824(arg0);
+				@Pc(69) Material local69 = super.anInterface4_10.method6824(arg0);
 				if (local69.aByte54 == 0 && local69.aByte52 == 0) {
 					this.method7006();
 				} else {
@@ -2520,7 +2520,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "f", descriptor = "()V")
 	@Override
 	public void method7987() {
-		if (this.aClass2_Sub31_Sub1_1 != null && this.aClass2_Sub31_Sub1_1.method4623()) {
+		if (this.aClass2_Sub31_Sub1_1 != null && this.aClass2_Sub31_Sub1_1.isEnabled()) {
 			this.aClass278_1.method6258(this.aClass2_Sub31_Sub1_1);
 			this.aClass169_1.method3527();
 		}
@@ -2549,8 +2549,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIIIIF)Lclient!lca;")
 	@Override
-	public Class2_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
-		return new Class2_Sub7_Sub1(arg0, arg1, arg2, arg3, arg4, arg5);
+	public Node_Sub7 method7948(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) float arg5) {
+		return new Node_Sub7_Sub1(arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "HA", descriptor = "(IIII[I)V")
@@ -2610,7 +2610,7 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(I[Lclient!lca;)V")
 	@Override
-	public void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub7[] arg1) {
+	public void method8016(@OriginalArg(0) int arg0, @OriginalArg(1) Node_Sub7[] arg1) {
 		for (@Pc(7) int local7 = 0; local7 < arg0; local7++) {
 			this.aClass2_Sub7Array5[local7] = arg1[local7];
 		}
@@ -2625,9 +2625,9 @@ public final class Class19_Sub3 extends Class19 {
 	public synchronized void method7984(@OriginalArg(0) int arg0) {
 		@Pc(9) int local9 = arg0 & Integer.MAX_VALUE;
 		@Pc(11) int local11 = 0;
-		@Pc(19) Class2_Sub38 local19;
-		while (!this.aClass341_48.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_48.method7712();
+		@Pc(19) Node_Sub38 local19;
+		while (!this.aClass341_48.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_48.removeHead();
 			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8016 -= local19.anInt6399;
 			if (local11 == 1000) {
@@ -2639,8 +2639,8 @@ public final class Class19_Sub3 extends Class19 {
 			OpenGL.glDeleteBuffersARB(local11, Static154.anIntArray236, 0);
 			local11 = 0;
 		}
-		while (!this.aClass341_49.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_49.method7712();
+		while (!this.aClass341_49.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_49.removeHead();
 			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8017 -= local19.anInt6399;
 			if (local11 == 1000) {
@@ -2652,8 +2652,8 @@ public final class Class19_Sub3 extends Class19 {
 			OpenGL.glDeleteTextures(local11, Static154.anIntArray236, 0);
 			local11 = 0;
 		}
-		while (!this.aClass341_50.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_50.method7712();
+		while (!this.aClass341_50.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_50.removeHead();
 			Static154.anIntArray236[local11++] = local19.anInt6399;
 			if (local11 == 1000) {
 				OpenGL.glDeleteFramebuffersEXT(local11, Static154.anIntArray236, 0);
@@ -2664,8 +2664,8 @@ public final class Class19_Sub3 extends Class19 {
 			OpenGL.glDeleteFramebuffersEXT(local11, Static154.anIntArray236, 0);
 			local11 = 0;
 		}
-		while (!this.aClass341_51.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_51.method7712();
+		while (!this.aClass341_51.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_51.removeHead();
 			Static154.anIntArray236[local11++] = (int) local19.key;
 			this.anInt8018 -= local19.anInt6399;
 			if (local11 == 1000) {
@@ -2676,21 +2676,21 @@ public final class Class19_Sub3 extends Class19 {
 		if (local11 > 0) {
 			OpenGL.glDeleteRenderbuffersEXT(local11, Static154.anIntArray236, 0);
 		}
-		while (!this.aClass341_47.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_47.method7712();
+		while (!this.aClass341_47.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_47.removeHead();
 			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		@Pc(227) Node local227;
-		while (!this.aClass341_52.method7709()) {
-			local227 = this.aClass341_52.method7712();
+		while (!this.aClass341_52.isEmpty()) {
+			local227 = this.aClass341_52.removeHead();
 			OpenGL.glDeleteProgramARB((int) local227.key);
 		}
-		while (!this.aClass341_53.method7709()) {
-			local227 = this.aClass341_53.method7712();
+		while (!this.aClass341_53.isEmpty()) {
+			local227 = this.aClass341_53.removeHead();
 			OpenGL.glDeleteObjectARB(local227.key);
 		}
-		while (!this.aClass341_47.method7709()) {
-			local19 = (Class2_Sub38) this.aClass341_47.method7712();
+		while (!this.aClass341_47.isEmpty()) {
+			local19 = (Node_Sub38) this.aClass341_47.removeHead();
 			OpenGL.glDeleteLists((int) local19.key, local19.anInt6399);
 		}
 		this.aClass169_1.method3528();
@@ -2776,9 +2776,9 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(III)V")
 	public synchronized void method7037(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		@Pc(8) Class2_Sub38 local8 = new Class2_Sub38(arg1);
+		@Pc(8) Node_Sub38 local8 = new Node_Sub38(arg1);
 		local8.key = arg0;
-		this.aClass341_49.method7718(local8);
+		this.aClass341_49.insertBefore(local8);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "C", descriptor = "(Z)V")
@@ -3212,7 +3212,7 @@ public final class Class19_Sub3 extends Class19 {
 	public synchronized void method7049(@OriginalArg(0) long arg0) {
 		@Pc(7) Node local7 = new Node();
 		local7.key = arg0;
-		this.aClass341_53.method7718(local7);
+		this.aClass341_53.insertBefore(local7);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(B)V")

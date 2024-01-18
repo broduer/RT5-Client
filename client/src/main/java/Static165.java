@@ -14,7 +14,7 @@ public final class Static165 {
 		if (Static117.anInt2291 == 1 || Static117.anInt2291 == 3 || Static117.anInt2291 != Static102.anInt2138 && (Static117.anInt2291 == 0 || Static102.anInt2138 == 0)) {
 			Static390.anInt6146 = 0;
 			Static416.anInt6398 = 0;
-			Static18.aClass28_2.method737();
+			Static18.aClass28_2.clear();
 		}
 		Static102.anInt2138 = Static117.anInt2291;
 	}

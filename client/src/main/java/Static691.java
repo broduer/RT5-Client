@@ -7,9 +7,6 @@ public final class Static691 {
 	@OriginalMember(owner = "client!vs", name = "p", descriptor = "[Lclient!st;")
 	public static Class23[] aClass23Array15;
 
-	@OriginalMember(owner = "client!vs", name = "t", descriptor = "Lclient!kka;")
-	public static Class212 aClass212_1;
-
 	@OriginalMember(owner = "client!vs", name = "o", descriptor = "I")
 	public static int anInt10395;
 
@@ -19,9 +16,9 @@ public final class Static691 {
 	@OriginalMember(owner = "client!vs", name = "a", descriptor = "(IIIIIILclient!ha;)Lclient!ka;")
 	public static Class114 method9011(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) Class19 arg5) {
 		@Pc(13) long local13 = arg2;
-		@Pc(19) Class114 local19 = (Class114) Static186.aClass82_67.method2156(local13);
+		@Pc(19) Class114 local19 = (Class114) Static186.aClass82_67.get(local13);
 		if (local19 == null) {
-			@Pc(29) Class88 local29 = Static121.method2201(arg2, Static190.aClass332_38);
+			@Pc(29) Class88 local29 = Static121.method2201(arg2, client.js5Archive7);
 			if (local29 == null) {
 				return null;
 			}
@@ -29,7 +26,7 @@ public final class Static691 {
 				local29.method2232();
 			}
 			local19 = arg5.method7959(local29, 2055, Static391.anInt6153, 64, 768);
-			Static186.aClass82_67.method2150(local19, local13);
+			Static186.aClass82_67.put(local19, local13);
 		}
 		local19 = local19.method7502((byte) 6, 2055, true);
 		if (arg4 != 0) {

@@ -33,7 +33,7 @@ public final class Static242 {
 
 	@OriginalMember(owner = "client!hj", name = "c", descriptor = "(I)V")
 	public static void method3502() {
-		Static525.aClass2_Sub2_Sub16_12 = new Class2_Sub2_Sub16(Static32.aClass32_4.method877(client.lang), "", Static442.anInt6719, 1012, -1, 0L, 0, 0, true, false, 0L, true);
+		Static525.aClass2_Sub2_Sub16_12 = new SecondaryNode_Sub16(Static32.aClass32_4.getLocalization(client.lang), "", Static442.anInt6719, 1012, -1, 0L, 0, 0, true, false, 0L, true);
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(IZ)I")
@@ -73,7 +73,7 @@ public final class Static242 {
 					local47 = Static571.aClass347_103;
 				}
 				if (local47 != null) {
-					@Pc(108) Class2_Sub19 local108 = Static293.method4342(local47, Static405.aClass153_2.aClass186_1);
+					@Pc(108) Node_Sub19 local108 = Static293.method4342(local47, Static405.aClass153_2.aClass186_1);
 					local108.aClass2_Sub21_Sub2_1.p1(0);
 					local108.aClass2_Sub21_Sub2_1.p2(local7[local19]);
 					Static405.aClass153_2.method3275(local108);
@@ -83,7 +83,7 @@ public final class Static242 {
 			}
 		}
 		if (!local9) {
-			Static67.method6105(Static32.aClass32_21.method877(client.lang) + arg0);
+			Static67.method6105(Static32.aClass32_21.getLocalization(client.lang) + arg0);
 		}
 	}
 }

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static6 {
 
-	@OriginalMember(owner = "client!ad", name = "b", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_1;
-
 	@OriginalMember(owner = "client!ad", name = "c", descriptor = "I")
 	public static int anInt94 = 0;
 
@@ -32,8 +29,8 @@ public final class Static6 {
 		if (local37 * local37 < local45) {
 			return;
 		}
-		@Pc(60) int local60 = Class363.anIntArray741[local15];
-		@Pc(64) int local64 = Class363.anIntArray740[local15];
+		@Pc(60) int local60 = Class114_Sub1.anIntArray741[local15];
+		@Pc(64) int local64 = Class114_Sub1.anIntArray740[local15];
 		if (Static511.anInt7668 != 4) {
 			local60 = local60 * 256 / (Static660.anInt9861 + 256);
 			local64 = local64 * 256 / (Static660.anInt9861 + 256);

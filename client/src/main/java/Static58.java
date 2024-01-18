@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static58 {
 
-	@OriginalMember(owner = "client!bu", name = "O", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_12;
-
 	@OriginalMember(owner = "client!bu", name = "H", descriptor = "I")
 	public static int anInt1181 = 1400;
 
@@ -17,7 +14,7 @@ public final class Static58 {
 
 	@OriginalMember(owner = "client!bu", name = "a", descriptor = "(ILclient!wj;)V")
 	public static void method1259(@OriginalArg(1) Class8_Sub2_Sub1_Sub2_Sub2 arg0) {
-		for (@Pc(17) Class2_Sub51 local17 = (Class2_Sub51) Static717.aClass341_81.method7706(65280); local17 != null; local17 = (Class2_Sub51) Static717.aClass341_81.method7713()) {
+		for (@Pc(17) Node_Sub51 local17 = (Node_Sub51) Static717.aClass341_81.head(); local17 != null; local17 = (Node_Sub51) Static717.aClass341_81.next()) {
 			if (local17.aClass8_Sub2_Sub1_Sub2_Sub2_3 == arg0) {
 				if (local17.aClass2_Sub6_Sub2_4 != null) {
 					Static336.aClass2_Sub6_Sub3_1.method5890(local17.aClass2_Sub6_Sub2_4);

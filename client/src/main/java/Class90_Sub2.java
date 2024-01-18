@@ -25,7 +25,7 @@ public class Class90_Sub2 extends Class90 {
 	protected Class23 aClass23_40;
 
 	@OriginalMember(owner = "client!gr", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!rk;)V")
-	public Class90_Sub2(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class138_Sub1 arg2) {
+	public Class90_Sub2(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138_Sub1 arg2) {
 		super(arg0, arg1, arg2);
 	}
 

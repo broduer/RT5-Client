@@ -128,7 +128,7 @@ public final class Class148 {
 			if (this.anInt3517 == -1 || this.anInt3528 == 0) {
 				arg3.aa(arg7, arg11, arg6, arg2, local10 << 24 | arg5, 1);
 			} else {
-				@Pc(74) Class118 local74 = Static708.anInterface4_12.method6824(this.anInt3517);
+				@Pc(74) Material local74 = Static708.anInterface4_12.method6824(this.anInt3517);
 				if (this.aClass23_10 == null && Static708.anInterface4_12.method6821(this.anInt3517)) {
 					@Pc(120) int[] local120 = local74.anInt2805 == 2 ? Static708.anInterface4_12.method6822(0.7F, this.anInt3517, this.anInt3528, this.anInt3528) : Static708.anInterface4_12.method6825(this.anInt3528, false, this.anInt3528, this.anInt3517, 0.7F);
 					this.anInt3511 = local120[0];
@@ -232,7 +232,7 @@ public final class Class148 {
 	@OriginalMember(owner = "client!gm", name = "a", descriptor = "(ILclient!ha;)V")
 	private void method3166(@OriginalArg(1) Class19 arg0) {
 		try {
-			@Pc(9) Class332 local9 = Static386.aClass332_80;
+			@Pc(9) Js5 local9 = Static386.aClass332_80;
 			@Pc(17) boolean local17 = local9.method7614(this.anInt3524);
 			if (local17) {
 				arg0.ZA(16777215, 0.0F, 0.0F, 1.0F, 0.0F, 0.0F);

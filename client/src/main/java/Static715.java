@@ -14,7 +14,7 @@ public final class Static715 {
 	public static final int[] anIntArray881 = new int[200];
 
 	@OriginalMember(owner = "client!wla", name = "a", descriptor = "(BLclient!ge;)Lclient!rk;")
-	public static Class138_Sub1 method9353(@OriginalArg(1) Packet arg0) {
+	public static Class138_Sub1 method9353(@OriginalArg(1) Buffer arg0) {
 		@Pc(7) Class138 local7 = Static632.method8366(arg0);
 		@Pc(13) int local13 = arg0.g2();
 		@Pc(19) int local19 = arg0.g2();

@@ -8,7 +8,7 @@ public final class Static277 {
 	public static int anInt4500 = -1;
 
 	@OriginalMember(owner = "client!im", name = "a", descriptor = "(IIILclient!fk;I)V")
-	public static void method4040(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Class2_Sub19 arg2, @OriginalArg(4) int arg3) {
+	public static void method4040(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) Node_Sub19 arg2, @OriginalArg(4) int arg3) {
 		arg2.aClass2_Sub21_Sub2_1.method7354(arg0);
 		arg2.aClass2_Sub21_Sub2_1.method7377(arg1);
 		arg2.aClass2_Sub21_Sub2_1.p2(arg3);
@@ -18,7 +18,7 @@ public final class Static277 {
 	public static long method4042(@OriginalArg(0) Interface25 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		@Pc(5) long local5 = 4194304L;
 		@Pc(18) long local18 = Long.MIN_VALUE;
-		@Pc(25) Class54 local25 = Static354.aClass142_4.method3063(arg0.method6866(-32136), 44);
+		@Pc(25) LocType local25 = client.locTypeList.method3063(arg0.method6866(-32136), 44);
 		@Pc(46) long local46 = arg2 | arg1 << 7 | arg0.method6865() << 14 | arg0.method6862(23796) << 20 | 0x40000000;
 		if (local25.anInt1276 == 0) {
 			local46 |= local18;

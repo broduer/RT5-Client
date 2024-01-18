@@ -22,7 +22,7 @@ public final class Class46 implements Runnable {
 	private volatile boolean aBoolean75 = true;
 
 	@OriginalMember(owner = "client!bl", name = "g", descriptor = "[Lclient!lca;")
-	private final Class2_Sub7[] aClass2_Sub7Array2 = new Class2_Sub7[8];
+	private final Node_Sub7[] aClass2_Sub7Array2 = new Node_Sub7[8];
 
 	@OriginalMember(owner = "client!bl", name = "f", descriptor = "Z")
 	private volatile boolean aBoolean77 = false;

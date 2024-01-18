@@ -19,13 +19,13 @@ public abstract class Class90 implements Interface13 {
 	protected final Class138 aClass138_5;
 
 	@OriginalMember(owner = "client!ea", name = "h", descriptor = "Lclient!sb;")
-	protected final Class332 aClass332_109;
+	protected final Js5 aClass332_109;
 
 	@OriginalMember(owner = "client!ea", name = "e", descriptor = "Lclient!sb;")
-	private final Class332 aClass332_110;
+	private final Js5 aClass332_110;
 
 	@OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(Lclient!sb;Lclient!sb;Lclient!is;)V")
-	protected Class90(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class138 arg2) {
+	protected Class90(@OriginalArg(0) Js5 arg0, @OriginalArg(1) Js5 arg1, @OriginalArg(2) Class138 arg2) {
 		this.aClass138_5 = arg2;
 		this.aClass332_109 = arg0;
 		this.aClass332_110 = arg1;

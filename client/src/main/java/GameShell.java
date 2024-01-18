@@ -140,7 +140,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!nla", name = "g", descriptor = "(I)V")
 	public static void method5862() {
 		Static117.anInt2291 = 0;
-		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) Packet local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		@Pc(12) int local12 = local8.method7408();
 		@Pc(24) boolean local24 = local8.g1() == 1;
 		@Pc(28) int local28 = local8.method7379();
@@ -533,7 +533,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			container = signlink.mainapp;
 		}
 		container.setLayout(null);
-		canvas = new Canvas_Sub1(this);
+		canvas = new GameCanvas(this);
 		container.add(canvas);
 		canvas.setSize(canvasWidth, canvasHeight);
 		canvas.setVisible(true);

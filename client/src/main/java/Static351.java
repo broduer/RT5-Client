@@ -19,7 +19,7 @@ public final class Static351 {
 	}
 
 	@OriginalMember(owner = "client!laa", name = "a", descriptor = "(Lclient!ha;ILclient!el;ILclient!fu;I)Z")
-	public static boolean method5145(@OriginalArg(0) Class19 arg0, @OriginalArg(2) Class105 arg1, @OriginalArg(4) Class2_Sub20 arg2) {
+	public static boolean method5145(@OriginalArg(0) Class19 arg0, @OriginalArg(2) MelType arg1, @OriginalArg(4) MapElement arg2) {
 		@Pc(7) int local7 = Integer.MAX_VALUE;
 		@Pc(9) int local9 = Integer.MIN_VALUE;
 		@Pc(11) int local11 = Integer.MAX_VALUE;
@@ -60,7 +60,7 @@ public final class Static351 {
 				}
 			}
 		}
-		@Pc(209) Class329 local209 = null;
+		@Pc(209) WorldMapFont local209 = null;
 		@Pc(211) int local211 = 0;
 		@Pc(213) int local213 = 0;
 		@Pc(215) int local215 = 0;
@@ -133,7 +133,7 @@ public final class Static351 {
 			Static720.method9403(local211, arg2, local213, arg1, local209, local217, arg0, local215);
 		}
 		if (arg1.anInt2605 != -1 || arg1.aString25 != null) {
-			@Pc(612) Class2_Sub37 local612 = new Class2_Sub37(arg2);
+			@Pc(612) MapElementBounds local612 = new MapElementBounds(arg2);
 			local612.anInt6205 = local229;
 			local612.anInt6206 = local108;
 			local612.anInt6212 = local227;
@@ -142,7 +142,7 @@ public final class Static351 {
 			local612.anInt6204 = local231;
 			local612.anInt6207 = local233;
 			local612.anInt6215 = local104;
-			Static551.aClass341_54.method7718(local612);
+			Static551.aClass341_54.insertBefore(local612);
 		}
 		return false;
 	}

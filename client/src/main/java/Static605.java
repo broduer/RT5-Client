@@ -9,7 +9,7 @@ public final class Static605 {
 
 	@OriginalMember(owner = "client!tba", name = "a", descriptor = "(ILclient!pc;)V")
 	public static void method7919(@OriginalArg(1) Class289 arg0) {
-		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
+		@Pc(8) Packet local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
 		@Pc(15) int local15;
 		@Pc(21) int local21;
 		@Pc(25) int local25;
@@ -28,9 +28,9 @@ public final class Static605 {
 			local46 = local8.g2();
 			local52 = local8.g2();
 			if (Static497.aClass28_35 != null) {
-				@Pc(69) Class2_Sub17 local69 = (Class2_Sub17) Static497.aClass28_35.method738(Static87.anInt1818 << 28 | local25 << 14 | local38);
+				@Pc(69) Node_Sub17 local69 = (Node_Sub17) Static497.aClass28_35.get(Static87.anInt1818 << 28 | local25 << 14 | local38);
 				if (local69 != null) {
-					for (@Pc(77) Class2_Sub15 local77 = (Class2_Sub15) local69.aClass341_12.method7706(65280); local77 != null; local77 = (Class2_Sub15) local69.aClass341_12.method7713()) {
+					for (@Pc(77) Node_Sub15 local77 = (Node_Sub15) local69.aClass341_12.head(); local77 != null; local77 = (Node_Sub15) local69.aClass341_12.next()) {
 						if ((local42 & 0x7FFF) == local77.anInt1967 && local77.anInt1968 == local46) {
 							local77.unlink();
 							local77.anInt1968 = local52;
@@ -63,7 +63,7 @@ public final class Static605 {
 			if (local21 == 11) {
 				local21 = 10;
 			}
-			@Pc(210) Class54 local210 = Static354.aClass142_4.method3063(local52, 87);
+			@Pc(210) LocType local210 = client.locTypeList.method3063(local52, 87);
 			local212 = 0;
 			if (local210.aByteArray13 != null) {
 				local217 = -1;
@@ -125,7 +125,7 @@ public final class Static605 {
 		} else if (arg0 == Static328.aClass289_10) {
 			local15 = local8.g2();
 			local21 = local8.g1();
-			Static354.aClass142_4.method3063(local15, 82).method1304(local21);
+			client.locTypeList.method3063(local15, 82).method1304(local21);
 		} else {
 			@Pc(537) int local537;
 			if (arg0 == Static481.aClass289_15) {
@@ -202,7 +202,7 @@ public final class Static605 {
 							@Pc(957) int local957;
 							if (local212 >= 0) {
 								local957 = local212 - 1;
-								@Pc(964) Class2_Sub45 local964 = (Class2_Sub45) Static18.aClass28_2.method738(local957);
+								@Pc(964) Node_Sub45 local964 = (Node_Sub45) Static18.aClass28_2.get(local957);
 								if (local964 != null) {
 									local948 = local964.aClass8_Sub2_Sub1_Sub2_Sub2_2;
 								}
@@ -215,7 +215,7 @@ public final class Static605 {
 								}
 							}
 							if (local948 != null) {
-								@Pc(991) Class291 local991 = local948.method9324();
+								@Pc(991) BasType local991 = local948.method9324();
 								if (local991.anIntArrayArray181 != null && local991.anIntArrayArray181[local46] != null) {
 									local812 -= local991.anIntArrayArray181[local46][1];
 								}
@@ -226,7 +226,7 @@ public final class Static605 {
 						}
 						@Pc(1053) Class8_Sub2_Sub1_Sub1 local1053 = new Class8_Sub2_Sub1_Sub1(local219, Static87.anInt1818, Static87.anInt1818, local21, local25, local812, local322 + client.cycle, client.cycle + local353, local843, local847, local212, local217, local290, local764, local46);
 						local1053.method813(Static102.method2025(Static87.anInt1818, -29754, local537, local52) - local290, local322 + client.cycle, local537, local52);
-						Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local1053));
+						Static505.aClass341_77.insertBefore(new SecondaryNode_Sub15(local1053));
 					}
 				} else if (Static77.aClass289_5 == arg0) {
 					local15 = local8.method7394();
@@ -240,7 +240,7 @@ public final class Static605 {
 					if (local15 != Static312.anInt5017) {
 						@Pc(1151) boolean local1151 = local38 >= 0 && local25 >= 0 && Static720.anInt10888 > local38 && local25 < Static501.anInt7591;
 						if (local1151 || Static55.method1218(Static117.anInt2291)) {
-							Static2.method63(Static87.anInt1818, local34, local42, new Class2_Sub15(local46, local52));
+							Static2.method63(Static87.anInt1818, local34, local42, new Node_Sub15(local46, local52));
 							if (local1151) {
 								Static468.method7648(Static87.anInt1818, local25, local38);
 							}
@@ -273,15 +273,15 @@ public final class Static605 {
 					local34 = local25 + Static116.anInt2279;
 					local38 = (local21 >> 4 & 0x7) + Static626.anInt9502;
 					local42 = local38 + Static691.anInt10395;
-					@Pc(1389) Class2_Sub17 local1389 = (Class2_Sub17) Static497.aClass28_35.method738(local34 << 14 | Static87.anInt1818 << 28 | local42);
+					@Pc(1389) Node_Sub17 local1389 = (Node_Sub17) Static497.aClass28_35.get(local34 << 14 | Static87.anInt1818 << 28 | local42);
 					if (local1389 != null) {
-						for (@Pc(1399) Class2_Sub15 local1399 = (Class2_Sub15) local1389.aClass341_12.method7706(65280); local1399 != null; local1399 = (Class2_Sub15) local1389.aClass341_12.method7713()) {
+						for (@Pc(1399) Node_Sub15 local1399 = (Node_Sub15) local1389.aClass341_12.head(); local1399 != null; local1399 = (Node_Sub15) local1389.aClass341_12.next()) {
 							if (local1399.anInt1967 == (local15 & 0x7FFF)) {
 								local1399.unlink();
 								break;
 							}
 						}
-						if (local1389.aClass341_12.method7709()) {
+						if (local1389.aClass341_12.isEmpty()) {
 							local1389.unlink();
 						}
 						if (local38 >= 0 && local25 >= 0 && local38 < Static720.anInt10888 && local25 < Static501.anInt7591) {
@@ -295,7 +295,7 @@ public final class Static605 {
 					local25 = (local15 & 0x7) + Static270.anInt4367;
 					local34 = local8.g2();
 					local38 = local8.g1();
-					local42 = local8.method7390();
+					local42 = local8.g3();
 					@Pc(1511) String local1511 = local8.gstr();
 					Static540.method6546(Static87.anInt1818, local34, local1511, local42, local38, local21, local25);
 				} else if (Static73.aClass289_18 == arg0) {
@@ -326,7 +326,7 @@ public final class Static605 {
 						local34 = local34 * 512 + 256;
 						@Pc(1728) Class8_Sub2_Sub1_Sub1 local1728 = new Class8_Sub2_Sub1_Sub1(local52, Static87.anInt1818, Static87.anInt1818, local25, local34, local537, local217 + client.cycle, local219 + client.cycle, local812, local290, 0, local46, local212, local1540, -1);
 						local1728.method813(Static102.method2025(Static87.anInt1818, -29754, local42, local38) - local212, client.cycle + local217, local42, local38);
-						Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local1728));
+						Static505.aClass341_77.insertBefore(new SecondaryNode_Sub15(local1728));
 					}
 				} else if (Static210.aClass289_9 == arg0) {
 					local15 = local8.method7408();
@@ -349,7 +349,7 @@ public final class Static605 {
 					local46 = local8.g2();
 					@Pc(1886) boolean local1886 = local34 >= 0 && local21 >= 0 && local34 < Static720.anInt10888 && local21 < Static501.anInt7591;
 					if (local1886 || Static55.method1218(Static117.anInt2291)) {
-						Static2.method63(Static87.anInt1818, local25, local38, new Class2_Sub15(local42, local46));
+						Static2.method63(Static87.anInt1818, local25, local38, new Node_Sub15(local42, local46));
 						if (local1886) {
 							Static468.method7648(Static87.anInt1818, local21, local34);
 						}
@@ -367,7 +367,7 @@ public final class Static605 {
 					local46 = local8.g1();
 					if (local21 >= 0 && local25 >= 0 && local21 < Static720.anInt10888 && Static501.anInt7591 > local25) {
 						if (local34 == -1) {
-							@Pc(2004) Class2_Sub2_Sub20 local2004 = (Class2_Sub2_Sub20) Static346.aClass28_29.method738(local21 << 16 | local25);
+							@Pc(2004) SecondaryNode_Sub20 local2004 = (SecondaryNode_Sub20) Static346.aClass28_29.get(local21 << 16 | local25);
 							if (local2004 != null) {
 								local2004.aClass8_Sub2_Sub1_Sub5_1.method6607();
 								local2004.unlink();
@@ -381,7 +381,7 @@ public final class Static605 {
 								local212++;
 							}
 							@Pc(2065) Class8_Sub2_Sub1_Sub5 local2065 = new Class8_Sub2_Sub1_Sub5(local34, local42, Static87.anInt1818, local212, local52, Static102.method2025(Static87.anInt1818, -29754, local537, local52) - local38, local537, local21, local21, local25, local25, local46, false);
-							Static346.aClass28_29.method735(local21 << 16 | local25, new Class2_Sub2_Sub20(local2065));
+							Static346.aClass28_29.put(local21 << 16 | local25, new SecondaryNode_Sub20(local2065));
 						}
 					}
 				} else {

@@ -7,9 +7,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static720 {
 
-	@OriginalMember(owner = "client!wr", name = "s", descriptor = "Lclient!u;")
-	public static Class365 aClass365_4;
-
 	@OriginalMember(owner = "client!wr", name = "n", descriptor = "I")
 	public static int anInt10888 = 104;
 
@@ -17,7 +14,7 @@ public final class Static720 {
 	public static int anInt10894 = 0;
 
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(ILclient!fu;ILclient!el;Lclient!rt;IBLclient!ha;I)V")
-	public static void method9403(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub20 arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class105 arg3, @OriginalArg(4) Class329 arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7) {
+	public static void method9403(@OriginalArg(0) int arg0, @OriginalArg(1) MapElement arg1, @OriginalArg(2) int arg2, @OriginalArg(3) MelType arg3, @OriginalArg(4) WorldMapFont arg4, @OriginalArg(5) int arg5, @OriginalArg(7) Class19 arg6, @OriginalArg(8) int arg7) {
 		@Pc(14) int local14 = arg2 - arg5 / 2 - 5;
 		@Pc(18) int local18 = arg7 + 2;
 		if (arg3.anInt2614 != 0) {
@@ -52,9 +49,9 @@ public final class Static720 {
 	}
 
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(I)Lclient!kv;")
-	public static Class2_Sub34 method9405() {
+	public static Preferences method9405() {
 		@Pc(13) Class83 local13 = null;
-		@Pc(19) Class2_Sub34 local19 = new Class2_Sub34(Static392.game, 0);
+		@Pc(19) Preferences local19 = new Preferences(client.game, 0);
 		try {
 			@Pc(25) PrivilegedRequest local25 = GameShell.sign.method8988("");
 			while (local25.status == 0) {
@@ -70,7 +67,7 @@ public final class Static720 {
 						throw new IOException("EOF");
 					}
 				}
-				local19 = new Class2_Sub34(new Packet(local51), Static392.game, 0);
+				local19 = new Preferences(new Buffer(local51), client.game, 0);
 			}
 		} catch (@Pc(97) Exception local97) {
 		}

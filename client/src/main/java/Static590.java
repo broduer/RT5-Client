@@ -9,7 +9,7 @@ public final class Static590 {
 
 	@OriginalMember(owner = "client!ska", name = "a", descriptor = "([BB)[B")
 	public static byte[] method7751(@OriginalArg(0) byte[] arg0) {
-		@Pc(8) Packet local8 = new Packet(arg0);
+		@Pc(8) Buffer local8 = new Buffer(arg0);
 		@Pc(18) int local18 = local8.g1();
 		@Pc(22) int local22 = local8.g4();
 		if (local22 < 0 || Static112.anInt2231 != 0 && Static112.anInt2231 < local22) {

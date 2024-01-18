@@ -13,7 +13,7 @@ public final class Class39_Sub19 extends Class39 {
 	private final int anInt8319;
 
 	@OriginalMember(owner = "client!rga", name = "<init>", descriptor = "(Lclient!ge;Z)V")
-	public Class39_Sub19(@OriginalArg(0) Packet arg0, @OriginalArg(1) boolean arg1) {
+	public Class39_Sub19(@OriginalArg(0) Buffer arg0, @OriginalArg(1) boolean arg1) {
 		super(arg0);
 		@Pc(6) int local6 = arg0.g2();
 		if (arg1) {
@@ -27,9 +27,9 @@ public final class Class39_Sub19 extends Class39 {
 	@OriginalMember(owner = "client!rga", name = "b", descriptor = "(I)V")
 	@Override
 	public void method9168() {
-		@Pc(10) Class2_Sub38 local10 = (Class2_Sub38) Static25.aClass28_4.method738(this.aLong257);
+		@Pc(10) Node_Sub38 local10 = (Node_Sub38) Static25.aClass28_4.get(this.aLong257);
 		if (local10 == null) {
-			Static25.aClass28_4.method735(this.aLong257, new Class2_Sub38(this.anInt8319));
+			Static25.aClass28_4.put(this.aLong257, new Node_Sub38(this.anInt8319));
 		} else {
 			local10.anInt6399 = this.anInt8319;
 		}

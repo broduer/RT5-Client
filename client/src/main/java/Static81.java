@@ -34,13 +34,13 @@ public final class Static81 {
 			Static670.method8742();
 		}
 		if (Static594.method7789(Static283.anInt4588)) {
-			Static6.aClass332_1.anInt8579 = 2;
-			Static20.aClass332_3.anInt8579 = 2;
-			Static459.aClass332_91.anInt8579 = 2;
-			Static333.aClass332_66.anInt8579 = 2;
-			Static380.aClass332_79.anInt8579 = 2;
-			Static668.aClass332_119.anInt8579 = 2;
-			Static271.aClass332_59.anInt8579 = 2;
+			client.js5Archive2.discardUnpacked = 2;
+			client.js5Archive17.discardUnpacked = 2;
+			client.js5Archive16.discardUnpacked = 2;
+			client.js5Archive18.discardUnpacked = 2;
+			client.js5Archive19.discardUnpacked = 2;
+			client.js5Archive20.discardUnpacked = 2;
+			client.js5Archive21.discardUnpacked = 2;
 		}
 		if (Static594.method7789(arg0)) {
 			Static593.anInt8787 = 0;
@@ -49,13 +49,13 @@ public final class Static81 {
 			Static213.anInt3482 = 0;
 			Static13.anInt150 = 0;
 			Static668.method8707(true);
-			Static6.aClass332_1.anInt8579 = 1;
-			Static20.aClass332_3.anInt8579 = 1;
-			Static459.aClass332_91.anInt8579 = 1;
-			Static333.aClass332_66.anInt8579 = 1;
-			Static380.aClass332_79.anInt8579 = 1;
-			Static668.aClass332_119.anInt8579 = 1;
-			Static271.aClass332_59.anInt8579 = 1;
+			client.js5Archive2.discardUnpacked = 1;
+			client.js5Archive17.discardUnpacked = 1;
+			client.js5Archive16.discardUnpacked = 1;
+			client.js5Archive18.discardUnpacked = 1;
+			client.js5Archive19.discardUnpacked = 1;
+			client.js5Archive20.discardUnpacked = 1;
+			client.js5Archive21.discardUnpacked = 1;
 		}
 		if (arg0 == 12 || arg0 == 3) {
 			Static314.method4569();
@@ -68,7 +68,7 @@ public final class Static81 {
 				if (Static400.aClass2_Sub34_28.aClass57_Sub25_5.method7215() == 0) {
 					Static312.method4548();
 				} else {
-					Static57.method1225(Static597.anInt8845, Static400.aClass2_Sub34_28.aClass57_Sub25_5.method7215(), Static398.aClass332_81);
+					Static57.method1225(Static597.anInt8845, Static400.aClass2_Sub34_28.aClass57_Sub25_5.method7215(), client.js5Archive6);
 					Static550.method7273();
 				}
 				client.js5NetQueue.method6633(false);
@@ -84,15 +84,15 @@ public final class Static81 {
 	}
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(I)Lclient!aj;")
-	public static Class2_Sub2_Sub2 method1587() {
-		@Pc(17) Class2_Sub2_Sub2 local17 = (Class2_Sub2_Sub2) Static138.aClass194_6.method4359();
+	public static SecondaryNode_Sub2 method1587() {
+		@Pc(17) SecondaryNode_Sub2 local17 = (SecondaryNode_Sub2) Static138.aClass194_6.head();
 		if (local17 != null) {
 			local17.unlink();
-			local17.method9267();
+			local17.unlinkSecondary();
 			return local17;
 		}
 		do {
-			local17 = (Class2_Sub2_Sub2) Static59.aClass194_9.method4359();
+			local17 = (SecondaryNode_Sub2) Static59.aClass194_9.head();
 			if (local17 == null) {
 				return null;
 			}
@@ -100,8 +100,8 @@ public final class Static81 {
 				return null;
 			}
 			local17.unlink();
-			local17.method9267();
-		} while ((local17.aLong325 & Long.MIN_VALUE) == 0L);
+			local17.unlinkSecondary();
+		} while ((local17.secondaryKey & Long.MIN_VALUE) == 0L);
 		return local17;
 	}
 
@@ -112,7 +112,7 @@ public final class Static81 {
 
 	@OriginalMember(owner = "client!cka", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;ZI)V")
 	public static void method1591(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2, @OriginalArg(3) boolean arg3) {
-		@Pc(8) Class2_Sub19 local8 = Static273.method3962();
+		@Pc(8) Node_Sub19 local8 = Static273.method3962();
 		local8.aClass2_Sub21_Sub2_1.p1(LoginProt.OPCODE_22.opcode);
 		local8.aClass2_Sub21_Sub2_1.p2(0);
 		@Pc(25) int local25 = local8.aClass2_Sub21_Sub2_1.pos;
@@ -124,7 +124,7 @@ public final class Static81 {
 		local8.aClass2_Sub21_Sub2_1.pjstr(arg2);
 		local8.aClass2_Sub21_Sub2_1.p8(Static416.userFlow);
 		local8.aClass2_Sub21_Sub2_1.p1(client.lang);
-		local8.aClass2_Sub21_Sub2_1.p1(Static392.game.id);
+		local8.aClass2_Sub21_Sub2_1.p1(client.game.id);
 		Static176.method6697(local8.aClass2_Sub21_Sub2_1);
 		@Pc(81) String local81 = Static389.additionalInfo;
 		local8.aClass2_Sub21_Sub2_1.p1(local81 == null ? 0 : 1);
