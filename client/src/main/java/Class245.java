@@ -25,7 +25,7 @@ public final class Class245 {
 	private long aLong200 = -1L;
 
 	@OriginalMember(owner = "client!mj", name = "g", descriptor = "Lclient!dm;")
-	private final Class83 aClass83_1;
+	private final FileOnDisk aClass83_1;
 
 	@OriginalMember(owner = "client!mj", name = "t", descriptor = "J")
 	private long aLong196;
@@ -43,7 +43,7 @@ public final class Class245 {
 	private final byte[] aByteArray67;
 
 	@OriginalMember(owner = "client!mj", name = "<init>", descriptor = "(Lclient!dm;II)V")
-	public Class245(@OriginalArg(0) Class83 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
+	public Class245(@OriginalArg(0) FileOnDisk arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) throws IOException {
 		this.aClass83_1 = arg0;
 		this.aLong198 = this.aLong196 = arg0.method2161();
 		this.aLong195 = 0L;

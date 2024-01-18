@@ -11,7 +11,7 @@ public final class Static179 {
 	public static int anInt2993 = 0;
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(III)I")
-	public static int method2767(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
+	public static int bitReverse(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(14) int local14 = 0;
 		while (arg0 > 0) {
 			local14 = arg1 & 0x1 | local14 << 1;

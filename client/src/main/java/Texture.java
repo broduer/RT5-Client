@@ -159,7 +159,7 @@ public final class Texture extends SecondaryNode {
 			}
 		} else {
 			for (local12 = 0; local12 < this.anIntArray824.length; local12++) {
-				if (!arg0.method7593(this.anIntArray824[local12], Static426.anInt944)) {
+				if (!arg0.isFileReady(this.anIntArray824[local12], Static426.anInt944)) {
 					return false;
 				}
 			}

@@ -63,7 +63,7 @@ public final class Node_Sub51 extends Node {
 	public PcmSound aClass2_Sub49_Sub1_4;
 
 	@OriginalMember(owner = "client!tg", name = "s", descriptor = "Lclient!uj;")
-	public Node_Sub53 aClass2_Sub53_2;
+	public VorbisSound aClass2_Sub53_2;
 
 	@OriginalMember(owner = "client!tg", name = "o", descriptor = "[I")
 	public int[] anIntArray718;
@@ -72,7 +72,7 @@ public final class Node_Sub51 extends Node {
 	public boolean aBoolean715;
 
 	@OriginalMember(owner = "client!tg", name = "r", descriptor = "Lclient!uj;")
-	public Node_Sub53 aClass2_Sub53_3;
+	public VorbisSound aClass2_Sub53_3;
 
 	@OriginalMember(owner = "client!tg", name = "t", descriptor = "I")
 	public int anInt9388;

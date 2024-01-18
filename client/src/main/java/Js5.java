@@ -100,11 +100,11 @@ public final class Js5 {
 		if (!this.method7608()) {
 			return false;
 		} else if (this.index.anIntArray595.length == 1) {
-			return this.method7593(arg0, 0);
+			return this.isFileReady(arg0, 0);
 		} else if (!this.method7603(arg0)) {
 			return false;
 		} else if (this.index.anIntArray595[arg0] == 1) {
-			return this.method7593(0, arg0);
+			return this.isFileReady(0, arg0);
 		} else {
 			throw new RuntimeException();
 		}
@@ -337,7 +337,7 @@ public final class Js5 {
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(III)Z")
-	public boolean method7593(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
+	public boolean isFileReady(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
 		if (!this.method7591(arg0, arg1)) {
 			return false;
 		} else if (this.unpacked[arg1] != null && this.unpacked[arg1][arg0] != null) {
@@ -547,7 +547,7 @@ public final class Js5 {
 		@Pc(25) int local25 = this.index.aClass100_1.method2382(Static95.method1894(local13));
 		if (this.method7603(local25)) {
 			@Pc(44) int local44 = this.index.aClass100Array1[local25].method2382(Static95.method1894(local16));
-			return this.method7593(local44, local25);
+			return this.isFileReady(local44, local25);
 		} else {
 			return false;
 		}

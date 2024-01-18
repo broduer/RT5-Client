@@ -1,6 +1,7 @@
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!hja")
 public final class LoginProt {
@@ -31,6 +32,15 @@ public final class LoginProt {
 	public static final LoginProt OPCODE_29 = new LoginProt(29, -2);
 	@OriginalMember(owner = "client!s", name = "j", descriptor = "Lclient!hja;")
 	public static final LoginProt OPCODE_30 = new LoginProt(30, -2);
+	@OriginalMember(owner = "client!s", name = "w", descriptor = "[Lclient!hja;")
+	private static final LoginProt[] aClass167Array5 = new LoginProt[32];
+
+	static {
+		@Pc(140) LoginProt[] all = getAll();
+		for (@Pc(142) int i = 0; i < all.length; i++) {
+			aClass167Array5[all[i].opcode] = all[i];
+		}
+	}
 
 	@OriginalMember(owner = "client!hr", name = "d", descriptor = "(I)[Lclient!hja;")
 	public static LoginProt[] getAll() {

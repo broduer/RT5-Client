@@ -32,7 +32,7 @@ public final class Static35 {
 						local13.anInt2580 += local13.aClass89_1.method2248();
 					} else if (local13.method2418() && (local13.aClass2_Sub53_1 == null || local13.aClass2_Sub49_Sub1_2 == null)) {
 						if (local13.aClass2_Sub53_1 == null) {
-							local13.aClass2_Sub53_1 = Static650.method8505(client.js5Archive14, local13.anInt2589);
+							local13.aClass2_Sub53_1 = VorbisSound.method8505(client.js5Archive14, local13.anInt2589);
 						}
 						if (local13.aClass2_Sub53_1 == null) {
 							continue;

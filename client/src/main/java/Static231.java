@@ -29,7 +29,7 @@ public final class Static231 {
 	public static final Class157 aClass157_7 = new Class157(6, 4, Static702.aClass399_20);
 
 	@OriginalMember(owner = "client!hd", name = "c", descriptor = "I")
-	public static final int anInt3743 = Static434.method5860(16);
+	public static final int anInt3743 = Static434.bitCount(16);
 
 	@OriginalMember(owner = "client!hd", name = "e", descriptor = "Lclient!ss;")
 	public static final ClientProt aClass347_41 = new ClientProt(34, 4);

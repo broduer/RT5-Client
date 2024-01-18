@@ -50,7 +50,7 @@ public final class Static720 {
 
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(I)Lclient!kv;")
 	public static Preferences method9405() {
-		@Pc(13) Class83 local13 = null;
+		@Pc(13) FileOnDisk local13 = null;
 		@Pc(19) Preferences local19 = new Preferences(client.game, 0);
 		try {
 			@Pc(25) PrivilegedRequest local25 = GameShell.sign.method8988("");
@@ -58,7 +58,7 @@ public final class Static720 {
 				ThreadUtils.sleep(1L);
 			}
 			if (local25.status == 1) {
-				local13 = (Class83) local25.result;
+				local13 = (FileOnDisk) local25.result;
 				@Pc(51) byte[] local51 = new byte[(int) local13.method2161()];
 				@Pc(66) int local66;
 				for (@Pc(53) int local53 = 0; local53 < local51.length; local53 += local66) {

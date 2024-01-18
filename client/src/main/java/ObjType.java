@@ -793,13 +793,13 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(88) boolean local88 = true;
-		if (!this.aClass112_2.aClass332_28.method7593(0, local17)) {
+		if (!this.aClass112_2.aClass332_28.isFileReady(0, local17)) {
 			local88 = false;
 		}
-		if (local23 != -1 && !this.aClass112_2.aClass332_28.method7593(0, local23)) {
+		if (local23 != -1 && !this.aClass112_2.aClass332_28.isFileReady(0, local23)) {
 			local88 = false;
 		}
-		if (local20 != -1 && !this.aClass112_2.aClass332_28.method7593(0, local20)) {
+		if (local20 != -1 && !this.aClass112_2.aClass332_28.isFileReady(0, local20)) {
 			local88 = false;
 		}
 		return local88;
@@ -948,10 +948,10 @@ public final class ObjType {
 			return true;
 		}
 		@Pc(71) boolean local71 = true;
-		if (!this.aClass112_2.aClass332_28.method7593(0, local19)) {
+		if (!this.aClass112_2.aClass332_28.isFileReady(0, local19)) {
 			local71 = false;
 		}
-		if (local22 != -1 && !this.aClass112_2.aClass332_28.method7593(0, local22)) {
+		if (local22 != -1 && !this.aClass112_2.aClass332_28.isFileReady(0, local22)) {
 			local71 = false;
 		}
 		return local71;

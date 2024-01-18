@@ -531,7 +531,7 @@ public final class Class270 {
 				@Pc(169) Js5 local169 = this.aClass310_1.aClass332_102;
 				synchronized (this.aClass310_1.aClass332_102) {
 					for (@Pc(173) int local173 = 0; local173 < local163.length; local173++) {
-						if (!this.aClass310_1.aClass332_102.method7593(0, local163[local173])) {
+						if (!this.aClass310_1.aClass332_102.isFileReady(0, local163[local173])) {
 							local165 = true;
 						}
 					}
@@ -671,7 +671,7 @@ public final class Class270 {
 			@Pc(222) Js5 local222 = this.aClass310_1.aClass332_102;
 			synchronized (this.aClass310_1.aClass332_102) {
 				for (local226 = 0; local226 < local216.length; local226++) {
-					if (local216[local226] != -1 && !this.aClass310_1.aClass332_102.method7593(0, local216[local226])) {
+					if (local216[local226] != -1 && !this.aClass310_1.aClass332_102.isFileReady(0, local216[local226])) {
 						local218 = true;
 					}
 				}

@@ -63,7 +63,7 @@ public final class signlink implements Runnable {
 	@OriginalMember(owner = "client!vq", name = "t", descriptor = "J")
 	public static volatile long aLong317 = 0L;
 	@OriginalMember(owner = "client!vq", name = "m", descriptor = "Lclient!dm;")
-	public Class83 aClass83_2 = null;
+	public FileOnDisk aClass83_2 = null;
 
 	@OriginalMember(owner = "client!vq", name = "l", descriptor = "Lclient!oba;")
 	private PrivilegedRequest aPrivilegedRequest_8 = null;
@@ -75,10 +75,10 @@ public final class signlink implements Runnable {
 	private PrivilegedRequest aPrivilegedRequest_9 = null;
 
 	@OriginalMember(owner = "client!vq", name = "i", descriptor = "Lclient!dm;")
-	public Class83 aClass83_4 = null;
+	public FileOnDisk aClass83_4 = null;
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "Lclient!dm;")
-	public Class83 aClass83_3 = null;
+	public FileOnDisk aClass83_3 = null;
 
 	@OriginalMember(owner = "client!vq", name = "j", descriptor = "Z")
 	public boolean aBoolean780 = false;
@@ -90,7 +90,7 @@ public final class signlink implements Runnable {
 	public EventQueue eventQueue;
 
 	@OriginalMember(owner = "client!vq", name = "e", descriptor = "[Lclient!dm;")
-	public Class83[] aClass83Array1;
+	public FileOnDisk[] aClass83Array1;
 
 	@OriginalMember(owner = "client!vq", name = "G", descriptor = "Ljava/lang/Object;")
 	private Object anObject21;
@@ -167,12 +167,12 @@ public final class signlink implements Runnable {
 		}
 		Static649.method8499(anInt10385, aString122);
 		if (this.aBoolean782) {
-			this.aClass83_4 = new Class83(Static649.method8498(null, anInt10385, "random.dat"), "rw", 25L);
-			this.aClass83_2 = new Class83(Static649.method8497("main_file_cache.dat2"), "rw", 314572800L);
-			this.aClass83_3 = new Class83(Static649.method8497("main_file_cache.idx255"), "rw", 1048576L);
-			this.aClass83Array1 = new Class83[arg2];
+			this.aClass83_4 = new FileOnDisk(Static649.method8498(null, anInt10385, "random.dat"), "rw", 25L);
+			this.aClass83_2 = new FileOnDisk(Static649.method8497("main_file_cache.dat2"), "rw", 314572800L);
+			this.aClass83_3 = new FileOnDisk(Static649.method8497("main_file_cache.idx255"), "rw", 1048576L);
+			this.aClass83Array1 = new FileOnDisk[arg2];
 			for (@Pc(226) int local226 = 0; local226 < arg2; local226++) {
-				this.aClass83Array1[local226] = new Class83(Static649.method8497("main_file_cache.idx" + local226), "rw", 1048576L);
+				this.aClass83Array1[local226] = new FileOnDisk(Static649.method8497("main_file_cache.idx" + local226), "rw", 1048576L);
 			}
 			if (this.aBoolean780) {
 				try {
@@ -218,7 +218,7 @@ public final class signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;I)Lclient!dm;")
-	public static Class83 method8987(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
+	public static FileOnDisk method8987(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
 		@Pc(29) String local29;
 		if (arg1 == 33) {
 			local29 = "jagex_" + arg0 + "_preferences" + arg2 + "_rc.dat";
@@ -232,7 +232,7 @@ public final class signlink implements Runnable {
 			@Pc(128) String local128 = local121[local123];
 			if (local128.length() <= 0 || (new File(local128)).exists()) {
 				try {
-					return new Class83(new File(local128, local29), "rw", 10000L);
+					return new FileOnDisk(new File(local128, local29), "rw", 10000L);
 				} catch (@Pc(158) Exception local158) {
 				}
 			}
@@ -241,7 +241,7 @@ public final class signlink implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ILjava/lang/String;)Lclient!dm;")
-	public static Class83 method8990(@OriginalArg(1) String arg0) {
+	public static FileOnDisk method8990(@OriginalArg(1) String arg0) {
 		return method8987(aString122, anInt10385, arg0);
 	}
 
@@ -499,7 +499,7 @@ public final class signlink implements Runnable {
 								Class.forName("Class66").getMethod("enter", aClass24 == null ? (aClass24 = Class.forName("java.awt.Frame")) : aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6809 >>> 16), new Integer(local15.anInt6809 & 0xFFFF), Integer.valueOf(local15.anInt6808 >> 16), new Integer(local15.anInt6808 & 0xFFFF));
 							}
 						} else if (local42 != 7) {
-							@Pc(438) Class83 local438;
+							@Pc(438) FileOnDisk local438;
 							if (local42 == 12) {
 								local438 = method8987(aString122, anInt10385, (String) local15.anObject12);
 								local15.result = local438;

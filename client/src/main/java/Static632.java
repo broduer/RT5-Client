@@ -111,7 +111,7 @@ public final class Static632 {
 			local264 = arg1.anInt9386 == 256 && arg1.anInt9385 == 256 ? 256 : Static159.method2572(arg1.anInt9385, arg1.anInt9386);
 			if (arg1.aBoolean715) {
 				if (arg1.aClass2_Sub53_3 == null) {
-					arg1.aClass2_Sub53_3 = Static650.method8505(client.js5Archive14, arg1.anInt9379);
+					arg1.aClass2_Sub53_3 = VorbisSound.method8505(client.js5Archive14, arg1.anInt9379);
 				}
 				if (arg1.aClass2_Sub53_3 != null) {
 					if (arg1.aClass2_Sub49_Sub1_4 == null) {
@@ -161,7 +161,7 @@ public final class Static632 {
 			}
 			if (arg1.aClass2_Sub53_2 == null) {
 				local275 = (int) (Math.random() * (double) arg1.anIntArray718.length);
-				arg1.aClass2_Sub53_2 = Static650.method8505(client.js5Archive14, arg1.anIntArray718[local275]);
+				arg1.aClass2_Sub53_2 = VorbisSound.method8505(client.js5Archive14, arg1.anIntArray718[local275]);
 			}
 			if (arg1.aClass2_Sub53_2 != null) {
 				if (arg1.aClass2_Sub49_Sub1_3 == null) {

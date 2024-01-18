@@ -11,7 +11,7 @@ public final class Static434 {
 	public static int anInt6599;
 
 	@OriginalMember(owner = "client!nla", name = "a", descriptor = "(IB)I")
-	public static int method5860(@OriginalArg(0) int arg0) {
+	public static int bitCount(@OriginalArg(0) int arg0) {
 		@Pc(5) int local5 = 0;
 		if (arg0 < 0 || arg0 >= 65536) {
 			arg0 >>>= 0x10;

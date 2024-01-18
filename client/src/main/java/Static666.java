@@ -12,14 +12,14 @@ public final class Static666 {
 
 	@OriginalMember(owner = "client!vba", name = "h", descriptor = "(I)V")
 	public static void method8700(@OriginalArg(0) int arg0) {
-		@Pc(5) Class83 local5 = null;
+		@Pc(5) FileOnDisk local5 = null;
 		try {
 			@Pc(18) PrivilegedRequest local18 = GameShell.sign.method8988("");
 			while (local18.status == 0) {
 				ThreadUtils.sleep(1L);
 			}
 			if (local18.status == 1) {
-				local5 = (Class83) local18.result;
+				local5 = (FileOnDisk) local18.result;
 				@Pc(41) Buffer local41 = Static400.aClass2_Sub34_28.encode();
 				local5.method2162(local41.data, 0, local41.pos);
 			}

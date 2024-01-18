@@ -26,7 +26,6 @@ public final class VarclanType {
 			this.anInt2825 = arg1.g2();
 			this.anInt2821 = arg1.g1();
 			this.anInt2826 = arg1.g1();
-			return;
 		}
 	}
 

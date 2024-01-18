@@ -41,7 +41,7 @@ public final class Class224_Sub1 extends Class224 {
 			return;
 		}
 		for (@Pc(12) int local12 = 0; local12 < 10 && local12 + this.anInt10624 < this.anIntArray834.length; local12++) {
-			if (this.aByteArrayArray37[local12] == null && this.aClass332_126.method7593(0, this.anIntArray834[this.anInt10624 + local12])) {
+			if (this.aByteArrayArray37[local12] == null && this.aClass332_126.isFileReady(0, this.anIntArray834[this.anInt10624 + local12])) {
 				this.aByteArrayArray37[local12] = this.aClass332_126.fetchFile(0, this.anIntArray834[this.anInt10624 + local12]);
 			}
 		}
@@ -56,7 +56,7 @@ public final class Class224_Sub1 extends Class224 {
 		@Pc(50) int local50;
 		@Pc(56) int local56;
 		if (this.anIntArray834 == null) {
-			if (!this.aClass332_126.method7593(0, this.anInt10622)) {
+			if (!this.aClass332_126.isFileReady(0, this.anInt10622)) {
 				return 0;
 			}
 			@Pc(29) byte[] local29 = this.aClass332_126.fetchFile(0, this.anInt10622);

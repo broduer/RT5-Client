@@ -6,9 +6,6 @@ import org.openrs2.deob.annotation.Pc;
 @OriginalClass("client!s")
 public abstract class Class178 {
 
-	@OriginalMember(owner = "client!s", name = "w", descriptor = "[Lclient!hja;")
-	private static final LoginProt[] aClass167Array5 = new LoginProt[32];
-
 	@OriginalMember(owner = "client!s", name = "t", descriptor = "I")
 	public final int anInt8918;
 
@@ -23,13 +20,6 @@ public abstract class Class178 {
 
 	@OriginalMember(owner = "client!s", name = "i", descriptor = "[[I")
 	public final int[][] anIntArrayArray226;
-
-	static {
-		@Pc(140) LoginProt[] all = LoginProt.getAll();
-		for (@Pc(142) int i = 0; i < all.length; i++) {
-			aClass167Array5[all[i].opcode] = all[i];
-		}
-	}
 
 	@OriginalMember(owner = "client!s", name = "<init>", descriptor = "(III[[I)V")
 	protected Class178(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int[][] arg3) {

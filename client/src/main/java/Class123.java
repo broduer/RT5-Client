@@ -57,9 +57,9 @@ public final class Class123 {
 		if (local33 != null) {
 			return local33;
 		} else if (arg0 == null || arg0[0] > 0) {
-			@Pc(59) Node_Sub53 local59 = (Node_Sub53) this.aClass28_15.get(local26);
+			@Pc(59) VorbisSound local59 = (VorbisSound) this.aClass28_15.get(local26);
 			if (local59 == null) {
-				local59 = Static650.method8513(this.aClass332_31, arg1, arg2);
+				local59 = VorbisSound.create(this.aClass332_31, arg1, arg2);
 				if (local59 == null) {
 					return null;
 				}

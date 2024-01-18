@@ -659,7 +659,7 @@ public final class LocType {
 		synchronized (this.aClass142_2.aClass332_44) {
 			for (@Pc(19) int local19 = 0; local19 < this.anIntArrayArray30.length; local19++) {
 				for (@Pc(22) int local22 = 0; local22 < this.anIntArrayArray30[local19].length; local22++) {
-					local11 &= this.aClass142_2.aClass332_44.method7593(0, this.anIntArrayArray30[local19][local22]);
+					local11 &= this.aClass142_2.aClass332_44.isFileReady(0, this.anIntArrayArray30[local19][local22]);
 				}
 			}
 			return local11;
@@ -692,7 +692,7 @@ public final class LocType {
 			for (@Pc(26) int local26 = 0; local26 < this.aByteArray13.length; local26++) {
 				if (arg0 == this.aByteArray13[local26]) {
 					for (@Pc(35) int local35 = 0; local35 < this.anIntArrayArray30[local26].length; local35++) {
-						if (!this.aClass142_2.aClass332_44.method7593(0, this.anIntArrayArray30[local26][local35])) {
+						if (!this.aClass142_2.aClass332_44.isFileReady(0, this.anIntArrayArray30[local26][local35])) {
 							return false;
 						}
 					}

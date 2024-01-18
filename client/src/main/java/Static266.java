@@ -123,7 +123,7 @@ public final class Static266 {
 
 	@OriginalMember(owner = "client!ifa", name = "a", descriptor = "(B)V")
 	public static void method6784() {
-		@Pc(5) Class83 local5 = null;
+		@Pc(5) FileOnDisk local5 = null;
 		try {
 			local5 = signlink.method8990("2");
 			@Pc(25) Buffer local25 = new Buffer(Static319.anInt5095 * 6 + 3);

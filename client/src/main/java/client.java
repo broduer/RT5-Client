@@ -463,7 +463,7 @@ public final class client extends GameShell {
 			Static125.aClass390_1 = new Class390(js5Archive28);
 		}
 		if (Static198.aClass140_13 == Static473.aClass140_22) {
-			if (Static65.aClass3_1.anInt81 != -1 && !js5Archive7.method7593(0, Static65.aClass3_1.anInt81)) {
+			if (Static65.aClass3_1.anInt81 != -1 && !js5Archive7.isFileReady(0, Static65.aClass3_1.anInt81)) {
 				return 99;
 			}
 
@@ -560,7 +560,7 @@ public final class client extends GameShell {
 			local184 = true;
 			for (local74 = 0; local74 < Static453.aClass158ArrayArray2[Static65.aClass3_1.anInt88].length; local74++) {
 				@Pc(1315) Class158 local1315 = Static453.aClass158ArrayArray2[Static65.aClass3_1.anInt88][local74];
-				if (local1315.anInt3831 == 5 && local1315.anInt3821 != -1 && !js5Archive8.method7593(0, local1315.anInt3821)) {
+				if (local1315.anInt3831 == 5 && local1315.anInt3821 != -1 && !js5Archive8.isFileReady(0, local1315.anInt3821)) {
 					local184 = false;
 				}
 			}

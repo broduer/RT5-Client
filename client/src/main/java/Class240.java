@@ -1,5 +1,4 @@
 import java.awt.Component;
-import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;
@@ -12,10 +11,10 @@ import org.openrs2.deob.annotation.Pc;
 public final class Class240 {
 
 	@OriginalMember(owner = "client!me", name = "b", descriptor = "Ljava/awt/Component;")
-	private Component aComponent2;
+	private Component component;
 
 	@OriginalMember(owner = "client!me", name = "a", descriptor = "Ljava/awt/Robot;")
-	private final Robot aRobot1 = new Robot();
+	private final Robot robot = new Robot();
 
 	@OriginalMember(owner = "client!me", name = "<init>", descriptor = "()V")
 	private Class240() throws Exception {
@@ -28,22 +27,22 @@ public final class Class240 {
 		} else if (arg0 == null) {
 			throw new NullPointerException();
 		}
-		if (this.aComponent2 == arg0) {
+		if (this.component == arg0) {
 			return;
 		}
-		if (this.aComponent2 != null) {
-			this.aComponent2.setCursor(null);
-			this.aComponent2 = null;
+		if (this.component != null) {
+			this.component.setCursor(null);
+			this.component = null;
 		}
 		if (arg0 != null) {
 			arg0.setCursor(arg0.getToolkit().createCustomCursor(new BufferedImage(1, 1, 2), new Point(0, 0), null));
-			this.aComponent2 = arg0;
+			this.component = arg0;
 		}
 	}
 
 	@OriginalMember(owner = "client!me", name = "movemouse", descriptor = "(II)V")
 	private void movemouse(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		this.aRobot1.mouseMove(arg0, arg1);
+		this.robot.mouseMove(arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!me", name = "setcustomcursor", descriptor = "(Ljava/awt/Component;[IIILjava/awt/Point;)V")

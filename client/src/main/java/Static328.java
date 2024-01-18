@@ -9,7 +9,7 @@ public final class Static328 {
 	public static int anInt5446;
 
 	@OriginalMember(owner = "client!kga", name = "O", descriptor = "I")
-	public static final int anInt5444 = Static434.method5860(1600);
+	public static final int anInt5444 = Static434.bitCount(1600);
 
 	@OriginalMember(owner = "client!kga", name = "G", descriptor = "Lclient!pc;")
 	public static final Class289 aClass289_10 = new Class289(4, 3);

@@ -118,7 +118,7 @@ public final class IdkType {
 		@Pc(11) Js5 local11 = this.aClass217_4.aClass332_72;
 		synchronized (this.aClass217_4.aClass332_72) {
 			for (@Pc(15) int local15 = 0; local15 < 5; local15++) {
-				if (this.anIntArray603[local15] != -1 && !this.aClass217_4.aClass332_72.method7593(0, this.anIntArray603[local15])) {
+				if (this.anIntArray603[local15] != -1 && !this.aClass217_4.aClass332_72.isFileReady(0, this.anIntArray603[local15])) {
 					local7 = false;
 				}
 			}
@@ -135,7 +135,7 @@ public final class IdkType {
 		@Pc(15) Js5 local15 = this.aClass217_4.aClass332_72;
 		synchronized (this.aClass217_4.aClass332_72) {
 			for (@Pc(19) int local19 = 0; local19 < this.anIntArray602.length; local19++) {
-				if (!this.aClass217_4.aClass332_72.method7593(0, this.anIntArray602[local19])) {
+				if (!this.aClass217_4.aClass332_72.isFileReady(0, this.anIntArray602[local19])) {
 					local11 = false;
 				}
 			}

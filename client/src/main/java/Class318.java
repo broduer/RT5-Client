@@ -153,7 +153,7 @@ public final class Class318 {
 			}
 			@Pc(116) int local116 = local43 - local41;
 			if (local116 + 2 > 1600) {
-				local81 = Static434.method5860(local116) + 1 - Static328.anInt5444;
+				local81 = Static434.bitCount(local116) + 1 - Static328.anInt5444;
 				local116 = (local116 >> local81) + 2;
 			} else {
 				local81 = 0;

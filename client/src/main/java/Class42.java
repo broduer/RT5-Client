@@ -26,7 +26,7 @@ public final class Class42 {
 	private final GlBuffer aClass2_Sub21_Sub1_1 = new GlBuffer(786336);
 
 	@OriginalMember(owner = "client!bj", name = "r", descriptor = "I")
-	private final int anInt1002 = Static434.method5860(1600);
+	private final int anInt1002 = Static434.bitCount(1600);
 
 	@OriginalMember(owner = "client!bj", name = "s", descriptor = "[[Lclient!up;")
 	private final Class8_Sub4_Sub2[][] aClass8_Sub4_Sub2ArrayArray2 = new Class8_Sub4_Sub2[64][768];
@@ -372,7 +372,7 @@ public final class Class42 {
 				local91 = 0;
 				local118 += 2;
 			} else {
-				local91 = Static434.method5860(local118) + 1 - this.anInt1002;
+				local91 = Static434.bitCount(local118) + 1 - this.anInt1002;
 				local118 = (local118 >> local91) + 2;
 			}
 			local48 = 0;

@@ -12,7 +12,7 @@ public final class Class104 {
 	public SoundPcmStream aClass2_Sub6_Sub2_2;
 
 	@OriginalMember(owner = "client!eka", name = "a", descriptor = "Lclient!uj;")
-	public Node_Sub53 aClass2_Sub53_1;
+	public VorbisSound aClass2_Sub53_1;
 
 	@OriginalMember(owner = "client!eka", name = "t", descriptor = "Lclient!dw;")
 	public Class89 aClass89_1;
