@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static660 {
 
-	@OriginalMember(owner = "client!uu", name = "o", descriptor = "Lclient!lja;")
-	public static Class231 aClass231_4;
-
 	@OriginalMember(owner = "client!uu", name = "n", descriptor = "I")
 	public static int anInt9861 = 0;
 

@@ -1,15 +1,16 @@
+import java.applet.Applet;
 import java.awt.Component;
 import java.awt.EventQueue;
 import java.awt.Frame;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.Transferable;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.URL;
@@ -19,19 +20,59 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!vq")
-public final class Class392 implements Runnable {
+public final class signlink implements Runnable {
 
+	@OriginalMember(owner = "client!fca", name = "a", descriptor = "Ljava/applet/Applet;")
+	public static Applet mainapp;
+	@OriginalMember(owner = "client!tw", name = "w", descriptor = "Ljava/applet/Applet;")
+	public static Applet applet;
+	@OriginalMember(owner = "client!vq", name = "w", descriptor = "I")
+	public static int anInt10385;
+	@OriginalMember(owner = "client!vq", name = "y", descriptor = "Ljava/lang/String;")
+	public static String osNameLower;
+	@OriginalMember(owner = "client!vq", name = "C", descriptor = "Ljava/lang/String;")
+	public static String osVersion;
+	@OriginalMember(owner = "client!vq", name = "c", descriptor = "Ljava/lang/String;")
+	public static String osArch;
+	@OriginalMember(owner = "client!vq", name = "f", descriptor = "Ljava/lang/String;")
+	public static String aString122;
+	@OriginalMember(owner = "client!vq", name = "D", descriptor = "Ljava/lang/String;")
+	public static String javaVendor;
+	@OriginalMember(owner = "client!vq", name = "q", descriptor = "Ljava/lang/String;")
+	public static String javaVersion;
+	@OriginalMember(owner = "client!vq", name = "B", descriptor = "Ljava/lang/String;")
+	public static String userHome;
+	@OriginalMember(owner = "client!vq", name = "v", descriptor = "Ljava/lang/reflect/Method;")
+	public static Method aMethod1;
+	@OriginalMember(owner = "client!vq", name = "z", descriptor = "Ljava/lang/String;")
+	public static String osName;
+	@OriginalMember(owner = "client!vq", name = "A", descriptor = "Ljava/lang/reflect/Method;")
+	public static Method aMethod2;
+	// $FF: synthetic field
+	@OriginalMember(owner = "client!vq", name = "s", descriptor = "Ljava/lang/Class;")
+	public static Class aClass24;
+	// $FF: synthetic field
+	@OriginalMember(owner = "client!vq", name = "p", descriptor = "Ljava/lang/Class;")
+	public static Class aClass25;
+	// $FF: synthetic field
+	@OriginalMember(owner = "client!vq", name = "g", descriptor = "Ljava/lang/Class;")
+	public static Class aClass26;
+	// $FF: synthetic field
+	@OriginalMember(owner = "client!vq", name = "d", descriptor = "Ljava/lang/Class;")
+	public static Class aClass27;
+	@OriginalMember(owner = "client!vq", name = "t", descriptor = "J")
+	public static volatile long aLong317 = 0L;
 	@OriginalMember(owner = "client!vq", name = "m", descriptor = "Lclient!dm;")
 	public Class83 aClass83_2 = null;
 
 	@OriginalMember(owner = "client!vq", name = "l", descriptor = "Lclient!oba;")
-	private Class272 aClass272_8 = null;
+	private PrivilegedRequest aPrivilegedRequest_8 = null;
 
 	@OriginalMember(owner = "client!vq", name = "F", descriptor = "Z")
 	private boolean aBoolean781 = false;
 
 	@OriginalMember(owner = "client!vq", name = "h", descriptor = "Lclient!oba;")
-	private Class272 aClass272_9 = null;
+	private PrivilegedRequest aPrivilegedRequest_9 = null;
 
 	@OriginalMember(owner = "client!vq", name = "i", descriptor = "Lclient!dm;")
 	public Class83 aClass83_4 = null;
@@ -46,7 +87,7 @@ public final class Class392 implements Runnable {
 	public boolean aBoolean782 = false;
 
 	@OriginalMember(owner = "client!vq", name = "x", descriptor = "Ljava/awt/EventQueue;")
-	public EventQueue anEventQueue1;
+	public EventQueue eventQueue;
 
 	@OriginalMember(owner = "client!vq", name = "e", descriptor = "[Lclient!dm;")
 	public Class83[] aClass83Array1;
@@ -70,63 +111,63 @@ public final class Class392 implements Runnable {
 	private final Thread aThread7;
 
 	@OriginalMember(owner = "client!vq", name = "<init>", descriptor = "(ILjava/lang/String;IZ)V")
-	public Class392(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) throws Exception {
-		Static689.aString122 = arg1;
-		Static689.aString124 = "1.1";
-		Static689.aString123 = "Unknown";
+	public signlink(@OriginalArg(0) int arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2, @OriginalArg(3) boolean arg3) throws Exception {
+		aString122 = arg1;
+		javaVersion = "1.1";
+		javaVendor = "Unknown";
 		this.aBoolean782 = arg3;
-		Static689.anInt10385 = arg0;
+		anInt10385 = arg0;
 		try {
-			Static689.aString123 = System.getProperty("java.vendor");
-			Static689.aString124 = System.getProperty("java.version");
+			javaVendor = System.getProperty("java.vendor");
+			javaVersion = System.getProperty("java.version");
 		} catch (@Pc(52) Exception local52) {
 		}
-		if (Static689.aString123.toLowerCase().indexOf("microsoft") != -1) {
+		if (javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			this.aBoolean780 = true;
 		}
 		try {
-			Static689.aString126 = System.getProperty("os.name");
+			osName = System.getProperty("os.name");
 		} catch (@Pc(72) Exception local72) {
-			Static689.aString126 = "Unknown";
+			osName = "Unknown";
 		}
-		Static689.aString119 = Static689.aString126.toLowerCase();
+		osNameLower = osName.toLowerCase();
 		try {
-			Static689.aString121 = System.getProperty("os.arch").toLowerCase();
+			osArch = System.getProperty("os.arch").toLowerCase();
 		} catch (@Pc(87) Exception local87) {
-			Static689.aString121 = "";
+			osArch = "";
 		}
 		try {
-			Static689.aString120 = System.getProperty("os.version").toLowerCase();
+			osVersion = System.getProperty("os.version").toLowerCase();
 		} catch (@Pc(97) Exception local97) {
-			Static689.aString120 = "";
+			osVersion = "";
 		}
 		try {
-			Static689.aString125 = System.getProperty("user.home");
-			if (Static689.aString125 != null) {
-				Static689.aString125 = Static689.aString125 + "/";
+			userHome = System.getProperty("user.home");
+			if (userHome != null) {
+				userHome = userHome + "/";
 			}
 		} catch (@Pc(117) Exception local117) {
 		}
-		if (Static689.aString125 == null) {
-			Static689.aString125 = "~/";
+		if (userHome == null) {
+			userHome = "~/";
 		}
 		try {
-			this.anEventQueue1 = Toolkit.getDefaultToolkit().getSystemEventQueue();
+			this.eventQueue = Toolkit.getDefaultToolkit().getSystemEventQueue();
 		} catch (@Pc(131) Throwable local131) {
 		}
 		if (!this.aBoolean780) {
 			try {
-				Static689.aMethod2 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
+				aMethod2 = Class.forName("java.awt.Component").getDeclaredMethod("setFocusTraversalKeysEnabled", Boolean.TYPE);
 			} catch (@Pc(151) Exception local151) {
 			}
 			try {
-				Static689.aMethod1 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
+				aMethod1 = Class.forName("java.awt.Container").getDeclaredMethod("setFocusCycleRoot", Boolean.TYPE);
 			} catch (@Pc(168) Exception local168) {
 			}
 		}
-		Static649.method8499(Static689.anInt10385, Static689.aString122);
+		Static649.method8499(anInt10385, aString122);
 		if (this.aBoolean782) {
-			this.aClass83_4 = new Class83(Static649.method8498(null, Static689.anInt10385, "random.dat"), "rw", 25L);
+			this.aClass83_4 = new Class83(Static649.method8498(null, anInt10385, "random.dat"), "rw", 25L);
 			this.aClass83_2 = new Class83(Static649.method8497("main_file_cache.dat2"), "rw", 314572800L);
 			this.aClass83_3 = new Class83(Static649.method8497("main_file_cache.idx255"), "rw", 1048576L);
 			this.aClass83Array1 = new Class83[arg2];
@@ -176,43 +217,71 @@ public final class Class392 implements Runnable {
 		this.aThread7.start();
 	}
 
+	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;ILjava/lang/String;I)Lclient!dm;")
+	public static Class83 method8987(@OriginalArg(0) String arg0, @OriginalArg(1) int arg1, @OriginalArg(2) String arg2) {
+		@Pc(29) String local29;
+		if (arg1 == 33) {
+			local29 = "jagex_" + arg0 + "_preferences" + arg2 + "_rc.dat";
+		} else if (arg1 == 34) {
+			local29 = "jagex_" + arg0 + "_preferences" + arg2 + "_wip.dat";
+		} else {
+			local29 = "jagex_" + arg0 + "_preferences" + arg2 + ".dat";
+		}
+		@Pc(121) String[] local121 = new String[] { "c:/rscache/", "/rscache/", userHome, "c:/windows/", "c:/winnt/", "c:/", "/tmp/", "" };
+		for (@Pc(123) int local123 = 0; local123 < local121.length; local123++) {
+			@Pc(128) String local128 = local121[local123];
+			if (local128.length() <= 0 || (new File(local128)).exists()) {
+				try {
+					return new Class83(new File(local128, local29), "rw", 10000L);
+				} catch (@Pc(158) Exception local158) {
+				}
+			}
+		}
+		return null;
+	}
+
+	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ILjava/lang/String;)Lclient!dm;")
+	public static Class83 method8990(@OriginalArg(1) String arg0) {
+		return method8987(aString122, anInt10385, arg0);
+	}
+
 	@OriginalMember(owner = "client!vq", name = "c", descriptor = "(B)Ljava/lang/Object;")
 	public Object method8983() {
 		return this.anObject21;
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IIIII)Lclient!oba;")
-	public Class272 method8984(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
+	public PrivilegedRequest method8984(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) int arg2) {
 		return this.method9000(arg0 << 16, 6, null, (arg2 << 16) + arg1);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;I)Lclient!oba;")
-	public Class272 method8985(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
+	public PrivilegedRequest method8985(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) {
 		return this.method9000(0, 9, new Object[] { arg0, arg1 }, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;ZZI)Lclient!oba;")
-	public Class272 method8986(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
+	public PrivilegedRequest method8986(@OriginalArg(0) String arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) int arg2) {
 		return this.method9000(0, arg1 ? 22 : 1, arg0, arg2);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(ZLjava/lang/String;B)Lclient!oba;")
-	public Class272 method8988(@OriginalArg(1) String arg0) {
+	public PrivilegedRequest method8988(@OriginalArg(1) String arg0) {
 		return this.method9000(0, 12, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BI)Lclient!oba;")
-	public Class272 method8989(@OriginalArg(1) int arg0) {
+	public PrivilegedRequest method8989(@OriginalArg(1) int arg0) {
 		return this.method9000(0, 3, null, arg0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(B)Lclient!oba;")
-	public Class272 method8991() {
+	public PrivilegedRequest method8991() {
 		return this.method9000(0, 5, null, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(I)V")
-	public void method8992() {
+	public void stop() {
 		synchronized (this) {
 			this.aBoolean781 = true;
 			this.notifyAll();
@@ -252,7 +321,7 @@ public final class Class392 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/String;B)Lclient!oba;")
-	public Class272 method8993(@OriginalArg(0) String arg0) {
+	public PrivilegedRequest method8993(@OriginalArg(0) String arg0) {
 		return this.method9000(0, 16, arg0, 0);
 	}
 
@@ -269,12 +338,12 @@ public final class Class392 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/lang/Class;[Ljava/lang/Class;Ljava/lang/String;Z)Lclient!oba;")
-	public Class272 method8995(@OriginalArg(0) Class arg0, @OriginalArg(1) Class[] arg1, @OriginalArg(2) String arg2) {
+	public PrivilegedRequest method8995(@OriginalArg(0) Class arg0, @OriginalArg(1) Class[] arg1, @OriginalArg(2) String arg2) {
 		return this.method9000(0, 8, new Object[] { arg0, arg2, arg1 }, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(Ljava/awt/Frame;I)Lclient!oba;")
-	public Class272 method8996(@OriginalArg(0) Frame arg0) {
+	public PrivilegedRequest method8996(@OriginalArg(0) Frame arg0) {
 		return this.method9000(0, 7, arg0, 0);
 	}
 
@@ -290,28 +359,28 @@ public final class Class392 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BLjava/lang/Runnable;I)Lclient!oba;")
-	public Class272 method8998(@OriginalArg(1) Runnable arg0, @OriginalArg(2) int arg1) {
+	public PrivilegedRequest startThread(@OriginalArg(1) Runnable arg0, @OriginalArg(2) int arg1) {
 		return this.method9000(0, 2, arg0, arg1);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(BLjava/net/URL;)Lclient!oba;")
-	public Class272 method8999(@OriginalArg(1) URL arg0) {
+	public PrivilegedRequest openurl(@OriginalArg(1) URL arg0) {
 		return this.method9000(0, 4, arg0, 0);
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IILjava/lang/Object;II)Lclient!oba;")
-	private Class272 method9000(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Object arg2, @OriginalArg(4) int arg3) {
-		@Pc(3) Class272 local3 = new Class272();
+	private PrivilegedRequest method9000(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) Object arg2, @OriginalArg(4) int arg3) {
+		@Pc(3) PrivilegedRequest local3 = new PrivilegedRequest();
 		local3.anObject12 = arg2;
 		local3.anInt6809 = arg3;
 		local3.anInt6811 = arg1;
 		local3.anInt6808 = arg0;
 		synchronized (this) {
-			if (this.aClass272_9 == null) {
-				this.aClass272_9 = this.aClass272_8 = local3;
+			if (this.aPrivilegedRequest_9 == null) {
+				this.aPrivilegedRequest_9 = this.aPrivilegedRequest_8 = local3;
 			} else {
-				this.aClass272_9.aClass272_5 = local3;
-				this.aClass272_9 = local3;
+				this.aPrivilegedRequest_9.aPrivilegedRequest_5 = local3;
+				this.aPrivilegedRequest_9 = local3;
 			}
 			this.notify();
 			return local3;
@@ -320,11 +389,11 @@ public final class Class392 implements Runnable {
 
 	@OriginalMember(owner = "client!vq", name = "b", descriptor = "(B)V")
 	public void method9001() {
-		Static689.aLong317 = Static588.method7722() + 5000L;
+		aLong317 = Static588.currentTimeMillis() + 5000L;
 	}
 
 	@OriginalMember(owner = "client!vq", name = "a", descriptor = "(IB[ILjava/awt/Component;Ljava/awt/Point;I)Lclient!oba;")
-	public Class272 method9002(@OriginalArg(0) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) int arg4) {
+	public PrivilegedRequest method9002(@OriginalArg(0) int arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) Component arg2, @OriginalArg(4) Point arg3, @OriginalArg(5) int arg4) {
 		return this.method9000(arg0, 17, new Object[] { arg2, arg1, arg3 }, arg4);
 	}
 
@@ -332,17 +401,17 @@ public final class Class392 implements Runnable {
 	@Override
 	public void run() {
 		while (true) {
-			@Pc(15) Class272 local15;
+			@Pc(15) PrivilegedRequest local15;
 			synchronized (this) {
 				while (true) {
 					if (this.aBoolean781) {
 						return;
 					}
-					if (this.aClass272_8 != null) {
-						local15 = this.aClass272_8;
-						this.aClass272_8 = this.aClass272_8.aClass272_5;
-						if (this.aClass272_8 == null) {
-							this.aClass272_9 = null;
+					if (this.aPrivilegedRequest_8 != null) {
+						local15 = this.aPrivilegedRequest_8;
+						this.aPrivilegedRequest_8 = this.aPrivilegedRequest_8.aPrivilegedRequest_5;
+						if (this.aPrivilegedRequest_8 == null) {
+							this.aPrivilegedRequest_9 = null;
 						}
 						break;
 					}
@@ -355,18 +424,18 @@ public final class Class392 implements Runnable {
 			try {
 				@Pc(42) int local42 = local15.anInt6811;
 				if (local42 == 1) {
-					if (Static588.method7722() < Static689.aLong317) {
+					if (Static588.currentTimeMillis() < aLong317) {
 						throw new IOException();
 					}
-					local15.anObject13 = new Socket(InetAddress.getByName((String) local15.anObject12), local15.anInt6809);
+					local15.result = new Socket(InetAddress.getByName((String) local15.anObject12), local15.anInt6809);
 				} else if (local42 == 22) {
-					if (Static689.aLong317 > Static588.method7722()) {
+					if (aLong317 > Static588.currentTimeMillis()) {
 						throw new IOException();
 					}
 					try {
-						local15.anObject13 = Static327.method4901((String) local15.anObject12, local15.anInt6809).method6104();
+						local15.result = Static327.method4901((String) local15.anObject12, local15.anInt6809).method6104();
 					} catch (@Pc(947) IOException_Sub1 local947) {
-						local15.anObject13 = local947.getMessage();
+						local15.result = local947.getMessage();
 						throw local947;
 					}
 				} else if (local42 == 2) {
@@ -374,12 +443,12 @@ public final class Class392 implements Runnable {
 					local911.setDaemon(true);
 					local911.start();
 					local911.setPriority(local15.anInt6809);
-					local15.anObject13 = local911;
+					local15.result = local911;
 				} else if (local42 == 4) {
-					if (Static588.method7722() < Static689.aLong317) {
+					if (Static588.currentTimeMillis() < aLong317) {
 						throw new IOException();
 					}
-					local15.anObject13 = new DataInputStream(((URL) local15.anObject12).openStream());
+					local15.result = new DataInputStream(((URL) local15.anObject12).openStream());
 				} else {
 					@Pc(102) Object[] local102;
 					if (local42 == 8) {
@@ -387,16 +456,16 @@ public final class Class392 implements Runnable {
 						if (this.aBoolean782 && ((Class) local102[0]).getClassLoader() == null) {
 							throw new SecurityException();
 						}
-						local15.anObject13 = ((Class) local102[0]).getDeclaredMethod((String) local102[1], (Class[]) local102[2]);
+						local15.result = ((Class) local102[0]).getDeclaredMethod((String) local102[1], (Class[]) local102[2]);
 					} else if (local42 == 9) {
 						local102 = (Object[]) local15.anObject12;
 						if (this.aBoolean782 && ((Class) local102[0]).getClassLoader() == null) {
 							throw new SecurityException();
 						}
-						local15.anObject13 = ((Class) local102[0]).getDeclaredField((String) local102[1]);
+						local15.result = ((Class) local102[0]).getDeclaredField((String) local102[1]);
 					} else if (local42 == 18) {
 						@Pc(136) Clipboard local136 = Toolkit.getDefaultToolkit().getSystemClipboard();
-						local15.anObject13 = local136.getContents(null);
+						local15.result = local136.getContents(null);
 					} else if (local42 == 19) {
 						@Pc(149) Transferable local149 = (Transferable) local15.anObject12;
 						@Pc(152) Clipboard local152 = Toolkit.getDefaultToolkit().getSystemClipboard();
@@ -404,39 +473,39 @@ public final class Class392 implements Runnable {
 					} else if (this.aBoolean782) {
 						@Pc(220) String local220;
 						if (local42 == 3) {
-							if (Static588.method7722() < Static689.aLong317) {
+							if (Static588.currentTimeMillis() < aLong317) {
 								throw new IOException();
 							}
 							local220 = (local15.anInt6809 >> 24 & 0xFF) + "." + (local15.anInt6809 >> 16 & 0xFF) + "." + (local15.anInt6809 >> 8 & 0xFF) + "." + (local15.anInt6809 & 0xFF);
-							local15.anObject13 = InetAddress.getByName(local220).getHostName();
+							local15.result = InetAddress.getByName(local220).getHostName();
 						} else if (local42 == 21) {
-							if (Static588.method7722() < Static689.aLong317) {
+							if (Static588.currentTimeMillis() < aLong317) {
 								throw new IOException();
 							}
-							local15.anObject13 = InetAddress.getByName((String) local15.anObject12).getAddress();
+							local15.result = InetAddress.getByName((String) local15.anObject12).getAddress();
 						} else if (local42 == 5) {
 							if (this.aBoolean780) {
-								local15.anObject13 = this.aClass15_1.method250();
+								local15.result = this.aClass15_1.method250();
 							} else {
-								local15.anObject13 = Class.forName("Class66").getMethod("listmodes").invoke(this.anObject19);
+								local15.result = Class.forName("Class66").getMethod("listmodes").invoke(this.anObject19);
 							}
 						} else if (local42 == 6) {
 							@Pc(268) Frame local268 = new Frame("Jagex Full Screen");
-							local15.anObject13 = local268;
+							local15.result = local268;
 							local268.setResizable(false);
 							if (this.aBoolean780) {
 								this.aClass15_1.method248(local268, local15.anInt6808 >> 16, local15.anInt6808 & 0xFFFF, local15.anInt6809 & 0xFFFF, local15.anInt6809 >>> 16);
 							} else {
-								Class.forName("Class66").getMethod("enter", Static689.aClass24 == null ? (Static689.aClass24 = Class.forName("java.awt.Frame")) : Static689.aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6809 >>> 16), new Integer(local15.anInt6809 & 0xFFFF), Integer.valueOf(local15.anInt6808 >> 16), new Integer(local15.anInt6808 & 0xFFFF));
+								Class.forName("Class66").getMethod("enter", aClass24 == null ? (aClass24 = Class.forName("java.awt.Frame")) : aClass24, Integer.TYPE, Integer.TYPE, Integer.TYPE, Integer.TYPE).invoke(this.anObject19, local268, Integer.valueOf(local15.anInt6809 >>> 16), new Integer(local15.anInt6809 & 0xFFFF), Integer.valueOf(local15.anInt6808 >> 16), new Integer(local15.anInt6808 & 0xFFFF));
 							}
 						} else if (local42 != 7) {
 							@Pc(438) Class83 local438;
 							if (local42 == 12) {
-								local438 = Static689.method8987(Static689.aString122, Static689.anInt10385, (String) local15.anObject12);
-								local15.anObject13 = local438;
+								local438 = method8987(aString122, anInt10385, (String) local15.anObject12);
+								local15.result = local438;
 							} else if (local42 == 13) {
-								local438 = Static689.method8987("", Static689.anInt10385, (String) local15.anObject12);
-								local15.anObject13 = local438;
+								local438 = method8987("", anInt10385, (String) local15.anObject12);
+								local15.result = local438;
 							} else if (this.aBoolean782 && local42 == 14) {
 								@Pc(460) int local460 = local15.anInt6809;
 								@Pc(463) int local463 = local15.anInt6808;
@@ -451,14 +520,14 @@ public final class Class392 implements Runnable {
 								if (this.aBoolean780) {
 									this.aCallback_Sub1_1.method6439(local534, local538);
 								} else {
-									Class.forName("Class240").getDeclaredMethod("showcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
+									Class.forName("Class240").getDeclaredMethod("showcursor", aClass25 == null ? (aClass25 = Class.forName("java.awt.Component")) : aClass25, Boolean.TYPE).invoke(this.anObject20, local538, Boolean.valueOf(local534));
 								}
 							} else if (!this.aBoolean780 && local42 == 17) {
 								local102 = (Object[]) local15.anObject12;
-								Class.forName("Class240").getDeclaredMethod("setcustomcursor", Static689.aClass25 == null ? (Static689.aClass25 = Class.forName("java.awt.Component")) : Static689.aClass25, Static689.aClass26 == null ? (Static689.aClass26 = Class.forName("[I")) : Static689.aClass26, Integer.TYPE, Integer.TYPE, Static689.aClass27 == null ? (Static689.aClass27 = Class.forName("java.awt.Point")) : Static689.aClass27).invoke(this.anObject20, local102[0], local102[1], Integer.valueOf(local15.anInt6809), new Integer(local15.anInt6808), local102[2]);
+								Class.forName("Class240").getDeclaredMethod("setcustomcursor", aClass25 == null ? (aClass25 = Class.forName("java.awt.Component")) : aClass25, aClass26 == null ? (aClass26 = Class.forName("[I")) : aClass26, Integer.TYPE, Integer.TYPE, aClass27 == null ? (aClass27 = Class.forName("java.awt.Point")) : aClass27).invoke(this.anObject20, local102[0], local102[1], Integer.valueOf(local15.anInt6809), new Integer(local15.anInt6808), local102[2]);
 							} else if (local42 == 16) {
 								try {
-									if (!Static689.aString119.startsWith("win")) {
+									if (!osNameLower.startsWith("win")) {
 										throw new Exception();
 									}
 									local220 = (String) local15.anObject12;
@@ -472,9 +541,9 @@ public final class Class392 implements Runnable {
 										}
 									}
 									Runtime.getRuntime().exec("cmd /c start \"j\" \"" + local220 + "\"");
-									local15.anObject13 = null;
+									local15.result = null;
 								} catch (@Pc(793) Exception local793) {
-									local15.anObject13 = local793;
+									local15.result = local793;
 									throw local793;
 								}
 							} else {
@@ -489,11 +558,11 @@ public final class Class392 implements Runnable {
 						throw new Exception("");
 					}
 				}
-				local15.anInt6810 = 1;
+				local15.status = 1;
 			} catch (@Pc(958) ThreadDeath local958) {
 				throw local958;
 			} catch (@Pc(961) Throwable local961) {
-				local15.anInt6810 = 2;
+				local15.status = 2;
 			}
 			synchronized (local15) {
 				local15.notify();

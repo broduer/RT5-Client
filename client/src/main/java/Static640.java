@@ -12,7 +12,7 @@ public final class Static640 {
 
 	@OriginalMember(owner = "client!uda", name = "a", descriptor = "(IZ)V")
 	public static void method8442(@OriginalArg(1) boolean arg0) {
-		Static19.method265(arg0, Static377.anInt5950, Static380.anInt5999, Static680.anInt10317);
+		Static19.method265(arg0, Static377.anInt5950, GameShell.canvasHeight, GameShell.canvasWidth);
 	}
 
 	@OriginalMember(owner = "client!uda", name = "i", descriptor = "(I)Lclient!wca;")

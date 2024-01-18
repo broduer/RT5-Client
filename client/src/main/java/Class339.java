@@ -172,7 +172,7 @@ public final class Class339 {
 			this.aClass152_9.method9099(local10, 0, arg0, local12);
 			this.aClass114_8 = null;
 			this.aBoolean663 = false;
-			this.anInt8667 = Static333.anInt5474;
+			this.anInt8667 = client.cycle;
 		}
 	}
 
@@ -283,7 +283,7 @@ public final class Class339 {
 	private void method7687(@OriginalArg(0) Class8_Sub2 arg0, @OriginalArg(1) boolean arg1) {
 		if (!this.aClass152_9.method9116()) {
 			this.method7683(0, -1, false);
-		} else if (this.aClass152_9.method9119(Static333.anInt5474 - this.anInt8667)) {
+		} else if (this.aClass152_9.method9119(client.cycle - this.anInt8667)) {
 			if (Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4371() == 2) {
 				this.aBoolean663 = false;
 			}
@@ -294,7 +294,7 @@ public final class Class339 {
 			}
 		}
 		if (arg1) {
-			this.anInt8667 = Static333.anInt5474;
+			this.anInt8667 = client.cycle;
 		}
 	}
 
@@ -311,7 +311,7 @@ public final class Class339 {
 				local37 = local37.method1301(arg3 + 9840, Static1.anInt10827 == 3 ? Static298.anInterface23_2 : Static34.aClass306_1);
 			}
 			if (local37 != null) {
-				this.aClass8_Sub5_7 = Static257.method3654(Static333.anInt5474, true);
+				this.aClass8_Sub5_7 = Static257.method3654(client.cycle, true);
 			}
 		}
 		if (this.aClass8_Sub5_7 == null) {
@@ -319,9 +319,9 @@ public final class Class339 {
 		}
 		arg1.method7483(arg8);
 		if (arg2) {
-			this.aClass8_Sub5_7.method3643(arg4, Static333.anInt5474, local11, local14);
+			this.aClass8_Sub5_7.method3643(arg4, client.cycle, local11, local14);
 		} else {
-			this.aClass8_Sub5_7.method3649(Static333.anInt5474);
+			this.aClass8_Sub5_7.method3649(client.cycle);
 		}
 		this.aClass8_Sub5_7.method3658(this.aByte132, arg6, arg5, arg7, arg0);
 	}

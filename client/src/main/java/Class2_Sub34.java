@@ -133,7 +133,7 @@ public final class Class2_Sub34 extends Class2 {
 	@OriginalMember(owner = "client!kv", name = "<init>", descriptor = "(Lclient!ul;I)V")
 	public Class2_Sub34(@OriginalArg(0) Class379 arg0, @OriginalArg(1) int arg1) {
 		this.aClass379_3 = arg0;
-		this.aClass223_1 = new Class223(Static446.aClass392_6.aBoolean782, Static369.anInt4277, Static495.anInt7444, Static689.aString121.toLowerCase().indexOf("arm") != -1);
+		this.aClass223_1 = new Class223(GameShell.sign.aBoolean782, GameShell.maxMemory, Static495.cpucount, signlink.osArch.toLowerCase().indexOf("arm") != -1);
 		this.aClass57_Sub29_1 = new Class57_Sub29(arg1, this);
 		this.method5110(true);
 	}
@@ -141,7 +141,7 @@ public final class Class2_Sub34 extends Class2 {
 	@OriginalMember(owner = "client!kv", name = "<init>", descriptor = "(Lclient!ge;Lclient!ul;I)V")
 	public Class2_Sub34(@OriginalArg(0) Class2_Sub21 arg0, @OriginalArg(1) Class379 arg1, @OriginalArg(2) int arg2) {
 		this.aClass379_3 = arg1;
-		this.aClass223_1 = new Class223(Static446.aClass392_6.aBoolean782, Static369.anInt4277, Static495.anInt7444, Static689.aString121.indexOf("arm") != -1);
+		this.aClass223_1 = new Class223(GameShell.sign.aBoolean782, GameShell.maxMemory, Static495.cpucount, signlink.osArch.indexOf("arm") != -1);
 		this.aClass57_Sub29_1 = new Class57_Sub29(arg2, this);
 		this.method5109(arg0);
 	}

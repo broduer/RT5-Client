@@ -51,7 +51,7 @@ public final class Class321_Sub1 extends Class321 implements KeyListener, FocusL
 		local7.aChar4 = arg0;
 		local7.anInt2890 = arg1;
 		local7.anInt2895 = arg2;
-		local7.aLong99 = Static588.method7722();
+		local7.aLong99 = Static588.currentTimeMillis();
 		this.aClass341_71.method7718(local7);
 	}
 
@@ -152,7 +152,7 @@ public final class Class321_Sub1 extends Class321 implements KeyListener, FocusL
 	private void method8495(@OriginalArg(1) Component arg0) {
 		this.method8496();
 		this.aComponent4 = arg0;
-		@Pc(11) Method local11 = Static689.aMethod2;
+		@Pc(11) Method local11 = signlink.aMethod2;
 		if (local11 != null) {
 			try {
 				local11.invoke(this.aComponent4, Boolean.FALSE);

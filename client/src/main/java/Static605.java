@@ -227,8 +227,8 @@ public final class Static605 {
 								}
 							}
 						}
-						@Pc(1053) Class8_Sub2_Sub1_Sub1 local1053 = new Class8_Sub2_Sub1_Sub1(local219, Static87.anInt1818, Static87.anInt1818, local21, local25, local812, local322 + Static333.anInt5474, Static333.anInt5474 + local353, local843, local847, local212, local217, local290, local764, local46);
-						local1053.method813(Static102.method2025(Static87.anInt1818, -29754, local537, local52) - local290, local322 + Static333.anInt5474, local537, local52);
+						@Pc(1053) Class8_Sub2_Sub1_Sub1 local1053 = new Class8_Sub2_Sub1_Sub1(local219, Static87.anInt1818, Static87.anInt1818, local21, local25, local812, local322 + client.cycle, client.cycle + local353, local843, local847, local212, local217, local290, local764, local46);
+						local1053.method813(Static102.method2025(Static87.anInt1818, -29754, local537, local52) - local290, local322 + client.cycle, local537, local52);
 						Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local1053));
 					}
 				} else if (Static77.aClass289_5 == arg0) {
@@ -327,8 +327,8 @@ public final class Static605 {
 						local212 <<= 0x2;
 						local38 = local38 * 512 + 256;
 						local34 = local34 * 512 + 256;
-						@Pc(1728) Class8_Sub2_Sub1_Sub1 local1728 = new Class8_Sub2_Sub1_Sub1(local52, Static87.anInt1818, Static87.anInt1818, local25, local34, local537, local217 + Static333.anInt5474, local219 + Static333.anInt5474, local812, local290, 0, local46, local212, local1540, -1);
-						local1728.method813(Static102.method2025(Static87.anInt1818, -29754, local42, local38) - local212, Static333.anInt5474 + local217, local42, local38);
+						@Pc(1728) Class8_Sub2_Sub1_Sub1 local1728 = new Class8_Sub2_Sub1_Sub1(local52, Static87.anInt1818, Static87.anInt1818, local25, local34, local537, local217 + client.cycle, local219 + client.cycle, local812, local290, 0, local46, local212, local1540, -1);
+						local1728.method813(Static102.method2025(Static87.anInt1818, -29754, local42, local38) - local212, client.cycle + local217, local42, local38);
 						Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local1728));
 					}
 				} else if (Static210.aClass289_9 == arg0) {
@@ -388,7 +388,7 @@ public final class Static605 {
 						}
 					}
 				} else {
-					Static240.method3496(null, "T3 - " + arg0);
+					TracingException.report(null, "T3 - " + arg0);
 					Static233.method3409(false);
 				}
 			}

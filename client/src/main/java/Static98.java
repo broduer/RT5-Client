@@ -6,7 +6,7 @@ public final class Static98 {
 	public static double aDouble9;
 
 	@OriginalMember(owner = "client!db", name = "W", descriptor = "Z")
-	public static boolean aBoolean191 = false;
+	public static boolean js = false;
 
 	@OriginalMember(owner = "client!db", name = "O", descriptor = "J")
 	public static long aLong71 = -1L;

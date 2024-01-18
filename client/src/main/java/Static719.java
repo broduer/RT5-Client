@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static719 {
 
 	@OriginalMember(owner = "client!wq", name = "V", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_5;
+	public static AudioChannel musicChannel;
 
 	@OriginalMember(owner = "client!wq", name = "T", descriptor = "I")
 	public static int anInt10532;
@@ -121,42 +121,42 @@ public final class Static719 {
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 70) {
-			Static559.aClass329_7 = new Class329(arg1, 11, true, Static434.aCanvas7);
+			Static559.aClass329_7 = new Class329(arg1, 11, true, GameShell.canvas);
 			Static273.anInt4416 = 73;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 73) {
-			Static484.aClass329_6 = new Class329(arg1, 12, true, Static434.aCanvas7);
+			Static484.aClass329_6 = new Class329(arg1, 12, true, GameShell.canvas);
 			Static273.anInt4416 = 76;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 76) {
-			Static142.aClass329_1 = new Class329(arg1, 14, true, Static434.aCanvas7);
+			Static142.aClass329_1 = new Class329(arg1, 14, true, GameShell.canvas);
 			Static273.anInt4416 = 79;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 79) {
-			Static651.aClass329_8 = new Class329(arg1, 17, true, Static434.aCanvas7);
+			Static651.aClass329_8 = new Class329(arg1, 17, true, GameShell.canvas);
 			Static273.anInt4416 = 82;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 82) {
-			Static275.aClass329_2 = new Class329(arg1, 19, true, Static434.aCanvas7);
+			Static275.aClass329_2 = new Class329(arg1, 19, true, GameShell.canvas);
 			Static273.anInt4416 = 85;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 85) {
-			Static390.aClass329_5 = new Class329(arg1, 22, true, Static434.aCanvas7);
+			Static390.aClass329_5 = new Class329(arg1, 22, true, GameShell.canvas);
 			Static273.anInt4416 = 88;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else if (Static273.anInt4416 == 88) {
-			Static364.aClass329_4 = new Class329(arg1, 26, true, Static434.aCanvas7);
+			Static364.aClass329_4 = new Class329(arg1, 26, true, GameShell.canvas);
 			Static273.anInt4416 = 91;
 			Static314.method4575(true);
 			Static199.method2977();
 		} else {
-			Static359.aClass329_3 = new Class329(arg1, 30, true, Static434.aCanvas7);
+			Static359.aClass329_3 = new Class329(arg1, 30, true, GameShell.canvas);
 			Static273.anInt4416 = 100;
 			Static314.method4575(true);
 			Static199.method2977();

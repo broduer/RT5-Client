@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class231 {
 
 	@OriginalMember(owner = "client!lja", name = "e", descriptor = "I")
-	public int anInt5876;
+	public int id;
 
 	@OriginalMember(owner = "client!lja", name = "i", descriptor = "Ljava/lang/String;")
-	public String aString60;
+	public String address;
 
 	@OriginalMember(owner = "client!lja", name = "m", descriptor = "I")
-	public int anInt5874 = 43594;
+	public int defaultPort = 43594;
 
 	@OriginalMember(owner = "client!lja", name = "k", descriptor = "I")
-	public int anInt5873 = 443;
+	public int alternatePort = 443;
 
 	@OriginalMember(owner = "client!lja", name = "d", descriptor = "Z")
 	private boolean aBoolean449 = false;
@@ -36,8 +36,8 @@ public final class Class231 {
 	}
 
 	@OriginalMember(owner = "client!lja", name = "a", descriptor = "(BLclient!vq;)Lclient!oba;")
-	public Class272 method5270(@OriginalArg(1) Class392 arg0) {
-		return arg0.method8986(this.aString60, this.aBoolean449, this.aBoolean450 ? this.anInt5873 : this.anInt5874);
+	public PrivilegedRequest method5270(@OriginalArg(1) signlink arg0) {
+		return arg0.method8986(this.address, this.aBoolean449, this.aBoolean450 ? this.alternatePort : this.defaultPort);
 	}
 
 	@OriginalMember(owner = "client!lja", name = "a", descriptor = "(ILclient!lja;)Z")
@@ -45,7 +45,7 @@ public final class Class231 {
 		if (arg0 == null) {
 			return false;
 		} else {
-			return arg0.anInt5876 == this.anInt5876 && this.aString60.equals(arg0.aString60);
+			return arg0.id == this.id && this.address.equals(arg0.address);
 		}
 	}
 }

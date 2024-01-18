@@ -62,7 +62,7 @@ public final class Static576 {
 						}
 					}
 					if (Static426.aClass56_2 != null) {
-						Static426.aClass56_2.method3582(Static581.aClass2_Sub6_Sub1_3);
+						Static426.aClass56_2.setStream(Static581.aClass2_Sub6_Sub1_3);
 					}
 					Static146.aLong95 = 0L;
 					Static12.aClass123_4 = null;

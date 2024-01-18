@@ -9,7 +9,7 @@ public final class Static229 {
 	public static void method3368() {
 		if (Static473.aClass140_22 != null) {
 			Static449.aClass366_1 = new Class366();
-			Static449.aClass366_1.method8381(Static473.aClass140_22.anInt3280, Static473.aClass140_22.aClass32_64.method877(Static51.anInt1056), Static473.aClass140_22, Static72.aLong52);
+			Static449.aClass366_1.method8381(Static473.aClass140_22.anInt3280, Static473.aClass140_22.aClass32_64.method877(client.lang), Static473.aClass140_22, Static72.aLong52);
 			Static242.aThread1 = new Thread(Static449.aClass366_1, "");
 			Static242.aThread1.start();
 		}

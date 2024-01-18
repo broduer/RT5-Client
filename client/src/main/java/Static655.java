@@ -24,18 +24,18 @@ public final class Static655 {
 	public static int anInt9793 = 0;
 
 	@OriginalMember(owner = "client!un", name = "a", descriptor = "(Lclient!vq;ILjava/awt/Frame;)V")
-	public static void method8569(@OriginalArg(0) Class392 arg0, @OriginalArg(2) Frame arg1) {
+	public static void method8569(@OriginalArg(0) signlink arg0, @OriginalArg(2) Frame arg1) {
 		while (true) {
-			@Pc(10) Class272 local10 = arg0.method8996(arg1);
-			while (local10.anInt6810 == 0) {
-				Static638.method8402(10L);
+			@Pc(10) PrivilegedRequest local10 = arg0.method8996(arg1);
+			while (local10.status == 0) {
+				ThreadUtils.sleep(10L);
 			}
-			if (local10.anInt6810 == 1) {
+			if (local10.status == 1) {
 				arg1.setVisible(false);
 				arg1.dispose();
 				return;
 			}
-			Static638.method8402(100L);
+			ThreadUtils.sleep(100L);
 		}
 	}
 }

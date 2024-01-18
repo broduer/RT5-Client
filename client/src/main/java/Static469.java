@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static469 {
 
 	@OriginalMember(owner = "client!oq", name = "i", descriptor = "[Z")
-	public static final boolean[] aBooleanArray23 = new boolean[100];
+	public static final boolean[] rectangleRedraw = new boolean[100];
 
 	@OriginalMember(owner = "client!oq", name = "f", descriptor = "I")
 	public static int anInt7093 = 0;

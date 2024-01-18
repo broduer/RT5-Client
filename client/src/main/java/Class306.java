@@ -20,10 +20,10 @@ public final class Class306 implements Interface23 {
 		this.anIntArray621[arg0] = arg1;
 		@Pc(24) Class2_Sub48 local24 = (Class2_Sub48) this.aClass28_39.method738(arg0);
 		if (local24 == null) {
-			local24 = new Class2_Sub48(Static588.method7722() + 500L);
+			local24 = new Class2_Sub48(Static588.currentTimeMillis() + 500L);
 			this.aClass28_39.method735(arg0, local24);
 		} else {
-			local24.aLong264 = Static588.method7722() + 500L;
+			local24.aLong264 = Static588.currentTimeMillis() + 500L;
 		}
 	}
 
@@ -86,7 +86,7 @@ public final class Class306 implements Interface23 {
 
 	@OriginalMember(owner = "client!qga", name = "a", descriptor = "(IZ)I")
 	public int method6879(@OriginalArg(1) boolean arg0) {
-		@Pc(8) long local8 = Static588.method7722();
+		@Pc(8) long local8 = Static588.currentTimeMillis();
 		for (@Pc(23) Class2_Sub48 local23 = arg0 ? (Class2_Sub48) this.aClass28_39.method736() : (Class2_Sub48) this.aClass28_39.method740(); local23 != null; local23 = (Class2_Sub48) this.aClass28_39.method740()) {
 			if ((local23.aLong264 & 0x3FFFFFFFFFFFFFFFL) < local8) {
 				if ((local23.aLong264 & 0x4000000000000000L) != 0L) {
@@ -109,7 +109,7 @@ public final class Class306 implements Interface23 {
 			local24 = new Class2_Sub48(4611686018427387905L);
 			this.aClass28_39.method735(arg0, local24);
 		} else if (local24.aLong264 != 4611686018427387905L) {
-			local24.aLong264 = Static588.method7722() + 500L | 0x4000000000000000L;
+			local24.aLong264 = Static588.currentTimeMillis() + 500L | 0x4000000000000000L;
 		}
 	}
 }

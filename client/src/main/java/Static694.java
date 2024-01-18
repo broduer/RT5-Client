@@ -43,7 +43,7 @@ public final class Static694 {
 	}
 
 	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(Lclient!ha;Ljava/lang/String;ZLclient!ve;Lclient!da;I)V")
-	public static void method9035(@OriginalArg(0) Class19 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class383 arg3, @OriginalArg(4) Class14 arg4) {
+	public static void renderLoadingText(@OriginalArg(0) Class19 arg0, @OriginalArg(1) String arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class383 arg3, @OriginalArg(4) Class14 arg4) {
 		@Pc(15) boolean local15 = !Static483.aBoolean546 || Static71.method1525();
 		if (!local15) {
 			return;

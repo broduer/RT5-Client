@@ -8,7 +8,7 @@ public final class Static338 {
 	public static int anInt5583;
 
 	@OriginalMember(owner = "client!km", name = "c", descriptor = "I")
-	public static int anInt5582 = 0;
+	public static int colourid = 0;
 
 	@OriginalMember(owner = "client!km", name = "a", descriptor = "I")
 	public static int anInt5584 = 0;

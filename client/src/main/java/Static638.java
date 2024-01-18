@@ -1,4 +1,3 @@
-import java.awt.Component;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,81 +6,11 @@ public final class Static638 {
 
 	@OriginalMember(owner = "client!uca", name = "c", descriptor = "(I)V")
 	public static void method8400() {
-		@Pc(5) Class130[] local5 = Class43.aClass130Array1;
 		synchronized (Class43.aClass130Array1) {
 			for (@Pc(9) int local9 = 0; local9 < Class43.aClass130Array1.length; local9++) {
 				Class43.aClass130Array1[local9] = new Class130();
 				Static159.anIntArray245[local9] = 0;
 			}
-		}
-	}
-
-	@OriginalMember(owner = "client!uca", name = "a", descriptor = "(Lclient!vq;BIILjava/awt/Component;)Lclient!cd;")
-	public static Class56 method8401(@OriginalArg(0) Class392 arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Component arg3) {
-		if (Static686.anInt8968 == 0) {
-			throw new IllegalStateException();
-		} else if (arg1 >= 2) {
-			throw new IllegalArgumentException();
-		} else {
-			try {
-				@Pc(41) Class56 local41 = (Class56) Class.forName("Class56_Sub1").getDeclaredConstructor().newInstance();
-				local41.anIntArray315 = new int[(Static316.aBoolean645 ? 2 : 1) * 256];
-				local41.anInt4109 = arg2;
-				local41.method3593(arg3);
-				local41.anInt4108 = (-1024 & arg2) + 1024;
-				if (local41.anInt4108 > 16384) {
-					local41.anInt4108 = 16384;
-				}
-				local41.method3588(local41.anInt4108);
-				if (Static156.anInt2688 > 0 && Static232.aClass119_1 == null) {
-					Static232.aClass119_1 = new Class119();
-					Static232.aClass119_1.aClass392_2 = arg0;
-					arg0.method8998(Static232.aClass119_1, Static156.anInt2688);
-				}
-				if (Static232.aClass119_1 != null) {
-					if (Static232.aClass119_1.aClass56Array1[arg1] != null) {
-						throw new IllegalArgumentException();
-					}
-					Static232.aClass119_1.aClass56Array1[arg1] = local41;
-				}
-				return local41;
-			} catch (@Pc(135) Throwable local135) {
-				try {
-					@Pc(141) Class56_Sub2 local141 = new Class56_Sub2(arg0, arg1);
-					local141.anIntArray315 = new int[(Static316.aBoolean645 ? 2 : 1) * 256];
-					local141.anInt4109 = arg2;
-					local141.method3593(arg3);
-					local141.anInt4108 = 16384;
-					local141.method3588(local141.anInt4108);
-					if (Static156.anInt2688 > 0 && Static232.aClass119_1 == null) {
-						Static232.aClass119_1 = new Class119();
-						Static232.aClass119_1.aClass392_2 = arg0;
-						arg0.method8998(Static232.aClass119_1, Static156.anInt2688);
-					}
-					if (Static232.aClass119_1 != null) {
-						if (Static232.aClass119_1.aClass56Array1[arg1] != null) {
-							throw new IllegalArgumentException();
-						}
-						Static232.aClass119_1.aClass56Array1[arg1] = local141;
-					}
-					return local141;
-				} catch (@Pc(211) Throwable local211) {
-					return new Class56();
-				}
-			}
-		}
-	}
-
-	@OriginalMember(owner = "client!uca", name = "a", descriptor = "(JZ)V")
-	public static void method8402(@OriginalArg(0) long arg0) {
-		if (arg0 <= 0L) {
-			return;
-		}
-		if (arg0 % 10L == 0L) {
-			Static315.method4585(arg0 - 1L);
-			Static315.method4585(1L);
-		} else {
-			Static315.method4585(arg0);
 		}
 	}
 

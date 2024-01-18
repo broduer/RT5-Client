@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!wc")
-public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
+public final class Class2_Sub6_Sub5 extends PcmStream {
 
 	@OriginalMember(owner = "client!wc", name = "o", descriptor = "Z")
 	private boolean aBoolean795;
@@ -45,15 +45,15 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 			return -1.0D;
 		} else {
 			if (arg0) {
-				this.method9137(87);
+				this.skip(87);
 			}
-			return local16.aDouble10 - (double) ((float) local16.aShortArrayArray3[0].length / (float) Static686.anInt8968);
+			return local16.aDouble10 - (double) ((float) local16.aShortArrayArray3[0].length / (float) AudioChannel.globalSampleRate);
 		}
 	}
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "()Lclient!dea;")
 	@Override
-	public Class2_Sub6 method9142() {
+	public PcmStream method9142() {
 		return null;
 	}
 
@@ -69,7 +69,7 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!wc", name = "a", descriptor = "(I)V")
 	@Override
-	public synchronized void method9137(@OriginalArg(0) int arg0) {
+	public synchronized void skip(@OriginalArg(0) int arg0) {
 		if (this.aBoolean795) {
 			return;
 		}
@@ -136,7 +136,7 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!wc", name = "c", descriptor = "()Lclient!dea;")
 	@Override
-	public Class2_Sub6 method9140() {
+	public PcmStream firstSubStream() {
 		return null;
 	}
 
@@ -158,13 +158,13 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!wc", name = "b", descriptor = "([III)V")
 	@Override
-	public synchronized void method9138(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public synchronized void read(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (this.aBoolean795) {
 			return;
 		}
 		if (this.method9152() != null) {
 			@Pc(32) int local32 = arg2 + arg1;
-			if (Static316.aBoolean645) {
+			if (AudioChannel.stereo) {
 				local32 <<= 0x1;
 			}
 			@Pc(42) byte local42 = 0;
@@ -178,7 +178,7 @@ public final class Class2_Sub6_Sub5 extends Class2_Sub6 {
 				}
 				@Pc(62) short[][] local62 = local56.aShortArrayArray3;
 				while (local32 > arg1 && this.anInt10564 < local62[0].length) {
-					if (Static316.aBoolean645) {
+					if (AudioChannel.stereo) {
 						arg0[arg1++] = local62[0][this.anInt10564] * this.anInt10562;
 						arg0[arg1++] = this.anInt10565 * local62[local42][this.anInt10564];
 					} else {

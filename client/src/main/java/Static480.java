@@ -76,16 +76,16 @@ public final class Static480 {
 	}
 
 	@OriginalMember(owner = "client!pca", name = "a", descriptor = "(ILclient!ge;Lclient!vq;I)V")
-	public static void method6475(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) Class392 arg1, @OriginalArg(3) int arg2) {
+	public static void method6475(@OriginalArg(1) Class2_Sub21 arg0, @OriginalArg(2) signlink arg1, @OriginalArg(3) int arg2) {
 		@Pc(23) Class2_Sub57 local23 = new Class2_Sub57();
 		local23.anInt10392 = arg0.method7403();
 		local23.anInt10394 = arg0.method7356();
 		local23.anIntArray829 = new int[local23.anInt10392];
 		local23.anIntArray827 = new int[local23.anInt10392];
-		local23.aClass272Array1 = new Class272[local23.anInt10392];
+		local23.aPrivilegedRequestArray1 = new PrivilegedRequest[local23.anInt10392];
 		local23.aByteArrayArrayArray18 = new byte[local23.anInt10392][][];
 		local23.anIntArray828 = new int[local23.anInt10392];
-		local23.aClass272Array2 = new Class272[local23.anInt10392];
+		local23.aPrivilegedRequestArray2 = new PrivilegedRequest[local23.anInt10392];
 		for (@Pc(65) int local65 = 0; local65 < local23.anInt10392; local65++) {
 			try {
 				@Pc(73) int local73 = arg0.method7403();
@@ -101,7 +101,7 @@ public final class Static480 {
 					}
 					local23.anIntArray828[local65] = local73;
 					local23.anIntArray827[local65] = local114;
-					local23.aClass272Array1[local65] = arg1.method8985(Static488.method6531(local106), local110);
+					local23.aPrivilegedRequestArray1[local65] = arg1.method8985(Static488.method6531(local106), local110);
 				} else if (local73 == 3 || local73 == 4) {
 					local106 = arg0.method7365();
 					local110 = arg0.method7365();
@@ -124,7 +124,7 @@ public final class Static480 {
 					for (local153 = 0; local153 < local114; local153++) {
 						local180[local153] = Static488.method6531(local117[local153]);
 					}
-					local23.aClass272Array2[local65] = arg1.method8995(Static488.method6531(local106), local180, local110);
+					local23.aPrivilegedRequestArray2[local65] = arg1.method8995(Static488.method6531(local106), local180, local110);
 					local23.aByteArrayArrayArray18[local65] = local138;
 				}
 			} catch (@Pc(271) ClassNotFoundException local271) {

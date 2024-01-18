@@ -6,5 +6,5 @@ public final class Static16 {
 	public static Class383 aClass383_1;
 
 	@OriginalMember(owner = "client!aj", name = "D", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_2 = new Class357("LOCAL", "", "local", 4);
+	public static final Class357 localMode = new Class357("LOCAL", "", "local", 4);
 }

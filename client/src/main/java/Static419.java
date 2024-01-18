@@ -20,7 +20,7 @@ public final class Static419 {
 	public static int anInt6454 = 0;
 
 	@OriginalMember(owner = "client!ne", name = "o", descriptor = "[S")
-	public static short[] aShortArray96 = new short[256];
+	public static short[] recolorPalette = new short[256];
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(BI)Ljava/lang/String;")
 	public static String method5763(@OriginalArg(1) int arg0) {

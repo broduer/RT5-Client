@@ -30,7 +30,7 @@ public final class Class356 implements Interface22 {
 	@OriginalMember(owner = "client!tha", name = "a", descriptor = "(ZJ)Z")
 	@Override
 	public boolean method8470(@OriginalArg(1) long arg0) {
-		return Static588.method7722() >= (long) this.aClass76_1.anInt2149 + arg0;
+		return Static588.currentTimeMillis() >= (long) this.aClass76_1.anInt2149 + arg0;
 	}
 
 	@OriginalMember(owner = "client!tha", name = "c", descriptor = "(I)I")

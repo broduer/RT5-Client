@@ -33,7 +33,7 @@ public final class Static159 {
 			local9 = Static422.method5778();
 		}
 		Static97.method1905(Static84.anInt1783 + local9, Static71.anInt1583 - -local7, Static407.anInt6308, arg0, Static682.anInt10323);
-		Static180.aClass14_3.method8836(Static71.anInt1583 + local7 + 3, Static84.anInt1783 - (-local9 + -14), Static32.aClass32_24.method877(Static51.anInt1056), -1, -10660793);
+		Static180.aClass14_3.method8836(Static71.anInt1583 + local7 + 3, Static84.anInt1783 - (-local9 + -14), Static32.aClass32_24.method877(client.lang), -1, -10660793);
 		@Pc(69) int local69 = Static189.aClass120_1.method8860() + local7;
 		@Pc(76) int local76 = Static189.aClass120_1.method8861() + local9;
 		@Pc(80) int local80;

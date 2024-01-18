@@ -25,16 +25,6 @@ public final class Static517 {
 		return local50;
 	}
 
-	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(ZIII)V")
-	public static void method6829(@OriginalArg(0) boolean arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2) {
-		if (arg1 > 48000) {
-			throw new IllegalArgumentException();
-		}
-		Static156.anInt2688 = arg2;
-		Static686.anInt8968 = arg1;
-		Static316.aBoolean645 = arg0;
-	}
-
 	@OriginalMember(owner = "client!qea", name = "a", descriptor = "(Z[[[BIBIIZ)V")
 	public static void method6830(@OriginalArg(0) boolean arg0, @OriginalArg(1) byte[][][] arg1, @OriginalArg(2) int arg2, @OriginalArg(3) byte arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) boolean arg6) {
 		@Pc(6) int local6 = arg0 ? 1 : 0;

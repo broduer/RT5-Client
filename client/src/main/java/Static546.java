@@ -39,9 +39,9 @@ public final class Static546 {
 			local7 = Static130.method2283();
 			local9 = Static422.method5778();
 		}
-		arg0.KA(local7, local9, Static680.anInt10317 + local7, local9 + 350);
-		arg0.aa(local7, local9, Static680.anInt10317, 350, Static566.anInt8496 << 24 | 0x332277, 1);
-		Static682.method8934(local9, local9 + 350, local7, Static680.anInt10317 + local7);
+		arg0.KA(local7, local9, GameShell.canvasWidth + local7, local9 + 350);
+		arg0.aa(local7, local9, GameShell.canvasWidth, 350, Static566.anInt8496 << 24 | 0x332277, 1);
+		Static682.method8934(local9, local9 + 350, local7, GameShell.canvasWidth + local7);
 		@Pc(54) int local54 = 350 / Static161.anInt2806;
 		@Pc(65) int local65;
 		if (Static512.anInt7687 > 0) {
@@ -51,10 +51,10 @@ public final class Static546 {
 			if (Static512.anInt7687 > 1) {
 				local77 = (Static512.anInt7687 - Static213.anInt3481 - 1) * (local65 + -local75) / (Static512.anInt7687 - 1) + 4;
 			}
-			arg0.aa(local7 + Static680.anInt10317 - 16, local9 + local77, 12, local75, Static566.anInt8496 << 24 | 0x332277, 2);
+			arg0.aa(local7 + GameShell.canvasWidth - 16, local9 + local77, 12, local75, Static566.anInt8496 << 24 | 0x332277, 2);
 			for (@Pc(119) int local119 = Static213.anInt3481; Static213.anInt3481 + local54 > local119 && Static512.anInt7687 > local119; local119++) {
 				@Pc(128) String[] local128 = Static189.method2861(Static393.aStringArray32[local119], '\b');
-				@Pc(137) int local137 = (Static680.anInt10317 - 8 - 16) / local128.length;
+				@Pc(137) int local137 = (GameShell.canvasWidth - 8 - 16) / local128.length;
 				for (@Pc(139) int local139 = 0; local139 < local128.length; local139++) {
 					@Pc(147) int local147 = local139 * local137 + 8;
 					arg0.KA(local147 + local7, local9, local147 + local7 + local137 - 8, local9 + 350);
@@ -62,18 +62,18 @@ public final class Static546 {
 				}
 			}
 		}
-		Static665.aClass14_12.method8841(Static680.anInt10317 + local7 - 25, "Build: 667", -1, 0xFF000000, local9 + 350 - 20);
-		arg0.KA(local7, local9, Static680.anInt10317 + local7, local9 + 350);
-		arg0.method7998(local9 + 350 - Static644.anInt9634, -1, local7, Static680.anInt10317);
+		Static665.aClass14_12.method8841(GameShell.canvasWidth + local7 - 25, "Build: 667", -1, 0xFF000000, local9 + 350 - 20);
+		arg0.KA(local7, local9, GameShell.canvasWidth + local7, local9 + 350);
+		arg0.method7998(local9 + 350 - Static644.anInt9634, -1, local7, GameShell.canvasWidth);
 		Static180.aClass14_3.method8836(local7 + 10, local9 - (Static42.aClass383_4.anInt10063 + -350 + 1), "--> " + Static386.method5446(Static110.aString19), 0xFF000000, -1);
 		if (-29 <= -49) {
 			anInt8267 = -2;
 		}
-		if (!Static91.aBoolean751) {
+		if (!GameShell.focus) {
 			return;
 		}
 		local65 = -1;
-		if (Static333.anInt5474 % 30 > 15) {
+		if (client.cycle % 30 > 15) {
 			local65 = 16777215;
 		}
 		arg0.method8005(12, local9 + 350 - Static42.aClass383_4.anInt10063 - 11, local65, Static42.aClass383_4.method8751("--> " + Static386.method5446(Static110.aString19).substring(0, Static594.anInt8800)) + local7 + 10);

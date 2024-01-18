@@ -358,18 +358,18 @@ public final class Static466 {
 		}
 		Static118.aByteArrayArray3 = new byte[local50][];
 		Static177.aByteArrayArray5 = new byte[local50][];
-		Static266.anIntArray615 = new int[local50];
+		Static266.locGroupIds = new int[local50];
 		Static376.anIntArray458 = null;
 		Static89.anIntArray169 = new int[local50];
-		Static298.anIntArray367 = new int[local50];
+		Static298.underwaterLocGroupIds = new int[local50];
 		Static421.aByteArrayArray19 = new byte[local50][];
 		if (false) {
 			return;
 		}
-		Static267.anIntArray329 = new int[local50];
+		Static267.mapGroupIds = new int[local50];
 		Static319.aByteArrayArray16 = new byte[local50][];
 		Static363.aByteArrayArray22 = null;
-		Static68.anIntArray316 = new int[local50];
+		Static68.underwaterMapGroupIds = new int[local50];
 		local50 = 0;
 		for (local61 = 0; local61 < 4; local61++) {
 			for (@Pc(221) int local221 = 0; local221 < Static720.anInt10888 >> 3; local221++) {
@@ -389,10 +389,10 @@ public final class Static466 {
 							Static89.anIntArray169[local50] = local261;
 							@Pc(299) int local299 = local261 >> 8 & 0xFF;
 							@Pc(303) int local303 = local261 & 0xFF;
-							Static267.anIntArray329[local50] = Static93.aClass332_16.method7597("m" + local299 + "_" + local303);
-							Static266.anIntArray615[local50] = Static93.aClass332_16.method7597("l" + local299 + "_" + local303);
-							Static68.anIntArray316[local50] = Static93.aClass332_16.method7597("um" + local299 + "_" + local303);
-							Static298.anIntArray367[local50] = Static93.aClass332_16.method7597("ul" + local299 + "_" + local303);
+							Static267.mapGroupIds[local50] = client.js5Archive5.getGroupId("m" + local299 + "_" + local303);
+							Static266.locGroupIds[local50] = client.js5Archive5.getGroupId("l" + local299 + "_" + local303);
+							Static68.underwaterMapGroupIds[local50] = client.js5Archive5.getGroupId("um" + local299 + "_" + local303);
+							Static298.underwaterLocGroupIds[local50] = client.js5Archive5.getGroupId("ul" + local299 + "_" + local303);
 							local50++;
 						}
 					}

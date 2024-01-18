@@ -212,7 +212,7 @@ public final class Class270 {
 		if (this.aByte107 != -1) {
 			return;
 		}
-		if (Static673.aClass379_8 == this.aClass310_1.aClass379_6) {
+		if (Static673.runescapeGame == this.aClass310_1.aClass379_6) {
 			this.aByte107 = 1;
 		} else {
 			this.aByte107 = 0;
@@ -575,7 +575,7 @@ public final class Class270 {
 						if (this.aByteArray80 == null || this.aByteArray80.length <= local340) {
 							local94.ia(this.aShortArray99[local340], local334[local340]);
 						} else {
-							local94.ia(this.aShortArray99[local340], Static553.aShortArray112[this.aByteArray80[local340] & 0xFF]);
+							local94.ia(this.aShortArray99[local340], Static553.recolorPalette[this.aByteArray80[local340] & 0xFF]);
 						}
 					}
 				}
@@ -740,7 +740,7 @@ public final class Class270 {
 					if (this.aByteArray80 == null || local396 >= this.aByteArray80.length) {
 						local139.ia(this.aShortArray99[local396], local568[local396]);
 					} else {
-						local139.ia(this.aShortArray99[local396], Static553.aShortArray112[this.aByteArray80[local396] & 0xFF]);
+						local139.ia(this.aShortArray99[local396], Static553.recolorPalette[this.aByteArray80[local396] & 0xFF]);
 					}
 				}
 			}

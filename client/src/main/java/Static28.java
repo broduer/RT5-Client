@@ -145,7 +145,7 @@ public final class Static28 {
 		@Pc(878) int local878;
 		for (local490 = 0; local490 < local788.length; local490++) {
 			@Pc(796) Class256 local796 = local788[local490];
-			if (local796 != null && local796.anInt6383 != 0 && Static333.anInt5474 % 20 < 10) {
+			if (local796 != null && local796.anInt6383 != 0 && client.cycle % 20 < 10) {
 				@Pc(843) int local843;
 				if (local796.anInt6383 == 1) {
 					@Pc(828) Class2_Sub45 local828 = (Class2_Sub45) Static18.aClass28_2.method738(local796.anInt6386);

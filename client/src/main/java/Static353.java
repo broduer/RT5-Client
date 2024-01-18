@@ -1,12 +1,8 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static353 {
-
-	@OriginalMember(owner = "client!lca", name = "n", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame10;
 
 	@OriginalMember(owner = "client!lca", name = "k", descriptor = "Z")
 	public static boolean aBoolean735 = false;

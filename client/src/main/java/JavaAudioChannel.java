@@ -10,7 +10,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!cb")
-public final class Class56_Sub1 extends Class56 {
+public final class JavaAudioChannel extends AudioChannel {
 
 	@OriginalMember(owner = "client!cb", name = "J", descriptor = "Ljavax/sound/sampled/SourceDataLine;")
 	private SourceDataLine aSourceDataLine1;
@@ -28,19 +28,19 @@ public final class Class56_Sub1 extends Class56 {
 	private boolean aBoolean134 = false;
 
 	@OriginalMember(owner = "client!cb", name = "<init>", descriptor = "()V")
-	private Class56_Sub1() {
+	private JavaAudioChannel() {
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "()V")
 	@Override
-	protected void method3583() throws LineUnavailableException {
+	protected void flush() throws LineUnavailableException {
 		this.aSourceDataLine1.flush();
 		if (!this.aBoolean134) {
 			return;
 		}
 		this.aSourceDataLine1.close();
 		this.aSourceDataLine1 = null;
-		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1526 << (Static316.aBoolean645 ? 2 : 1));
+		@Pc(38) Info local38 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, this.anInt1526 << (AudioChannel.stereo ? 2 : 1));
 		this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local38);
 		this.aSourceDataLine1.open();
 		this.aSourceDataLine1.start();
@@ -60,11 +60,11 @@ public final class Class56_Sub1 extends Class56 {
 	@Override
 	protected void method3590() {
 		@Pc(1) short local1 = 256;
-		if (Static316.aBoolean645) {
+		if (AudioChannel.stereo) {
 			local1 = 512;
 		}
 		for (@Pc(9) int local9 = 0; local9 < local1; local9++) {
-			@Pc(17) int local17 = this.anIntArray315[local9];
+			@Pc(17) int local17 = this.samples[local9];
 			if ((local17 + 8388608 & 0xFF000000) != 0) {
 				local17 = local17 >> 31 ^ 0x7FFFFF;
 			}
@@ -76,9 +76,9 @@ public final class Class56_Sub1 extends Class56 {
 
 	@OriginalMember(owner = "client!cb", name = "b", descriptor = "(I)V")
 	@Override
-	public void method3588(@OriginalArg(0) int arg0) throws LineUnavailableException {
+	public void open(@OriginalArg(0) int arg0) throws LineUnavailableException {
 		try {
-			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (Static316.aBoolean645 ? 2 : 1));
+			@Pc(23) Info local23 = new Info(Static64.aClass3 == null ? (Static64.aClass3 = getClass("javax.sound.sampled.SourceDataLine")) : Static64.aClass3, this.anAudioFormat1, arg0 << (AudioChannel.stereo ? 2 : 1));
 			this.aSourceDataLine1 = (SourceDataLine) AudioSystem.getLine(local23);
 			this.aSourceDataLine1.open();
 			this.aSourceDataLine1.start();
@@ -88,14 +88,14 @@ public final class Class56_Sub1 extends Class56 {
 				this.aSourceDataLine1 = null;
 				throw local39;
 			} else {
-				this.method3588(Static440.method5969(arg0));
+				this.open(Static440.method5969(arg0));
 			}
 		}
 	}
 
 	@OriginalMember(owner = "client!cb", name = "c", descriptor = "()V")
 	@Override
-	protected void method3596() {
+	protected void close() {
 		if (this.aSourceDataLine1 != null) {
 			this.aSourceDataLine1.close();
 			this.aSourceDataLine1 = null;
@@ -104,13 +104,13 @@ public final class Class56_Sub1 extends Class56 {
 
 	@OriginalMember(owner = "client!cb", name = "d", descriptor = "()I")
 	@Override
-	protected int method3587() {
-		return this.anInt1526 - (this.aSourceDataLine1.available() >> (Static316.aBoolean645 ? 2 : 1));
+	protected int getBufferSize() {
+		return this.anInt1526 - (this.aSourceDataLine1.available() >> (AudioChannel.stereo ? 2 : 1));
 	}
 
 	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Ljava/awt/Component;)V")
 	@Override
-	public void method3593(@OriginalArg(0) Component arg0) {
+	public void init(@OriginalArg(0) Component component) {
 		@Pc(1) javax.sound.sampled.Mixer.Info[] local1 = AudioSystem.getMixerInfo();
 		if (local1 != null) {
 			for (@Pc(8) int local8 = 0; local8 < local1.length; local8++) {
@@ -123,7 +123,7 @@ public final class Class56_Sub1 extends Class56 {
 				}
 			}
 		}
-		this.anAudioFormat1 = new AudioFormat((float) Static686.anInt8968, 16, Static316.aBoolean645 ? 2 : 1, true, false);
-		this.aByteArray17 = new byte[0x100 << (Static316.aBoolean645 ? 2 : 1)];
+		this.anAudioFormat1 = new AudioFormat((float) AudioChannel.globalSampleRate, 16, AudioChannel.stereo ? 2 : 1, true, false);
+		this.aByteArray17 = new byte[0x100 << (AudioChannel.stereo ? 2 : 1)];
 	}
 }

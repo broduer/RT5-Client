@@ -73,7 +73,7 @@ public final class Class332 {
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(BLjava/lang/String;)Z")
 	public boolean method7585(@OriginalArg(1) String arg0) {
-		@Pc(14) int local14 = this.method7597("");
+		@Pc(14) int local14 = this.getGroupId("");
 		return local14 == -1 ? this.method7611(arg0, "") : this.method7611("", arg0);
 	}
 
@@ -382,7 +382,7 @@ public final class Class332 {
 	}
 
 	@OriginalMember(owner = "client!sb", name = "a", descriptor = "(Ljava/lang/String;B)I")
-	public int method7597(@OriginalArg(0) String arg0) {
+	public int getGroupId(@OriginalArg(0) String arg0) {
 		if (this.method7608()) {
 			@Pc(19) String local19 = arg0.toLowerCase();
 			@Pc(28) int local28 = this.aClass294_2.aClass100_1.method2382(Static95.method1894(local19));

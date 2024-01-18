@@ -34,14 +34,4 @@ public final class Static440 {
 		return local21;
 	}
 
-	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(ILclient!dea;)V")
-	public static void method5971(@OriginalArg(1) Class2_Sub6 arg0) {
-		if (arg0.aClass2_Sub49_6 != null) {
-			arg0.aClass2_Sub49_6.anInt8841 = 0;
-		}
-		arg0.aBoolean794 = false;
-		for (@Pc(25) Class2_Sub6 local25 = arg0.method9140(); local25 != null; local25 = arg0.method9142()) {
-			method5971(local25);
-		}
-	}
 }

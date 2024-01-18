@@ -73,7 +73,7 @@ public final class Static609 {
 		local23 = arg2.anInt1541 * 16 + 21;
 		Static25.anInt600 = (Static60.aBoolean87 ? 26 : 22) + arg2.anInt1541 * 16;
 		@Pc(71) int local71 = Static682.anInt10323 + Static71.anInt1583;
-		if (local11 + local71 > Static680.anInt10317) {
+		if (local11 + local71 > GameShell.canvasWidth) {
 			local71 = Static71.anInt1583 - local11;
 		}
 		if (local71 < 0) {
@@ -81,8 +81,8 @@ public final class Static609 {
 		}
 		@Pc(91) int local91 = Static60.aBoolean87 ? 33 : 31;
 		@Pc(98) int local98 = arg0 + 13 - local91;
-		if (Static380.anInt5999 < local23 + local98) {
-			local98 = Static380.anInt5999 - local23;
+		if (GameShell.canvasHeight < local23 + local98) {
+			local98 = GameShell.canvasHeight - local23;
 		}
 		Static692.anInt10403 = local71;
 		if (local98 < 0) {

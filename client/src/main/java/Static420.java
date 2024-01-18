@@ -51,7 +51,7 @@ public final class Static420 {
 			return;
 		}
 		if (arg0.aString42 == null) {
-			Static416.method5714(false, arg0.anInt3770, 0L, arg0.anInt3751, arg0.anInt3823, Static32.aClass32_10.method877(Static51.anInt1056), 10, true, -1, "", arg0.anInt3823 | arg0.anInt3751 << 0, false);
+			Static416.method5714(false, arg0.anInt3770, 0L, arg0.anInt3751, arg0.anInt3823, Static32.aClass32_10.method877(client.lang), 10, true, -1, "", arg0.anInt3823 | arg0.anInt3751 << 0, false);
 		} else {
 			Static416.method5714(false, arg0.anInt3770, 0L, arg0.anInt3751, arg0.anInt3823, arg0.aString42, 10, true, -1, "", arg0.anInt3823 | arg0.anInt3751 << 0, false);
 		}

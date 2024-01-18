@@ -277,10 +277,10 @@ public final class Class8_Sub2_Sub1_Sub1 extends Class8_Sub2_Sub1 {
 		@Pc(9) Class330[] local9 = arg2.method7489();
 		@Pc(12) Class251[] local12 = arg2.method7487();
 		if ((this.aClass8_Sub5_1 == null || this.aClass8_Sub5_1.aBoolean324) && (local9 != null || local12 != null)) {
-			this.aClass8_Sub5_1 = Static257.method3654(Static333.anInt5474, true);
+			this.aClass8_Sub5_1 = Static257.method3654(client.cycle, true);
 		}
 		if (this.aClass8_Sub5_1 != null) {
-			this.aClass8_Sub5_1.method3643(arg0, Static333.anInt5474, local9, local12);
+			this.aClass8_Sub5_1.method3643(arg0, client.cycle, local9, local12);
 			this.aClass8_Sub5_1.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);
 		}
 	}

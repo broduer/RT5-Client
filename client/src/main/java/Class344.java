@@ -27,7 +27,6 @@ public final class Class344 {
 
 	@OriginalMember(owner = "client!sn", name = "a", descriptor = "(Z)V")
 	public void method7790() {
-		@Pc(2) Class82 local2 = this.aClass82_192;
 		synchronized (this.aClass82_192) {
 			this.aClass82_192.method2157();
 		}
@@ -35,7 +34,6 @@ public final class Class344 {
 
 	@OriginalMember(owner = "client!sn", name = "a", descriptor = "(IB)V")
 	public void method7791() {
-		@Pc(6) Class82 local6 = this.aClass82_192;
 		synchronized (this.aClass82_192) {
 			this.aClass82_192.method2147(5);
 		}
@@ -43,7 +41,6 @@ public final class Class344 {
 
 	@OriginalMember(owner = "client!sn", name = "b", descriptor = "(II)Lclient!fc;")
 	public Class122 method7792(@OriginalArg(0) int arg0) {
-		@Pc(6) Class82 local6 = this.aClass82_192;
 		@Pc(16) Class122 local16;
 		synchronized (this.aClass82_192) {
 			local16 = (Class122) this.aClass82_192.method2156(arg0);
@@ -51,7 +48,6 @@ public final class Class344 {
 		if (local16 != null) {
 			return local16;
 		}
-		@Pc(30) Class332 local30 = this.aClass332_111;
 		@Pc(39) byte[] local39;
 		synchronized (this.aClass332_111) {
 			local39 = this.aClass332_111.method7602(arg0, 47);
@@ -60,7 +56,6 @@ public final class Class344 {
 		if (local39 != null) {
 			local16.method2610(new Class2_Sub21(local39));
 		}
-		@Pc(63) Class82 local63 = this.aClass82_192;
 		synchronized (this.aClass82_192) {
 			this.aClass82_192.method2150(local16, arg0);
 			return local16;
@@ -69,7 +64,6 @@ public final class Class344 {
 
 	@OriginalMember(owner = "client!sn", name = "a", descriptor = "(I)V")
 	public void method7794() {
-		@Pc(2) Class82 local2 = this.aClass82_192;
 		synchronized (this.aClass82_192) {
 			this.aClass82_192.method2151();
 		}

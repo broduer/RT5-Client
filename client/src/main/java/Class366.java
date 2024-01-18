@@ -61,7 +61,7 @@ public final class Class366 implements Runnable {
 	public synchronized void method8380(@OriginalArg(1) Interface22 arg0) {
 		this.anInterface22_2 = this.anInterface22_1;
 		this.anInterface22_1 = arg0;
-		this.aLong286 = Static588.method7722();
+		this.aLong286 = Static588.currentTimeMillis();
 	}
 
 	@OriginalMember(owner = "client!uaa", name = "a", descriptor = "(ILjava/lang/String;Lclient!gca;IJ)V")
@@ -106,14 +106,14 @@ public final class Class366 implements Runnable {
 	@Override
 	public void run() {
 		while (!this.aBoolean733) {
-			@Pc(8) long local8 = Static588.method7722();
+			@Pc(8) long local8 = Static588.currentTimeMillis();
 			synchronized (this) {
 				try {
 					this.anInt9549++;
 					if (this.anInterface22_1 instanceof Class376) {
 						this.anInterface22_1.method8472(this.aBoolean732);
 					} else {
-						@Pc(25) long local25 = Static588.method7722();
+						@Pc(25) long local25 = Static588.currentTimeMillis();
 						if (Static163.aClass19_17 == null || this.anInterface22_2 == null || this.anInterface22_2.method8469() == 0 || this.aLong286 < local25 - (long) this.anInterface22_2.method8469()) {
 							if (this.anInterface22_2 != null) {
 								this.aBoolean732 = true;
@@ -134,7 +134,7 @@ public final class Class366 implements Runnable {
 							@Pc(85) int local85 = local77 << 24 | 0xFFFFFF;
 							@Pc(91) int local91 = local72 << 24 | 0xFFFFFF;
 							Static163.aClass19_17.GA(0);
-							@Pc(100) Class23 local100 = Static163.aClass19_17.method7970(Static680.anInt10317, Static380.anInt5999, true);
+							@Pc(100) Class23 local100 = Static163.aClass19_17.method7970(GameShell.canvasWidth, GameShell.canvasHeight, true);
 							Static163.aClass19_17.method8009(local100);
 							this.anInterface22_2.method8472(true);
 							Static163.aClass19_17.method7950();
@@ -150,22 +150,22 @@ public final class Class366 implements Runnable {
 								Static163.aClass19_17.method7991();
 							}
 						} catch (@Pc(205) Exception_Sub1 local205) {
-							Static240.method3496(local205, local205.getMessage() + " (Recovered) " + Static295.aClient1.method1648());
+							TracingException.report(local205, local205.getMessage() + " (Recovered) " + client.instance.method1648());
 							Static32.method880(0, true);
 						}
 					}
 					@Pc(245) Container local245;
-					if (Static353.aFrame10 != null) {
-						local245 = Static353.aFrame10;
-					} else if (Static166.anApplet1 == null) {
-						local245 = Static149.anApplet_Sub1_1;
+					if (GameShell.frame != null) {
+						local245 = GameShell.frame;
+					} else if (signlink.mainapp == null) {
+						local245 = GameShell.instance;
 					} else {
-						local245 = Static166.anApplet1;
+						local245 = signlink.mainapp;
 					}
 					local245.getSize();
 					local245.getSize();
-					if (local245 == Static353.aFrame10) {
-						Static353.aFrame10.getInsets();
+					if (local245 == GameShell.frame) {
+						GameShell.frame.getInsets();
 					}
 					this.aBoolean732 = false;
 					if (Static163.aClass19_17 != null && !(this.anInterface22_1 instanceof Class376) && this.aClass140_23.method2952() < Static198.aClass140_19.method2952()) {
@@ -175,10 +175,10 @@ public final class Class366 implements Runnable {
 					continue;
 				}
 			}
-			@Pc(304) long local304 = Static588.method7722();
+			@Pc(304) long local304 = Static588.currentTimeMillis();
 			@Pc(312) int local312 = (int) (local8 + 20L - local304);
 			if (local312 > 0) {
-				Static638.method8402(local312);
+				ThreadUtils.sleep(local312);
 			}
 		}
 	}

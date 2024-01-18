@@ -9,7 +9,7 @@ public final class Static287 {
 
 	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "(I)[Lclient!tka;")
 	public static Class357[] method4153() {
-		return new Class357[] { Static446.aClass357_5, Static704.aClass357_7, Static713.aClass357_8, Static425.aClass357_4, Static16.aClass357_2, Static280.aClass357_3, Static682.aClass357_6 };
+		return new Class357[] { Static446.liveMode, Static704.wtrcMode, Static713.wtqaMode, Static425.wtwipMode, Static16.localMode, Static280.wtiMode, Static682.intbetaMode };
 	}
 
 	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "(JI)Ljava/lang/String;")

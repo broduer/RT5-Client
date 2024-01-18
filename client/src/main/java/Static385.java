@@ -61,9 +61,9 @@ public final class Static385 {
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(B)Z")
 	public static boolean method5428() {
-		if (Static98.aBoolean191) {
+		if (Static98.js) {
 			try {
-				if ((Boolean) Static727.method97("showingVideoAd", Static166.anApplet1)) {
+				if ((Boolean) BrowserControl.call("showingVideoAd", signlink.mainapp)) {
 					return false;
 				}
 				return true;

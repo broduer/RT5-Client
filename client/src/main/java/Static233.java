@@ -23,7 +23,7 @@ public final class Static233 {
 			@Pc(22) Class256 local22 = local14[local16];
 			if (local22 != null && local22.anInt6383 == 2) {
 				Static143.method3573(local22.anInt6385 * 2, local22.anInt6389, arg0 >> 1, local22.anInt6382, local22.anInt6388, arg3 >> 1);
-				if (Static215.anIntArray284[0] > -1 && Static333.anInt5474 % 20 < 10) {
+				if (Static215.anIntArray284[0] > -1 && client.cycle % 20 < 10) {
 					@Pc(76) Class23 local76 = Static28.aClass23Array1[local22.anInt6387];
 					@Pc(84) int local84 = arg2 + Static215.anIntArray284[0] - 12;
 					@Pc(92) int local92 = Static215.anIntArray284[1] + arg1 - 28;
@@ -51,7 +51,7 @@ public final class Static233 {
 		System.gc();
 		Static312.method4548();
 		Static588.anInt8716 = -1;
-		Static501.aBoolean575 = false;
+		Static501.jingle = false;
 		Static550.method7273();
 		Static609.method8220(true);
 		Static300.method4400();
@@ -63,7 +63,7 @@ public final class Static233 {
 		}
 		Static81.method1586(3);
 		try {
-			Static727.method97("loggedout", Static166.anApplet1);
+			BrowserControl.call("loggedout", signlink.mainapp);
 		} catch (@Pc(86) Throwable local86) {
 		}
 	}

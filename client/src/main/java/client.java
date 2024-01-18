@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Random;
 import java.util.Vector;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -16,82 +17,163 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!client")
-public final class client extends Applet_Sub1 {
+public final class client extends GameShell {
+
+	@OriginalMember(owner = "client!pj", name = "f", descriptor = "Ljava/util/Random;")
+	public static final Random random = new Random();
+
+	@OriginalMember(owner = "client!jga", name = "k", descriptor = "Lclient!client;")
+	public static client instance;
+
+	@OriginalMember(owner = "client!qca", name = "z", descriptor = "Lclient!oba;")
+	public static PrivilegedRequest js5SocketRequest;
+
+	@OriginalMember(owner = "client!po", name = "h", descriptor = "Lclient!pla;")
+	public static Class297 js5NetQueue;
+
+	@OriginalMember(owner = "client!vea", name = "J", descriptor = "Lclient!nk;")
+	public static ClientStream js5Socket;
+
+	@OriginalMember(owner = "client!cs", name = "r", descriptor = "I")
+	public static int js5ConnectState = 0;
+
+	@OriginalMember(owner = "client!vba", name = "H", descriptor = "Z")
+	public static boolean clean = false;
+
+	@OriginalMember(owner = "client!kj", name = "d", descriptor = "I")
+	public static int cycle = 0;
+
+	@OriginalMember(owner = "client!fj", name = "z", descriptor = "I")
+	public static int seed;
+
+	@OriginalMember(owner = "client!qka", name = "f", descriptor = "Lclient!lja;")
+	public static Class231 world;
+
+	@OriginalMember(owner = "client!uu", name = "o", descriptor = "Lclient!lja;")
+	public static Class231 lobby;
+
+	@OriginalMember(owner = "client!aaa", name = "T", descriptor = "Lclient!tka;")
+	public static Class357 modewhere;
+
+	@OriginalMember(owner = "client!ss", name = "h", descriptor = "Lclient!hh;")
+	public static Class162 modewhat;
+
+	@OriginalMember(owner = "client!bma", name = "c", descriptor = "I")
+	public static int lang = 0;
+	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
+	public static Class332 js5Archive5;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
-	public static void main(@OriginalArg(0) String[] arg0) {
+	public static void main(@OriginalArg(0) String[] args) {
 		try {
-			if (arg0.length != 6) {
+			if (args.length != 6) {
 				Static426.method1016("Argument count");
 			}
-			Static527.aClass231_3 = new Class231();
-			Static527.aClass231_3.anInt5876 = Integer.parseInt(arg0[0]);
-			Static660.aClass231_4 = new Class231();
-			Static660.aClass231_4.anInt5876 = Integer.parseInt(arg0[1]);
-			Static2.aClass357_1 = Static16.aClass357_2;
-			if (arg0[3].equals("live")) {
-				Static598.aClass162_5 = Static523.aClass162_3;
-			} else if (arg0[3].equals("rc")) {
-				Static598.aClass162_5 = Static519.aClass162_4;
-			} else if (arg0[3].equals("wip")) {
-				Static598.aClass162_5 = Static225.aClass162_1;
+			world = new Class231();
+			world.id = Integer.parseInt(args[0]);
+			lobby = new Class231();
+			lobby.id = Integer.parseInt(args[1]);
+			modewhere = Static16.localMode;
+			if (args[3].equals("live")) {
+				modewhat = Static523.aClass162_3;
+			} else if (args[3].equals("rc")) {
+				modewhat = Static519.aClass162_4;
+			} else if (args[3].equals("wip")) {
+				modewhat = Static225.aClass162_1;
 			} else {
 				Static426.method1016("modewhat");
 			}
-			Static51.anInt1056 = Static541.method7205(arg0[4]);
-			if (Static51.anInt1056 == -1) {
-				if (arg0[4].equals("english")) {
-					Static51.anInt1056 = 0;
-				} else if (arg0[4].equals("german")) {
-					Static51.anInt1056 = 1;
+			lang = Static541.method7205(args[4]);
+			if (lang == -1) {
+				if (args[4].equals("english")) {
+					lang = 0;
+				} else if (args[4].equals("german")) {
+					lang = 1;
 				} else {
 					Static426.method1016("language");
 				}
 			}
-			Static464.aBoolean533 = false;
-			Static98.aBoolean191 = false;
-			if (arg0[5].equals("game0")) {
-				Static392.aClass379_4 = Static673.aClass379_8;
-			} else if (arg0[5].equals("game1")) {
-				Static392.aClass379_4 = Static723.aClass379_9;
-			} else if (arg0[5].equals("game2")) {
-				Static392.aClass379_4 = Static465.aClass379_5;
-			} else if (arg0[5].equals("game3")) {
-				Static392.aClass379_4 = Static655.aClass379_7;
+			Static464.objecttag = false;
+			Static98.js = false;
+			if (args[5].equals("game0")) {
+				Static392.game = Static673.runescapeGame;
+			} else if (args[5].equals("game1")) {
+				Static392.game = Static723.aClass379_9;
+			} else if (args[5].equals("game2")) {
+				Static392.game = Static465.aClass379_5;
+			} else if (args[5].equals("game3")) {
+				Static392.game = Static655.aClass379_7;
 			} else {
 				Static426.method1016("game");
 			}
-			Static323.anInt5138 = 0;
-			Static715.anInt10834 = 0;
-			Static29.aBoolean61 = false;
+			Static323.affid = 0;
+			Static715.worldflags = 0;
+			Static29.frombilling = false;
 			Static508.aBoolean582 = true;
 			Static126.aBoolean200 = true;
-			Static473.aBoolean539 = false;
-			Static389.aString64 = null;
-			Static338.anInt5582 = Static392.aClass379_4.anInt9746;
-			Static150.aString26 = "";
-			Static265.aByteArray44 = null;
-			Static584.anInt8658 = 0;
-			Static416.aLong208 = 0L;
-			@Pc(241) client local241 = new client();
-			Static295.aClient1 = local241;
-			local241.method1635(37, 667, Static598.aClass162_5.method3469() + 32, 768, Static392.aClass379_4.aString114, 1024);
-			Static353.aFrame10.setLocation(40, 40);
+			Static473.force64mb = false;
+			Static389.additionalInfo = null;
+			Static338.colourid = Static392.game.id;
+			Static150.settings = "";
+			Static265.sskey = null;
+			Static584.country = 0;
+			Static416.userFlow = 0L;
+			@Pc(241) client c = new client();
+			instance = c;
+			c.method1635(37, 667, modewhat.method3469() + 32, 768, Static392.game.name, 1024);
+			GameShell.frame.setLocation(40, 40);
 		} catch (@Pc(265) Exception local265) {
-			Static240.method3496(local265, null);
+			TracingException.report(local265, null);
 		}
+	}
+
+	@OriginalMember(owner = "client!th", name = "b", descriptor = "(I)V")
+	public static void clean() {
+		Static467.aClass96_3.method2355();
+		Static540.aClass79_6.method2073();
+		Static68.aClass217_3.method5052();
+		Static354.aClass142_4.method3064();
+		Static690.aClass310_2.method7092();
+		Static419.aClass112_1.method2479();
+		Static25.aClass50_1.method1163();
+		Static23.aClass128_1.method2698();
+		Static529.aClass161_1.method3428();
+		Static36.aClass262_1.method5792();
+		Static628.aClass344_5.method7791();
+		Static648.aClass17_1.method267();
+		Static574.aClass312_2.method7122();
+		Static577.aClass248_4.method5588();
+		Static720.aClass365_4.method8374();
+		Static386.aClass49_2.method1158();
+		Static272.aClass45_1.method1096();
+		Static324.aClass309_1.method7075();
+		Static99.aClass78_1.method2055();
+		Static48.aClass386_1.method8820();
+		Static354.aClass269_1.method5977();
+		Static652.aClass216_1.method5044();
+		Static561.aClass222_2.method5191();
+		Static559.method7421();
+		Static534.method7128();
+		Static402.method5587();
+		Static198.method2951();
+		Static194.method2907();
+		Static230.aClass82_81.method2147(5);
+		Static669.aClass82_215.method2147(5);
+		Static541.aClass82_174.method2147(5);
+		Static452.aClass82_149.method2147(5);
+		Static472.aClass82_156.method2147(5);
 	}
 
 	@OriginalMember(owner = "client!client", name = "i", descriptor = "(I)V")
 	@Override
 	public synchronized void method1641() {
-		if (Static166.anApplet1 != null && Static434.aCanvas7 == null && !Static446.aClass392_6.aBoolean780) {
+		if (signlink.mainapp != null && GameShell.canvas == null && !GameShell.sign.aBoolean780) {
 			try {
-				@Pc(25) Class local25 = Static166.anApplet1.getClass();
+				@Pc(25) Class local25 = signlink.mainapp.getClass();
 				@Pc(31) Field local31 = local25.getDeclaredField("canvas");
-				Static434.aCanvas7 = (Canvas) local31.get(Static166.anApplet1);
-				local31.set(Static166.anApplet1, null);
-				if (Static434.aCanvas7 != null) {
+				GameShell.canvas = (Canvas) local31.get(signlink.mainapp);
+				local31.set(signlink.mainapp, null);
+				if (GameShell.canvas != null) {
 					return;
 				}
 			} catch (@Pc(45) Exception local45) {
@@ -102,7 +184,7 @@ public final class client extends Applet_Sub1 {
 
 	@OriginalMember(owner = "client!client", name = "j", descriptor = "(I)V")
 	@Override
-	protected void method1633() {
+	protected void quit() {
 		if (Static624.aBoolean728) {
 			Static266.method6784();
 		}
@@ -110,14 +192,14 @@ public final class client extends Applet_Sub1 {
 		if (Static163.aClass19_17 != null) {
 			Static163.aClass19_17.method7947();
 		}
-		if (Static316.aFrame8 != null) {
-			Static655.method8569(Static446.aClass392_6, Static316.aFrame8);
-			Static316.aFrame8 = null;
+		if (GameShell.fullscreenFrame != null) {
+			Static655.method8569(GameShell.sign, GameShell.fullscreenFrame);
+			GameShell.fullscreenFrame = null;
 		}
 		Static405.aClass153_2.method3274();
 		Static405.aClass153_1.method3274();
 		Static173.method2690();
-		Static500.aClass297_3.method6628();
+		js5NetQueue.method6628();
 		Static66.aClass174_1.method3826();
 		if (Static151.aClass228_20 != null) {
 			Static151.aClass228_20.method5250();
@@ -136,96 +218,96 @@ public final class client extends Applet_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!client", name = "q", descriptor = "(I)V")
-	private void method1656() {
-		if (Static522.anInt7923 < Static500.aClass297_3.anInt7475) {
+	private void js5Connect() {
+		if (Static522.js5PrevErrors < js5NetQueue.errors) {
 			Static344.aClass231_1.method5267();
-			Static370.anInt5896 = (Static500.aClass297_3.anInt7475 * 50 - 50) * 5;
-			if (Static370.anInt5896 > 3000) {
-				Static370.anInt5896 = 3000;
+			Static370.js5ConnectDelay = (js5NetQueue.errors * 50 - 50) * 5;
+			if (Static370.js5ConnectDelay > 3000) {
+				Static370.js5ConnectDelay = 3000;
 			}
-			if (Static500.aClass297_3.anInt7475 >= 2 && Static500.aClass297_3.anInt7474 == 6) {
-				this.method1638("js5connect_outofdate");
+			if (js5NetQueue.errors >= 2 && js5NetQueue.response == 6) {
+				this.error("js5connect_outofdate");
 				Static283.anInt4588 = 16;
 				return;
 			}
-			if (Static500.aClass297_3.anInt7475 >= 4 && Static500.aClass297_3.anInt7474 == -1) {
-				this.method1638("js5crc");
+			if (js5NetQueue.errors >= 4 && js5NetQueue.response == -1) {
+				this.error("js5crc");
 				Static283.anInt4588 = 16;
 				return;
 			}
-			if (Static500.aClass297_3.anInt7475 >= 4 && Static181.method2778(Static283.anInt4588)) {
-				if (Static500.aClass297_3.anInt7474 == 7 || Static500.aClass297_3.anInt7474 == 9) {
-					this.method1638("js5connect_full");
-				} else if (Static500.aClass297_3.anInt7474 <= 0) {
-					this.method1638("js5io");
+			if (js5NetQueue.errors >= 4 && Static181.method2778(Static283.anInt4588)) {
+				if (js5NetQueue.response == 7 || js5NetQueue.response == 9) {
+					this.error("js5connect_full");
+				} else if (js5NetQueue.response <= 0) {
+					this.error("js5io");
 				} else if (Static376.aString62 == null) {
-					this.method1638("js5connect");
+					this.error("js5connect");
 				} else {
-					this.method1638("js5proxy_" + Static376.aString62.trim());
+					this.error("js5proxy_" + Static376.aString62.trim());
 				}
 				Static283.anInt4588 = 16;
 				return;
 			}
 		}
-		Static522.anInt7923 = Static500.aClass297_3.anInt7475;
-		if (Static370.anInt5896 > 0) {
-			Static370.anInt5896--;
+		Static522.js5PrevErrors = js5NetQueue.errors;
+		if (Static370.js5ConnectDelay > 0) {
+			Static370.js5ConnectDelay--;
 			return;
 		}
 		try {
-			if (Static92.anInt1882 == 0) {
-				Static514.aClass272_6 = Static344.aClass231_1.method5270(Static446.aClass392_6);
-				Static92.anInt1882++;
+			if (js5ConnectState == 0) {
+				js5SocketRequest = Static344.aClass231_1.method5270(GameShell.sign);
+				js5ConnectState++;
 			}
-			if (Static92.anInt1882 == 1) {
-				if (Static514.aClass272_6.anInt6810 == 2) {
-					if (Static514.aClass272_6.anObject13 != null) {
-						Static376.aString62 = (String) Static514.aClass272_6.anObject13;
+			if (js5ConnectState == 1) {
+				if (js5SocketRequest.status == 2) {
+					if (js5SocketRequest.result != null) {
+						Static376.aString62 = (String) js5SocketRequest.result;
 					}
-					this.method1667(1000);
+					this.setJs5Response(1000);
 					return;
 				}
-				if (Static514.aClass272_6.anInt6810 == 1) {
-					Static92.anInt1882++;
+				if (js5SocketRequest.status == 1) {
+					js5ConnectState++;
 				}
 			}
-			if (Static92.anInt1882 == 2) {
-				Static672.aClass265_2 = new Class265((Socket) Static514.aClass272_6.anObject13, Static446.aClass392_6, 25000);
+			if (js5ConnectState == 2) {
+				js5Socket = new ClientStream((Socket) js5SocketRequest.result, GameShell.sign, 25000);
 				@Pc(251) Class2_Sub21 local251 = new Class2_Sub21(5);
 				local251.method7396(Static572.aClass167_54.anInt3984);
 				local251.method7349(667);
-				Static672.aClass265_2.method5836(5, local251.aByteArray93);
-				Static92.anInt1882++;
-				Static678.aLong310 = Static588.method7722();
+				js5Socket.method5836(0, 5, local251.aByteArray93);
+				js5ConnectState++;
+				Static678.js5ConnectTime = Static588.currentTimeMillis();
 			}
-			if (Static92.anInt1882 == 3) {
-				if (Static181.method2778(Static283.anInt4588) || Static672.aClass265_2.method5835() > 0) {
-					@Pc(296) int local296 = Static672.aClass265_2.method5831();
-					if (local296 != 0) {
-						this.method1667(local296);
+			if (js5ConnectState == 3) {
+				if (Static181.method2778(Static283.anInt4588) || js5Socket.available() > 0) {
+					@Pc(296) int response = js5Socket.read();
+					if (response != 0) {
+						this.setJs5Response(response);
 						return;
 					}
-					Static92.anInt1882++;
-				} else if (Static588.method7722() - Static678.aLong310 > 30000L) {
-					this.method1667(1001);
+					js5ConnectState++;
+				} else if (Static588.currentTimeMillis() - Static678.js5ConnectTime > 30000L) {
+					this.setJs5Response(1001);
 					return;
 				}
 			}
-			if (Static92.anInt1882 == 4) {
-				@Pc(356) boolean local356 = Static181.method2778(Static283.anInt4588) || Static41.method1027(Static283.anInt4588) || Static620.method8328(Static283.anInt4588);
+			if (js5ConnectState == 4) {
+				@Pc(356) boolean loggedOut = Static181.method2778(Static283.anInt4588) || Static41.method1027(Static283.anInt4588) || Static620.method8328(Static283.anInt4588);
 				@Pc(359) Class328[] local359 = Static566.method7474();
 				@Pc(367) Class2_Sub21 local367 = new Class2_Sub21(local359.length * 4);
-				Static672.aClass265_2.method5832(local367.aByteArray93.length, 0, local367.aByteArray93);
-				for (@Pc(378) int local378 = 0; local378 < local359.length; local378++) {
-					local359[local378].method7475(local367.method7356());
+				js5Socket.read(local367.aByteArray93.length, 0, local367.aByteArray93);
+				for (@Pc(378) int i = 0; i < local359.length; i++) {
+					local359[i].method7475(local367.method7356());
 				}
-				Static500.aClass297_3.method6634(!local356, Static672.aClass265_2);
-				Static92.anInt1882 = 0;
-				Static672.aClass265_2 = null;
-				Static514.aClass272_6 = null;
+				js5NetQueue.start(!loggedOut, js5Socket);
+				js5ConnectState = 0;
+				js5Socket = null;
+				js5SocketRequest = null;
 			}
 		} catch (@Pc(417) IOException local417) {
-			this.method1667(1002);
+			this.setJs5Response(1002);
 		}
 	}
 
@@ -322,23 +404,23 @@ public final class client extends Applet_Sub1 {
 											if (Static109.aClass158_3 != null) {
 												Static603.method7906();
 											}
-											if (Static333.anInt5474 % 1500 == 0) {
+											if (cycle % 1500 == 0) {
 												Static314.method4569();
 											}
 											if (Static283.anInt4588 == 7 && !Static242.method3500() || Static283.anInt4588 == 9 && Static169.anInt2864 == 42) {
 												Static320.method4605();
 											}
 											Static587.method7711();
-											if (Static624.aBoolean728 && Static588.method7722() - 60000L > Static98.aLong71) {
+											if (Static624.aBoolean728 && Static588.currentTimeMillis() - 60000L > Static98.aLong71) {
 												Static266.method6784();
 											}
 											for (@Pc(672) Class8_Sub4_Sub1 local672 = (Class8_Sub4_Sub1) Static168.aClass130_5.method2790(); local672 != null; local672 = (Class8_Sub4_Sub1) Static168.aClass130_5.method2785()) {
-												if ((long) local672.anInt6453 < Static588.method7722() / 1000L - 5L) {
+												if ((long) local672.anInt6453 < Static588.currentTimeMillis() / 1000L - 5L) {
 													if (local672.aShort74 > 0) {
-														Static44.method1072(local672.aString72 + Static32.aClass32_19.method877(Static51.anInt1056), "", 0, "", "", 5);
+														Static44.method1072(local672.aString72 + Static32.aClass32_19.method877(lang), "", 0, "", "", 5);
 													}
 													if (local672.aShort74 == 0) {
-														Static44.method1072(local672.aString72 + Static32.aClass32_20.method877(Static51.anInt1056), "", 0, "", "", 5);
+														Static44.method1072(local672.aString72 + Static32.aClass32_20.method877(lang), "", 0, "", "", 5);
 													}
 													local672.method9281();
 												}
@@ -398,51 +480,51 @@ public final class client extends Applet_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!client", name = "m", descriptor = "(I)V")
-	private void method1659() {
-		@Pc(7) boolean local7 = Static500.aClass297_3.method6631();
-		if (!local7) {
-			this.method1656();
+	private void js5NetworkCycle() {
+		@Pc(7) boolean idle = js5NetQueue.cycle();
+		if (!idle) {
+			this.js5Connect();
 		}
 	}
 
 	@OriginalMember(owner = "client!client", name = "e", descriptor = "(B)V")
 	@Override
-	protected void method1637() {
+	protected void reset() {
 	}
 
 	@OriginalMember(owner = "client!client", name = "f", descriptor = "(B)V")
-	private void method1666() {
+	private void draw() {
 		if (Static283.anInt4588 == 16) {
 			return;
 		}
-		@Pc(20) long local20 = Static271.method3929() / 1000000L - Static206.aLong114;
-		Static206.aLong114 = Static271.method3929() / 1000000L;
+		@Pc(20) long local20 = GameShell.time() / 1000000L - Static206.aLong114;
+		Static206.aLong114 = GameShell.time() / 1000000L;
 		@Pc(28) boolean local28 = Static576.method7618();
-		if (local28 && Static501.aBoolean575 && Static719.aClass56_5 != null) {
-			Static719.aClass56_5.method3592();
+		if (local28 && Static501.jingle && Static719.musicChannel != null) {
+			Static719.musicChannel.method3592();
 		}
 		if (Static475.method6452(Static283.anInt4588)) {
-			if (Static297.aLong153 != 0L && Static588.method7722() > Static297.aLong153) {
-				Static409.method5664(Static36.method978(), Static560.anInt8453, false, Static433.anInt6278);
-			} else if (!Static163.aClass19_17.method8008() && Static723.aBoolean828) {
+			if (Static297.aLong153 != 0L && Static588.currentTimeMillis() > Static297.aLong153) {
+				Static409.setWindowMode(Static36.method978(), Static560.anInt8453, false, Static433.anInt6278);
+			} else if (!Static163.aClass19_17.method8008() && GameShell.replaceCanvas) {
 				Static574.method7579();
 			}
 		}
 		@Pc(110) int local110;
 		@Pc(114) int local114;
-		if (Static316.aFrame8 == null) {
+		if (GameShell.fullscreenFrame == null) {
 			@Pc(98) Container local98;
-			if (Static353.aFrame10 != null) {
-				local98 = Static353.aFrame10;
-			} else if (Static166.anApplet1 == null) {
-				local98 = Static149.anApplet_Sub1_1;
+			if (GameShell.frame != null) {
+				local98 = GameShell.frame;
+			} else if (signlink.mainapp == null) {
+				local98 = GameShell.instance;
 			} else {
-				local98 = Static166.anApplet1;
+				local98 = signlink.mainapp;
 			}
 			local110 = local98.getSize().width;
 			local114 = local98.getSize().height;
-			if (local98 == Static353.aFrame10) {
-				@Pc(120) Insets local120 = Static353.aFrame10.getInsets();
+			if (local98 == GameShell.frame) {
+				@Pc(120) Insets local120 = GameShell.frame.getInsets();
 				local114 -= local120.bottom + local120.top;
 				local110 -= local120.right + local120.left;
 			}
@@ -453,17 +535,17 @@ public final class client extends Applet_Sub1 {
 					Static52.anInt1063 = local110;
 					Static54.anInt1088 = local114;
 				}
-				Static297.aLong153 = Static588.method7722() + 500L;
+				Static297.aLong153 = Static588.currentTimeMillis() + 500L;
 				Static284.aBoolean355 = false;
 			}
 		}
-		if (Static316.aFrame8 != null && !Static91.aBoolean751 && Static475.method6452(Static283.anInt4588)) {
-			Static409.method5664(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+		if (GameShell.fullscreenFrame != null && !GameShell.focus && Static475.method6452(Static283.anInt4588)) {
+			Static409.setWindowMode(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
 		}
 		@Pc(209) boolean local209 = false;
-		if (Static664.aBoolean760) {
+		if (GameShell.fullRedraw) {
 			local209 = true;
-			Static664.aBoolean760 = false;
+			GameShell.fullRedraw = false;
 		}
 		if (local209) {
 			Static288.method4189();
@@ -483,43 +565,43 @@ public final class client extends Applet_Sub1 {
 					Static357.anInt6528 = Static593.anInt8787;
 				}
 				local110 = (Static357.anInt6528 - Static593.anInt8787) * 50 / Static357.anInt6528;
-				Static694.method9035(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1056) + "<br>(" + local110 + "%)", true, Static694.aClass383_13, Static437.aClass14_9);
+				Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(lang) + "<br>(" + local110 + "%)", true, Static694.aClass383_13, Static437.aClass14_9);
 			} else if (Static213.anInt3482 == 2) {
 				if (Static13.anInt150 > Static440.anInt6703) {
 					Static440.anInt6703 = Static13.anInt150;
 				}
 				local110 = (Static440.anInt6703 - Static13.anInt150) * 50 / Static440.anInt6703 + 50;
-				Static694.method9035(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1056) + "<br>(" + local110 + "%)", true, Static694.aClass383_13, Static437.aClass14_9);
+				Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(lang) + "<br>(" + local110 + "%)", true, Static694.aClass383_13, Static437.aClass14_9);
 			} else {
-				Static694.method9035(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1056), true, Static694.aClass383_13, Static437.aClass14_9);
+				Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(lang), true, Static694.aClass383_13, Static437.aClass14_9);
 			}
 		} else if (Static283.anInt4588 == 11) {
 			Static686.method7937(local20);
 		} else if (Static283.anInt4588 == 14) {
-			Static694.method9035(Static163.aClass19_17, Static32.aClass32_14.method877(Static51.anInt1056) + "<br>" + Static32.aClass32_15.method877(Static51.anInt1056), false, Static694.aClass383_13, Static437.aClass14_9);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_14.method877(lang) + "<br>" + Static32.aClass32_15.method877(lang), false, Static694.aClass383_13, Static437.aClass14_9);
 		} else if (Static283.anInt4588 == 15) {
-			Static694.method9035(Static163.aClass19_17, Static32.aClass32_31.method877(Static51.anInt1056), false, Static694.aClass383_13, Static437.aClass14_9);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_31.method877(lang), false, Static694.aClass383_13, Static437.aClass14_9);
 		}
 		if (Static18.anInt251 == 3) {
-			for (local110 = 0; local110 < Static122.anInt2348; local110++) {
+			for (local110 = 0; local110 < Static122.rectangles; local110++) {
 				@Pc(478) Rectangle local478 = Class2_Sub1_Sub28.aRectangleArray1[local110];
 				if (Static359.aBooleanArray17[local110]) {
-					Static163.aClass19_17.method7952(local478.y, -65281, local478.width, local478.height, local478.x);
-				} else if (Static469.aBooleanArray23[local110]) {
-					Static163.aClass19_17.method7952(local478.y, -65536, local478.width, local478.height, local478.x);
+					Static163.aClass19_17.method7952(local478.y, 0xFFFF00FF, local478.width, local478.height, local478.x);
+				} else if (Static469.rectangleRedraw[local110]) {
+					Static163.aClass19_17.method7952(local478.y, 0xFFFF0000, local478.width, local478.height, local478.x);
 				} else {
-					Static163.aClass19_17.method7952(local478.y, -16711936, local478.width, local478.height, local478.x);
+					Static163.aClass19_17.method7952(local478.y, 0xFF00FF00, local478.width, local478.height, local478.x);
 				}
 			}
 		}
 		if (Static607.method8170()) {
 			Static546.method7258(Static163.aClass19_17);
 		}
-		if (Static446.aClass392_6.aBoolean780 && Static475.method6452(Static283.anInt4588) && Static18.anInt251 == 0 && Static36.method978() == 1 && !local209) {
+		if (GameShell.sign.aBoolean780 && Static475.method6452(Static283.anInt4588) && Static18.anInt251 == 0 && Static36.method978() == 1 && !local209) {
 			local110 = 0;
-			for (local114 = 0; local114 < Static122.anInt2348; local114++) {
-				if (Static469.aBooleanArray23[local114]) {
-					Static469.aBooleanArray23[local114] = false;
+			for (local114 = 0; local114 < Static122.rectangles; local114++) {
+				if (Static469.rectangleRedraw[local114]) {
+					Static469.rectangleRedraw[local114] = false;
 					Static663.aRectangleArray2[local110++] = Class2_Sub1_Sub28.aRectangleArray1[local114];
 				}
 			}
@@ -532,8 +614,8 @@ public final class client extends Applet_Sub1 {
 			} catch (@Pc(629) Exception_Sub1 local629) {
 			}
 		} else if (!Static181.method2778(Static283.anInt4588)) {
-			for (local110 = 0; local110 < Static122.anInt2348; local110++) {
-				Static469.aBooleanArray23[local110] = false;
+			for (local110 = 0; local110 < Static122.rectangles; local110++) {
+				Static469.rectangleRedraw[local110] = false;
 			}
 			try {
 				if (Static137.aBoolean210) {
@@ -542,23 +624,23 @@ public final class client extends Applet_Sub1 {
 					Static163.aClass19_17.method7991();
 				}
 			} catch (@Pc(666) Exception_Sub1 local666) {
-				Static240.method3496(local666, local666.getMessage() + " (Recovered) " + this.method1648());
+				TracingException.report(local666, local666.getMessage() + " (Recovered) " + this.method1648());
 				Static32.method880(0, false);
 			}
 		}
 		Static507.method6751();
 		local110 = Static400.aClass2_Sub34_28.aClass57_Sub21_1.method6367();
 		if (local110 == 0) {
-			Static638.method8402(15L);
+			ThreadUtils.sleep(15L);
 		} else if (local110 == 1) {
-			Static638.method8402(10L);
+			ThreadUtils.sleep(10L);
 		} else if (local110 == 2) {
-			Static638.method8402(5L);
+			ThreadUtils.sleep(5L);
 		} else if (local110 == 3) {
-			Static638.method8402(2L);
+			ThreadUtils.sleep(2L);
 		}
-		if (Static666.aBoolean767) {
-			Static614.method8252();
+		if (clean) {
+			clean();
 		}
 		if (Static400.aClass2_Sub34_28.aClass57_Sub10_1.method3519() == 1 && Static283.anInt4588 == 3 && Static377.anInt5950 != -1) {
 			Static400.aClass2_Sub34_28.method5111(0, Static400.aClass2_Sub34_28.aClass57_Sub10_1);
@@ -567,46 +649,46 @@ public final class client extends Applet_Sub1 {
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(ZI)V")
-	private void method1667(@OriginalArg(1) int arg0) {
-		Static514.aClass272_6 = null;
-		Static500.aClass297_3.anInt7474 = arg0;
-		Static672.aClass265_2 = null;
-		Static500.aClass297_3.anInt7475++;
-		Static92.anInt1882 = 0;
+	private void setJs5Response(@OriginalArg(1) int response) {
+		js5SocketRequest = null;
+		js5NetQueue.response = response;
+		js5Socket = null;
+		js5NetQueue.errors++;
+		js5ConnectState = 0;
 	}
 
 	@OriginalMember(owner = "client!client", name = "k", descriptor = "(I)V")
 	@Override
 	protected void method1645() {
 		if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() != 2) {
-			this.method1668();
+			this.updateCycle();
 			return;
 		}
 		try {
-			this.method1668();
+			this.updateCycle();
 		} catch (@Pc(21) ThreadDeath local21) {
 			throw local21;
 		} catch (@Pc(24) Throwable local24) {
-			Static240.method3496(local24, local24.getMessage() + " (Recovered) " + this.method1648());
+			TracingException.report(local24, local24.getMessage() + " (Recovered) " + this.method1648());
 			Static171.aBoolean245 = true;
 			Static32.method880(0, false);
 		}
 	}
 
 	@OriginalMember(owner = "client!client", name = "o", descriptor = "(I)V")
-	private void method1668() {
+	private void updateCycle() {
 		if (Static283.anInt4588 == 16) {
 			return;
 		}
-		Static333.anInt5474++;
-		if (Static333.anInt5474 % 1000 == 1) {
-			@Pc(27) GregorianCalendar local27 = new GregorianCalendar();
-			Static178.anInt2956 = local27.get(Calendar.HOUR_OF_DAY) * 600 + local27.get(Calendar.MINUTE) * 10 + local27.get(Calendar.SECOND) / 6;
-			Static493.aRandom1.setSeed(Static178.anInt2956);
+		cycle++;
+		if (cycle % 1000 == 1) {
+			@Pc(27) GregorianCalendar calendar = new GregorianCalendar();
+			seed = calendar.get(Calendar.HOUR_OF_DAY) * 600 + calendar.get(Calendar.MINUTE) * 10 + calendar.get(Calendar.SECOND) / 6;
+			random.setSeed(seed);
 		}
 		Static405.aClass153_2.method3271();
 		Static405.aClass153_1.method3271();
-		this.method1659();
+		this.js5NetworkCycle();
 		if (Static228.aClass264_1 != null) {
 			Static228.aClass264_1.method5811();
 		}
@@ -615,7 +697,7 @@ public final class client extends Applet_Sub1 {
 		Static334.aClass321_1.method8488();
 		Static189.aClass120_1.method8848();
 		if (Static163.aClass19_17 != null) {
-			Static163.aClass19_17.method7984((int) Static588.method7722());
+			Static163.aClass19_17.method7984((int) Static588.currentTimeMillis());
 		}
 		Static711.method9279();
 		Static671.anInt10053 = 0;
@@ -681,7 +763,7 @@ public final class client extends Applet_Sub1 {
 					Static673.anInt10106 = Static356.anInt5800;
 					Static383.anInt6021 = Static329.anInt1756;
 					if (Static718.aBoolean824) {
-						Static430.method5824(Static459.aClass231_2.anInt5876, Static459.aClass231_2.aString60);
+						Static430.method5824(Static459.aClass231_2.id, Static459.aClass231_2.address);
 						Static405.aClass153_2.aClass350_1 = null;
 						Static81.method1586(14);
 					} else {
@@ -699,60 +781,60 @@ public final class client extends Applet_Sub1 {
 	@OriginalMember(owner = "client!client", name = "h", descriptor = "(I)V")
 	@Override
 	protected void method1647() {
-		if (Static473.aBoolean539) {
-			Static369.anInt4277 = 64;
+		if (Static473.force64mb) {
+			GameShell.maxMemory = 64;
 		}
 		@Pc(18) Frame local18 = new Frame("Jagex");
 		local18.pack();
 		local18.dispose();
 		Static712.method9336();
-		Static66.aClass174_1 = new Class174(Static446.aClass392_6);
-		Static500.aClass297_3 = new Class297();
+		Static66.aClass174_1 = new Class174(GameShell.sign);
+		js5NetQueue = new Class297();
 		Static545.method7248(new int[] { 20, 260 }, new int[] { 1000, 100 });
-		if (Static446.aClass357_5 != Static2.aClass357_1) {
-			Static163.aByteArrayArray36 = new byte[50][];
+		if (Static446.liveMode != modewhere) {
+			Static163.fakeModelCacheEntries = new byte[50][];
 		}
 		Static400.aClass2_Sub34_28 = Static720.method9405();
-		if (Static2.aClass357_1 == Static446.aClass357_5) {
-			Static527.aClass231_3.aString60 = this.getCodeBase().getHost();
-		} else if (Static179.method2769(Static2.aClass357_1)) {
-			Static527.aClass231_3.aString60 = this.getCodeBase().getHost();
-			Static527.aClass231_3.anInt5874 = Static527.aClass231_3.anInt5876 + 40000;
-			Static527.aClass231_3.anInt5873 = Static527.aClass231_3.anInt5876 + 50000;
-			Static660.aClass231_4.anInt5874 = Static660.aClass231_4.anInt5876 + 40000;
-			Static660.aClass231_4.anInt5873 = Static660.aClass231_4.anInt5876 + 50000;
-		} else if (Static16.aClass357_2 == Static2.aClass357_1) {
-			Static527.aClass231_3.aString60 = "127.0.0.1";
-			Static527.aClass231_3.anInt5874 = Static527.aClass231_3.anInt5876 + 40000;
-			Static660.aClass231_4.aString60 = "127.0.0.1";
-			Static527.aClass231_3.anInt5873 = Static527.aClass231_3.anInt5876 + 50000;
-			Static660.aClass231_4.anInt5874 = Static660.aClass231_4.anInt5876 + 40000;
-			Static660.aClass231_4.anInt5873 = Static660.aClass231_4.anInt5876 + 50000;
+		if (modewhere == Static446.liveMode) {
+			world.address = this.getCodeBase().getHost();
+		} else if (Static179.method2769(modewhere)) {
+			world.address = this.getCodeBase().getHost();
+			world.defaultPort = world.id + 40000;
+			world.alternatePort = world.id + 50000;
+			lobby.defaultPort = lobby.id + 40000;
+			lobby.alternatePort = lobby.id + 50000;
+		} else if (Static16.localMode == modewhere) {
+			world.address = "127.0.0.1";
+			world.defaultPort = world.id + 40000;
+			lobby.address = "127.0.0.1";
+			world.alternatePort = world.id + 50000;
+			lobby.defaultPort = lobby.id + 40000;
+			lobby.alternatePort = lobby.id + 50000;
 		}
-		Static344.aClass231_1 = Static527.aClass231_3;
-		Static637.aShortArray133 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
-		if (Static392.aClass379_4 == Static673.aClass379_8) {
+		Static344.aClass231_1 = world;
+		Static637.recolorPalette = Static419.recolorPalette = Static553.recolorPalette = Static238.recolorPalette = new short[256];
+		if (Static392.game == Static673.runescapeGame) {
 			Static273.aBoolean340 = false;
 		}
 		try {
-			Static175.aClipboard1 = Static295.aClient1.getToolkit().getSystemClipboard();
+			Static175.clipboard = instance.getToolkit().getSystemClipboard();
 		} catch (@Pc(183) Exception local183) {
 		}
-		Static334.aClass321_1 = Static681.method8928(Static434.aCanvas7);
-		Static189.aClass120_1 = Static70.method1513(Static434.aCanvas7);
+		Static334.aClass321_1 = Static681.method8928(GameShell.canvas);
+		Static189.aClass120_1 = Static70.method1513(GameShell.canvas);
 		try {
-			if (Static446.aClass392_6.aClass83_2 != null) {
-				Static172.aClass245_4 = new Class245(Static446.aClass392_6.aClass83_2, 5200, 0);
+			if (GameShell.sign.aClass83_2 != null) {
+				Static172.aClass245_4 = new Class245(GameShell.sign.aClass83_2, 5200, 0);
 				for (@Pc(205) int local205 = 0; local205 < 37; local205++) {
-					Static208.aClass245Array1[local205] = new Class245(Static446.aClass392_6.aClass83Array1[local205], 6000, 0);
+					Static208.aClass245Array1[local205] = new Class245(GameShell.sign.aClass83Array1[local205], 6000, 0);
 				}
-				Static5.aClass245_1 = new Class245(Static446.aClass392_6.aClass83_3, 6000, 0);
+				Static5.aClass245_1 = new Class245(GameShell.sign.aClass83_3, 6000, 0);
 				Static276.aClass9_1 = new Class9(255, Static172.aClass245_4, Static5.aClass245_1, 500000);
-				Static690.aClass245_5 = new Class245(Static446.aClass392_6.aClass83_4, 24, 0);
-				Static446.aClass392_6.aClass83_3 = null;
-				Static446.aClass392_6.aClass83Array1 = null;
-				Static446.aClass392_6.aClass83_2 = null;
-				Static446.aClass392_6.aClass83_4 = null;
+				Static690.aClass245_5 = new Class245(GameShell.sign.aClass83_4, 24, 0);
+				GameShell.sign.aClass83_3 = null;
+				GameShell.sign.aClass83Array1 = null;
+				GameShell.sign.aClass83_2 = null;
+				GameShell.sign.aClass83_4 = null;
 			}
 		} catch (@Pc(275) IOException local275) {
 			Static5.aClass245_1 = null;
@@ -760,10 +842,10 @@ public final class client extends Applet_Sub1 {
 			Static690.aClass245_5 = null;
 			Static172.aClass245_4 = null;
 		}
-		if (Static446.aClass357_5 != Static2.aClass357_1) {
+		if (Static446.liveMode != modewhere) {
 			Static105.aBoolean196 = true;
 		}
-		Static484.aString85 = Static32.aClass32_12.method877(Static51.anInt1056);
+		Static484.aString85 = Static32.aClass32_12.method877(lang);
 	}
 
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "(I)Ljava/lang/String;")
@@ -775,17 +857,20 @@ public final class client extends Applet_Sub1 {
 			if (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2 != null) {
 				local5 = local5 + "2)" + Static394.anInt6196 + "," + (Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0] + Static691.anInt10395) + "," + (Static116.anInt2279 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + "|";
 			}
-			local5 = local5 + "3)" + Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() + "|4)" + Static400.aClass2_Sub34_28.aClass57_Sub13_2.method4380() + "|5)" + Static36.method978() + "|6)" + Static680.anInt10317 + "," + Static380.anInt5999 + "|";
+			local5 = local5 + "3)" + Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() + "|";
+			local5 = local5 + "4)" + Static400.aClass2_Sub34_28.aClass57_Sub13_2.method4380() + "|";
+			local5 = local5 + "5)" + Static36.method978() + "|";
+			local5 = local5 + "6)" + GameShell.canvasWidth + "," + GameShell.canvasHeight + "|";
 			local5 = local5 + "7)" + Static400.aClass2_Sub34_28.aClass57_Sub24_1.method7089() + "|";
 			local5 = local5 + "8)" + Static400.aClass2_Sub34_28.aClass57_Sub12_1.method4371() + "|";
 			local5 = local5 + "9)" + Static400.aClass2_Sub34_28.aClass57_Sub26_1.method7470() + "|";
 			local5 = local5 + "10)" + Static400.aClass2_Sub34_28.aClass57_Sub30_1.method8363() + "|";
 			local5 = local5 + "11)" + Static400.aClass2_Sub34_28.aClass57_Sub20_1.method6115() + "|";
 			local5 = local5 + "12)" + Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5967() + "|";
-			local5 = local5 + "13)" + Static369.anInt4277 + "|";
+			local5 = local5 + "13)" + GameShell.maxMemory + "|";
 			local5 = local5 + "14)" + Static283.anInt4588;
-			if (Static292.aClass2_Sub43_2 != null) {
-				local5 = local5 + "|15)" + Static292.aClass2_Sub43_2.anInt7633;
+			if (Static292.instance != null) {
+				local5 = local5 + "|15)" + Static292.instance.anInt7633;
 			}
 			try {
 				if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() == 2) {
@@ -826,81 +911,82 @@ public final class client extends Applet_Sub1 {
 	@OriginalMember(owner = "client!client", name = "init", descriptor = "()V")
 	@Override
 	public void init() {
-		if (!this.method1643()) {
+		if (!this.isHostnameValid()) {
 			return;
 		}
-		Static527.aClass231_3 = new Class231();
-		Static527.aClass231_3.anInt5876 = Integer.parseInt(this.getParameter("worldid"));
-		Static660.aClass231_4 = new Class231();
-		Static660.aClass231_4.anInt5876 = Integer.parseInt(this.getParameter("lobbyid"));
-		Static660.aClass231_4.aString60 = this.getParameter("lobbyaddress");
-		Static2.aClass357_1 = Static463.method6286(Integer.parseInt(this.getParameter("modewhere")));
-		if (Static16.aClass357_2 == Static2.aClass357_1) {
-			Static2.aClass357_1 = Static425.aClass357_4;
-		} else if (!Static179.method2769(Static2.aClass357_1) && Static446.aClass357_5 != Static2.aClass357_1) {
-			Static2.aClass357_1 = Static446.aClass357_5;
+
+		world = new Class231();
+		world.id = Integer.parseInt(this.getParameter("worldid"));
+		lobby = new Class231();
+		lobby.id = Integer.parseInt(this.getParameter("lobbyid"));
+		lobby.address = this.getParameter("lobbyaddress");
+		modewhere = Static463.method6286(Integer.parseInt(this.getParameter("modewhere")));
+		if (Static16.localMode == modewhere) {
+			modewhere = Static425.wtwipMode;
+		} else if (!Static179.method2769(modewhere) && Static446.liveMode != modewhere) {
+			modewhere = Static446.liveMode;
 		}
-		Static598.aClass162_5 = Static624.method8336(Integer.parseInt(this.getParameter("modewhat")));
-		if (Static225.aClass162_1 != Static598.aClass162_5 && Static598.aClass162_5 != Static519.aClass162_4 && Static523.aClass162_3 != Static598.aClass162_5) {
-			Static598.aClass162_5 = Static523.aClass162_3;
+		modewhat = Static624.method8336(Integer.parseInt(this.getParameter("modewhat")));
+		if (Static225.aClass162_1 != modewhat && modewhat != Static519.aClass162_4 && Static523.aClass162_3 != modewhat) {
+			modewhat = Static523.aClass162_3;
 		}
 		try {
-			Static51.anInt1056 = Integer.parseInt(this.getParameter("lang"));
+			lang = Integer.parseInt(this.getParameter("lang"));
 		} catch (@Pc(110) Exception local110) {
-			Static51.anInt1056 = 0;
+			lang = 0;
 		}
 		@Pc(118) String local118 = this.getParameter("objecttag");
 		if (local118 != null && local118.equals("1")) {
-			Static464.aBoolean533 = true;
+			Static464.objecttag = true;
 		} else {
-			Static464.aBoolean533 = false;
+			Static464.objecttag = false;
 		}
 		@Pc(142) String local142 = this.getParameter("js");
 		if (local142 != null && local142.equals("1")) {
-			Static98.aBoolean191 = true;
+			Static98.js = true;
 		} else {
-			Static98.aBoolean191 = false;
+			Static98.js = false;
 		}
 		@Pc(166) String local166 = this.getParameter("advert");
 		if (local166 != null && local166.equals("1")) {
-			Static305.aBoolean372 = true;
+			Static305.advert = true;
 		} else {
-			Static305.aBoolean372 = false;
+			Static305.advert = false;
 		}
 		@Pc(190) String local190 = this.getParameter("game");
 		if (local190 != null) {
 			if (local190.equals("0")) {
-				Static392.aClass379_4 = Static673.aClass379_8;
+				Static392.game = Static673.runescapeGame;
 			} else if (local190.equals("1")) {
-				Static392.aClass379_4 = Static723.aClass379_9;
+				Static392.game = Static723.aClass379_9;
 			} else if (local190.equals("2")) {
-				Static392.aClass379_4 = Static465.aClass379_5;
+				Static392.game = Static465.aClass379_5;
 			} else if (local190.equals("3")) {
-				Static392.aClass379_4 = Static655.aClass379_7;
+				Static392.game = Static655.aClass379_7;
 			}
 		}
 		try {
-			Static323.anInt5138 = Integer.parseInt(this.getParameter("affid"));
+			Static323.affid = Integer.parseInt(this.getParameter("affid"));
 		} catch (@Pc(247) Exception local247) {
-			Static323.anInt5138 = 0;
+			Static323.affid = 0;
 		}
-		Static360.aString59 = this.getParameter("quiturl");
-		Static150.aString26 = this.getParameter("settings");
-		if (Static150.aString26 == null) {
-			Static150.aString26 = "";
+		Static360.quiturl = this.getParameter("quiturl");
+		Static150.settings = this.getParameter("settings");
+		if (Static150.settings == null) {
+			Static150.settings = "";
 		}
-		Static477.aBoolean543 = "1".equals(this.getParameter("under"));
+		Static477.under = "1".equals(this.getParameter("under"));
 		@Pc(281) String local281 = this.getParameter("country");
 		if (local281 != null) {
 			try {
-				Static584.anInt8658 = Integer.parseInt(local281);
+				Static584.country = Integer.parseInt(local281);
 			} catch (@Pc(288) Exception local288) {
-				Static584.anInt8658 = 0;
+				Static584.country = 0;
 			}
 		}
-		Static338.anInt5582 = Integer.parseInt(this.getParameter("colourid"));
-		if (Static338.anInt5582 < 0 || Static718.aColorArray3.length <= Static338.anInt5582) {
-			Static338.anInt5582 = 0;
+		Static338.colourid = Integer.parseInt(this.getParameter("colourid"));
+		if (Static338.colourid < 0 || Static718.aColorArray3.length <= Static338.colourid) {
+			Static338.colourid = 0;
 		}
 		if (Integer.parseInt(this.getParameter("sitesettings_member")) == 1) {
 			Static508.aBoolean582 = true;
@@ -908,65 +994,66 @@ public final class client extends Applet_Sub1 {
 		}
 		@Pc(336) String local336 = this.getParameter("frombilling");
 		if (local336 != null && local336.equals("true")) {
-			Static29.aBoolean61 = true;
+			Static29.frombilling = true;
 		}
 		@Pc(356) String local356 = this.getParameter("sskey");
 		if (local356 != null) {
-			Static265.aByteArray44 = Static107.method2054(Static713.method9340(local356));
-			if (Static265.aByteArray44.length < 16) {
-				Static265.aByteArray44 = null;
+			Static265.sskey = Static107.method2054(Static713.method9340(local356));
+			if (Static265.sskey.length < 16) {
+				Static265.sskey = null;
 			}
 		}
 		@Pc(382) String local382 = this.getParameter("force64mb");
 		if (local382 != null && local382.equals("true")) {
-			Static473.aBoolean539 = true;
+			Static473.force64mb = true;
 		}
 		@Pc(402) String local402 = this.getParameter("worldflags");
 		if (local402 != null) {
 			try {
-				Static715.anInt10834 = Integer.parseInt(local402);
+				Static715.worldflags = Integer.parseInt(local402);
 			} catch (@Pc(409) Exception local409) {
 			}
 		}
 		@Pc(416) String local416 = this.getParameter("userFlow");
 		if (local416 != null) {
 			try {
-				Static416.aLong208 = Long.parseLong(local416);
+				Static416.userFlow = Long.parseLong(local416);
 			} catch (@Pc(424) NumberFormatException local424) {
 			}
 		}
-		Static389.aString64 = this.getParameter("additionalInfo");
-		if (Static389.aString64 != null && Static389.aString64.length() > 50) {
-			Static389.aString64 = null;
+		Static389.additionalInfo = this.getParameter("additionalInfo");
+		if (Static389.additionalInfo != null && Static389.additionalInfo.length() > 50) {
+			Static389.additionalInfo = null;
 		}
-		if (Static673.aClass379_8 == Static392.aClass379_4) {
+		if (Static673.runescapeGame == Static392.game) {
 			Static302.anInt4867 = 765;
 			Static479.anInt7222 = 503;
-		} else if (Static392.aClass379_4 == Static723.aClass379_9) {
+		} else if (Static392.game == Static723.aClass379_9) {
 			Static479.anInt7222 = 480;
 			Static302.anInt4867 = 640;
 		}
 		@Pc(473) String local473 = this.getParameter("hc");
 		if (local473 != null && local473.equals("1")) {
-			Static416.aBoolean473 = true;
+			Static416.hc = true;
 		}
-		Static295.aClient1 = this;
-		this.method1640(667, Static302.anInt4867, Static598.aClass162_5.method3469() + 32, Static392.aClass379_4.aString114, 37, Static479.anInt7222);
+		instance = this;
+		this.method1640(667, Static302.anInt4867, modewhat.method3469() + 32, Static392.game.name, 37, Static479.anInt7222);
 	}
 
 	@OriginalMember(owner = "client!client", name = "c", descriptor = "(I)V")
 	@Override
-	protected void method1650() {
+	protected void drawWrapper() {
 		if (Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() != 2) {
-			this.method1666();
+			this.draw();
 			return;
 		}
+
 		try {
-			this.method1666();
-		} catch (@Pc(21) ThreadDeath local21) {
-			throw local21;
-		} catch (@Pc(24) Throwable local24) {
-			Static240.method3496(local24, local24.getMessage() + " (Recovered) " + this.method1648());
+			this.draw();
+		} catch (@Pc(21) ThreadDeath ex) {
+			throw ex;
+		} catch (@Pc(24) Throwable ex) {
+			TracingException.report(ex, ex.getMessage() + " (Recovered) " + this.method1648());
 			Static171.aBoolean245 = true;
 			Static32.method880(0, false);
 		}

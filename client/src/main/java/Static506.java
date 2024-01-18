@@ -30,7 +30,7 @@ public final class Static506 {
 		if (Static173.anInt2922 < 0) {
 			return;
 		}
-		@Pc(18) long local18 = Static588.method7722();
+		@Pc(18) long local18 = Static588.currentTimeMillis();
 		Static173.anInt2922 = (int) ((long) Static173.anInt2922 + Static344.aLong169 - local18);
 		if (Static173.anInt2922 > 0) {
 			@Pc(35) int local35 = (Static173.anInt2922 << 8) / Static587.anInt8697;

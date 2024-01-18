@@ -6,15 +6,15 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class379 {
 
 	@OriginalMember(owner = "client!ul", name = "d", descriptor = "Ljava/lang/String;")
-	public final String aString114;
+	public final String name;
 
 	@OriginalMember(owner = "client!ul", name = "a", descriptor = "I")
-	public final int anInt9746;
+	public final int id;
 
 	@OriginalMember(owner = "client!ul", name = "<init>", descriptor = "(Ljava/lang/String;Ljava/lang/String;I)V")
-	public Class379(@OriginalArg(0) String arg0, @OriginalArg(1) String arg1, @OriginalArg(2) int arg2) {
-		this.aString114 = arg0;
-		this.anInt9746 = arg2;
+	public Class379(@OriginalArg(0) String name, @OriginalArg(1) String displayName, @OriginalArg(2) int id) {
+		this.name = name;
+		this.id = id;
 	}
 
 	@OriginalMember(owner = "client!ul", name = "toString", descriptor = "()Ljava/lang/String;")

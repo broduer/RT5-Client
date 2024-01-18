@@ -15,5 +15,5 @@ public final class Static29 {
 	public static int anInt726 = 0;
 
 	@OriginalMember(owner = "client!b", name = "K", descriptor = "Z")
-	public static boolean aBoolean61 = false;
+	public static boolean frombilling = false;
 }

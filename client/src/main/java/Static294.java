@@ -164,9 +164,9 @@ public final class Static294 {
 		@Pc(688) byte local688 = Static400.aClass2_Sub34_28.aClass57_Sub4_2.method2143() == 2 ? (byte) Static198.anInt3285 : 1;
 		if (Static137.aBoolean210) {
 			Static648.method8490(-Static323.anInt5136 & 0x3FFF, -Static81.anInt1651 & 0x3FFF, -Static598.anInt8856 & 0x3FFF);
-			Static466.method6331(local688, Static170.anInt2873, Static110.anInt2195, Static359.anInt5821, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10722 >> 9, Static457.anIntArray552, Static682.anIntArray817, Static333.anInt5474, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, Static482.anIntArray588, Static400.aClass2_Sub34_28.aClass57_Sub8_1.method3176() == 0, Static582.anInt8651, Static9.anIntArray18, Static328.aByteArrayArrayArray4, Static153.anIntArray235, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10718 >> 9);
+			Static466.method6331(local688, Static170.anInt2873, Static110.anInt2195, Static359.anInt5821, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10722 >> 9, Static457.anIntArray552, Static682.anIntArray817, client.cycle, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, Static482.anIntArray588, Static400.aClass2_Sub34_28.aClass57_Sub8_1.method3176() == 0, Static582.anInt8651, Static9.anIntArray18, Static328.aByteArrayArrayArray4, Static153.anIntArray235, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10718 >> 9);
 		} else {
-			Static283.method4100(Static333.anInt5474, Static170.anInt2873, Static359.anInt5821, Static110.anInt2195, Static328.aByteArrayArrayArray4, Static482.anIntArray588, Static9.anIntArray18, Static457.anIntArray552, Static153.anIntArray235, Static682.anIntArray817, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, local688, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10718 >> 9, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10722 >> 9, Static400.aClass2_Sub34_28.aClass57_Sub8_1.method3176() == 0, Static504.aBoolean579 ? Static582.anInt8651 : -1, 0, false);
+			Static283.method4100(client.cycle, Static170.anInt2873, Static359.anInt5821, Static110.anInt2195, Static328.aByteArrayArrayArray4, Static482.anIntArray588, Static9.anIntArray18, Static457.anIntArray552, Static153.anIntArray235, Static682.anIntArray817, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aByte144 + 1, local688, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10718 >> 9, Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt10722 >> 9, Static400.aClass2_Sub34_28.aClass57_Sub8_1.method3176() == 0, Static504.aBoolean579 ? Static582.anInt8651 : -1, 0, false);
 		}
 		Static557.method7338();
 		if (Static283.anInt4588 == 11) {
@@ -182,12 +182,12 @@ public final class Static294 {
 		Static359.anInt5821 = local204;
 		Static323.anInt5136 = local329;
 		Static288.aBoolean356 = false;
-		if (Static426.aBoolean72 && Static500.aClass297_3.method6629() == 0) {
+		if (Static426.aBoolean72 && client.js5NetQueue.method6629() == 0) {
 			Static426.aBoolean72 = false;
 		}
 		if (Static426.aBoolean72) {
 			Static163.aClass19_17.method7978(local155, local161, local159, local153, 0xFF000000);
-			Static694.method9035(Static163.aClass19_17, Static32.aClass32_12.method877(Static51.anInt1056), false, Static694.aClass383_13, Static437.aClass14_9);
+			Static694.renderLoadingText(Static163.aClass19_17, Static32.aClass32_12.method877(client.lang), false, Static694.aClass383_13, Static437.aClass14_9);
 		}
 		Static501.method6723(false);
 	}

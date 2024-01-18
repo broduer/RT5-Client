@@ -26,12 +26,12 @@ public final class Static218 {
 	public static void method3189() {
 		@Pc(7) Class83 local7 = null;
 		try {
-			@Pc(13) Class272 local13 = Static446.aClass392_6.method8988("2");
-			while (local13.anInt6810 == 0) {
-				Static638.method8402(1L);
+			@Pc(13) PrivilegedRequest local13 = GameShell.sign.method8988("2");
+			while (local13.status == 0) {
+				ThreadUtils.sleep(1L);
 			}
-			if (local13.anInt6810 == 1) {
-				local7 = (Class83) local13.anObject13;
+			if (local13.status == 1) {
+				local7 = (Class83) local13.result;
 				@Pc(41) byte[] local41 = new byte[(int) local7.method2161()];
 				@Pc(57) int local57;
 				for (@Pc(43) int local43 = 0; local43 < local41.length; local43 += local57) {

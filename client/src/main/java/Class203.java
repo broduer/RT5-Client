@@ -180,7 +180,6 @@ public final class Class203 {
 				}
 			}
 		}
-		@Pc(334) Class82 local334 = Static580.aClass82_186;
 		@Pc(342) Class114 local342;
 		synchronized (Static580.aClass82_186) {
 			local342 = (Class114) Static580.aClass82_186.method2156(local31);
@@ -204,7 +203,6 @@ public final class Class203 {
 				if (local390 >= local34.length) {
 					if (local388) {
 						if (this.aLong159 != -1L) {
-							@Pc(552) Class82 local552 = Static580.aClass82_186;
 							synchronized (Static580.aClass82_186) {
 								local342 = (Class114) Static580.aClass82_186.method2156(this.aLong159);
 							}
@@ -272,7 +270,6 @@ public final class Class203 {
 							}
 						}
 						local342.s(local28);
-						@Pc(903) Class82 local903 = Static580.aClass82_186;
 						synchronized (Static580.aClass82_186) {
 							Static580.aClass82_186.method2150(local342, local31);
 						}
@@ -397,7 +394,6 @@ public final class Class203 {
 	public Class114 method4557(@OriginalArg(0) Class152 arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) Class50 arg3, @OriginalArg(4) Class19 arg4, @OriginalArg(6) Class217 arg5, @OriginalArg(7) int arg6) {
 		@Pc(16) int local16 = arg0 == null ? 2048 : arg0.method9108() | 0x800;
 		@Pc(29) long local29 = (long) arg1 | (long) arg2 << 32 | (long) (arg6 << 16);
-		@Pc(31) Class82 local31 = Static54.aClass82_25;
 		@Pc(39) Class114 local39;
 		synchronized (Static54.aClass82_25) {
 			local39 = (Class114) Static54.aClass82_25.method2156(local29);
@@ -465,7 +461,6 @@ public final class Class203 {
 			return arg5.method7099(this.anInt5029).method5999(arg3, null, arg6, arg2);
 		}
 		@Pc(35) int local35 = arg3 == null ? 2048 : arg3.method9108() | 0x800;
-		@Pc(37) Class82 local37 = Static54.aClass82_25;
 		@Pc(48) Class114 local48;
 		synchronized (Static54.aClass82_25) {
 			local48 = (Class114) Static54.aClass82_25.method2156(this.aLong160);
@@ -524,7 +519,6 @@ public final class Class203 {
 				}
 			}
 			local48.s(local35);
-			@Pc(340) Class82 local340 = Static54.aClass82_25;
 			synchronized (Static54.aClass82_25) {
 				Static54.aClass82_25.method2150(local48, this.aLong160);
 			}

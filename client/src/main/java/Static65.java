@@ -27,11 +27,11 @@ public final class Static65 {
 			local7 = true;
 			local5 = Static255.method3612(null, null, 0, local19, 0);
 		}
-		@Pc(36) long local36 = Static588.method7722();
+		@Pc(36) long local36 = Static588.currentTimeMillis();
 		for (@Pc(38) int local38 = 0; local38 < 10000; local38++) {
 			local5.method8001();
 		}
-		@Pc(71) int local71 = (int) (Static588.method7722() - local36);
+		@Pc(71) int local71 = (int) (Static588.currentTimeMillis() - local36);
 		local5.method7978(100, 100, 0, 0, 0xFF000000);
 		if (local7) {
 			local5.method7947();

@@ -197,7 +197,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub2 extends Class8_Sub2_Sub1_Sub2 {
 		if (local50 != 0 || local53 != 0 || local9.anInt7245 != 0 || local9.anInt7273 != 0) {
 			arg0 |= 0x7;
 		}
-		@Pc(100) boolean local100 = super.aByte149 != 0 && super.anInt10789 <= Static333.anInt5474 && Static333.anInt5474 < super.anInt10781;
+		@Pc(100) boolean local100 = super.aByte149 != 0 && super.anInt10789 <= client.cycle && client.cycle < super.anInt10781;
 		if (local100) {
 			arg0 |= 0x80000;
 		}

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!nn")
-public final class Class2_Sub6_Sub3 extends Class2_Sub6 {
+public final class Class2_Sub6_Sub3 extends PcmStream {
 
 	@OriginalMember(owner = "client!nn", name = "p", descriptor = "Lclient!sia;")
 	private final Class341 aClass341_35 = new Class341();
@@ -26,7 +26,7 @@ public final class Class2_Sub6_Sub3 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!nn", name = "b", descriptor = "([III)V")
 	@Override
-	public synchronized void method9138(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public synchronized void read(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		do {
 			if (this.anInt6624 < 0) {
 				this.method5892(arg0, arg1, arg2);
@@ -63,33 +63,33 @@ public final class Class2_Sub6_Sub3 extends Class2_Sub6 {
 	}
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!dea;)V")
-	public synchronized void method5889(@OriginalArg(0) Class2_Sub6 arg0) {
+	public synchronized void method5889(@OriginalArg(0) PcmStream arg0) {
 		this.aClass341_35.method7704(arg0);
 	}
 
 	@OriginalMember(owner = "client!nn", name = "b", descriptor = "(Lclient!dea;)V")
-	public synchronized void method5890(@OriginalArg(0) Class2_Sub6 arg0) {
+	public synchronized void method5890(@OriginalArg(0) PcmStream arg0) {
 		arg0.method9464();
 	}
 
 	@OriginalMember(owner = "client!nn", name = "b", descriptor = "(I)V")
 	private void method5891(@OriginalArg(0) int arg0) {
-		for (@Pc(5) Class2_Sub6 local5 = (Class2_Sub6) this.aClass341_35.method7706(65280); local5 != null; local5 = (Class2_Sub6) this.aClass341_35.method7713()) {
-			local5.method9137(arg0);
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass341_35.method7706(65280); local5 != null; local5 = (PcmStream) this.aClass341_35.method7713()) {
+			local5.skip(arg0);
 		}
 	}
 
 	@OriginalMember(owner = "client!nn", name = "c", descriptor = "([III)V")
 	private void method5892(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		for (@Pc(5) Class2_Sub6 local5 = (Class2_Sub6) this.aClass341_35.method7706(65280); local5 != null; local5 = (Class2_Sub6) this.aClass341_35.method7713()) {
+		for (@Pc(5) PcmStream local5 = (PcmStream) this.aClass341_35.method7706(65280); local5 != null; local5 = (PcmStream) this.aClass341_35.method7713()) {
 			local5.method9141(arg0, arg1, arg2);
 		}
 	}
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "()Lclient!dea;")
 	@Override
-	public Class2_Sub6 method9142() {
-		return (Class2_Sub6) this.aClass341_35.method7713();
+	public PcmStream method9142() {
+		return (PcmStream) this.aClass341_35.method7713();
 	}
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(Lclient!ie;Lclient!ada;)V")
@@ -103,13 +103,13 @@ public final class Class2_Sub6_Sub3 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!nn", name = "c", descriptor = "()Lclient!dea;")
 	@Override
-	public Class2_Sub6 method9140() {
-		return (Class2_Sub6) this.aClass341_35.method7706(65280);
+	public PcmStream firstSubStream() {
+		return (PcmStream) this.aClass341_35.method7706(65280);
 	}
 
 	@OriginalMember(owner = "client!nn", name = "a", descriptor = "(I)V")
 	@Override
-	public synchronized void method9137(@OriginalArg(0) int arg0) {
+	public synchronized void skip(@OriginalArg(0) int arg0) {
 		do {
 			if (this.anInt6624 < 0) {
 				this.method5891(arg0);

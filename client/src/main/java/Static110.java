@@ -15,7 +15,7 @@ public final class Static110 {
 
 	@OriginalMember(owner = "client!dha", name = "a", descriptor = "(IZ)V")
 	public static void method2079(@OriginalArg(0) int arg0) {
-		@Pc(7) int local7 = Static333.anInt5474 - Static212.anInt3478;
+		@Pc(7) int local7 = client.cycle - Static212.anInt3478;
 		if (local7 >= 100) {
 			Static693.anInt10411 = -1;
 			Static692.anInt10404 = -1;

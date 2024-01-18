@@ -27,29 +27,29 @@ public final class Static288 {
 
 	@OriginalMember(owner = "client!jb", name = "a", descriptor = "(I)V")
 	public static void method4189() {
-		if (Static316.aFrame8 != null) {
+		if (GameShell.fullscreenFrame != null) {
 			return;
 		}
-		@Pc(17) int local17 = Static134.anInt10357;
-		@Pc(19) int local19 = Static241.anInt3973;
-		@Pc(27) int local27 = Static52.anInt1063 - local17 - Static680.anInt10317;
-		@Pc(34) int local34 = Static54.anInt1088 - local19 - Static380.anInt5999;
+		@Pc(17) int local17 = GameShell.leftMargin;
+		@Pc(19) int local19 = GameShell.topMargin;
+		@Pc(27) int local27 = Static52.anInt1063 - local17 - GameShell.canvasWidth;
+		@Pc(34) int local34 = Static54.anInt1088 - local19 - GameShell.canvasHeight;
 		if (local17 <= 0 && local27 <= 0 && local19 <= 0 && local34 <= 0) {
 			return;
 		}
 		try {
 			@Pc(59) Container local59;
-			if (Static353.aFrame10 != null) {
-				local59 = Static353.aFrame10;
-			} else if (Static166.anApplet1 == null) {
-				local59 = Static149.anApplet_Sub1_1;
+			if (GameShell.frame != null) {
+				local59 = GameShell.frame;
+			} else if (signlink.mainapp == null) {
+				local59 = GameShell.instance;
 			} else {
-				local59 = Static166.anApplet1;
+				local59 = signlink.mainapp;
 			}
 			@Pc(67) int local67 = 0;
 			@Pc(69) int local69 = 0;
-			if (local59 == Static353.aFrame10) {
-				@Pc(75) Insets local75 = Static353.aFrame10.getInsets();
+			if (local59 == GameShell.frame) {
+				@Pc(75) Insets local75 = GameShell.frame.getInsets();
 				local67 = local75.left;
 				local69 = local75.top;
 			}

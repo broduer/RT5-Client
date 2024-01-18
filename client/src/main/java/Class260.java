@@ -125,7 +125,7 @@ public final class Class260 {
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(II)[I")
 	public int[] method5783(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		Static734.method7695(Static423.anIntArray506, 0, arg0);
+		Static734.clear(Static423.anIntArray506, 0, arg0);
 		if (arg1 < 10) {
 			return Static423.anIntArray506;
 		}

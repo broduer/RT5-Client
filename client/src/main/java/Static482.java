@@ -22,13 +22,13 @@ public final class Static482 {
 		if (local12 == 0 || arg1 == -1) {
 			return;
 		}
-		if (!Static501.aBoolean575 && Static588.anInt8716 != -1 && Static52.method1157(0x6E ^ 0x11) && !Static203.method3070()) {
+		if (!Static501.jingle && Static588.anInt8716 != -1 && Static52.method1157(0x6E ^ 0x11) && !Static203.method3070()) {
 			Static8.aClass2_Sub6_Sub1_1 = Static426.method1018();
 			@Pc(52) Class2_Sub6_Sub1 local52 = Static48.method1100(Static8.aClass2_Sub6_Sub1_1);
 			Static697.method9127(local52);
 		}
 		Static611.method8236(arg1, local12, Static340.aClass332_69);
 		Static577.method7622(255, -1);
-		Static501.aBoolean575 = true;
+		Static501.jingle = true;
 	}
 }

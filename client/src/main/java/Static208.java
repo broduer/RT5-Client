@@ -40,11 +40,11 @@ public final class Static208 {
 	public static void method3106() {
 		Static334.aClass321_1.method8489();
 		Static189.aClass120_1.method8855();
-		Static295.aClient1.method1641();
-		Static434.aCanvas7.setBackground(Color.black);
+		client.instance.method1641();
+		GameShell.canvas.setBackground(Color.black);
 		Static470.anInt7133 = -1;
-		Static334.aClass321_1 = Static681.method8928(Static434.aCanvas7);
-		Static189.aClass120_1 = Static70.method1513(Static434.aCanvas7);
+		Static334.aClass321_1 = Static681.method8928(GameShell.canvas);
+		Static189.aClass120_1 = Static70.method1513(GameShell.canvas);
 	}
 
 	@OriginalMember(owner = "client!gha", name = "a", descriptor = "(Lclient!eo;Z[[[BIB)Z")

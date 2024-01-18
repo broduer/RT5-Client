@@ -61,7 +61,7 @@ public final class Static572 {
 
 	@OriginalMember(owner = "client!s", name = "b", descriptor = "(III)V")
 	public static void method7883(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(11) int local11 = Static42.aClass383_4.method8751(Static32.aClass32_24.method877(Static51.anInt1056));
+		@Pc(11) int local11 = Static42.aClass383_4.method8751(Static32.aClass32_24.method877(client.lang));
 		@Pc(68) int local68;
 		@Pc(27) int local27;
 		if (Static236.aBoolean304) {
@@ -90,15 +90,15 @@ public final class Static572 {
 			local68 = Static594.anInt8801 * 16 + 21;
 		}
 		@Pc(118) int local118 = arg1 - local11 / 2;
-		if (Static680.anInt10317 < local11 + local118) {
-			local118 = Static680.anInt10317 - local11;
+		if (GameShell.canvasWidth < local11 + local118) {
+			local118 = GameShell.canvasWidth - local11;
 		}
 		if (local118 < 0) {
 			local118 = 0;
 		}
 		@Pc(146) int local146 = arg0;
-		if (arg0 + local68 > Static380.anInt5999) {
-			local146 = Static380.anInt5999 - local68;
+		if (arg0 + local68 > GameShell.canvasHeight) {
+			local146 = GameShell.canvasHeight - local68;
 		}
 		if (local146 < 0) {
 			local146 = 0;

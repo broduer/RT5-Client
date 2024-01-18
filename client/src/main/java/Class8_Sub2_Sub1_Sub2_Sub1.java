@@ -425,7 +425,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 		this.anInt1437 = arg0.method7384();
 		this.anInt1438 = arg0.method7384();
 		this.aBoolean124 = arg0.method7384() == 1;
-		if (Static446.aClass357_5 == Static2.aClass357_1 && Static608.anInt9316 >= 2) {
+		if (Static446.liveMode == client.modewhere && Static608.anInt9316 >= 2) {
 			this.aBoolean124 = false;
 		}
 		this.anInt1440 = 0;
@@ -570,28 +570,28 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 			arg0 |= 0x7;
 		}
 		@Pc(95) int local95 = super.aClass126_7.method2673(16383);
-		@Pc(119) boolean local119 = super.aByte149 != 0 && Static333.anInt5474 >= super.anInt10789 && Static333.anInt5474 < super.anInt10781;
+		@Pc(119) boolean local119 = super.aByte149 != 0 && client.cycle >= super.anInt10789 && client.cycle < super.anInt10781;
 		if (local119) {
 			arg0 |= 0x80000;
 		}
 		@Pc(152) Class114 local152 = super.aClass114Array3[0] = this.aClass203_1.method4553(Static419.aClass112_1, local33, Static574.aClass312_2, Static25.aClass50_1, arg0, super.anIntArray877, Static125.aClass390_1, Static68.aClass217_3, arg1, Static690.aClass310_2, super.aClass152_Sub2_Sub1Array3, local95, local58, Static34.aClass306_1);
 		@Pc(155) int local155 = Static303.method4436();
-		if (Static369.anInt4277 < 96 && local155 > 50) {
+		if (GameShell.maxMemory < 96 && local155 > 50) {
 			Static358.method9198();
 		}
-		if (Static446.aClass357_5 != Static2.aClass357_1 && local155 < 50) {
+		if (Static446.liveMode != client.modewhere && local155 < 50) {
 			@Pc(181) int local181 = 50 - local155;
 			while (Static107.anInt2170 < local181) {
-				Static163.aByteArrayArray36[Static107.anInt2170] = new byte[102400];
+				Static163.fakeModelCacheEntries[Static107.anInt2170] = new byte[102400];
 				Static107.anInt2170++;
 			}
 			while (local181 < Static107.anInt2170) {
 				Static107.anInt2170--;
-				Static163.aByteArrayArray36[Static107.anInt2170] = null;
+				Static163.fakeModelCacheEntries[Static107.anInt2170] = null;
 			}
-		} else if (Static446.aClass357_5 != Static2.aClass357_1) {
+		} else if (Static446.liveMode != client.modewhere) {
 			Static107.anInt2170 = 0;
-			Static163.aByteArrayArray36 = new byte[50][];
+			Static163.fakeModelCacheEntries = new byte[50][];
 		}
 		if (local152 == null) {
 			return false;
@@ -653,7 +653,7 @@ public final class Class8_Sub2_Sub1_Sub2_Sub1 extends Class8_Sub2_Sub1_Sub2 {
 			if (local62.aChar1 == 's') {
 				local5 = local5 + local62.method1229(this.aByte33 & 0xFF);
 			} else {
-				Static240.method3496(new Throwable(), "gdn1");
+				TracingException.report(new Throwable(), "gdn1");
 				local40[this.aByte31] = -1;
 			}
 		}

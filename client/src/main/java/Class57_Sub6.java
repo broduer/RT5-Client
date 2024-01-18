@@ -31,7 +31,7 @@ public final class Class57_Sub6 extends Class57 {
 	public int method8359(@OriginalArg(0) int arg0) {
 		if (super.aClass2_Sub34_34.method5118()) {
 			return 3;
-		} else if (super.aClass2_Sub34_34.method5112() == Static673.aClass379_8) {
+		} else if (super.aClass2_Sub34_34.method5112() == Static673.runescapeGame) {
 			return 1;
 		} else {
 			return 3;
@@ -43,7 +43,7 @@ public final class Class57_Sub6 extends Class57 {
 		if (super.aClass2_Sub34_34.method5118()) {
 			return false;
 		} else {
-			return super.aClass2_Sub34_34.method5112() == Static673.aClass379_8;
+			return super.aClass2_Sub34_34.method5112() == Static673.runescapeGame;
 		}
 	}
 
@@ -56,7 +56,7 @@ public final class Class57_Sub6 extends Class57 {
 	@OriginalMember(owner = "client!fia", name = "a", descriptor = "(B)V")
 	@Override
 	public void method8357() {
-		if (super.aClass2_Sub34_34.method5112() != Static673.aClass379_8) {
+		if (super.aClass2_Sub34_34.method5112() != Static673.runescapeGame) {
 			super.anInt9515 = 1;
 		} else if (super.aClass2_Sub34_34.method5118()) {
 			super.anInt9515 = 0;

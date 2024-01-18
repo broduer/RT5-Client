@@ -61,7 +61,7 @@ public final class Static523 {
 		if (Static198.aClass140_1 == Static473.aClass140_22) {
 			@Pc(65) Runtime local65 = Runtime.getRuntime();
 			local74 = (int) ((local65.totalMemory() - local65.freeMemory()) / 1024L);
-			@Pc(77) long local77 = Static588.method7722();
+			@Pc(77) long local77 = Static588.currentTimeMillis();
 			if (Static6.aLong8 == 0L) {
 				Static6.aLong8 = local77;
 			}
@@ -75,7 +75,7 @@ public final class Static523 {
 		}
 		if (Static198.aClass140_2 == Static473.aClass140_22) {
 			if (Static228.aClass264_1 == null) {
-				Static228.aClass264_1 = new Class264(Static500.aClass297_3, Static66.aClass174_1, Static442.aBigInteger5, Static670.aBigInteger6);
+				Static228.aClass264_1 = new Class264(client.js5NetQueue, Static66.aClass174_1, Static442.aBigInteger5, Static670.aBigInteger6);
 			}
 			if (!Static228.aClass264_1.method5807()) {
 				return 0;
@@ -100,7 +100,7 @@ public final class Static523 {
 			Static466.anInt7063 = Static516.aClass332_97.method7583();
 			Static616.method8291(Static177.aClass332_35);
 			@Pc(250) int local250 = Static400.aClass2_Sub34_28.aClass57_Sub11_1.method3603();
-			Static333.aClass281_1 = new Class281(Static392.aClass379_4, Static51.anInt1056, Static516.aClass332_97);
+			Static333.aClass281_1 = new Class281(Static392.game, client.lang, Static516.aClass332_97);
 			@Pc(262) int[] local262 = Static333.aClass281_1.method6282(local250);
 			if (local262.length == 0) {
 				local262 = Static333.aClass281_1.method6282(0);
@@ -148,7 +148,7 @@ public final class Static523 {
 			Static6.aClass332_1 = Static109.method2069(false, 2, 1);
 			Static554.aClass332_105 = Static109.method2069(false, 3, 1);
 			Static281.aClass332_60 = Static109.method2069(false, 4, 1);
-			Static93.aClass332_16 = Static109.method2069(true, 5, 1);
+			client.js5Archive5 = Static109.method2069(true, 5, 1);
 			Static398.aClass332_81 = Static109.method2069(true, 6, 1);
 			Static190.aClass332_38 = Static109.method2069(false, 7, 1);
 			Static534.aClass332_104 = Static109.method2069(false, 9, 1);
@@ -202,7 +202,7 @@ public final class Static523 {
 			Static81.method1586(2);
 		}
 		if (Static198.aClass140_11 == Static473.aClass140_22) {
-			Static529.method7103(Static614.aClass332_114, Static446.aClass392_6);
+			Static529.method7103(Static614.aClass332_114, GameShell.sign);
 		}
 		if (Static198.aClass140_12 == Static473.aClass140_22) {
 			local12 = Static460.method6273();
@@ -220,37 +220,37 @@ public final class Static523 {
 				return 99;
 			}
 			Static56.anInterface4_3 = new Class305(Static199.aClass332_42, Static534.aClass332_104, Static721.aClass332_128);
-			Static386.aClass49_2 = new Class49(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static574.aClass312_2 = new Class312(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static125.aClass390_1);
-			Static354.aClass269_1 = new Class269(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static721.aClass332_128);
-			Static619.aClass389_2 = new Class389(Static392.aClass379_4, Static51.anInt1056, Static20.aClass332_3);
-			Static467.aClass96_3 = new Class96(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static540.aClass79_6 = new Class79(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static561.aClass222_2 = new Class222(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static721.aClass332_128);
-			Static68.aClass217_3 = new Class217(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static190.aClass332_38);
-			Static503.aClass337_1 = new Class337(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static48.aClass386_1 = new Class386(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static354.aClass142_4 = new Class142(Static392.aClass379_4, Static51.anInt1056, true, Static459.aClass332_91, Static190.aClass332_38);
-			Static577.aClass248_4 = new Class248(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static721.aClass332_128);
-			Static720.aClass365_4 = new Class365(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1, Static721.aClass332_128);
-			Static690.aClass310_2 = new Class310(Static392.aClass379_4, Static51.anInt1056, true, Static333.aClass332_66, Static190.aClass332_38);
-			Static419.aClass112_1 = new Class112(Static392.aClass379_4, Static51.anInt1056, true, Static386.aClass49_2, Static380.aClass332_79, Static190.aClass332_38);
-			Static272.aClass45_1 = new Class45(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static25.aClass50_1 = new Class50(Static392.aClass379_4, Static51.anInt1056, Static668.aClass332_119, Static344.aClass332_73, Static142.aClass332_25);
-			Static324.aClass309_1 = new Class309(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static99.aClass78_1 = new Class78(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static23.aClass128_1 = new Class128(Static392.aClass379_4, Static51.anInt1056, Static271.aClass332_59, Static190.aClass332_38);
-			Static652.aClass216_1 = new Class216(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static718.aClass176_1 = new Class176(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static691.aClass212_1 = new Class212(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static529.aClass161_1 = new Class161(Static392.aClass379_4, Static51.anInt1056, Static233.aClass332_52);
-			Static36.aClass262_1 = new Class262(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static628.aClass344_5 = new Class344(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
-			Static648.aClass17_1 = new Class17(Static392.aClass379_4, Static51.anInt1056, Static6.aClass332_1);
+			Static386.aClass49_2 = new Class49(Static392.game, client.lang, Static6.aClass332_1);
+			Static574.aClass312_2 = new Class312(Static392.game, client.lang, Static6.aClass332_1, Static125.aClass390_1);
+			Static354.aClass269_1 = new Class269(Static392.game, client.lang, Static6.aClass332_1, Static721.aClass332_128);
+			Static619.aClass389_2 = new Class389(Static392.game, client.lang, Static20.aClass332_3);
+			Static467.aClass96_3 = new Class96(Static392.game, client.lang, Static6.aClass332_1);
+			Static540.aClass79_6 = new Class79(Static392.game, client.lang, Static6.aClass332_1);
+			Static561.aClass222_2 = new Class222(Static392.game, client.lang, Static6.aClass332_1, Static721.aClass332_128);
+			Static68.aClass217_3 = new Class217(Static392.game, client.lang, Static6.aClass332_1, Static190.aClass332_38);
+			Static503.aClass337_1 = new Class337(Static392.game, client.lang, Static6.aClass332_1);
+			Static48.aClass386_1 = new Class386(Static392.game, client.lang, Static6.aClass332_1);
+			Static354.aClass142_4 = new Class142(Static392.game, client.lang, true, Static459.aClass332_91, Static190.aClass332_38);
+			Static577.aClass248_4 = new Class248(Static392.game, client.lang, Static6.aClass332_1, Static721.aClass332_128);
+			Static720.aClass365_4 = new Class365(Static392.game, client.lang, Static6.aClass332_1, Static721.aClass332_128);
+			Static690.aClass310_2 = new Class310(Static392.game, client.lang, true, Static333.aClass332_66, Static190.aClass332_38);
+			Static419.aClass112_1 = new Class112(Static392.game, client.lang, true, Static386.aClass49_2, Static380.aClass332_79, Static190.aClass332_38);
+			Static272.aClass45_1 = new Class45(Static392.game, client.lang, Static6.aClass332_1);
+			Static25.aClass50_1 = new Class50(Static392.game, client.lang, Static668.aClass332_119, Static344.aClass332_73, Static142.aClass332_25);
+			Static324.aClass309_1 = new Class309(Static392.game, client.lang, Static6.aClass332_1);
+			Static99.aClass78_1 = new Class78(Static392.game, client.lang, Static6.aClass332_1);
+			Static23.aClass128_1 = new Class128(Static392.game, client.lang, Static271.aClass332_59, Static190.aClass332_38);
+			Static652.aClass216_1 = new Class216(Static392.game, client.lang, Static6.aClass332_1);
+			Static718.aClass176_1 = new Class176(Static392.game, client.lang, Static6.aClass332_1);
+			Static691.aClass212_1 = new Class212(Static392.game, client.lang, Static6.aClass332_1);
+			Static529.aClass161_1 = new Class161(Static392.game, client.lang, Static233.aClass332_52);
+			Static36.aClass262_1 = new Class262(Static392.game, client.lang, Static6.aClass332_1);
+			Static628.aClass344_5 = new Class344(Static392.game, client.lang, Static6.aClass332_1);
+			Static648.aClass17_1 = new Class17(Static392.game, client.lang, Static6.aClass332_1);
 			Static444.method5994(Static554.aClass332_105, Static697.aClass332_123, Static721.aClass332_128, Static190.aClass332_38);
 			Static110.method2081(Static140.aClass332_24);
-			Static68.aClass151_3 = new Class151(Static51.anInt1056, Static58.aClass332_12, Static244.aClass332_55);
-			Static288.aClass139_2 = new Class139(Static51.anInt1056, Static58.aClass332_12, Static244.aClass332_55, new Class253());
+			Static68.aClass151_3 = new Class151(client.lang, Static58.aClass332_12, Static244.aClass332_55);
+			Static288.aClass139_2 = new Class139(client.lang, Static58.aClass332_12, Static244.aClass332_55, new Class253());
 			Static412.method5700();
 			Static354.aClass142_4.method3061(Static400.aClass2_Sub34_28.aClass57_Sub19_2.method5967() == 0);
 			Static34.aClass306_1 = new Class306();
@@ -264,8 +264,8 @@ public final class Static523 {
 				jagmisc.init();
 			} catch (@Pc(1126) Throwable local1126) {
 			}
-			Static600.aClass27_1 = Static570.method7557();
-			Static292.aClass2_Sub43_2 = new Class2_Sub43(true, Static446.aClass392_6);
+			GameShell.timer = Static570.create();
+			Static292.instance = new Class2_Sub43(true, GameShell.sign);
 		}
 		if (Static198.aClass140_15 == Static473.aClass140_22) {
 			local12 = Static188.method2860(Static721.aClass332_128) + Static372.method5298(true);
@@ -289,13 +289,13 @@ public final class Static523 {
 				Static511.anIntArray614[local12] = -1;
 			}
 			Static218.method3189();
-			Static93.aClass332_16.method7582(false);
+			client.js5Archive5.method7582(false);
 			Static398.aClass332_81.method7582(true);
 			Static721.aClass332_128.method7582(true);
 			Static697.aClass332_123.method7582(true);
 			Static463.aClass332_93.method7582(true);
 			Static6.aClass332_1.anInt8579 = 2;
-			Static666.aBoolean767 = true;
+			client.clean = true;
 			Static20.aClass332_3.anInt8579 = 2;
 			Static459.aClass332_91.anInt8579 = 2;
 			Static333.aClass332_66.anInt8579 = 2;
@@ -339,7 +339,7 @@ public final class Static523 {
 			Static400.aClass2_Sub34_28.method5111(1, Static400.aClass2_Sub34_28.aClass57_Sub10_1);
 			if (Static3.aBoolean4) {
 				Static400.aClass2_Sub34_28.method5111(0, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
-			} else if (Static400.aClass2_Sub34_28.aClass57_Sub29_2.aBoolean675 && Static292.aClass2_Sub43_2.anInt7633 < 512 && Static292.aClass2_Sub43_2.anInt7633 != 0) {
+			} else if (Static400.aClass2_Sub34_28.aClass57_Sub29_2.aBoolean675 && Static292.instance.anInt7633 < 512 && Static292.instance.anInt7633 != 0) {
 				Static400.aClass2_Sub34_28.method5111(0, Static400.aClass2_Sub34_28.aClass57_Sub29_2);
 			}
 			Static666.method8700(1);
@@ -348,7 +348,7 @@ public final class Static523 {
 			} else {
 				Static32.method880(Static400.aClass2_Sub34_28.aClass57_Sub29_2.method7922(), false);
 			}
-			Static409.method5664(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+			Static409.setWindowMode(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
 			Static570.method7556(Static163.aClass19_17);
 			Static469.method6365(Static163.aClass19_17);
 			Static239.method3472(Static721.aClass332_128, Static163.aClass19_17);
@@ -368,7 +368,7 @@ public final class Static523 {
 			return;
 		}
 		arg0.anInt3818 = 150;
-		arg0.anInt3822 = (int) (Math.sin((double) Static333.anInt5474 / 40.0D) * 256.0D) & 0x7FF;
+		arg0.anInt3822 = (int) (Math.sin((double) client.cycle / 40.0D) * 256.0D) & 0x7FF;
 		arg0.anInt3834 = 5;
 		arg0.anInt3842 = Static312.anInt5017;
 		arg0.anInt3748 = Static214.method3157(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9);

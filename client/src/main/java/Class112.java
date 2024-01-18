@@ -62,7 +62,7 @@ public final class Class112 {
 			@Pc(54) int local54 = this.aClass332_29.method7604() - 1;
 			this.anInt2679 = this.aClass332_29.method7615(local54) + local54 * 256;
 		}
-		if (this.aClass379_1 == Static673.aClass379_8) {
+		if (this.aClass379_1 == Static673.runescapeGame) {
 			this.aStringArray11 = new String[] { null, null, Static32.aClass32_8.method877(this.anInt2671), null, null, Static32.aClass32_22.method877(this.anInt2671) };
 		} else {
 			this.aStringArray11 = new String[] { null, null, Static32.aClass32_8.method877(this.anInt2671), null, null, null };

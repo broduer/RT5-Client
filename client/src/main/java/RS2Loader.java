@@ -1,7 +1,6 @@
 import java.applet.Applet;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.math.BigInteger;
 import java.net.URL;
 import java.util.Properties;
 
@@ -135,7 +134,7 @@ public class RS2Loader extends Applet {
 	 */
 	void drawClient() {
 		try {
-			Static166.anApplet1 = this;
+			signlink.mainapp = this;
 			client clnt = new client();
 			clnt.init();
 			clnt.start();

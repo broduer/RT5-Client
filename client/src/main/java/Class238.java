@@ -63,7 +63,7 @@ public final class Class238 {
 			this.aBoolean455 = true;
 			if (this.anInt6000 >= 0) {
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1 = new Class8_Sub2_Sub1_Sub2_Sub2(25);
-				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10780 = Static333.anInt5474;
+				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10780 = client.cycle;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.anInt10768 = this.anInt6005;
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9335(Static690.aClass310_2.method7099(this.anInt6000));
 				this.aClass8_Sub2_Sub1_Sub2_Sub2_1.method9317(this.aClass8_Sub2_Sub1_Sub2_Sub2_1.aClass270_1.anInt6733);
@@ -72,7 +72,7 @@ public final class Class238 {
 			} else {
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1 = new Class8_Sub2_Sub1_Sub2_Sub1(25);
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.method1420(Static518.aClass2_Sub21_18);
-				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10780 = Static333.anInt5474;
+				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10780 = client.cycle;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10767 = Static457.anInt6954++;
 				this.aClass8_Sub2_Sub1_Sub2_Sub1_1.anInt10768 = this.anInt6005;
 			}

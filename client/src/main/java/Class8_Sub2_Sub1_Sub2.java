@@ -841,7 +841,7 @@ public abstract class Class8_Sub2_Sub1_Sub2 extends Class8_Sub2_Sub1 {
 				}
 			}
 			if ((this.aClass8_Sub5_8 == null || this.aClass8_Sub5_8.aBoolean324) && (local17 > 0 || local21 > 0)) {
-				this.aClass8_Sub5_8 = Static257.method3654(Static333.anInt5474, true);
+				this.aClass8_Sub5_8 = Static257.method3654(client.cycle, true);
 			}
 			if (this.aClass8_Sub5_8 != null) {
 				@Pc(138) Class330[] local138;
@@ -871,11 +871,11 @@ public abstract class Class8_Sub2_Sub1_Sub2 extends Class8_Sub2_Sub1 {
 						}
 					}
 				}
-				this.aClass8_Sub5_8.method3643(arg0, Static333.anInt5474, local138, local191);
+				this.aClass8_Sub5_8.method3643(arg0, client.cycle, local138, local191);
 				this.aBoolean821 = true;
 			}
 		} else if (this.aClass8_Sub5_8 != null) {
-			this.aClass8_Sub5_8.method3649(Static333.anInt5474);
+			this.aClass8_Sub5_8.method3649(client.cycle);
 		}
 		if (this.aClass8_Sub5_8 != null) {
 			this.aClass8_Sub5_8.method3658(super.aByte144, super.aShort131, super.aShort134, super.aShort132, super.aShort133);

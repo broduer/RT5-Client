@@ -24,7 +24,7 @@ public final class Static205 {
 	@OriginalMember(owner = "client!gg", name = "a", descriptor = "(BIIIIII)V")
 	public static void method3091(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1, @OriginalArg(5) int arg2, @OriginalArg(6) int arg3) {
 		for (@Pc(17) Class8_Sub3 local17 = (Class8_Sub3) Static422.aClass130_9.method2790(); local17 != null; local17 = (Class8_Sub3) Static422.aClass130_9.method2785()) {
-			if (local17.anInt957 <= Static333.anInt5474) {
+			if (local17.anInt957 <= client.cycle) {
 				local17.method9281();
 			} else {
 				Static143.method3573(local17.anInt960 * 2, (local17.anInt963 << 9) + 256, arg0 >> 1, (local17.anInt958 << 9) + 256, local17.anInt962, arg1 >> 1);

@@ -103,7 +103,7 @@ public final class Static538 {
 						}
 						local280 = local15.method7397();
 						local284 = local15.method7403();
-						local31.method9308(local240, local280, local284, local96, Static333.anInt5474, local90, local86);
+						local31.method9308(local240, local280, local284, local96, client.cycle, local90, local86);
 					}
 				}
 			}
@@ -113,7 +113,7 @@ public final class Static538 {
 				local31.anInt10759 = local15.method7408();
 				local31.anInt10765 = local73 & 0x7FFF;
 				local31.aBoolean819 = (local73 & 0x8000) != 0;
-				local31.anInt10747 = local31.anInt10765 + Static333.anInt5474 + local31.anInt10766;
+				local31.anInt10747 = local31.anInt10765 + client.cycle + local31.anInt10766;
 			}
 			if ((local35 & 0x40000) != 0) {
 				local31.aString128 = local15.method7365();
@@ -208,8 +208,8 @@ public final class Static538 {
 				local31.anInt10782 = local15.method7355();
 				local31.anInt10790 = local15.method7406();
 				local31.anInt10787 = local15.method7406();
-				local31.anInt10788 = local15.method7389() + Static333.anInt5474;
-				local31.anInt10784 = local15.method7413() + Static333.anInt5474;
+				local31.anInt10788 = local15.method7389() + client.cycle;
+				local31.anInt10784 = local15.method7413() + client.cycle;
 				local31.anInt10783 = local15.method7383();
 				local31.anInt10787 += local31.anIntArray878[0];
 				local31.anInt10793 = 1;
@@ -319,8 +319,8 @@ public final class Static538 {
 				local31.aByte147 = local15.method7355();
 				local31.aByte148 = local15.method7384();
 				local31.aByte149 = (byte) local15.method7383();
-				local31.anInt10789 = Static333.anInt5474 + local15.method7379();
-				local31.anInt10781 = Static333.anInt5474 + local15.method7389();
+				local31.anInt10789 = client.cycle + local15.method7379();
+				local31.anInt10781 = client.cycle + local15.method7389();
 			}
 		}
 	}

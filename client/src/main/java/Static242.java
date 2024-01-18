@@ -36,7 +36,7 @@ public final class Static242 {
 
 	@OriginalMember(owner = "client!hj", name = "c", descriptor = "(I)V")
 	public static void method3502() {
-		Static525.aClass2_Sub2_Sub16_12 = new Class2_Sub2_Sub16(Static32.aClass32_4.method877(Static51.anInt1056), "", Static442.anInt6719, 1012, -1, 0L, 0, 0, true, false, 0L, true);
+		Static525.aClass2_Sub2_Sub16_12 = new Class2_Sub2_Sub16(Static32.aClass32_4.method877(client.lang), "", Static442.anInt6719, 1012, -1, 0L, 0, 0, true, false, 0L, true);
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(IZ)I")
@@ -86,7 +86,7 @@ public final class Static242 {
 			}
 		}
 		if (!local9) {
-			Static67.method6105(Static32.aClass32_21.method877(Static51.anInt1056) + arg0);
+			Static67.method6105(Static32.aClass32_21.method877(client.lang) + arg0);
 		}
 	}
 }

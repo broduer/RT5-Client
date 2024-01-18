@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class2_Sub57 extends Class2 {
 
 	@OriginalMember(owner = "client!vs", name = "r", descriptor = "[Lclient!oba;")
-	public Class272[] aClass272Array1;
+	public PrivilegedRequest[] aPrivilegedRequestArray1;
 
 	@OriginalMember(owner = "client!vs", name = "v", descriptor = "I")
 	public int anInt10392;
@@ -23,7 +23,7 @@ public final class Class2_Sub57 extends Class2 {
 	public int[] anIntArray829;
 
 	@OriginalMember(owner = "client!vs", name = "q", descriptor = "[Lclient!oba;")
-	public Class272[] aClass272Array2;
+	public PrivilegedRequest[] aPrivilegedRequestArray2;
 
 	@OriginalMember(owner = "client!vs", name = "l", descriptor = "I")
 	public int anInt10394;

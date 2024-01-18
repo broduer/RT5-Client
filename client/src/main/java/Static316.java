@@ -1,15 +1,8 @@
-import java.awt.Frame;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static316 {
-
-	@OriginalMember(owner = "client!ka", name = "i", descriptor = "Ljava/awt/Frame;")
-	public static Frame aFrame8;
-
-	@OriginalMember(owner = "client!ka", name = "f", descriptor = "Z")
-	public static boolean aBoolean645;
 
 	@OriginalMember(owner = "client!ka", name = "h", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray41 = new String[100];

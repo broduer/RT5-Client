@@ -8,7 +8,7 @@ public final class Static495 {
 	public static Class148 aClass148_4;
 
 	@OriginalMember(owner = "client!pk", name = "m", descriptor = "I")
-	public static int anInt7444 = 1;
+	public static int cpucount = 1;
 
 	@OriginalMember(owner = "client!pk", name = "e", descriptor = "Lclient!fma;")
 	public static final Class131 aClass131_5 = new Class131();

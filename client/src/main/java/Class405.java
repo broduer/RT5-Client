@@ -8,7 +8,7 @@ public final class Class405 {
 
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "(III)I")
 	public int method9339(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
-		@Pc(15) int local15 = Static680.anInt10317 > arg0 ? Static680.anInt10317 : arg0;
+		@Pc(15) int local15 = GameShell.canvasWidth > arg0 ? GameShell.canvasWidth : arg0;
 		if (Static555.aClass405_14 == this) {
 			return 0;
 		} else if (Static169.aClass405_1 == this) {

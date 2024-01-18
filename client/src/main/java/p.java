@@ -58,9 +58,9 @@ public final class p extends Class2 implements Interface5 {
 	@OriginalMember(owner = "client!p", name = "a", descriptor = "(Ljava/lang/Exception;)V")
 	private void method6447(@OriginalArg(0) Exception arg0) {
 		if (!Static474.aBoolean542) {
-			Static474.aLong229 = Static588.method7722();
+			Static474.aLong229 = Static588.currentTimeMillis();
 			Static474.aBoolean542 = true;
-		} else if (Static588.method7722() - Static474.aLong229 < 30000L) {
+		} else if (Static588.currentTimeMillis() - Static474.aLong229 < 30000L) {
 			this.aCanvas9.repaint();
 		} else {
 			throw new RuntimeException(arg0.getMessage());

@@ -41,24 +41,24 @@ public final class Static76 {
 					Static580.anInt8645 = -5;
 					return;
 				}
-				Static660.aClass231_4.method5267();
+				client.lobby.method5267();
 				Static6.anInt95 = 1;
 				Static654.anInt9765 = 0;
 				Static720.anInt10894++;
 			}
 			if (Static6.anInt95 == 1) {
-				Static405.aClass153_1.aClass272_1 = Static660.aClass231_4.method5270(Static446.aClass392_6);
+				Static405.aClass153_1.aPrivilegedRequest_1 = client.lobby.method5270(GameShell.sign);
 				Static6.anInt95 = 2;
 			}
 			if (Static6.anInt95 == 2) {
-				if (Static405.aClass153_1.aClass272_1.anInt6810 == 2) {
+				if (Static405.aClass153_1.aPrivilegedRequest_1.status == 2) {
 					throw new IOException();
 				}
-				if (Static405.aClass153_1.aClass272_1.anInt6810 != 1) {
+				if (Static405.aClass153_1.aPrivilegedRequest_1.status != 1) {
 					return;
 				}
-				Static405.aClass153_1.aClass350_1 = Static99.method1975((Socket) Static405.aClass153_1.aClass272_1.anObject13);
-				Static405.aClass153_1.aClass272_1 = null;
+				Static405.aClass153_1.aClass350_1 = Static99.method1975((Socket) Static405.aClass153_1.aPrivilegedRequest_1.result);
+				Static405.aClass153_1.aPrivilegedRequest_1 = null;
 				Static405.aClass153_1.method3273();
 				Static6.anInt95 = 4;
 			}
@@ -72,7 +72,7 @@ public final class Static76 {
 		} catch (@Pc(148) IOException local148) {
 			Static405.aClass153_1.method3274();
 			if (Static720.anInt10894 < 2) {
-				Static660.aClass231_4.method5267();
+				client.lobby.method5267();
 				Static720.anInt10894++;
 				Static654.anInt9765 = 0;
 				Static6.anInt95 = 1;

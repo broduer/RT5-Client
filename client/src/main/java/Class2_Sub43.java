@@ -14,10 +14,10 @@ public final class Class2_Sub43 extends Class2 {
 	private String aString92;
 
 	@OriginalMember(owner = "client!pw", name = "y", descriptor = "I")
-	private int anInt7622;
+	private int javaVersion;
 
 	@OriginalMember(owner = "client!pw", name = "N", descriptor = "I")
-	public int anInt7626;
+	public int javaRelease;
 
 	@OriginalMember(owner = "client!pw", name = "J", descriptor = "Z")
 	private boolean aBoolean580;
@@ -32,10 +32,10 @@ public final class Class2_Sub43 extends Class2 {
 	private int anInt7628;
 
 	@OriginalMember(owner = "client!pw", name = "w", descriptor = "I")
-	public int anInt7630;
+	public int javaUpdate;
 
 	@OriginalMember(owner = "client!pw", name = "F", descriptor = "I")
-	private int anInt7632;
+	private int processorCount;
 
 	@OriginalMember(owner = "client!pw", name = "u", descriptor = "Ljava/lang/String;")
 	private String aString94;
@@ -75,63 +75,63 @@ public final class Class2_Sub43 extends Class2 {
 	}
 
 	@OriginalMember(owner = "client!pw", name = "<init>", descriptor = "(ZLclient!vq;)V")
-	public Class2_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) Class392 arg1) {
-		if (Static689.aString119.startsWith("win")) {
+	public Class2_Sub43(@OriginalArg(0) boolean arg0, @OriginalArg(1) signlink arg1) {
+		if (signlink.osNameLower.startsWith("win")) {
 			this.anInt7634 = 1;
-		} else if (Static689.aString119.startsWith("mac")) {
+		} else if (signlink.osNameLower.startsWith("mac")) {
 			this.anInt7634 = 2;
-		} else if (Static689.aString119.startsWith("linux")) {
+		} else if (signlink.osNameLower.startsWith("linux")) {
 			this.anInt7634 = 3;
 		} else {
 			this.anInt7634 = 4;
 		}
-		if (Static689.aString121.startsWith("amd64") || Static689.aString121.startsWith("x86_64")) {
+		if (signlink.osArch.startsWith("amd64") || signlink.osArch.startsWith("x86_64")) {
 			this.aBoolean580 = true;
 		} else {
 			this.aBoolean580 = false;
 		}
 		if (this.anInt7634 == 1) {
-			if (Static689.aString120.indexOf("4.0") != -1) {
+			if (signlink.osVersion.indexOf("4.0") != -1) {
 				this.anInt7635 = 1;
-			} else if (Static689.aString120.indexOf("4.1") != -1) {
+			} else if (signlink.osVersion.indexOf("4.1") != -1) {
 				this.anInt7635 = 2;
-			} else if (Static689.aString120.indexOf("4.9") != -1) {
+			} else if (signlink.osVersion.indexOf("4.9") != -1) {
 				this.anInt7635 = 3;
-			} else if (Static689.aString120.indexOf("5.0") != -1) {
+			} else if (signlink.osVersion.indexOf("5.0") != -1) {
 				this.anInt7635 = 4;
-			} else if (Static689.aString120.indexOf("5.1") != -1) {
+			} else if (signlink.osVersion.indexOf("5.1") != -1) {
 				this.anInt7635 = 5;
-			} else if (Static689.aString120.indexOf("6.0") != -1) {
+			} else if (signlink.osVersion.indexOf("6.0") != -1) {
 				this.anInt7635 = 6;
-			} else if (Static689.aString120.indexOf("6.1") != -1) {
+			} else if (signlink.osVersion.indexOf("6.1") != -1) {
 				this.anInt7635 = 7;
 			}
 		} else if (this.anInt7634 == 2) {
-			if (Static689.aString120.indexOf("10.4") != -1) {
+			if (signlink.osVersion.indexOf("10.4") != -1) {
 				this.anInt7635 = 20;
-			} else if (Static689.aString120.indexOf("10.5") != -1) {
+			} else if (signlink.osVersion.indexOf("10.5") != -1) {
 				this.anInt7635 = 21;
-			} else if (Static689.aString120.indexOf("10.6") != -1) {
+			} else if (signlink.osVersion.indexOf("10.6") != -1) {
 				this.anInt7635 = 22;
-			} else if (Static689.aString120.indexOf("10.7") != -1) {
+			} else if (signlink.osVersion.indexOf("10.7") != -1) {
 				this.anInt7635 = 23;
 			}
 		}
-		if (Static689.aString123.toLowerCase().indexOf("sun") != -1) {
+		if (signlink.javaVendor.toLowerCase().indexOf("sun") != -1) {
 			this.anInt7640 = 1;
-		} else if (Static689.aString123.toLowerCase().indexOf("microsoft") != -1) {
+		} else if (signlink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			this.anInt7640 = 2;
-		} else if (Static689.aString123.toLowerCase().indexOf("apple") == -1) {
+		} else if (signlink.javaVendor.toLowerCase().indexOf("apple") == -1) {
 			this.anInt7640 = 4;
 		} else {
 			this.anInt7640 = 3;
 		}
-		@Pc(332) int local332 = Static689.aString124.startsWith("1.") ? 2 : 0;
+		@Pc(332) int local332 = signlink.javaVersion.startsWith("1.") ? 2 : 0;
 		@Pc(334) int local334 = 0;
 		@Pc(340) char local340;
 		try {
-			while (local332 < Static689.aString124.length()) {
-				local340 = Static689.aString124.charAt(local332);
+			while (local332 < signlink.javaVersion.length()) {
+				local340 = signlink.javaVersion.charAt(local332);
 				if (local340 < '0' || local340 > '9') {
 					break;
 				}
@@ -140,12 +140,12 @@ public final class Class2_Sub43 extends Class2 {
 			}
 		} catch (@Pc(372) Exception local372) {
 		}
-		this.anInt7626 = local334;
-		local332 = Static689.aString124.indexOf(46, 2) + 1;
+		this.javaRelease = local334;
+		local332 = signlink.javaVersion.indexOf(46, 2) + 1;
 		local334 = 0;
 		try {
-			while (local332 < Static689.aString124.length()) {
-				local340 = Static689.aString124.charAt(local332);
+			while (local332 < signlink.javaVersion.length()) {
+				local340 = signlink.javaVersion.charAt(local332);
 				if (local340 < '0' || local340 > '9') {
 					break;
 				}
@@ -154,12 +154,12 @@ public final class Class2_Sub43 extends Class2 {
 			}
 		} catch (@Pc(422) Exception local422) {
 		}
-		this.anInt7622 = local334;
+		this.javaVersion = local334;
 		local334 = 0;
-		local332 = Static689.aString124.indexOf(95, 4) + 1;
+		local332 = signlink.javaVersion.indexOf(95, 4) + 1;
 		try {
-			while (Static689.aString124.length() > local332) {
-				local340 = Static689.aString124.charAt(local332);
+			while (signlink.javaVersion.length() > local332) {
+				local340 = signlink.javaVersion.charAt(local332);
 				if (local340 < '0' || local340 > '9') {
 					break;
 				}
@@ -168,13 +168,13 @@ public final class Class2_Sub43 extends Class2 {
 			}
 		} catch (@Pc(470) Exception local470) {
 		}
-		this.anInt7630 = local334;
-		if (this.anInt7626 > 3) {
-			this.anInt7632 = Static495.anInt7444;
+		this.javaUpdate = local334;
+		if (this.javaRelease > 3) {
+			this.processorCount = Static495.cpucount;
 		} else {
-			this.anInt7632 = 0;
+			this.processorCount = 0;
 		}
-		this.anInt7636 = Static369.anInt4277;
+		this.anInt7636 = GameShell.maxMemory;
 		if (arg1.aBoolean782) {
 			this.aBoolean581 = false;
 		} else {
@@ -230,12 +230,12 @@ public final class Class2_Sub43 extends Class2 {
 		arg0.method7396(this.aBoolean580 ? 1 : 0);
 		arg0.method7396(this.anInt7635);
 		arg0.method7396(this.anInt7640);
-		arg0.method7396(this.anInt7626);
-		arg0.method7396(this.anInt7622);
-		arg0.method7396(this.anInt7630);
+		arg0.method7396(this.javaRelease);
+		arg0.method7396(this.javaVersion);
+		arg0.method7396(this.javaUpdate);
 		arg0.method7396(this.aBoolean581 ? 1 : 0);
 		arg0.method7380(this.anInt7636);
-		arg0.method7396(this.anInt7632);
+		arg0.method7396(this.processorCount);
 		arg0.method7395(this.anInt7633);
 		arg0.method7380(this.anInt7627);
 		arg0.method7396(this.anInt7628);

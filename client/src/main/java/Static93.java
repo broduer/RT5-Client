@@ -1,5 +1,5 @@
 import java.io.File;
-import java.lang.reflect.Method;
+
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -7,10 +7,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static93 {
 
 	@OriginalMember(owner = "client!cu", name = "Y", descriptor = "Lclient!vq;")
-	public static Class392 aClass392_1;
-
-	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
-	public static Class332 aClass332_16;
+	public static signlink sign;
 
 	// $FF: synthetic field
 	@OriginalMember(owner = "client!cu", name = "Q", descriptor = "Ljava/lang/Class;")
@@ -31,9 +28,9 @@ public final class Static93 {
 			local38 = arg5 / 2 + arg1;
 			arg4.aa(arg1, arg2, arg5, arg0, 0xFF000000, 0);
 			local57 = arg2 + arg0 / 2 - 20 - 18;
-			arg4.method7983(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.anInt5582].getRGB(), 0);
-			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4416 * 3, 30, Static718.aColorArray3[Static338.anInt5582].getRGB(), 0);
-			Static180.aClass14_3.method8835(-1, local38, Static32.aClass32_18.method877(Static51.anInt1056), local57 + 20, Static399.aColorArray2[Static338.anInt5582].getRGB());
+			arg4.method7983(local38 - 152, local57, 304, 34, Static337.aColorArray1[Static338.colourid].getRGB(), 0);
+			arg4.aa(local38 - 150, local57 + 2, Static273.anInt4416 * 3, 30, Static718.aColorArray3[Static338.colourid].getRGB(), 0);
+			Static180.aClass14_3.method8835(-1, local38, Static32.aClass32_18.method877(client.lang), local57 + 20, Static399.aColorArray2[Static338.colourid].getRGB());
 			return;
 		}
 		@Pc(114) int local114 = Static164.anInt2818 - (int) ((float) arg5 / Static30.aFloat105);
@@ -60,47 +57,51 @@ public final class Static93 {
 		}
 		@Pc(250) int local250 = arg5 + arg1 - 5;
 		@Pc(256) int local256 = arg2 + arg0 - 8;
-		Static437.aClass14_9.method8841(local250, "Fps:" + Static652.anInt9738, 16776960, -1, local256);
+		Static437.aClass14_9.method8841(local250, "Fps:" + GameShell.fps, 0xFFFF00, -1, local256);
 		@Pc(273) int local273 = local256 - 15;
 		@Pc(275) Runtime local275 = Runtime.getRuntime();
 		@Pc(285) int local285 = (int) ((local275.totalMemory() - local275.freeMemory()) / 1024L);
-		@Pc(287) int local287 = 16776960;
+		@Pc(287) int local287 = 0xFFFF00;
 		if (local285 > 65536) {
-			local287 = 16711680;
+			local287 = 0xFF0000;
 		}
 		Static437.aClass14_9.method8841(local250, "Mem:" + local285 + "k", local287, -1, local273);
 		local256 = local273 - 15;
 	}
 
 	@OriginalMember(owner = "client!cu", name = "a", descriptor = "(Ljava/lang/Class;ZLjava/lang/String;)Z")
-	public static boolean method1833(@OriginalArg(0) Class arg0, @OriginalArg(2) String arg1) {
-		@Pc(15) Class local15 = (Class) Static137.aHashtable2.get(arg1);
-		if (local15 != null) {
-			return local15.getClassLoader() == arg0.getClassLoader();
+	@SuppressWarnings("unchecked")
+	public static boolean loadNativeLibrary(@OriginalArg(0) Class libraryClazz, @OriginalArg(2) String name) {
+		@Pc(15) Class nativeClazz = (Class) Static137.nativeLibraries.get(name);
+		if (nativeClazz != null) {
+			return nativeClazz.getClassLoader() == libraryClazz.getClassLoader();
 		}
-		@Pc(31) File local31 = null;
-		if (local31 == null) {
-			local31 = (File) Static154.aHashtable3.get(arg1);
+
+		@Pc(31) File file = null;
+		if (file == null) {
+			file = (File) Static154.loadedLibraries.get(name);
 		}
-		if (local31 != null) {
-			/*try {
-				local31 = new File(local31.getCanonicalPath());
-				@Pc(51) Class local51 = Class.forName("java.lang.Runtime");
-				@Pc(56) Class local56 = Class.forName("java.lang.reflect.AccessibleObject");
-				@Pc(68) Method local68 = local56.getDeclaredMethod("setAccessible", Boolean.TYPE);
-				@Pc(90) Method local90 = local51.getDeclaredMethod("load0", Class.forName("java.lang.Class"), Class.forName("java.lang.String"));
-				local68.invoke(local90, Boolean.TRUE);
-				local90.invoke(Runtime.getRuntime(), arg0, local31.getPath());
-				local68.invoke(local90, Boolean.FALSE);
-				Static137.aHashtable2.put(arg1, arg0);
+
+		if (file != null) {
+			try {
+//				file = new File(file.getCanonicalPath());
+//				@Pc(51) Class runtime = Class.forName("java.lang.Runtime");
+//				@Pc(56) Class accessibleObject = Class.forName("java.lang.reflect.AccessibleObject");
+//				@Pc(68) Method setAccessible = accessibleObject.getDeclaredMethod("setAccessible", Boolean.TYPE);
+//				@Pc(90) Method load0 = runtime.getDeclaredMethod("load0", Class.forName("java.lang.Class"), Class.forName("java.lang.String"));
+//				setAccessible.invoke(load0, Boolean.TRUE);
+//				load0.invoke(Runtime.getRuntime(), libraryClazz, file.getPath());
+//				setAccessible.invoke(load0, Boolean.FALSE);
+//				Static137.nativeLibraries.put(name, libraryClazz);
+//				return true;
+//			} catch (@Pc(133) NoSuchMethodException ignored) {
+				System.load(file.getPath());
+				Static137.nativeLibraries.put(name, aClass6 == null ? (aClass6 = getClass("Class334")) : aClass6);
 				return true;
-			} catch (@Pc(133) NoSuchMethodException local133) {*/
-				System.load(local31.getPath());
-				Static137.aHashtable2.put(arg1, aClass6 == null ? (aClass6 = getClass("Class334")) : aClass6);
-				return true;
-			/*} catch (@Pc(154) Throwable local154) {
-			}*/
+			} catch (@Pc(154) Throwable ignored) {
+			}
 		}
+
 		return false;
 	}
 

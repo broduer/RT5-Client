@@ -53,9 +53,9 @@ public final class Static352 {
 		Static675.method8818();
 		Static124.method2215();
 		Static327.method4902();
-		if (Static2.aClass357_1 != Static446.aClass357_5) {
-			for (@Pc(92) int local92 = 0; local92 < Static163.aByteArrayArray36.length; local92++) {
-				Static163.aByteArrayArray36[local92] = null;
+		if (client.modewhere != Static446.liveMode) {
+			for (@Pc(92) int local92 = 0; local92 < Static163.fakeModelCacheEntries.length; local92++) {
+				Static163.fakeModelCacheEntries[local92] = null;
 			}
 			Static107.anInt2170 = 0;
 		}
@@ -73,7 +73,7 @@ public final class Static352 {
 		Static6.aClass332_1.method7599();
 		Static554.aClass332_105.method7599();
 		Static281.aClass332_60.method7599();
-		Static93.aClass332_16.method7599();
+		client.js5Archive5.method7599();
 		Static398.aClass332_81.method7599();
 		Static190.aClass332_38.method7599();
 		Static721.aClass332_128.method7599();

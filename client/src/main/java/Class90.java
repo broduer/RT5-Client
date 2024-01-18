@@ -39,7 +39,7 @@ public abstract class Class90 implements Interface13 {
 		this.method7758(local18, local32);
 		this.method7760(local18, local32);
 		@Pc(56) String local56 = Static449.aClass366_1.method8384();
-		if (Static588.method7722() - this.aLong274 > 10000L) {
+		if (Static588.currentTimeMillis() - this.aLong274 > 10000L) {
 			local56 = local56 + " (" + Static449.aClass366_1.method8376().method2952() + ")";
 		}
 		this.aClass14_10.method8835(-1, local18 + this.aClass138_5.anInt4431 / 2, local56, local32 + this.aClass138_5.anInt4426 / 2 + this.aClass138_5.anInt4429 + 4, this.aClass138_5.anInt4434);
@@ -58,7 +58,7 @@ public abstract class Class90 implements Interface13 {
 				@Pc(55) long local55 = this.aLong274 - Static449.aClass366_1.method8377();
 				if (local55 > 0L) {
 					@Pc(72) long local72 = (long) (local40 - local9) * (local55 * 10000L / (long) local9);
-					@Pc(81) long local81 = (Static588.method7722() - this.aLong274) * 10000L;
+					@Pc(81) long local81 = (Static588.currentTimeMillis() - this.aLong274) * 10000L;
 					if (local81 < local72) {
 						local13 = (int) ((long) (local40 - local9) * local81 * 100L / local72 + (long) (local9 * 100));
 					} else {
@@ -68,7 +68,7 @@ public abstract class Class90 implements Interface13 {
 			}
 		} else {
 			this.anInt8754 = local9;
-			this.aLong274 = Static588.method7722();
+			this.aLong274 = Static588.currentTimeMillis();
 		}
 		return local13;
 	}

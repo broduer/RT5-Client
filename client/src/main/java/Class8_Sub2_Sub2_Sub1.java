@@ -116,7 +116,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public boolean method9286(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) boolean arg2, @OriginalArg(3) Class19 arg3) {
 		if (arg2) {
-			Static93.aClass392_1 = null;
+			Static93.sign = null;
 		}
 		@Pc(16) Class114 local16 = this.method1834(arg3, 131072);
 		if (local16 == null) {
@@ -254,7 +254,7 @@ public final class Class8_Sub2_Sub2_Sub1 extends Class8_Sub2_Sub2 implements Int
 	@Override
 	public void method9296(@OriginalArg(0) Class19 arg0, @OriginalArg(1) int arg1) {
 		if (arg1 != -5) {
-			Static93.aClass392_1 = null;
+			Static93.sign = null;
 		}
 	}
 

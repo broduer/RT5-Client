@@ -12,9 +12,6 @@ public final class Static723 {
 	@OriginalMember(owner = "client!wu", name = "E", descriptor = "Lclient!ul;")
 	public static final Class379 aClass379_9 = new Class379("stellardawn", "Stellar Dawn", 1);
 
-	@OriginalMember(owner = "client!wu", name = "B", descriptor = "Z")
-	public static volatile boolean aBoolean828 = false;
-
 	@OriginalMember(owner = "client!wu", name = "z", descriptor = "Ljava/lang/String;")
 	public static String aString129 = null;
 

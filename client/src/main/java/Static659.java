@@ -24,18 +24,18 @@ public final class Static659 {
 	@OriginalMember(owner = "client!ut", name = "e", descriptor = "(B)Ljava/lang/String;")
 	public static String method8612() {
 		@Pc(15) String local15 = "www";
-		if (Static2.aClass357_1 == Static704.aClass357_7) {
+		if (client.modewhere == Static704.wtrcMode) {
 			local15 = "www-wtrc";
-		} else if (Static2.aClass357_1 == Static713.aClass357_8) {
+		} else if (client.modewhere == Static713.wtqaMode) {
 			local15 = "www-wtqa";
-		} else if (Static2.aClass357_1 == Static425.aClass357_4) {
+		} else if (client.modewhere == Static425.wtwipMode) {
 			local15 = "www-wtwip";
 		}
 		@Pc(44) String local44 = "";
-		if (Static150.aString26 != null) {
-			local44 = "/p=" + Static150.aString26;
+		if (Static150.settings != null) {
+			local44 = "/p=" + Static150.settings;
 		}
-		return "http://" + local15 + "." + Static392.aClass379_4.aString114 + ".com/l=" + Static51.anInt1056 + "/a=" + Static323.anInt5138 + local44 + "/";
+		return "http://" + local15 + "." + Static392.game.name + ".com/l=" + client.lang + "/a=" + Static323.affid + local44 + "/";
 	}
 
 	@OriginalMember(owner = "client!ut", name = "d", descriptor = "(B)Lclient!ge;")

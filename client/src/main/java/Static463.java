@@ -10,15 +10,12 @@ public final class Static463 {
 	@OriginalMember(owner = "client!oka", name = "c", descriptor = "[[Z")
 	public static final boolean[][] aBooleanArrayArray6 = new boolean[][] { new boolean[4], { false, true, true, false }, { true, false, true, false }, { true, false, true, false }, { false, false, true, false }, { false, false, true, false }, { true, false, true, false }, { true, false, false, true }, { true, false, false, true }, { true, true, false, false }, new boolean[4], { false, true, false, true }, new boolean[4] };
 
-	@OriginalMember(owner = "client!oka", name = "a", descriptor = "Z")
-	public static boolean aBoolean531 = false;
-
 	@OriginalMember(owner = "client!oka", name = "a", descriptor = "(II)Lclient!tka;")
 	public static Class357 method6286(@OriginalArg(0) int arg0) {
 		@Pc(8) Class357[] local8 = Static287.method4153();
 		for (@Pc(10) int local10 = 0; local10 < local8.length; local10++) {
 			@Pc(16) Class357 local16 = local8[local10];
-			if (local16.anInt9484 == arg0) {
+			if (local16.id == arg0) {
 				return local16;
 			}
 		}

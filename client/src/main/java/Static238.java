@@ -11,7 +11,7 @@ public final class Static238 {
 	public static final int[] anIntArray306 = new int[] { 104, 120, 136, 168 };
 
 	@OriginalMember(owner = "client!hh", name = "b", descriptor = "[S")
-	public static short[] aShortArray62 = new short[256];
+	public static short[] recolorPalette = new short[256];
 
 	@OriginalMember(owner = "client!hh", name = "a", descriptor = "[I")
 	public static final int[] anIntArray307 = new int[4];

@@ -21,7 +21,7 @@ public final class Static320 {
 	@OriginalMember(owner = "client!kc", name = "a", descriptor = "(Z)V")
 	public static void method4605() {
 		if (!Static400.aBoolean623) {
-			Static236.aBoolean304 = Static143.anInt4070 != -1 && Static143.anInt4070 <= Static594.anInt8801 || Static594.anInt8801 * 16 + (Static60.aBoolean87 ? 26 : 22) > Static380.anInt5999;
+			Static236.aBoolean304 = Static143.anInt4070 != -1 && Static143.anInt4070 <= Static594.anInt8801 || Static594.anInt8801 * 16 + (Static60.aBoolean87 ? 26 : 22) > GameShell.canvasHeight;
 		}
 		Static204.aClass341_16.method7707();
 		Static239.aClass341_19.method7707();

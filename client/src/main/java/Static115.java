@@ -31,12 +31,12 @@ public final class Static115 {
 			if (local32 == null) {
 				arg0 = -1;
 			} else {
-				Static446.aClass392_6.method9002(local32.method9391(), local32.method9390(), Static434.aCanvas7, new Point(local28.anInt10331, local28.anInt10336), local32.method9385());
+				GameShell.sign.method9002(local32.method9391(), local32.method9390(), GameShell.canvas, new Point(local28.anInt10331, local28.anInt10336), local32.method9385());
 				Static470.anInt7133 = arg0;
 			}
 		}
 		if (arg0 == -1 && Static470.anInt7133 != -1) {
-			Static446.aClass392_6.method9002(-1, null, Static434.aCanvas7, new Point(), -1);
+			GameShell.sign.method9002(-1, null, GameShell.canvas, new Point(), -1);
 			Static470.anInt7133 = -1;
 		}
 	}

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static664 {
 
-	@OriginalMember(owner = "client!vaa", name = "gb", descriptor = "Z")
-	public static volatile boolean aBoolean760 = true;
-
 	@OriginalMember(owner = "client!vaa", name = "v", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_115 = new Class347(40, 11);
 
@@ -32,13 +29,13 @@ public final class Static664 {
 	}
 
 	@OriginalMember(owner = "client!vaa", name = "a", descriptor = "(IZLjava/lang/String;ZLclient!vq;)V")
-	public static void method8662(@OriginalArg(1) boolean arg0, @OriginalArg(2) String arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) Class392 arg3) {
+	public static void method8662(@OriginalArg(1) boolean arg0, @OriginalArg(2) String arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) signlink arg3) {
 		Static259.method3693(arg1, "openjs", arg3, arg0, arg2);
 	}
 
 	@OriginalMember(owner = "client!vaa", name = "b", descriptor = "(Z)V")
 	public static void method8664() {
-		if (Static689.aString123.toLowerCase().indexOf("microsoft") != -1) {
+		if (signlink.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
 			Static471.anIntArray577[191] = 73;
 			Static471.anIntArray577[186] = 57;
 			Static471.anIntArray577[219] = 42;
@@ -58,7 +55,7 @@ public final class Static664 {
 		Static471.anIntArray577[46] = 72;
 		Static471.anIntArray577[44] = 71;
 		Static471.anIntArray577[45] = 26;
-		if (Static689.aMethod2 == null) {
+		if (signlink.aMethod2 == null) {
 			Static471.anIntArray577[192] = 58;
 			Static471.anIntArray577[222] = 59;
 		} else {

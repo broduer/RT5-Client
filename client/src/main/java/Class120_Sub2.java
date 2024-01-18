@@ -53,7 +53,7 @@ public final class Class120_Sub2 extends Class120 implements MouseListener, Mous
 		local15.anInt5957 = arg3;
 		local15.anInt5962 = arg1;
 		local15.anInt5960 = arg0;
-		local15.aLong181 = Static588.method7722();
+		local15.aLong181 = Static588.currentTimeMillis();
 		this.aClass341_75.method7718(local15);
 	}
 

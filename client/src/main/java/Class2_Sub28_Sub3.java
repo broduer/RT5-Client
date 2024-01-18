@@ -152,7 +152,7 @@ public final class Class2_Sub28_Sub3 extends Class2_Sub28 {
 			}
 			return;
 		}
-		this.aLong188 = Static588.method7722();
+		this.aLong188 = Static588.currentTimeMillis();
 		local19 = this.aDecoderContext1.decodePacketIn(arg0, this.aGranulePos1);
 		if (local19 < 0) {
 			throw new IllegalStateException(String.valueOf(local19));

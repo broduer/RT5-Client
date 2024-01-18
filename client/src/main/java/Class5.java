@@ -27,6 +27,6 @@ public final class Class5 implements Interface13 {
 	@OriginalMember(owner = "client!aca", name = "a", descriptor = "(ZI)V")
 	@Override
 	public void method7756() {
-		Static163.aClass19_17.aa(0, 0, Static680.anInt10317, Static380.anInt5999, this.aClass146_1.anInt3451, 0);
+		Static163.aClass19_17.aa(0, 0, GameShell.canvasWidth, GameShell.canvasHeight, this.aClass146_1.anInt3451, 0);
 	}
 }

@@ -43,7 +43,7 @@ public final class Static113 {
 			}
 		}
 		Static149.aBoolean221 = false;
-		Static363.aLong219 = Static588.method7722();
+		Static363.aLong219 = Static588.currentTimeMillis();
 		Static339.aClass2_Sub21_9 = null;
 	}
 }

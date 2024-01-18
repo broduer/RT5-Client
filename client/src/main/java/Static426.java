@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static426 {
 
 	@OriginalMember(owner = "client!nha", name = "e", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_2;
+	public static AudioChannel aClass56_2;
 
 	@OriginalMember(owner = "client!nha", name = "m", descriptor = "I")
 	public static final int anInt944 = -1;
@@ -21,6 +21,7 @@ public final class Static426 {
 
 	@OriginalMember(owner = "client!nha", name = "a", descriptor = "(BLjava/lang/String;)V")
 	public static void method1016(@OriginalArg(1) String arg0) {
+		System.err.println(arg0);
 		System.exit(1);
 	}
 

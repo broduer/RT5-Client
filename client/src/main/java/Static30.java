@@ -380,7 +380,7 @@ public final class Static30 {
 		aClass365_3 = arg5;
 		anInterface23_3 = arg6;
 		aClass28_27.method737();
-		@Pc(23) int local23 = aClass332_74.method7597("details");
+		@Pc(23) int local23 = aClass332_74.getGroupId("details");
 		@Pc(28) int[] local28 = aClass332_74.method7610(local23);
 		if (local28 != null) {
 			for (@Pc(32) int local32 = 0; local32 < local28.length; local32++) {

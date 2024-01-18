@@ -62,7 +62,7 @@ public final class Class2_Sub10_Sub1 extends Class2_Sub10 implements ImageProduc
 		this.aCanvas4 = arg2;
 		super.anInt7074 = arg0;
 		super.anIntArray567 = new int[super.anInt7074 * super.anInt7071];
-		this.aColorModel1 = new DirectColorModel(32, 16711680, 65280, 255);
+		this.aColorModel1 = new DirectColorModel(32, 0xFF0000, 65280, 255);
 		this.anImage2 = this.aCanvas4.createImage(this);
 		this.method4391();
 		this.aCanvas4.prepareImage(this.anImage2, this.aCanvas4);

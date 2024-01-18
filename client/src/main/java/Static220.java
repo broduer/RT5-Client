@@ -147,7 +147,7 @@ public final class Static220 {
 	}
 
 	@OriginalMember(owner = "client!gq", name = "a", descriptor = "(Lclient!cd;Lclient!sb;Lclient!sb;Lclient!sb;ILclient!bd;)Z")
-	public static boolean method3201(@OriginalArg(0) Class56 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Class332 arg3, @OriginalArg(5) Class2_Sub6_Sub1 arg4) {
+	public static boolean method3201(@OriginalArg(0) AudioChannel arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(3) Class332 arg3, @OriginalArg(5) Class2_Sub6_Sub1 arg4) {
 		Static581.aClass2_Sub6_Sub1_3 = arg4;
 		Static296.aClass332_61 = arg1;
 		Static91.aClass332_117 = arg2;

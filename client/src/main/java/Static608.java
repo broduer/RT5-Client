@@ -94,7 +94,7 @@ public final class Static608 {
 				@Pc(306) Class23[] local306;
 				@Pc(313) Class409[] local313;
 				@Pc(381) Class23 local381;
-				if (local51.aBoolean817 || Static333.anInt5474 >= local51.anInt10776) {
+				if (local51.aBoolean817 || client.cycle >= local51.anInt10776) {
 					local233 -= Math.max(Static42.aClass383_4.anInt10057, Static119.aClass23Array3[0].method8189());
 				} else {
 					@Pc(262) byte local262 = 1;
@@ -149,7 +149,7 @@ public final class Static608 {
 				if (!local51.aBoolean817) {
 					@Pc(486) Class23 local486;
 					@Pc(496) Class23 local496;
-					if (local51.anInt10747 > Static333.anInt5474) {
+					if (local51.anInt10747 > client.cycle) {
 						local486 = Static34.aClass23Array2[local51.aBoolean819 ? 2 : 0];
 						local496 = Static34.aClass23Array2[local51.aBoolean819 ? 3 : 1];
 						if (local51 instanceof Class8_Sub2_Sub1_Sub2_Sub2) {
@@ -177,7 +177,7 @@ public final class Static608 {
 								local496 = local306[local51.aBoolean819 ? 3 : 1];
 							}
 						}
-						@Pc(612) int local612 = local51.anInt10747 - Static333.anInt5474;
+						@Pc(612) int local612 = local51.anInt10747 - client.cycle;
 						if (local51.anInt10766 < local612) {
 							local612 -= local51.anInt10766;
 							local321 = local51.anInt10759 == 0 ? 0 : (local51.anInt10765 - local612) / local51.anInt10759 * local51.anInt10759;
@@ -236,7 +236,7 @@ public final class Static608 {
 								local1071 = true;
 							} else {
 								local409 = Static504.method6740() * 1000 / local913.anInt6380 / 2;
-								local1071 = local409 > Static333.anInt5474 % (local409 * 2);
+								local1071 = local409 > client.cycle % (local409 * 2);
 							}
 							if (local1071) {
 								local381.method8209(Static215.anIntArray284[0] + arg2 - 12, -local381.method8189() + local233);
@@ -269,7 +269,7 @@ public final class Static608 {
 					@Pc(1186) Class287 local1186 = null;
 					local651 = 0;
 					if (local504 >= 0) {
-						if (Static333.anInt5474 >= local1179) {
+						if (client.cycle >= local1179) {
 							continue;
 						}
 						local1186 = Static561.aClass222_2.method5193(local51.anIntArray873[local267]);
@@ -282,10 +282,10 @@ public final class Static608 {
 					if (local321 >= 0) {
 						local1218 = Static561.aClass222_2.method5193(local321);
 					}
-					if (local1179 - local651 <= Static333.anInt5474) {
+					if (local1179 - local651 <= client.cycle) {
 						local412 = local51.anIntArray875[local267];
 						if (local412 >= 0) {
-							local51.anInt10776 = Static333.anInt5474 + 300;
+							local51.anInt10776 = client.cycle + 300;
 							local51.anInt10754 = local412;
 							local51.anIntArray875[local267] = -1;
 						}
@@ -497,7 +497,7 @@ public final class Static608 {
 										local1719 += local1351;
 									}
 								}
-								local1831 = local51.anIntArray871[local267] - Static333.anInt5474;
+								local1831 = local51.anIntArray871[local267] - client.cycle;
 								@Pc(1871) int local1871 = local1186.anInt7205 - local1186.anInt7205 * local1831 / local1186.anInt7213;
 								@Pc(1884) int local1884 = local1831 * local1186.anInt7212 / local1186.anInt7213 - local1186.anInt7212;
 								@Pc(1898) int local1898 = arg2 + Static215.anIntArray284[0] + local1871 - (local1719 >> 1);
@@ -649,13 +649,13 @@ public final class Static608 {
 			local1274 = local321 + local409;
 			@Pc(2654) int local2654 = Static42.aClass383_4.anInt10063 + arg0 + local1179;
 			if (Static55.anInt1128 == 0) {
-				@Pc(2663) int local2663 = 16776960;
+				@Pc(2663) int local2663 = 0xFFFF00;
 				@Pc(2669) int local2669 = Static352.aClass80Array1[local233].method2107();
 				if (local2669 < 6) {
 					local2663 = Static587.anIntArray689[local2669];
 				}
 				if (local2669 == 6) {
-					local2663 = Static198.anInt3285 % 20 < 10 ? 16711680 : 16776960;
+					local2663 = Static198.anInt3285 % 20 < 10 ? 0xFF0000 : 0xFFFF00;
 				}
 				if (local2669 == 7) {
 					local2663 = Static198.anInt3285 % 20 >= 10 ? 65535 : 255;
@@ -667,7 +667,7 @@ public final class Static608 {
 				if (local2669 == 9) {
 					local2749 = 150 - Static352.aClass80Array1[local233].method2110() * 150 / Static352.aClass80Array1[local233].method2103();
 					if (local2749 < 50) {
-						local2663 = local2749 * 1280 + 16711680;
+						local2663 = local2749 * 1280 + 0xFF0000;
 					} else if (local2749 < 100) {
 						local2663 = 33160960 - local2749 * 327680;
 					} else if (local2749 < 150) {
@@ -677,7 +677,7 @@ public final class Static608 {
 				if (local2669 == 10) {
 					local2749 = 150 - Static352.aClass80Array1[local233].method2110() * 150 / Static352.aClass80Array1[local233].method2103();
 					if (local2749 < 50) {
-						local2663 = local2749 * 5 + 16711680;
+						local2663 = local2749 * 5 + 0xFF0000;
 					} else if (local2749 < 100) {
 						local2663 = 16711935 - (local2749 - 50) * 327680;
 					} else if (local2749 < 150) {

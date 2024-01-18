@@ -25,8 +25,8 @@ public final class Static616 {
 
 	@OriginalMember(owner = "client!tia", name = "a", descriptor = "(BLclient!sb;)V")
 	public static void method8291(@OriginalArg(1) Class332 arg0) {
-		Static662.anInt9871 = arg0.method7597("p11_full");
-		Static539.anInt8196 = arg0.method7597("p12_full");
-		Static634.anInt9545 = arg0.method7597("b12_full");
+		Static662.anInt9871 = arg0.getGroupId("p11_full");
+		Static539.anInt8196 = arg0.getGroupId("p12_full");
+		Static634.anInt9545 = arg0.getGroupId("b12_full");
 	}
 }

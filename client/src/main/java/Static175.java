@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static175 {
 
 	@OriginalMember(owner = "client!fha", name = "c", descriptor = "Ljava/awt/datatransfer/Clipboard;")
-	public static Clipboard aClipboard1;
+	public static Clipboard clipboard;
 
 	@OriginalMember(owner = "client!fha", name = "b", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_31 = new Class347(21, 15);

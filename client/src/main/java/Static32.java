@@ -4,6 +4,8 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static32 {
 
+	@OriginalMember(owner = "client!bba", name = "G", descriptor = "Lclient!bba;")
+	public static final Class32 aClass32_63 = new Class32("slide:", "gleiten:", "glissement:", "deslizamento:");
 	@OriginalMember(owner = "client!bba", name = "q", descriptor = "I")
 	public static int anInt775;
 
@@ -11,7 +13,7 @@ public final class Static32 {
 	public static int anInt778;
 
 	@OriginalMember(owner = "client!bba", name = "Z", descriptor = "I")
-	public static int anInt779;
+	public static int logicCycles;
 
 	@OriginalMember(owner = "client!bba", name = "gb", descriptor = "Lclient!bba;")
 	public static final Class32 aClass32_1 = new Class32("This is the developer console. To close, press the `, ² or § keys on your keyboard.", "Das ist die Entwicklerkonsole. Zum Schließen, die Tasten `, ² or § drücken.", "Ceci est la console de développement. Pour la fermer, appuyez sur les touches `, ² ou §.", "Este é o painel de controle do desenvolvedor. Para fechar, pressione `, ² ou §.");
@@ -199,9 +201,6 @@ public final class Static32 {
 	@OriginalMember(owner = "client!bba", name = "nb", descriptor = "Lclient!bba;")
 	public static final Class32 aClass32_62 = new Class32("scroll:", "scrollen:", "déroulement:", "rolagem:");
 
-	@OriginalMember(owner = "client!bba", name = "G", descriptor = "Lclient!bba;")
-	public static final Class32 aClass32_63 = new Class32("slide:", "gleiten:", "glissement:", "deslizamento:");
-
 	@OriginalMember(owner = "client!bba", name = "D", descriptor = "I")
 	public static int anInt776 = 0;
 
@@ -232,6 +231,6 @@ public final class Static32 {
 
 	@OriginalMember(owner = "client!bba", name = "a", descriptor = "(IZZ)V")
 	public static void method880(@OriginalArg(0) int arg0, @OriginalArg(2) boolean arg1) {
-		Static667.method8702(arg1, aClass32_12.method877(Static51.anInt1056), arg0);
+		Static667.method8702(arg1, aClass32_12.method877(client.lang), arg0);
 	}
 }

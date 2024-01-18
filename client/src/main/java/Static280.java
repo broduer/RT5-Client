@@ -7,7 +7,7 @@ public final class Static280 {
 	public static byte[][][] aByteArrayArrayArray3;
 
 	@OriginalMember(owner = "client!ip", name = "z", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_3 = new Class357("WTI", "office", "_wti", 5);
+	public static final Class357 wtiMode = new Class357("WTI", "office", "_wti", 5);
 
 	@OriginalMember(owner = "client!ip", name = "v", descriptor = "Lclient!mia;")
 	public static final Class244 aClass244_7 = new Class244("", 16);

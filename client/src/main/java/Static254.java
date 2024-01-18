@@ -25,7 +25,7 @@ public final class Static254 {
 		Static373.anInt5923 = 0;
 		Static405.aClass153_1.method3274();
 		Static50.aBoolean565 = true;
-		Static91.aBoolean751 = true;
+		GameShell.focus = true;
 		Static230.method3374();
 		for (@Pc(8628) int local8628 = 0; local8628 < Static527.aClass256Array1.length; local8628++) {
 			Static527.aClass256Array1[local8628] = null;
@@ -104,8 +104,8 @@ public final class Static254 {
 		}
 		Static218.method3187();
 		Static273.aBoolean339 = true;
-		Static637.aShortArray133 = Static419.aShortArray96 = Static553.aShortArray112 = Static238.aShortArray62 = new short[256];
-		Static331.aString52 = Static32.aClass32_26.method877(Static51.anInt1056);
+		Static637.recolorPalette = Static419.recolorPalette = Static553.recolorPalette = Static238.recolorPalette = new short[256];
+		Static331.aString52 = Static32.aClass32_26.method877(client.lang);
 		Static400.aClass2_Sub34_28.method5111(Static400.aClass2_Sub34_28.aClass57_Sub4_1.method2143(), Static400.aClass2_Sub34_28.aClass57_Sub4_2);
 		Static400.aClass2_Sub34_28.method5111(Static400.aClass2_Sub34_28.aClass57_Sub19_1.method5967(), Static400.aClass2_Sub34_28.aClass57_Sub19_2);
 		Static334.anInt5475 = 0;

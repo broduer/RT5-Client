@@ -218,7 +218,7 @@ public final class Class47_Sub1 extends Class47 {
 				this.aClass341_42 = null;
 			}
 		}
-		if (!this.aBoolean569 || Static588.method7722() < this.aLong239) {
+		if (!this.aBoolean569 || Static588.currentTimeMillis() < this.aLong239) {
 			return;
 		}
 		for (@Pc(366) Class2_Sub2_Sub17 local366 = (Class2_Sub2_Sub17) this.aClass28_36.method736(); local366 != null; local366 = (Class2_Sub2_Sub17) this.aClass28_36.method740()) {
@@ -233,7 +233,7 @@ public final class Class47_Sub1 extends Class47 {
 				}
 			}
 		}
-		this.aLong239 = Static588.method7722() + 1000L;
+		this.aLong239 = Static588.currentTimeMillis() + 1000L;
 	}
 
 	@OriginalMember(owner = "client!pm", name = "d", descriptor = "(B)I")
@@ -329,8 +329,8 @@ public final class Class47_Sub1 extends Class47 {
 					}
 					throw new RuntimeException();
 				}
-				this.aClass297_2.anInt7475 = 0;
-				this.aClass297_2.anInt7474 = 0;
+				this.aClass297_2.errors = 0;
+				this.aClass297_2.response = 0;
 			} catch (@Pc(498) RuntimeException local498) {
 				this.aClass297_2.method6626();
 				local19.method9464();

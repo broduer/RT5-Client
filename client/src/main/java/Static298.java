@@ -1,6 +1,5 @@
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
-import org.openrs2.deob.annotation.Pc;
 
 public final class Static298 {
 
@@ -8,7 +7,7 @@ public final class Static298 {
 	public static int anInt4827;
 
 	@OriginalMember(owner = "client!ji", name = "H", descriptor = "[I")
-	public static int[] anIntArray367;
+	public static int[] underwaterLocGroupIds;
 
 	@OriginalMember(owner = "client!ji", name = "I", descriptor = "[I")
 	public static final int[] anIntArray366 = new int[] { 2, 1, 1, 1, 2, 2, 2, 1, 3, 3, 3, 2, 0, 4, 0 };
@@ -53,7 +52,6 @@ public final class Static298 {
 	@OriginalMember(owner = "client!ji", name = "a", descriptor = "(II)V")
 	public static void method4395(@OriginalArg(1) int arg0) {
 		Static722.anInt10934 = arg0;
-		@Pc(14) Class82 local14 = Static354.aClass82_120;
 		synchronized (Static354.aClass82_120) {
 			Static354.aClass82_120.method2157();
 		}

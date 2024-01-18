@@ -7,7 +7,7 @@ public final class Static559 {
 	public static Class329 aClass329_7;
 
 	@OriginalMember(owner = "client!rka", name = "Qb", descriptor = "Lclient!cd;")
-	public static Class56 aClass56_3;
+	public static AudioChannel aClass56_3;
 
 	@OriginalMember(owner = "client!rka", name = "Ob", descriptor = "I")
 	public static int anInt8434 = 0;

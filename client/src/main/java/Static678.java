@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static678 {
 
 	@OriginalMember(owner = "client!via", name = "O", descriptor = "J")
-	public static long aLong310;
+	public static long js5ConnectTime;
 
 	@OriginalMember(owner = "client!via", name = "a", descriptor = "(ILclient!ge;)V")
 	public static void method8908(@OriginalArg(0) int arg0, @OriginalArg(1) Class2_Sub21 arg1) {

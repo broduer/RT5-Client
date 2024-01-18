@@ -17,9 +17,6 @@ public final class Static134 {
 	@OriginalMember(owner = "client!eda", name = "h", descriptor = "[J")
 	public static final long[] aLongArray20 = new long[10];
 
-	@OriginalMember(owner = "client!eda", name = "g", descriptor = "I")
-	public static int anInt10357 = 0;
-
 	@OriginalMember(owner = "client!eda", name = "m", descriptor = "I")
 	public static int anInt10358 = 0;
 

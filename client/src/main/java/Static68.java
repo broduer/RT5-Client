@@ -10,7 +10,7 @@ public final class Static68 {
 	public static Class217 aClass217_3;
 
 	@OriginalMember(owner = "client!cd", name = "s", descriptor = "[I")
-	public static int[] anIntArray316;
+	public static int[] underwaterMapGroupIds;
 
 	@OriginalMember(owner = "client!cd", name = "g", descriptor = "I")
 	public static final int anInt4107 = 16777215;

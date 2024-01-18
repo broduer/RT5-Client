@@ -17,13 +17,13 @@ public final class Static416 {
 	public static boolean aBoolean472 = false;
 
 	@OriginalMember(owner = "client!nca", name = "k", descriptor = "Z")
-	public static boolean aBoolean473 = false;
+	public static boolean hc = false;
 
 	@OriginalMember(owner = "client!nca", name = "m", descriptor = "I")
 	public static int anInt6398 = 0;
 
 	@OriginalMember(owner = "client!nca", name = "q", descriptor = "J")
-	public static long aLong208 = 0L;
+	public static long userFlow = 0L;
 
 	@OriginalMember(owner = "client!nca", name = "a", descriptor = "(Z)V")
 	public static void method5712() {

@@ -7,9 +7,6 @@ public final class Static149 {
 	@OriginalMember(owner = "client!ema", name = "k", descriptor = "I")
 	public static int anInt2632;
 
-	@OriginalMember(owner = "client!ema", name = "f", descriptor = "J")
-	public static volatile long aLong96 = 0L;
-
 	@OriginalMember(owner = "client!ema", name = "c", descriptor = "Lclient!fla;")
 	public static final Class130 aClass130_4 = new Class130();
 
@@ -18,9 +15,6 @@ public final class Static149 {
 
 	@OriginalMember(owner = "client!ema", name = "o", descriptor = "Z")
 	public static boolean aBoolean221 = false;
-
-	@OriginalMember(owner = "client!ema", name = "j", descriptor = "Lclient!kh;")
-	public static Applet_Sub1 anApplet_Sub1_1 = null;
 
 	@OriginalMember(owner = "client!ema", name = "a", descriptor = "(Lclient!ha;I)V")
 	public static void method2449(@OriginalArg(0) Class19 arg0) {
@@ -35,7 +29,7 @@ public final class Static149 {
 		@Pc(25) int local25 = Static682.anInt10323;
 		@Pc(29) int local29 = Static407.anInt6308 - 3;
 		@Pc(31) byte local31 = 20;
-		Static87.method1693(Static682.anInt10323, Static407.anInt6308, Static32.aClass32_24.method877(Static51.anInt1056), arg0, local7 + Static84.anInt1783, Static71.anInt1583 - -local5, local31);
+		Static87.method1693(Static682.anInt10323, Static407.anInt6308, Static32.aClass32_24.method877(client.lang), arg0, local7 + Static84.anInt1783, Static71.anInt1583 - -local5, local31);
 		@Pc(55) int local55 = Static189.aClass120_1.method8860() + local5;
 		@Pc(66) int local66 = local7 + Static189.aClass120_1.method8861();
 		@Pc(70) int local70;

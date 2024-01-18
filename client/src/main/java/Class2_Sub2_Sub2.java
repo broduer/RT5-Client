@@ -47,7 +47,7 @@ public final class Class2_Sub2_Sub2 extends Class2_Sub2 {
 
 	@OriginalMember(owner = "client!aj", name = "c", descriptor = "(B)V")
 	public void method205() {
-		super.aLong325 = Static588.method7722() + 500L | super.aLong325 & Long.MIN_VALUE;
+		super.aLong325 = Static588.currentTimeMillis() + 500L | super.aLong325 & Long.MIN_VALUE;
 		Static59.aClass194_9.method4355(this);
 	}
 }

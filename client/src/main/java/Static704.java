@@ -6,5 +6,5 @@ public final class Static704 {
 	public static final Class289 aClass289_17 = new Class289(8, 7);
 
 	@OriginalMember(owner = "client!wea", name = "R", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_7 = new Class357("WTRC", "office", "_rc", 1);
+	public static final Class357 wtrcMode = new Class357("WTRC", "office", "_rc", 1);
 }

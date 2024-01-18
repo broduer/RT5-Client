@@ -18,7 +18,7 @@ public final class Class57_Sub19 extends Class57 {
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(I)I")
 	@Override
 	protected int method8361() {
-		return super.aClass2_Sub34_34.method5112() == Static673.aClass379_8 && super.aClass2_Sub34_34.method5118() ? 0 : 1;
+		return super.aClass2_Sub34_34.method5112() == Static673.runescapeGame && super.aClass2_Sub34_34.method5118() ? 0 : 1;
 	}
 
 	@OriginalMember(owner = "client!nt", name = "a", descriptor = "(B)V")

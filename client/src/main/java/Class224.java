@@ -155,7 +155,7 @@ public abstract class Class224 {
 	private boolean method9183() {
 		if (this.aClass2_Sub28_Sub1_2 == null) {
 			@Pc(42) double local42 = this.aClass2_Sub28_Sub3_2.method5495();
-			return local42 == 0.0D || (double) Static588.method7722() >= 1000.0D / local42 + (double) this.aClass2_Sub28_Sub3_2.method5503();
+			return local42 == 0.0D || (double) Static588.currentTimeMillis() >= 1000.0D / local42 + (double) this.aClass2_Sub28_Sub3_2.method5503();
 		} else {
 			return !this.aClass2_Sub28_Sub3_2.method5505() || this.method9192() > this.aClass2_Sub28_Sub3_2.method5504();
 		}

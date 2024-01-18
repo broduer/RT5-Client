@@ -8,7 +8,7 @@ public final class Static715 {
 	public static int anInt10839;
 
 	@OriginalMember(owner = "client!wla", name = "k", descriptor = "I")
-	public static int anInt10834 = 0;
+	public static int worldflags = 0;
 
 	@OriginalMember(owner = "client!wla", name = "p", descriptor = "[I")
 	public static final int[] anIntArray881 = new int[200];

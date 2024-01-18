@@ -13,10 +13,10 @@ public abstract class Class27 {
 	public abstract void method5604();
 
 	@OriginalMember(owner = "client!nl", name = "a", descriptor = "(JI)I")
-	public final int method5605(@OriginalArg(0) long arg0) {
+	public final int sleep(@OriginalArg(0) long arg0) {
 		@Pc(13) long local13 = this.method5606();
 		if (local13 > 0L) {
-			Static638.method8402(local13);
+			ThreadUtils.sleep(local13);
 		}
 		return this.method5603(arg0);
 	}
@@ -25,5 +25,5 @@ public abstract class Class27 {
 	protected abstract long method5606();
 
 	@OriginalMember(owner = "client!nl", name = "b", descriptor = "(I)J")
-	public abstract long method5609();
+	public abstract long time();
 }

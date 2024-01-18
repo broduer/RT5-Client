@@ -7,9 +7,6 @@ public final class Static373 {
 	@OriginalMember(owner = "client!lo", name = "g", descriptor = "I")
 	public static int anInt5923;
 
-	@OriginalMember(owner = "client!lo", name = "e", descriptor = "I")
-	public static int anInt5925;
-
 	@OriginalMember(owner = "client!lo", name = "a", descriptor = "(I[[F[[S)[[S")
 	public static short[][] method5307(@OriginalArg(1) float[][] arg0, @OriginalArg(2) short[][] arg1) {
 		for (@Pc(3) int local3 = 0; local3 < arg0.length; local3++) {

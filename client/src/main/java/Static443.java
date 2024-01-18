@@ -25,7 +25,7 @@ public final class Static443 {
 			local44 = Static130.method2283();
 			local46 = Static422.method5778();
 		}
-		Static431.method5829(local46 + Static380.anInt5999, local46, local46, local22, local22 + local46, local44 + Static680.anInt10317, local44, Static377.anInt5950, local13, local44 + local13, local44);
+		Static431.method5829(local46 + GameShell.canvasHeight, local46, local46, local22, local22 + local46, local44 + GameShell.canvasWidth, local44, Static377.anInt5950, local13, local44 + local13, local44);
 		if (Static210.aClass158_4 != null) {
 			Static509.method6766(local13 + local44, local22 - -local46);
 		}

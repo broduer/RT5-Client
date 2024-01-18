@@ -10,7 +10,7 @@ public final class Static163 {
 	public static Class19 aClass19_17;
 
 	@OriginalMember(owner = "client!fb", name = "d", descriptor = "[[B")
-	public static byte[][] aByteArrayArray36;
+	public static byte[][] fakeModelCacheEntries;
 
 	@OriginalMember(owner = "client!fb", name = "a", descriptor = "(JI)Ljava/lang/String;")
 	public static String method8853(@OriginalArg(0) long arg0) {

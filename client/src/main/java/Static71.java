@@ -28,13 +28,13 @@ public final class Static71 {
 				@Pc(69) int local69 = local54 + local19.anInt3756 + 1;
 				@Pc(74) int local74;
 				if (arg6 == -1) {
-					Class2_Sub1_Sub28.aRectangleArray1[Static122.anInt2348].setBounds(local19.anInt3745 + arg1, arg9 + local19.anInt3794, local19.anInt3813, local19.anInt3756);
-					local74 = Static122.anInt2348++;
+					Class2_Sub1_Sub28.aRectangleArray1[Static122.rectangles].setBounds(local19.anInt3745 + arg1, arg9 + local19.anInt3794, local19.anInt3813, local19.anInt3756);
+					local74 = Static122.rectangles++;
 				} else {
 					local74 = arg6;
 				}
 				local19.anInt3762 = local74;
-				local19.anInt3824 = Static333.anInt5474;
+				local19.anInt3824 = client.cycle;
 				if (!Static84.method1660(local19)) {
 					if (local19.anInt3817 != 0) {
 						Static523.method3449(local19);
@@ -126,7 +126,7 @@ public final class Static71 {
 								if (local19.method3393(Static163.aClass19_17) != null) {
 									Static557.method7338();
 									Static28.method746(local130, Static163.aClass19_17, local19, local125);
-									Static469.aBooleanArray23[local74] = true;
+									Static469.rectangleRedraw[local74] = true;
 									Static163.aClass19_17.KA(arg3, arg4, arg8, arg5);
 									if (Static137.aBoolean210) {
 										if (arg7) {
@@ -149,7 +149,7 @@ public final class Static71 {
 							if (local19.anInt3817 == Static206.anInt3431) {
 								if (local19.method3393(Static163.aClass19_17) != null) {
 									Static646.method8461(local19, local125, local130);
-									Static469.aBooleanArray23[local74] = true;
+									Static469.rectangleRedraw[local74] = true;
 									Static163.aClass19_17.KA(arg3, arg4, arg8, arg5);
 									if (Static137.aBoolean210) {
 										if (arg7) {
@@ -188,16 +188,16 @@ public final class Static71 {
 								}
 								if (Static105.aBoolean196) {
 									local744 = -256;
-									if (Static652.anInt9738 < 20) {
+									if (GameShell.fps < 20) {
 										local744 = -65536;
 									}
-									Static437.aClass14_9.method8841(local317, "Fps:" + Static652.anInt9738, local744, -1, local323);
+									Static437.aClass14_9.method8841(local317, "Fps:" + GameShell.fps, local744, -1, local323);
 									local323 += 15;
 									@Pc(768) Runtime local768 = Runtime.getRuntime();
 									local777 = (int) ((local768.totalMemory() - local768.freeMemory()) / 1024L);
 									local779 = -256;
 									if (local777 > 98304) {
-										if (Static473.aBoolean539) {
+										if (Static473.force64mb) {
 											Static664.method8666();
 											for (local792 = 0; local792 < 10; local792++) {
 												System.gc();
@@ -272,8 +272,8 @@ public final class Static71 {
 									local744 = Static337.anInt5576;
 									local1255 = Static186.anInt3068;
 									local777 = Static622.anInt7760;
-									if (Static333.anInt5474 < Static4.anInt84) {
-										@Pc(1276) float local1276 = (float) (Static333.anInt5474 - Static115.anInt2268) / (float) (Static4.anInt84 - Static115.anInt2268);
+									if (client.cycle < Static4.anInt84) {
+										@Pc(1276) float local1276 = (float) (client.cycle - Static115.anInt2268) / (float) (Static4.anInt84 - Static115.anInt2268);
 										local744 = (int) ((float) Static582.anInt8652 * (1.0F - local1276) + local1276 * (float) Static337.anInt5576);
 										local1255 = (int) (local1276 * (float) Static186.anInt3068 + (float) Static493.anInt7391 * (1.0F - local1276));
 										local323 = (int) (local1276 * (float) Static399.anInt6235 + (1.0F - local1276) * (float) Static323.anInt5137);
@@ -330,7 +330,7 @@ public final class Static71 {
 											}
 										}
 										if (local19 == Static390.aClass158_9) {
-											local1533 = Static32.aClass32_31.method877(Static51.anInt1056);
+											local1533 = Static32.aClass32_31.method877(client.lang);
 											local323 = local19.anInt3789;
 										}
 										if (Static376.aBoolean452) {
@@ -503,7 +503,7 @@ public final class Static71 {
 											Static59.aClass73_5.method7141(local19.anInt3746 << 2, local744 + (local19.anInt3815 << 2) + local936, (local19.anInt3815 << 2) + local938);
 											Static59.aClass73_5.method7137(local19.anInt3818 << 3);
 										}
-										local19.method3384(Static163.aClass19_17, local2313, Static59.aClass73_5, Static333.anInt5474);
+										local19.method3384(Static163.aClass19_17, local2313, Static59.aClass73_5, client.cycle);
 										if (Static376.aBoolean452) {
 											Static163.aClass19_17.T(local125, local130, local125 + local19.anInt3813, local19.anInt3756 + local130);
 										}

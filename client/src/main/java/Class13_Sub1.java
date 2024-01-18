@@ -7,6 +7,6 @@ public final class Class13_Sub1 extends Class13 {
 	@OriginalMember(owner = "client!jca", name = "b", descriptor = "(I)J")
 	@Override
 	public long method5168() {
-		return Static588.method7722() * 1000000L;
+		return Static588.currentTimeMillis() * 1000000L;
 	}
 }

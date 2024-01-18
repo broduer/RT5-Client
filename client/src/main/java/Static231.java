@@ -118,13 +118,13 @@ public final class Static231 {
 	}
 
 	@OriginalMember(owner = "client!hd", name = "a", descriptor = "(Ljava/lang/Throwable;Ljava/lang/String;)Lclient!fl;")
-	public static RuntimeException_Sub1 method3380(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
-		@Pc(12) RuntimeException_Sub1 local12;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			local12 = (RuntimeException_Sub1) arg0;
-			local12.aString32 = local12.aString32 + ' ' + arg1;
+	public static TracingException method3380(@OriginalArg(0) Throwable arg0, @OriginalArg(1) String arg1) {
+		@Pc(12) TracingException local12;
+		if (arg0 instanceof TracingException) {
+			local12 = (TracingException) arg0;
+			local12.message = local12.message + ' ' + arg1;
 		} else {
-			local12 = new RuntimeException_Sub1(arg0, arg1);
+			local12 = new TracingException(arg0, arg1);
 		}
 		return local12;
 	}
@@ -165,7 +165,7 @@ public final class Static231 {
 						}
 						break label721;
 					}
-					Static79.method1579("Heap: " + Static369.anInt4277 + "MB");
+					Static79.method1579("Heap: " + GameShell.maxMemory + "MB");
 					return;
 				}
 				Static79.method1579("commands - This command");
@@ -177,10 +177,10 @@ public final class Static231 {
 				return;
 			}
 		} catch (@Pc(323) Exception local323) {
-			Static79.method1579(Static32.aClass32_2.method877(Static51.anInt1056));
+			Static79.method1579(Static32.aClass32_2.method877(client.lang));
 			return;
 		}
-		if (Static446.aClass357_5 != Static2.aClass357_1 || Static608.anInt9316 >= 2) {
+		if (Static446.liveMode != client.modewhere || Static608.anInt9316 >= 2) {
 			if (arg2.equalsIgnoreCase("errortest")) {
 				throw new RuntimeException();
 			}
@@ -189,7 +189,7 @@ public final class Static231 {
 			}
 			try {
 				if (arg2.equalsIgnoreCase("printfps")) {
-					Static79.method1579("FPS: " + Static652.anInt9738);
+					Static79.method1579("FPS: " + GameShell.fps);
 					return;
 				}
 				if (arg2.equalsIgnoreCase("occlude")) {
@@ -213,7 +213,7 @@ public final class Static231 {
 				}
 				if (arg2.equals("systemmem")) {
 					try {
-						Static79.method1579("System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Static292.aClass2_Sub43_2.anInt7633 + "Mb");
+						Static79.method1579("System memory: " + jagmisc.getAvailablePhysicalMemory() / 1048576L + "/" + Static292.instance.anInt7633 + "Mb");
 						return;
 					} catch (@Pc(474) Throwable local474) {
 						return;
@@ -275,18 +275,18 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("clientjs5drop")) {
-					Static500.aClass297_3.method6628();
+					client.js5NetQueue.method6628();
 					Static79.method1579("Dropped client js5 net queue");
 					return;
 				}
 				if (arg2.equalsIgnoreCase("serverjs5drop")) {
-					Static500.aClass297_3.method6635();
+					client.js5NetQueue.method6635();
 					Static79.method1579("Dropped server js5 net queue");
 					return;
 				}
 				@Pc(725) int local725;
 				if (arg2.equalsIgnoreCase("breakcon")) {
-					Static446.aClass392_6.method9001();
+					GameShell.sign.method9001();
 					@Pc(723) Class153[] local723 = Static405.aClass153Array1;
 					for (local725 = 0; local725 < local723.length; local725++) {
 						@Pc(730) Class153 local730 = local723[local725];
@@ -294,7 +294,7 @@ public final class Static231 {
 							local730.aClass350_1.method7934();
 						}
 					}
-					Static500.aClass297_3.method6638();
+					client.js5NetQueue.method6638();
 					Static79.method1579("Breaking new connections for 5 seconds");
 					return;
 				}
@@ -305,7 +305,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("rebuildprofile")) {
-					Static690.aLong318 = Static588.method7722();
+					Static690.aLong318 = Static588.currentTimeMillis();
 					Static28.aBoolean43 = true;
 					Static449.method6123();
 					Static244.method3512();
@@ -313,7 +313,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("wm1")) {
-					Static409.method5664(1, -1, false, -1);
+					Static409.setWindowMode(1, -1, false, -1);
 					if (Static36.method978() != 1) {
 						Static79.method1579("wm1 failed");
 						return;
@@ -322,7 +322,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("wm2")) {
-					Static409.method5664(2, -1, false, -1);
+					Static409.setWindowMode(2, -1, false, -1);
 					if (Static36.method978() != 2) {
 						Static79.method1579("wm2 failed");
 						return;
@@ -331,7 +331,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equalsIgnoreCase("wm3")) {
-					Static409.method5664(3, 1024, false, 768);
+					Static409.setWindowMode(3, 1024, false, 768);
 					if (Static36.method978() != 3) {
 						Static79.method1579("wm3 failed");
 						return;
@@ -405,7 +405,7 @@ public final class Static231 {
 						return;
 					}
 					local501 = Static647.method8480(arg2.substring(6));
-					if (local501 >= 0 && local501 <= Static461.method6275(Static369.anInt4277)) {
+					if (local501 >= 0 && local501 <= Static461.method6275(GameShell.maxMemory)) {
 						Static400.aClass2_Sub34_28.method5111(local501, Static400.aClass2_Sub34_28.aClass57_Sub5_1);
 						Static666.method8700(1);
 						Static503.aBoolean578 = false;
@@ -560,7 +560,7 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("getworld")) {
-					Static79.method1579("w: " + Static344.aClass231_1.anInt5876);
+					Static79.method1579("w: " + Static344.aClass231_1.id);
 					return;
 				}
 				if (arg2.startsWith("pc")) {
@@ -667,11 +667,11 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("errormessage")) {
-					Static79.method1579(Static295.aClient1.method1648());
+					Static79.method1579(client.instance.method1648());
 					return;
 				}
 				if (arg2.equals("heapdump")) {
-					if (Static689.aString119.startsWith("win")) {
+					if (signlink.osNameLower.startsWith("win")) {
 						Static21.method8055(new File("C:\\Temp\\heap.dump"));
 					} else {
 						Static21.method8055(new File("/tmp/heap.dump"));
@@ -680,9 +680,9 @@ public final class Static231 {
 					return;
 				}
 				if (arg2.equals("os")) {
-					Static79.method1579("Name: " + Static689.aString119);
-					Static79.method1579("Arch: " + Static689.aString121);
-					Static79.method1579("Ver: " + Static689.aString120);
+					Static79.method1579("Name: " + signlink.osNameLower);
+					Static79.method1579("Arch: " + signlink.osArch);
+					Static79.method1579("Ver: " + signlink.osVersion);
 					return;
 				}
 				if (arg2.startsWith("w2debug")) {
@@ -743,7 +743,7 @@ public final class Static231 {
 				if (arg2.startsWith("setoutput ")) {
 					local2592 = new File(arg2.substring(10));
 					if (local2592.exists()) {
-						local2592 = new File(arg2.substring(10) + "." + Static588.method7722() + ".log");
+						local2592 = new File(arg2.substring(10) + "." + Static588.currentTimeMillis() + ".log");
 						if (local2592.exists()) {
 							Static79.method1579("file already exists!");
 							return;
@@ -812,17 +812,17 @@ public final class Static231 {
 					local2836.aClass2_Sub21_Sub2_1.method7398(arg2);
 					Static405.aClass153_2.method3275(local2836);
 				}
-				if (arg2.startsWith("fps ") && Static2.aClass357_1 != Static446.aClass357_5) {
+				if (arg2.startsWith("fps ") && client.modewhere != Static446.liveMode) {
 					Static724.method9460(Static647.method8480(arg2.substring(4)));
 					return;
 				}
 			} catch (@Pc(2894) Exception local2894) {
-				Static79.method1579(Static32.aClass32_2.method877(Static51.anInt1056));
+				Static79.method1579(Static32.aClass32_2.method877(client.lang));
 				return;
 			}
 		}
 		if (Static283.anInt4588 != 11) {
-			Static79.method1579(Static32.aClass32_3.method877(Static51.anInt1056) + arg2);
+			Static79.method1579(Static32.aClass32_3.method877(client.lang) + arg2);
 		}
 	}
 
@@ -832,7 +832,7 @@ public final class Static231 {
 			return;
 		}
 		if (Static436.anInt3860 >= 100) {
-			Static67.method6105(Static32.aClass32_39.method877(Static51.anInt1056));
+			Static67.method6105(Static32.aClass32_39.method877(client.lang));
 			return;
 		}
 		@Pc(27) String local27 = Static390.method5499(arg1);
@@ -843,13 +843,13 @@ public final class Static231 {
 		for (@Pc(33) int local33 = 0; local33 < Static436.anInt3860; local33++) {
 			@Pc(40) String local40 = Static390.method5499(Static632.aStringArray44[local33]);
 			if (local40 != null && local40.equals(local27)) {
-				Static67.method6105(arg1 + Static32.aClass32_40.method877(Static51.anInt1056));
+				Static67.method6105(arg1 + Static32.aClass32_40.method877(client.lang));
 				return;
 			}
 			if (Static10.aStringArray1[local33] != null) {
 				local76 = Static390.method5499(Static10.aStringArray1[local33]);
 				if (local76 != null && local76.equals(local27)) {
-					Static67.method6105(arg1 + Static32.aClass32_40.method877(Static51.anInt1056));
+					Static67.method6105(arg1 + Static32.aClass32_40.method877(client.lang));
 					return;
 				}
 			}
@@ -857,19 +857,19 @@ public final class Static231 {
 		for (@Pc(106) int local106 = 0; local106 < Static327.anInt5411; local106++) {
 			local76 = Static390.method5499(Static330.aStringArray25[local106]);
 			if (local76 != null && local76.equals(local27)) {
-				Static67.method6105(Static32.aClass32_45.method877(Static51.anInt1056) + arg1 + Static32.aClass32_46.method877(Static51.anInt1056));
+				Static67.method6105(Static32.aClass32_45.method877(client.lang) + arg1 + Static32.aClass32_46.method877(client.lang));
 				return;
 			}
 			if (Static572.aStringArray42[local106] != null) {
 				@Pc(154) String local154 = Static390.method5499(Static572.aStringArray42[local106]);
 				if (local154 != null && local154.equals(local27)) {
-					Static67.method6105(Static32.aClass32_45.method877(Static51.anInt1056) + arg1 + Static32.aClass32_46.method877(Static51.anInt1056));
+					Static67.method6105(Static32.aClass32_45.method877(client.lang) + arg1 + Static32.aClass32_46.method877(client.lang));
 					return;
 				}
 			}
 		}
 		if (Static390.method5499(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.aString9).equals(local27)) {
-			Static67.method6105(Static32.aClass32_42.method877(Static51.anInt1056));
+			Static67.method6105(Static32.aClass32_42.method877(client.lang));
 			return;
 		}
 		@Pc(216) Class153 local216 = Static668.method8708();

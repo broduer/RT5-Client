@@ -1,4 +1,3 @@
-import java.awt.datatransfer.ClipboardOwner;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
@@ -74,7 +73,7 @@ public final class Static668 {
 			Static566.anInt8496 += 6;
 		}
 		@Pc(26) int local26;
-		if (Static523.anInt3896 != -1 && Static305.aLong157 < Static588.method7722()) {
+		if (Static523.anInt3896 != -1 && Static305.aLong157 < Static588.currentTimeMillis()) {
 			for (local26 = Static523.anInt3896; local26 < Static144.aStringArray7.length; local26++) {
 				if (Static144.aStringArray7[local26].startsWith("pause")) {
 					@Pc(40) int local40 = 5;
@@ -84,7 +83,7 @@ public final class Static668 {
 					}
 					Static79.method1579("Pausing for " + local40 + " seconds...");
 					Static523.anInt3896 = local26 + 1;
-					Static305.aLong157 = (long) (local40 * 1000) + Static588.method7722();
+					Static305.aLong157 = (long) (local40 * 1000) + Static588.currentTimeMillis();
 					return;
 				}
 				Static110.aString19 = Static144.aStringArray7[local26];
@@ -113,19 +112,19 @@ public final class Static668 {
 			if (local151 == 80) {
 				Static270.method3920(true);
 			} else if (local151 == 66 && (local159 & 0x4) != 0) {
-				if (Static175.aClipboard1 != null) {
+				if (Static175.clipboard != null) {
 					@Pc(467) String local467 = "";
 					for (@Pc(472) int local472 = Static393.aStringArray32.length - 1; local472 >= 0; local472--) {
 						if (Static393.aStringArray32[local472] != null && Static393.aStringArray32[local472].length() > 0) {
 							local467 = local467 + Static393.aStringArray32[local472] + '\n';
 						}
 					}
-					Static175.aClipboard1.setContents(new StringSelection(local467), null);
+					Static175.clipboard.setContents(new StringSelection(local467), null);
 				}
 			} else if (local151 == 67 && (local159 & 0x4) != 0) {
-				if (Static175.aClipboard1 != null) {
+				if (Static175.clipboard != null) {
 					try {
-						@Pc(207) Transferable local207 = Static175.aClipboard1.getContents(null);
+						@Pc(207) Transferable local207 = Static175.clipboard.getContents(null);
 						if (local207 != null) {
 							@Pc(214) String local214 = (String) local207.getTransferData(DataFlavor.stringFlavor);
 							if (local214 != null) {

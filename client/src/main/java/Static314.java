@@ -25,9 +25,9 @@ public final class Static314 {
 
 	@OriginalMember(owner = "client!jw", name = "b", descriptor = "(B)V")
 	public static void method4569() {
-		if (Static2.aClass357_1 != Static16.aClass357_2) {
+		if (client.modewhere != Static16.localMode) {
 			try {
-				Static727.method97("tbrefresh", Static295.aClient1);
+				BrowserControl.call("tbrefresh", client.instance);
 			} catch (@Pc(34) Throwable local34) {
 			}
 		}

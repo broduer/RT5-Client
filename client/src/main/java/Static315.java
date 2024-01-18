@@ -105,11 +105,4 @@ public final class Static315 {
 		}
 	}
 
-	@OriginalMember(owner = "client!k", name = "a", descriptor = "(JB)V")
-	public static void method4585(@OriginalArg(0) long arg0) {
-		try {
-			Thread.sleep(arg0);
-		} catch (@Pc(12) InterruptedException local12) {
-		}
-	}
 }

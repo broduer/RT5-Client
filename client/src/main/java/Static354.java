@@ -31,9 +31,9 @@ public final class Static354 {
 	@OriginalMember(owner = "client!ld", name = "a", descriptor = "(BLclient!cg;)V")
 	public static void method5188(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0) {
 		@Pc(6) Class152 local6 = arg0.aClass152_11;
-		if (Static333.anInt5474 == arg0.anInt10784 || !local6.method9116() || local6.method9097()) {
+		if (client.cycle == arg0.anInt10784 || !local6.method9116() || local6.method9097()) {
 			@Pc(34) int local34 = arg0.anInt10784 - arg0.anInt10788;
-			@Pc(40) int local40 = Static333.anInt5474 - arg0.anInt10788;
+			@Pc(40) int local40 = client.cycle - arg0.anInt10788;
 			@Pc(52) int local52 = arg0.anInt10779 * 512 + arg0.method9309((byte) 124) * 256;
 			@Pc(64) int local64 = arg0.anInt10782 * 512 + arg0.method9309((byte) 89) * 256;
 			@Pc(76) int local76 = arg0.anInt10790 * 512 + arg0.method9309((byte) 107) * 256;

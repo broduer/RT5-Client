@@ -103,7 +103,7 @@ public final class Static57 {
 			}
 		}
 		if (!local22) {
-			Static67.method6105(Static32.aClass32_21.method877(Static51.anInt1056) + arg0);
+			Static67.method6105(Static32.aClass32_21.method877(client.lang) + arg0);
 		}
 		if (Static156.aBoolean223) {
 			Static470.method6391();

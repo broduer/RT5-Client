@@ -42,7 +42,7 @@ public final class Class285 {
 		this.aString79 = arg5;
 		this.aString80 = arg3;
 		this.aString81 = arg2;
-		this.anInt7185 = Static333.anInt5474;
+		this.anInt7185 = client.cycle;
 		this.anInt7187 = arg0;
 		this.aString77 = arg4;
 		this.aString78 = arg7;
@@ -53,7 +53,7 @@ public final class Class285 {
 		this.anInt7184 = Static429.method5810();
 		this.aString81 = arg2;
 		this.aString79 = arg6;
-		this.anInt7185 = Static333.anInt5474;
+		this.anInt7185 = client.cycle;
 		this.aString78 = arg3;
 		this.aString80 = arg5;
 		this.aString77 = arg7;

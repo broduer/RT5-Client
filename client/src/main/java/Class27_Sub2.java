@@ -59,7 +59,7 @@ public final class Class27_Sub2 extends Class27 {
 
 	@OriginalMember(owner = "client!di", name = "b", descriptor = "(I)J")
 	@Override
-	public long method5609() {
+	public long time() {
 		return this.aLong82;
 	}
 

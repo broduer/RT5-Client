@@ -6,9 +6,6 @@ public final class Static169 {
 	@OriginalMember(owner = "client!fe", name = "f", descriptor = "Lclient!wk;")
 	public static final Class405 aClass405_1 = new Class405();
 
-	@OriginalMember(owner = "client!fe", name = "h", descriptor = "I")
-	public static int anInt2859 = 500;
-
 	@OriginalMember(owner = "client!fe", name = "e", descriptor = "I")
 	public static int anInt2862 = -1;
 
@@ -22,7 +19,7 @@ public final class Static169 {
 		arg0.method7349(Static6.aClass332_1.method7583());
 		arg0.method7349(Static554.aClass332_105.method7583());
 		arg0.method7349(Static281.aClass332_60.method7583());
-		arg0.method7349(Static93.aClass332_16.method7583());
+		arg0.method7349(client.js5Archive5.method7583());
 		arg0.method7349(Static398.aClass332_81.method7583());
 		arg0.method7349(Static190.aClass332_38.method7583());
 		arg0.method7349(Static721.aClass332_128.method7583());

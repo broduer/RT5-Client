@@ -24,7 +24,7 @@ public final class Static570 {
 	}
 
 	@OriginalMember(owner = "client!rv", name = "c", descriptor = "(I)Lclient!nl;")
-	public static Class27 method7557() {
+	public static Class27 create() {
 		try {
 			return new Class27_Sub3();
 		} catch (@Pc(8) Throwable local8) {

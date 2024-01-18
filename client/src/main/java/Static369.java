@@ -11,9 +11,6 @@ public final class Static369 {
 	@OriginalMember(owner = "client!lla", name = "f", descriptor = "I")
 	public static int anInt4275;
 
-	@OriginalMember(owner = "client!lla", name = "a", descriptor = "I")
-	public static int anInt4277 = 64;
-
 	@OriginalMember(owner = "client!lla", name = "a", descriptor = "(I)V")
 	public static void method3847() {
 		@Pc(11) int local11 = Static363.aByteArrayArray22.length;
@@ -49,7 +46,7 @@ public final class Static369 {
 						Static18.aClass28_2.method735(local88, local205);
 						Static592.aClass2_Sub45Array1[Static416.anInt6398++] = local205;
 						Static103.anIntArray187[Static390.anInt6146++] = local88;
-						local197.anInt10780 = Static333.anInt5474;
+						local197.anInt10780 = client.cycle;
 						local197.method9335(local142);
 						local197.method9317(local197.aClass270_1.anInt6733);
 						local197.anInt10786 = local197.aClass270_1.anInt6768 << 3;
@@ -89,7 +86,7 @@ public final class Static369 {
 
 	@OriginalMember(owner = "client!lla", name = "b", descriptor = "(B)V")
 	public static void method3852() {
-		if (Static265.aByteArray44 != null) {
+		if (Static265.sskey != null) {
 			Static292.method4622();
 		} else if (Static129.anInt2418 == -1) {
 			Static616.method8290(Static59.aString63, Static449.aString75);

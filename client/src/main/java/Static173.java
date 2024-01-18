@@ -16,11 +16,11 @@ public final class Static173 {
 
 	@OriginalMember(owner = "client!fga", name = "b", descriptor = "(Z)V")
 	public static void method2690() {
-		if (Static719.aClass56_5 != null) {
-			Static719.aClass56_5.method3586();
+		if (Static719.musicChannel != null) {
+			Static719.musicChannel.quit();
 		}
 		if (Static559.aClass56_3 != null) {
-			Static559.aClass56_3.method3586();
+			Static559.aClass56_3.quit();
 		}
 	}
 

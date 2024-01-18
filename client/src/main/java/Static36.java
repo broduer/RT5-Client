@@ -32,7 +32,7 @@ public final class Static36 {
 
 	@OriginalMember(owner = "client!bda", name = "c", descriptor = "(I)I")
 	public static int method978() {
-		if (Static316.aFrame8 == null) {
+		if (GameShell.fullscreenFrame == null) {
 			return Static152.aBoolean812 ? 2 : 1;
 		} else {
 			return 3;
@@ -40,49 +40,49 @@ public final class Static36 {
 	}
 
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(BLclient!vq;Ljava/lang/String;Ljava/lang/String;I)Lclient!oba;")
-	public static Class272 method980(@OriginalArg(1) Class392 arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
+	public static PrivilegedRequest method980(@OriginalArg(1) signlink arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2, @OriginalArg(4) int arg3) {
 		if (arg3 == 0) {
 			return arg0.method8993(arg1);
 		}
-		@Pc(57) Class272 local57;
+		@Pc(57) PrivilegedRequest local57;
 		if (arg3 == 1) {
 			try {
-				@Pc(36) Object local36 = Static727.method96(Static166.anApplet1, arg2, new Object[] { (new URL(Static166.anApplet1.getCodeBase(), arg1)).toString() });
+				@Pc(36) Object local36 = BrowserControl.call(signlink.mainapp, arg2, new Object[] { (new URL(signlink.mainapp.getCodeBase(), arg1)).toString() });
 				if (local36 == null) {
 					throw new RuntimeException();
 				}
-				@Pc(47) Class272 local47 = new Class272();
-				local47.anInt6810 = 1;
+				@Pc(47) PrivilegedRequest local47 = new PrivilegedRequest();
+				local47.status = 1;
 				return local47;
 			} catch (@Pc(53) Throwable local53) {
-				local57 = new Class272();
-				local57.anInt6810 = 2;
+				local57 = new PrivilegedRequest();
+				local57.status = 2;
 				return local57;
 			}
 		} else if (arg3 == 2) {
 			try {
-				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_blank");
-				local57 = new Class272();
-				local57.anInt6810 = 1;
+				signlink.mainapp.getAppletContext().showDocument(new URL(signlink.mainapp.getCodeBase(), arg1), "_blank");
+				local57 = new PrivilegedRequest();
+				local57.status = 1;
 				return local57;
 			} catch (@Pc(94) Exception local94) {
-				local57 = new Class272();
-				local57.anInt6810 = 2;
+				local57 = new PrivilegedRequest();
+				local57.status = 2;
 				return local57;
 			}
 		} else if (arg3 == 3) {
 			try {
-				Static727.method97("loggedout", Static166.anApplet1);
+				BrowserControl.call("loggedout", signlink.mainapp);
 			} catch (@Pc(115) Throwable local115) {
 			}
 			try {
-				Static166.anApplet1.getAppletContext().showDocument(new URL(Static166.anApplet1.getCodeBase(), arg1), "_top");
-				local57 = new Class272();
-				local57.anInt6810 = 1;
+				signlink.mainapp.getAppletContext().showDocument(new URL(signlink.mainapp.getCodeBase(), arg1), "_top");
+				local57 = new PrivilegedRequest();
+				local57.status = 1;
 				return local57;
 			} catch (@Pc(137) Exception local137) {
-				local57 = new Class272();
-				local57.anInt6810 = 2;
+				local57 = new PrivilegedRequest();
+				local57.status = 2;
 				return local57;
 			}
 		} else {

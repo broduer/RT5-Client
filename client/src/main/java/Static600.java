@@ -9,9 +9,6 @@ public final class Static600 {
 	@OriginalMember(owner = "client!sv", name = "W", descriptor = "F")
 	public static float aFloat179;
 
-	@OriginalMember(owner = "client!sv", name = "hb", descriptor = "Lclient!nl;")
-	public static Class27 aClass27_1;
-
 	@OriginalMember(owner = "client!sv", name = "V", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_108 = new Class347(37, -1);
 

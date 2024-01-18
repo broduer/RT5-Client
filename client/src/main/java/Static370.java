@@ -8,7 +8,7 @@ public final class Static370 {
 	public static final Class227 aClass227_152 = new Class227(4, 0);
 
 	@OriginalMember(owner = "client!lm", name = "r", descriptor = "I")
-	public static int anInt5896 = 0;
+	public static int js5ConnectDelay = 0;
 
 	@OriginalMember(owner = "client!lm", name = "j", descriptor = "Lclient!pc;")
 	public static final Class289 aClass289_11 = new Class289(9, -1);

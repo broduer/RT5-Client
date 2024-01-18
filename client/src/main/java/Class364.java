@@ -19,7 +19,7 @@ public final class Class364 implements Runnable {
 	private volatile boolean aBoolean731;
 
 	@OriginalMember(owner = "client!tu", name = "c", descriptor = "Lclient!oba;")
-	private Class272 aClass272_7;
+	private PrivilegedRequest aPrivilegedRequest_7;
 
 	@OriginalMember(owner = "client!tu", name = "g", descriptor = "Ljava/lang/Thread;")
 	private Thread aThread5;
@@ -33,7 +33,7 @@ public final class Class364 implements Runnable {
 	@Override
 	public void run() {
 		try {
-			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aClass272_7.anObject13));
+			@Pc(16) BufferedReader local16 = new BufferedReader(new InputStreamReader((DataInputStream) this.aPrivilegedRequest_7.result));
 			@Pc(19) String local19 = local16.readLine();
 			@Pc(22) Class398 local22 = Static640.method8443();
 			while (local19 != null) {
@@ -58,17 +58,17 @@ public final class Class364 implements Runnable {
 		if (this.aBoolean731) {
 			return true;
 		}
-		if (this.aClass272_7 == null) {
+		if (this.aPrivilegedRequest_7 == null) {
 			try {
-				@Pc(23) int local23 = Static446.aClass357_5 == Static2.aClass357_1 ? 80 : Static527.aClass231_3.anInt5876 + 7000;
-				this.aClass272_7 = Static446.aClass392_6.method8999(new URL("http://" + Static527.aClass231_3.aString60 + ":" + local23 + "/news.ws?game=" + Static392.aClass379_4.anInt9746));
+				@Pc(23) int local23 = Static446.liveMode == client.modewhere ? 80 : client.world.id + 7000;
+				this.aPrivilegedRequest_7 = GameShell.sign.openurl(new URL("http://" + client.world.address + ":" + local23 + "/news.ws?game=" + Static392.game.id));
 			} catch (@Pc(54) MalformedURLException local54) {
 				return true;
 			}
 		}
-		if (this.aClass272_7 == null || this.aClass272_7.anInt6810 == 2) {
+		if (this.aPrivilegedRequest_7 == null || this.aPrivilegedRequest_7.status == 2) {
 			return true;
-		} else if (this.aClass272_7.anInt6810 == 1) {
+		} else if (this.aPrivilegedRequest_7.status == 1) {
 			if (this.aThread5 == null) {
 				this.aThread5 = new Thread(this);
 				this.aThread5.start();

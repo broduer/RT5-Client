@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!sq")
-public final class Class2_Sub49_Sub1 extends Class2_Sub49 {
+public final class Class2_Sub49_Sub1 extends Sound {
 
 	@OriginalMember(owner = "client!sq", name = "m", descriptor = "Z")
 	public boolean aBoolean669;

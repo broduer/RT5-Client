@@ -9,11 +9,6 @@ public final class Static271 {
 	@OriginalMember(owner = "client!ij", name = "n", descriptor = "I")
 	public static int anInt4376;
 
-	@OriginalMember(owner = "client!ij", name = "a", descriptor = "(I)J")
-	public static long method3929() {
-		return Static600.aClass27_1.method5609();
-	}
-
 	@OriginalMember(owner = "client!ij", name = "c", descriptor = "(B)V")
 	public static void method3930() {
 		@Pc(10) Class2_Sub25 local10;

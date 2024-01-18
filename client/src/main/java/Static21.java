@@ -117,9 +117,9 @@ public final class Static21 {
 
 	@OriginalMember(owner = "client!am", name = "f", descriptor = "(B)Z")
 	public static boolean method8126() {
-		if (Static98.aBoolean191) {
+		if (Static98.js) {
 			try {
-				Static727.method97("showVideoAd", Static166.anApplet1);
+				BrowserControl.call("showVideoAd", signlink.mainapp);
 				return true;
 			} catch (@Pc(15) Throwable local15) {
 			}

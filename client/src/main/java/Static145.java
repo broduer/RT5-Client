@@ -31,7 +31,7 @@ public final class Static145 {
 		Static693.anInt10411 = -1;
 		Static692.anInt10404 = -1;
 		Static374.anInt5927 = -1;
-		Static212.anInt3478 = Static333.anInt5474;
+		Static212.anInt3478 = client.cycle;
 		Static179.anInt3000 = 0;
 		Static314.anInt5052 = 0;
 		Static511.anInt7668 = 5;

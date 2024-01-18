@@ -30,15 +30,15 @@ public final class Class174 implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!iba", name = "<init>", descriptor = "(Lclient!vq;)V")
-	public Class174(@OriginalArg(0) Class392 arg0) {
-		@Pc(20) Class272 local20 = arg0.method8998(this, 5);
-		while (local20.anInt6810 == 0) {
-			Static638.method8402(10L);
+	public Class174(@OriginalArg(0) signlink arg0) {
+		@Pc(20) PrivilegedRequest local20 = arg0.startThread(this, 5);
+		while (local20.status == 0) {
+			ThreadUtils.sleep(10L);
 		}
-		if (local20.anInt6810 == 2) {
+		if (local20.status == 2) {
 			throw new RuntimeException();
 		}
-		this.aThread2 = (Thread) local20.anObject13;
+		this.aThread2 = (Thread) local20.result;
 	}
 
 	@OriginalMember(owner = "client!iba", name = "a", descriptor = "(Lclient!af;IZ)Lclient!vp;")
@@ -114,7 +114,7 @@ public final class Class174 implements Runnable {
 					local18.aByteArray109 = local18.aClass9_4.method126((int) local18.aLong325);
 				}
 			} catch (@Pc(83) Exception local83) {
-				Static240.method3496(local83, null);
+				TracingException.report(local83, null);
 			}
 			local18.aBoolean779 = false;
 		}

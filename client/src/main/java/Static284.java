@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static284 {
 
-	@OriginalMember(owner = "client!iu", name = "h", descriptor = "Lclient!vq;")
-	public static Class392 aClass392_4;
-
 	@OriginalMember(owner = "client!iu", name = "c", descriptor = "Lclient!lga;")
 	public static final Class227 aClass227_116 = new Class227(65, 6);
 
@@ -18,7 +15,7 @@ public final class Static284 {
 
 	@OriginalMember(owner = "client!iu", name = "a", descriptor = "(ZILclient!sb;Ljava/lang/String;)Lclient!nc;")
 	public static Class257 method4103(@OriginalArg(0) boolean arg0, @OriginalArg(2) Class332 arg1, @OriginalArg(3) String arg2) {
-		@Pc(8) int local8 = arg1.method7597(arg2);
+		@Pc(8) int local8 = arg1.getGroupId(arg2);
 		if (local8 == -1) {
 			return new Class257(0);
 		}

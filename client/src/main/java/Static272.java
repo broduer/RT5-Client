@@ -10,7 +10,7 @@ public final class Static272 {
 	public static Class45 aClass45_1;
 
 	@OriginalMember(owner = "client!ija", name = "j", descriptor = "Lclient!vq;")
-	public static Class392 aClass392_3;
+	public static signlink sign;
 
 	@OriginalMember(owner = "client!ija", name = "e", descriptor = "Z")
 	public static boolean aBoolean336;

@@ -42,7 +42,7 @@ public final class Class27_Sub1 extends Class27 {
 
 	@OriginalMember(owner = "client!au", name = "b", descriptor = "(I)J")
 	@Override
-	public long method5609() {
+	public long time() {
 		return this.aLong18;
 	}
 
@@ -68,7 +68,7 @@ public final class Class27_Sub1 extends Class27 {
 
 	@OriginalMember(owner = "client!au", name = "c", descriptor = "(B)J")
 	private long method734() {
-		@Pc(10) long local10 = Static588.method7722() * 1000000L;
+		@Pc(10) long local10 = Static588.currentTimeMillis() * 1000000L;
 		@Pc(16) long local16 = local10 - this.aLong20;
 		this.aLong20 = local10;
 		if (local16 > -5000000000L && local16 < 5000000000L) {

@@ -76,7 +76,7 @@ public final class Class2_Sub28_Sub1 extends Class2_Sub28 {
 				}
 				this.aDSPState1 = new DSPState(this.aVorbisInfo1);
 				this.aVorbisBlock1 = new VorbisBlock(this.aDSPState1);
-				this.aClass226_1 = new Class226(this.aVorbisInfo1.rate, Static686.anInt8968);
+				this.aClass226_1 = new Class226(this.aVorbisInfo1.rate, AudioChannel.globalSampleRate);
 				this.aClass2_Sub6_Sub5_1 = new Class2_Sub6_Sub5(this.aVorbisInfo1.channels);
 			}
 			return;
@@ -108,7 +108,7 @@ public final class Class2_Sub28_Sub1 extends Class2_Sub28 {
 				local13 = this.aDouble14;
 			}
 		}
-		return (double) -(256.0F / (float) Static686.anInt8968) + local13;
+		return (double) -(256.0F / (float) AudioChannel.globalSampleRate) + local13;
 	}
 
 	@OriginalMember(owner = "client!ik", name = "h", descriptor = "(I)I")

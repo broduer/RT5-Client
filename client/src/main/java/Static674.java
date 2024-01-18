@@ -22,13 +22,13 @@ public final class Static674 {
 
 	@OriginalMember(owner = "client!vfa", name = "b", descriptor = "(B)V")
 	public static void method8813() {
-		Static517.method6829(Static400.aClass2_Sub34_28.aClass57_Sub17_1.method5674() == 1, 22050, 2);
-		Static719.aClass56_5 = Static638.method8401(Static446.aClass392_6, 0, 22050, Static434.aCanvas7);
+		AudioChannel.init(Static400.aClass2_Sub34_28.aClass57_Sub17_1.method5674() == 1, 22050, 2);
+		Static719.musicChannel = AudioChannel.create(GameShell.sign, 0, 22050, GameShell.canvas);
 		Static697.method9127(Static48.method1100(null));
-		Static559.aClass56_3 = Static638.method8401(Static446.aClass392_6, 1, 2048, Static434.aCanvas7);
+		Static559.aClass56_3 = AudioChannel.create(GameShell.sign, 1, 2048, GameShell.canvas);
 		Static336.aClass2_Sub6_Sub3_1 = new Class2_Sub6_Sub3();
-		Static559.aClass56_3.method3582(Static336.aClass2_Sub6_Sub3_1);
-		Static681.aClass226_2 = new Class226(22050, Static686.anInt8968);
+		Static559.aClass56_3.setStream(Static336.aClass2_Sub6_Sub3_1);
+		Static681.aClass226_2 = new Class226(22050, AudioChannel.globalSampleRate);
 		Static550.method7273();
 	}
 }

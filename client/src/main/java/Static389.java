@@ -11,7 +11,7 @@ public final class Static389 {
 	public static boolean aBoolean459 = false;
 
 	@OriginalMember(owner = "client!md", name = "G", descriptor = "Ljava/lang/String;")
-	public static String aString64 = null;
+	public static String additionalInfo = null;
 
 	@OriginalMember(owner = "client!md", name = "b", descriptor = "(IZ)Z")
 	public static boolean method5481(@OriginalArg(0) int arg0) {

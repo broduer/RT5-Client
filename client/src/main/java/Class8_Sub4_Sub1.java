@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Class8_Sub4_Sub1 extends Class8_Sub4 {
 
 	@OriginalMember(owner = "client!ne", name = "q", descriptor = "I")
-	public final int anInt6453 = (int) (Static588.method7722() / 1000L);
+	public final int anInt6453 = (int) (Static588.currentTimeMillis() / 1000L);
 
 	@OriginalMember(owner = "client!ne", name = "s", descriptor = "Ljava/lang/String;")
 	public final String aString72;

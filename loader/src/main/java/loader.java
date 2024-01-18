@@ -34,13 +34,13 @@ import org.openrs2.deob.annotation.Pc;
 public final class loader extends Applet implements Runnable {
 
 	@OriginalMember(owner = "loader!loader", name = "e", descriptor = "Ljava/lang/String;")
-	private static String aString143;
+	private static String unsignedurl;
 
 	@OriginalMember(owner = "loader!loader", name = "j", descriptor = "Ljava/lang/String;")
-	private static String aString144;
+	private static String crashurl;
 
 	@OriginalMember(owner = "loader!loader", name = "g", descriptor = "I")
-	private static int anInt10977 = 0;
+	private static int colourid = 0;
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "Ljava/awt/Image;")
 	private Image anImage14;
@@ -82,7 +82,7 @@ public final class loader extends Applet implements Runnable {
 	private Image bodyFill;
 
 	@OriginalMember(owner = "loader!loader", name = "bar", descriptor = "Ljava/awt/Image;")
-	private Image anImage15;
+	private Image bar;
 
 	@OriginalMember(owner = "loader!loader", name = "l", descriptor = "Ljava/applet/Applet;")
 	private Applet anApplet5;
@@ -94,19 +94,19 @@ public final class loader extends Applet implements Runnable {
 	private Image bodyLeft;
 
 	@OriginalMember(owner = "loader!loader", name = "top", descriptor = "Ljava/awt/Image;")
-	private Image anImage16;
+	private Image top;
 
 	@OriginalMember(owner = "loader!loader", name = "lb", descriptor = "Lloader!h;")
-	private Class414 aClass414_1;
+	private Class414 lb;
 
 	@OriginalMember(owner = "loader!loader", name = "bf", descriptor = "Ljava/awt/Font;")
-	private Font aFont3;
+	private Font bf;
 
 	@OriginalMember(owner = "loader!loader", name = "background", descriptor = "Ljava/awt/Image;")
 	private Image background;
 
 	@OriginalMember(owner = "loader!loader", name = "bfm", descriptor = "Ljava/awt/FontMetrics;")
-	private FontMetrics aFontMetrics2;
+	private FontMetrics bfm;
 
 	@OriginalMember(owner = "loader!loader", name = "d", descriptor = "I")
 	private int anInt10976 = 0;
@@ -140,8 +140,8 @@ public final class loader extends Applet implements Runnable {
 	@Override
 	public void run() {
 		try {
-			aString143 = this.getParameter("unsignedurl");
-			if (aString143 != null) {
+			unsignedurl = this.getParameter("unsignedurl");
+			if (unsignedurl != null) {
 				try {
 					@Pc(10) SecurityManager local10 = System.getSecurityManager();
 					if (local10 != null) {
@@ -150,13 +150,13 @@ public final class loader extends Applet implements Runnable {
 				} catch (@Pc(18) SecurityException local18) {
 					this.aBoolean833 = true;
 					try {
-						this.getAppletContext().showDocument(new URL(aString143), "_parent");
+						this.getAppletContext().showDocument(new URL(unsignedurl), "_parent");
 					} catch (@Pc(31) Exception local31) {
 					}
 					return;
 				}
 			}
-			aString144 = this.getParameter("crashurl");
+			crashurl = this.getParameter("crashurl");
 			@Pc(38) int local38 = 0;
 			@Pc(42) String local42 = this.getParameter("cachesubdirid");
 			if (local42 != null) {
@@ -167,12 +167,12 @@ public final class loader extends Applet implements Runnable {
 			}
 			@Pc(62) String local62 = this.getParameter("colourid");
 			if (local62 != null) {
-				anInt10977 = Integer.parseInt(local62);
-				if (anInt10977 < 0 || anInt10977 >= Class413.anIntArray894.length) {
-					anInt10977 = 0;
+				colourid = Integer.parseInt(local62);
+				if (colourid < 0 || colourid >= Class413.anIntArray894.length) {
+					colourid = 0;
 				}
 			}
-			this.aClass414_1 = Class413.aClass414Array1[anInt10977];
+			this.lb = Class413.aClass414Array1[colourid];
 			this.anInt10979 = this.getSize().width;
 			this.anInt10978 = this.getSize().height;
 			@Pc(99) int local99 = 32;
@@ -189,21 +189,21 @@ public final class loader extends Applet implements Runnable {
 			} catch (@Pc(123) Exception local123) {
 			}
 			Class415.method9496(local99, Class413.aStringArray50[local38]);
-			if (this.aClass414_1 != null) {
+			if (this.lb != null) {
 				try {
-					this.aFont3 = new Font(this.aClass414_1.aString137, 0, this.aClass414_1.anInt10974);
-					this.aFontMetrics2 = this.getFontMetrics(this.aFont3);
-					this.colourtext = new Color(this.aClass414_1.anInt10975);
-					this.anImage15 = this.method9481(this.aClass414_1.aString139);
-					this.background = this.method9481(this.aClass414_1.aString133);
-					this.left = this.method9481(this.aClass414_1.aString135);
-					this.right = this.method9481(this.aClass414_1.aString134);
-					this.anImage16 = this.method9481(this.aClass414_1.aString142);
-					this.bottom = this.method9481(this.aClass414_1.aString141);
-					this.bodyLeft = this.method9481(this.aClass414_1.aString136);
-					this.bodyRight = this.method9481(this.aClass414_1.aString138);
-					this.bodyFill = this.method9481(this.aClass414_1.aString140);
-					@Pc(278) Image[] local278 = new Image[] { this.anImage15, this.background, this.left, this.right, this.anImage16, this.bottom, this.bodyLeft, this.bodyRight, this.bodyFill };
+					this.bf = new Font(this.lb.aString137, Font.PLAIN, this.lb.anInt10974);
+					this.bfm = this.getFontMetrics(this.bf);
+					this.colourtext = new Color(this.lb.anInt10975);
+					this.bar = this.method9481(this.lb.aString139);
+					this.background = this.method9481(this.lb.aString133);
+					this.left = this.method9481(this.lb.aString135);
+					this.right = this.method9481(this.lb.aString134);
+					this.top = this.method9481(this.lb.aString142);
+					this.bottom = this.method9481(this.lb.aString141);
+					this.bodyLeft = this.method9481(this.lb.aString136);
+					this.bodyRight = this.method9481(this.lb.aString138);
+					this.bodyFill = this.method9481(this.lb.aString140);
+					@Pc(278) Image[] local278 = new Image[] { this.bar, this.background, this.left, this.right, this.top, this.bottom, this.bodyLeft, this.bodyRight, this.bodyFill };
 					@Pc(283) MediaTracker local283 = new MediaTracker(this);
 					for (@Pc(285) int local285 = 0; local285 < local278.length; local285++) {
 						local283.addImage(local278[local285], local285);
@@ -306,7 +306,7 @@ public final class loader extends Applet implements Runnable {
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(IIILjava/lang/String;)Z")
 	private boolean method9483(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(3) String arg2) {
-		return Class413.aClass414Array1[anInt10977] == null || this.aBoolean831 ? this.method9486(arg0, arg2) : this.method9492(arg0, arg1, arg2);
+		return Class413.aClass414Array1[colourid] == null || this.aBoolean831 ? this.method9486(arg0, arg2) : this.method9492(arg0, arg1, arg2);
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "destroy", descriptor = "()V")
@@ -334,8 +334,8 @@ public final class loader extends Applet implements Runnable {
 	private byte[] method9484(@OriginalArg(0) Class412 arg0, @OriginalArg(2) boolean arg1) {
 		@Pc(5) byte[] local5 = new byte[arg0.anInt10972];
 		@Pc(7) int local7 = 0;
-		if (this.aClass414_1 != null && this.anImage15 != null) {
-			local7 = this.anImage15.getWidth((ImageObserver) null);
+		if (this.lb != null && this.bar != null) {
+			local7 = this.bar.getWidth((ImageObserver) null);
 		}
 		try {
 			@Pc(32) InputStream local32;
@@ -376,8 +376,8 @@ public final class loader extends Applet implements Runnable {
 				local78 += local107;
 				@Pc(125) int local125 = local78 * 100 / local5.length;
 				@Pc(127) int local127 = 0;
-				if (this.aClass414_1 != null && this.anImage15 != null) {
-					local127 = (int) (System.currentTimeMillis() * (long) this.aClass414_1.offsetPerTenCycles / 200L) % local7;
+				if (this.lb != null && this.bar != null) {
+					local127 = (int) (System.currentTimeMillis() * (long) this.lb.offsetPerTenCycles / 200L) % local7;
 				}
 				if (local76 != local125 || local127 != local80) {
 					try {
@@ -432,12 +432,12 @@ public final class loader extends Applet implements Runnable {
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(IILjava/lang/String;)Z")
 	private boolean method9486(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		if (this.aFont3 == null) {
-			this.aFont3 = new Font("Helvetica", 1, 13);
-			this.aFontMetrics2 = this.getFontMetrics(this.aFont3);
-			this.aColor2 = new Color(Class413.anIntArray894[anInt10977]);
-			this.aColor3 = new Color(Class413.anIntArray895[anInt10977]);
-			this.colourtext = new Color(Class413.anIntArray893[anInt10977]);
+		if (this.bf == null) {
+			this.bf = new Font("Helvetica", 1, 13);
+			this.bfm = this.getFontMetrics(this.bf);
+			this.aColor2 = new Color(Class413.anIntArray894[colourid]);
+			this.aColor3 = new Color(Class413.anIntArray895[colourid]);
+			this.colourtext = new Color(Class413.anIntArray893[colourid]);
 		}
 		@Pc(44) Graphics local44 = this.getGraphics();
 		if (local44 == null) {
@@ -464,9 +464,9 @@ public final class loader extends Applet implements Runnable {
 			local66.drawRect(local88 + 1, local95 - -1, 301, 31);
 			local66.fillRect(local88 + arg0 * 3 + 2, local95 + 2, 300 - arg0 * 3, 30);
 			local163 = arg1 + " - " + arg0 + "%";
-			local66.setFont(this.aFont3);
+			local66.setFont(this.bf);
 			local66.setColor(this.colourtext);
-			local66.drawString(local163, (this.anInt10979 - this.aFontMetrics2.stringWidth(local163)) / 2, this.anInt10978 / 2 + 4);
+			local66.drawString(local163, (this.anInt10979 - this.bfm.stringWidth(local163)) / 2, this.anInt10978 / 2 + 4);
 			local44.drawImage(this.anImage14, 0, 0, (ImageObserver) null);
 		} catch (@Pc(200) Exception local200) {
 			local44.setColor(Color.black);
@@ -481,9 +481,9 @@ public final class loader extends Applet implements Runnable {
 			local44.drawRect(local88 + 1, local95 - -1, 301, 31);
 			local44.fillRect(local88 + arg0 * 3 + 2, local95 + 2, 300 - arg0 * 3, 30);
 			local163 = arg1 + " - " + arg0 + "%";
-			local44.setFont(this.aFont3);
+			local44.setFont(this.bf);
 			local44.setColor(this.colourtext);
-			local44.drawString(local163, (this.anInt10979 - this.aFontMetrics2.stringWidth(local163)) / 2, this.anInt10978 / 2 + 4);
+			local44.drawString(local163, (this.anInt10979 - this.bfm.stringWidth(local163)) / 2, this.anInt10978 / 2 + 4);
 		}
 		return true;
 	}
@@ -565,8 +565,8 @@ public final class loader extends Applet implements Runnable {
 	@OriginalMember(owner = "loader!loader", name = "b", descriptor = "(I)V")
 	private void method9490() {
 		this.aBoolean831 = true;
-		this.aFontMetrics2 = null;
-		this.aFont3 = null;
+		this.bfm = null;
+		this.bf = null;
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(ILjava/lang/String;)V")
@@ -576,10 +576,10 @@ public final class loader extends Applet implements Runnable {
 		}
 		this.aBoolean833 = true;
 		try {
-			if (aString144 == null) {
+			if (crashurl == null) {
 				this.getAppletContext().showDocument(new URL(this.getCodeBase(), "error_loader_" + arg0 + ".ws"), "_top");
 			} else {
-				this.getAppletContext().showDocument(new URL(aString144 + "&s=" + arg0), "_parent");
+				this.getAppletContext().showDocument(new URL(crashurl + "&s=" + arg0), "_parent");
 			}
 		} catch (@Pc(57) Exception local57) {
 		}
@@ -610,53 +610,53 @@ public final class loader extends Applet implements Runnable {
 			@Pc(75) int local75 = this.bodyLeft.getHeight((ImageObserver) null);
 			@Pc(80) int local80 = this.bodyRight.getHeight((ImageObserver) null);
 			@Pc(85) int local85 = this.bodyFill.getHeight((ImageObserver) null);
-			local55.drawImage(this.bodyLeft, this.method9494(local60) + this.aClass414_1.boxXOffset - this.aClass414_1.boxWidth / 2, this.method9493(local75) - -this.aClass414_1.boxYOffset, (ImageObserver) null);
-			@Pc(128) int local128 = this.aClass414_1.boxXOffset + local60 - this.aClass414_1.boxWidth / 2;
-			@Pc(138) int local138 = this.aClass414_1.boxWidth / 2 + this.aClass414_1.boxXOffset;
+			local55.drawImage(this.bodyLeft, this.method9494(local60) + this.lb.boxXOffset - this.lb.boxWidth / 2, this.method9493(local75) - -this.lb.boxYOffset, (ImageObserver) null);
+			@Pc(128) int local128 = this.lb.boxXOffset + local60 - this.lb.boxWidth / 2;
+			@Pc(138) int local138 = this.lb.boxWidth / 2 + this.lb.boxXOffset;
 			@Pc(140) int local140;
 			for (local140 = local128; local140 <= local138; local140 += local70) {
-				local55.drawImage(this.bodyFill, local140 + this.method9494(local60) + this.aClass414_1.boxXOffset, this.method9493(local85) - -this.aClass414_1.boxYOffset, (ImageObserver) null);
+				local55.drawImage(this.bodyFill, local140 + this.method9494(local60) + this.lb.boxXOffset, this.method9493(local85) - -this.lb.boxYOffset, (ImageObserver) null);
 			}
-			local55.drawImage(this.bodyRight, this.method9494(local65) + this.aClass414_1.boxXOffset + this.aClass414_1.boxWidth / 2, this.method9493(local80) - -this.aClass414_1.boxYOffset, (ImageObserver) null);
+			local55.drawImage(this.bodyRight, this.method9494(local65) + this.lb.boxXOffset + this.lb.boxWidth / 2, this.method9493(local80) - -this.lb.boxYOffset, (ImageObserver) null);
 			local140 = this.left.getWidth((ImageObserver) null);
 			@Pc(218) int local218 = this.left.getHeight((ImageObserver) null);
 			@Pc(223) int local223 = this.right.getWidth((ImageObserver) null);
 			@Pc(228) int local228 = this.right.getHeight((ImageObserver) null);
 			@Pc(233) int local233 = this.bottom.getHeight((ImageObserver) null);
-			@Pc(238) int local238 = this.anImage16.getWidth((ImageObserver) null);
-			@Pc(243) int local243 = this.anImage16.getHeight((ImageObserver) null);
+			@Pc(238) int local238 = this.top.getWidth((ImageObserver) null);
+			@Pc(243) int local243 = this.top.getHeight((ImageObserver) null);
 			@Pc(248) int local248 = this.bottom.getWidth((ImageObserver) null);
-			@Pc(253) int local253 = this.anImage15.getWidth((ImageObserver) null);
+			@Pc(253) int local253 = this.bar.getWidth((ImageObserver) null);
 			@Pc(258) int local258 = this.background.getWidth((ImageObserver) null);
-			@Pc(269) int local269 = this.method9494(this.aClass414_1.width) + this.aClass414_1.xOffset;
-			@Pc(281) int local281 = this.method9493(this.aClass414_1.height) + this.aClass414_1.yOffset;
-			local55.drawImage(this.left, local269, local281 + (this.aClass414_1.height - local218) / 2, (ImageObserver) null);
-			local55.drawImage(this.right, local269 + this.aClass414_1.width - local223, local281 - -((this.aClass414_1.height - local228) / 2), (ImageObserver) null);
+			@Pc(269) int local269 = this.method9494(this.lb.width) + this.lb.xOffset;
+			@Pc(281) int local281 = this.method9493(this.lb.height) + this.lb.yOffset;
+			local55.drawImage(this.left, local269, local281 + (this.lb.height - local218) / 2, (ImageObserver) null);
+			local55.drawImage(this.right, local269 + this.lb.width - local223, local281 - -((this.lb.height - local228) / 2), (ImageObserver) null);
 			if (this.barBuf == null) {
-				this.barBuf = this.createImage(this.aClass414_1.width - local223 - local140, this.aClass414_1.height);
+				this.barBuf = this.createImage(this.lb.width - local223 - local140, this.lb.height);
 			}
 			@Pc(348) Graphics local348 = this.barBuf.getGraphics();
 			@Pc(350) int local350;
-			for (local350 = 0; local350 < this.aClass414_1.width - local223 - local140; local350 += local238) {
-				local348.drawImage(this.anImage16, local350, 0, (ImageObserver) null);
+			for (local350 = 0; local350 < this.lb.width - local223 - local140; local350 += local238) {
+				local348.drawImage(this.top, local350, 0, (ImageObserver) null);
 			}
-			for (local350 = 0; local350 < this.aClass414_1.width - local140 - local223; local350 += local248) {
-				local348.drawImage(this.bottom, local350, this.aClass414_1.height - local233, (ImageObserver) null);
+			for (local350 = 0; local350 < this.lb.width - local140 - local223; local350 += local248) {
+				local348.drawImage(this.bottom, local350, this.lb.height - local233, (ImageObserver) null);
 			}
-			local350 = (this.aClass414_1.width - local140 - local223) * arg0 / 100;
+			local350 = (this.lb.width - local140 - local223) * arg0 / 100;
 			if (local350 > 0) {
-				@Pc(433) Image local433 = this.createImage(local350, this.aClass414_1.height - local243 - local233);
+				@Pc(433) Image local433 = this.createImage(local350, this.lb.height - local243 - local233);
 				@Pc(437) int local437 = local433.getWidth((ImageObserver) null);
 				@Pc(440) Graphics local440 = local433.getGraphics();
 				for (@Pc(445) int local445 = arg1 - local253; local445 < local437; local445 += local253) {
-					local440.drawImage(this.anImage15, local445, 0, (ImageObserver) null);
+					local440.drawImage(this.bar, local445, 0, (ImageObserver) null);
 				}
 				local348.drawImage(local433, 0, local243, (ImageObserver) null);
 			}
 			@Pc(471) int local471 = local350;
-			local350 = this.aClass414_1.width - local140 - local223 - local350;
+			local350 = this.lb.width - local140 - local223 - local350;
 			if (local350 > 0) {
-				@Pc(501) Image local501 = this.createImage(local350, this.aClass414_1.height - local243 - local233);
+				@Pc(501) Image local501 = this.createImage(local350, this.lb.height - local243 - local233);
 				@Pc(505) int local505 = local501.getWidth((ImageObserver) null);
 				@Pc(508) Graphics local508 = local501.getGraphics();
 				for (@Pc(510) int local510 = 0; local510 < local505; local510 += local258) {
@@ -665,10 +665,10 @@ public final class loader extends Applet implements Runnable {
 				local348.drawImage(local501, local471, local243, (ImageObserver) null);
 			}
 			local55.drawImage(this.barBuf, local140 + local269, local281, (ImageObserver) null);
-			local55.setFont(this.aFont3);
+			local55.setFont(this.bf);
 			local55.setColor(this.colourtext);
 			@Pc(565) String local565 = arg2 + " - " + arg0 + "%";
-			local55.drawString(local565, local269 + (this.aClass414_1.width - this.aFontMetrics2.stringWidth(local565)) / 2, this.aClass414_1.height / 2 + 4 + local281 + this.aClass414_1.textYOffset);
+			local55.drawString(local565, local269 + (this.lb.width - this.bfm.stringWidth(local565)) / 2, this.lb.height / 2 + 4 + local281 + this.lb.textYOffset);
 			local33.drawImage(this.anImage14, 0, 0, (ImageObserver) null);
 		} catch (@Pc(605) Exception local605) {
 			this.method9490();
@@ -678,11 +678,11 @@ public final class loader extends Applet implements Runnable {
 
 	@OriginalMember(owner = "loader!loader", name = "a", descriptor = "(II)I")
 	private int method9493(@OriginalArg(1) int arg0) {
-		return this.aClass414_1.yMiddle ? (this.anInt10978 - arg0) / 2 : 0;
+		return this.lb.yMiddle ? (this.anInt10978 - arg0) / 2 : 0;
 	}
 
 	@OriginalMember(owner = "loader!loader", name = "b", descriptor = "(II)I")
 	private int method9494(@OriginalArg(1) int arg0) {
-		return this.aClass414_1.xMiddle ? (this.anInt10979 - arg0) / 2 : 0;
+		return this.lb.xMiddle ? (this.anInt10979 - arg0) / 2 : 0;
 	}
 }

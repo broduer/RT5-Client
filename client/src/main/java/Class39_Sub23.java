@@ -113,8 +113,8 @@ public final class Class39_Sub23 extends Class39 {
 			}
 		}
 		@Pc(91) int local91 = this.anInt10006 << 2;
-		@Pc(128) Class8_Sub2_Sub1_Sub1 local128 = new Class8_Sub2_Sub1_Sub1(this.anInt10003, local18, local18, local24, local21, this.anInt10001 << 2, Static333.anInt5474, Static333.anInt5474 + this.anInt10005, this.anInt10004, local91, this.anInt10009 + 1, this.anInt10016 + 1, this.anInt10015 << 2, false, 0);
-		local128.method813(this.anInt10015 << 2, this.anInt10005 + Static333.anInt5474, local56, local63);
+		@Pc(128) Class8_Sub2_Sub1_Sub1 local128 = new Class8_Sub2_Sub1_Sub1(this.anInt10003, local18, local18, local24, local21, this.anInt10001 << 2, client.cycle, client.cycle + this.anInt10005, this.anInt10004, local91, this.anInt10009 + 1, this.anInt10016 + 1, this.anInt10015 << 2, false, 0);
+		local128.method813(this.anInt10015 << 2, this.anInt10005 + client.cycle, local56, local63);
 		Static505.aClass341_77.method7718(new Class2_Sub2_Sub15(local128));
 	}
 }

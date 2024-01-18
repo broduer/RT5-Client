@@ -11,7 +11,7 @@ public final class Static713 {
 	public static final Class82 aClass82_231 = new Class82(64);
 
 	@OriginalMember(owner = "client!wk", name = "g", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_8 = new Class357("WTQA", "office", "_qa", 2);
+	public static final Class357 wtqaMode = new Class357("WTQA", "office", "_qa", 2);
 
 	@OriginalMember(owner = "client!wk", name = "a", descriptor = "(IZ)V")
 	public static void method9338(@OriginalArg(1) boolean arg0) {

@@ -25,8 +25,8 @@ public final class Static342 {
 		if (true) {
 			// 2011scape compatibility
 			Static284.anInt4597 = arg0;
-			Static344.aClass231_1.anInt5876 = 15;
-			Static344.aClass231_1.anInt5873 = 50015;
+			Static344.aClass231_1.id = 15;
+			Static344.aClass231_1.alternatePort = 50015;
 		} else {
 			if (Static299.anInt4841 == 1) {
 				Static284.anInt4597 = arg0;

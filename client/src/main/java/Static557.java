@@ -10,11 +10,11 @@ public final class Static557 {
 
 	@OriginalMember(owner = "client!rja", name = "e", descriptor = "(B)V")
 	public static void method7338() {
-		if (Static719.aClass56_5 != null) {
-			Static719.aClass56_5.method3594();
+		if (Static719.musicChannel != null) {
+			Static719.musicChannel.cycle();
 		}
 		if (Static559.aClass56_3 != null) {
-			Static559.aClass56_3.method3594();
+			Static559.aClass56_3.cycle();
 		}
 	}
 

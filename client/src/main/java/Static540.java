@@ -122,7 +122,7 @@ public final class Static540 {
 		local7.anInt961 = arg3;
 		local7.aString3 = arg2;
 		local7.anInt963 = arg5;
-		local7.anInt957 = Static333.anInt5474 + arg1;
+		local7.anInt957 = client.cycle + arg1;
 		local7.anInt960 = arg4;
 		Static422.aClass130_9.method2787(local7);
 	}

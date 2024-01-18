@@ -8,7 +8,7 @@ public final class InputStream_Sub1 extends InputStream {
 	@OriginalMember(owner = "client!mo", name = "read", descriptor = "()I")
 	@Override
 	public int read() {
-		Static638.method8402(30000L);
+		ThreadUtils.sleep(30000L);
 		return -1;
 	}
 }

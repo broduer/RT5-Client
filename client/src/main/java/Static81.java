@@ -71,10 +71,10 @@ public final class Static81 {
 					Static57.method1225(Static597.anInt8845, Static400.aClass2_Sub34_28.aClass57_Sub25_5.method7215(), Static398.aClass332_81);
 					Static550.method7273();
 				}
-				Static500.aClass297_3.method6633(false);
+				client.js5NetQueue.method6633(false);
 			} else {
 				Static312.method4548();
-				Static500.aClass297_3.method6633(true);
+				client.js5NetQueue.method6633(true);
 			}
 		}
 		if (Static594.method7789(arg0) || arg0 == 14 || arg0 == 15) {
@@ -96,7 +96,7 @@ public final class Static81 {
 			if (local17 == null) {
 				return null;
 			}
-			if (local17.method201() > Static588.method7722()) {
+			if (local17.method201() > Static588.currentTimeMillis()) {
 				return null;
 			}
 			local17.method9464();
@@ -120,13 +120,13 @@ public final class Static81 {
 		@Pc(38) int[] local38 = Static664.method8659(local8);
 		@Pc(42) int local42 = local8.aClass2_Sub21_Sub2_1.anInt8412;
 		local8.aClass2_Sub21_Sub2_1.method7398(arg0);
-		local8.aClass2_Sub21_Sub2_1.method7380(Static323.anInt5138);
+		local8.aClass2_Sub21_Sub2_1.method7380(Static323.affid);
 		local8.aClass2_Sub21_Sub2_1.method7398(arg2);
-		local8.aClass2_Sub21_Sub2_1.method7370(Static416.aLong208);
-		local8.aClass2_Sub21_Sub2_1.method7396(Static51.anInt1056);
-		local8.aClass2_Sub21_Sub2_1.method7396(Static392.aClass379_4.anInt9746);
+		local8.aClass2_Sub21_Sub2_1.method7370(Static416.userFlow);
+		local8.aClass2_Sub21_Sub2_1.method7396(client.lang);
+		local8.aClass2_Sub21_Sub2_1.method7396(Static392.game.id);
 		Static176.method6697(local8.aClass2_Sub21_Sub2_1);
-		@Pc(81) String local81 = Static389.aString64;
+		@Pc(81) String local81 = Static389.additionalInfo;
 		local8.aClass2_Sub21_Sub2_1.method7396(local81 == null ? 0 : 1);
 		if (local81 != null) {
 			local8.aClass2_Sub21_Sub2_1.method7398(local81);
@@ -142,7 +142,7 @@ public final class Static81 {
 		Static654.anInt9765 = 0;
 		Static6.anInt95 = 1;
 		if (arg1 < 13) {
-			Static477.aBoolean543 = true;
+			Static477.under = true;
 			Static358.method9197();
 		}
 	}

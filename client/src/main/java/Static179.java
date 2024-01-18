@@ -23,7 +23,7 @@ public final class Static179 {
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(ZLclient!tka;)Z")
 	public static boolean method2769(@OriginalArg(1) Class357 arg0) {
-		return Static704.aClass357_7 == arg0 || arg0 == Static713.aClass357_8 || arg0 == Static425.aClass357_4 || arg0 == Static280.aClass357_3 || arg0 == Static682.aClass357_6;
+		return Static704.wtrcMode == arg0 || arg0 == Static713.wtqaMode || arg0 == Static425.wtwipMode || arg0 == Static280.wtiMode || arg0 == Static682.intbetaMode;
 	}
 
 	@OriginalMember(owner = "client!fk", name = "a", descriptor = "(IIIIZIII)V")

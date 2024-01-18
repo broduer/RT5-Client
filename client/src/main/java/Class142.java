@@ -53,7 +53,7 @@ public final class Class142 {
 			@Pc(53) int local53 = this.aClass332_43.method7604() - 1;
 			this.aClass332_43.method7615(local53);
 		}
-		if (Static673.aClass379_8 == this.aClass379_2) {
+		if (Static673.runescapeGame == this.aClass379_2) {
 			this.aStringArray15 = new String[] { null, null, null, null, null, Static32.aClass32_22.method877(this.anInt3393) };
 		} else {
 			this.aStringArray15 = new String[] { null, null, null, null, null, null };

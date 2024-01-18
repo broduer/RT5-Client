@@ -23,7 +23,7 @@ public final class Static104 {
 		@Pc(39) int[] local39 = Static664.method8659(local6);
 		@Pc(43) int local43 = local6.aClass2_Sub21_Sub2_1.anInt8412;
 		local6.aClass2_Sub21_Sub2_1.method7398(arg0);
-		local6.aClass2_Sub21_Sub2_1.method7396(Static51.anInt1056);
+		local6.aClass2_Sub21_Sub2_1.method7396(client.lang);
 		local6.aClass2_Sub21_Sub2_1.anInt8412 += 7;
 		local6.aClass2_Sub21_Sub2_1.method7373(local39, local43, local6.aClass2_Sub21_Sub2_1.anInt8412);
 		local6.aClass2_Sub21_Sub2_1.method7364(local6.aClass2_Sub21_Sub2_1.anInt8412 - local28);

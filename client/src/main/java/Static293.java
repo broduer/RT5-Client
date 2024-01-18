@@ -154,7 +154,7 @@ public final class Static293 {
 			arg0.aClass227_93 = null;
 			return true;
 		} else if (Static632.aClass227_229 == arg0.aClass227_93) {
-			Static331.aString52 = arg0.anInt3658 <= 2 ? Static32.aClass32_26.method877(Static51.anInt1056) : local11.method7365();
+			Static331.aString52 = arg0.anInt3658 <= 2 ? Static32.aClass32_26.method877(client.lang) : local11.method7365();
 			Static331.anInt5458 = arg0.anInt3658 <= 0 ? -1 : local11.method7389();
 			if (Static331.anInt5458 == 65535) {
 				Static331.anInt5458 = -1;
@@ -471,7 +471,7 @@ public final class Static293 {
 										local100--;
 										for (local526 = 0; local526 < local100; local526++) {
 											@Pc(1665) boolean local1665 = false;
-											if (Static344.aClass231_1.anInt5876 != Static371.anIntArray455[local526] && Static344.aClass231_1.anInt5876 == Static371.anIntArray455[local526 + 1]) {
+											if (Static344.aClass231_1.id != Static371.anIntArray455[local526] && Static344.aClass231_1.id == Static371.anIntArray455[local526 + 1]) {
 												local1665 = true;
 											}
 											if (!local1665 && Static371.anIntArray455[local526] == 0 && Static371.anIntArray455[local526 + 1] != 0) {
@@ -583,7 +583,7 @@ public final class Static293 {
 											return true;
 										} else if (Static663.aClass227_240 == arg0.aClass227_93) {
 											local277 = local11.method7356();
-											Static439.aClass272_4 = Static446.aClass392_6.method8989(local277);
+											Static439.aPrivilegedRequest_4 = GameShell.sign.method8989(local277);
 											arg0.aClass227_93 = null;
 											return true;
 										} else if (Static312.aClass227_131 == arg0.aClass227_93) {
@@ -801,13 +801,13 @@ public final class Static293 {
 										} else {
 											@Pc(3044) byte[] local3044;
 											if (Static692.aClass227_251 == arg0.aClass227_93) {
-												if (Static316.aFrame8 != null) {
-													Static409.method5664(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+												if (GameShell.fullscreenFrame != null) {
+													Static409.setWindowMode(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
 												}
 												local3044 = new byte[arg0.anInt3658];
 												local11.method7423(local3044, arg0.anInt3658);
 												local627 = Static350.method5133(0, local3044, arg0.anInt3658);
-												Static664.method8662(Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() == 1, local627, true, Static446.aClass392_6);
+												Static664.method8662(Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() == 1, local627, true, GameShell.sign);
 												arg0.aClass227_93 = null;
 												return true;
 											} else if (arg0.aClass227_93 == Static444.aClass227_169) {
@@ -1367,7 +1367,7 @@ public final class Static293 {
 																arg0.aClass227_93 = null;
 																return true;
 															} else if (Static36.aClass227_15 == arg0.aClass227_93) {
-																Static480.method6475(local11, Static446.aClass392_6, arg0.anInt3658);
+																Static480.method6475(local11, GameShell.sign, arg0.anInt3658);
 																arg0.aClass227_93 = null;
 																return true;
 															} else if (Static193.aClass227_74 == arg0.aClass227_93) {
@@ -1512,15 +1512,15 @@ public final class Static293 {
 																	arg0.aClass227_93 = null;
 																	return true;
 																} else if (Static272.aClass227_112 == arg0.aClass227_93) {
-																	if (Static316.aFrame8 != null) {
-																		Static409.method5664(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
+																	if (GameShell.fullscreenFrame != null) {
+																		Static409.setWindowMode(Static400.aClass2_Sub34_28.aClass57_Sub1_1.method1485(), -1, false, -1);
 																	}
 																	local3044 = new byte[arg0.anInt3658];
 																	local11.method7423(local3044, arg0.anInt3658);
 																	local627 = Static350.method5133(0, local3044, arg0.anInt3658);
 																	local629 = "opensn";
-																	if (!Static98.aBoolean191 || Static36.method980(Static446.aClass392_6, local627, local629, 1).anInt6810 == 2) {
-																		Static259.method3693(local627, local629, Static446.aClass392_6, Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() == 1, true);
+																	if (!Static98.js || Static36.method980(GameShell.sign, local627, local629, 1).status == 2) {
+																		Static259.method3693(local627, local629, GameShell.sign, Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922() == 1, true);
 																	}
 																	arg0.aClass227_93 = null;
 																	return true;
@@ -1693,7 +1693,7 @@ public final class Static293 {
 																		arg0.aClass227_93 = null;
 																		return true;
 																	} else if (Static651.aClass227_235 == arg0.aClass227_93) {
-																		Static434.method5862();
+																		GameShell.method5862();
 																		arg0.aClass227_93 = null;
 																		return false;
 																	} else if (arg0.aClass227_93 == Static41.aClass227_20) {
@@ -2205,7 +2205,7 @@ public final class Static293 {
 																			arg0.aClass227_93 = null;
 																			return true;
 																		} else {
-																			Static240.method3496(null, "T1 - " + (arg0.aClass227_93 == null ? -1 : arg0.aClass227_93.method5246()) + "," + (arg0.aClass227_94 == null ? -1 : arg0.aClass227_94.method5246()) + "," + (arg0.aClass227_91 == null ? -1 : arg0.aClass227_91.method5246()) + " - " + arg0.anInt3658);
+																			TracingException.report(null, "T1 - " + (arg0.aClass227_93 == null ? -1 : arg0.aClass227_93.method5246()) + "," + (arg0.aClass227_94 == null ? -1 : arg0.aClass227_94.method5246()) + "," + (arg0.aClass227_91 == null ? -1 : arg0.aClass227_91.method5246()) + " - " + arg0.anInt3658);
 																			Static233.method3409(false);
 																			return true;
 																		}

@@ -28,7 +28,7 @@ public final class Static376 {
 
 	@OriginalMember(owner = "client!lr", name = "a", descriptor = "(B)V")
 	public static void method5320() {
-		if (Static495.anInt7444 <= 1) {
+		if (Static495.cpucount <= 1) {
 			Static400.aClass2_Sub34_28.method5111(2, Static400.aClass2_Sub34_28.aClass57_Sub21_1);
 		} else {
 			Static400.aClass2_Sub34_28.method5111(4, Static400.aClass2_Sub34_28.aClass57_Sub21_1);

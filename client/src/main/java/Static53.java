@@ -13,9 +13,9 @@ public final class Static53 {
 
 	@OriginalMember(owner = "client!bp", name = "a", descriptor = "(ZLjava/lang/String;)I")
 	public static int method1168(@OriginalArg(1) String arg0) {
-		if (!Static93.aClass392_1.aBoolean782) {
+		if (!Static93.sign.aBoolean782) {
 			return -1;
-		} else if (Static154.aHashtable3.containsKey(arg0)) {
+		} else if (Static154.loadedLibraries.containsKey(arg0)) {
 			return 100;
 		} else {
 			@Pc(22) String local22 = Static308.method4491(arg0);
@@ -50,7 +50,7 @@ public final class Static53 {
 				}
 				try {
 					if (!local80) {
-						Static93.aClass392_1.method8994(local68, local62);
+						Static93.sign.method8994(local68, local62);
 					}
 				} catch (@Pc(145) Throwable local145) {
 					return -1;

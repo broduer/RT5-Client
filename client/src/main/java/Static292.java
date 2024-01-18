@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static292 {
 
 	@OriginalMember(owner = "client!jea", name = "m", descriptor = "Lclient!pw;")
-	public static Class2_Sub43 aClass2_Sub43_2;
+	public static Class2_Sub43 instance;
 
 	@OriginalMember(owner = "client!jea", name = "t", descriptor = "J")
 	public static long aLong163;
@@ -80,8 +80,8 @@ public final class Static292 {
 		Static524.aClass153_3 = Static405.aClass153_1;
 		Static299.anInt4841 = 1;
 		@Pc(16) String local16 = null;
-		if (Static265.aByteArray44 != null) {
-			@Pc(23) Class2_Sub21 local23 = new Class2_Sub21(Static265.aByteArray44);
+		if (Static265.sskey != null) {
+			@Pc(23) Class2_Sub21 local23 = new Class2_Sub21(Static265.sskey);
 			local16 = Static287.method4154(local23.method7405());
 			Static430.aLong209 = local23.method7405();
 		}

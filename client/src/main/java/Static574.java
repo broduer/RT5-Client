@@ -13,15 +13,15 @@ public final class Static574 {
 	@OriginalMember(owner = "client!saa", name = "b", descriptor = "(I)V")
 	public static void method7579() {
 		if (Static163.aClass19_17.method7985()) {
-			Static163.aClass19_17.method7979(Static434.aCanvas7);
+			Static163.aClass19_17.method7979(GameShell.canvas);
 			Static208.method3106();
 			if (Static137.aBoolean210) {
-				Static720.method9404(Static434.aCanvas7);
+				Static720.method9404(GameShell.canvas);
 			} else {
-				@Pc(26) Dimension local26 = Static434.aCanvas7.getSize();
-				Static163.aClass19_17.method8029(Static434.aCanvas7, local26.width, local26.height);
+				@Pc(26) Dimension local26 = GameShell.canvas.getSize();
+				Static163.aClass19_17.method8029(GameShell.canvas, local26.width, local26.height);
 			}
-			Static163.aClass19_17.method8026(Static434.aCanvas7);
+			Static163.aClass19_17.method8026(GameShell.canvas);
 		} else {
 			Static32.method880(Static400.aClass2_Sub34_28.aClass57_Sub29_1.method7922(), false);
 		}

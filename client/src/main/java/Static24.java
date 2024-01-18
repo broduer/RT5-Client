@@ -15,20 +15,20 @@ public final class Static24 {
 
 	@OriginalMember(owner = "client!aq", name = "a", descriptor = "(I)V")
 	public static void method680() {
-		Static147.method2421(Static333.anInt5474, Static163.aClass19_17);
+		Static147.method2421(client.cycle, Static163.aClass19_17);
 		if (Static377.anInt5950 != -1) {
 			Static26.method716(Static377.anInt5950);
 		}
-		for (@Pc(23) int local23 = 0; local23 < Static122.anInt2348; local23++) {
+		for (@Pc(23) int local23 = 0; local23 < Static122.rectangles; local23++) {
 			if (Static364.aBooleanArray18[local23]) {
-				Static469.aBooleanArray23[local23] = true;
+				Static469.rectangleRedraw[local23] = true;
 			}
 			Static359.aBooleanArray17[local23] = Static364.aBooleanArray18[local23];
 			Static364.aBooleanArray18[local23] = false;
 		}
-		Static171.anInt2889 = Static333.anInt5474;
+		Static171.anInt2889 = client.cycle;
 		if (Static377.anInt5950 != -1) {
-			Static122.anInt2348 = 0;
+			Static122.rectangles = 0;
 			Static261.method3833();
 		}
 		Static163.aClass19_17.la();

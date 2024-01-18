@@ -23,12 +23,12 @@ public final class Static54 {
 		Static22.anIntArrayArray11 = new int[18][4];
 		Static363.aByteArrayArray22 = new byte[18][];
 		Static177.aByteArrayArray5 = new byte[18][];
-		Static267.anIntArray329 = new int[18];
-		Static68.anIntArray316 = new int[18];
-		Static266.anIntArray615 = new int[18];
+		Static267.mapGroupIds = new int[18];
+		Static68.underwaterMapGroupIds = new int[18];
+		Static266.locGroupIds = new int[18];
 		Static89.anIntArray169 = new int[18];
 		Static421.aByteArrayArray19 = new byte[18][];
-		Static298.anIntArray367 = new int[18];
+		Static298.underwaterLocGroupIds = new int[18];
 		Static376.anIntArray458 = new int[18];
 		Static319.aByteArrayArray16 = new byte[18][];
 		Static118.aByteArrayArray3 = new byte[18][];
@@ -38,26 +38,26 @@ public final class Static54 {
 			for (local99 = (local28 - (Static501.anInt7591 >> 4)) / 8; local99 <= ((Static501.anInt7591 >> 4) + local28) / 8; local99++) {
 				@Pc(107) int local107 = local99 + (local88 << 8);
 				Static89.anIntArray169[local79] = local107;
-				Static267.anIntArray329[local79] = Static93.aClass332_16.method7597("m" + local88 + "_" + local99);
-				Static266.anIntArray615[local79] = Static93.aClass332_16.method7597("l" + local88 + "_" + local99);
-				Static376.anIntArray458[local79] = Static93.aClass332_16.method7597("n" + local88 + "_" + local99);
-				Static68.anIntArray316[local79] = Static93.aClass332_16.method7597("um" + local88 + "_" + local99);
-				Static298.anIntArray367[local79] = Static93.aClass332_16.method7597("ul" + local88 + "_" + local99);
+				Static267.mapGroupIds[local79] = client.js5Archive5.getGroupId("m" + local88 + "_" + local99);
+				Static266.locGroupIds[local79] = client.js5Archive5.getGroupId("l" + local88 + "_" + local99);
+				Static376.anIntArray458[local79] = client.js5Archive5.getGroupId("n" + local88 + "_" + local99);
+				Static68.underwaterMapGroupIds[local79] = client.js5Archive5.getGroupId("um" + local88 + "_" + local99);
+				Static298.underwaterLocGroupIds[local79] = client.js5Archive5.getGroupId("ul" + local88 + "_" + local99);
 				if (Static376.anIntArray458[local79] == -1) {
-					Static267.anIntArray329[local79] = -1;
-					Static266.anIntArray615[local79] = -1;
-					Static68.anIntArray316[local79] = -1;
-					Static298.anIntArray367[local79] = -1;
+					Static267.mapGroupIds[local79] = -1;
+					Static266.locGroupIds[local79] = -1;
+					Static68.underwaterMapGroupIds[local79] = -1;
+					Static298.underwaterLocGroupIds[local79] = -1;
 				}
 				local79++;
 			}
 		}
 		for (local99 = local79; local99 < Static376.anIntArray458.length; local99++) {
 			Static376.anIntArray458[local99] = -1;
-			Static267.anIntArray329[local99] = -1;
-			Static266.anIntArray615[local99] = -1;
-			Static68.anIntArray316[local99] = -1;
-			Static298.anIntArray367[local99] = -1;
+			Static267.mapGroupIds[local99] = -1;
+			Static266.locGroupIds[local99] = -1;
+			Static68.underwaterMapGroupIds[local99] = -1;
+			Static298.underwaterLocGroupIds[local99] = -1;
 		}
 		@Pc(309) byte local309;
 		if (Static283.anInt4588 == 3) {

@@ -47,7 +47,7 @@ public final class Class310 {
 			@Pc(44) int local44 = this.aClass332_101.method7604() - 1;
 			this.aClass332_101.method7615(local44);
 		}
-		if (Static673.aClass379_8 == this.aClass379_6) {
+		if (Static673.runescapeGame == this.aClass379_6) {
 			this.aStringArray39 = new String[] { null, null, null, null, null, Static32.aClass32_22.method877(this.anInt8109) };
 		} else {
 			this.aStringArray39 = new String[] { null, null, null, null, null, null };

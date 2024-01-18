@@ -15,12 +15,12 @@ public final class Static519 {
 		@Pc(5) boolean local5 = false;
 		@Pc(7) boolean local7 = false;
 		@Pc(9) boolean local9 = false;
-		if (Static446.aClass392_6.aBoolean782 && !Static446.aClass392_6.aBoolean780) {
+		if (GameShell.sign.aBoolean782 && !GameShell.sign.aBoolean780) {
 			local5 = true;
-			if (Static292.aClass2_Sub43_2.anInt7633 < 512 && Static292.aClass2_Sub43_2.anInt7633 != 0) {
+			if (Static292.instance.anInt7633 < 512 && Static292.instance.anInt7633 != 0) {
 				local5 = false;
 			}
-			if (Static689.aString119.startsWith("win")) {
+			if (signlink.osNameLower.startsWith("win")) {
 				local9 = true;
 				local7 = true;
 			} else {

@@ -25,7 +25,7 @@ public final class Static148 {
 				try {
 					@Pc(30) Runtime local30 = Runtime.getRuntime();
 					@Pc(36) Integer local36 = (Integer) local26.invoke(local30, (Object[]) null);
-					Static495.anInt7444 = local36;
+					Static495.cpucount = local36;
 				} catch (@Pc(41) Throwable local41) {
 				}
 			}

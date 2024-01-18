@@ -14,7 +14,7 @@ public final class Static464 {
 	public static final int[] anIntArray561 = new int[] { -1, 8192, 0, -1, 12288, 10240, 14336, -1, 4096, 6144, 2048 };
 
 	@OriginalMember(owner = "client!ol", name = "I", descriptor = "Z")
-	public static boolean aBoolean533 = false;
+	public static boolean objecttag = false;
 
 	@OriginalMember(owner = "client!ol", name = "a", descriptor = "(Lclient!ge;Z)Lclient!hea;")
 	public static Class160_Sub1 method6308(@OriginalArg(0) Class2_Sub21 arg0) {

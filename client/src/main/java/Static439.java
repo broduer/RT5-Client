@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public final class Static439 {
 
 	@OriginalMember(owner = "client!ns", name = "c", descriptor = "Lclient!oba;")
-	public static Class272 aClass272_4;
+	public static PrivilegedRequest aPrivilegedRequest_4;
 
 	@OriginalMember(owner = "client!ns", name = "e", descriptor = "I")
 	public static int anInt6694 = 0;

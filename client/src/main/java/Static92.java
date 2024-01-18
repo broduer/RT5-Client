@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static92 {
 
-	@OriginalMember(owner = "client!cs", name = "r", descriptor = "I")
-	public static int anInt1882 = 0;
-
 	@OriginalMember(owner = "client!cs", name = "a", descriptor = "(IBI)V")
 	public static void method1757(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(18) Class369 local18 = Static665.aClass369ArrayArray1[arg0][arg1];

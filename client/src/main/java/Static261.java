@@ -18,9 +18,9 @@ public final class Static261 {
 			local46 = Static130.method2283();
 			local48 = Static422.method5778();
 		}
-		Static534.method7127(Static377.anInt5950, local46, Static680.anInt10317 + local46, local48, local48, -1, local46, Static380.anInt5999 + local48);
+		Static534.method7127(Static377.anInt5950, local46, GameShell.canvasWidth + local46, local48, local48, -1, local46, GameShell.canvasHeight + local48);
 		if (Static438.aClass158Array3 != null) {
-			Static71.method1522(-1412584499, Static213.anInt3485, Static438.aClass158Array3, local46, local48, local48 + Static380.anInt5999, Static354.aClass158_8.anInt3762, true, local46 + Static680.anInt10317, Static101.anInt2107);
+			Static71.method1522(-1412584499, Static213.anInt3485, Static438.aClass158Array3, local46, local48, local48 + GameShell.canvasHeight, Static354.aClass158_8.anInt3762, true, local46 + GameShell.canvasWidth, Static101.anInt2107);
 			Static438.aClass158Array3 = null;
 		}
 	}

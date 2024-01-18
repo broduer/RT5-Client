@@ -20,7 +20,7 @@ public final class Static501 {
 	public static int anInt7591 = 104;
 
 	@OriginalMember(owner = "client!pq", name = "t", descriptor = "Z")
-	public static boolean aBoolean575 = false;
+	public static boolean jingle = false;
 
 	@OriginalMember(owner = "client!pq", name = "u", descriptor = "[Lclient!lca;")
 	public static final Class2_Sub7[] aClass2_Sub7Array4 = new Class2_Sub7[8];
@@ -28,10 +28,10 @@ public final class Static501 {
 	@OriginalMember(owner = "client!pq", name = "d", descriptor = "(I)Z")
 	public static boolean method6721() {
 		@Pc(7) Hashtable local7 = new Hashtable();
-		@Pc(10) Enumeration local10 = Static137.aHashtable2.keys();
+		@Pc(10) Enumeration local10 = Static137.nativeLibraries.keys();
 		while (local10.hasMoreElements()) {
 			@Pc(14) Object local14 = local10.nextElement();
-			local7.put(local14, Static137.aHashtable2.get(local14));
+			local7.put(local14, Static137.nativeLibraries.get(local14));
 		}
 		try {
 			@Pc(35) Class local35 = Class.forName("java.lang.reflect.AccessibleObject");
@@ -40,12 +40,12 @@ public final class Static501 {
 			@Pc(58) Method local58 = local35.getDeclaredMethod("setAccessible", Boolean.TYPE);
 			local58.invoke(local46, Boolean.TRUE);
 			try {
-				local10 = Static137.aHashtable2.keys();
+				local10 = Static137.nativeLibraries.keys();
 				while (local10.hasMoreElements()) {
 					@Pc(76) String local76 = (String) local10.nextElement();
 					try {
-						@Pc(81) File local81 = (File) Static154.aHashtable3.get(local76);
-						@Pc(86) Class local86 = (Class) Static137.aHashtable2.get(local76);
+						@Pc(81) File local81 = (File) Static154.loadedLibraries.get(local76);
+						@Pc(86) Class local86 = (Class) Static137.nativeLibraries.get(local76);
 						@Pc(92) Vector local92 = (Vector) local46.get(local86.getClassLoader());
 						for (@Pc(94) int local94 = 0; local92.size() > local94; local94++) {
 							try {
@@ -82,8 +82,8 @@ public final class Static501 {
 			local58.invoke(local46, Boolean.FALSE);
 		} catch (@Pc(245) Throwable local245) {
 		}
-		Static137.aHashtable2 = local7;
-		return Static137.aHashtable2.isEmpty();
+		Static137.nativeLibraries = local7;
+		return Static137.nativeLibraries.isEmpty();
 	}
 
 	@OriginalMember(owner = "client!pq", name = "a", descriptor = "(BI)Z")

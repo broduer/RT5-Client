@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static360 {
 
 	@OriginalMember(owner = "client!lg", name = "h", descriptor = "Ljava/lang/String;")
-	public static String aString59;
+	public static String quiturl;
 
 	@OriginalMember(owner = "client!lg", name = "f", descriptor = "I")
 	public static int anInt5840;
@@ -98,9 +98,9 @@ public final class Static360 {
 			local8 = local8.substring(0, local13) + "," + local8.substring(local13);
 		}
 		if (local8.length() > 9) {
-			return " <col=00ff80>" + local8.substring(0, local8.length() - 8) + Static32.aClass32_33.method877(Static51.anInt1056) + " (" + local8 + ")</col>";
+			return " <col=00ff80>" + local8.substring(0, local8.length() - 8) + Static32.aClass32_33.method877(client.lang) + " (" + local8 + ")</col>";
 		} else if (local8.length() > 6) {
-			return " <col=ffffff>" + local8.substring(0, local8.length() - 4) + Static32.aClass32_35.method877(Static51.anInt1056) + " (" + local8 + ")</col>";
+			return " <col=ffffff>" + local8.substring(0, local8.length() - 4) + Static32.aClass32_35.method877(client.lang) + " (" + local8 + ")</col>";
 		} else {
 			return " <col=ffff00>" + local8 + "</col>";
 		}

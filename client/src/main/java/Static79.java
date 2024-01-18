@@ -32,7 +32,7 @@ public final class Static79 {
 		if (Static393.aStringArray32 == null) {
 			Static279.method4072();
 		}
-		Static459.aCalendar3.setTime(new Date(Static588.method7722()));
+		Static459.aCalendar3.setTime(new Date(Static588.currentTimeMillis()));
 		@Pc(20) int local20 = Static459.aCalendar3.get(Calendar.HOUR_OF_DAY);
 		@Pc(31) int local31 = Static459.aCalendar3.get(Calendar.MINUTE);
 		@Pc(35) int local35 = Static459.aCalendar3.get(Calendar.SECOND);

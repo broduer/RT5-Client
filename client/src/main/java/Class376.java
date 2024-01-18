@@ -3,7 +3,6 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.ImageObserver;
 import java.lang.reflect.Field;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalClass;
@@ -101,17 +100,17 @@ public final class Class376 implements Interface22 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(BI)I")
 	private int method8473(@OriginalArg(1) int arg0) {
-		return this.aBoolean741 ? (Static380.anInt5999 - arg0) / 2 : 0;
+		return this.aBoolean741 ? (GameShell.canvasHeight - arg0) / 2 : 0;
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(II)I")
 	private int method8476(@OriginalArg(1) int arg0) {
-		return this.aBoolean740 ? (Static680.anInt10317 - arg0) / 2 : 0;
+		return this.aBoolean740 ? (GameShell.canvasWidth - arg0) / 2 : 0;
 	}
 
 	@OriginalMember(owner = "client!uh", name = "f", descriptor = "(I)V")
 	private void method8477() throws IllegalAccessException, NoSuchFieldException {
-		@Pc(6) Class local6 = Static166.anApplet1.getClass();
+		@Pc(6) Class local6 = signlink.mainapp.getClass();
 		this.anImage4 = (Image) this.method8483(local6, "bar");
 		this.anImage6 = (Image) this.method8483(local6, "background");
 		this.anImage11 = (Image) this.method8483(local6, "left");
@@ -147,7 +146,7 @@ public final class Class376 implements Interface22 {
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Z)V")
 	private void method8478() {
-		Static305.method4446(Static449.aClass366_1.method8385(), Static337.aColorArray1[Static338.anInt5582], Static399.aColorArray2[Static338.anInt5582], Static718.aColorArray3[Static338.anInt5582], Static449.aClass366_1.method8384());
+		Static305.method4446(Static449.aClass366_1.method8385(), Static337.aColorArray1[Static338.colourid], Static399.aColorArray2[Static338.colourid], Static718.aColorArray3[Static338.colourid], Static449.aClass366_1.method8384());
 	}
 
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/Object;ZLjava/lang/String;)I")
@@ -165,8 +164,8 @@ public final class Class376 implements Interface22 {
 	@OriginalMember(owner = "client!uh", name = "a", descriptor = "(Ljava/lang/Class;Ljava/lang/String;B)Ljava/lang/Object;")
 	private Object method8483(@OriginalArg(0) Class arg0, @OriginalArg(1) String arg1) throws IllegalAccessException, NoSuchFieldException {
 		@Pc(7) Field local7 = arg0.getDeclaredField(arg1);
-		@Pc(17) Object local17 = local7.get(Static166.anApplet1);
-		local7.set(Static166.anApplet1, null);
+		@Pc(17) Object local17 = local7.get(signlink.mainapp);
+		local7.set(signlink.mainapp, null);
 		return local17;
 	}
 
@@ -180,7 +179,7 @@ public final class Class376 implements Interface22 {
 	@Override
 	public void method8472(@OriginalArg(0) boolean arg0) {
 		if (!this.aBoolean742) {
-			if (Static166.anApplet1 == null) {
+			if (signlink.mainapp == null) {
 				this.aBoolean742 = true;
 			} else if (this.aFont2 == null) {
 				try {
@@ -194,19 +193,19 @@ public final class Class376 implements Interface22 {
 			this.method8478();
 			return;
 		}
-		@Pc(43) Graphics local43 = Static434.aCanvas7.getGraphics();
+		@Pc(43) Graphics local43 = GameShell.canvas.getGraphics();
 		if (local43 == null) {
-			Static434.aCanvas7.repaint();
+			GameShell.canvas.repaint();
 			return;
 		}
 		try {
 			@Pc(63) int local63 = Static449.aClass366_1.method8385();
 			@Pc(67) String local67 = Static449.aClass366_1.method8384();
 			if (Static103.anImage1 == null) {
-				Static103.anImage1 = Static434.aCanvas7.createImage(Static680.anInt10317, Static380.anInt5999);
+				Static103.anImage1 = GameShell.canvas.createImage(GameShell.canvasWidth, GameShell.canvasHeight);
 			}
 			@Pc(79) Graphics local79 = Static103.anImage1.getGraphics();
-			local79.clearRect(0, 0, Static680.anInt10317, Static380.anInt5999);
+			local79.clearRect(0, 0, GameShell.canvasWidth, GameShell.canvasHeight);
 			@Pc(90) int local90 = this.anImage9.getWidth(null);
 			@Pc(95) int local95 = this.anImage12.getWidth(null);
 			@Pc(100) int local100 = this.anImage10.getWidth(null);
@@ -235,7 +234,7 @@ public final class Class376 implements Interface22 {
 			local79.drawImage(this.anImage11, local286, local296 + (this.anInt9674 - local236) / 2, null);
 			local79.drawImage(this.anImage5, local286 + this.anInt9664 - local241, local296 + (this.anInt9674 + -local246) / 2, null);
 			if (this.anImage13 == null) {
-				this.anImage13 = Static434.aCanvas7.createImage(this.anInt9664 - local231 - local241, this.anInt9674);
+				this.anImage13 = GameShell.canvas.createImage(this.anInt9664 - local231 - local241, this.anInt9674);
 			}
 			@Pc(358) Graphics local358 = this.anImage13.getGraphics();
 			for (@Pc(360) int local360 = 0; local360 < this.anInt9664 - local241 - local231; local360 += local256) {
@@ -247,7 +246,7 @@ public final class Class376 implements Interface22 {
 			@Pc(439) int local439 = local63 * (this.anInt9664 - local241 - local231) / 100;
 			@Pc(480) int local480;
 			if (local439 > 0) {
-				@Pc(458) Image local458 = Static434.aCanvas7.createImage(local439, this.anInt9674 - local251 - local261);
+				@Pc(458) Image local458 = GameShell.canvas.createImage(local439, this.anInt9674 - local251 - local261);
 				@Pc(462) int local462 = local458.getWidth(null);
 				@Pc(465) Graphics local465 = local458.getGraphics();
 				@Pc(475) int local475 = this.anInt9670 * Static556.method7309() / 10 % local271;
@@ -259,7 +258,7 @@ public final class Class376 implements Interface22 {
 			@Pc(516) int local516 = local439;
 			local439 = this.anInt9664 - local241 - local231 - local439;
 			if (local439 > 0) {
-				@Pc(542) Image local542 = Static434.aCanvas7.createImage(local439, this.anInt9674 - local251 - local261);
+				@Pc(542) Image local542 = GameShell.canvas.createImage(local439, this.anInt9674 - local251 - local261);
 				@Pc(546) int local546 = local542.getWidth(null);
 				@Pc(549) Graphics local549 = local542.getGraphics();
 				for (local480 = 0; local480 < local546; local480 += local276) {

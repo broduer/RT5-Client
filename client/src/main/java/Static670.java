@@ -24,7 +24,7 @@ public final class Static670 {
 
 	@OriginalMember(owner = "client!vda", name = "g", descriptor = "(I)V")
 	public static void method8742() {
-		if (Static265.aByteArray44 != null) {
+		if (Static265.sskey != null) {
 			Static619.method1512(Static470.anInt7134);
 		} else if (Static129.anInt2418 == -1) {
 			Static192.method2877(Static59.aString63, Static470.anInt7134, Static449.aString75);

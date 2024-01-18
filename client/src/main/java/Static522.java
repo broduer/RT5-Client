@@ -10,7 +10,7 @@ public final class Static522 {
 	public static Class328[] aClass328Array1;
 
 	@OriginalMember(owner = "client!qha", name = "Kf", descriptor = "I")
-	public static int anInt7923 = 0;
+	public static int js5PrevErrors = 0;
 
 	@OriginalMember(owner = "client!qha", name = "Xd", descriptor = "Lclient!cja;")
 	public static Class2_Sub12 aClass2_Sub12_4 = null;
@@ -28,7 +28,7 @@ public final class Static522 {
 	public static void method7048(@OriginalArg(1) Class2_Sub8 arg0) {
 		Static581.aClass2_Sub6_Sub1_3.method934(arg0, false);
 		if (Static426.aClass56_2 != null) {
-			Static426.aClass56_2.method3582(Static581.aClass2_Sub6_Sub1_3);
+			Static426.aClass56_2.setStream(Static581.aClass2_Sub6_Sub1_3);
 		}
 		Static62.aClass2_Sub8_3 = null;
 		Static96.anInt10199 = 0;

@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 @OriginalClass("client!bd")
-public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
+public final class Class2_Sub6_Sub1 extends PcmStream {
 
 	@OriginalMember(owner = "client!bd", name = "ab", descriptor = "J")
 	private long aLong28;
@@ -162,9 +162,9 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!bd", name = "b", descriptor = "([III)V")
 	@Override
-	public synchronized void method9138(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
+	public synchronized void read(@OriginalArg(0) int[] arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
 		if (this.aClass40_1.method1055()) {
-			@Pc(14) int local14 = this.aClass40_1.anInt992 * this.anInt819 / Static686.anInt8968;
+			@Pc(14) int local14 = this.aClass40_1.anInt992 * this.anInt819 / AudioChannel.globalSampleRate;
 			do {
 				@Pc(24) long local24 = this.aLong29 + (long) arg2 * (long) local14;
 				if (this.aLong28 - local24 >= 0L) {
@@ -173,18 +173,18 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 				}
 				@Pc(55) int local55 = (int) ((this.aLong28 + (long) local14 - this.aLong29 - 1L) / (long) local14);
 				this.aLong29 += (long) local55 * (long) local14;
-				this.aClass2_Sub6_Sub4_1.method9138(arg0, arg1, local55);
+				this.aClass2_Sub6_Sub4_1.read(arg0, arg1, local55);
 				arg1 += local55;
 				this.method932();
 				arg2 -= local55;
 			} while (this.aClass40_1.method1055());
 		}
-		this.aClass2_Sub6_Sub4_1.method9138(arg0, arg1, arg2);
+		this.aClass2_Sub6_Sub4_1.read(arg0, arg1, arg2);
 	}
 
 	@OriginalMember(owner = "client!bd", name = "c", descriptor = "()Lclient!dea;")
 	@Override
-	public synchronized Class2_Sub6 method9140() {
+	public synchronized PcmStream firstSubStream() {
 		return this.aClass2_Sub6_Sub4_1;
 	}
 
@@ -226,7 +226,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 			@Pc(104) double local104 = Math.sin((double) (arg0.anInt2197 & 0x1FF) * 0.01227184630308513D);
 			local14 += (int) (local104 * (double) local65);
 		}
-		local65 = (int) ((double) (arg0.aClass2_Sub49_Sub1_1.anInt8842 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) Static686.anInt8968 + 0.5D);
+		local65 = (int) ((double) (arg0.aClass2_Sub49_Sub1_1.anInt8842 * 256) * Math.pow(2.0D, (double) local14 * 3.255208333333333E-4D) / (double) AudioChannel.globalSampleRate + 0.5D);
 		return local65 >= 1 ? local65 : 1;
 	}
 
@@ -354,7 +354,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "()Lclient!dea;")
 	@Override
-	public synchronized Class2_Sub6 method9142() {
+	public synchronized PcmStream method9142() {
 		return null;
 	}
 
@@ -563,7 +563,7 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 		for (@Pc(14) Class2_Sub16 local14 = (Class2_Sub16) this.aClass2_Sub6_Sub4_1.aClass341_72.method7706(65280); local14 != null; local14 = (Class2_Sub16) this.aClass2_Sub6_Sub4_1.aClass341_72.method7713()) {
 			if (arg0 < 0 || local14.anInt2196 == arg0) {
 				if (local14.aClass2_Sub6_Sub2_1 != null) {
-					local14.aClass2_Sub6_Sub2_1.method3320(Static686.anInt8968 / 100);
+					local14.aClass2_Sub6_Sub2_1.method3320(AudioChannel.globalSampleRate / 100);
 					if (local14.aClass2_Sub6_Sub2_1.method3336()) {
 						this.aClass2_Sub6_Sub4_1.aClass2_Sub6_Sub3_2.method5889(local14.aClass2_Sub6_Sub2_1);
 					}
@@ -805,9 +805,9 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(I)V")
 	@Override
-	public synchronized void method9137(@OriginalArg(0) int arg0) {
+	public synchronized void skip(@OriginalArg(0) int arg0) {
 		if (this.aClass40_1.method1055()) {
-			@Pc(18) int local18 = this.aClass40_1.anInt992 * this.anInt819 / Static686.anInt8968;
+			@Pc(18) int local18 = this.aClass40_1.anInt992 * this.anInt819 / AudioChannel.globalSampleRate;
 			do {
 				@Pc(27) long local27 = (long) arg0 * (long) local18 + this.aLong29;
 				if (this.aLong28 - local27 >= 0L) {
@@ -816,17 +816,17 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 				}
 				@Pc(58) int local58 = (int) ((this.aLong28 + (long) local18 - this.aLong29 - 1L) / (long) local18);
 				this.aLong29 += (long) local58 * (long) local18;
-				this.aClass2_Sub6_Sub4_1.method9137(local58);
+				this.aClass2_Sub6_Sub4_1.skip(local58);
 				arg0 -= local58;
 				this.method932();
 			} while (this.aClass40_1.method1055());
 		}
-		this.aClass2_Sub6_Sub4_1.method9137(arg0);
+		this.aClass2_Sub6_Sub4_1.skip(arg0);
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(Lclient!dha;I[III)Z")
 	public boolean method945(@OriginalArg(0) Class2_Sub16 arg0, @OriginalArg(2) int[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
-		arg0.anInt2193 = Static686.anInt8968 / 100;
+		arg0.anInt2193 = AudioChannel.globalSampleRate / 100;
 		if (arg0.anInt2211 >= 0 && (arg0.aClass2_Sub6_Sub2_1 == null || arg0.aClass2_Sub6_Sub2_1.method3311())) {
 			arg0.method2083();
 			arg0.method9464();
@@ -891,9 +891,9 @@ public final class Class2_Sub6_Sub1 extends Class2_Sub6 {
 		}
 		arg0.aClass2_Sub6_Sub2_1.method3320(arg0.anInt2193);
 		if (arg1 == null) {
-			arg0.aClass2_Sub6_Sub2_1.method9137(arg3);
+			arg0.aClass2_Sub6_Sub2_1.skip(arg3);
 		} else {
-			arg0.aClass2_Sub6_Sub2_1.method9138(arg1, arg2, arg3);
+			arg0.aClass2_Sub6_Sub2_1.read(arg1, arg2, arg3);
 		}
 		if (arg0.aClass2_Sub6_Sub2_1.method3336()) {
 			this.aClass2_Sub6_Sub4_1.aClass2_Sub6_Sub3_2.method5889(arg0.aClass2_Sub6_Sub2_1);

@@ -74,12 +74,12 @@ public final class Static498 {
 		Static135.method7244();
 		@Pc(19) int local19 = Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2120();
 		if (local19 == 2) {
-			Static85.method9271(Static380.anInt5999, Static680.anInt10317, Static163.aClass19_17);
+			Static85.method9271(GameShell.canvasHeight, GameShell.canvasWidth, Static163.aClass19_17);
 		} else if (local19 == 3) {
-			Static126.method2227(Static163.aClass19_17, Static680.anInt10317, Static32.anInt780, Static288.anInt4634, Static380.anInt5999);
+			Static126.method2227(Static163.aClass19_17, GameShell.canvasWidth, Static32.anInt780, Static288.anInt4634, GameShell.canvasHeight);
 		}
 		if (Static400.aClass2_Sub34_28.aClass57_Sub3_1.method2118()) {
-			Static575.method7613(Static434.aCanvas7);
+			Static575.method7613(GameShell.canvas);
 		}
 		if (Static163.aClass19_17 != null) {
 			Static209.method3110();

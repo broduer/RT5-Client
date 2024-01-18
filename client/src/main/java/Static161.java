@@ -75,8 +75,8 @@ public final class Static161 {
 			arg0.aByte147 = arg2.method7355();
 			arg0.aByte148 = arg2.method7406();
 			arg0.aByte149 = (byte) arg2.method7403();
-			arg0.anInt10789 = Static333.anInt5474 + arg2.method7413();
-			arg0.anInt10781 = Static333.anInt5474 + arg2.method7389();
+			arg0.anInt10789 = client.cycle + arg2.method7413();
+			arg0.anInt10781 = client.cycle + arg2.method7389();
 		}
 		if ((arg3 & 0x200) != 0) {
 			local7 = arg2.method7406();
@@ -87,7 +87,7 @@ public final class Static161 {
 			arg0.anInt10759 = arg2.method7408();
 			arg0.aBoolean819 = (local15 & 0x8000) != 0;
 			arg0.anInt10765 = local15 & 0x7FFF;
-			arg0.anInt10747 = arg0.anInt10766 + arg0.anInt10765 + Static333.anInt5474;
+			arg0.anInt10747 = arg0.anInt10766 + arg0.anInt10765 + client.cycle;
 		}
 		if ((arg3 & 0x80000) != 0) {
 			local15 = arg2.method7379();
@@ -127,7 +127,7 @@ public final class Static161 {
 					}
 					@Pc(436) int local436 = arg2.method7397();
 					@Pc(440) int local440 = arg2.method7408();
-					arg0.method9308(local32, local436, local440, local26, Static333.anInt5474, local141, local108);
+					arg0.method9308(local32, local436, local440, local26, client.cycle, local141, local108);
 				}
 			}
 		}
@@ -183,8 +183,8 @@ public final class Static161 {
 			arg0.anInt10782 = arg2.method7384();
 			arg0.anInt10790 = arg2.method7412();
 			arg0.anInt10787 = arg2.method7412();
-			arg0.anInt10788 = arg2.method7379() + Static333.anInt5474;
-			arg0.anInt10784 = arg2.method7413() + Static333.anInt5474;
+			arg0.anInt10788 = arg2.method7379() + client.cycle;
+			arg0.anInt10784 = arg2.method7413() + client.cycle;
 			arg0.anInt10783 = arg2.method7381();
 			if (arg0.aBoolean127) {
 				arg0.anInt10793 = 0;

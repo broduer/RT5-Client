@@ -187,7 +187,7 @@ public final class Static651 {
 			return;
 		}
 		if (arg1.anInt10820 != 0) {
-			@Pc(67) String local67 = Static723.aClass379_9 == Static392.aClass379_4 ? Static32.aClass32_30.method877(Static51.anInt1056) : Static32.aClass32_28.method877(Static51.anInt1056);
+			@Pc(67) String local67 = Static723.aClass379_9 == Static392.game ? Static32.aClass32_30.method877(client.lang) : Static32.aClass32_28.method877(client.lang);
 			local24 = local24 + Static693.method9016(Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1451, arg1.anInt10820) + " (" + local67 + arg1.anInt10820 + ")";
 		}
 		if (Static156.aBoolean223 && !arg0) {
@@ -207,7 +207,7 @@ public final class Static651 {
 			return;
 		}
 		for (@Pc(189) int local189 = local176.length - 1; local189 >= 0; local189--) {
-			if (local176[local189] != null && (local21.aByte107 == 0 || !local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) && !local176[local189].equalsIgnoreCase(Static32.aClass32_22.method877(Static51.anInt1056)))) {
+			if (local176[local189] != null && (local21.aByte107 == 0 || !local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(client.lang)) && !local176[local189].equalsIgnoreCase(Static32.aClass32_22.method877(client.lang)))) {
 				@Pc(226) short local226 = 0;
 				@Pc(228) int local228 = Static39.anInt954;
 				if (local189 == 0) {
@@ -234,14 +234,14 @@ public final class Static651 {
 				if (local21.anInt6757 == local189) {
 					local228 = local21.anInt6773;
 				}
-				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local189], local226, true, local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local228, "<col=ffff00>" + local24, arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local189], local226, true, local176[local189].equalsIgnoreCase(Static32.aClass32_23.method877(client.lang)) ? local21.anInt6760 : local228, "<col=ffff00>" + local24, arg1.anInt10768, false);
 			}
 		}
 		if (local21.aByte107 != 1) {
 			return;
 		}
 		for (@Pc(341) int local341 = 0; local341 < local176.length; local341++) {
-			if (local176[local341] != null && (local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) || local176[local341].equalsIgnoreCase(Static32.aClass32_22.method877(Static51.anInt1056)))) {
+			if (local176[local341] != null && (local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(client.lang)) || local176[local341].equalsIgnoreCase(Static32.aClass32_22.method877(client.lang)))) {
 				@Pc(372) short local372 = 0;
 				if (arg1.anInt10820 > Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anInt1451) {
 					local372 = 2000;
@@ -275,7 +275,7 @@ public final class Static651 {
 				if (local21.anInt6757 == local341) {
 					local387 = local21.anInt6773;
 				}
-				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local341], local385, true, local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(Static51.anInt1056)) ? local21.anInt6760 : local387, "<col=ffff00>" + local24, arg1.anInt10768, false);
+				Static416.method5714(false, -1, arg1.anInt10768, 0, 0, local176[local341], local385, true, local176[local341].equalsIgnoreCase(Static32.aClass32_23.method877(client.lang)) ? local21.anInt6760 : local387, "<col=ffff00>" + local24, arg1.anInt10768, false);
 			}
 		}
 		return;

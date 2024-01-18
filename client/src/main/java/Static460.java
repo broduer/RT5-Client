@@ -26,7 +26,7 @@ public final class Static460 {
 				return 1;
 			}
 			if (!((Class64) Static566.aClass328_2.method7476()).method1554()) {
-				Static295.aClient1.method1644();
+				client.instance.method1644();
 			}
 			Static213.anInt3480 = 1;
 		}
@@ -97,10 +97,10 @@ public final class Static460 {
 		}
 		if (local348) {
 			if (!((Class64) Static566.aClass328_5.method7476()).method1554()) {
-				Static295.aClient1.method1634();
+				client.instance.method1634();
 			}
 			if (!((Class64) Static566.aClass328_8.method7476()).method1554()) {
-				Static234.aBoolean303 = Static295.aClient1.method1651();
+				Static234.aBoolean303 = client.instance.method1651();
 			}
 			Static522.aClass328Array1 = null;
 		}

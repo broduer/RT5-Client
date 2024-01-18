@@ -6,9 +6,6 @@ public final class Static514 {
 	@OriginalMember(owner = "client!qca", name = "w", descriptor = "I")
 	public static int anInt7700;
 
-	@OriginalMember(owner = "client!qca", name = "z", descriptor = "Lclient!oba;")
-	public static Class272 aClass272_6;
-
 	@OriginalMember(owner = "client!qca", name = "x", descriptor = "Lclient!kn;")
 	public static final Class215 aClass215_3 = new Class215(false);
 

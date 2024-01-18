@@ -128,14 +128,14 @@ public final class Static358 {
 
 	@OriginalMember(owner = "client!lf", name = "e", descriptor = "(I)V")
 	public static void method9197() {
-		if (Static166.anApplet1 == null) {
+		if (signlink.mainapp == null) {
 			return;
 		}
 		try {
-			@Pc(23) String local23 = Static166.anApplet1.getParameter("cookiehost");
-			@Pc(31) int local31 = (int) (Static588.method7722() / 86400000L) - 11745;
+			@Pc(23) String local23 = signlink.mainapp.getParameter("cookiehost");
+			@Pc(31) int local31 = (int) (Static588.currentTimeMillis() / 86400000L) - 11745;
 			@Pc(47) String local47 = "usrdob=" + local31 + "; version=1; path=/; domain=" + local23;
-			Static727.method98("document.cookie=\"" + local47 + "\"", Static166.anApplet1);
+			BrowserControl.eval("document.cookie=\"" + local47 + "\"", signlink.mainapp);
 		} catch (@Pc(63) Throwable local63) {
 		}
 	}

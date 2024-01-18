@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.Pc;
 public final class Static266 {
 
 	@OriginalMember(owner = "client!ifa", name = "a", descriptor = "[I")
-	public static int[] anIntArray615;
+	public static int[] locGroupIds;
 
 	@OriginalMember(owner = "client!ifa", name = "c", descriptor = "[[B")
 	public static final byte[][] aByteArrayArray27 = new byte[1000][];
@@ -83,15 +83,15 @@ public final class Static266 {
 			}
 		}
 		local22 = Static322.anIntArrayArray265.length;
-		anIntArray615 = new int[local22];
+		locGroupIds = new int[local22];
 		Static89.anIntArray169 = new int[local22];
 		Static319.aByteArrayArray16 = new byte[local22][];
-		Static298.anIntArray367 = new int[local22];
+		Static298.underwaterLocGroupIds = new int[local22];
 		Static363.aByteArrayArray22 = null;
 		Static118.aByteArrayArray3 = new byte[local22][];
 		Static177.aByteArrayArray5 = new byte[local22][];
-		Static267.anIntArray329 = new int[local22];
-		Static68.anIntArray316 = new int[local22];
+		Static267.mapGroupIds = new int[local22];
+		Static68.underwaterMapGroupIds = new int[local22];
 		Static376.anIntArray458 = null;
 		Static421.aByteArrayArray19 = new byte[local22][];
 		local22 = 0;
@@ -117,10 +117,10 @@ public final class Static266 {
 						}
 					}
 					Static89.anIntArray169[local22] = local113;
-					Static267.anIntArray329[local22] = Static93.aClass332_16.method7597("m" + local107 + "_" + local110);
-					anIntArray615[local22] = Static93.aClass332_16.method7597("l" + local107 + "_" + local110);
-					Static68.anIntArray316[local22] = Static93.aClass332_16.method7597("um" + local107 + "_" + local110);
-					Static298.anIntArray367[local22] = Static93.aClass332_16.method7597("ul" + local107 + "_" + local110);
+					Static267.mapGroupIds[local22] = client.js5Archive5.getGroupId("m" + local107 + "_" + local110);
+					locGroupIds[local22] = client.js5Archive5.getGroupId("l" + local107 + "_" + local110);
+					Static68.underwaterMapGroupIds[local22] = client.js5Archive5.getGroupId("um" + local107 + "_" + local110);
+					Static298.underwaterLocGroupIds[local22] = client.js5Archive5.getGroupId("ul" + local107 + "_" + local110);
 					local22++;
 				}
 			}
@@ -134,7 +134,7 @@ public final class Static266 {
 	public static void method6784() {
 		@Pc(5) Class83 local5 = null;
 		try {
-			local5 = Static689.method8990("2");
+			local5 = signlink.method8990("2");
 			@Pc(25) Class2_Sub21 local25 = new Class2_Sub21(Static319.anInt5095 * 6 + 3);
 			local25.method7396(1);
 			local25.method7380(Static319.anInt5095);
@@ -153,7 +153,7 @@ public final class Static266 {
 			}
 		} catch (@Pc(74) Exception local74) {
 		}
-		Static98.aLong71 = Static588.method7722();
+		Static98.aLong71 = Static588.currentTimeMillis();
 		Static624.aBoolean728 = false;
 	}
 }

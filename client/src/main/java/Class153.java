@@ -11,7 +11,7 @@ public final class Class153 {
 	public Class350 aClass350_1;
 
 	@OriginalMember(owner = "client!gw", name = "r", descriptor = "Lclient!oba;")
-	public Class272 aClass272_1;
+	public PrivilegedRequest aPrivilegedRequest_1;
 
 	@OriginalMember(owner = "client!gw", name = "l", descriptor = "Lclient!iv;")
 	public Class186 aClass186_1;
@@ -69,7 +69,7 @@ public final class Class153 {
 
 	@OriginalMember(owner = "client!gw", name = "b", descriptor = "(I)V")
 	public void method3271() {
-		if (Static333.anInt5474 % 50 == 0) {
+		if (client.cycle % 50 == 0) {
 			this.anInt3653 = this.anInt3659;
 			this.anInt3655 = this.anInt3654;
 			this.anInt3659 = 0;

@@ -18,7 +18,7 @@ public final class Static587 {
 	public static final Class227 aClass227_216 = new Class227(82, 6);
 
 	@OriginalMember(owner = "client!sia", name = "b", descriptor = "[I")
-	public static final int[] anIntArray689 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
+	public static final int[] anIntArray689 = new int[] { 0xFFFF00, 0xFF0000, 65280, 65535, 16711935, 16777215 };
 
 	@OriginalMember(owner = "client!sia", name = "i", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_104 = new Class347(46, 3);
@@ -61,7 +61,7 @@ public final class Static587 {
 	@OriginalMember(owner = "client!sia", name = "g", descriptor = "(I)[Lclient!oga;")
 	public static Class275[] method7717() {
 		if (Static679.aClass275Array1 == null) {
-			@Pc(20) Class275[] local20 = Static673.method8794(Static446.aClass392_6, true);
+			@Pc(20) Class275[] local20 = Static673.method8794(GameShell.sign, true);
 			@Pc(24) Class275[] local24 = new Class275[local20.length];
 			@Pc(26) int local26 = 0;
 			@Pc(31) int local31 = Static400.aClass2_Sub34_28.aClass57_Sub18_1.method5774();

@@ -20,7 +20,7 @@ public final class Static323 {
 	public static final Class347 aClass347_65 = new Class347(64, 8);
 
 	@OriginalMember(owner = "client!kda", name = "j", descriptor = "I")
-	public static int anInt5138 = 0;
+	public static int affid = 0;
 
 	@OriginalMember(owner = "client!kda", name = "a", descriptor = "()V")
 	public static void method4631() {
@@ -68,23 +68,23 @@ public final class Static323 {
 		@Pc(51) int local51;
 		if (local5 == 2) {
 			local34 = Static52.anInt1063 <= 800 ? Static52.anInt1063 : 800;
-			Static134.anInt10357 = (Static52.anInt1063 - local34) / 2;
-			Static680.anInt10317 = local34;
+			GameShell.leftMargin = (Static52.anInt1063 - local34) / 2;
+			GameShell.canvasWidth = local34;
 			local51 = Static54.anInt1088 <= 600 ? Static54.anInt1088 : 600;
-			Static241.anInt3973 = 0;
-			Static380.anInt5999 = local51;
+			GameShell.topMargin = 0;
+			GameShell.canvasHeight = local51;
 		} else if (local5 == 1) {
 			local34 = Static52.anInt1063 <= 1024 ? Static52.anInt1063 : 1024;
-			Static680.anInt10317 = local34;
+			GameShell.canvasWidth = local34;
 			local51 = Static54.anInt1088 <= 768 ? Static54.anInt1088 : 768;
-			Static134.anInt10357 = (Static52.anInt1063 - local34) / 2;
-			Static380.anInt5999 = local51;
-			Static241.anInt3973 = 0;
+			GameShell.leftMargin = (Static52.anInt1063 - local34) / 2;
+			GameShell.canvasHeight = local51;
+			GameShell.topMargin = 0;
 		} else {
-			Static241.anInt3973 = 0;
-			Static380.anInt5999 = Static54.anInt1088;
-			Static680.anInt10317 = Static52.anInt1063;
-			Static134.anInt10357 = 0;
+			GameShell.topMargin = 0;
+			GameShell.canvasHeight = Static54.anInt1088;
+			GameShell.canvasWidth = Static52.anInt1063;
+			GameShell.leftMargin = 0;
 		}
 	}
 

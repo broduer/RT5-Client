@@ -59,6 +59,6 @@ public final class Class39_Sub10 extends Class39 {
 	@OriginalMember(owner = "client!hs", name = "b", descriptor = "(I)V")
 	@Override
 	public void method9168() {
-		Static219.aClass238Array1[this.anInt4131].method5370().method9308(this.anInt4137, 0, this.anInt4133, this.anInt4136, Static333.anInt5474, this.anInt4134, this.anInt4130);
+		Static219.aClass238Array1[this.anInt4131].method5370().method9308(this.anInt4137, 0, this.anInt4133, this.anInt4136, client.cycle, this.anInt4134, this.anInt4130);
 	}
 }

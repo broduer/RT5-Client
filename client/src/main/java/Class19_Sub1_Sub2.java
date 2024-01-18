@@ -519,9 +519,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			local19 = (Class2_Sub38) this.aClass341_60.method7712();
 			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
 		}
-		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.method7722()) {
+		if (this.E() > 100663296 && this.aLong279 + 60000L < Static588.currentTimeMillis()) {
 			System.gc();
-			this.aLong279 = Static588.method7722();
+			this.aLong279 = Static588.currentTimeMillis();
 		}
 		super.method7984(local11);
 	}

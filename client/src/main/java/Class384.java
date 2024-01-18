@@ -507,7 +507,7 @@ public final class Class384 {
 				if (this.aByteArray107 == null || local36 >= this.aByteArray107.length) {
 					local14.method2240(this.aShortArray136[local36], this.aShortArray137[local36]);
 				} else {
-					local14.method2240(this.aShortArray136[local36], Static238.aShortArray62[this.aByteArray107[local36] & 0xFF]);
+					local14.method2240(this.aShortArray136[local36], Static238.recolorPalette[this.aByteArray107[local36] & 0xFF]);
 				}
 			}
 		}
@@ -889,7 +889,7 @@ public final class Class384 {
 					if (this.aByteArray107 == null || this.aByteArray107.length <= local265) {
 						local104.ia(this.aShortArray136[local265], this.aShortArray137[local265]);
 					} else {
-						local104.ia(this.aShortArray136[local265], Static238.aShortArray62[this.aByteArray107[local265] & 0xFF]);
+						local104.ia(this.aShortArray136[local265], Static238.recolorPalette[this.aByteArray107[local265] & 0xFF]);
 					}
 				}
 			}

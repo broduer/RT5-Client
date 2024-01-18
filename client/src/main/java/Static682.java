@@ -17,7 +17,7 @@ public final class Static682 {
 	public static int[] anIntArray817 = new int[2];
 
 	@OriginalMember(owner = "client!vka", name = "b", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_6 = new Class357("INTBETA", "office", "_intbeta", 6);
+	public static final Class357 intbetaMode = new Class357("INTBETA", "office", "_intbeta", 6);
 
 	@OriginalMember(owner = "client!vka", name = "a", descriptor = "(ILjava/lang/String;)Ljava/lang/String;")
 	public static String method8930(@OriginalArg(1) String arg0) {

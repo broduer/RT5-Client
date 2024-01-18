@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static232 {
 
-	@OriginalMember(owner = "client!hda", name = "Tc", descriptor = "Lclient!faa;")
-	public static Class119 aClass119_1;
-
 	@OriginalMember(owner = "client!hda", name = "id", descriptor = "I")
 	public static int anInt3840;
 
@@ -111,14 +108,6 @@ public final class Static232 {
 		}
 	}
 
-	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)Ljava/lang/String;")
-	public static String method3395(@OriginalArg(0) String arg0, @OriginalArg(2) String arg1, @OriginalArg(3) String arg2) {
-		for (@Pc(13) int local13 = arg0.indexOf(arg1); local13 != -1; local13 = arg0.indexOf(arg1, local13 + arg2.length())) {
-			arg0 = arg0.substring(0, local13) + arg2 + arg0.substring(arg1.length() + local13);
-		}
-		return arg0;
-	}
-
 	@OriginalMember(owner = "client!hda", name = "a", descriptor = "(I)Z")
 	public static boolean method3400() {
 		@Pc(10) Class2_Sub57 local10 = (Class2_Sub57) Static631.aClass341_78.method7706(65280);
@@ -126,10 +115,10 @@ public final class Static232 {
 			return false;
 		}
 		for (@Pc(23) int local23 = 0; local23 < local10.anInt10392; local23++) {
-			if (local10.aClass272Array1[local23] != null && local10.aClass272Array1[local23].anInt6810 == 0) {
+			if (local10.aPrivilegedRequestArray1[local23] != null && local10.aPrivilegedRequestArray1[local23].status == 0) {
 				return false;
 			}
-			if (local10.aClass272Array2[local23] != null && local10.aClass272Array2[local23].anInt6810 == 0) {
+			if (local10.aPrivilegedRequestArray2[local23] != null && local10.aPrivilegedRequestArray2[local23].status == 0) {
 				return false;
 			}
 		}

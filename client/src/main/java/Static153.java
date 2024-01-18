@@ -25,7 +25,7 @@ public final class Static153 {
 			return;
 		}
 		Static346.aClass369_1 = arg1;
-		Static344.aLong169 = Static588.method7722();
+		Static344.aLong169 = Static588.currentTimeMillis();
 		Static173.anInt2922 = arg0;
 		Static587.anInt8697 = arg0;
 		if (Static587.anInt8697 == 0) {

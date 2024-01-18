@@ -66,11 +66,11 @@ public final class Static168 {
 		while (true) {
 			try {
 				@Pc(22) Image local22 = Toolkit.getDefaultToolkit().createImage(arg0);
-				@Pc(27) MediaTracker local27 = new MediaTracker(Static295.aClient1);
+				@Pc(27) MediaTracker local27 = new MediaTracker(client.instance);
 				local27.addImage(local22, 0);
 				local27.waitForAll();
-				@Pc(37) int local37 = local22.getWidth(Static295.aClient1);
-				@Pc(41) int local41 = local22.getHeight(Static295.aClient1);
+				@Pc(37) int local37 = local22.getWidth(client.instance);
+				@Pc(41) int local41 = local22.getHeight(client.instance);
 				if (!local27.isErrorAny() && local37 >= 0 && local41 >= 0) {
 					@Pc(66) int[] local66 = new int[local41 * local37];
 					@Pc(78) PixelGrabber local78 = new PixelGrabber(local22, 0, 0, local37, local41, local66, 0, local37);

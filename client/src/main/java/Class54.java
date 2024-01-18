@@ -1060,7 +1060,7 @@ public final class Class54 {
 				if (this.aByteArray14 == null || this.aByteArray14.length <= local193) {
 					local398.ia(this.aShortArray15[local193], local490[local193]);
 				} else {
-					local398.ia(this.aShortArray15[local193], Static419.aShortArray96[this.aByteArray14[local193] & 0xFF]);
+					local398.ia(this.aShortArray15[local193], Static419.recolorPalette[this.aByteArray14[local193] & 0xFF]);
 				}
 			}
 		}

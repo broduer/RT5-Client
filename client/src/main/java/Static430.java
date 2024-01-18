@@ -21,32 +21,32 @@ public final class Static430 {
 
 	@OriginalMember(owner = "client!nja", name = "a", descriptor = "(IBLjava/lang/String;)Z")
 	public static boolean method5824(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
-		if (Static446.aClass392_6.aBoolean782) {
+		if (GameShell.sign.aBoolean782) {
 			Static344.aClass231_1 = new Class231();
-			Static344.aClass231_1.anInt5876 = arg0;
-			Static344.aClass231_1.aString60 = arg1;
-			if (Static2.aClass357_1 != Static446.aClass357_5) {
-				Static344.aClass231_1.anInt5874 = Static344.aClass231_1.anInt5876 + 40000;
-				Static344.aClass231_1.anInt5873 = Static344.aClass231_1.anInt5876 + 50000;
+			Static344.aClass231_1.id = arg0;
+			Static344.aClass231_1.address = arg1;
+			if (client.modewhere != Static446.liveMode) {
+				Static344.aClass231_1.defaultPort = Static344.aClass231_1.id + 40000;
+				Static344.aClass231_1.alternatePort = Static344.aClass231_1.id + 50000;
 			}
 			for (@Pc(45) int local45 = 0; local45 < Static343.aClass299_Sub1Array2.length; local45++) {
 				if (Static343.aClass299_Sub1Array2[local45].anInt7592 == arg0) {
-					Static715.anInt10834 = Static343.aClass299_Sub1Array2[local45].anInt7586;
+					Static715.worldflags = Static343.aClass299_Sub1Array2[local45].anInt7586;
 				}
 			}
 			return true;
 		}
 		@Pc(73) String local73 = "";
-		if (Static446.aClass357_5 != Static2.aClass357_1) {
+		if (Static446.liveMode != client.modewhere) {
 			local73 = ":" + (arg0 + 7000);
 		}
 		@Pc(88) String local88 = "";
-		if (Static150.aString26 != null) {
-			local88 = "/p=" + Static150.aString26;
+		if (Static150.settings != null) {
+			local88 = "/p=" + Static150.settings;
 		}
-		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + Static51.anInt1056 + "/a=" + Static323.anInt5138 + local88 + "/j" + (Static98.aBoolean191 ? "1" : "0") + ",o" + (Static464.aBoolean533 ? "1" : "0") + ",a2";
+		@Pc(152) String local152 = "http://" + arg1 + local73 + "/l=" + client.lang + "/a=" + Static323.affid + local88 + "/j" + (Static98.js ? "1" : "0") + ",o" + (Static464.objecttag ? "1" : "0") + ",a2";
 		try {
-			Static295.aClient1.getAppletContext().showDocument(new URL(local152), "_self");
+			client.instance.getAppletContext().showDocument(new URL(local152), "_self");
 			return true;
 		} catch (@Pc(164) Exception local164) {
 			return false;

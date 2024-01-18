@@ -8,7 +8,7 @@ public final class Static408 {
 
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(I)V")
 	public static void method5639() {
-		Static295.aClient1.method1634();
+		client.instance.method1634();
 		Static524.aClass153_3.method3272();
 		Static524.aClass153_3.anInt3656 = 0;
 		Static249.anInt4019 = 0;

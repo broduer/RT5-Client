@@ -1,4 +1,3 @@
-import java.lang.reflect.Method;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
@@ -8,35 +7,11 @@ public final class Static418 {
 	@OriginalMember(owner = "client!nda", name = "I", descriptor = "[I")
 	public static int[] anIntArray704;
 
-	// $FF: synthetic field
-	@OriginalMember(owner = "client!nda", name = "J", descriptor = "Ljava/lang/Class;")
-	private static Class aClass21;
-
 	@OriginalMember(owner = "client!nda", name = "F", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_41 = new Class155(17);
 
 	@OriginalMember(owner = "client!nda", name = "G", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_42 = new Class155(33);
-
-	@OriginalMember(owner = "client!nda", name = "e", descriptor = "(B)V")
-	public static void method7866() {
-		if (Static446.aClass392_6.aBoolean780) {
-			Static369.anInt4277 = 96;
-			return;
-		}
-		try {
-			@Pc(34) Method local34 = (aClass21 == null ? (aClass21 = Class.forName("java.lang.Runtime")) : aClass21).getMethod("maxMemory");
-			if (local34 != null) {
-				try {
-					@Pc(38) Runtime local38 = Runtime.getRuntime();
-					@Pc(44) Long local44 = (Long) local34.invoke(local38, (Object[]) null);
-					Static369.anInt4277 = (int) (local44 / 1048576L) + 1;
-				} catch (@Pc(54) Throwable local54) {
-				}
-			}
-		} catch (@Pc(56) Exception local56) {
-		}
-	}
 
 	@OriginalMember(owner = "client!nda", name = "a", descriptor = "(IIIIIZI)V")
 	public static void method7867(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(6) int arg4) {

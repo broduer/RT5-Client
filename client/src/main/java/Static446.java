@@ -1,22 +1,14 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
-import java.io.StringWriter;
 import org.openrs2.deob.annotation.OriginalArg;
 import org.openrs2.deob.annotation.OriginalMember;
 import org.openrs2.deob.annotation.Pc;
 
 public final class Static446 {
 
-	@OriginalMember(owner = "client!oaa", name = "b", descriptor = "Lclient!vq;")
-	public static Class392 aClass392_6;
-
 	@OriginalMember(owner = "client!oaa", name = "p", descriptor = "[[[I")
 	public static int[][][] anIntArrayArrayArray9;
 
 	@OriginalMember(owner = "client!oaa", name = "c", descriptor = "Lclient!tka;")
-	public static final Class357 aClass357_5 = new Class357("LIVE", "", "", 0);
+	public static final Class357 liveMode = new Class357("LIVE", "", "", 0);
 
 	@OriginalMember(owner = "client!oaa", name = "n", descriptor = "Lclient!lga;")
 	public static final Class227 aClass227_170 = new Class227(87, -2);
@@ -33,50 +25,6 @@ public final class Static446 {
 			}
 		}
 		return null;
-	}
-
-	@OriginalMember(owner = "client!oaa", name = "a", descriptor = "(ILjava/lang/Throwable;)Ljava/lang/String;")
-	public static String method6100(@OriginalArg(1) Throwable arg0) throws IOException {
-		@Pc(14) String local14;
-		if (arg0 instanceof RuntimeException_Sub1) {
-			@Pc(18) RuntimeException_Sub1 local18 = (RuntimeException_Sub1) arg0;
-			local14 = local18.aString32 + " | ";
-			arg0 = local18.aThrowable1;
-		} else {
-			local14 = "";
-		}
-		@Pc(37) StringWriter local37 = new StringWriter();
-		@Pc(42) PrintWriter local42 = new PrintWriter(local37);
-		arg0.printStackTrace(local42);
-		local42.close();
-		@Pc(50) String local50 = local37.toString();
-		@Pc(58) BufferedReader local58 = new BufferedReader(new StringReader(local50));
-		@Pc(61) String local61 = local58.readLine();
-		while (true) {
-			@Pc(64) String local64 = local58.readLine();
-			if (local64 == null) {
-				return local14 + "| " + local61;
-			}
-			@Pc(70) int local70 = local64.indexOf(40);
-			@Pc(77) int local77 = local64.indexOf(41, local70 + 1);
-			@Pc(85) String local85;
-			if (local70 == -1) {
-				local85 = local64;
-			} else {
-				local85 = local64.substring(0, local70);
-			}
-			local85 = local85.trim();
-			local85 = local85.substring(local85.lastIndexOf(32) + 1);
-			local85 = local85.substring(local85.lastIndexOf(9) + 1);
-			local14 = local14 + local85;
-			if (local70 != -1 && local77 != -1) {
-				@Pc(132) int local132 = local64.indexOf(".java:", local70);
-				if (local132 >= 0) {
-					local14 = local14 + local64.substring(local132 + 5, local77);
-				}
-			}
-			local14 = local14 + ' ';
-		}
 	}
 
 	@OriginalMember(owner = "client!oaa", name = "a", descriptor = "(IIIZIIII)V")

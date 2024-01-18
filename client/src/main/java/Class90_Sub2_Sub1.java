@@ -38,7 +38,7 @@ public final class Class90_Sub2_Sub1 extends Class90_Sub2 {
 		aLongArray19[0] = 0L;
 		for (@Pc(209) int local209 = 1; local209 <= 10; local209++) {
 			@Pc(216) int local216 = local209 * 8 - 8;
-			aLongArray19[local209] = Static315.method4583(Static570.method7555(aLongArrayArray1[7][local216 + 7], 255L), Static315.method4583(Static570.method7555(aLongArrayArray1[6][local216 + 6], 65280L), Static315.method4583(Static315.method4583(Static315.method4583(Static315.method4583(Static570.method7555(280375465082880L, aLongArrayArray1[2][local216 + 2]), Static315.method4583(Static570.method7555(aLongArrayArray1[0][local216], -72057594037927936L), Static570.method7555(aLongArrayArray1[1][local216 + 1], 71776119061217280L))), Static570.method7555(1095216660480L, aLongArrayArray1[3][local216 + 3])), Static570.method7555(aLongArrayArray1[4][local216 + 4], 4278190080L)), Static570.method7555(aLongArrayArray1[5][local216 + 5], 16711680L))));
+			aLongArray19[local209] = Static315.method4583(Static570.method7555(aLongArrayArray1[7][local216 + 7], 255L), Static315.method4583(Static570.method7555(aLongArrayArray1[6][local216 + 6], 65280L), Static315.method4583(Static315.method4583(Static315.method4583(Static315.method4583(Static570.method7555(280375465082880L, aLongArrayArray1[2][local216 + 2]), Static315.method4583(Static570.method7555(aLongArrayArray1[0][local216], -72057594037927936L), Static570.method7555(aLongArrayArray1[1][local216 + 1], 71776119061217280L))), Static570.method7555(1095216660480L, aLongArrayArray1[3][local216 + 3])), Static570.method7555(aLongArrayArray1[4][local216 + 4], 4278190080L)), Static570.method7555(aLongArrayArray1[5][local216 + 5], 0xFF0000L))));
 		}
 	}
 

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static686 {
 
-	@OriginalMember(owner = "client!vn", name = "d", descriptor = "I")
-	public static int anInt8968;
-
 	@OriginalMember(owner = "client!vn", name = "b", descriptor = "[I")
 	public static int[] anIntArray710 = new int[1];
 
@@ -19,21 +16,21 @@ public final class Static686 {
 				Static349.method5128(arg0);
 			}
 		}
-		Static147.method2421(Static333.anInt5474, Static163.aClass19_17);
+		Static147.method2421(client.cycle, Static163.aClass19_17);
 		if (Static377.anInt5950 != -1) {
 			Static26.method716(Static377.anInt5950);
 		}
-		for (@Pc(54) int local54 = 0; local54 < Static122.anInt2348; local54++) {
+		for (@Pc(54) int local54 = 0; local54 < Static122.rectangles; local54++) {
 			if (Static364.aBooleanArray18[local54]) {
-				Static469.aBooleanArray23[local54] = true;
+				Static469.rectangleRedraw[local54] = true;
 			}
 			Static359.aBooleanArray17[local54] = Static364.aBooleanArray18[local54];
 			Static364.aBooleanArray18[local54] = false;
 		}
-		Static171.anInt2889 = Static333.anInt5474;
+		Static171.anInt2889 = client.cycle;
 		Static449.method6121(-1, -1, null);
 		if (Static377.anInt5950 != -1) {
-			Static122.anInt2348 = 0;
+			Static122.rectangles = 0;
 			Static261.method3833();
 		}
 		Static163.aClass19_17.la();

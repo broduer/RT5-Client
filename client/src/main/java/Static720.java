@@ -54,14 +54,14 @@ public final class Static720 {
 	@OriginalMember(owner = "client!wr", name = "a", descriptor = "(I)Lclient!kv;")
 	public static Class2_Sub34 method9405() {
 		@Pc(13) Class83 local13 = null;
-		@Pc(19) Class2_Sub34 local19 = new Class2_Sub34(Static392.aClass379_4, 0);
+		@Pc(19) Class2_Sub34 local19 = new Class2_Sub34(Static392.game, 0);
 		try {
-			@Pc(25) Class272 local25 = Static446.aClass392_6.method8988("");
-			while (local25.anInt6810 == 0) {
-				Static638.method8402(1L);
+			@Pc(25) PrivilegedRequest local25 = GameShell.sign.method8988("");
+			while (local25.status == 0) {
+				ThreadUtils.sleep(1L);
 			}
-			if (local25.anInt6810 == 1) {
-				local13 = (Class83) local25.anObject13;
+			if (local25.status == 1) {
+				local13 = (Class83) local25.result;
 				@Pc(51) byte[] local51 = new byte[(int) local13.method2161()];
 				@Pc(66) int local66;
 				for (@Pc(53) int local53 = 0; local53 < local51.length; local53 += local66) {
@@ -70,7 +70,7 @@ public final class Static720 {
 						throw new IOException("EOF");
 					}
 				}
-				local19 = new Class2_Sub34(new Class2_Sub21(local51), Static392.aClass379_4, 0);
+				local19 = new Class2_Sub34(new Class2_Sub21(local51), Static392.game, 0);
 			}
 		} catch (@Pc(97) Exception local97) {
 		}

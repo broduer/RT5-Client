@@ -56,7 +56,7 @@ public final class Class2_Sub10_Sub2 extends Class2_Sub10 {
 		this.anInt7074 = arg0;
 		this.anIntArray567 = new int[this.anInt7071 * this.anInt7074];
 		@Pc(39) DataBufferInt local39 = new DataBufferInt(this.anIntArray567, this.anIntArray567.length);
-		@Pc(47) DirectColorModel local47 = new DirectColorModel(32, 16711680, 65280, 255);
+		@Pc(47) DirectColorModel local47 = new DirectColorModel(32, 0xFF0000, 65280, 255);
 		@Pc(57) WritableRaster local57 = Raster.createWritableRaster(local47.createCompatibleSampleModel(this.anInt7074, this.anInt7071), local39, null);
 		this.anImage3 = new BufferedImage(local47, local57, false, new Hashtable());
 	}

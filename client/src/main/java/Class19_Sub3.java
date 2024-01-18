@@ -1232,7 +1232,7 @@ public final class Class19_Sub3 extends Class19 {
 			if (local13++ > 5) {
 				throw new RuntimeException("");
 			}
-			Static638.method8402(1000L);
+			ThreadUtils.sleep(1000L);
 		}
 	}
 
@@ -2694,9 +2694,9 @@ public final class Class19_Sub3 extends Class19 {
 			OpenGL.glDeleteLists((int) local19.aLong328, local19.anInt6399);
 		}
 		this.aClass169_1.method3528();
-		if (this.E() > 100663296 && this.aLong248 + 60000L < Static588.method7722()) {
+		if (this.E() > 100663296 && this.aLong248 + 60000L < Static588.currentTimeMillis()) {
 			System.gc();
-			this.aLong248 = Static588.method7722();
+			this.aLong248 = Static588.currentTimeMillis();
 		}
 		this.anInt8010 = local9;
 	}
@@ -2948,7 +2948,7 @@ public final class Class19_Sub3 extends Class19 {
 			local148 = Static402.method5594(local148);
 			OpenGL.glVertex2f((float) arg2 + local83, local88);
 			for (@Pc(178) int local178 = 16384 - local148; local178 > 0; local178 -= local148) {
-				OpenGL.glVertex2f(Applet_Sub1.aFloatArray14[local178] * (float) arg2 + local83, Applet_Sub1.aFloatArray15[local178] * (float) arg2 + local88);
+				OpenGL.glVertex2f(GameShell.aFloatArray14[local178] * (float) arg2 + local83, GameShell.aFloatArray15[local178] * (float) arg2 + local88);
 			}
 			OpenGL.glVertex2f(local83 + (float) arg2, local88);
 			OpenGL.glEnd();

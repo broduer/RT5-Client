@@ -41,7 +41,7 @@ public final class Static556 {
 		}
 		@Pc(63) String local63;
 		if (Static156.aBoolean223 && Static594.anInt8801 < 2) {
-			local63 = Static153.aString27 + Static32.aClass32_32.method877(Static51.anInt1056) + Static128.aString108 + " ->";
+			local63 = Static153.aString27 + Static32.aClass32_32.method877(client.lang) + Static128.aString108 + " ->";
 		} else if (Static209.aBoolean269 && Static334.aClass321_1.method8486(81) && Static594.anInt8801 > 2) {
 			local63 = Static518.method9300(Static470.aClass2_Sub2_Sub16_10);
 		} else {
@@ -81,17 +81,17 @@ public final class Static556 {
 			}
 		}
 		if (Static594.anInt8801 > 2) {
-			local63 = local63 + "<col=ffffff> / " + (Static594.anInt8801 - 2) + Static32.aClass32_25.method877(Static51.anInt1056);
+			local63 = local63 + "<col=ffffff> / " + (Static594.anInt8801 - 2) + Static32.aClass32_25.method877(client.lang);
 		}
 		if (Static605.aClass158_15 != null) {
 			@Pc(232) Class14 local232 = Static605.aClass158_15.method3403(arg0);
 			if (local232 == null) {
 				local232 = Static180.aClass14_3;
 			}
-			local232.method8843(Static329.anIntArray163, Static605.aClass158_15.anInt3829, Static605.aClass158_15.anInt3813, Static460.anIntArray554, Static605.aClass158_15.anInt3789, Static605.aClass158_15.anInt3756, Static493.aRandom1, local63, Static366.anInt5872, Static605.aClass158_15.anInt3809, Static186.aClass23Array5, Static178.anInt2956, Static157.anInt2786, Static605.aClass158_15.anInt3825);
+			local232.method8843(Static329.anIntArray163, Static605.aClass158_15.anInt3829, Static605.aClass158_15.anInt3813, Static460.anIntArray554, Static605.aClass158_15.anInt3789, Static605.aClass158_15.anInt3756, client.random, local63, Static366.anInt5872, Static605.aClass158_15.anInt3809, Static186.aClass23Array5, client.seed, Static157.anInt2786, Static605.aClass158_15.anInt3825);
 			Static585.method7677(Static329.anIntArray163[2], Static329.anIntArray163[0], Static329.anIntArray163[3], Static329.anIntArray163[1]);
-		} else if (Static71.aClass158_2 != null && Static392.aClass379_4 == Static673.aClass379_8) {
-			@Pc(299) int local299 = Static180.aClass14_3.method8823(Static186.aClass23Array5, Static178.anInt2956, Static192.anInt3132 + 16, local63, Static460.anIntArray554, Static493.aRandom1, Static725.anInt10965 + 4);
+		} else if (Static71.aClass158_2 != null && Static392.game == Static673.runescapeGame) {
+			@Pc(299) int local299 = Static180.aClass14_3.method8823(Static186.aClass23Array5, client.seed, Static192.anInt3132 + 16, local63, Static460.anIntArray554, client.random, Static725.anInt10965 + 4);
 			Static585.method7677(local299 + Static42.aClass383_4.method8751(local63), Static725.anInt10965 - -4, 16, Static192.anInt3132);
 		}
 	}

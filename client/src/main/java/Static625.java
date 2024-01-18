@@ -15,7 +15,7 @@ public final class Static625 {
 	@OriginalMember(owner = "client!tp", name = "b", descriptor = "(I)I")
 	public static int method8344() {
 		@Pc(10) byte local10;
-		if (Static369.anInt4277 < 96) {
+		if (GameShell.maxMemory < 96) {
 			local10 = 1;
 			Static468.method7650();
 		} else {

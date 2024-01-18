@@ -50,7 +50,7 @@ public final class Static441 {
 
 	@OriginalMember(owner = "client!nu", name = "a", descriptor = "(ILclient!cg;)V")
 	public static void method5974(@OriginalArg(1) Class8_Sub2_Sub1_Sub2 arg0) {
-		@Pc(9) int local9 = arg0.anInt10788 - Static333.anInt5474;
+		@Pc(9) int local9 = arg0.anInt10788 - client.cycle;
 		@Pc(20) int local20 = arg0.anInt10779 * 512 + arg0.method9309((byte) 99) * 256;
 		@Pc(32) int local32 = arg0.anInt10782 * 512 + arg0.method9309((byte) 58) * 256;
 		arg0.anInt10722 += (local32 - arg0.anInt10722) / local9;
