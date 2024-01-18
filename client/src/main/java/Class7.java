@@ -58,7 +58,7 @@ public final class Class7 {
 		if (this.anInterface2_1 == null) {
 			@Pc(26) byte[] local26;
 			if (Static186.anObject7 == null) {
-				local26 = Static448.method6113(4.0F, 4.0F, 0.5F, 16.0F, 0.6F, new Class59_Sub1(419684));
+				local26 = Static448.method6113(16, 8, 128, 4.0F, 4.0F, 0.5F, 128, 16.0F, 0.6F, new Class59_Sub1(419684));
 				Static186.anObject7 = Static247.method3524(local26);
 			}
 			local26 = Static377.method5328(false, Static186.anObject7);

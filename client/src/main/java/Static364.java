@@ -31,25 +31,26 @@ public final class Static364 {
 	}
 
 	@OriginalMember(owner = "client!lia", name = "a", descriptor = "(IFFILclient!tk;[BFIBFIIIF)V")
-	public static void method5258(@OriginalArg(1) float arg0, @OriginalArg(2) float arg1, @OriginalArg(3) int arg2, @OriginalArg(4) Class59 arg3, @OriginalArg(5) byte[] arg4, @OriginalArg(6) float arg5, @OriginalArg(9) float arg6, @OriginalArg(12) int arg7, @OriginalArg(13) float arg8) {
-		@Pc(17) float[] local17 = new float[16384];
+	public static void method5258(@OriginalArg(0) int arg0, @OriginalArg(1) float arg1, @OriginalArg(2) float arg2, @OriginalArg(3) int arg3, @OriginalArg(4) Class59 arg4, @OriginalArg(5) byte[] arg5, @OriginalArg(6) float arg6, @OriginalArg(7) int arg7, @OriginalArg(9) float arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12, @OriginalArg(13) float arg13) {
+		@Pc(7) int local7 = arg0 * arg10;
+		@Pc(17) float[] local17 = new float[local7];
 		@Pc(22) int local22;
 		@Pc(48) int local48;
-		for (@Pc(19) int local19 = 0; local19 < 8; local19++) {
-			local22 = arg7;
-			arg3.method1509(arg0 / (float) 128, arg8 * 127.0F, local17, 0, arg6 / (float) 16, arg2, arg1 / (float) 128);
-			for (local48 = 0; local48 < 16384; local48++) {
-				arg4[local22] = (byte) (int) ((float) arg4[local22] + local17[local48]);
+		for (@Pc(19) int local19 = 0; local19 < arg11; local19++) {
+			local22 = arg12;
+			arg4.method1509(arg1 / (float) arg0, arg13 * 127.0F, arg10, local17, 0, arg9 / (float) arg7, arg3, arg2 / (float) arg10, arg7, arg0);
+			for (local48 = 0; local48 < local7; local48++) {
+				arg5[local22] = (byte) (int) ((float) arg5[local22] + local17[local48]);
 				local22++;
 			}
+			arg2 *= 2.0F;
 			arg1 *= 2.0F;
-			arg0 *= 2.0F;
-			arg6 *= 2.0F;
-			arg8 *= arg5;
+			arg9 *= 2.0F;
+			arg13 *= arg6;
 		}
-		local22 = arg7;
-		for (local48 = 0; local48 < 16384; local48++) {
-			arg4[local22] = (byte) (arg4[local22] + 127);
+		local22 = arg12;
+		for (local48 = 0; local48 < local7; local48++) {
+			arg5[local22] = (byte) (arg5[local22] + 127);
 			local22++;
 		}
 	}

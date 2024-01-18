@@ -75,7 +75,7 @@ public final class client extends Applet_Sub1 {
 			Static416.aLong208 = 0L;
 			@Pc(241) client local241 = new client();
 			Static295.aClient1 = local241;
-			local241.method1635(Static598.aClass162_5.method3469() + 32, Static392.aClass379_4.aString114);
+			local241.method1635(37, 667, Static598.aClass162_5.method3469() + 32, 768, Static392.aClass379_4.aString114, 1024);
 			Static353.aFrame10.setLocation(40, 40);
 		} catch (@Pc(265) Exception local265) {
 			Static240.method3496(local265, null);
@@ -951,7 +951,7 @@ public final class client extends Applet_Sub1 {
 			Static416.aBoolean473 = true;
 		}
 		Static295.aClient1 = this;
-		this.method1640(Static302.anInt4867, Static598.aClass162_5.method3469() + 32, Static392.aClass379_4.aString114, Static479.anInt7222);
+		this.method1640(667, Static302.anInt4867, Static598.aClass162_5.method3469() + 32, Static392.aClass379_4.aString114, 37, Static479.anInt7222);
 	}
 
 	@OriginalMember(owner = "client!client", name = "c", descriptor = "(I)V")

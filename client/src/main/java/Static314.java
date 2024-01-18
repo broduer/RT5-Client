@@ -34,10 +34,11 @@ public final class Static314 {
 	}
 
 	@OriginalMember(owner = "client!jw", name = "a", descriptor = "(BFFFFI[BIIFILclient!tk;I)V")
-	public static void method4572(@OriginalArg(1) float arg0, @OriginalArg(2) float arg1, @OriginalArg(3) float arg2, @OriginalArg(4) float arg3, @OriginalArg(6) byte[] arg4, @OriginalArg(8) int arg5, @OriginalArg(9) float arg6, @OriginalArg(11) Class59 arg7) {
-		for (@Pc(5) int local5 = 0; local5 < 16; local5++) {
-			Static364.method5258(arg0, arg3, local5, arg7, arg4, arg6, arg1, arg5, arg2);
-			arg5 += 16384;
+	public static void method4572(@OriginalArg(1) float arg0, @OriginalArg(2) float arg1, @OriginalArg(3) float arg2, @OriginalArg(4) float arg3, @OriginalArg(5) int arg4, @OriginalArg(6) byte[] arg5, @OriginalArg(7) int arg6, @OriginalArg(9) float arg8, @OriginalArg(10) int arg9, @OriginalArg(11) Class59 arg10, @OriginalArg(12) int arg11) {
+		int acc = 0;
+		for (@Pc(5) int local5 = 0; local5 < arg4; local5++) {
+			Static364.method5258(arg6, arg0, arg3, local5, arg10, arg5, arg8, arg4, arg1, arg9, arg11, acc, arg2);
+			acc += arg6 * arg9;
 		}
 	}
 

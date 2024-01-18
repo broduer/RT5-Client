@@ -28,7 +28,7 @@ public final class Static491 {
 		}
 		@Pc(49) Class204 local49 = arg0.aClass204_1;
 		if (local49.method4589() && Static71.anObject4 == null) {
-			local12 = Static448.method6113(4.0F, 4.0F, 0.5F, 16.0F, 0.6F, new Class59_Sub1(419684));
+			local12 = Static448.method6113(16, 8, 128, 4.0F, 4.0F, 0.5F, 128, 16.0F, 0.6F, new Class59_Sub1(419684));
 			Static71.anObject4 = Static247.method3524(local12);
 		}
 	}

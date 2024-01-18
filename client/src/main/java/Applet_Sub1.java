@@ -6,7 +6,6 @@ import java.awt.Container;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Insets;
-import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -108,16 +107,16 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IBIIIZLjava/lang/String;I)V")
-	protected final void method1635(@OriginalArg(3) int arg0, @OriginalArg(6) String arg1) {
+	protected final void method1635(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3, @OriginalArg(6) String arg4, @OriginalArg(7) int arg5) {
 		try {
 			Static631.anApplet4 = null;
-			Static373.anInt5925 = 667;
-			Static680.anInt10317 = 1024;
-			Static52.anInt1063 = 1024;
+			Static373.anInt5925 = arg1;
+			Static680.anInt10317 = arg5;
+			Static52.anInt1063 = arg5;
 			Static241.anInt3973 = 0;
 			Static134.anInt10357 = 0;
-			Static380.anInt5999 = 768;
-			Static54.anInt1088 = 768;
+			Static380.anInt5999 = arg3;
+			Static54.anInt1088 = arg3;
 			Static149.anApplet_Sub1_1 = this;
 			Static353.aFrame10 = new Frame();
 			Static353.aFrame10.setTitle("Jagex");
@@ -127,7 +126,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 			Static353.aFrame10.toFront();
 			@Pc(54) Insets local54 = Static353.aFrame10.getInsets();
 			Static353.aFrame10.setSize(Static52.anInt1063 + local54.left + local54.right, local54.bottom + local54.top + Static54.anInt1088);
-			Static284.aClass392_4 = Static446.aClass392_6 = new Class392(arg0, arg1, 37, true);
+			Static284.aClass392_4 = Static446.aClass392_6 = new Class392(arg2, arg4, arg0, true);
 			@Pc(88) Class272 local88 = Static446.aClass392_6.method8998(this, 1);
 			while (local88.anInt6810 == 0) {
 				Static638.method8402(10L);
@@ -218,19 +217,19 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 	}
 
 	@OriginalMember(owner = "client!kh", name = "a", descriptor = "(IIIILjava/lang/String;II)V")
-	protected final void method1640(@OriginalArg(2) int arg0, @OriginalArg(3) int arg1, @OriginalArg(4) String arg2, @OriginalArg(6) int arg3) {
+	protected final void method1640(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1, @OriginalArg(3) int arg2, @OriginalArg(4) String arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		try {
 			if (Static149.anApplet_Sub1_1 == null) {
 				Static631.anApplet4 = Static166.anApplet1;
-				Static680.anInt10317 = arg0;
-				Static52.anInt1063 = arg0;
-				Static373.anInt5925 = 667;
+				Static680.anInt10317 = arg1;
+				Static52.anInt1063 = arg1;
+				Static373.anInt5925 = arg0;
 				Static134.anInt10357 = 0;
-				Static380.anInt5999 = arg3;
-				Static54.anInt1088 = arg3;
+				Static380.anInt5999 = arg5;
+				Static54.anInt1088 = arg5;
 				Static241.anInt3973 = 0;
 				Static149.anApplet_Sub1_1 = this;
-				Static284.aClass392_4 = Static446.aClass392_6 = new Class392(arg1, arg2, 37, Static166.anApplet1 != null);
+				Static284.aClass392_4 = Static446.aClass392_6 = new Class392(arg2, arg3, arg4, Static166.anApplet1 != null);
 				@Pc(80) Class272 local80 = Static446.aClass392_6.method8998(this, 1);
 				while (local80.anInt6810 == 0) {
 					Static638.method8402(10L);
