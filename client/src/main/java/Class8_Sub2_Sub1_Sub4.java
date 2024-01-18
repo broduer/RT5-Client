@@ -29,7 +29,7 @@ public final class Class8_Sub2_Sub1_Sub4 extends Class8_Sub2_Sub1 implements Int
 	@Override
 	public void method9292(@OriginalArg(0) int arg0, @OriginalArg(1) boolean arg1, @OriginalArg(2) Class19 arg2, @OriginalArg(3) int arg3, @OriginalArg(4) byte arg4, @OriginalArg(5) int arg5, @OriginalArg(6) Class8_Sub2 arg6) {
 		if (arg4 < 101) {
-			Static451.aClass227_171 = null;
+			ServerProt.OPCODE_12 = null;
 		}
 		throw new IllegalStateException();
 	}

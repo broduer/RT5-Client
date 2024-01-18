@@ -7,9 +7,6 @@ public final class Static85 {
 	@OriginalMember(owner = "client!cm", name = "o", descriptor = "I")
 	public static int anInt10703;
 
-	@OriginalMember(owner = "client!cm", name = "p", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_257 = new Class227(76, 9);
-
 	@OriginalMember(owner = "client!cm", name = "a", descriptor = "(II)V")
 	public static void method9269(@OriginalArg(1) int arg0) {
 		@Pc(11) Class2_Sub2_Sub2 local11 = Static440.method5970(2, arg0);

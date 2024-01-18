@@ -10,9 +10,6 @@ public final class Static416 {
 	@OriginalMember(owner = "client!nca", name = "n", descriptor = "J")
 	public static long aLong207;
 
-	@OriginalMember(owner = "client!nca", name = "s", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_165 = new Class227(58, 6);
-
 	@OriginalMember(owner = "client!nca", name = "o", descriptor = "Z")
 	public static boolean aBoolean472 = false;
 

@@ -147,7 +147,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		@Pc(32) int local32 = local8.method7389();
 		Static165.method2607();
 		Static342.method4472(local12);
-		@Pc(46) int local46 = (Static405.aClass153_2.anInt3658 - local8.anInt8412) / 16;
+		@Pc(46) int local46 = (Static405.aClass153_2.length - local8.anInt8412) / 16;
 		Static22.anIntArrayArray11 = new int[local46][4];
 		@Pc(55) int local55;
 		for (@Pc(52) int local52 = 0; local52 < local46; local52++) {

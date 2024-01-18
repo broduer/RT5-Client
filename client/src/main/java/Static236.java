@@ -29,7 +29,7 @@ public final class Static236 {
 	@OriginalMember(owner = "client!hfa", name = "a", descriptor = "(Lclient!gw;I)Z")
 	public static boolean method3451(@OriginalArg(0) Class153 arg0) {
 		try {
-			return Static293.method4341(arg0);
+			return Protocol.read(arg0);
 		} catch (@Pc(15) IOException local15) {
 			if (Static283.anInt4588 == 9) {
 				arg0.aClass350_1 = null;
@@ -39,8 +39,8 @@ public final class Static236 {
 				return true;
 			}
 		} catch (@Pc(29) Exception local29) {
-			@Pc(106) String local106 = "T2 - " + (arg0.aClass227_93 == null ? -1 : arg0.aClass227_93.method5246()) + "," + (arg0.aClass227_94 == null ? -1 : arg0.aClass227_94.method5246()) + "," + (arg0.aClass227_91 == null ? -1 : arg0.aClass227_91.method5246()) + " - " + arg0.anInt3658 + "," + (Static691.anInt10395 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2279 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
-			for (@Pc(108) int local108 = 0; arg0.anInt3658 > local108 && local108 < 50; local108++) {
+			@Pc(106) String local106 = "T2 - " + (arg0.packetType == null ? -1 : arg0.packetType.getOpcode()) + "," + (arg0.lastPacketType2 == null ? -1 : arg0.lastPacketType2.getOpcode()) + "," + (arg0.lastPacketType3 == null ? -1 : arg0.lastPacketType3.getOpcode()) + " - " + arg0.length + "," + (Static691.anInt10395 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray879[0]) + "," + (Static116.anInt2279 + Static556.aClass8_Sub2_Sub1_Sub2_Sub1_2.anIntArray878[0]) + " - ";
+			for (@Pc(108) int local108 = 0; arg0.length > local108 && local108 < 50; local108++) {
 				local106 = local106 + arg0.aClass2_Sub21_Sub2_2.aByteArray93[local108] + ",";
 			}
 			TracingException.report(local29, local106);

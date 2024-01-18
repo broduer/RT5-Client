@@ -8,9 +8,6 @@ public final class Static655 {
 	@OriginalMember(owner = "client!un", name = "K", descriptor = "[Lclient!gca;")
 	public static Class140[] aClass140Array1;
 
-	@OriginalMember(owner = "client!un", name = "I", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_237 = new Class227(18, 4);
-
 	@OriginalMember(owner = "client!un", name = "t", descriptor = "I")
 	public static int anInt9789 = -1;
 

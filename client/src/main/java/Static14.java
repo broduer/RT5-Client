@@ -7,9 +7,6 @@ public final class Static14 {
 	@OriginalMember(owner = "client!ai", name = "G", descriptor = "Ljava/lang/Class;")
 	private static Class aClass1;
 
-	@OriginalMember(owner = "client!ai", name = "K", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_5 = new Class227(64, 3);
-
 	@OriginalMember(owner = "client!ai", name = "L", descriptor = "[I")
 	public static int[] anIntArray25 = new int[] { 36064, 36065, 36066, 36067, 36068, 36069, 36070, 36071, 36096 };
 

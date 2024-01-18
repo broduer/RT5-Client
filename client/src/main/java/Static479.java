@@ -10,9 +10,6 @@ public final class Static479 {
 	@OriginalMember(owner = "client!pc", name = "b", descriptor = "I")
 	public static int anInt7222 = 503;
 
-	@OriginalMember(owner = "client!pc", name = "c", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_177 = new Class227(49, 1);
-
 	@OriginalMember(owner = "client!pc", name = "a", descriptor = "(IZI)V")
 	public static void method6468(@OriginalArg(0) int arg0, @OriginalArg(2) int arg1) {
 		@Pc(13) Class2_Sub19 local13 = Static293.method4342(Static288.aClass347_58, Static405.aClass153_2.aClass186_1);

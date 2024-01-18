@@ -7,9 +7,6 @@ public final class Static542 {
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "Lclient!st;")
 	public static Class23 aClass23_33;
 
-	@OriginalMember(owner = "client!rb", name = "c", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_199 = new Class227(104, 8);
-
 	@OriginalMember(owner = "client!rb", name = "a", descriptor = "([Ljava/lang/Object;B[JII)V")
 	public static void method7207(@OriginalArg(0) Object[] arg0, @OriginalArg(2) long[] arg1, @OriginalArg(3) int arg2, @OriginalArg(4) int arg3) {
 		if (arg2 >= arg3) {

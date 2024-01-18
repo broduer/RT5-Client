@@ -6,11 +6,8 @@ public final class Static563 {
 	@OriginalMember(owner = "client!ro", name = "f", descriptor = "I")
 	public static int anInt8479;
 
-	@OriginalMember(owner = "client!ro", name = "g", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_207 = new Class227(127, 6);
-
 	@OriginalMember(owner = "client!ro", name = "h", descriptor = "I")
-	public static final int anInt8484 = 13156520;
+	public static final int anInt8484 = 0xC8C0A8;
 
 	@OriginalMember(owner = "client!ro", name = "j", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_102 = new Class347(88, -1);

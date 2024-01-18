@@ -13,14 +13,8 @@ public final class Static331 {
 	@OriginalMember(owner = "client!ki", name = "h", descriptor = "Lclient!sb;")
 	public static Class332 aClass332_65;
 
-	@OriginalMember(owner = "client!ki", name = "e", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_138 = new Class227(36, 4);
-
 	@OriginalMember(owner = "client!ki", name = "i", descriptor = "I")
 	public static int anInt5458 = -1;
-
-	@OriginalMember(owner = "client!ki", name = "g", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_139 = new Class227(118, -2);
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "I")
 	public static int anInt5460 = -50;

@@ -5,9 +5,6 @@ public final class Static133 {
 	@OriginalMember(owner = "client!ed", name = "e", descriptor = "F")
 	public static float aFloat63;
 
-	@OriginalMember(owner = "client!ed", name = "h", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_55 = new Class227(90, 17);
-
 	@OriginalMember(owner = "client!ed", name = "g", descriptor = "Lclient!sia;")
 	public static final Class341 aClass341_13 = new Class341();
 

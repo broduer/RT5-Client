@@ -3,18 +3,15 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static408 {
 
-	@OriginalMember(owner = "client!ms", name = "d", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_162 = new Class227(102, -1);
-
 	@OriginalMember(owner = "client!ms", name = "a", descriptor = "(I)V")
 	public static void method5639() {
 		client.instance.method1634();
 		Static524.aClass153_3.method3272();
 		Static524.aClass153_3.anInt3656 = 0;
 		Static249.anInt4019 = 0;
-		Static524.aClass153_3.aClass227_91 = null;
-		Static524.aClass153_3.aClass227_94 = null;
-		Static524.aClass153_3.aClass227_92 = null;
+		Static524.aClass153_3.lastPacketType3 = null;
+		Static524.aClass153_3.lastPacketType2 = null;
+		Static524.aClass153_3.lastPacketType = null;
 		Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
 		Static102.method2022();
 		Static251.anInt4047 = 0;

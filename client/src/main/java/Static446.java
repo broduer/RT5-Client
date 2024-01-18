@@ -10,9 +10,6 @@ public final class Static446 {
 	@OriginalMember(owner = "client!oaa", name = "c", descriptor = "Lclient!tka;")
 	public static final Class357 liveMode = new Class357("LIVE", "", "", 0);
 
-	@OriginalMember(owner = "client!oaa", name = "n", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_170 = new Class227(87, -2);
-
 	@OriginalMember(owner = "client!oaa", name = "g", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray35 = new String[100];
 

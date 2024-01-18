@@ -5,12 +5,6 @@ public final class Static207 {
 	@OriginalMember(owner = "client!gh", name = "a", descriptor = "Lclient!hla;")
 	public static final Class168 aClass168_4 = new Class168();
 
-	@OriginalMember(owner = "client!gh", name = "d", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_127 = new Class227(23, 6);
-
-	@OriginalMember(owner = "client!gh", name = "c", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_128 = new Class227(35, 2);
-
 	@OriginalMember(owner = "client!gh", name = "a", descriptor = "(I)V")
 	public static void method4439() {
 		Static467.anIntArray568 = null;

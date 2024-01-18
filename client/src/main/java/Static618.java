@@ -7,14 +7,8 @@ public final class Static618 {
 	@OriginalMember(owner = "client!tja", name = "B", descriptor = "I")
 	public static int anInt9475;
 
-	@OriginalMember(owner = "client!tja", name = "I", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_226 = new Class227(141, 2);
-
 	@OriginalMember(owner = "client!tja", name = "G", descriptor = "Lclient!sia;")
 	public static final Class341 aClass341_68 = new Class341();
-
-	@OriginalMember(owner = "client!tja", name = "z", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_227 = new Class227(81, 12);
 
 	@OriginalMember(owner = "client!tja", name = "a", descriptor = "(III)Z")
 	public static boolean method8323(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {

@@ -2,9 +2,6 @@ import org.openrs2.deob.annotation.OriginalMember;
 
 public final class Static557 {
 
-	@OriginalMember(owner = "client!rja", name = "G", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_205 = new Class227(61, 20);
-
 	@OriginalMember(owner = "client!rja", name = "C", descriptor = "Lclient!hc;")
 	public static final Class155 aClass155_37 = new Class155(0);
 

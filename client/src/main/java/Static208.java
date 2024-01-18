@@ -8,9 +8,6 @@ public final class Static208 {
 	@OriginalMember(owner = "client!gha", name = "u", descriptor = "Lclient!it;")
 	public static final Class184 aClass184_6 = new Class184(11, 0, 1, 2);
 
-	@OriginalMember(owner = "client!gha", name = "w", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_83 = new Class227(113, 3);
-
 	@OriginalMember(owner = "client!gha", name = "t", descriptor = "[Lclient!mj;")
 	public static final Class245[] aClass245Array1 = new Class245[37];
 

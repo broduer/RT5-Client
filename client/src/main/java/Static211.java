@@ -10,9 +10,6 @@ public final class Static211 {
 	@OriginalMember(owner = "client!gj", name = "f", descriptor = "I")
 	public static int anInt5594;
 
-	@OriginalMember(owner = "client!gj", name = "l", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_143 = new Class227(83, 7);
-
 	@OriginalMember(owner = "client!gj", name = "a", descriptor = "(IILjava/lang/String;)V")
 	public static void method5005(@OriginalArg(0) int arg0, @OriginalArg(2) String arg1) {
 		@Pc(16) Class2_Sub2_Sub2 local16 = Static440.method5970(3, arg0);

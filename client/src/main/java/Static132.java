@@ -13,9 +13,6 @@ public final class Static132 {
 	@OriginalMember(owner = "client!ec", name = "H", descriptor = "Z")
 	public static boolean aBoolean208 = false;
 
-	@OriginalMember(owner = "client!ec", name = "A", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_54 = new Class227(91, -1);
-
 	@OriginalMember(owner = "client!ec", name = "e", descriptor = "(I)V")
 	public static void method2312() {
 		@Pc(16) byte[] local16;

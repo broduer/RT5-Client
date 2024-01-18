@@ -7,12 +7,6 @@ public final class Static137 {
 	@OriginalMember(owner = "client!ef", name = "g", descriptor = "Ljava/util/Hashtable;")
 	public static Hashtable nativeLibraries = new Hashtable();
 
-	@OriginalMember(owner = "client!ef", name = "c", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_56 = new Class227(11, 3);
-
-	@OriginalMember(owner = "client!ef", name = "l", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_57 = new Class227(24, -1);
-
 	@OriginalMember(owner = "client!ef", name = "e", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_28 = new Class347(7, -1);
 

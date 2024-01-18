@@ -16,9 +16,6 @@ public final class Static346 {
 	@OriginalMember(owner = "client!kt", name = "R", descriptor = "[I")
 	public static int[] anIntArray420 = new int[4];
 
-	@OriginalMember(owner = "client!kt", name = "S", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_145 = new Class227(124, 1);
-
 	@OriginalMember(owner = "client!kt", name = "a", descriptor = "(BB)C")
 	public static char method5091(@OriginalArg(0) byte arg0) {
 		@Pc(14) int local14 = arg0 & 0xFF;
@@ -65,8 +62,8 @@ public final class Static346 {
 			Static416.anInt6398 = Static18.aClass28_2.method739();
 			Static18.aClass28_2.method743(Static592.aClass2_Sub45Array1);
 		}
-		if (Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8412 != Static405.aClass153_2.anInt3658) {
-			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8412 + " psize:" + Static405.aClass153_2.anInt3658);
+		if (Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8412 != Static405.aClass153_2.length) {
+			throw new RuntimeException("gnp1 pos:" + Static405.aClass153_2.aClass2_Sub21_Sub2_2.anInt8412 + " psize:" + Static405.aClass153_2.length);
 		}
 		for (local33 = 0; local33 < Static390.anInt6146; local33++) {
 			if (Static18.aClass28_2.method738(Static103.anIntArray187[local33]) == null) {

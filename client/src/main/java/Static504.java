@@ -5,9 +5,6 @@ public final class Static504 {
 	@OriginalMember(owner = "client!pt", name = "s", descriptor = "Lclient!sb;")
 	public static Class332 aClass332_95;
 
-	@OriginalMember(owner = "client!pt", name = "p", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_188 = new Class227(16, 3);
-
 	@OriginalMember(owner = "client!pt", name = "r", descriptor = "Z")
 	public static boolean aBoolean579 = false;
 

@@ -10,9 +10,6 @@ public final class Static390 {
 	@OriginalMember(owner = "client!mda", name = "x", descriptor = "[I")
 	public static final int[] anIntArray476 = new int[] { 1, 4, 1, 2, 1 };
 
-	@OriginalMember(owner = "client!mda", name = "z", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_158 = new Class227(53, -1);
-
 	@OriginalMember(owner = "client!mda", name = "H", descriptor = "I")
 	public static int anInt6146 = 0;
 

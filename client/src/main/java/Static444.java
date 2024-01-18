@@ -13,9 +13,6 @@ public final class Static444 {
 	@OriginalMember(owner = "client!o", name = "jb", descriptor = "Lclient!jg;")
 	public static final Class193 aClass193_1 = new Class193();
 
-	@OriginalMember(owner = "client!o", name = "O", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_169 = new Class227(42, -1);
-
 	@OriginalMember(owner = "client!o", name = "a", descriptor = "(Lclient!sb;Lclient!sb;Lclient!sb;BLclient!sb;)V")
 	public static void method5994(@OriginalArg(0) Class332 arg0, @OriginalArg(1) Class332 arg1, @OriginalArg(2) Class332 arg2, @OriginalArg(4) Class332 arg3) {
 		Static262.aClass332_56 = arg2;

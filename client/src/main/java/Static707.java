@@ -7,9 +7,6 @@ public final class Static707 {
 	@OriginalMember(owner = "client!wg", name = "c", descriptor = "I")
 	public static int anInt10669;
 
-	@OriginalMember(owner = "client!wg", name = "b", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_256 = new Class227(107, 4);
-
 	@OriginalMember(owner = "client!wg", name = "a", descriptor = "(B)V")
 	public static void method9234() {
 		Static284.anInt4597 = -2;

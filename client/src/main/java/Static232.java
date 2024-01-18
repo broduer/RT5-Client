@@ -7,9 +7,6 @@ public final class Static232 {
 	@OriginalMember(owner = "client!hda", name = "id", descriptor = "I")
 	public static int anInt3840;
 
-	@OriginalMember(owner = "client!hda", name = "i", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_103 = new Class227(38, 0);
-
 	@OriginalMember(owner = "client!hda", name = "sd", descriptor = "I")
 	public static int anInt3774 = 0;
 

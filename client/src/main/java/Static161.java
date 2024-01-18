@@ -10,9 +10,6 @@ public final class Static161 {
 	@OriginalMember(owner = "client!fa", name = "b", descriptor = "[[[J")
 	public static long[][][] aLongArrayArrayArray1;
 
-	@OriginalMember(owner = "client!fa", name = "n", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_62 = new Class227(22, 10);
-
 	@OriginalMember(owner = "client!fa", name = "q", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_29 = new Class347(33, 0);
 
@@ -265,7 +262,7 @@ public final class Static161 {
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(I)V")
 	public static void method2588() {
 		@Pc(8) Class2_Sub21_Sub2 local8 = Static405.aClass153_2.aClass2_Sub21_Sub2_2;
-		while (local8.method7427(Static405.aClass153_2.anInt3658) >= 15) {
+		while (local8.method7427(Static405.aClass153_2.length) >= 15) {
 			@Pc(22) int local22 = local8.method7419(15);
 			if (local22 == 32767) {
 				break;

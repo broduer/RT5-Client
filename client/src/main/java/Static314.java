@@ -8,16 +8,11 @@ public final class Static314 {
 	@OriginalMember(owner = "client!jw", name = "v", descriptor = "I")
 	public static int anInt5052;
 
-	@OriginalMember(owner = "client!jw", name = "D", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_132 = new Class227(27, 0);
-
 	@OriginalMember(owner = "client!jw", name = "c", descriptor = "(B)V")
 	public static void method4567() {
-		@Pc(5) Class82 local5 = Static580.aClass82_186;
 		synchronized (Static580.aClass82_186) {
 			Static580.aClass82_186.method2157();
 		}
-		local5 = Static54.aClass82_25;
 		synchronized (Static54.aClass82_25) {
 			Static54.aClass82_25.method2157();
 		}

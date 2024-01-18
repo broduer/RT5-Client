@@ -8,9 +8,6 @@ public final class Static36 {
 	@OriginalMember(owner = "client!bda", name = "E", descriptor = "Lclient!nh;")
 	public static Class262 aClass262_1;
 
-	@OriginalMember(owner = "client!bda", name = "D", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_15 = new Class227(70, -2);
-
 	@OriginalMember(owner = "client!bda", name = "a", descriptor = "(IB)V")
 	public static void method977(@OriginalArg(0) int arg0, @OriginalArg(1) byte arg1) {
 		Static101.method2000();

@@ -8,9 +8,6 @@ public final class Static176 {
 	@OriginalMember(owner = "client!fi", name = "h", descriptor = "I")
 	public static int anInt7555;
 
-	@OriginalMember(owner = "client!fi", name = "j", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_187 = new Class227(14, 3);
-
 	@OriginalMember(owner = "client!fi", name = "a", descriptor = "()V")
 	public static void method6695() {
 		Static374.method5310(Static299.anInt4840);

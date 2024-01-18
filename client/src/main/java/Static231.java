@@ -38,9 +38,6 @@ public final class Static231 {
 	@OriginalMember(owner = "client!hd", name = "e", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_41 = new Class347(34, 4);
 
-	@OriginalMember(owner = "client!hd", name = "m", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_102 = new Class227(34, 6);
-
 	@OriginalMember(owner = "client!hd", name = "b", descriptor = "(I)V")
 	public static void method3375() {
 		if (Static163.aClass19_17 == null) {

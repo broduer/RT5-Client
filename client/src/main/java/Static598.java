@@ -10,9 +10,6 @@ public final class Static598 {
 	@OriginalMember(owner = "client!ss", name = "f", descriptor = "I")
 	public static int anInt8856;
 
-	@OriginalMember(owner = "client!ss", name = "e", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_219 = new Class227(119, 6);
-
 	@OriginalMember(owner = "client!ss", name = "i", descriptor = "S")
 	public static short aShort120 = 32767;
 

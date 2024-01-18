@@ -10,9 +10,6 @@ public final class Static344 {
 	@OriginalMember(owner = "client!kr", name = "g", descriptor = "Lclient!sb;")
 	public static Class332 aClass332_73;
 
-	@OriginalMember(owner = "client!kr", name = "m", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_144 = new Class227(92, 4);
-
 	@OriginalMember(owner = "client!kr", name = "i", descriptor = "I")
 	public static int anInt5637 = -50;
 

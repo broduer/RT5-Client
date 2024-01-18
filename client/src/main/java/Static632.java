@@ -19,9 +19,6 @@ public final class Static632 {
 	@OriginalMember(owner = "client!u", name = "e", descriptor = "[F")
 	public static final float[] aFloatArray71 = new float[4];
 
-	@OriginalMember(owner = "client!u", name = "p", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_229 = new Class227(89, -1);
-
 	@OriginalMember(owner = "client!u", name = "a", descriptor = "(Lclient!ge;I)Lclient!is;")
 	public static Class138 method8366(@OriginalArg(0) Class2_Sub21 arg0) {
 		@Pc(10) Class405 local10 = Static33.method882()[arg0.method7403()];

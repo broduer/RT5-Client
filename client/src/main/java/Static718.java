@@ -11,9 +11,6 @@ public final class Static718 {
 	@OriginalMember(owner = "client!wo", name = "x", descriptor = "Z")
 	public static boolean aBoolean824;
 
-	@OriginalMember(owner = "client!wo", name = "E", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_258 = new Class227(133, -1);
-
 	@OriginalMember(owner = "client!wo", name = "r", descriptor = "Z")
 	public static boolean aBoolean823 = false;
 

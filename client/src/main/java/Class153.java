@@ -20,10 +20,10 @@ public final class Class153 {
 	public int anInt3653;
 
 	@OriginalMember(owner = "client!gw", name = "z", descriptor = "Lclient!lga;")
-	public Class227 aClass227_91;
+	public ServerProt lastPacketType3;
 
 	@OriginalMember(owner = "client!gw", name = "o", descriptor = "Lclient!lga;")
-	public Class227 aClass227_92;
+	public ServerProt lastPacketType;
 
 	@OriginalMember(owner = "client!gw", name = "B", descriptor = "I")
 	public int anInt3654;
@@ -32,7 +32,7 @@ public final class Class153 {
 	public int anInt3655;
 
 	@OriginalMember(owner = "client!gw", name = "e", descriptor = "Lclient!lga;")
-	public Class227 aClass227_94;
+	public ServerProt lastPacketType2;
 
 	@OriginalMember(owner = "client!gw", name = "w", descriptor = "I")
 	private int anInt3659;
@@ -50,10 +50,10 @@ public final class Class153 {
 	public final Class2_Sub21_Sub2 aClass2_Sub21_Sub2_2 = new Class2_Sub21_Sub2(15000);
 
 	@OriginalMember(owner = "client!gw", name = "j", descriptor = "Lclient!lga;")
-	public Class227 aClass227_93 = null;
+	public ServerProt packetType = null;
 
 	@OriginalMember(owner = "client!gw", name = "u", descriptor = "I")
-	public int anInt3658 = 0;
+	public int length = 0;
 
 	@OriginalMember(owner = "client!gw", name = "g", descriptor = "I")
 	public int anInt3657 = 0;

@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static570 {
 
-	@OriginalMember(owner = "client!rv", name = "p", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_208 = new Class227(99, -1);
-
 	@OriginalMember(owner = "client!rv", name = "a", descriptor = "(JJ)J")
 	public static long method7555(@OriginalArg(0) long arg0, @OriginalArg(1) long arg1) {
 		return arg0 & arg1;

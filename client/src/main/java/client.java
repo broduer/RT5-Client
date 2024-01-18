@@ -62,6 +62,8 @@ public final class client extends GameShell {
 	public static int lang = 0;
 	@OriginalMember(owner = "client!cu", name = "gb", descriptor = "Lclient!sb;")
 	public static Class332 js5Archive5;
+	@OriginalMember(owner = "client!lm", name = "r", descriptor = "I")
+	public static int js5ConnectDelay = 0;
 
 	@OriginalMember(owner = "client!client", name = "main", descriptor = "([Ljava/lang/String;)V")
 	public static void main(@OriginalArg(0) String[] args) {
@@ -221,9 +223,9 @@ public final class client extends GameShell {
 	private void js5Connect() {
 		if (Static522.js5PrevErrors < js5NetQueue.errors) {
 			Static344.aClass231_1.method5267();
-			Static370.js5ConnectDelay = (js5NetQueue.errors * 50 - 50) * 5;
-			if (Static370.js5ConnectDelay > 3000) {
-				Static370.js5ConnectDelay = 3000;
+			js5ConnectDelay = (js5NetQueue.errors * 50 - 50) * 5;
+			if (js5ConnectDelay > 3000) {
+				js5ConnectDelay = 3000;
 			}
 			if (js5NetQueue.errors >= 2 && js5NetQueue.response == 6) {
 				this.error("js5connect_outofdate");
@@ -250,8 +252,8 @@ public final class client extends GameShell {
 			}
 		}
 		Static522.js5PrevErrors = js5NetQueue.errors;
-		if (Static370.js5ConnectDelay > 0) {
-			Static370.js5ConnectDelay--;
+		if (js5ConnectDelay > 0) {
+			js5ConnectDelay--;
 			return;
 		}
 		try {

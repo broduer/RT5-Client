@@ -14,9 +14,6 @@ public final class Static84 {
 	@OriginalMember(owner = "client!client", name = "vb", descriptor = "Lclient!pc;")
 	public static final Class289 aClass289_6 = new Class289(11, 8);
 
-	@OriginalMember(owner = "client!client", name = "tb", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_36 = new Class227(28, 4);
-
 	@OriginalMember(owner = "client!client", name = "a", descriptor = "()V")
 	public static void method1652() {
 		@Pc(1) int local1 = Static338.anInt5584;

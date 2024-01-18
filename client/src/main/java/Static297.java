@@ -9,9 +9,6 @@ public final class Static297 {
 	@OriginalMember(owner = "client!jha", name = "o", descriptor = "Lclient!ss;")
 	public static final Class347 aClass347_59 = new Class347(9, 3);
 
-	@OriginalMember(owner = "client!jha", name = "g", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_125 = new Class227(66, 10);
-
 	@OriginalMember(owner = "client!jha", name = "k", descriptor = "[Ljava/lang/String;")
 	public static final String[] aStringArray24 = new String[8];
 

@@ -8,9 +8,6 @@ public final class Static356 {
 	@OriginalMember(owner = "client!le", name = "d", descriptor = "I")
 	public static int anInt5793;
 
-	@OriginalMember(owner = "client!le", name = "a", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_149 = new Class227(2, 6);
-
 	@OriginalMember(owner = "client!le", name = "h", descriptor = "J")
 	public static long aLong177 = 1L;
 

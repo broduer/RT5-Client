@@ -315,7 +315,7 @@ public final class Static364 {
 					Static135.anInt8246 = 13;
 				} else if (local360 == 15) {
 					Static135.anInt8246 = 19;
-					Static524.aClass153_3.anInt3658 = -2;
+					Static524.aClass153_3.length = -2;
 				} else if (local360 == 23 && Static76.anInt1608 < 3) {
 					Static330.anInt5453 = 0;
 					Static135.anInt8246 = 1;
@@ -488,7 +488,7 @@ public final class Static364 {
 						Static342.method4471(2);
 						Static249.method3538();
 						Static81.method1586(7);
-						Static524.aClass153_3.aClass227_93 = null;
+						Static524.aClass153_3.packetType = null;
 						return;
 					}
 					Static135.anInt8246 = 16;
@@ -509,21 +509,21 @@ public final class Static364 {
 						}
 						Static524.aClass153_3.aClass350_1.method7936(local1435.aByteArray93, 1, 3);
 					}
-					Static524.aClass153_3.aClass227_93 = Static585.method7684()[local1435.method7428()];
-					Static524.aClass153_3.anInt3658 = local1435.method7389();
+					Static524.aClass153_3.packetType = Static585.method7684()[local1435.method7428()];
+					Static524.aClass153_3.length = local1435.method7389();
 					Static135.anInt8246 = 15;
 				}
 				if (Static135.anInt8246 == 15) {
-					if (Static524.aClass153_3.aClass350_1.method7939(Static524.aClass153_3.anInt3658)) {
-						Static524.aClass153_3.aClass350_1.method7936(Static524.aClass153_3.aClass2_Sub21_Sub2_2.aByteArray93, Static524.aClass153_3.anInt3658, 0);
+					if (Static524.aClass153_3.aClass350_1.method7939(Static524.aClass153_3.length)) {
+						Static524.aClass153_3.aClass350_1.method7936(Static524.aClass153_3.aClass2_Sub21_Sub2_2.aByteArray93, Static524.aClass153_3.length, 0);
 						Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
-						local360 = Static524.aClass153_3.anInt3658;
+						local360 = Static524.aClass153_3.length;
 						Static135.anInt8246 = 0;
 						Static342.method4471(2);
 						Static254.method3605();
 						Static168.method2633(Static524.aClass153_3.aClass2_Sub21_Sub2_2);
 						Static62.anInt1472 = -1;
-						if (Static524.aClass153_3.aClass227_93 == Static291.aClass227_123) {
+						if (Static524.aClass153_3.packetType == ServerProt.OPCODE_128) {
 							Static466.method6332();
 						} else {
 							GameShell.method5862();
@@ -531,29 +531,29 @@ public final class Static364 {
 						if (Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 != local360) {
 							throw new RuntimeException("lswp pos:" + Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 + " psize:" + local360);
 						}
-						Static524.aClass153_3.aClass227_93 = null;
+						Static524.aClass153_3.packetType = null;
 					}
 				} else if (Static135.anInt8246 == 19) {
-					if (Static524.aClass153_3.anInt3658 == -2) {
+					if (Static524.aClass153_3.length == -2) {
 						if (!Static524.aClass153_3.aClass350_1.method7939(2)) {
 							return;
 						}
 						Static524.aClass153_3.aClass350_1.method7936(Static524.aClass153_3.aClass2_Sub21_Sub2_2.aByteArray93, 2, 0);
 						Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
-						Static524.aClass153_3.anInt3658 = Static524.aClass153_3.aClass2_Sub21_Sub2_2.method7389();
+						Static524.aClass153_3.length = Static524.aClass153_3.aClass2_Sub21_Sub2_2.method7389();
 					}
-					if (Static524.aClass153_3.aClass350_1.method7939(Static524.aClass153_3.anInt3658)) {
-						Static524.aClass153_3.aClass350_1.method7936(Static524.aClass153_3.aClass2_Sub21_Sub2_2.aByteArray93, Static524.aClass153_3.anInt3658, 0);
+					if (Static524.aClass153_3.aClass350_1.method7939(Static524.aClass153_3.length)) {
+						Static524.aClass153_3.aClass350_1.method7936(Static524.aClass153_3.aClass2_Sub21_Sub2_2.aByteArray93, Static524.aClass153_3.length, 0);
 						Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 = 0;
 						Static135.anInt8246 = 0;
-						local360 = Static524.aClass153_3.anInt3658;
+						local360 = Static524.aClass153_3.length;
 						Static342.method4471(15);
 						Static94.method1841();
 						Static168.method2633(Static524.aClass153_3.aClass2_Sub21_Sub2_2);
 						if (local360 != Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412) {
 							throw new RuntimeException("lswpr pos:" + Static524.aClass153_3.aClass2_Sub21_Sub2_2.anInt8412 + " psize:" + local360);
 						}
-						Static524.aClass153_3.aClass227_93 = null;
+						Static524.aClass153_3.packetType = null;
 					}
 				}
 			} else if (Static524.aClass153_3.aClass350_1.method7939(1)) {

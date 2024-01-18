@@ -4,9 +4,6 @@ import org.openrs2.deob.annotation.Pc;
 
 public final class Static287 {
 
-	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_119 = new Class227(19, 8);
-
 	@OriginalMember(owner = "client!jaa", name = "a", descriptor = "(I)[Lclient!tka;")
 	public static Class357[] method4153() {
 		return new Class357[] { Static446.liveMode, Static704.wtrcMode, Static713.wtqaMode, Static425.wtwipMode, Static16.localMode, Static280.wtiMode, Static682.intbetaMode };

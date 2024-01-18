@@ -9,12 +9,6 @@ public final class Static286 {
 	@OriginalMember(owner = "client!iw", name = "d", descriptor = "[I")
 	public static int[] anIntArray358;
 
-	@OriginalMember(owner = "client!iw", name = "e", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_117 = new Class227(32, -1);
-
-	@OriginalMember(owner = "client!iw", name = "f", descriptor = "Lclient!lga;")
-	public static final Class227 aClass227_118 = new Class227(95, 6);
-
 	@OriginalMember(owner = "client!iw", name = "c", descriptor = "Lclient!av;")
 	public static final Class28 aClass28_23 = new Class28(32);
 
