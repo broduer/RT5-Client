@@ -26,7 +26,7 @@ public final class Static480 {
 			@Pc(72) int[] local72 = arg2;
 			@Pc(77) int[] local77 = new int[local70 * local59];
 			while (true) {
-				OpenGL.glTexImage2Di(arg1, local47, arg3, arg0, arg4, 0, 32993, arg5, local72, 0);
+				OpenGL.glTexImage2Di(arg1, local47, arg3, arg0, arg4, 0, OpenGL.GL_BGRA, arg5, local72, 0);
 				if (local55 <= 1) {
 					return;
 				}

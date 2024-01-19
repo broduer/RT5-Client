@@ -48,8 +48,8 @@ public final class Class2_Sub2_Sub19 extends Class2_Sub2 implements Interface3 {
 		this.anInt9828 = arg3;
 		OpenGL.glGenRenderbuffersEXT(1, Static708.anIntArray862, 0);
 		this.anInt9819 = Static708.anIntArray862[0];
-		OpenGL.glBindRenderbufferEXT(36161, this.anInt9819);
-		OpenGL.glRenderbufferStorageEXT(36161, this.anInt9826, this.anInt9818, this.anInt9828);
+		OpenGL.glBindRenderbufferEXT(OpenGL.GL_RENDERBUFFER, this.anInt9819);
+		OpenGL.glRenderbufferStorageEXT(OpenGL.GL_RENDERBUFFER, this.anInt9826, this.anInt9818, this.anInt9828);
 		this.anInt9815 = this.anInt9818 * this.anInt9828 * this.aClass19_Sub3_38.method4903(this.anInt9826);
 	}
 
@@ -61,8 +61,8 @@ public final class Class2_Sub2_Sub19 extends Class2_Sub2 implements Interface3 {
 		this.anInt9828 = arg3;
 		OpenGL.glGenRenderbuffersEXT(1, Static708.anIntArray862, 0);
 		this.anInt9819 = Static708.anIntArray862[0];
-		OpenGL.glBindRenderbufferEXT(36161, this.anInt9819);
-		OpenGL.glRenderbufferStorageMultisampleEXT(36161, arg4, this.anInt9826, this.anInt9818, this.anInt9828);
+		OpenGL.glBindRenderbufferEXT(OpenGL.GL_RENDERBUFFER, this.anInt9819);
+		OpenGL.glRenderbufferStorageMultisampleEXT(OpenGL.GL_RENDERBUFFER, arg4, this.anInt9826, this.anInt9818, this.anInt9828);
 		this.anInt9815 = this.anInt9828 * this.anInt9818 * this.aClass19_Sub3_38.method4903(this.anInt9826);
 	}
 
@@ -75,7 +75,7 @@ public final class Class2_Sub2_Sub19 extends Class2_Sub2 implements Interface3 {
 
 	@OriginalMember(owner = "client!ut", name = "b", descriptor = "(III)V")
 	public void method6134(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1) {
-		OpenGL.glFramebufferRenderbufferEXT(arg1, arg0, 36161, this.anInt9819);
+		OpenGL.glFramebufferRenderbufferEXT(arg1, arg0, OpenGL.GL_RENDERBUFFER, this.anInt9819);
 		this.anInt9822 = arg0;
 		this.anInt9821 = arg1;
 	}
@@ -83,7 +83,7 @@ public final class Class2_Sub2_Sub19 extends Class2_Sub2 implements Interface3 {
 	@OriginalMember(owner = "client!ut", name = "a", descriptor = "(I)V")
 	@Override
 	public void method6814() {
-		OpenGL.glFramebufferRenderbufferEXT(this.anInt9821, this.anInt9822, 36161, 0);
+		OpenGL.glFramebufferRenderbufferEXT(this.anInt9821, this.anInt9822, OpenGL.GL_RENDERBUFFER, 0);
 		this.anInt9822 = -1;
 		this.anInt9821 = -1;
 	}

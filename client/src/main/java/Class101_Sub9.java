@@ -65,31 +65,31 @@ public final class Class101_Sub9 extends Class101 {
 			} else {
 				super.aClass19_Sub3_42.method4876(this.aClass329_6.aClass93_Sub2Array3[0]);
 			}
-			OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 65, 0.0F, 0.0F, 0.0F, 1.0F);
 		} else if (this.aClass329_6.aBoolean655) {
 			super.aClass19_Sub3_42.method4876(this.aClass329_6.aClass93_Sub3_2);
-			OpenGL.glProgramLocalParameter4fARB(34336, 65, this.aFloat220, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 65, this.aFloat220, 0.0F, 0.0F, 1.0F);
 		} else {
 			local64 = super.aClass19_Sub3_42.anInt7987 % 4000 * 16 / 4000;
 			super.aClass19_Sub3_42.method4876(this.aClass329_6.aClass93_Sub2Array3[local64]);
-			OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 65, 0.0F, 0.0F, 0.0F, 1.0F);
 		}
 		super.aClass19_Sub3_42.method4889(0);
 		if ((arg1 & 0x40) == 0) {
 			Static632.aFloatArray70[1] = super.aClass19_Sub3_42.aFloat149 * super.aClass19_Sub3_42.aFloat143;
 			Static632.aFloatArray70[2] = super.aClass19_Sub3_42.aFloat149 * super.aClass19_Sub3_42.aFloat137;
 			Static632.aFloatArray70[0] = super.aClass19_Sub3_42.aFloat149 * super.aClass19_Sub3_42.aFloat148;
-			OpenGL.glProgramLocalParameter4fvARB(34336, 66, Static632.aFloatArray70, 0);
+			OpenGL.glProgramLocalParameter4fvARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 66, Static632.aFloatArray70, 0);
 		} else {
-			OpenGL.glProgramLocalParameter4fARB(34336, 66, 1.0F, 1.0F, 1.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 66, 1.0F, 1.0F, 1.0F, 1.0F);
 		}
 		local64 = arg1 & 0x3;
 		if (local64 == 2) {
-			OpenGL.glProgramLocalParameter4fARB(34336, 64, 0.05F, 1.0F, 1.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 64, 0.05F, 1.0F, 1.0F, 1.0F);
 		} else if (local64 == 3) {
-			OpenGL.glProgramLocalParameter4fARB(34336, 64, 0.1F, 1.0F, 1.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 64, 0.1F, 1.0F, 1.0F, 1.0F);
 		} else {
-			OpenGL.glProgramLocalParameter4fARB(34336, 64, 0.025F, 1.0F, 1.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 64, 0.025F, 1.0F, 1.0F, 1.0F);
 		}
 	}
 
@@ -108,20 +108,20 @@ public final class Class101_Sub9 extends Class101 {
 		super.aClass19_Sub3_42.method4906(7681, 260);
 		super.aClass19_Sub3_42.method4904(0, 34166);
 		super.aClass19_Sub3_42.method4889(0);
-		OpenGL.glBindProgramARB(34336, this.aClass71_5.anInt1805);
-		OpenGL.glEnable(34336);
+		OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, this.aClass71_5.anInt1805);
+		OpenGL.glEnable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 		this.aClass36_6.method541();
 		this.aClass36_6.method539(1);
 		super.aClass19_Sub3_42.method4889(1);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadIdentity();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		super.aClass19_Sub3_42.method4866(0);
 		super.aClass19_Sub3_42.method4904(0, 5890);
 		super.aClass19_Sub3_42.method4889(0);
-		OpenGL.glBindProgramARB(34336, 0);
-		OpenGL.glDisable(34336);
-		OpenGL.glDisable(34820);
+		OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
+		OpenGL.glDisable(OpenGL.GL_VERTEX_PROGRAM_ARB);
+		OpenGL.glDisable(OpenGL.GL_FRAGMENT_PROGRAM_ARB);
 		this.aClass36_6.method541();
 	}
 
@@ -144,22 +144,22 @@ public final class Class101_Sub9 extends Class101 {
 		}
 		this.aClass36_6.method542('\u0000');
 		super.aClass19_Sub3_42.method4889(1);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadMatrixf(super.aClass19_Sub3_42.aClass73_Sub3_5.method5004(), 0);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		super.aClass19_Sub3_42.method4889(0);
 		if (this.anInt10899 == super.aClass19_Sub3_42.anInt7987) {
 			return;
 		}
 		@Pc(58) int local58 = super.aClass19_Sub3_42.anInt7987 % 5000 * 128 / 5000;
 		for (@Pc(60) int local60 = 0; local60 < 64; local60++) {
-			OpenGL.glProgramLocalParameter4fvARB(34336, local60, this.aFloatArray83, local58);
+			OpenGL.glProgramLocalParameter4fvARB(OpenGL.GL_VERTEX_PROGRAM_ARB, local60, this.aFloatArray83, local58);
 			local58 += 2;
 		}
 		if (this.aClass329_6.aBoolean655) {
 			this.aFloat220 = (float) (super.aClass19_Sub3_42.anInt7987 % 4000) / 4000.0F;
 		} else {
-			OpenGL.glProgramLocalParameter4fARB(34336, 65, 0.0F, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 65, 0.0F, 0.0F, 0.0F, 1.0F);
 		}
 		this.anInt10899 = super.aClass19_Sub3_42.anInt7987;
 	}

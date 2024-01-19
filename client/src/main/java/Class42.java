@@ -50,15 +50,15 @@ public final class Class42 {
 	private void method610(@OriginalArg(1) Class19_Sub3 arg0) {
 		Static481.aFloat124 = arg0.aFloat149;
 		arg0.method4902();
-		OpenGL.glDisable(16384);
-		OpenGL.glDisable(16385);
+		OpenGL.glDisable(OpenGL.GL_LIGHT0);
+		OpenGL.glDisable(OpenGL.GL_LIGHT1);
 		arg0.method4847(false);
 		OpenGL.glNormal3f(0.0F, -1.0F, 0.0F);
 	}
 
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(BLclient!qha;I)V")
 	private void method612(@OriginalArg(1) Class19_Sub3 arg0, @OriginalArg(2) int arg1) {
-		OpenGL.glGetFloatv(2982, this.aFloatArray10, 0);
+		OpenGL.glGetFloatv(OpenGL.GL_MODELVIEW_MATRIX, this.aFloatArray10, 0);
 		@Pc(15) float local15 = this.aFloatArray10[0];
 		@Pc(20) float local20 = this.aFloatArray10[4];
 		@Pc(35) float local35 = this.aFloatArray10[8];
@@ -317,8 +317,8 @@ public final class Class42 {
 	@OriginalMember(owner = "client!bj", name = "a", descriptor = "(ILclient!qha;)V")
 	private void method613(@OriginalArg(1) Class19_Sub3 arg0) {
 		arg0.method4847(true);
-		OpenGL.glEnable(16384);
-		OpenGL.glEnable(16385);
+		OpenGL.glEnable(OpenGL.GL_LIGHT0);
+		OpenGL.glEnable(OpenGL.GL_LIGHT1);
 		if (arg0.aFloat149 != Static481.aFloat124) {
 			arg0.xa(Static481.aFloat124);
 		}
@@ -329,8 +329,8 @@ public final class Class42 {
 		Static481.aFloat124 = arg1.aFloat149;
 		arg1.method4839((float) arg0);
 		arg1.method4853();
-		OpenGL.glDisable(16384);
-		OpenGL.glDisable(16385);
+		OpenGL.glDisable(OpenGL.GL_LIGHT0);
+		OpenGL.glDisable(OpenGL.GL_LIGHT1);
 		arg1.method4847(false);
 		OpenGL.glNormal3f(0.0F, -1.0F, 0.0F);
 	}

@@ -696,7 +696,7 @@ public final class Class19_Sub3 extends Class19 {
 	public void method4840(@OriginalArg(1) Interface12 arg0) {
 		if (this.anInterface12_6 != arg0) {
 			if (this.aBoolean600) {
-				OpenGL.glBindBufferARB(34962, arg0.method3491());
+				OpenGL.glBindBufferARB(OpenGL.GL_ARRAY_BUFFER, arg0.method3491());
 			}
 			this.anInterface12_6 = arg0;
 		}
@@ -708,12 +708,12 @@ public final class Class19_Sub3 extends Class19 {
 		Static476.aFloatArray46[2] = this.aFloat137 * this.aFloat129;
 		Static476.aFloatArray46[3] = 1.0F;
 		Static476.aFloatArray46[0] = this.aFloat129 * this.aFloat148;
-		OpenGL.glLightfv(16384, 4609, Static476.aFloatArray46, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, Static476.aFloatArray46, 0);
 		Static476.aFloatArray46[0] = -this.aFloat130 * this.aFloat148;
 		Static476.aFloatArray46[2] = this.aFloat137 * -this.aFloat130;
 		Static476.aFloatArray46[1] = this.aFloat143 * -this.aFloat130;
 		Static476.aFloatArray46[3] = 1.0F;
-		OpenGL.glLightfv(16385, 4609, Static476.aFloatArray46, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, Static476.aFloatArray46, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "ra", descriptor = "(IIII)V")
@@ -761,22 +761,22 @@ public final class Class19_Sub3 extends Class19 {
 		if (this.aFloat132 < (float) this.anInt8010) {
 			this.aFloat132 = (float) this.anInt8010;
 		}
-		OpenGL.glFogf(2915, this.aFloat132);
-		OpenGL.glFogf(2916, this.aFloat134);
+		OpenGL.glFogf(OpenGL.GL_FOG_START, this.aFloat132);
+		OpenGL.glFogf(OpenGL.GL_FOG_END, this.aFloat134);
 		Static476.aFloatArray46[0] = (float) (this.anInt8002 & 0xFF0000) / 1.671168E7F;
 		Static476.aFloatArray46[2] = (float) (this.anInt8002 & 0xFF) / 255.0F;
 		Static476.aFloatArray46[1] = (float) (this.anInt8002 & 0xFF00) / 65280.0F;
-		OpenGL.glFogfv(2918, Static476.aFloatArray46, 0);
+		OpenGL.glFogfv(OpenGL.GL_FOG_COLOR, Static476.aFloatArray46, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(FFIF)V")
 	private void method4845(@OriginalArg(0) float arg0, @OriginalArg(1) float arg1, @OriginalArg(3) float arg2) {
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		if (this.aBoolean599) {
 			OpenGL.glLoadIdentity();
 		}
 		OpenGL.glTranslatef(arg2, arg1, arg0);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		this.aBoolean599 = true;
 	}
 
@@ -806,7 +806,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.anInt8028 = arg2;
 		this.anInt8012 = arg3;
 		this.anInt8032 = arg1;
-		OpenGL.glEnable(3089);
+		OpenGL.glEnable(OpenGL.GL_SCISSOR_TEST);
 		this.method4912();
 		this.method4875();
 	}
@@ -879,7 +879,7 @@ public final class Class19_Sub3 extends Class19 {
 			local23 *= local46;
 		}
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
-		OpenGL.glBegin(1);
+		OpenGL.glBegin(OpenGL.GL_LINES);
 		OpenGL.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
 		OpenGL.glVertex2f(local16 + (float) arg2 + 0.35F, (float) arg3 + local23 + 0.35F);
 		OpenGL.glEnd();
@@ -910,12 +910,12 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(39) float local39 = (float) -this.anInt8016 * this.aFloat146 / (float) this.anInt8025;
 		@Pc(54) float local54 = (float) (this.anInt7869 - this.anInt8021) * this.aFloat146 / (float) this.anInt8001;
 		@Pc(68) float local68 = (float) (this.anInt7956 - this.anInt8016) * this.aFloat146 / (float) this.anInt8025;
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadIdentity();
 		if (local54 != local27 && local68 != local39) {
 			OpenGL.glOrtho((double) local27, (double) local54, (double) -local68, (double) -local39, (double) this.anInt8010, (double) this.anInt8018);
 		}
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "j", descriptor = "(I)V")
@@ -1057,16 +1057,16 @@ public final class Class19_Sub3 extends Class19 {
 		this.method4892(arg5);
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		if (this.aBoolean615) {
-			OpenGL.glDisable(32925);
+			OpenGL.glDisable(OpenGL.GL_MULTISAMPLE);
 		}
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glVertex2f(local8, local13);
 		OpenGL.glVertex2f(local8, local26);
 		OpenGL.glVertex2f(local18, local26);
 		OpenGL.glVertex2f(local18, local13);
 		OpenGL.glEnd();
 		if (this.aBoolean615) {
-			OpenGL.glEnable(32925);
+			OpenGL.glEnable(OpenGL.GL_MULTISAMPLE);
 		}
 	}
 
@@ -1101,7 +1101,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(39) float local39 = local9.aFloat67 / (float) local9.anInt3259;
 		@Pc(46) float local46 = local9.aFloat68 / (float) local9.anInt3257;
 		OpenGL.glColor4ub((byte) (arg0 >> 16), (byte) (arg0 >> 8), (byte) arg0, (byte) (arg0 >> 24));
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glTexCoord2f((float) (this.anInt8000 - arg2) * local39, (float) (this.anInt8032 - arg3) * local46);
 		OpenGL.glVertex2i(this.anInt8000, this.anInt8032);
 		OpenGL.glTexCoord2f(local39 * (float) (this.anInt8000 - arg2), (float) (this.anInt8012 - arg3) * local46);
@@ -1151,8 +1151,8 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(30) int local30 = this.anInt8032;
 		@Pc(33) int local33 = this.anInt8012;
 		this.la();
-		OpenGL.glReadBuffer(1028);
-		OpenGL.glDrawBuffer(1029);
+		OpenGL.glReadBuffer(OpenGL.GL_FRONT);
+		OpenGL.glDrawBuffer(OpenGL.GL_BACK);
 		this.method4856();
 		this.method4910(false);
 		this.method4883(false);
@@ -1162,16 +1162,16 @@ public final class Class19_Sub3 extends Class19 {
 		this.method4921(-2);
 		this.method4866(1);
 		this.method4892(0);
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadIdentity();
 		OpenGL.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadIdentity();
 		OpenGL.glRasterPos2i(0, 0);
-		OpenGL.glCopyPixels(0, 0, this.anInt7869, this.anInt7956, 6144);
+		OpenGL.glCopyPixels(0, 0, this.anInt7869, this.anInt7956, OpenGL.GL_COLOR);
 		OpenGL.glFlush();
-		OpenGL.glReadBuffer(1029);
-		OpenGL.glDrawBuffer(1029);
+		OpenGL.glReadBuffer(OpenGL.GL_BACK);
+		OpenGL.glDrawBuffer(OpenGL.GL_BACK);
 		this.KA(local24, local30, local27, local33);
 	}
 
@@ -1181,7 +1181,7 @@ public final class Class19_Sub3 extends Class19 {
 		Static476.aFloatArray46[1] = arg3;
 		Static476.aFloatArray46[0] = arg1;
 		Static476.aFloatArray46[2] = arg0;
-		OpenGL.glTexEnvfv(8960, 8705, Static476.aFloatArray46, 0);
+		OpenGL.glTexEnvfv(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_COLOR, Static476.aFloatArray46, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "f", descriptor = "(B)V")
@@ -1194,18 +1194,18 @@ public final class Class19_Sub3 extends Class19 {
 			Static376.aFloatArray42[1] = (float) local14.method5979();
 			Static376.aFloatArray42[2] = (float) local14.method5983();
 			Static376.aFloatArray42[3] = 1.0F;
-			OpenGL.glLightfv(local18, 4611, Static376.aFloatArray42, 0);
+			OpenGL.glLightfv(local18, OpenGL.GL_POSITION, Static376.aFloatArray42, 0);
 			@Pc(52) int local52 = local14.method5985();
 			@Pc(60) float local60 = local14.method5982() / 255.0F;
 			Static376.aFloatArray42[0] = (float) (local52 >> 16 & 0xFF) * local60;
 			Static376.aFloatArray42[2] = (float) (local52 & 0xFF) * local60;
 			Static376.aFloatArray42[1] = local60 * (float) (local52 >> 8 & 0xFF);
-			OpenGL.glLightfv(local18, 4609, Static376.aFloatArray42, 0);
-			OpenGL.glLightf(local18, 4617, 1.0F / (float) (local14.method5986() * local14.method5986()));
+			OpenGL.glLightfv(local18, OpenGL.GL_DIFFUSE, Static376.aFloatArray42, 0);
+			OpenGL.glLightf(local18, OpenGL.GL_QUADRATIC_ATTENUATION, 1.0F / (float) (local14.method5986() * local14.method5986()));
 			OpenGL.glEnable(local18);
 		}
 		while (this.anInt8017 > local7) {
-			OpenGL.glDisable(local7 + 16386);
+			OpenGL.glDisable(local7 + OpenGL.GL_LIGHT2);
 			local7++;
 		}
 		if (85 == 85) {
@@ -1217,7 +1217,7 @@ public final class Class19_Sub3 extends Class19 {
 	@Override
 	public void ya() {
 		this.method4847(true);
-		OpenGL.glClear(256);
+		OpenGL.glClear(OpenGL.GL_DEPTH_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "(I)V")
@@ -1292,17 +1292,17 @@ public final class Class19_Sub3 extends Class19 {
 		for (@Pc(12) int local12 = this.anInt8003 - 1; local12 >= 0; local12--) {
 			this.method4889(local12);
 			this.method4876((Class93) null);
-			OpenGL.glTexEnvi(8960, 8704, 34160);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_MODE, OpenGL.GL_COMBINE);
 		}
 		this.method4906(8448, 8448);
 		this.method4896(34168, 770, 2);
 		this.method4874();
 		this.anInt7998 = 1;
-		OpenGL.glEnable(3042);
-		OpenGL.glBlendFunc(770, 771);
+		OpenGL.glEnable(OpenGL.GL_BLEND);
+		OpenGL.glBlendFunc(OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA);
 		this.anInt7996 = 1;
-		OpenGL.glEnable(3008);
-		OpenGL.glAlphaFunc(516, 0.0F);
+		OpenGL.glEnable(OpenGL.GL_ALPHA_TEST);
+		OpenGL.glAlphaFunc(OpenGL.GL_GREATER, 0.0F);
 		this.aBoolean592 = true;
 		OpenGL.glColorMask(true, true, true, true);
 		this.aBoolean593 = true;
@@ -1312,28 +1312,28 @@ public final class Class19_Sub3 extends Class19 {
 		this.method4847(true);
 		this.method4856();
 		this.anOpenGL1.setSwapInterval(0);
-		OpenGL.glShadeModel(7425);
+		OpenGL.glShadeModel(OpenGL.GL_SMOOTH);
 		OpenGL.glClearDepth(1.0F);
-		OpenGL.glDepthFunc(515);
-		OpenGL.glPolygonMode(1028, 6914);
-		OpenGL.glEnable(2884);
-		OpenGL.glCullFace(1029);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glDepthFunc(OpenGL.GL_LEQUAL);
+		OpenGL.glPolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL);
+		OpenGL.glEnable(OpenGL.GL_CULL_FACE);
+		OpenGL.glCullFace(OpenGL.GL_BACK);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadIdentity();
-		OpenGL.glColorMaterial(1028, 5634);
-		OpenGL.glEnable(2903);
+		OpenGL.glColorMaterial(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT_AND_DIFFUSE);
+		OpenGL.glEnable(OpenGL.GL_COLOR_MATERIAL);
 		@Pc(124) float[] local124 = new float[] { 0.0F, 0.0F, 0.0F, 1.0F };
 		for (@Pc(126) int local126 = 0; local126 < 8; local126++) {
 			@Pc(131) int local131 = local126 + 16384;
-			OpenGL.glLightfv(local131, 4608, local124, 0);
-			OpenGL.glLightf(local131, 4615, 0.0F);
-			OpenGL.glLightf(local131, 4616, 0.0F);
+			OpenGL.glLightfv(local131, OpenGL.GL_AMBIENT, local124, 0);
+			OpenGL.glLightf(local131, OpenGL.GL_CONSTANT_ATTENUATION, 0.0F);
+			OpenGL.glLightf(local131, OpenGL.GL_LINEAR_ATTENUATION, 0.0F);
 		}
-		OpenGL.glEnable(16384);
-		OpenGL.glEnable(16385);
-		OpenGL.glFogf(2914, 0.95F);
-		OpenGL.glFogi(2917, 9729);
-		OpenGL.glHint(3156, 4353);
+		OpenGL.glEnable(OpenGL.GL_LIGHT0);
+		OpenGL.glEnable(OpenGL.GL_LIGHT1);
+		OpenGL.glFogf(OpenGL.GL_FOG_DENSITY, 0.95F);
+		OpenGL.glFogi(OpenGL.GL_FOG_MODE, OpenGL.GL_LINEAR);
+		OpenGL.glHint(OpenGL.GL_FOG_HINT, OpenGL.GL_FASTEST);
 		this.anInt8011 = this.anInt8002 = -1;
 		this.la();
 	}
@@ -1344,7 +1344,7 @@ public final class Class19_Sub3 extends Class19 {
 		Static476.aFloatArray46[0] = (float) (arg0 & 0xFF0000) / 1.671168E7F;
 		Static476.aFloatArray46[3] = (float) (arg0 >>> 24) / 255.0F;
 		Static476.aFloatArray46[2] = (float) (arg0 & 0xFF) / 255.0F;
-		OpenGL.glTexEnvfv(8960, 8705, Static476.aFloatArray46, 0);
+		OpenGL.glTexEnvfv(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_COLOR, Static476.aFloatArray46, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "d", descriptor = "(II)Lclient!wja;")
@@ -1360,8 +1360,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(B)V")
 	public void method4862() {
-		OpenGL.glLightfv(16384, 4611, this.aFloatArray51, 0);
-		OpenGL.glLightfv(16385, 4611, this.aFloatArray54, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, this.aFloatArray51, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, this.aFloatArray54, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "c", descriptor = "(ILclient!jf;)V")
@@ -1384,7 +1384,7 @@ public final class Class19_Sub3 extends Class19 {
 	public void GA(@OriginalArg(0) int arg0) {
 		this.method4892(0);
 		OpenGL.glClearColor((float) (arg0 & 0xFF0000) / 1.671168E7F, (float) (arg0 & 0xFF00) / 65280.0F, (float) (arg0 & 0xFF) / 255.0F, (float) (arg0 >>> 24) / 255.0F);
-		OpenGL.glClear(16384);
+		OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "c", descriptor = "(I)V")
@@ -1615,16 +1615,16 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "q", descriptor = "(I)I")
 	private int method4872() {
-		this.aString98 = OpenGL.glGetString(7936).toLowerCase();
+		this.aString98 = OpenGL.glGetString(OpenGL.GL_VENDOR).toLowerCase();
 		@Pc(10) int local10 = 0;
-		this.aString99 = OpenGL.glGetString(7937).toLowerCase();
+		this.aString99 = OpenGL.glGetString(OpenGL.GL_RENDERER).toLowerCase();
 		if (this.aString98.indexOf("microsoft") != -1) {
 			local10 = 1;
 		}
 		if (this.aString98.indexOf("brian paul") != -1 || this.aString98.indexOf("mesa") != -1) {
 			local10 |= 0x1;
 		}
-		@Pc(55) String local55 = OpenGL.glGetString(7938);
+		@Pc(55) String local55 = OpenGL.glGetString(OpenGL.GL_VERSION);
 		@Pc(63) String[] local63 = Static189.method1971(local55.replace('.', ' '), ' ');
 		if (local63.length >= 2) {
 			try {
@@ -1647,11 +1647,11 @@ public final class Class19_Sub3 extends Class19 {
 			local10 |= 0x20;
 		}
 		@Pc(130) int[] local130 = new int[1];
-		OpenGL.glGetIntegerv(34018, local130, 0);
+		OpenGL.glGetIntegerv(OpenGL.GL_MAX_TEXTURE_UNITS, local130, 0);
 		this.anInt8003 = local130[0];
-		OpenGL.glGetIntegerv(34929, local130, 0);
+		OpenGL.glGetIntegerv(OpenGL.GL_MAX_TEXTURE_COORDS, local130, 0);
 		this.anInt7999 = local130[0];
-		OpenGL.glGetIntegerv(34930, local130, 0);
+		OpenGL.glGetIntegerv(OpenGL.GL_MAX_TEXTURE_IMAGE_UNITS, local130, 0);
 		this.anInt8004 = local130[0];
 		if (this.anInt8003 < 2 || this.anInt7999 < 2 || this.anInt8004 < 2) {
 			local10 |= 0x10;
@@ -1674,7 +1674,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.aBoolean617 = this.anOpenGL1.a("GL_EXT_framebuffer_multisample");
 		this.aBoolean614 = this.aBoolean617 & this.aBoolean602;
 		this.aBoolean604 = Class254.aString70.startsWith("mac");
-		OpenGL.glGetFloatv(2834, Static476.aFloatArray46, 0);
+		OpenGL.glGetFloatv(OpenGL.GL_POINT_SIZE_RANGE, Static476.aFloatArray46, 0);
 		this.aFloat136 = Static476.aFloatArray46[0];
 		this.aFloat135 = Static476.aFloatArray46[1];
 		return local10 == 0 ? 0 : local10;
@@ -1703,7 +1703,7 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIIB)V")
 	public void method4873(@OriginalArg(2) int arg0) {
-		OpenGL.glDrawArrays(7, 0, arg0);
+		OpenGL.glDrawArrays(OpenGL.GL_QUADS, 0, arg0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "DA", descriptor = "(IIII)V")
@@ -1740,7 +1740,7 @@ public final class Class19_Sub3 extends Class19 {
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		@Pc(91) float local91 = local53 * local72;
 		@Pc(95) float local95 = local59 * local72;
-		OpenGL.glBegin(1);
+		OpenGL.glBegin(OpenGL.GL_LINES);
 		OpenGL.glTexCoord2f((float) (arg0 - arg7) * local39, local46 * (float) (arg1 - arg8));
 		OpenGL.glVertex2f((float) arg0 + 0.35F, (float) arg1 + 0.35F);
 		OpenGL.glTexCoord2f(local39 * (float) (arg2 - arg7), local46 * (float) (arg3 - arg8));
@@ -1752,9 +1752,9 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "m", descriptor = "(I)V")
 	private void method4874() {
 		if (this.aBoolean599) {
-			OpenGL.glMatrixMode(5890);
+			OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 			OpenGL.glLoadIdentity();
-			OpenGL.glMatrixMode(5888);
+			OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 			this.aBoolean599 = false;
 		}
 	}
@@ -1880,7 +1880,7 @@ public final class Class19_Sub3 extends Class19 {
 	public void method4877(@OriginalArg(1) Interface1 arg0) {
 		if (this.anInterface1_4 != arg0) {
 			if (this.aBoolean600) {
-				OpenGL.glBindBufferARB(34963, arg0.method6742());
+				OpenGL.glBindBufferARB(OpenGL.GL_ELEMENT_ARRAY_BUFFER, arg0.method6742());
 			}
 			this.anInterface1_4 = arg0;
 		}
@@ -1891,12 +1891,12 @@ public final class Class19_Sub3 extends Class19 {
 		if (this.anInt8005 == 1) {
 			return;
 		}
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadIdentity();
 		if (this.anInt7869 > 0 && this.anInt7956 > 0) {
 			OpenGL.glOrtho(0.0D, (double) this.anInt7869, (double) this.anInt7956, 0.0D, -1.0D, 1.0D);
 		}
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadIdentity();
 		this.anInt8005 = 1;
 		this.anInt7997 &= 0xFFFFFFE7;
@@ -1916,9 +1916,9 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "y", descriptor = "(I)V")
 	private void method4880() {
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadMatrixf(this.aFloatArray53, 0);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "c", descriptor = "()Lclient!dp;")
@@ -1950,7 +1950,7 @@ public final class Class19_Sub3 extends Class19 {
 		if (arg1 > this.anInt8032) {
 			this.anInt8032 = arg1;
 		}
-		OpenGL.glEnable(3089);
+		OpenGL.glEnable(OpenGL.GL_SCISSOR_TEST);
 		this.method4912();
 		this.method4875();
 	}
@@ -1961,9 +1961,9 @@ public final class Class19_Sub3 extends Class19 {
 			return;
 		}
 		if (arg0) {
-			OpenGL.glEnable(2929);
+			OpenGL.glEnable(OpenGL.GL_DEPTH_TEST);
 		} else {
-			OpenGL.glDisable(2929);
+			OpenGL.glDisable(OpenGL.GL_DEPTH_TEST);
 		}
 		this.anInt7997 &= 0xFFFFFFE0;
 		this.aBoolean591 = arg0;
@@ -1986,16 +1986,16 @@ public final class Class19_Sub3 extends Class19 {
 		this.method4892(arg5);
 		OpenGL.glColor4ub((byte) (arg4 >> 16), (byte) (arg4 >> 8), (byte) arg4, (byte) (arg4 >> 24));
 		if (this.aBoolean615) {
-			OpenGL.glDisable(32925);
+			OpenGL.glDisable(OpenGL.GL_MULTISAMPLE);
 		}
-		OpenGL.glBegin(2);
+		OpenGL.glBegin(OpenGL.GL_LINE_LOOP);
 		OpenGL.glVertex2f(local8, local13);
 		OpenGL.glVertex2f(local8, local27);
 		OpenGL.glVertex2f(local20, local27);
 		OpenGL.glVertex2f(local20, local13);
 		OpenGL.glEnd();
 		if (this.aBoolean615) {
-			OpenGL.glEnable(32925);
+			OpenGL.glEnable(OpenGL.GL_MULTISAMPLE);
 		}
 	}
 
@@ -2018,9 +2018,9 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "s", descriptor = "(I)V")
 	private void method4884() {
 		if (this.aBoolean601 && !this.aBoolean611) {
-			OpenGL.glEnable(2896);
+			OpenGL.glEnable(OpenGL.GL_LIGHTING);
 		} else {
-			OpenGL.glDisable(2896);
+			OpenGL.glDisable(OpenGL.GL_LIGHTING);
 		}
 	}
 
@@ -2074,7 +2074,7 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "k", descriptor = "(II)V")
 	public void method4889(@OriginalArg(1) int arg0) {
 		if (this.anInt8024 != arg0) {
-			OpenGL.glActiveTexture(arg0 + 33984);
+			OpenGL.glActiveTexture(arg0 + OpenGL.GL_TEXTURE0);
 			this.anInt8024 = arg0;
 		}
 	}
@@ -2144,7 +2144,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(15) float local15 = (float) arg0 + 0.35F;
 		@Pc(20) float local20 = (float) arg1 + 0.35F;
 		OpenGL.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
-		OpenGL.glBegin(1);
+		OpenGL.glBegin(OpenGL.GL_LINES);
 		OpenGL.glVertex2f(local15, local20);
 		OpenGL.glVertex2f((float) arg2 + local15, local20);
 		OpenGL.glEnd();
@@ -2252,24 +2252,24 @@ public final class Class19_Sub3 extends Class19 {
 		}
 		if (this.aBoolean592 != local24) {
 			if (local24) {
-				OpenGL.glEnable(3008);
+				OpenGL.glEnable(OpenGL.GL_ALPHA_TEST);
 			} else {
-				OpenGL.glDisable(3008);
+				OpenGL.glDisable(OpenGL.GL_ALPHA_TEST);
 			}
 			this.aBoolean592 = local24;
 		}
 		if (this.anInt7996 != local22) {
 			if (local22 == 1) {
-				OpenGL.glEnable(3042);
-				OpenGL.glBlendFunc(770, 771);
+				OpenGL.glEnable(OpenGL.GL_BLEND);
+				OpenGL.glBlendFunc(OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA);
 			} else if (local22 == 2) {
-				OpenGL.glEnable(3042);
-				OpenGL.glBlendFunc(1, 1);
+				OpenGL.glEnable(OpenGL.GL_BLEND);
+				OpenGL.glBlendFunc(OpenGL.GL_ONE, OpenGL.GL_ONE);
 			} else if (local22 == 3) {
-				OpenGL.glEnable(3042);
-				OpenGL.glBlendFunc(774, 1);
+				OpenGL.glEnable(OpenGL.GL_BLEND);
+				OpenGL.glBlendFunc(OpenGL.GL_DST_COLOR, OpenGL.GL_ONE);
 			} else {
-				OpenGL.glDisable(3042);
+				OpenGL.glDisable(OpenGL.GL_BLEND);
 			}
 			this.anInt7996 = local22;
 		}
@@ -2464,7 +2464,7 @@ public final class Class19_Sub3 extends Class19 {
 					local104 = (float) arg3 - local159;
 				}
 			}
-			OpenGL.glBegin(1);
+			OpenGL.glBegin(OpenGL.GL_LINES);
 			OpenGL.glVertex2f(local152, local159);
 			OpenGL.glVertex2f(local102 + local152, local104 + local159);
 			OpenGL.glEnd();
@@ -2488,8 +2488,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(IIIB)V")
 	public void method4896(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		OpenGL.glTexEnvi(8960, arg2 + 34176, arg0);
-		OpenGL.glTexEnvi(8960, arg2 + 34192, arg1);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg2 + OpenGL.GL_SRC0_RGB, arg0);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg2 + OpenGL.GL_OPERAND0_RGB, arg1);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(IIIIIIIIIIIII)V")
@@ -2497,7 +2497,7 @@ public final class Class19_Sub3 extends Class19 {
 	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3, @OriginalArg(4) int arg4, @OriginalArg(5) int arg5, @OriginalArg(6) int arg6, @OriginalArg(7) int arg7, @OriginalArg(8) int arg8, @OriginalArg(9) int arg9, @OriginalArg(10) int arg10, @OriginalArg(11) int arg11, @OriginalArg(12) int arg12) {
 		this.method4901();
 		this.method4892(arg12);
-		OpenGL.glBegin(4);
+		OpenGL.glBegin(OpenGL.GL_TRIANGLES);
 		OpenGL.glColor4ub((byte) (arg9 >> 16), (byte) (arg9 >> 8), (byte) arg9, (byte) (arg9 >> 24));
 		OpenGL.glVertex3f((float) arg0 + 0.35F, (float) arg1 + 0.35F, (float) arg2);
 		OpenGL.glColor4ub((byte) (arg10 >> 16), (byte) (arg10 >> 8), (byte) arg10, (byte) (arg10 >> 24));
@@ -2593,7 +2593,7 @@ public final class Class19_Sub3 extends Class19 {
 		this.anInt8000 = 0;
 		this.anInt8032 = 0;
 		this.anInt8012 = this.anInt7956;
-		OpenGL.glDisable(3089);
+		OpenGL.glDisable(OpenGL.GL_SCISSOR_TEST);
 		this.method4912();
 	}
 
@@ -2608,7 +2608,7 @@ public final class Class19_Sub3 extends Class19 {
 		Static476.aFloatArray46[2] = this.aFloat149 * this.aFloat137;
 		Static476.aFloatArray46[1] = this.aFloat143 * this.aFloat149;
 		Static476.aFloatArray46[3] = 1.0F;
-		OpenGL.glLightModelfv(2899, Static476.aFloatArray46, 0);
+		OpenGL.glLightModelfv(OpenGL.GL_LIGHT_MODEL_AMBIENT, Static476.aFloatArray46, 0);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(I[Lclient!lca;)V")
@@ -2773,8 +2773,8 @@ public final class Class19_Sub3 extends Class19 {
 
 	@OriginalMember(owner = "client!qha", name = "b", descriptor = "(IIII)V")
 	public void method4904(@OriginalArg(1) int arg0, @OriginalArg(3) int arg1) {
-		OpenGL.glTexEnvi(8960, arg0 + 34184, arg1);
-		OpenGL.glTexEnvi(8960, arg0 + 34200, 770);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg0 + OpenGL.GL_SRC0_ALPHA, arg1);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg0 + OpenGL.GL_OPERAND0_ALPHA, OpenGL.GL_SRC_ALPHA);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(III)V")
@@ -2794,18 +2794,18 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "c", descriptor = "(III)V")
 	public void method4906(@OriginalArg(1) int arg0, @OriginalArg(2) int arg1) {
 		if (this.anInt8024 != 0) {
-			OpenGL.glTexEnvi(8960, 34161, arg1);
-			OpenGL.glTexEnvi(8960, 34162, arg0);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_RGB, arg1);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_ALPHA, arg0);
 			return;
 		}
 		@Pc(15) boolean local15 = false;
 		if (arg1 != this.anInt8022) {
-			OpenGL.glTexEnvi(8960, 34161, arg1);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_RGB, arg1);
 			this.anInt8022 = arg1;
 			local15 = true;
 		}
 		if (this.anInt8015 != arg0) {
-			OpenGL.glTexEnvi(8960, 34162, arg0);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_ALPHA, arg0);
 			local15 = true;
 			this.anInt8015 = arg0;
 		}
@@ -2884,7 +2884,7 @@ public final class Class19_Sub3 extends Class19 {
 					local136 = (float) arg3 - local194;
 				}
 			}
-			OpenGL.glBegin(1);
+			OpenGL.glBegin(OpenGL.GL_LINES);
 			OpenGL.glTexCoord2f(local55 * (local187 - (float) arg7), local62 * ((float) -arg8 + local194));
 			OpenGL.glVertex2f(local187, local194);
 			OpenGL.glTexCoord2f(((float) -arg7 + local187 + local134) * local55, local62 * (local136 + local194 - (float) arg8));
@@ -2926,21 +2926,21 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(88) float local88 = (float) arg1 + 0.35F;
 		@Pc(92) int local92 = arg2 << 1;
 		if (this.aFloat136 > (float) local92) {
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glVertex2f(local83 + 1.0F, local88 + 1.0F);
 			OpenGL.glVertex2f(local83 + 1.0F, -1.0F + local88);
 			OpenGL.glVertex2f(local83 - 1.0F, local88 - 1.0F);
 			OpenGL.glVertex2f(local83 - 1.0F, local88 + 1.0F);
 			OpenGL.glEnd();
 		} else if (this.aFloat135 >= (float) local92) {
-			OpenGL.glEnable(2832);
+			OpenGL.glEnable(OpenGL.GL_POINT_SMOOTH);
 			OpenGL.glPointSize((float) local92);
-			OpenGL.glBegin(0);
+			OpenGL.glBegin(OpenGL.GL_POINTS);
 			OpenGL.glVertex2f(local83, local88);
 			OpenGL.glEnd();
-			OpenGL.glDisable(2832);
+			OpenGL.glDisable(OpenGL.GL_POINT_SMOOTH);
 		} else {
-			OpenGL.glBegin(6);
+			OpenGL.glBegin(OpenGL.GL_TRIANGLE_FAN);
 			OpenGL.glVertex2f(local83, local88);
 			@Pc(148) int local148 = 262144 / (arg2 * 6);
 			if (local148 <= 64) {
@@ -3004,7 +3004,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(17) int local17 = arg1.method6743();
 		@Pc(24) int local24 = arg0 * this.method4898(local17);
 		this.method4877(arg1);
-		OpenGL.glDrawElements(4, arg2, local17, arg1.method6741() + (long) local24);
+		OpenGL.glDrawElements(OpenGL.GL_TRIANGLES, arg2, local17, arg1.method6741() + (long) local24);
 	}
 
 	@OriginalMember(owner = "client!qha", name = "P", descriptor = "(IIIII)V")
@@ -3015,7 +3015,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(15) float local15 = (float) arg0 + 0.35F;
 		OpenGL.glColor4ub((byte) (arg3 >> 16), (byte) (arg3 >> 8), (byte) arg3, (byte) (arg3 >> 24));
 		@Pc(35) float local35 = (float) arg1 + 0.35F;
-		OpenGL.glBegin(1);
+		OpenGL.glBegin(OpenGL.GL_LINES);
 		OpenGL.glVertex2f(local15, local35);
 		OpenGL.glVertex2f(local15, local35 + (float) arg2);
 		OpenGL.glEnd();
@@ -3099,7 +3099,7 @@ public final class Class19_Sub3 extends Class19 {
 		@Pc(151) float local151 = (float) arg0;
 		@Pc(154) float local154 = (float) arg1;
 		@Pc(159) float local159 = local151 + (float) arg2;
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		@Pc(166) float local166 = (float) arg3 + local154;
 		OpenGL.glTexCoord2f(0.0F, 0.0F);
 		OpenGL.glVertex2f(local151, local154);
@@ -3119,32 +3119,32 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "a", descriptor = "(BLclient!ed;Lclient!ed;Lclient!ed;Lclient!ed;)V")
 	public void method4914(@OriginalArg(1) Class94 arg0, @OriginalArg(2) Class94 arg1, @OriginalArg(3) Class94 arg2, @OriginalArg(4) Class94 arg3) {
 		if (arg2 == null) {
-			OpenGL.glDisableClientState(32884);
+			OpenGL.glDisableClientState(OpenGL.GL_VERTEX_ARRAY);
 		} else {
 			this.method4840(arg2.anInterface12_2);
 			OpenGL.glVertexPointer(arg2.aByte47, arg2.aShort29, this.anInterface12_6.method3488(), this.anInterface12_6.method3490() + (long) arg2.aByte46);
-			OpenGL.glEnableClientState(32884);
+			OpenGL.glEnableClientState(OpenGL.GL_VERTEX_ARRAY);
 		}
 		if (arg1 == null) {
-			OpenGL.glDisableClientState(32885);
+			OpenGL.glDisableClientState(OpenGL.GL_NORMAL_ARRAY);
 		} else {
 			this.method4840(arg1.anInterface12_2);
 			OpenGL.glNormalPointer(arg1.aShort29, this.anInterface12_6.method3488(), this.anInterface12_6.method3490() + (long) arg1.aByte46);
-			OpenGL.glEnableClientState(32885);
+			OpenGL.glEnableClientState(OpenGL.GL_NORMAL_ARRAY);
 		}
 		if (arg0 == null) {
-			OpenGL.glDisableClientState(32886);
+			OpenGL.glDisableClientState(OpenGL.GL_COLOR_ARRAY);
 		} else {
 			this.method4840(arg0.anInterface12_2);
 			OpenGL.glColorPointer(arg0.aByte47, arg0.aShort29, this.anInterface12_6.method3488(), this.anInterface12_6.method3490() + (long) arg0.aByte46);
-			OpenGL.glEnableClientState(32886);
+			OpenGL.glEnableClientState(OpenGL.GL_COLOR_ARRAY);
 		}
 		if (arg3 == null) {
-			OpenGL.glDisableClientState(32888);
+			OpenGL.glDisableClientState(OpenGL.GL_TEXTURE_COORD_ARRAY);
 		} else {
 			this.method4840(arg3.anInterface12_2);
 			OpenGL.glTexCoordPointer(arg3.aByte47, arg3.aShort29, this.anInterface12_6.method3488(), this.anInterface12_6.method3490() + (long) arg3.aByte46);
-			OpenGL.glEnableClientState(32888);
+			OpenGL.glEnableClientState(OpenGL.GL_TEXTURE_COORD_ARRAY);
 		}
 	}
 
@@ -3245,9 +3245,9 @@ public final class Class19_Sub3 extends Class19 {
 	@OriginalMember(owner = "client!qha", name = "w", descriptor = "(I)V")
 	private void method4919() {
 		if (this.aBoolean594 && this.anInt8008 >= 0) {
-			OpenGL.glEnable(2912);
+			OpenGL.glEnable(OpenGL.GL_FOG);
 		} else {
-			OpenGL.glDisable(2912);
+			OpenGL.glDisable(OpenGL.GL_FOG);
 		}
 	}
 
@@ -3283,7 +3283,7 @@ public final class Class19_Sub3 extends Class19 {
 	public int[] na(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(10) int[] local10 = new int[arg2 * arg3];
 		for (@Pc(12) int local12 = 0; local12 < arg3; local12++) {
-			OpenGL.glReadPixelsi(arg0, this.anInt7956 - arg1 - local12, arg2, 1, 32993, this.anInt8030, local10, local12 * arg2);
+			OpenGL.glReadPixelsi(arg0, this.anInt7956 - arg1 - local12, arg2, 1, OpenGL.GL_BGRA, this.anInt8030, local10, local12 * arg2);
 		}
 		return local10;
 	}

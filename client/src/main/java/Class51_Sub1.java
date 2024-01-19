@@ -22,8 +22,8 @@ public final class Class51_Sub1 extends Class51 implements Interface2 {
 		this.anInt1130 = arg2;
 		this.anInt1129 = arg3;
 		super.aClass19_Sub1_Sub2_12.method5697(this);
-		OpenGL.glPixelStorei(3317, 1);
-		OpenGL.glTexImage3Dub(super.anInt9848, 0, this.method6148(), this.anInt1130, this.anInt1129, this.anInt1128, 0, Static468.method5398(super.aClass92_14), 5121, arg5, 0);
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
+		OpenGL.glTexImage3Dub(super.anInt9848, 0, this.method6148(), this.anInt1130, this.anInt1129, this.anInt1128, 0, Static468.method5398(super.aClass92_14), OpenGL.GL_UNSIGNED_BYTE, arg5, 0);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 	}
 }

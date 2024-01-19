@@ -43,17 +43,17 @@ public final class Class101_Sub2 extends Class101 {
 			Static512.aFloatArray49[2] = local15;
 			OpenGL.glPushMatrix();
 			OpenGL.glLoadIdentity();
-			OpenGL.glTexGenfv(8192, 9474, Static512.aFloatArray49, 0);
+			OpenGL.glTexGenfv(OpenGL.GL_S, OpenGL.GL_EYE_PLANE, Static512.aFloatArray49, 0);
 			OpenGL.glPopMatrix();
 			super.aClass19_Sub3_42.method4870(0.5F, (float) super.aClass19_Sub3_42.anInt8008);
 			super.aClass19_Sub3_42.method4876(this.aClass93_Sub4_1);
 			super.aClass19_Sub3_42.method4889(0);
 		}
 		this.aClass36_2.method542('\u0000');
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glPushMatrix();
 		OpenGL.glScalef(0.25F, 0.25F, 1.0F);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(III)V")
@@ -66,7 +66,7 @@ public final class Class101_Sub2 extends Class101 {
 				Static512.aFloatArray49[0] = 0.0F;
 				Static512.aFloatArray49[2] = 0.0F;
 				Static512.aFloatArray49[1] = 0.0F;
-				OpenGL.glTexGenfv(8194, 9473, Static512.aFloatArray49, 0);
+				OpenGL.glTexGenfv(OpenGL.GL_R, OpenGL.GL_OBJECT_PLANE, Static512.aFloatArray49, 0);
 			} else {
 				@Pc(24) int local24 = super.aClass19_Sub3_42.anInt7987 % 4000 * 16 / 4000;
 				super.aClass19_Sub3_42.method4876(this.aClass329_2.aClass93_Sub2Array3[local24]);
@@ -77,7 +77,7 @@ public final class Class101_Sub2 extends Class101 {
 			Static512.aFloatArray49[0] = 0.0F;
 			Static512.aFloatArray49[2] = 0.0F;
 			Static512.aFloatArray49[1] = 0.0F;
-			OpenGL.glTexGenfv(8194, 9473, Static512.aFloatArray49, 0);
+			OpenGL.glTexGenfv(OpenGL.GL_R, OpenGL.GL_OBJECT_PLANE, Static512.aFloatArray49, 0);
 		} else {
 			super.aClass19_Sub3_42.method4876(this.aClass329_2.aClass93_Sub2Array3[0]);
 		}
@@ -94,9 +94,9 @@ public final class Class101_Sub2 extends Class101 {
 			super.aClass19_Sub3_42.method4889(0);
 		}
 		super.aClass19_Sub3_42.method4906(8448, 8448);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glPopMatrix();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!fe", name = "a", descriptor = "(Lclient!kd;II)V")
@@ -117,28 +117,28 @@ public final class Class101_Sub2 extends Class101 {
 		super.aClass19_Sub3_42.method4889(1);
 		super.aClass19_Sub3_42.method4906(260, 7681);
 		super.aClass19_Sub3_42.method4896(34168, 768, 0);
-		OpenGL.glTexGeni(8192, 9472, 9216);
-		OpenGL.glEnable(3168);
+		OpenGL.glTexGeni(OpenGL.GL_S, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_EYE_LINEAR);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_S);
 		super.aClass19_Sub3_42.method4889(0);
-		OpenGL.glTexEnvf(8960, 34163, 2.0F);
+		OpenGL.glTexEnvf(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_RGB_SCALE, 2.0F);
 		if (this.aClass329_2.aBoolean655) {
-			OpenGL.glTexGeni(8194, 9472, 9217);
-			OpenGL.glTexGeni(8195, 9472, 9217);
-			OpenGL.glTexGenfv(8195, 9473, new float[] { 0.0F, 0.0F, 0.0F, 1.0F }, 0);
-			OpenGL.glEnable(3170);
-			OpenGL.glEnable(3171);
+			OpenGL.glTexGeni(OpenGL.GL_R, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_OBJECT_LINEAR);
+			OpenGL.glTexGeni(OpenGL.GL_Q, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_OBJECT_LINEAR);
+			OpenGL.glTexGenfv(OpenGL.GL_Q, OpenGL.GL_OBJECT_PLANE, new float[] { 0.0F, 0.0F, 0.0F, 1.0F }, 0);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_R);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_Q);
 		}
 		this.aClass36_2.method541();
 		this.aClass36_2.method539(1);
 		super.aClass19_Sub3_42.method4889(1);
 		super.aClass19_Sub3_42.method4906(8448, 8448);
 		super.aClass19_Sub3_42.method4896(5890, 768, 0);
-		OpenGL.glDisable(3168);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_S);
 		super.aClass19_Sub3_42.method4889(0);
-		OpenGL.glTexEnvf(8960, 34163, 1.0F);
+		OpenGL.glTexEnvf(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_RGB_SCALE, 1.0F);
 		if (this.aClass329_2.aBoolean655) {
-			OpenGL.glDisable(3170);
-			OpenGL.glDisable(3171);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_R);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_Q);
 		}
 		this.aClass36_2.method541();
 	}

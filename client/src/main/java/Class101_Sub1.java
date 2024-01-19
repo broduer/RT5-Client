@@ -125,16 +125,16 @@ public final class Class101_Sub1 extends Class101 {
 		this.aClass36_1 = new Class36(super.aClass19_Sub3_42, 2);
 		this.aClass36_1.method539(0);
 		super.aClass19_Sub3_42.method4889(1);
-		OpenGL.glTexGeni(8192, 9472, 34065);
-		OpenGL.glTexGeni(8193, 9472, 34065);
-		OpenGL.glTexGeni(8194, 9472, 34065);
-		OpenGL.glEnable(3168);
-		OpenGL.glEnable(3169);
-		OpenGL.glEnable(3170);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glTexGeni(OpenGL.GL_S, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_NORMAL_MAP);
+		OpenGL.glTexGeni(OpenGL.GL_T, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_NORMAL_MAP);
+		OpenGL.glTexGeni(OpenGL.GL_R, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_NORMAL_MAP);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_S);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_T);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_R);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadIdentity();
 		OpenGL.glRotatef(22.5F, 1.0F, 0.0F, 0.0F);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		if (this.aBoolean212) {
 			super.aClass19_Sub3_42.method4906(7681, 260);
 			super.aClass19_Sub3_42.method4896(5890, 770, 0);
@@ -152,12 +152,12 @@ public final class Class101_Sub1 extends Class101 {
 		this.aClass36_1.method541();
 		this.aClass36_1.method539(1);
 		super.aClass19_Sub3_42.method4889(1);
-		OpenGL.glDisable(3168);
-		OpenGL.glDisable(3169);
-		OpenGL.glDisable(3170);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_S);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_T);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_R);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadIdentity();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		if (this.aBoolean212) {
 			super.aClass19_Sub3_42.method4906(8448, 8448);
 			super.aClass19_Sub3_42.method4896(5890, 768, 0);

@@ -18,7 +18,7 @@ public final class Class51_Sub2 extends Class51 implements Interface8 {
 			}
 		} else {
 			for (local22 = 0; local22 < 6; local22++) {
-				OpenGL.glTexImage2Di(local22 + 34069, 0, this.method6148(), arg1, arg1, 0, Static468.method5398(super.aClass92_14), super.aClass19_Sub1_Sub2_12.anInt9277, arg3[local22], 0);
+				OpenGL.glTexImage2Di(local22 + OpenGL.GL_TEXTURE_CUBE_MAP_POSITIVE_X, 0, this.method6148(), arg1, arg1, 0, Static468.method5398(super.aClass92_14), super.aClass19_Sub1_Sub2_12.anInt9277, arg3[local22], 0);
 			}
 		}
 	}

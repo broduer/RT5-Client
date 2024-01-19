@@ -126,11 +126,11 @@ public final class Class170 {
 						if (-arg4 <= local86 - arg0 && local86 - arg0 <= arg4) {
 							for (@Pc(107) int local107 = local61; local107 < local68; local107++) {
 								if (-arg4 <= local107 - arg2 && arg4 >= local107 - arg2 && arg3[arg4 + local86 - arg0][arg4 + local107 - arg2]) {
-									OpenGL.glMatrixMode(5890);
+									OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 									OpenGL.glLoadIdentity();
 									OpenGL.glScalef(local50, local50, 1.0F);
 									OpenGL.glTranslatef((float) -local70 / local50, (float) -local54 / local50, 1.0F);
-									OpenGL.glMatrixMode(5888);
+									OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 									this.aClass373ArrayArray1[local70][local54].method6010();
 									continue label128;
 								}
@@ -175,19 +175,19 @@ public final class Class170 {
 						}
 					}
 					if (local77 > 0) {
-						OpenGL.glMatrixMode(5890);
+						OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 						OpenGL.glLoadIdentity();
 						OpenGL.glScalef(local50, local50, 1.0F);
 						OpenGL.glTranslatef((float) -local70 / local50, (float) -local54 / local50, 1.0F);
-						OpenGL.glMatrixMode(5888);
+						OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 						this.aClass373ArrayArray1[local70][local54].method6013(local262.aByteArray93, local77);
 					}
 				}
 			}
 		}
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadIdentity();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!hn", name = "a", descriptor = "(IILclient!r;I)Z")

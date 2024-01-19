@@ -22,12 +22,12 @@ public final class Static34 {
 		@Pc(22) long local22 = OpenGL.glCreateShaderObjectARB(arg0);
 		OpenGL.glShaderSourceRawARB(local22, arg1);
 		OpenGL.glCompileShaderARB(local22);
-		OpenGL.glGetObjectParameterivARB(local22, 35713, Static332.anIntArray405, 0);
+		OpenGL.glGetObjectParameterivARB(local22, OpenGL.GL_COMPILE_STATUS, Static332.anIntArray405, 0);
 		if (Static332.anIntArray405[0] == 0) {
 			if (Static332.anIntArray405[0] == 0) {
 				System.out.println("Shader compile failed:");
 			}
-			OpenGL.glGetObjectParameterivARB(local22, 35716, Static332.anIntArray405, 1);
+			OpenGL.glGetObjectParameterivARB(local22, OpenGL.GL_INFO_LOG_LENGTH, Static332.anIntArray405, 1);
 			if (Static332.anIntArray405[1] > 1) {
 				@Pc(69) byte[] local69 = new byte[Static332.anIntArray405[1]];
 				OpenGL.glGetInfoLogARB(local22, Static332.anIntArray405[1], Static332.anIntArray405, 0, local69, 0);

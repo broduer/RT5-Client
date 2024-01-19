@@ -107,12 +107,12 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		try {
 			this.anOpenGL2 = arg0;
 			this.anOpenGL2.b();
-			this.aString109 = OpenGL.glGetString(7936).toLowerCase();
-			this.aString110 = OpenGL.glGetString(7937).toLowerCase();
+			this.aString109 = OpenGL.glGetString(OpenGL.GL_VENDOR).toLowerCase();
+			this.aString110 = OpenGL.glGetString(OpenGL.GL_RENDERER).toLowerCase();
 			if (this.aString109.indexOf("microsoft") != -1 || this.aString109.indexOf("brian paul") != -1 || this.aString109.indexOf("mesa") != -1) {
 				throw new RuntimeException("");
 			}
-			@Pc(114) String local114 = OpenGL.glGetString(7938);
+			@Pc(114) String local114 = OpenGL.glGetString(OpenGL.GL_VERSION);
 			@Pc(122) String[] local122 = Static189.method1971(local114.replace('.', ' '), ' ');
 			if (local122.length < 2) {
 				throw new RuntimeException("");
@@ -131,7 +131,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 				throw new RuntimeException("");
 			} else if (this.anOpenGL2.a("GL_ARB_texture_env_combine")) {
 				@Pc(201) int[] local201 = new int[1];
-				OpenGL.glGetIntegerv(34018, local201, 0);
+				OpenGL.glGetIntegerv(OpenGL.GL_MAX_TEXTURE_UNITS, local201, 0);
 				super.anInt9184 = local201[0];
 				if (super.anInt9184 < 2) {
 					throw new RuntimeException("");
@@ -210,8 +210,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IBLclient!hla;Z)V")
 	@Override
 	protected void method5748(@OriginalArg(0) int arg0, @OriginalArg(2) Class168 arg1) {
-		OpenGL.glTexEnvi(8960, arg0 + 34184, Static428.method4102(arg1));
-		OpenGL.glTexEnvi(8960, arg0 + 34200, 770);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg0 + OpenGL.GL_SRC0_ALPHA, Static428.method4102(arg1));
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg0 + OpenGL.GL_OPERAND0_ALPHA, OpenGL.GL_SRC_ALPHA);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "b", descriptor = "(IIIID)V")
@@ -227,12 +227,12 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		if ((float) super.anInt9181 > super.aFloat189) {
 			super.aFloat189 = (float) super.anInt9181;
 		}
-		OpenGL.glFogf(2915, super.aFloat189);
-		OpenGL.glFogf(2916, super.aFloat192);
+		OpenGL.glFogf(OpenGL.GL_FOG_START, super.aFloat189);
+		OpenGL.glFogf(OpenGL.GL_FOG_END, super.aFloat192);
 		Static337.aFloatArray38[0] = (float) (super.anInt9146 & 0xFF0000) / 1.671168E7F;
 		Static337.aFloatArray38[1] = (float) (super.anInt9146 & 0xFF00) / 65280.0F;
 		Static337.aFloatArray38[2] = (float) (super.anInt9146 & 0xFF) / 255.0F;
-		OpenGL.glFogfv(2918, Static337.aFloatArray38, 0);
+		OpenGL.glFogfv(OpenGL.GL_FOG_COLOR, Static337.aFloatArray38, 0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Ljava/awt/Canvas;I)Ljava/lang/Object;")
@@ -249,18 +249,18 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	public void method5706(@OriginalArg(1) Class172 arg0) {
 		if (Static582.aClass172_4 == arg0) {
-			OpenGL.glDisable(3168);
-			OpenGL.glDisable(3169);
-			OpenGL.glDisable(3170);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_S);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_T);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_R);
 			return;
 		}
 		@Pc(14) int local14 = Static242.method2532(arg0);
-		OpenGL.glTexGeni(8192, 9472, local14);
-		OpenGL.glEnable(3168);
-		OpenGL.glTexGeni(8193, 9472, local14);
-		OpenGL.glEnable(3169);
-		OpenGL.glTexGeni(8194, 9472, local14);
-		OpenGL.glEnable(3170);
+		OpenGL.glTexGeni(OpenGL.GL_S, OpenGL.GL_TEXTURE_GEN_MODE, local14);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_S);
+		OpenGL.glTexGeni(OpenGL.GL_T, OpenGL.GL_TEXTURE_GEN_MODE, local14);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_T);
+		OpenGL.glTexGeni(OpenGL.GL_R, OpenGL.GL_TEXTURE_GEN_MODE, local14);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_R);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Lclient!eba;[BBIII)Lclient!bga;")
@@ -273,9 +273,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5693() {
 		if (super.aBoolean690 && super.aBoolean683 && super.anInt9175 >= 0) {
-			OpenGL.glEnable(2912);
+			OpenGL.glEnable(OpenGL.GL_FOG);
 		} else {
-			OpenGL.glDisable(2912);
+			OpenGL.glDisable(OpenGL.GL_FOG);
 		}
 	}
 
@@ -374,8 +374,8 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		@Pc(22) int local22 = super.anInt9161;
 		@Pc(25) int local25 = super.anInt9165;
 		this.la();
-		OpenGL.glReadBuffer(1028);
-		OpenGL.glDrawBuffer(1029);
+		OpenGL.glReadBuffer(OpenGL.GL_FRONT);
+		OpenGL.glDrawBuffer(OpenGL.GL_BACK);
 		this.method5761();
 		this.method5756(false);
 		this.method5681(false);
@@ -385,16 +385,16 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		this.method5717(false, -2, false);
 		this.method5663(1);
 		this.method5662(0);
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadIdentity();
 		OpenGL.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadIdentity();
 		OpenGL.glRasterPos2i(0, 0);
-		OpenGL.glCopyPixels(0, 0, super.anInt9122, super.anInt9013, 6144);
+		OpenGL.glCopyPixels(0, 0, super.anInt9122, super.anInt9013, OpenGL.GL_COLOR);
 		OpenGL.glFlush();
-		OpenGL.glReadBuffer(1029);
-		OpenGL.glDrawBuffer(1029);
+		OpenGL.glReadBuffer(OpenGL.GL_BACK);
+		OpenGL.glDrawBuffer(OpenGL.GL_BACK);
 		this.KA(local16, local22, local19, local25);
 	}
 
@@ -402,9 +402,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5669() {
 		if (super.aBoolean679) {
-			OpenGL.glEnable(3008);
+			OpenGL.glEnable(OpenGL.GL_ALPHA_TEST);
 		} else {
-			OpenGL.glDisable(3008);
+			OpenGL.glDisable(OpenGL.GL_ALPHA_TEST);
 		}
 	}
 
@@ -443,7 +443,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "Y", descriptor = "(I)V")
 	@Override
 	protected void method5694() {
-		OpenGL.glActiveTexture(super.anInt9148 + 33984);
+		OpenGL.glActiveTexture(super.anInt9148 + OpenGL.GL_TEXTURE0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "e", descriptor = "(I)V")
@@ -543,7 +543,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	public void GA(@OriginalArg(0) int arg0) {
 		OpenGL.glClearColor((float) (arg0 & 0xFF0000) / 1.671168E7F, (float) (arg0 & 0xFF00) / 65280.0F, (float) (arg0 & 0xFF) / 255.0F, (float) (arg0 >>> 24) / 255.0F);
-		OpenGL.glClear(16384);
+		OpenGL.glClear(OpenGL.GL_COLOR_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IB)V")
@@ -586,24 +586,24 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5654() {
 		if (super.aBoolean689) {
-			OpenGL.glEnable(3042);
+			OpenGL.glEnable(OpenGL.GL_BLEND);
 		} else {
-			OpenGL.glDisable(3042);
+			OpenGL.glDisable(OpenGL.GL_BLEND);
 		}
 	}
 
 	@OriginalMember(owner = "client!tca", name = "I", descriptor = "(I)V")
 	@Override
 	protected void method5719() {
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadMatrixf(super.aFloatArray63, 0);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "c", descriptor = "(Z)V")
 	@Override
 	protected void method5639() {
-		OpenGL.glTexEnvi(8960, 34162, Static488.method4578(super.aClass121Array5[super.anInt9148]));
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_ALPHA, Static488.method4578(super.aClass121Array5[super.anInt9148]));
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IZ)Lclient!mg;")
@@ -619,7 +619,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		Static337.aFloatArray38[0] = super.aFloat186 * super.aFloat191;
 		Static337.aFloatArray38[2] = super.aFloat186 * super.aFloat195;
 		Static337.aFloatArray38[3] = 1.0F;
-		OpenGL.glLightModelfv(2899, Static337.aFloatArray38, 0);
+		OpenGL.glLightModelfv(OpenGL.GL_LIGHT_MODEL_AMBIENT, Static337.aFloatArray38, 0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "e", descriptor = "(II)V")
@@ -635,7 +635,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		Static337.aFloatArray38[0] = (float) (super.anInt9157 & 0xFF0000) / 1.671168E7F;
 		Static337.aFloatArray38[2] = (float) (super.anInt9157 & 0xFF) / 255.0F;
 		Static337.aFloatArray38[1] = (float) (super.anInt9157 & 0xFF00) / 65280.0F;
-		OpenGL.glTexEnvfv(8960, 8705, Static337.aFloatArray38, 0);
+		OpenGL.glTexEnvfv(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_COLOR, Static337.aFloatArray38, 0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(IILclient!mg;)V")
@@ -656,12 +656,12 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 		Static337.aFloatArray38[3] = 1.0F;
 		Static337.aFloatArray38[1] = super.aFloat184 * super.aFloat181;
 		Static337.aFloatArray38[2] = super.aFloat181 * super.aFloat195;
-		OpenGL.glLightfv(16384, 4609, Static337.aFloatArray38, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, Static337.aFloatArray38, 0);
 		Static337.aFloatArray38[1] = super.aFloat184 * -super.aFloat180;
 		Static337.aFloatArray38[3] = 1.0F;
 		Static337.aFloatArray38[0] = -super.aFloat180 * super.aFloat191;
 		Static337.aFloatArray38[2] = super.aFloat195 * -super.aFloat180;
-		OpenGL.glLightfv(16385, 4609, Static337.aFloatArray38, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, Static337.aFloatArray38, 0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(BII)V")
@@ -719,64 +719,64 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 				@Pc(57) Class157 local57 = local30.method3857(local50);
 				if (local57 == Static231.aClass157_1) {
 					local17 = true;
-					OpenGL.glVertexPointer(3, 5126, local41, (long) local37 + local45);
+					OpenGL.glVertexPointer(3, OpenGL.GL_FLOAT, local41, (long) local37 + local45);
 				} else if (local57 == Static231.aClass157_2) {
-					OpenGL.glNormalPointer(5126, local41, (long) local37 + local45);
+					OpenGL.glNormalPointer(OpenGL.GL_FLOAT, local41, (long) local37 + local45);
 					local15 = true;
 				} else if (Static231.aClass157_3 == local57) {
-					OpenGL.glColorPointer(4, 5121, local41, local45 + (long) local37);
+					OpenGL.glColorPointer(4, OpenGL.GL_UNSIGNED_BYTE, local41, local45 + (long) local37);
 					local13 = true;
 				} else if (Static231.aClass157_4 == local57) {
-					OpenGL.glClientActiveTexture(local11++ + 33984);
-					OpenGL.glTexCoordPointer(1, 5126, local41, local45 + (long) local37);
+					OpenGL.glClientActiveTexture(local11++ + OpenGL.GL_TEXTURE0);
+					OpenGL.glTexCoordPointer(1, OpenGL.GL_FLOAT, local41, local45 + (long) local37);
 				} else if (Static231.aClass157_5 == local57) {
-					OpenGL.glClientActiveTexture(local11++ + 33984);
-					OpenGL.glTexCoordPointer(2, 5126, local41, local45 + (long) local37);
+					OpenGL.glClientActiveTexture(local11++ + OpenGL.GL_TEXTURE0);
+					OpenGL.glTexCoordPointer(2, OpenGL.GL_FLOAT, local41, local45 + (long) local37);
 				} else if (local57 == Static231.aClass157_6) {
-					OpenGL.glClientActiveTexture(local11++ + 33984);
-					OpenGL.glTexCoordPointer(3, 5126, local41, local45 + (long) local37);
+					OpenGL.glClientActiveTexture(local11++ + OpenGL.GL_TEXTURE0);
+					OpenGL.glTexCoordPointer(3, OpenGL.GL_FLOAT, local41, local45 + (long) local37);
 				} else if (local57 == Static231.aClass157_7) {
-					OpenGL.glClientActiveTexture(local11++ + 33984);
-					OpenGL.glTexCoordPointer(4, 5126, local41, local45 + (long) local37);
+					OpenGL.glClientActiveTexture(local11++ + OpenGL.GL_TEXTURE0);
+					OpenGL.glTexCoordPointer(4, OpenGL.GL_FLOAT, local41, local45 + (long) local37);
 				}
 				local37 += local57.anInt3732;
 			}
 		}
 		if (this.aBoolean699 != local17) {
 			if (local17) {
-				OpenGL.glEnableClientState(32884);
+				OpenGL.glEnableClientState(OpenGL.GL_VERTEX_ARRAY);
 			} else {
-				OpenGL.glDisableClientState(32884);
+				OpenGL.glDisableClientState(OpenGL.GL_VERTEX_ARRAY);
 			}
 			this.aBoolean699 = local17;
 		}
 		if (local15 != this.aBoolean701) {
 			if (local15) {
-				OpenGL.glEnableClientState(32885);
+				OpenGL.glEnableClientState(OpenGL.GL_NORMAL_ARRAY);
 			} else {
-				OpenGL.glDisableClientState(32885);
+				OpenGL.glDisableClientState(OpenGL.GL_NORMAL_ARRAY);
 			}
 			this.aBoolean701 = local15;
 		}
 		if (this.aBoolean700 != local13) {
 			if (local13) {
-				OpenGL.glEnableClientState(32886);
+				OpenGL.glEnableClientState(OpenGL.GL_COLOR_ARRAY);
 			} else {
-				OpenGL.glDisableClientState(32886);
+				OpenGL.glDisableClientState(OpenGL.GL_COLOR_ARRAY);
 			}
 			this.aBoolean700 = local13;
 		}
 		@Pc(302) int local302;
 		if (this.anInt9275 < local11) {
 			for (local302 = this.anInt9275; local302 < local11; local302++) {
-				OpenGL.glClientActiveTexture(local302 + 33984);
-				OpenGL.glEnableClientState(32888);
+				OpenGL.glClientActiveTexture(local302 + OpenGL.GL_TEXTURE0);
+				OpenGL.glEnableClientState(OpenGL.GL_TEXTURE_COORD_ARRAY);
 			}
 			this.anInt9275 = local11;
 		} else if (local11 < this.anInt9275) {
 			for (local302 = local11; local302 < this.anInt9275; local302++) {
-				OpenGL.glClientActiveTexture(local302 + 33984);
-				OpenGL.glDisableClientState(32888);
+				OpenGL.glClientActiveTexture(local302 + OpenGL.GL_TEXTURE0);
+				OpenGL.glDisableClientState(OpenGL.GL_TEXTURE_COORD_ARRAY);
 			}
 			this.anInt9275 = local11;
 		}
@@ -786,11 +786,11 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5698() {
 		if (super.aBoolean684) {
-			OpenGL.glEnable(16384);
-			OpenGL.glEnable(16385);
+			OpenGL.glEnable(OpenGL.GL_LIGHT0);
+			OpenGL.glEnable(OpenGL.GL_LIGHT1);
 		} else {
-			OpenGL.glDisable(16384);
-			OpenGL.glDisable(16385);
+			OpenGL.glDisable(OpenGL.GL_LIGHT0);
+			OpenGL.glDisable(OpenGL.GL_LIGHT1);
 		}
 	}
 
@@ -803,7 +803,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	public void ya() {
 		this.method5692(true);
-		OpenGL.glClear(256);
+		OpenGL.glClear(OpenGL.GL_DEPTH_BUFFER_BIT);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Lclient!eba;ZIIB[FII)Lclient!og;")
@@ -830,9 +830,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	public void method5750(@OriginalArg(0) boolean arg0) {
 		if (arg0) {
-			OpenGL.glEnable(32925);
+			OpenGL.glEnable(OpenGL.GL_MULTISAMPLE);
 		} else {
-			OpenGL.glDisable(32925);
+			OpenGL.glDisable(OpenGL.GL_MULTISAMPLE);
 		}
 	}
 
@@ -840,35 +840,35 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5711() {
 		for (@Pc(6) int local6 = super.anInt9184 - 1; local6 >= 0; local6--) {
-			OpenGL.glActiveTexture(local6 + 33984);
-			OpenGL.glTexEnvi(8960, 8704, 34160);
-			OpenGL.glTexEnvi(8960, 34161, 8448);
-			OpenGL.glTexEnvi(8960, 34178, 34166);
-			OpenGL.glTexEnvi(8960, 34162, 8448);
-			OpenGL.glTexEnvi(8960, 34186, 34166);
+			OpenGL.glActiveTexture(local6 + OpenGL.GL_TEXTURE0);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_MODE, OpenGL.GL_COMBINE);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_RGB, OpenGL.GL_MODULATE);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_SRC2_RGB, OpenGL.GL_CONSTANT);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_ALPHA, OpenGL.GL_MODULATE);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_SRC2_ALPHA, OpenGL.GL_CONSTANT);
 		}
-		OpenGL.glTexEnvi(8960, 34186, 34168);
-		OpenGL.glShadeModel(7425);
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_SRC2_ALPHA, OpenGL.GL_PREVIOUS);
+		OpenGL.glShadeModel(OpenGL.GL_SMOOTH);
 		OpenGL.glClearDepth(1.0F);
-		OpenGL.glDepthFunc(515);
-		OpenGL.glPolygonMode(1028, 6914);
-		OpenGL.glEnable(2884);
-		OpenGL.glCullFace(1029);
-		OpenGL.glAlphaFunc(516, 0.0F);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glDepthFunc(OpenGL.GL_LEQUAL);
+		OpenGL.glPolygonMode(OpenGL.GL_FRONT, OpenGL.GL_FILL);
+		OpenGL.glEnable(OpenGL.GL_CULL_FACE);
+		OpenGL.glCullFace(OpenGL.GL_BACK);
+		OpenGL.glAlphaFunc(OpenGL.GL_GREATER, 0.0F);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadIdentity();
-		OpenGL.glColorMaterial(1028, 5634);
-		OpenGL.glEnable(2903);
+		OpenGL.glColorMaterial(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT_AND_DIFFUSE);
+		OpenGL.glEnable(OpenGL.GL_COLOR_MATERIAL);
 		@Pc(79) float[] local79 = new float[] { 0.0F, 0.0F, 0.0F, 1.0F };
 		for (@Pc(81) int local81 = 0; local81 < 8; local81++) {
 			@Pc(91) int local91 = local81 + 16384;
-			OpenGL.glLightfv(local91, 4608, local79, 0);
-			OpenGL.glLightf(local91, 4615, 0.0F);
-			OpenGL.glLightf(local91, 4616, 0.0F);
+			OpenGL.glLightfv(local91, OpenGL.GL_AMBIENT, local79, 0);
+			OpenGL.glLightf(local91, OpenGL.GL_CONSTANT_ATTENUATION, 0.0F);
+			OpenGL.glLightf(local91, OpenGL.GL_LINEAR_ATTENUATION, 0.0F);
 		}
-		OpenGL.glFogf(2914, 0.95F);
-		OpenGL.glFogi(2917, 9729);
-		OpenGL.glHint(3156, 4353);
+		OpenGL.glFogf(OpenGL.GL_FOG_DENSITY, 0.95F);
+		OpenGL.glFogi(OpenGL.GL_FOG_MODE, OpenGL.GL_LINEAR);
+		OpenGL.glHint(OpenGL.GL_FOG_HINT, OpenGL.GL_FASTEST);
 		this.anOpenGL2.setSwapInterval(0);
 		super.method5711();
 	}
@@ -882,9 +882,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5725() {
 		if (super.aBoolean678) {
-			OpenGL.glEnable(2929);
+			OpenGL.glEnable(OpenGL.GL_DEPTH_TEST);
 		} else {
-			OpenGL.glDisable(2929);
+			OpenGL.glDisable(OpenGL.GL_DEPTH_TEST);
 		}
 	}
 
@@ -924,7 +924,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	public int[] na(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(3) int arg3) {
 		@Pc(10) int[] local10 = new int[arg3 * arg2];
 		for (@Pc(12) int local12 = 0; local12 < arg3; local12++) {
-			OpenGL.glReadPixelsi(arg0, super.anInt9013 - arg1 - local12 - 1, arg2, 1, 32993, this.anInt9277, local10, arg2 * local12);
+			OpenGL.glReadPixelsi(arg0, super.anInt9013 - arg1 - local12 - 1, arg2, 1, OpenGL.GL_BGRA, this.anInt9277, local10, arg2 * local12);
 		}
 		return local10;
 	}
@@ -974,13 +974,13 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "k", descriptor = "(B)V")
 	@Override
 	protected void method5695() {
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		if (Static215.aClass370_2 == super.aClass370Array3[super.anInt9148]) {
 			OpenGL.glLoadIdentity();
 		} else {
 			OpenGL.glLoadMatrixf(super.aClass73_Sub1Array3[super.anInt9148].method1207(Static135.aFloatArray56), 0);
 		}
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(I[[IZI)Lclient!fv;")
@@ -1002,27 +1002,27 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5667() {
 		if (super.aBoolean697) {
-			OpenGL.glEnable(3089);
+			OpenGL.glEnable(OpenGL.GL_SCISSOR_TEST);
 		} else {
-			OpenGL.glDisable(3089);
+			OpenGL.glDisable(OpenGL.GL_SCISSOR_TEST);
 		}
 	}
 
 	@OriginalMember(owner = "client!tca", name = "U", descriptor = "(I)V")
 	@Override
 	public void method5767() {
-		OpenGL.glLightfv(16384, 4611, super.aFloatArray60, 0);
-		OpenGL.glLightfv(16385, 4611, super.aFloatArray61, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, super.aFloatArray60, 0);
+		OpenGL.glLightfv(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, super.aFloatArray61, 0);
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Lclient!hla;BZZI)V")
 	@Override
 	public void method5734(@OriginalArg(0) Class168 arg0, @OriginalArg(2) boolean arg1, @OriginalArg(3) boolean arg2, @OriginalArg(4) int arg3) {
-		OpenGL.glTexEnvi(8960, arg3 + 34176, Static428.method4102(arg0));
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg3 + OpenGL.GL_SRC0_RGB, Static428.method4102(arg0));
 		if (arg1) {
-			OpenGL.glTexEnvi(8960, arg3 + 34192, arg2 ? 771 : 770);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg3 + OpenGL.GL_OPERAND0_RGB, arg2 ? OpenGL.GL_ONE_MINUS_SRC_ALPHA : OpenGL.GL_SRC_ALPHA);
 		} else {
-			OpenGL.glTexEnvi(8960, arg3 + 34192, arg2 ? 769 : 768);
+			OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, arg3 + OpenGL.GL_OPERAND0_RGB, arg2 ? OpenGL.GL_ONE_MINUS_SRC_COLOR : OpenGL.GL_SRC_COLOR);
 		}
 	}
 
@@ -1040,7 +1040,7 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@OriginalMember(owner = "client!tca", name = "h", descriptor = "(Z)V")
 	@Override
 	protected void method5648() {
-		OpenGL.glTexEnvi(8960, 34161, Static488.method4578(super.aClass121Array6[super.anInt9148]));
+		OpenGL.glTexEnvi(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_COMBINE_RGB, Static488.method4578(super.aClass121Array6[super.anInt9148]));
 	}
 
 	@OriginalMember(owner = "client!tca", name = "a", descriptor = "(Lclient!fma;III)V")
@@ -1126,17 +1126,17 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 			Static337.aFloatArray38[1] = (float) local25.method5979();
 			Static337.aFloatArray38[2] = (float) local25.method5983();
 			Static337.aFloatArray38[3] = 1.0F;
-			OpenGL.glLightfv(local34, 4611, Static337.aFloatArray38, 0);
+			OpenGL.glLightfv(local34, OpenGL.GL_POSITION, Static337.aFloatArray38, 0);
 			Static337.aFloatArray38[1] = (float) (local29 >> 8 & 0xFF) * local40;
 			Static337.aFloatArray38[0] = (float) (local29 >> 16 & 0xFF) * local40;
 			Static337.aFloatArray38[2] = local40 * (float) (local29 & 0xFF);
 			Static337.aFloatArray38[3] = 1.0F;
-			OpenGL.glLightfv(local34, 4609, Static337.aFloatArray38, 0);
-			OpenGL.glLightf(local34, 4617, 1.0F / (float) (local25.method5986() * local25.method5986()));
+			OpenGL.glLightfv(local34, OpenGL.GL_DIFFUSE, Static337.aFloatArray38, 0);
+			OpenGL.glLightf(local34, OpenGL.GL_QUADRATIC_ATTENUATION, 1.0F / (float) (local25.method5986() * local25.method5986()));
 			OpenGL.glEnable(local34);
 		}
 		while (super.anInt9176 > local18) {
-			OpenGL.glDisable(local18 + 16386);
+			OpenGL.glDisable(local18 + OpenGL.GL_LIGHT2);
 			local18++;
 		}
 		super.method5658();
@@ -1146,9 +1146,9 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5687() {
 		if (super.aBoolean691 && !super.aBoolean680) {
-			OpenGL.glEnable(2896);
+			OpenGL.glEnable(OpenGL.GL_LIGHTING);
 		} else {
-			OpenGL.glDisable(2896);
+			OpenGL.glDisable(OpenGL.GL_LIGHTING);
 		}
 	}
 
@@ -1163,11 +1163,11 @@ public final class Class19_Sub1_Sub2 extends Class19_Sub1 {
 	@Override
 	protected void method5644() {
 		if (super.aClass38_7 == Static80.aClass38_2) {
-			OpenGL.glBlendFunc(770, 771);
+			OpenGL.glBlendFunc(OpenGL.GL_SRC_ALPHA, OpenGL.GL_ONE_MINUS_SRC_ALPHA);
 		} else if (super.aClass38_7 == Static217.aClass38_3) {
-			OpenGL.glBlendFunc(1, 1);
+			OpenGL.glBlendFunc(OpenGL.GL_ONE, OpenGL.GL_ONE);
 		} else if (super.aClass38_7 == Static355.aClass38_5) {
-			OpenGL.glBlendFunc(774, 1);
+			OpenGL.glBlendFunc(OpenGL.GL_DST_COLOR, OpenGL.GL_ONE);
 		}
 	}
 }

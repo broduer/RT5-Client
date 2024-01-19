@@ -32,9 +32,9 @@ public final class Class26_Sub1 extends Class26 {
 	@Override
 	public void method5860() {
 		super.aClass19_Sub1_21.method5689(0, Static189.aClass168_2);
-		OpenGL.glBindProgramARB(34336, 0);
-		OpenGL.glDisable(34820);
-		OpenGL.glDisable(34336);
+		OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
+		OpenGL.glDisable(OpenGL.GL_FRAGMENT_PROGRAM_ARB);
+		OpenGL.glDisable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 	}
 
 	@OriginalMember(owner = "client!at", name = "b", descriptor = "(B)Z")
@@ -51,8 +51,8 @@ public final class Class26_Sub1 extends Class26 {
 	@OriginalMember(owner = "client!at", name = "a", descriptor = "(IZ)V")
 	@Override
 	public void method5871(@OriginalArg(1) boolean arg0) {
-		OpenGL.glBindProgramARB(34336, this.aClass135_1.anInt3106);
-		OpenGL.glEnable(34336);
+		OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, this.aClass135_1.anInt3106);
+		OpenGL.glEnable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 		super.aClass19_Sub1_21.method5689(0, Static188.aClass168_1);
 	}
 
@@ -68,11 +68,11 @@ public final class Class26_Sub1 extends Class26 {
 		if (this.aClass7_2.aBoolean7) {
 			@Pc(12) float local12 = (float) (super.aClass19_Sub1_21.anInt9164 % 4000) / 4000.0F;
 			super.aClass19_Sub1_21.method5697(this.aClass7_2.anInterface2_2);
-			OpenGL.glProgramLocalParameter4fARB(34336, 0, local12, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0, local12, 0.0F, 0.0F, 1.0F);
 		} else {
 			@Pc(38) int local38 = super.aClass19_Sub1_21.anInt9164 % 4000 * 16 / 4000;
 			super.aClass19_Sub1_21.method5697(this.aClass7_2.anInterface18Array2[local38]);
-			OpenGL.glProgramLocalParameter4fARB(34336, 0, 0.0F, 0.0F, 0.0F, 1.0F);
+			OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0, 0.0F, 0.0F, 0.0F, 1.0F);
 		}
 	}
 }

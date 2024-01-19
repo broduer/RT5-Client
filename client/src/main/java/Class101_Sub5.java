@@ -21,22 +21,22 @@ public final class Class101_Sub5 extends Class101 {
 		this.aClass36_5.method539(0);
 		super.aClass19_Sub3_42.method4889(1);
 		if (this.aClass329_4.aBoolean655) {
-			OpenGL.glTexGeni(8194, 9472, 9217);
-			OpenGL.glEnable(3170);
+			OpenGL.glTexGeni(OpenGL.GL_R, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_OBJECT_LINEAR);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_R);
 		}
-		OpenGL.glTexGeni(8192, 9472, 9216);
-		OpenGL.glTexGeni(8193, 9472, 9216);
-		OpenGL.glEnable(3168);
-		OpenGL.glEnable(3169);
+		OpenGL.glTexGeni(OpenGL.GL_S, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_EYE_LINEAR);
+		OpenGL.glTexGeni(OpenGL.GL_T, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_EYE_LINEAR);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_S);
+		OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_T);
 		super.aClass19_Sub3_42.method4889(0);
 		this.aClass36_5.method541();
 		this.aClass36_5.method539(1);
 		super.aClass19_Sub3_42.method4889(1);
 		if (this.aClass329_4.aBoolean655) {
-			OpenGL.glDisable(3170);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_R);
 		}
-		OpenGL.glDisable(3168);
-		OpenGL.glDisable(3169);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_S);
+		OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_T);
 		super.aClass19_Sub3_42.method4889(0);
 		this.aClass36_5.method541();
 	}
@@ -98,18 +98,18 @@ public final class Class101_Sub5 extends Class101 {
 			Static617.aFloatArray69[3] = 0.0F;
 			Static617.aFloatArray69[2] = local37;
 		}
-		OpenGL.glTexGenfv(8192, 9474, Static617.aFloatArray69, 0);
+		OpenGL.glTexGenfv(OpenGL.GL_S, OpenGL.GL_EYE_PLANE, Static617.aFloatArray69, 0);
 		Static617.aFloatArray69[2] = 0.0F;
 		Static617.aFloatArray69[1] = local37;
 		Static617.aFloatArray69[0] = 0.0F;
 		Static617.aFloatArray69[3] = (float) super.aClass19_Sub3_42.anInt7987 * local14 % 1.0F;
-		OpenGL.glTexGenfv(8193, 9474, Static617.aFloatArray69, 0);
+		OpenGL.glTexGenfv(OpenGL.GL_T, OpenGL.GL_EYE_PLANE, Static617.aFloatArray69, 0);
 		if (this.aClass329_4.aBoolean655) {
 			Static617.aFloatArray69[3] = (float) super.aClass19_Sub3_42.anInt7987 * local25 % 1.0F;
 			Static617.aFloatArray69[0] = 0.0F;
 			Static617.aFloatArray69[1] = 0.0F;
 			Static617.aFloatArray69[2] = 0.0F;
-			OpenGL.glTexGenfv(8194, 9473, Static617.aFloatArray69, 0);
+			OpenGL.glTexGenfv(OpenGL.GL_R, OpenGL.GL_OBJECT_PLANE, Static617.aFloatArray69, 0);
 		} else {
 			@Pc(148) int local148 = (int) ((float) super.aClass19_Sub3_42.anInt7987 * 16.0F * local25);
 			super.aClass19_Sub3_42.method4876(this.aClass329_4.aClass93_Sub2Array4[local148 % 16]);

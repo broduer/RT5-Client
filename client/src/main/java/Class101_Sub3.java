@@ -23,12 +23,12 @@ public final class Class101_Sub3 extends Class101 {
 			super.aClass19_Sub3_42.method4906(7681, 34165);
 			super.aClass19_Sub3_42.method4896(34168, 770, 2);
 			super.aClass19_Sub3_42.method4904(0, 34167);
-			OpenGL.glTexGeni(8192, 9472, 34066);
-			OpenGL.glTexGeni(8193, 9472, 34066);
-			OpenGL.glTexGeni(8194, 9472, 34066);
-			OpenGL.glEnable(3168);
-			OpenGL.glEnable(3169);
-			OpenGL.glEnable(3170);
+			OpenGL.glTexGeni(OpenGL.GL_S, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_REFLECTION_MAP);
+			OpenGL.glTexGeni(OpenGL.GL_T, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_REFLECTION_MAP);
+			OpenGL.glTexGeni(OpenGL.GL_R, OpenGL.GL_TEXTURE_GEN_MODE, OpenGL.GL_REFLECTION_MAP);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_S);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_T);
+			OpenGL.glEnable(OpenGL.GL_TEXTURE_GEN_R);
 			super.aClass19_Sub3_42.method4889(0);
 			this.aClass36_3.method541();
 			this.aClass36_3.method539(1);
@@ -36,12 +36,12 @@ public final class Class101_Sub3 extends Class101 {
 			super.aClass19_Sub3_42.method4906(8448, 8448);
 			super.aClass19_Sub3_42.method4896(34166, 770, 2);
 			super.aClass19_Sub3_42.method4904(0, 5890);
-			OpenGL.glDisable(3168);
-			OpenGL.glDisable(3169);
-			OpenGL.glDisable(3170);
-			OpenGL.glMatrixMode(5890);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_S);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_T);
+			OpenGL.glDisable(OpenGL.GL_TEXTURE_GEN_R);
+			OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 			OpenGL.glLoadIdentity();
-			OpenGL.glMatrixMode(5888);
+			OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 			super.aClass19_Sub3_42.method4889(0);
 			this.aClass36_3.method541();
 		}
@@ -73,9 +73,9 @@ public final class Class101_Sub3 extends Class101 {
 		this.aClass36_3.method542('\u0000');
 		super.aClass19_Sub3_42.method4889(1);
 		super.aClass19_Sub3_42.method4876(local8);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glLoadMatrixf(super.aClass19_Sub3_42.aClass73_Sub3_5.method5003(), 0);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		super.aClass19_Sub3_42.method4889(0);
 		this.aBoolean274 = true;
 	}

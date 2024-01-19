@@ -21,7 +21,7 @@ public final class Static397 {
 			@Pc(55) byte[] local55 = arg5;
 			@Pc(62) byte[] local62 = new byte[local35 * local49 * local53];
 			while (true) {
-				OpenGL.glTexImage2Dub(arg1, local37, arg0, arg3, arg4, 0, arg2, 5121, local55, 0);
+				OpenGL.glTexImage2Dub(arg1, local37, arg0, arg3, arg4, 0, arg2, OpenGL.GL_UNSIGNED_BYTE, local55, 0);
 				if (local45 <= 1) {
 					return;
 				}

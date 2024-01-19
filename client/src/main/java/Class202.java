@@ -31,11 +31,11 @@ public final class Class202 {
 		if (local14.method6757()) {
 			OpenGL.glPushMatrix();
 			OpenGL.glLoadIdentity();
-			OpenGL.glMatrixMode(5889);
+			OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 			OpenGL.glPushMatrix();
 			OpenGL.glLoadIdentity();
 			OpenGL.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
-			OpenGL.glPushAttrib(2048);
+			OpenGL.glPushAttrib(OpenGL.GL_VIEWPORT_BIT);
 			OpenGL.glViewport(0, 0, arg1.anInt10410, arg1.anInt10401);
 			OpenGL.glUseProgramObjectARB(this.aClass179_1.aLong136);
 			OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(this.aClass179_1.aLong136, "heightMap"), 0);
@@ -44,7 +44,7 @@ public final class Class202 {
 			for (@Pc(115) int local115 = 0; local115 < arg1.anInt10403; local115++) {
 				@Pc(123) float local123 = (float) local115 / (float) arg1.anInt10403;
 				this.aClass19_Sub3_21.method4876(arg2);
-				OpenGL.glBegin(7);
+				OpenGL.glBegin(OpenGL.GL_QUADS);
 				OpenGL.glTexCoord3f(0.0F, 0.0F, local123);
 				OpenGL.glVertex2f(0.0F, 0.0F);
 				OpenGL.glTexCoord3f(1.0F, 0.0F, local123);
@@ -59,7 +59,7 @@ public final class Class202 {
 			OpenGL.glUseProgramObjectARB(0L);
 			OpenGL.glPopAttrib();
 			OpenGL.glPopMatrix();
-			OpenGL.glMatrixMode(5888);
+			OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 			local35 = true;
 			OpenGL.glPopMatrix();
 		}

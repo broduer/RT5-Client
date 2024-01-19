@@ -58,11 +58,11 @@ public abstract class Class93 implements Interface3 {
 	private void method6818() {
 		this.aClass19_Sub3_43.method4876(this);
 		if (this.aBoolean826) {
-			OpenGL.glTexParameteri(this.anInt10912, 10241, this.aBoolean825 ? 9987 : 9729);
-			OpenGL.glTexParameteri(this.anInt10912, 10240, 9729);
+			OpenGL.glTexParameteri(this.anInt10912, OpenGL.GL_TEXTURE_MIN_FILTER, this.aBoolean825 ? OpenGL.GL_LINEAR_MIPMAP_LINEAR : OpenGL.GL_LINEAR);
+			OpenGL.glTexParameteri(this.anInt10912, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_LINEAR);
 		} else {
-			OpenGL.glTexParameteri(this.anInt10912, 10241, this.aBoolean825 ? 9984 : 9728);
-			OpenGL.glTexParameteri(this.anInt10912, 10240, 9728);
+			OpenGL.glTexParameteri(this.anInt10912, OpenGL.GL_TEXTURE_MIN_FILTER, this.aBoolean825 ? OpenGL.GL_NEAREST_MIPMAP_NEAREST : OpenGL.GL_NEAREST);
+			OpenGL.glTexParameteri(this.anInt10912, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_NEAREST);
 		}
 	}
 

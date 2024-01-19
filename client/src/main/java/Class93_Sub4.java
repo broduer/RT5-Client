@@ -14,16 +14,16 @@ public final class Class93_Sub4 extends Class93 {
 		super(arg0, 3552, arg1, arg2, false);
 		this.anInt10926 = arg2;
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glPixelStorei(3317, 1);
-		OpenGL.glTexImage1Dub(super.anInt10912, 0, super.anInt10911, this.anInt10926, 0, arg4, 5121, arg3, 0);
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
+		OpenGL.glTexImage1Dub(super.anInt10912, 0, super.anInt10911, this.anInt10926, 0, arg4, OpenGL.GL_UNSIGNED_BYTE, arg3, 0);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 		this.method6817(true);
 	}
 
 	@OriginalMember(owner = "client!wu", name = "a", descriptor = "(IZ)V")
 	public void method6827() {
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glTexParameteri(super.anInt10912, 10242, 33071);
+		OpenGL.glTexParameteri(super.anInt10912, OpenGL.GL_TEXTURE_WRAP_S, OpenGL.GL_CLAMP_TO_EDGE);
 	}
 
 	@OriginalMember(owner = "client!wu", name = "a", descriptor = "(I)V")

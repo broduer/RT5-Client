@@ -204,7 +204,7 @@ public final class Class178_Sub2 extends Class178 {
 		Static699.aFloatArray81[10] = 0.0F;
 		Static699.aFloatArray81[4] = 0.0F;
 		Static699.aFloatArray81[7] = 0.0F;
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glLoadMatrixf(Static699.aFloatArray81, 0);
 		Static699.aFloatArray81[12] = 0.0F;
 		Static699.aFloatArray81[15] = 1.0F;
@@ -222,7 +222,7 @@ public final class Class178_Sub2 extends Class178 {
 		Static699.aFloatArray81[1] = 0.0F;
 		Static699.aFloatArray81[3] = 0.0F;
 		Static699.aFloatArray81[13] = 0.0F;
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		OpenGL.glLoadMatrixf(Static699.aFloatArray81, 0);
 		if ((this.anInt7486 & 0x7) == 0) {
 			this.aClass19_Sub3_33.method4883(false);

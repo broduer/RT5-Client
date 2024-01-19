@@ -111,7 +111,7 @@ public final class Class26_Sub11 extends Class26 {
 		@Pc(23) int local23 = super.aClass19_Sub1_21.i();
 		@Pc(34) float local34 = (float) local19 - (float) (local19 - local23) * 0.125F;
 		@Pc(46) float local46 = -((float) (local19 - local23) * 0.25F) + (float) local19;
-		OpenGL.glProgramLocalParameter4fARB(34336, 0, local46, local34, 1.0F / (float) super.aClass19_Sub1_21.method5714(), (float) super.aClass19_Sub1_21.method5729() / 255.0F);
+		OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0, local46, local34, 1.0F / (float) super.aClass19_Sub1_21.method5714(), (float) super.aClass19_Sub1_21.method5729() / 255.0F);
 		super.aClass19_Sub1_21.method5747(1);
 		super.aClass19_Sub1_21.method5721(super.aClass19_Sub1_21.method5634());
 		super.aClass19_Sub1_21.method5747(0);
@@ -133,9 +133,9 @@ public final class Class26_Sub11 extends Class26 {
 			this.aBoolean723 = false;
 		}
 		if (this.aBoolean722) {
-			OpenGL.glBindProgramARB(34336, 0);
-			OpenGL.glDisable(34820);
-			OpenGL.glDisable(34336);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
+			OpenGL.glDisable(OpenGL.GL_FRAGMENT_PROGRAM_ARB);
+			OpenGL.glDisable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 			this.aBoolean722 = false;
 		}
 	}
@@ -156,14 +156,14 @@ public final class Class26_Sub11 extends Class26 {
 		@Pc(8) int local8 = super.aClass19_Sub1_21.method5701();
 		@Pc(13) Class73_Sub1 local13 = super.aClass19_Sub1_21.method5727();
 		if (this.aBoolean726) {
-			OpenGL.glBindProgramARB(34336, ~local8 == Integer.MIN_VALUE ? this.aClass135_3.anInt3106 : this.aClass135_4.anInt3106);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, ~local8 == Integer.MIN_VALUE ? this.aClass135_3.anInt3106 : this.aClass135_4.anInt3106);
 		} else {
-			OpenGL.glBindProgramARB(34336, local8 == Integer.MAX_VALUE ? this.aClass135_2.anInt3106 : this.aClass135_5.anInt3106);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, local8 == Integer.MAX_VALUE ? this.aClass135_2.anInt3106 : this.aClass135_5.anInt3106);
 		}
-		OpenGL.glEnable(34336);
+		OpenGL.glEnable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 		this.aBoolean722 = true;
 		local13.method1195((float) local8, -1.0F, 0.0F, this.aFloatArray68, 0.0F);
-		OpenGL.glProgramLocalParameter4fARB(34336, 1, this.aFloatArray68[0], this.aFloatArray68[1], this.aFloatArray68[2], this.aFloatArray68[3]);
+		OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 1, this.aFloatArray68[0], this.aFloatArray68[1], this.aFloatArray68[2], this.aFloatArray68[3]);
 		this.method5865();
 	}
 

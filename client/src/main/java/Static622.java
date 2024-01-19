@@ -20,8 +20,8 @@ public final class Static622 {
 		}
 		@Pc(11) int local11 = OpenGL.glGenProgramARB();
 		OpenGL.glBindProgramARB(arg1, local11);
-		OpenGL.glProgramStringARB(arg1, 34933, arg0);
-		OpenGL.glGetIntegerv(34379, Static166.anIntArray247, 0);
+		OpenGL.glProgramStringARB(arg1, OpenGL.GL_PROGRAM_FORMAT_ASCII_ARB, arg0);
+		OpenGL.glGetIntegerv(OpenGL.GL_PROGRAM_ERROR_POSITION_ARB, Static166.anIntArray247, 0);
 		if (Static166.anIntArray247[0] == -1) {
 			OpenGL.glBindProgramARB(arg1, 0);
 			return new Class71(arg2, arg1, local11);

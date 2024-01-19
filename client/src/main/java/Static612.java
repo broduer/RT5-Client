@@ -26,7 +26,7 @@ public final class Static612 {
 			@Pc(61) float[] local61 = arg4;
 			@Pc(73) float[] local73 = new float[local41 * local59 * local55];
 			while (true) {
-				OpenGL.glTexImage2Df(3553, local43, 34842, arg2, arg1, 0, 6408, 5126, local61, 0);
+				OpenGL.glTexImage2Df(OpenGL.GL_TEXTURE_2D, local43, OpenGL.GL_RGBA16F, arg2, arg1, 0, OpenGL.GL_RGBA, OpenGL.GL_FLOAT, local61, 0);
 				if (local51 <= 1) {
 					return;
 				}

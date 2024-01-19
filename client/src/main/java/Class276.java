@@ -188,7 +188,7 @@ public final class Class276 {
 			if (this.aBoolean528) {
 				local21 = 16640;
 			}
-			OpenGL.glBlitFramebufferEXT(0, 0, this.anInt6944, this.anInt6943, 0, 0, this.anInt6944, this.anInt6943, local21, 9728);
+			OpenGL.glBlitFramebufferEXT(0, 0, this.anInt6944, this.anInt6943, 0, 0, this.anInt6944, this.anInt6943, local21, OpenGL.GL_NEAREST);
 			this.aClass19_Sub3_32.method4863(this.aClass406_3);
 			this.aClass19_Sub3_32.method4879(this.aClass406_4);
 		}
@@ -207,34 +207,34 @@ public final class Class276 {
 				if (local115 == null && local119 - 1 == local121) {
 					this.aClass19_Sub3_32.method4868(this.aClass406_4);
 					this.aClass19_Sub3_32.method4897(0, 0);
-					OpenGL.glBegin(7);
+					OpenGL.glBegin(OpenGL.GL_QUADS);
 					OpenGL.glTexCoord2f(0.0F, (float) this.anInt6943);
-					OpenGL.glMultiTexCoord2f(33985, 0.0F, 1.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 1.0F);
 					OpenGL.glVertex2i(this.anInt6942, this.anInt6948);
 					OpenGL.glTexCoord2f(0.0F, 0.0F);
-					OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 0.0F);
 					OpenGL.glVertex2i(this.anInt6942, this.anInt6948 + this.anInt6943);
 					OpenGL.glTexCoord2f((float) this.anInt6944, 0.0F);
-					OpenGL.glMultiTexCoord2f(33985, 1.0F, 0.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 1.0F, 0.0F);
 					OpenGL.glVertex2i(this.anInt6944 + this.anInt6942, this.anInt6943 + this.anInt6948);
 					OpenGL.glTexCoord2f((float) this.anInt6944, (float) this.anInt6943);
-					OpenGL.glMultiTexCoord2f(33985, 1.0F, 1.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 1.0F, 1.0F);
 					OpenGL.glVertex2i(this.anInt6942 + this.anInt6944, this.anInt6948);
 					OpenGL.glEnd();
 				} else {
 					this.aClass406_4.method6760(local99);
-					OpenGL.glBegin(7);
+					OpenGL.glBegin(OpenGL.GL_QUADS);
 					OpenGL.glTexCoord2f(0.0F, (float) this.anInt6943);
-					OpenGL.glMultiTexCoord2f(33985, 0.0F, 1.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 1.0F);
 					OpenGL.glVertex2i(0, 0);
 					OpenGL.glTexCoord2f(0.0F, 0.0F);
-					OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 0.0F);
 					OpenGL.glVertex2i(0, this.anInt6943);
 					OpenGL.glTexCoord2f((float) this.anInt6944, 0.0F);
-					OpenGL.glMultiTexCoord2f(33985, 1.0F, 0.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 1.0F, 0.0F);
 					OpenGL.glVertex2i(this.anInt6944, this.anInt6943);
 					OpenGL.glTexCoord2f((float) this.anInt6944, (float) this.anInt6943);
-					OpenGL.glMultiTexCoord2f(33985, 1.0F, 1.0F);
+					OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 1.0F, 1.0F);
 					OpenGL.glVertex2i(this.anInt6944, 0);
 					OpenGL.glEnd();
 				}

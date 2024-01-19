@@ -55,20 +55,20 @@ public final class Class23_Sub2 extends Class23 {
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(III)V")
 	@Override
 	public void a(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2) {
-		OpenGL.glPixelTransferf(3348, 0.5F);
-		OpenGL.glPixelTransferf(3349, 0.499F);
-		OpenGL.glPixelTransferf(3352, 0.5F);
-		OpenGL.glPixelTransferf(3353, 0.499F);
-		OpenGL.glPixelTransferf(3354, 0.5F);
-		OpenGL.glPixelTransferf(3355, 0.499F);
+		OpenGL.glPixelTransferf(OpenGL.GL_RED_SCALE, 0.5F);
+		OpenGL.glPixelTransferf(OpenGL.GL_RED_BIAS, 0.499F);
+		OpenGL.glPixelTransferf(OpenGL.GL_GREEN_SCALE, 0.5F);
+		OpenGL.glPixelTransferf(OpenGL.GL_GREEN_BIAS, 0.499F);
+		OpenGL.glPixelTransferf(OpenGL.GL_BLUE_SCALE, 0.5F);
+		OpenGL.glPixelTransferf(OpenGL.GL_BLUE_BIAS, 0.499F);
 		this.aClass93_Sub2_Sub1_2 = Static295.method3018(arg0, this.aClass93_Sub2_Sub1_3.anInt3257, this.aClass93_Sub2_Sub1_3.anInt3259, arg1, this.aClass19_Sub3_28);
 		this.anInt6031 = arg2;
-		OpenGL.glPixelTransferf(3348, 1.0F);
-		OpenGL.glPixelTransferf(3349, 0.0F);
-		OpenGL.glPixelTransferf(3352, 1.0F);
-		OpenGL.glPixelTransferf(3353, 0.0F);
-		OpenGL.glPixelTransferf(3354, 1.0F);
-		OpenGL.glPixelTransferf(3355, 0.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_RED_SCALE, 1.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_RED_BIAS, 0.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_GREEN_SCALE, 1.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_GREEN_BIAS, 0.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_BLUE_SCALE, 1.0F);
+		OpenGL.glPixelTransferf(OpenGL.GL_BLUE_BIAS, 0.0F);
 	}
 
 	@OriginalMember(owner = "client!mb", name = "a", descriptor = "(IIIIIIII)V")
@@ -88,7 +88,7 @@ public final class Class23_Sub2 extends Class23 {
 			if (this.aClass93_Sub2_Sub1_2 == null) {
 				this.aClass19_Sub3_28.method4876(this.aClass93_Sub2_Sub1_3);
 				this.aClass19_Sub3_28.method4866(arg4);
-				OpenGL.glBegin(7);
+				OpenGL.glBegin(OpenGL.GL_QUADS);
 				OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 				OpenGL.glVertex2f(local68, local77);
 				OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -101,17 +101,17 @@ public final class Class23_Sub2 extends Class23 {
 			} else {
 				this.method3837(arg4);
 				this.aClass93_Sub2_Sub1_2.method6817(true);
-				OpenGL.glBegin(7);
-				OpenGL.glMultiTexCoord2f(33985, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
+				OpenGL.glBegin(OpenGL.GL_QUADS);
+				OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 				OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 				OpenGL.glVertex2f(local68, local77);
-				OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
+				OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 0.0F);
 				OpenGL.glTexCoord2f(0.0F, 0.0F);
 				OpenGL.glVertex2f(local68, local95);
-				OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
+				OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 				OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 				OpenGL.glVertex2f(local86, local95);
-				OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
+				OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 				OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 				OpenGL.glVertex2f(local86, local77);
 				OpenGL.glEnd();
@@ -120,7 +120,7 @@ public final class Class23_Sub2 extends Class23 {
 		} else if (this.aClass93_Sub2_Sub1_2 == null) {
 			this.aClass19_Sub3_28.method4876(this.aClass93_Sub2_Sub1_3);
 			this.aClass19_Sub3_28.method4866(arg4);
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glVertex2i(arg0, arg1);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -133,17 +133,17 @@ public final class Class23_Sub2 extends Class23 {
 		} else {
 			this.method3837(arg4);
 			this.aClass93_Sub2_Sub1_2.method6817(true);
-			OpenGL.glBegin(7);
-			OpenGL.glMultiTexCoord2f(33985, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
+			OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glVertex2i(arg0, arg1);
-			OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
+			OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 0.0F);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
 			OpenGL.glVertex2i(arg0, arg1 + arg3);
-			OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
+			OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 			OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 			OpenGL.glVertex2i(arg0 + arg2, arg1 + arg3);
-			OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
+			OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glVertex2i(arg2 + arg0, arg1);
 			OpenGL.glEnd();
@@ -206,19 +206,19 @@ public final class Class23_Sub2 extends Class23 {
 		this.aClass19_Sub3_28.method4892(1);
 		local25 = local7.aFloat67 / (float) local7.anInt3259;
 		local32 = local7.aFloat68 / (float) local7.anInt3257;
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glColor3f(1.0F, 1.0F, 1.0F);
-		OpenGL.glMultiTexCoord2f(33984, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
-		OpenGL.glMultiTexCoord2f(33985, local25 * (arg0 - (float) arg8), local7.aFloat68 - (arg1 - (float) arg9) * local32);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local25 * (arg0 - (float) arg8), local7.aFloat68 - (arg1 - (float) arg9) * local32);
 		OpenGL.glVertex2f(arg0, arg1);
-		OpenGL.glMultiTexCoord2f(33984, 0.0F, 0.0F);
-		OpenGL.glMultiTexCoord2f(33985, ((float) -arg8 + arg4) * local25, local7.aFloat68 - local32 * ((float) -arg9 + arg5));
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, 0.0F, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, ((float) -arg8 + arg4) * local25, local7.aFloat68 - local32 * ((float) -arg9 + arg5));
 		OpenGL.glVertex2f(arg4, arg5);
-		OpenGL.glMultiTexCoord2f(33984, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
-		OpenGL.glMultiTexCoord2f(33985, ((float) -arg8 + local14) * local25, local7.aFloat68 - ((float) -arg9 + local18) * local32);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, ((float) -arg8 + local14) * local25, local7.aFloat68 - ((float) -arg9 + local18) * local32);
 		OpenGL.glVertex2f(local14, local18);
-		OpenGL.glMultiTexCoord2f(33984, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
-		OpenGL.glMultiTexCoord2f(33985, local25 * ((float) -arg8 + arg2), local7.aFloat68 - (arg3 - (float) arg9) * local32);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local25 * ((float) -arg8 + arg2), local7.aFloat68 - (arg3 - (float) arg9) * local32);
 		OpenGL.glVertex2f(arg2, arg3);
 		OpenGL.glEnd();
 		this.aClass19_Sub3_28.method4896(5890, 768, 0);
@@ -251,19 +251,19 @@ public final class Class23_Sub2 extends Class23 {
 		@Pc(108) float local108 = local86 * (float) (local73 - arg3);
 		@Pc(118) float local118 = local9.aFloat68 - (float) (local67 - arg4) * local93;
 		@Pc(128) float local128 = local9.aFloat68 - local93 * (float) (local79 - arg4);
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glColor3f(1.0F, 1.0F, 1.0F);
-		OpenGL.glMultiTexCoord2f(33984, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
-		OpenGL.glMultiTexCoord2f(33985, local100, local118);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local100, local118);
 		OpenGL.glVertex2i(local62, local67);
-		OpenGL.glMultiTexCoord2f(33984, 0.0F, 0.0F);
-		OpenGL.glMultiTexCoord2f(33985, local100, local128);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, 0.0F, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local100, local128);
 		OpenGL.glVertex2i(local62, this.aClass93_Sub2_Sub1_3.anInt3257 + local67);
-		OpenGL.glMultiTexCoord2f(33984, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
-		OpenGL.glMultiTexCoord2f(33985, local108, local128);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local108, local128);
 		OpenGL.glVertex2i(this.aClass93_Sub2_Sub1_3.anInt3259 + local62, local67 - -this.aClass93_Sub2_Sub1_3.anInt3257);
-		OpenGL.glMultiTexCoord2f(33984, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
-		OpenGL.glMultiTexCoord2f(33985, local108, local118);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE0, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, local108, local118);
 		OpenGL.glVertex2i(this.aClass93_Sub2_Sub1_3.anInt3259 + local62, local67);
 		OpenGL.glEnd();
 		this.aClass19_Sub3_28.method4896(5890, 768, 0);
@@ -309,7 +309,7 @@ public final class Class23_Sub2 extends Class23 {
 		if (this.aClass93_Sub2_Sub1_2 == null) {
 			this.aClass19_Sub3_28.method4876(this.aClass93_Sub2_Sub1_3);
 			this.aClass19_Sub3_28.method4866(arg2);
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 			OpenGL.glVertex2i(local37, local42);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -323,17 +323,17 @@ public final class Class23_Sub2 extends Class23 {
 		}
 		this.method3837(arg2);
 		this.aClass93_Sub2_Sub1_2.method6817(false);
-		OpenGL.glBegin(7);
-		OpenGL.glMultiTexCoord2f(33985, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 		OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 		OpenGL.glVertex2i(local37, local42);
-		OpenGL.glMultiTexCoord2f(33985, 0.0F, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, 0.0F, 0.0F);
 		OpenGL.glTexCoord2f(0.0F, 0.0F);
 		OpenGL.glVertex2i(local37, local42 + this.aClass93_Sub2_Sub1_3.anInt3257);
-		OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 		OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, 0.0F);
 		OpenGL.glVertex2i(this.aClass93_Sub2_Sub1_3.anInt3259 + local37, this.aClass93_Sub2_Sub1_3.anInt3257 + local42);
-		OpenGL.glMultiTexCoord2f(33985, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
+		OpenGL.glMultiTexCoord2f(OpenGL.GL_TEXTURE1, this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 		OpenGL.glTexCoord2f(this.aClass93_Sub2_Sub1_3.aFloat67, this.aClass93_Sub2_Sub1_3.aFloat68);
 		OpenGL.glVertex2i(this.aClass93_Sub2_Sub1_3.anInt3259 + local37, local42);
 		OpenGL.glEnd();
@@ -375,7 +375,7 @@ public final class Class23_Sub2 extends Class23 {
 		this.aClass19_Sub3_28.method4892(arg8);
 		this.aClass19_Sub3_28.method4866(arg6);
 		OpenGL.glColor4ub((byte) (arg7 >> 16), (byte) (arg7 >> 8), (byte) arg7, (byte) (arg7 >> 24));
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glTexCoord2f(0.0F, this.aClass93_Sub2_Sub1_3.aFloat68);
 		OpenGL.glVertex2f(arg0, arg1);
 		OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -412,7 +412,7 @@ public final class Class23_Sub2 extends Class23 {
 		if (this.aClass93_Sub2_Sub1_3.aBoolean261 && !this.aBoolean456) {
 			@Pc(74) float local74 = this.aClass93_Sub2_Sub1_3.aFloat68 * (float) arg3 / (float) this.aClass93_Sub2_Sub1_3.anInt3257;
 			@Pc(86) float local86 = this.aClass93_Sub2_Sub1_3.aFloat67 * (float) arg2 / (float) this.aClass93_Sub2_Sub1_3.anInt3259;
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glTexCoord2f(0.0F, local74);
 			OpenGL.glVertex2i(arg0, arg1);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
@@ -429,7 +429,7 @@ public final class Class23_Sub2 extends Class23 {
 		@Pc(126) int local126 = this.b();
 		@Pc(129) int local129 = this.a();
 		@Pc(135) int local135 = this.aClass93_Sub2_Sub1_3.anInt3257 + arg1;
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		@Pc(139) int local139 = arg1;
 		@Pc(150) int local150;
 		while (local135 <= local18) {

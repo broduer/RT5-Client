@@ -23,12 +23,12 @@ public final class Static223 {
 			OpenGL.glAttachObjectARB(local50, arg0[local52].aLong213);
 		}
 		OpenGL.glLinkProgramARB(local50);
-		OpenGL.glGetObjectParameterivARB(local50, 35714, Static440.anIntArray529, 0);
+		OpenGL.glGetObjectParameterivARB(local50, OpenGL.GL_LINK_STATUS, Static440.anIntArray529, 0);
 		if (Static440.anIntArray529[0] == 0) {
 			if (Static440.anIntArray529[0] == 0) {
 				System.out.println("Shader linking failed:");
 			}
-			OpenGL.glGetObjectParameterivARB(local50, 35716, Static440.anIntArray529, 1);
+			OpenGL.glGetObjectParameterivARB(local50, OpenGL.GL_INFO_LOG_LENGTH, Static440.anIntArray529, 1);
 			if (Static440.anIntArray529[1] > 1) {
 				@Pc(110) byte[] local110 = new byte[Static440.anIntArray529[1]];
 				OpenGL.glGetInfoLogARB(local50, Static440.anIntArray529[1], Static440.anIntArray529, 0, local110, 0);

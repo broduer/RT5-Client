@@ -21,12 +21,12 @@ public final class Static245 {
 		@Pc(6) long local6 = OpenGL.glCreateShaderObjectARB(arg2);
 		OpenGL.glShaderSourceARB(local6, arg0);
 		OpenGL.glCompileShaderARB(local6);
-		OpenGL.glGetObjectParameterivARB(local6, 35713, Static263.anIntArray327, 0);
+		OpenGL.glGetObjectParameterivARB(local6, OpenGL.GL_COMPILE_STATUS, Static263.anIntArray327, 0);
 		if (Static263.anIntArray327[0] == 0) {
 			if (Static263.anIntArray327[0] == 0) {
 				System.out.println("Shader compile failed:");
 			}
-			OpenGL.glGetObjectParameterivARB(local6, 35716, Static263.anIntArray327, 1);
+			OpenGL.glGetObjectParameterivARB(local6, OpenGL.GL_INFO_LOG_LENGTH, Static263.anIntArray327, 1);
 			if (Static263.anIntArray327[1] > 1) {
 				@Pc(50) byte[] local50 = new byte[Static263.anIntArray327[1]];
 				OpenGL.glGetInfoLogARB(local6, Static263.anIntArray327[1], Static263.anIntArray327, 0, local50, 0);

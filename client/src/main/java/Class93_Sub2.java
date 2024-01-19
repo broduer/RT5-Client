@@ -36,15 +36,15 @@ public class Class93_Sub2 extends Class93 {
 			arg6 = local26;
 		}
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glPixelStorei(3317, 1);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
 		if (arg5 && super.anInt10912 != 34037) {
 			Static397.method3936(arg2, arg1, arg7, arg3, arg4, arg6);
 			this.method6826(true);
 		} else {
-			OpenGL.glTexImage2Dub(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, arg7, 5121, arg6, 0);
+			OpenGL.glTexImage2Dub(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, arg7, OpenGL.GL_UNSIGNED_BYTE, arg6, 0);
 			this.method6826(false);
 		}
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 		this.method6817(true);
 	}
 
@@ -65,7 +65,7 @@ public class Class93_Sub2 extends Class93 {
 		this.anInt3248 = arg3;
 		this.anInt3255 = arg4;
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glTexImage2Dub(super.anInt10912, 0, super.anInt10911, arg3, arg4, 0, Static391.method3902(super.anInt10911), 5121, (byte[]) null, 0);
+		OpenGL.glTexImage2Dub(super.anInt10912, 0, super.anInt10911, arg3, arg4, 0, Static391.method3902(super.anInt10911), OpenGL.GL_UNSIGNED_BYTE, (byte[]) null, 0);
 		this.method6817(true);
 	}
 
@@ -90,9 +90,9 @@ public class Class93_Sub2 extends Class93 {
 			Static480.method4535(this.anInt3248, super.anInt10912, arg6, super.anInt10911, this.anInt3255, super.aClass19_Sub3_43.anInt8030);
 			this.method6826(true);
 		} else {
-			OpenGL.glPixelStorei(3314, arg7);
-			OpenGL.glTexImage2Di(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, 32993, super.aClass19_Sub3_43.anInt8030, arg6, arg8 * 4);
-			OpenGL.glPixelStorei(3314, 0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg7);
+			OpenGL.glTexImage2Di(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, OpenGL.GL_BGRA, super.aClass19_Sub3_43.anInt8030, arg6, arg8 * 4);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 			this.method6826(false);
 		}
 		this.method6817(true);
@@ -108,7 +108,7 @@ public class Class93_Sub2 extends Class93 {
 			Static612.method5817(arg7, arg4, arg3, arg1, arg6, arg2);
 			this.method6826(true);
 		} else {
-			OpenGL.glTexImage2Df(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, arg7, 5126, arg6, 0);
+			OpenGL.glTexImage2Df(super.anInt10912, 0, super.anInt10911, this.anInt3248, this.anInt3255, 0, arg7, OpenGL.GL_FLOAT, arg6, 0);
 			this.method6826(false);
 		}
 		this.method6817(true);
@@ -137,11 +137,11 @@ public class Class93_Sub2 extends Class93 {
 		}
 		super.aClass19_Sub3_43.method4876(this);
 		if (arg5 != arg3) {
-			OpenGL.glPixelStorei(3314, arg5);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg5);
 		}
-		OpenGL.glTexSubImage2Di(super.anInt10912, 0, arg1, this.anInt3255 - arg2 - arg4, arg3, arg2, 32993, super.aClass19_Sub3_43.anInt8030, local16, 0);
+		OpenGL.glTexSubImage2Di(super.anInt10912, OpenGL.GL_POINTS, arg1, this.anInt3255 - arg2 - arg4, arg3, arg2, OpenGL.GL_BGRA, super.aClass19_Sub3_43.anInt8030, local16, 0);
 		if (arg3 != arg5) {
-			OpenGL.glPixelStorei(3314, 0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 		}
 	}
 
@@ -149,7 +149,7 @@ public class Class93_Sub2 extends Class93 {
 	public final void method2048(@OriginalArg(0) int arg0, @OriginalArg(1) int arg1, @OriginalArg(2) int arg2, @OriginalArg(4) int arg3, @OriginalArg(5) int arg4, @OriginalArg(6) int arg5) {
 		@Pc(18) int local18 = super.aClass19_Sub3_43.anInt7956 - arg0 - arg3;
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glCopyTexSubImage2D(super.anInt10912, 0, arg1, this.anInt3255 - arg2 - arg0, arg4, local18, arg5, arg0);
+		OpenGL.glCopyTexSubImage2D(super.anInt10912, OpenGL.GL_POINTS, arg1, this.anInt3255 - arg2 - arg0, arg4, local18, arg5, arg0);
 		OpenGL.glFlush();
 	}
 
@@ -177,23 +177,23 @@ public class Class93_Sub2 extends Class93 {
 			arg3 = local31;
 		}
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glPixelStorei(3317, 1);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
 		if (arg2 != arg2) {
-			OpenGL.glPixelStorei(3314, arg2);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg2);
 		}
-		OpenGL.glTexSubImage2Dub(super.anInt10912, 0, 0, 0, arg2, arg1, 6406, 5121, arg3, 0);
+		OpenGL.glTexSubImage2Dub(super.anInt10912, OpenGL.GL_POINTS, OpenGL.GL_POINTS, OpenGL.GL_POINTS, arg2, arg1, OpenGL.GL_ALPHA, OpenGL.GL_UNSIGNED_BYTE, arg3, 0);
 		if (arg2 != arg2) {
-			OpenGL.glPixelStorei(3314, 0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 		}
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 	}
 
 	@OriginalMember(owner = "client!rq", name = "a", descriptor = "(ZIZ)V")
 	public final void method2051(@OriginalArg(0) boolean arg0, @OriginalArg(2) boolean arg1) {
 		if (super.anInt10912 == 3553) {
 			super.aClass19_Sub3_43.method4876(this);
-			OpenGL.glTexParameteri(super.anInt10912, 10242, arg0 ? 10497 : 33071);
-			OpenGL.glTexParameteri(super.anInt10912, 10243, arg1 ? 10497 : 33071);
+			OpenGL.glTexParameteri(super.anInt10912, OpenGL.GL_TEXTURE_WRAP_S, arg0 ? OpenGL.GL_REPEAT : OpenGL.GL_CLAMP_TO_EDGE);
+			OpenGL.glTexParameteri(super.anInt10912, OpenGL.GL_TEXTURE_WRAP_T, arg1 ? OpenGL.GL_REPEAT : OpenGL.GL_CLAMP_TO_EDGE);
 		}
 	}
 }

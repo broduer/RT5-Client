@@ -28,7 +28,7 @@ public final class Class93_Sub3 extends Class93 {
 		this.anInt10403 = arg4;
 		this.anInt10410 = arg2;
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glTexImage3Dub(super.anInt10912, 0, super.anInt10911, this.anInt10410, this.anInt10401, this.anInt10403, 0, Static391.method3902(super.anInt10911), 5121, (byte[]) null, 0);
+		OpenGL.glTexImage3Dub(super.anInt10912, 0, super.anInt10911, this.anInt10410, this.anInt10401, this.anInt10403, 0, Static391.method3902(super.anInt10911), OpenGL.GL_UNSIGNED_BYTE, (byte[]) null, 0);
 		this.method6817(true);
 	}
 
@@ -39,16 +39,16 @@ public final class Class93_Sub3 extends Class93 {
 		this.anInt10403 = arg4;
 		this.anInt10410 = arg2;
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glPixelStorei(3317, 1);
-		OpenGL.glTexImage3Dub(super.anInt10912, 0, super.anInt10911, this.anInt10410, this.anInt10401, this.anInt10403, 0, arg6, 5121, arg5, 0);
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
+		OpenGL.glTexImage3Dub(super.anInt10912, 0, super.anInt10911, this.anInt10410, this.anInt10401, this.anInt10403, 0, arg6, OpenGL.GL_UNSIGNED_BYTE, arg5, 0);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 		this.method6817(true);
 	}
 
 	@OriginalMember(owner = "client!vv", name = "a", descriptor = "(IIIIIIBI)V")
 	public void method6468(@OriginalArg(2) int arg0, @OriginalArg(4) int arg1, @OriginalArg(7) int arg2) {
 		super.aClass19_Sub3_43.method4876(this);
-		OpenGL.glCopyTexSubImage3D(super.anInt10912, 0, 0, 0, arg0, 0, 0, arg1, arg2);
+		OpenGL.glCopyTexSubImage3D(super.anInt10912, OpenGL.GL_POINTS, OpenGL.GL_POINTS, OpenGL.GL_POINTS, arg0, 0, 0, arg1, arg2);
 		OpenGL.glFlush();
 	}
 

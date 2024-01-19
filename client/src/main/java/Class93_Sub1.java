@@ -22,7 +22,7 @@ public final class Class93_Sub1 extends Class93 {
 		this.anInt2456 = arg2;
 		super.aClass19_Sub3_43.method4876(this);
 		for (@Pc(26) int local26 = 0; local26 < 6; local26++) {
-			OpenGL.glTexImage2Dub(local26 + 34069, 0, super.anInt10911, arg2, arg2, 0, arg5, 5121, arg4[local26], 0);
+			OpenGL.glTexImage2Dub(local26 + OpenGL.GL_TEXTURE_CUBE_MAP_POSITIVE_X, 0, super.anInt10911, arg2, arg2, 0, arg5, OpenGL.GL_UNSIGNED_BYTE, arg4[local26], 0);
 		}
 		this.method6817(true);
 	}
@@ -33,7 +33,7 @@ public final class Class93_Sub1 extends Class93 {
 		this.anInt2456 = arg2;
 		super.aClass19_Sub3_43.method4876(this);
 		for (@Pc(28) int local28 = 0; local28 < 6; local28++) {
-			OpenGL.glTexImage2Dub(local28 + 34069, 0, super.anInt10911, arg2, arg2, 0, Static391.method3902(super.anInt10911), 5121, (byte[]) null, 0);
+			OpenGL.glTexImage2Dub(local28 + OpenGL.GL_TEXTURE_CUBE_MAP_POSITIVE_X, 0, super.anInt10911, arg2, arg2, 0, Static391.method3902(super.anInt10911), OpenGL.GL_UNSIGNED_BYTE, (byte[]) null, 0);
 		}
 		this.method6817(true);
 	}
@@ -50,7 +50,7 @@ public final class Class93_Sub1 extends Class93 {
 			}
 		} else {
 			for (local30 = 0; local30 < 6; local30++) {
-				OpenGL.glTexImage2Di(local30 + 34069, 0, super.anInt10911, arg2, arg2, 0, 32993, super.aClass19_Sub3_43.anInt8030, arg4[local30], 0);
+				OpenGL.glTexImage2Di(local30 + OpenGL.GL_TEXTURE_CUBE_MAP_POSITIVE_X, 0, super.anInt10911, arg2, arg2, 0, OpenGL.GL_BGRA, super.aClass19_Sub3_43.anInt8030, arg4[local30], 0);
 			}
 		}
 		this.method6817(true);
@@ -66,7 +66,7 @@ public final class Class93_Sub1 extends Class93 {
 	@OriginalMember(owner = "client!ec", name = "a", descriptor = "(I)V")
 	@Override
 	public void method6814() {
-		OpenGL.glFramebufferTexture2DEXT(this.anInt2450, this.anInt2454, 3553, 0, 0);
+		OpenGL.glFramebufferTexture2DEXT(this.anInt2450, this.anInt2454, OpenGL.GL_TEXTURE_2D, 0, 0);
 		this.anInt2454 = -1;
 		this.anInt2450 = -1;
 	}

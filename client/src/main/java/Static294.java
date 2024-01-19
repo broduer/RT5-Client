@@ -20,14 +20,14 @@ public final class Static294 {
 			return null;
 		}
 		@Pc(16) int local16 = OpenGL.glGenProgramARB();
-		OpenGL.glBindProgramARB(34336, local16);
+		OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, local16);
 		OpenGL.glProgramRawARB(34336, 34933, arg1);
-		OpenGL.glGetIntegerv(34379, Static564.anIntArray653, 0);
+		OpenGL.glGetIntegerv(OpenGL.GL_PROGRAM_ERROR_POSITION_ARB, Static564.anIntArray653, 0);
 		if (Static564.anIntArray653[0] == -1) {
-			OpenGL.glBindProgramARB(34336, 0);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
 			return new Class135(arg0, 34336, local16);
 		} else {
-			OpenGL.glBindProgramARB(34336, 0);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
 			return null;
 		}
 	}

@@ -19,9 +19,9 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		this.anInt6895 = arg3;
 		this.anInt6893 = arg2;
 		super.aClass19_Sub1_Sub2_12.method5697(this);
-		OpenGL.glPixelStorei(3314, arg6);
-		OpenGL.glTexImage2Df(super.anInt9848, 0, this.method6148(), arg2, arg3, 0, Static468.method5398(super.aClass92_14), 5126, arg4, arg5 * 4);
-		OpenGL.glPixelStorei(3314, 0);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg6);
+		OpenGL.glTexImage2Df(super.anInt9848, 0, this.method6148(), arg2, arg3, 0, Static468.method5398(super.aClass92_14), OpenGL.GL_FLOAT, arg4, arg5 * 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 	}
 
 	@OriginalMember(owner = "client!of", name = "<init>", descriptor = "(Lclient!tca;II[III)V")
@@ -30,9 +30,9 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		this.anInt6893 = arg1;
 		this.anInt6895 = arg2;
 		super.aClass19_Sub1_Sub2_12.method5697(this);
-		OpenGL.glPixelStorei(3314, arg5);
-		OpenGL.glTexImage2Di(super.anInt9848, 0, 6408, this.anInt6893, this.anInt6895, 0, 32993, super.aClass19_Sub1_Sub2_12.anInt9277, arg3, arg4 * 4);
-		OpenGL.glPixelStorei(3314, 0);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg5);
+		OpenGL.glTexImage2Di(super.anInt9848, 0, OpenGL.GL_RGBA, this.anInt6893, this.anInt6895, 0, OpenGL.GL_BGRA, super.aClass19_Sub1_Sub2_12.anInt9277, arg3, arg4 * 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 	}
 
 	@OriginalMember(owner = "client!of", name = "<init>", descriptor = "(Lclient!tca;Lclient!eba;Lclient!wda;II)V")
@@ -50,11 +50,11 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		this.anInt6893 = arg2;
 		this.anInt6895 = arg3;
 		super.aClass19_Sub1_Sub2_12.method5697(this);
-		OpenGL.glPixelStorei(3317, 1);
-		OpenGL.glPixelStorei(3314, arg6);
-		OpenGL.glTexImage2Dub(super.anInt9848, 0, this.method6148(), arg2, arg3, 0, Static468.method5398(super.aClass92_14), 5121, arg4, arg5);
-		OpenGL.glPixelStorei(3314, 0);
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg6);
+		OpenGL.glTexImage2Dub(super.anInt9848, 0, this.method6148(), arg2, arg3, 0, Static468.method5398(super.aClass92_14), OpenGL.GL_UNSIGNED_BYTE, arg4, arg5);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 	}
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(BII[IIII)V")
@@ -62,7 +62,7 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 	public void method6478(@OriginalArg(3) int[] arg0, @OriginalArg(5) int arg1, @OriginalArg(6) int arg2) {
 		@Pc(12) int[] local12 = new int[this.anInt6893 * this.anInt6895];
 		super.aClass19_Sub1_Sub2_12.method5697(this);
-		OpenGL.glGetTexImagei(super.anInt9848, 0, 32993, 5121, local12, 0);
+		OpenGL.glGetTexImagei(super.anInt9848, OpenGL.GL_POINTS, OpenGL.GL_BGRA, OpenGL.GL_UNSIGNED_BYTE, local12, 0);
 		for (@Pc(32) int local32 = 0; local32 < arg2; local32++) {
 			Static734.method5449(local12, (arg2 - local32 - 1) * this.anInt6893, arg0, arg1 * local32, arg1);
 		}
@@ -94,11 +94,11 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		}
 		super.aClass19_Sub1_Sub2_12.method5697(this);
 		if (arg4 != arg5) {
-			OpenGL.glPixelStorei(3314, arg5);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg5);
 		}
-		OpenGL.glTexSubImage2Di(super.anInt9848, 0, arg1, arg2, arg4, arg3, 32993, super.aClass19_Sub1_Sub2_12.anInt9277, arg0, 0);
+		OpenGL.glTexSubImage2Di(super.anInt9848, OpenGL.GL_POINTS, arg1, arg2, arg4, arg3, OpenGL.GL_BGRA, super.aClass19_Sub1_Sub2_12.anInt9277, arg0, 0);
 		if (arg4 != arg5) {
-			OpenGL.glPixelStorei(3314, 0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 		}
 	}
 
@@ -120,15 +120,15 @@ public final class Class51_Sub3 extends Class51 implements Interface18 {
 		if (arg0 == 0) {
 			arg0 = arg4;
 		}
-		OpenGL.glPixelStorei(3317, 1);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_LINES);
 		if (arg4 != arg0) {
-			OpenGL.glPixelStorei(3314, arg0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, arg0);
 		}
-		OpenGL.glTexSubImage2Dub(super.anInt9848, 0, 0, 0, arg4, arg1, Static468.method5398(arg3), 5121, arg2, 0);
+		OpenGL.glTexSubImage2Dub(super.anInt9848, OpenGL.GL_POINTS, OpenGL.GL_POINTS, OpenGL.GL_POINTS, arg4, arg1, Static468.method5398(arg3), OpenGL.GL_UNSIGNED_BYTE, arg2, 0);
 		if (arg0 != arg4) {
-			OpenGL.glPixelStorei(3314, 0);
+			OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ROW_LENGTH, OpenGL.GL_POINTS);
 		}
-		OpenGL.glPixelStorei(3317, 4);
+		OpenGL.glPixelStorei(OpenGL.GL_UNPACK_ALIGNMENT, OpenGL.GL_TRIANGLES);
 	}
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(FB)F")

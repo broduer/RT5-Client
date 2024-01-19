@@ -53,7 +53,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "(I)V")
 	@Override
 	public void method6751() {
-		OpenGL.glBindFramebufferEXT(36009, this.anInt10832);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_DRAW_FRAMEBUFFER, this.anInt10832);
 		this.anInt10830 |= 0x2;
 		this.anInt10825 = this.method6754();
 	}
@@ -77,7 +77,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "c", descriptor = "(I)V")
 	@Override
 	public void method6747() {
-		OpenGL.glBindFramebufferEXT(36160, 0);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_FRAMEBUFFER, 0);
 		this.anInt10830 &= 0xFFFFFFFB;
 		this.anInt10825 = this.method6754();
 	}
@@ -113,7 +113,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(B)V")
 	@Override
 	public void method6746() {
-		OpenGL.glBindFramebufferEXT(36009, 0);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_DRAW_FRAMEBUFFER, 0);
 		this.anInt10830 &= 0xFFFFFFFD;
 		this.anInt10825 = this.method6754();
 	}
@@ -121,7 +121,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(I)V")
 	@Override
 	public void method6750() {
-		OpenGL.glBindFramebufferEXT(36008, 0);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_READ_FRAMEBUFFER, 0);
 		this.anInt10830 &= 0xFFFFFFFE;
 		this.anInt10825 = this.method6754();
 	}
@@ -129,7 +129,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "f", descriptor = "(I)Z")
 	public boolean method6757() {
 		@Pc(14) int local14 = OpenGL.glCheckFramebufferStatusEXT(this.anInt10825);
-		return local14 == 36053;
+		return local14 == OpenGL.GL_FRAMEBUFFER_COMPLETE;
 	}
 
 	@OriginalMember(owner = "client!wo", name = "a", descriptor = "(ILclient!rq;I)V")
@@ -185,7 +185,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "d", descriptor = "(I)V")
 	@Override
 	public void method6748() {
-		OpenGL.glBindFramebufferEXT(36160, this.anInt10832);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_FRAMEBUFFER, this.anInt10832);
 		this.anInt10830 |= 0x4;
 		this.anInt10825 = this.method6754();
 	}
@@ -193,7 +193,7 @@ public final class Class406 implements Interface14 {
 	@OriginalMember(owner = "client!wo", name = "b", descriptor = "(B)V")
 	@Override
 	public void method6749() {
-		OpenGL.glBindFramebufferEXT(36008, this.anInt10832);
+		OpenGL.glBindFramebufferEXT(OpenGL.GL_READ_FRAMEBUFFER, this.anInt10832);
 		this.anInt10830 |= 0x1;
 		this.anInt10825 = this.method6754();
 	}

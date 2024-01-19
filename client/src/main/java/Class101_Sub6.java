@@ -96,9 +96,9 @@ public final class Class101_Sub6 extends Class101 {
 	@Override
 	public void method6806() {
 		if (this.aBoolean485) {
-			OpenGL.glBindProgramARB(34336, 0);
-			OpenGL.glDisable(34820);
-			OpenGL.glDisable(34336);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0);
+			OpenGL.glDisable(OpenGL.GL_FRAGMENT_PROGRAM_ARB);
+			OpenGL.glDisable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 			this.aBoolean485 = false;
 		}
 		super.aClass19_Sub3_42.method4889(1);
@@ -124,13 +124,13 @@ public final class Class101_Sub6 extends Class101 {
 	public void method4103() {
 		@Pc(14) Class73_Sub3 local14 = super.aClass19_Sub3_42.aClass73_Sub3_4;
 		if (this.aBoolean484) {
-			OpenGL.glBindProgramARB(34336, super.aClass19_Sub3_42.anInt8006 == Integer.MAX_VALUE ? this.aClass71_2.anInt1805 : this.aClass71_4.anInt1805);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, super.aClass19_Sub3_42.anInt8006 == Integer.MAX_VALUE ? this.aClass71_2.anInt1805 : this.aClass71_4.anInt1805);
 		} else {
-			OpenGL.glBindProgramARB(34336, super.aClass19_Sub3_42.anInt8006 == Integer.MAX_VALUE ? this.aClass71_1.anInt1805 : this.aClass71_3.anInt1805);
+			OpenGL.glBindProgramARB(OpenGL.GL_VERTEX_PROGRAM_ARB, super.aClass19_Sub3_42.anInt8006 == Integer.MAX_VALUE ? this.aClass71_1.anInt1805 : this.aClass71_3.anInt1805);
 		}
 		local14.method5001(0.0F, (float) super.aClass19_Sub3_42.anInt8006, -1.0F, 0.0F, Static319.aFloatArray26);
-		OpenGL.glProgramLocalParameter4fARB(34336, 1, Static319.aFloatArray26[0], Static319.aFloatArray26[1], Static319.aFloatArray26[2], Static319.aFloatArray26[3]);
-		OpenGL.glEnable(34336);
+		OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 1, Static319.aFloatArray26[0], Static319.aFloatArray26[1], Static319.aFloatArray26[2], Static319.aFloatArray26[3]);
+		OpenGL.glEnable(OpenGL.GL_VERTEX_PROGRAM_ARB);
 		this.aBoolean485 = true;
 		this.method4104();
 	}
@@ -144,7 +144,7 @@ public final class Class101_Sub6 extends Class101 {
 		@Pc(23) int local23 = super.aClass19_Sub3_42.i();
 		@Pc(34) float local34 = (float) local19 - (float) (local19 - local23) * 0.125F;
 		@Pc(46) float local46 = -((float) (local19 - local23) * 0.25F) + (float) local19;
-		OpenGL.glProgramLocalParameter4fARB(34336, 0, local46, local34, 1.0F / (float) super.aClass19_Sub3_42.anInt8013, (float) super.aClass19_Sub3_42.anInt8029 / 255.0F);
+		OpenGL.glProgramLocalParameter4fARB(OpenGL.GL_VERTEX_PROGRAM_ARB, 0, local46, local34, 1.0F / (float) super.aClass19_Sub3_42.anInt8013, (float) super.aClass19_Sub3_42.anInt8029 / 255.0F);
 		super.aClass19_Sub3_42.method4889(1);
 		super.aClass19_Sub3_42.method4860(super.aClass19_Sub3_42.anInt8026);
 		super.aClass19_Sub3_42.method4889(0);

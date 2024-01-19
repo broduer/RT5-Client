@@ -100,8 +100,8 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 	@OriginalMember(owner = "client!kca", name = "a", descriptor = "(Lclient!rq;Lclient!rq;II)V")
 	@Override
 	public void method3229(@OriginalArg(0) Class93_Sub2 arg0, @OriginalArg(1) Class93_Sub2 arg1, @OriginalArg(3) int arg2) {
-		OpenGL.glPushAttrib(2048);
-		OpenGL.glMatrixMode(5889);
+		OpenGL.glPushAttrib(OpenGL.GL_VIEWPORT_BIT);
+		OpenGL.glMatrixMode(OpenGL.GL_PROJECTION);
 		OpenGL.glPushMatrix();
 		OpenGL.glLoadIdentity();
 		OpenGL.glOrtho(0.0D, 1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
@@ -115,7 +115,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 			OpenGL.glUseProgramObjectARB(local46);
 			OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(local46, "sceneTex"), 0);
 			OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(local46, "params"), Static228.aFloat72, 0.0F, 0.0F);
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
 			OpenGL.glVertex2i(0, 0);
 			OpenGL.glTexCoord2f((float) this.anInt5104, 0.0F);
@@ -135,7 +135,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 				this.aClass406_2.method6758(this.aClass93_Sub2Array1[local119], 0);
 				if (local119 == 0) {
 					super.aClass19_Sub3_22.method4876(arg1);
-					OpenGL.glBegin(7);
+					OpenGL.glBegin(OpenGL.GL_QUADS);
 					OpenGL.glTexCoord2f(0.0F, 0.0F);
 					OpenGL.glVertex2i(0, 0);
 					OpenGL.glTexCoord2f((float) this.anInt5104, 0.0F);
@@ -147,7 +147,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 					OpenGL.glEnd();
 				} else {
 					super.aClass19_Sub3_22.method4876(this.aClass93_Sub2Array1[local119 - 1]);
-					OpenGL.glBegin(7);
+					OpenGL.glBegin(OpenGL.GL_QUADS);
 					OpenGL.glTexCoord2f(0.0F, 0.0F);
 					OpenGL.glVertex2i(0, 0);
 					OpenGL.glTexCoord2f(1.0F, 0.0F);
@@ -175,7 +175,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 			OpenGL.glUseProgramObjectARB(local291);
 			OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(local291, "sceneTex"), 0);
 			OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(local291, "params"), Static228.aFloat72, 0.0F, 0.0F);
-			OpenGL.glBegin(7);
+			OpenGL.glBegin(OpenGL.GL_QUADS);
 			OpenGL.glTexCoord2f(0.0F, 0.0F);
 			OpenGL.glVertex2i(0, 0);
 			OpenGL.glTexCoord2f(1.0F, 0.0F);
@@ -192,7 +192,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 		OpenGL.glUseProgramObjectARB(local46);
 		OpenGL.glUniform1iARB(OpenGL.glGetUniformLocationARB(local46, "baseTex"), 0);
 		OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(local46, "step"), 0.00390625F, 0.0F, 0.0F);
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glTexCoord2f(0.0F, 0.0F);
 		OpenGL.glVertex2i(0, 0);
 		OpenGL.glTexCoord2f(1.0F, 0.0F);
@@ -205,7 +205,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 		this.aClass406_1.method6760(0);
 		super.aClass19_Sub3_22.method4876(this.aClass93_Sub2_1);
 		OpenGL.glUniform3fARB(OpenGL.glGetUniformLocationARB(local46, "step"), 0.0F, 0.00390625F, 0.0F);
-		OpenGL.glBegin(7);
+		OpenGL.glBegin(OpenGL.GL_QUADS);
 		OpenGL.glTexCoord2f(0.0F, 0.0F);
 		OpenGL.glVertex2i(0, 0);
 		OpenGL.glTexCoord2f(1.0F, 0.0F);
@@ -217,7 +217,7 @@ public final class Class2_Sub31_Sub1 extends Class2_Sub31 {
 		OpenGL.glEnd();
 		OpenGL.glPopAttrib();
 		OpenGL.glPopMatrix();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		super.aClass19_Sub3_22.method4868(this.aClass406_1);
 		@Pc(459) long local459 = this.aClass179_3.aLong136;
 		OpenGL.glUseProgramObjectARB(local459);

@@ -123,15 +123,15 @@ public final class Class2_Sub39 extends Class2 {
 		if (this.aClass19_Sub3_31.aBoolean605) {
 			this.aClass19_Sub3_31.EA(Integer.MAX_VALUE, this.anInt6593, this.anInt6595, this.anInt6585);
 		}
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glPushMatrix();
 		OpenGL.glScalef(1.0F / this.aFloat121, 1.0F / this.aFloat121, 1.0F);
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 		this.aClass19_Sub3_31.method4914(this.aClass94_10, this.aClass178_Sub2_3.aClass94_13, this.aClass178_Sub2_3.aClass94_11, this.aClass178_Sub2_3.aClass94_14);
 		this.aClass19_Sub3_31.method4909(0, this.aClass134_Sub2_1, local7);
-		OpenGL.glMatrixMode(5890);
+		OpenGL.glMatrixMode(OpenGL.GL_TEXTURE);
 		OpenGL.glPopMatrix();
-		OpenGL.glMatrixMode(5888);
+		OpenGL.glMatrixMode(OpenGL.GL_MODELVIEW);
 	}
 
 	@OriginalMember(owner = "client!nm", name = "a", descriptor = "(IIFII)V")

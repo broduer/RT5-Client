@@ -141,11 +141,11 @@ public abstract class Class51 implements Interface17 {
 	private void method6151() {
 		this.aClass19_Sub1_Sub2_12.method5697(this);
 		if (Static60.aClass259_3 == this.aClass259_15) {
-			OpenGL.glTexParameteri(this.anInt9848, 10241, this.aBoolean754 ? 9987 : 9729);
-			OpenGL.glTexParameteri(this.anInt9848, 10240, 9729);
+			OpenGL.glTexParameteri(this.anInt9848, OpenGL.GL_TEXTURE_MIN_FILTER, this.aBoolean754 ? OpenGL.GL_LINEAR_MIPMAP_LINEAR : OpenGL.GL_LINEAR);
+			OpenGL.glTexParameteri(this.anInt9848, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_LINEAR);
 		} else {
-			OpenGL.glTexParameteri(this.anInt9848, 10241, this.aBoolean754 ? 9984 : 9728);
-			OpenGL.glTexParameteri(this.anInt9848, 10240, 9728);
+			OpenGL.glTexParameteri(this.anInt9848, OpenGL.GL_TEXTURE_MIN_FILTER, this.aBoolean754 ? OpenGL.GL_NEAREST_MIPMAP_NEAREST : OpenGL.GL_NEAREST);
+			OpenGL.glTexParameteri(this.anInt9848, OpenGL.GL_TEXTURE_MAG_FILTER, OpenGL.GL_NEAREST);
 		}
 	}
 
@@ -172,7 +172,7 @@ public abstract class Class51 implements Interface17 {
 			@Pc(71) int[] local71 = arg1;
 			@Pc(76) int[] local76 = new int[local61 * local57];
 			while (true) {
-				OpenGL.glTexImage2Di(arg0, local45, this.method6148(), arg3, arg2, 0, 32993, this.aClass19_Sub1_Sub2_12.anInt9277, local71, 0);
+				OpenGL.glTexImage2Di(arg0, local45, this.method6148(), arg3, arg2, 0, OpenGL.GL_BGRA, this.aClass19_Sub1_Sub2_12.anInt9277, local71, 0);
 				if (local53 <= 1) {
 					return;
 				}
@@ -239,7 +239,7 @@ public abstract class Class51 implements Interface17 {
 			@Pc(71) byte[] local71 = arg2;
 			@Pc(78) byte[] local78 = new byte[local69 * local65 * local40];
 			while (true) {
-				OpenGL.glTexImage2Dub(arg1, local49, this.method6148(), arg3, arg0, 0, Static468.method5398(this.aClass92_14), 5121, local71, 0);
+				OpenGL.glTexImage2Dub(arg1, local49, this.method6148(), arg3, arg0, 0, Static468.method5398(this.aClass92_14), OpenGL.GL_UNSIGNED_BYTE, local71, 0);
 				if (local61 <= 1) {
 					return;
 				}
@@ -293,7 +293,7 @@ public abstract class Class51 implements Interface17 {
 			@Pc(60) float[] local60 = arg0;
 			@Pc(72) float[] local72 = new float[local58 * local54 * local40];
 			while (true) {
-				OpenGL.glTexImage2Df(arg3, local42, this.method6148(), arg1, arg2, 0, Static468.method5398(this.aClass92_14), 5126, local60, 0);
+				OpenGL.glTexImage2Df(arg3, local42, this.method6148(), arg1, arg2, 0, Static468.method5398(this.aClass92_14), OpenGL.GL_FLOAT, local60, 0);
 				if (local50 <= 1) {
 					return;
 				}

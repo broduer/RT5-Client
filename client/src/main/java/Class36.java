@@ -16,7 +16,7 @@ public final class Class36 {
 
 	@OriginalMember(owner = "client!bea", name = "a", descriptor = "(II)V")
 	public void method539(@OriginalArg(0) int arg0) {
-		OpenGL.glNewList(this.anInt923 + arg0, 4864);
+		OpenGL.glNewList(this.anInt923 + arg0, OpenGL.GL_COMPILE);
 	}
 
 	@OriginalMember(owner = "client!bea", name = "a", descriptor = "(Z)V")
